@@ -6,45 +6,40 @@ public enum PlayerState
 {
 	walk,
 	attack,
-	interact
+	interact,
+	stagger, 
+	idle
 }
 
 public class PlayerMovement : MonoBehaviour
 {
 	public PlayerState currentState;
 	public float speed;
-	private Rigidbody2D myRigidbody;
+	private Rigidbody2D rigidbody;
 	private Vector3 change;
 	private Animator animator;
 
 	void MoveCharacter()
 	{
-		myRigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
+		change.Normalize();
+		rigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
 	}
 
-    // Start is called before the first frame update
-    void Start()
-    {
-		currentState = PlayerState.walk;
-		animator = GetComponent<Animator>();
-		myRigidbody = GetComponent<Rigidbody2D>();
-    }
+	private IEnumerator KnockCo(float kbTime)
+	{
+		if(rigidbody != null)
+		{
+			yield return new WaitForSeconds(kbTime);
+			rigidbody.velocity = Vector2.zero;
+			currentState = PlayerState.idle;
+			rigidbody.velocity = Vector2.zero;
+		}
+	}
 
-    // Update is called once per frame
-    void Update()
-    {
-		change = Vector2.zero;
-		change.x = Input.GetAxisRaw("Horizontal");
-		change.y = Input.GetAxisRaw("Vertical");
-		if (Input.GetButtonDown("attack") && currentState != PlayerState.attack) 
-		{
-			StartCoroutine (AttackCo ());
-		}
-		else if (currentState == PlayerState.walk) 
-		{
-			UpdateAnimationAndMove ();
-		}
-    }
+	public void Knock(float kbTime)
+	{
+		StartCoroutine(KnockCo(kbTime));
+	}
 
 	private IEnumerator AttackCo()
 	{
@@ -70,4 +65,31 @@ public class PlayerMovement : MonoBehaviour
 			animator.SetBool("moving", false);
 		}
 	}
+
+    // Start is called before the first frame update
+    void Start()
+    {
+		currentState = PlayerState.walk;
+		animator = GetComponent<Animator>();
+		rigidbody = GetComponent<Rigidbody2D>();
+		animator.SetFloat("moveX", 0);
+		animator.SetFloat("moveY", -1);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+		change = Vector2.zero;
+		change.x = Input.GetAxisRaw("Horizontal");
+		change.y = Input.GetAxisRaw("Vertical");
+		if (Input.GetButtonDown("attack") && currentState != PlayerState.attack &&
+			currentState != PlayerState.stagger) 
+		{
+			StartCoroutine(AttackCo());
+		}
+		else if (currentState == PlayerState.walk || currentState == PlayerState.idle) 
+		{
+			UpdateAnimationAndMove();
+		}
+    }
 }
