@@ -18,6 +18,9 @@ public class PlayerMovement : MonoBehaviour
 	private Rigidbody2D rigidbody;
 	private Vector3 change;
 	private Animator animator;
+	public FloatValue currentHealth;
+	public Signal playerHealthSignal;
+	public VectorValue startingPosition;
 
 	void MoveCharacter()
 	{
@@ -36,9 +39,19 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
 
-	public void Knock(float kbTime)
+	public void Knock(float kbTime, float damage)
 	{
-		StartCoroutine(KnockCo(kbTime));
+		currentHealth.runtimeValue -= damage;
+		playerHealthSignal.Raise();
+
+		if(currentHealth.runtimeValue > 0)
+		{
+			StartCoroutine(KnockCo(kbTime));
+		}
+		else
+		{
+			this.gameObject.SetActive(false);
+		}
 	}
 
 	private IEnumerator AttackCo()
@@ -74,6 +87,7 @@ public class PlayerMovement : MonoBehaviour
 		rigidbody = GetComponent<Rigidbody2D>();
 		animator.SetFloat("moveX", 0);
 		animator.SetFloat("moveY", -1);
+		transform.position = startingPosition.initialValue;
     }
 
     // Update is called once per frame

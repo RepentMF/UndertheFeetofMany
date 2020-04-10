@@ -12,8 +12,27 @@ public class CameraMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+		//transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);   
     }
+
+	private Vector3 RoundPosition(Vector3 position)
+	{
+		float xOffset = position.x % .0625f;
+
+		if(xOffset != 0)
+		{
+			position.x -= xOffset;
+		}
+
+		float yOffset = position.y % .0625f;
+
+		if(yOffset != 0)
+		{
+			position.y -= yOffset;
+		}
+
+		return position;
+	}
 
     // Update is called once per frame
     void LateUpdate()
