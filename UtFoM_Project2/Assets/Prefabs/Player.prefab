@@ -464,6 +464,7 @@ MonoBehaviour:
   speed: 12
   currentHealth: {fileID: 11400000, guid: 713e190effe6aa340aeb3962248289ff, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: f2de9eacb21a0ab43b4eb8f3c64f3d2e, type: 2}
+  startingPosition: {fileID: 0}
 --- !u!95 &8676862407922533657
 Animator:
   serializedVersion: 3
