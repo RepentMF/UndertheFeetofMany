@@ -2875,6 +2875,23 @@ PrefabInstance:
       propertyPath: playerPosition.x
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 6825806533702209935, guid: de77173c0024c794796cee77dc15f719,
+        type: 3}
+    - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 3974048091055410891, guid: 3be4b31b9b251b74f8d7f62241788566,
+        type: 3}
+    - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: fadeWait
+      value: 0.33
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d03073aba2d829e41b9e189a764f336f, type: 3}
 --- !u!1 &1390630012 stripped
