@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Sign : MonoBehaviour
 {
+	public Signal contextOn;
+	public Signal contextOff;
 	public GameObject box;
 	public Text dialogue;
 	public string insert;
@@ -14,6 +16,7 @@ public class Sign : MonoBehaviour
 	{
 		if (collision.CompareTag("Player"))
 		{
+			contextOn.Raise();
 			active = true;
 		}
 	}
@@ -22,6 +25,7 @@ public class Sign : MonoBehaviour
 	{
 		if (collision.CompareTag("Player")) 
 		{
+			contextOff.Raise();
 			active = false;
 			box.SetActive(false);
 		}
