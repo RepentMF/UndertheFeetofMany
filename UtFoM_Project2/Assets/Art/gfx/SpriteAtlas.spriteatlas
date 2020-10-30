@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 46151a80513d5d641b9d56bfee005b25, type: 3}
-    totalSpriteSurfaceArea: 972666
+    totalSpriteSurfaceArea: 983866
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -1120,6 +1120,34 @@ SpriteAtlas:
   - {fileID: 21301246, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
   - {fileID: 21301346, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
   - {fileID: 21300258, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
+  - {fileID: 5879532933249936704, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 1702944112137351692, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: -6875693984060724655, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 8065215198520230363, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 292511346337569837, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: -6776676135277293862, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 368543389579951487, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: -458641133534639524, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 2542698315722941828, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: -3711818451352614709, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: -1893580178282796242, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 1700843758525247274, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: -6455651614561120216, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 2446715294408889903, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 5088725752757704037, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 7065398221910334755, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: -1071876908328471809, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 574139385759250185, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 6932627294812020299, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 4223093693952456910, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 3519091041362292632, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 4963280553436401018, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: -3395474172157937565, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 8878132033782264596, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: -572565752260146881, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 7540427358155989450, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 7427473825912618326, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 1540438928351404177, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
   - {fileID: 6151049599958356191, guid: e3fc485736054744a85223730e9a7369, type: 3}
   - {fileID: -8793897229306068037, guid: e3fc485736054744a85223730e9a7369, type: 3}
   - {fileID: -6900571148803751901, guid: e3fc485736054744a85223730e9a7369, type: 3}
@@ -2852,6 +2880,34 @@ SpriteAtlas:
   - Overworld_623
   - Overworld_673
   - Overworld_129
+  - slime_8
+  - slime_9
+  - slime_4
+  - slime_5
+  - slime_6
+  - slime_7
+  - slime_0
+  - slime_1
+  - slime_2
+  - slime_3
+  - slime_17
+  - slime_16
+  - slime_15
+  - slime_14
+  - slime_13
+  - slime_12
+  - slime_11
+  - slime_10
+  - slime_22
+  - slime_23
+  - slime_20
+  - slime_19
+  - slime_21
+  - slime_18
+  - slime_26
+  - slime_27
+  - slime_24
+  - slime_25
   - modified gfx melee sprites 1_9
   - modified gfx melee sprites 1_8
   - modified gfx melee sprites 1_5
