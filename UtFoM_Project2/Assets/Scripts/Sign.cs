@@ -40,7 +40,7 @@ public class Sign : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.Space) && active) 
+		if (Input.GetButtonDown("context") && active) 
 		{
 			if (box.activeInHierarchy) 
 			{

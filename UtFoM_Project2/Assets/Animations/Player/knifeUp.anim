@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: atkRight
+  m_Name: knifeUp
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -42,25 +42,25 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: right_hitbox
+    path: up_hitbox
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -4792533558930659449, guid: a649072e1e8c9054bb4c0488990b55aa,
+      value: {fileID: 7526004305066418335, guid: a649072e1e8c9054bb4c0488990b55aa,
         type: 3}
     - time: 0.033333335
-      value: {fileID: -4833834878645718829, guid: a649072e1e8c9054bb4c0488990b55aa,
+      value: {fileID: -3512642894241631198, guid: a649072e1e8c9054bb4c0488990b55aa,
         type: 3}
     - time: 0.06666667
-      value: {fileID: -1886673004298322234, guid: a649072e1e8c9054bb4c0488990b55aa,
+      value: {fileID: 1108378980445821140, guid: a649072e1e8c9054bb4c0488990b55aa,
         type: 3}
     - time: 0.1
-      value: {fileID: -1960888373390179302, guid: a649072e1e8c9054bb4c0488990b55aa,
+      value: {fileID: -4877990839480251407, guid: a649072e1e8c9054bb4c0488990b55aa,
         type: 3}
     - time: 0.13333334
-      value: {fileID: 950262125628529356, guid: a649072e1e8c9054bb4c0488990b55aa,
+      value: {fileID: -6226874977255095467, guid: a649072e1e8c9054bb4c0488990b55aa,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -74,7 +74,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3523900880
+      path: 1187030034
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -88,11 +88,11 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -4792533558930659449, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
-    - {fileID: -4833834878645718829, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
-    - {fileID: -1886673004298322234, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
-    - {fileID: -1960888373390179302, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
-    - {fileID: 950262125628529356, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
+    - {fileID: 7526004305066418335, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
+    - {fileID: -3512642894241631198, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
+    - {fileID: 1108378980445821140, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
+    - {fileID: -4877990839480251407, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
+    - {fileID: -6226874977255095467, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -139,7 +139,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: right_hitbox
+    path: up_hitbox
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []

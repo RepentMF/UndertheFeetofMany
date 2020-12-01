@@ -5,7 +5,8 @@ using UnityEngine;
 public enum PlayerState
 {
 	walk,
-	attack,
+	knife,
+	hammer1,
 	interact,
 	stagger, 
 	idle
@@ -54,14 +55,24 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
 
-	private IEnumerator AttackCo()
+	private IEnumerator KnifeAttackCo()
 	{
-		animator.SetBool("attacking", true);
-		currentState = PlayerState.attack;
+		animator.SetBool("knifing", true);
+		currentState = PlayerState.knife;
 		yield return null;
-		animator.SetBool("attacking", false);
-		//yield return new WaitForSeconds(.3f);
-		currentState = PlayerState.walk;
+		animator.SetBool("knifing", false);
+		yield return new WaitForSeconds(.08f);
+		currentState = PlayerState.idle;
+	}
+
+	private IEnumerator HammerAttackCo()
+	{
+		animator.SetBool("hammering", true);
+		currentState = PlayerState.hammer1;
+		yield return null;
+		animator.SetBool("hammering", false);
+		yield return new WaitForSeconds(1f);
+		currentState = PlayerState.idle;
 	}
 
 	void UpdateAnimationAndMove()
@@ -96,10 +107,15 @@ public class PlayerMovement : MonoBehaviour
 		change = Vector2.zero;
 		change.x = Input.GetAxisRaw("Horizontal");
 		change.y = Input.GetAxisRaw("Vertical");
-		if (Input.GetButtonDown("attack") && currentState != PlayerState.attack &&
+		if (Input.GetButtonDown("knife") && (currentState != PlayerState.knife || currentState != PlayerState.hammer1) &&
 			currentState != PlayerState.stagger) 
 		{
-			StartCoroutine(AttackCo());
+			StartCoroutine(KnifeAttackCo());
+		}
+		else if (Input.GetButtonDown("hammer1") && (currentState != PlayerState.knife || currentState != PlayerState.hammer1) &&
+			currentState != PlayerState.stagger)
+		{
+			StartCoroutine(HammerAttackCo());
 		}
 		else if (currentState == PlayerState.walk || currentState == PlayerState.idle) 
 		{
