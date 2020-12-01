@@ -8977,6 +8977,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8676862406517923875, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: kbTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676862406517923875, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: thrust
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676862406593309890, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: kbTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676862406593309890, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: thrust
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676862407521417316, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: thrust
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676862407862487275, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: kbTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676862407862487275, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: thrust
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8676862407922533656, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: startingPosition

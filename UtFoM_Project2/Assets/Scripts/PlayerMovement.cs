@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
 		currentState = PlayerState.attack;
 		yield return null;
 		animator.SetBool("attacking", false);
-		yield return new WaitForSeconds(.3f);
+		//yield return new WaitForSeconds(.3f);
 		currentState = PlayerState.walk;
 	}
 
@@ -96,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
 		change = Vector2.zero;
 		change.x = Input.GetAxisRaw("Horizontal");
 		change.y = Input.GetAxisRaw("Vertical");
-		if (Input.GetButton("attack") && currentState != PlayerState.attack &&
+		if (Input.GetButtonDown("attack") && currentState != PlayerState.attack &&
 			currentState != PlayerState.stagger) 
 		{
 			StartCoroutine(AttackCo());
