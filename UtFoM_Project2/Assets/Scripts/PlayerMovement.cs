@@ -96,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
 		change = Vector2.zero;
 		change.x = Input.GetAxisRaw("Horizontal");
 		change.y = Input.GetAxisRaw("Vertical");
-		if (Input.GetButtonDown("attack") && currentState != PlayerState.attack &&
+		if (Input.GetButton("attack") && currentState != PlayerState.attack &&
 			currentState != PlayerState.stagger) 
 		{
 			StartCoroutine(AttackCo());
