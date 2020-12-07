@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
 		currentState = PlayerState.hammer1;
 		yield return null;
 		animator.SetBool("hammering", false);
-		yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(0.83f);
 		currentState = PlayerState.idle;
 	}
 
@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		currentState = PlayerState.walk;
+		currentState = PlayerState.idle;
 		animator = GetComponent<Animator>();
 		rigidbody = GetComponent<Rigidbody2D>();
 		animator.SetFloat("moveX", 0);
