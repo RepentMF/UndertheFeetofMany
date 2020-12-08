@@ -32,9 +32,9 @@ public class Knockback : MonoBehaviour
 
 				if(collider.gameObject.CompareTag("Player"))
 				{
-					if(collider.GetComponent<PlayerMovement>().currentState != PlayerState.stagger)
+					if(!collider.GetComponent<PlayerMovement>().animator.GetCurrentAnimatorStateInfo(0).IsName("Staggered"))
 					{
-						hurtbox.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
+						hurtbox.GetComponent<PlayerMovement>().animator.Play("Staggered");
 						collider.GetComponent<PlayerMovement>().Knock(kbTime, damage);
 					}
 				}

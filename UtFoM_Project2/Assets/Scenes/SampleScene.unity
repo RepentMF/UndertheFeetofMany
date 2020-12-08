@@ -404,8 +404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1173934555}
   smoothing: 2
-  maxPosition: {x: 2, y: 10}
-  minPosition: {x: -11, y: -2}
+  maxPosition: {x: 1.85, y: 11}
+  minPosition: {x: -8.85, y: -3}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -9128,6 +9128,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 4bed1a8ded234e24ea7e4066c8c5031e,
         type: 2}
+    - target: {fileID: 8676862407922533656, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8676862407922533657, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_Enabled

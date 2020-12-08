@@ -14,22 +14,21 @@ public enum PlayerState
 
 public class PlayerMovement : MonoBehaviour
 {
-	public PlayerState currentState;
 	public float speed;
-	private Rigidbody2D rigidbody;
-	public Vector3 change;
-	private Animator animator;
+	public float currentKBTime;
 	public FloatValue currentHealth;
 	public Signal playerHealthSignal;
+	public Animator animator;
 	public VectorValue startingPosition;
+	private Rigidbody2D rigidbody;
+	private Vector3 change;
+	
 
 	private IEnumerator KnockCo(float kbTime)
 	{
 		if(rigidbody != null)
 		{
 			yield return new WaitForSeconds(kbTime);
-			rigidbody.velocity = Vector2.zero;
-			currentState = PlayerState.idle;
 			rigidbody.velocity = Vector2.zero;
 		}
 	}
@@ -42,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
 		if(currentHealth.runtimeValue > 0)
 		{
 			StartCoroutine(KnockCo(kbTime));
+			currentKBTime = kbTime;
 		}
 		else
 		{
@@ -52,9 +52,9 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		//currentState = PlayerState.idle;
 		animator = GetComponent<Animator>();
 		rigidbody = GetComponent<Rigidbody2D>();
+		currentKBTime = 0f;
 		animator.SetFloat("moveX", 0);
 		animator.SetFloat("moveY", -1);
 		transform.position = startingPosition.initialValue;
@@ -66,7 +66,11 @@ public class PlayerMovement : MonoBehaviour
 		change.x = Input.GetAxisRaw("Horizontal");
 		change.y = Input.GetAxisRaw("Vertical");
 
-		if (Input.GetButtonDown("knife"))
+		if (currentKBTime > 0f)
+		{
+			currentKBTime -= Time.deltaTime;
+		}
+		else if (Input.GetButtonDown("knife"))
 		{
 			animator.Play("Knifing");
 			animator.SetBool("moving", false);
@@ -87,6 +91,11 @@ public class PlayerMovement : MonoBehaviour
 		{
 			animator.SetBool("moving", false);
 		}
+
+		if (currentKBTime < 0f)
+		{
+			currentKBTime = 0f;
+		}
     }
 
     void FixedUpdate()
@@ -95,10 +104,6 @@ public class PlayerMovement : MonoBehaviour
     	{
 			change.Normalize();
 			rigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
-    	}
-    	else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Knifing"))
-    	{
-    		change = Vector3.zero;
     	}
     }
 }

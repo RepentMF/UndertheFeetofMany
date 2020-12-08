@@ -533,6 +533,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 4bed1a8ded234e24ea7e4066c8c5031e,
         type: 2}
+    - target: {fileID: 8676862407922533656, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -595,6 +600,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37a7ab54d42670e4b974904b087b9837, type: 3}
+--- !u!4 &820166412 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
+    type: 3}
+  m_PrefabInstance: {fileID: 820166411}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &937217227
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,6 +617,7 @@ GameObject:
   - component: {fileID: 937217230}
   - component: {fileID: 937217229}
   - component: {fileID: 937217228}
+  - component: {fileID: 937217231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -648,7 +660,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -678,6 +690,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &937217231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937217227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fced41a71690e749933fcca0c71b3e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 820166412}
+  smoothing: 2
+  maxPosition: {x: 0.9, y: 2}
+  minPosition: {x: -0.9, y: -2}
 --- !u!1 &1058945091
 GameObject:
   m_ObjectHideFlags: 0
