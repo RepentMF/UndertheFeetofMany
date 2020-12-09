@@ -2,16 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PlayerState
-{
-	walk,
-	knife,
-	hammer1,
-	interact,
-	stagger, 
-	idle
-}
-
 public class PlayerMovement : MonoBehaviour
 {
 	public float speed;
@@ -70,18 +60,26 @@ public class PlayerMovement : MonoBehaviour
 		{
 			currentKBTime -= Time.deltaTime;
 		}
-		else if (Input.GetButtonDown("knife"))
+		else if (Input.GetButtonDown("knife") && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || 
+			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
 		{
 			animator.Play("Knifing");
 			animator.SetBool("moving", false);
 		}
-		else if (Input.GetButtonDown("hammer1"))
+		else if (Input.GetButtonDown("swordLight") && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || 
+			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
+		{
+			animator.Play("Swording");
+			animator.SetBool("moving", false);
+		}
+		else if (Input.GetButtonDown("hammerLight") && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || 
+			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
 		{
 			animator.Play("Hammering");
 			animator.SetBool("moving", false);
 		}
 		else if (change != Vector3.zero && !animator.GetCurrentAnimatorStateInfo(0).IsName("Knifing") && 
-			!animator.GetCurrentAnimatorStateInfo(0).IsName("Hammering"))
+			!animator.GetCurrentAnimatorStateInfo(0).IsName("Hammering") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Swording"))
 		{
 			animator.SetFloat("moveX", change.x);
 			animator.SetFloat("moveY", change.y);
