@@ -60,18 +60,30 @@ public class PlayerMovement : MonoBehaviour
 		{
 			currentKBTime -= Time.deltaTime;
 		}
+		
+		/*example code:
+		else if (Input.GetButtonDown(attack) && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")) ||
+			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
+		{
+			animator.Play(attack);
+			animator.SetBool("moving", false);
+		}
+		*/
+		/*eventually check inventory for if knife is equipped*/
 		else if (Input.GetButtonDown("knife") && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || 
 			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
 		{
 			animator.Play("Knifing");
 			animator.SetBool("moving", false);
 		}
+		/*eventually check inventory for if sword is equipped*/
 		else if (Input.GetButtonDown("swordLight") && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || 
 			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
 		{
 			animator.Play("Swording");
 			animator.SetBool("moving", false);
 		}
+		/*eventually check inventory for if hammer is equipped*/
 		else if (Input.GetButtonDown("hammerLight") && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || 
 			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
 		{
