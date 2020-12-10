@@ -33,6 +33,7 @@ public class Enemy : MonoBehaviour
 			this.gameObject.SetActive(false);
 		}
 	}
+	
 	private IEnumerator KnockCo(Rigidbody2D rigidbody, float kbTime)
 	{
 		if(rigidbody != null)

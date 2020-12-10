@@ -679,7 +679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 2
-  kbTime: 0.2
+  kbTime: 0.5
   damage: 1
 --- !u!1 &674210750
 GameObject:
@@ -9132,6 +9132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: speed
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676862407922533656, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: attack
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8676862407922533657, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}

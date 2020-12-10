@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+	public bool comboBool = false;
+	public int attackBuffer;
+	public int comboCounter = 1;
 	public float speed;
 	public float currentKBTime;
+	public string attack;
 	public FloatValue currentHealth;
 	public Signal playerHealthSignal;
 	public Animator animator;
@@ -42,68 +46,71 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+    	QualitySettings.vSyncCount = 0;
+    	Application.targetFrameRate = 45;
 		animator = GetComponent<Animator>();
 		rigidbody = GetComponent<Rigidbody2D>();
 		currentKBTime = 0f;
+		attack = "";
 		animator.SetFloat("moveX", 0);
 		animator.SetFloat("moveY", -1);
 		transform.position = startingPosition.initialValue;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 		change.x = Input.GetAxisRaw("Horizontal");
 		change.y = Input.GetAxisRaw("Vertical");
+
+		if (animator.GetBool("moving"))
+    	{
+			change.Normalize();
+			rigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
+    	}
+
+		if (attackBuffer > 0)
+		{
+			attackBuffer--;
+		}
+
+		if (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+		{
+			comboCounter = 1;
+			comboBool = false;
+		}
+
+		if (comboBool && attackBuffer <= 20 && Input.GetButtonDown(attack))
+		{
+			comboCounter++;
+			string var = attack + comboCounter.ToString();
+			attackBuffer = 50;
+			animator.Play(var);
+		}
 
 		if (currentKBTime > 0f)
 		{
 			currentKBTime -= Time.deltaTime;
 		}
-		
-		/*example code:
-		else if (Input.GetButtonDown(attack) && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")) ||
-			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
+		else if ((!comboBool && Input.GetButtonDown(attack) && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || 
+			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking"))))
 		{
-			animator.Play(attack);
-			animator.SetBool("moving", false);
-		}
-		*/
-		else if ((Input.GetButtonDown("knife") || Input.GetButtonDown("swordLight") || Input.GetButtonDown("hammerLight")) && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || animator.GetCurrentAnimatorStateInfo(0).IsName("Walking"))) {
 			// Stop the player
 			animator.SetBool("moving", false);
 			// Swing the weapon
-			if (Input.GetButtonDown("knife")) {
-				animator.Play("Knifing");
-			} else if (Input.GetButtonDown("swordLight")) {
-				animator.Play("Swording");
-			} else if (Input.GetButtonDown("hammerLight")) {
-				animator.Play("Hammering");
+			animator.Play(attack);
+			comboBool = true;
+
+			switch (attack)
+			{
+				case "Hammer":
+					attackBuffer = 50;
+					break;
+				default:
+					break;
 			}
 		}
-		/*eventually check inventory for if knife is equipped*/
-		else if (Input.GetButtonDown("knife") && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || 
-			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
-		{
-			animator.Play("Knifing");
-			animator.SetBool("moving", false);
-		}
-		/*eventually check inventory for if sword is equipped*/
-		else if (Input.GetButtonDown("swordLight") && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || 
-			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
-		{
-			animator.Play("Swording");
-			animator.SetBool("moving", false);
-		}
-		/*eventually check inventory for if hammer is equipped*/
-		else if (Input.GetButtonDown("hammerLight") && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || 
-			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
-		{
-			animator.Play("Hammering");
-			animator.SetBool("moving", false);
-		}
-		else if (change != Vector3.zero && !animator.GetCurrentAnimatorStateInfo(0).IsName("Knifing") && 
-			!animator.GetCurrentAnimatorStateInfo(0).IsName("Hammering") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Swording"))
+		else if (change != Vector3.zero && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
 		{
 			animator.SetFloat("moveX", change.x);
 			animator.SetFloat("moveY", change.y);
@@ -120,12 +127,12 @@ public class PlayerMovement : MonoBehaviour
 		}
     }
 
-    void FixedUpdate()
-    {
-    	if (animator.GetBool("moving"))
-    	{
-			change.Normalize();
-			rigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
-    	}
-    }
+   //  void FixedUpdate()
+   //  {
+   // //  	if (animator.GetBool("moving"))
+   // //  	{
+			// // change.Normalize();
+			// // rigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
+   // //  	}
+   //  }
 }
