@@ -69,6 +69,18 @@ public class PlayerMovement : MonoBehaviour
 			animator.SetBool("moving", false);
 		}
 		*/
+		else if ((Input.GetButtonDown("knife") || Input.GetButtonDown("swordLight") || Input.GetButtonDown("hammerLight")) && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || animator.GetCurrentAnimatorStateInfo(0).IsName("Walking"))) {
+			// Stop the player
+			animator.SetBool("moving", false);
+			// Swing the weapon
+			if (Input.GetButtonDown("knife")) {
+				animator.Play("Knifing");
+			} else if (Input.GetButtonDown("swordLight")) {
+				animator.Play("Swording");
+			} else if (Input.GetButtonDown("hammerLight")) {
+				animator.Play("Hammering");
+			}
+		}
 		/*eventually check inventory for if knife is equipped*/
 		else if (Input.GetButtonDown("knife") && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || 
 			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
