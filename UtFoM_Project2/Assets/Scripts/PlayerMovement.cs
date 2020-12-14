@@ -1,21 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
 	public bool comboBool = false;
-	public int attackBuffer;
-	public int comboCounter = 1;
+	//public int comboCounter = 1;
+	public float attackFrame;
+	public float attackBuffer;
 	public float speed;
 	public float currentKBTime;
-	public string attack;
+	public string light;
+	public string med;
+	public string launch;
+	public string heavy;
 	public FloatValue currentHealth;
 	public Signal playerHealthSignal;
 	public Animator animator;
 	public VectorValue startingPosition;
 	private Rigidbody2D rigidbody;
-	private Vector3 change;
+	public Vector3 change;
 	
 
 	private IEnumerator KnockCo(float kbTime)
@@ -51,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
 		animator = GetComponent<Animator>();
 		rigidbody = GetComponent<Rigidbody2D>();
 		currentKBTime = 0f;
-		attack = "";
+		light = "Hammer";
 		animator.SetFloat("moveX", 0);
 		animator.SetFloat("moveY", -1);
 		transform.position = startingPosition.initialValue;
@@ -63,76 +68,158 @@ public class PlayerMovement : MonoBehaviour
 		change.x = Input.GetAxisRaw("Horizontal");
 		change.y = Input.GetAxisRaw("Vertical");
 
-		if (animator.GetBool("moving"))
-    	{
-			change.Normalize();
-			rigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
-    	}
-
-		if (attackBuffer > 0)
+		switch (light)
 		{
-			attackBuffer--;
+			case "Knife":
+				med = light;
+				launch = light;
+				heavy = light;
+				break;
+			case "Sword":
+				med = light + "2";
+				launch = light + "3";
+				heavy = light + "3";
+				break;
+			case "Hammer":
+				med = light + "2";
+				launch = light + "3";
+				heavy = light + "4";
+				break;
+			default:
+				break;
 		}
 
-		if (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+		if (comboBool && attackBuffer == 0f)
 		{
-			comboCounter = 1;
+			attackFrame = animator.GetCurrentAnimatorStateInfo(0).length * 60f;
+		}
+
+		if (attackBuffer < attackFrame)
+		{
+			attackBuffer = (float) Math.Ceiling(animator.GetCurrentAnimatorStateInfo(0).normalizedTime * attackFrame);
+		}
+		else if (attackBuffer >= attackFrame)
+		{
+			attackBuffer = 0f;
 			comboBool = false;
+			attackFrame = 0f;
 		}
 
-		if (comboBool && attackBuffer <= 20 && Input.GetButtonDown(attack))
-		{
-			comboCounter++;
-			string var = attack + comboCounter.ToString();
-			attackBuffer = 50;
-			animator.Play(var);
-		}
+		// if (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+		// {
+		// 	comboBool = false;
+		// }
 
-		if (currentKBTime > 0f)
+		if (comboBool)
 		{
-			currentKBTime -= Time.deltaTime;
-		}
-		else if ((!comboBool && Input.GetButtonDown(attack) && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || 
-			animator.GetCurrentAnimatorStateInfo(0).IsName("Walking"))))
-		{
-			// Stop the player
-			animator.SetBool("moving", false);
-			// Swing the weapon
-			animator.Play(attack);
-			comboBool = true;
-
-			switch (attack)
+			switch (light)
 			{
+				case "Knife":
+					break;
+				case "Sword":
+					if (attackBuffer >= 10f && (Input.GetButtonDown(light) || Input.GetButtonDown(med)))
+					{
+						animator.SetBool("moving", false);
+						attackBuffer = 0f;
+						animator.Play(med);
+					}
+					else if (attackBuffer >= 10f && (Input.GetButtonDown(launch) || Input.GetButtonDown(heavy)) && animator.GetCurrentAnimatorStateInfo(0).IsName(med))
+					{
+						animator.SetBool("moving", false);
+						attackBuffer = 0f;
+						attackFrame = 0f;
+						animator.Play(heavy);
+						comboBool = false;
+					}
+					break;
 				case "Hammer":
-					attackBuffer = 50;
+					if (attackBuffer >= 30f && (Input.GetButtonDown(light) || Input.GetButtonDown(med)))
+					{
+						animator.SetBool("moving", false);
+						attackBuffer = 0f;
+						animator.Play(med);
+					}
+					else if (attackBuffer >= 30f && Input.GetButtonDown(launch) && animator.GetCurrentAnimatorStateInfo(0).IsName(med))
+					{
+						animator.SetBool("moving", false);
+						attackBuffer = 0f;
+						animator.Play(launch);
+					}
+					else if (attackBuffer >= 40f && Input.GetButtonDown(heavy) && animator.GetCurrentAnimatorStateInfo(0).IsName(launch))
+					{
+						animator.SetBool("moving", false);
+						attackBuffer = 0f;
+						attackFrame = 0f;
+						animator.Play(heavy);
+						comboBool = false;
+					}
 					break;
 				default:
 					break;
 			}
 		}
-		else if (change != Vector3.zero && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")))
+
+		// if (comboBool && attackBuffer >= 30f && (Input.GetButtonDown(light) || Input.GetButtonDown(med)))
+		// {
+		// 	attackBuffer = 0f;
+		// 	animator.Play(med);
+		// }
+		
+		//"State Machine" block
+		if (currentKBTime > 0f)
+		{
+			currentKBTime -= Time.deltaTime;
+		}
+		else if ((!comboBool && (Input.GetButtonDown(light) || Input.GetButtonDown(med) || Input.GetButtonDown(launch) || Input.GetButtonDown(heavy)) && 
+			(animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || animator.GetCurrentAnimatorStateInfo(0).IsName("Walking"))))
+		{
+			// Stop the player
+			animator.SetBool("moving", false);
+			// Swing the weapon
+			if (Input.GetButtonDown(light) || Input.GetButtonDown(med))
+			{
+				animator.Play(light);
+				comboBool = true;
+			}
+			else if (Input.GetButtonDown(launch))
+			{
+				animator.Play(launch);
+				if (light == "Hammer")
+				{
+					comboBool = true;
+				}
+			}
+			else
+			{
+				animator.Play(heavy);
+			}
+
+			attackBuffer = 0f;
+		}
+		else if (change != Vector3.zero && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || animator.GetCurrentAnimatorStateInfo(0).IsName("Walking"))
+			&& !(animator.GetCurrentAnimatorStateInfo(0).IsName(light) || animator.GetCurrentAnimatorStateInfo(0).IsName(med) || animator.GetCurrentAnimatorStateInfo(0).IsName(launch) 
+			|| animator.GetCurrentAnimatorStateInfo(0).IsName(heavy)))
 		{
 			animator.SetFloat("moveX", change.x);
 			animator.SetFloat("moveY", change.y);
 			animator.SetBool("moving", true);
 		}
-		else if (change == Vector3.zero)
+		else if (change == Vector3.zero/* && animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")*/)
 		{
 			animator.SetBool("moving", false);
+			//Debug.Break();
 		}
 
 		if (currentKBTime < 0f)
 		{
 			currentKBTime = 0f;
 		}
-    }
 
-   //  void FixedUpdate()
-   //  {
-   // //  	if (animator.GetBool("moving"))
-   // //  	{
-			// // change.Normalize();
-			// // rigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
-   // //  	}
-   //  }
+		if (animator.GetBool("moving") && animator.GetCurrentAnimatorStateInfo(0).IsName("Walking"))
+    	{
+    		Debug.Log(animator.GetBool("moving"));
+			change.Normalize();
+			rigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
+    	}
+    }
 }
