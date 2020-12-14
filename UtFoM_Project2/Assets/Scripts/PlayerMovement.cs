@@ -119,14 +119,10 @@ public class PlayerMovement : MonoBehaviour
 						if (animator.GetCurrentAnimatorStateInfo(0).IsName("Knife"))
 						{
 							animator.Play(med);
-							swipe++;
-							Debug.Log(swipe);
 						}
 						if (animator.GetCurrentAnimatorStateInfo(0).IsName("Knife2"))
 						{
 							animator.Play(light);
-							swipe++;
-							Debug.Log(swipe);
 						}
 					}
 					break;
@@ -188,7 +184,6 @@ public class PlayerMovement : MonoBehaviour
 			{
 				animator.Play(light);
 				swipe++;
-				Debug.Log(swipe);
 				comboBool = true;
 			}
 			else if (Input.GetButtonDown(launch))
@@ -234,7 +229,6 @@ public class PlayerMovement : MonoBehaviour
 
 		if (animator.GetBool("moving") && animator.GetCurrentAnimatorStateInfo(0).IsName("Walking"))
     	{
-    		Debug.Log(animator.GetBool("moving"));
 			change.Normalize();
 			rigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
     	}
