@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 	public bool comboBool = false;
+	public int swipe = 0;
 	//public int comboCounter = 1;
 	public float attackFrame;
 	public float attackBuffer;
@@ -56,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
 		animator = GetComponent<Animator>();
 		rigidbody = GetComponent<Rigidbody2D>();
 		currentKBTime = 0f;
-		light = "Hammer";
+		light = "Knife";
 		animator.SetFloat("moveX", 0);
 		animator.SetFloat("moveY", -1);
 		transform.position = startingPosition.initialValue;
@@ -68,10 +69,11 @@ public class PlayerMovement : MonoBehaviour
 		change.x = Input.GetAxisRaw("Horizontal");
 		change.y = Input.GetAxisRaw("Vertical");
 
+		// Choose which weapon is being used
 		switch (light)
 		{
 			case "Knife":
-				med = light;
+				med = light + "2";
 				launch = light;
 				heavy = light;
 				break;
@@ -98,23 +100,35 @@ public class PlayerMovement : MonoBehaviour
 		{
 			attackBuffer = (float) Math.Ceiling(animator.GetCurrentAnimatorStateInfo(0).normalizedTime * attackFrame);
 		}
-		else if (attackBuffer >= attackFrame)
+		else if (attackBuffer == attackFrame)
 		{
 			attackBuffer = 0f;
 			comboBool = false;
 			attackFrame = 0f;
 		}
 
-		// if (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
-		// {
-		// 	comboBool = false;
-		// }
-
 		if (comboBool)
 		{
 			switch (light)
 			{
 				case "Knife":
+					if (attackBuffer >= 1f && (Input.GetButtonDown(light) || Input.GetButtonDown(launch) || Input.GetButtonDown(heavy)))
+					{
+						animator.SetBool("moving", false);
+						attackBuffer = 0f;
+						if (animator.GetCurrentAnimatorStateInfo(0).IsName("Knife"))
+						{
+							animator.Play(med);
+							swipe++;
+							Debug.Log(swipe);
+						}
+						if (animator.GetCurrentAnimatorStateInfo(0).IsName("Knife2"))
+						{
+							animator.Play(light);
+							swipe++;
+							Debug.Log(swipe);
+						}
+					}
 					break;
 				case "Sword":
 					if (attackBuffer >= 10f && (Input.GetButtonDown(light) || Input.GetButtonDown(med)))
@@ -159,12 +173,6 @@ public class PlayerMovement : MonoBehaviour
 			}
 		}
 
-		// if (comboBool && attackBuffer >= 30f && (Input.GetButtonDown(light) || Input.GetButtonDown(med)))
-		// {
-		// 	attackBuffer = 0f;
-		// 	animator.Play(med);
-		// }
-		
 		//"State Machine" block
 		if (currentKBTime > 0f)
 		{
@@ -179,6 +187,8 @@ public class PlayerMovement : MonoBehaviour
 			if (Input.GetButtonDown(light) || Input.GetButtonDown(med))
 			{
 				animator.Play(light);
+				swipe++;
+				Debug.Log(swipe);
 				comboBool = true;
 			}
 			else if (Input.GetButtonDown(launch))
@@ -192,6 +202,14 @@ public class PlayerMovement : MonoBehaviour
 			else
 			{
 				animator.Play(heavy);
+				if (light != "Knife")
+				{
+					comboBool = false;	
+				}
+				else
+				{
+					comboBool = true;
+				}
 			}
 
 			attackBuffer = 0f;
@@ -204,10 +222,9 @@ public class PlayerMovement : MonoBehaviour
 			animator.SetFloat("moveY", change.y);
 			animator.SetBool("moving", true);
 		}
-		else if (change == Vector3.zero/* && animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")*/)
+		else if (change == Vector3.zero)
 		{
 			animator.SetBool("moving", false);
-			//Debug.Break();
 		}
 
 		if (currentKBTime < 0f)
