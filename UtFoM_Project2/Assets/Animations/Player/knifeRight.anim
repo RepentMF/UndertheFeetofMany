@@ -51,7 +51,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeRight/right_hitbox1
+    path: Knife/KnifeRight/right_hitbox1
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -88,7 +88,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeRight/right_hitbox2
+    path: Knife/KnifeRight/right_hitbox2
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -125,7 +125,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeRight/right_hitbox3
+    path: Knife/KnifeRight/right_hitbox3
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves:
@@ -157,21 +157,21 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2836923720
+      path: 3491601503
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 806442226
+      path: 1226100197
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1192649828
+      path: 1041497459
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -245,7 +245,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeRight/right_hitbox1
+    path: Knife/KnifeRight/right_hitbox1
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -282,7 +282,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeRight/right_hitbox2
+    path: Knife/KnifeRight/right_hitbox2
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -319,7 +319,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeRight/right_hitbox3
+    path: Knife/KnifeRight/right_hitbox3
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []

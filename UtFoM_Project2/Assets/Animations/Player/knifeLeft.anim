@@ -51,7 +51,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeLeft/left_hitbox1
+    path: Knife/KnifeLeft/left_hitbox1
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -88,7 +88,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeLeft/left_hitbox2
+    path: Knife/KnifeLeft/left_hitbox2
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -125,7 +125,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeLeft/left_hitbox3
+    path: Knife/KnifeLeft/left_hitbox3
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves:
@@ -157,21 +157,21 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 4062933005
+      path: 96642532
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1797398967
+      path: 2630612062
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 472191265
+      path: 3956065480
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -245,7 +245,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeLeft/left_hitbox1
+    path: Knife/KnifeLeft/left_hitbox1
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -282,7 +282,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeLeft/left_hitbox2
+    path: Knife/KnifeLeft/left_hitbox2
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -319,7 +319,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeLeft/left_hitbox3
+    path: Knife/KnifeLeft/left_hitbox3
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []

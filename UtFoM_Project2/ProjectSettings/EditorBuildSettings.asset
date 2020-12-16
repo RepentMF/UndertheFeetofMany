@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/BottomBasement.unity
+    guid: 830fe8ac77407f543ab7304023cb6e2e
+  - enabled: 1
     path: Assets/Scenes/HouseInterior.unity
     guid: 082407a771da3c44085de8e9bddf99db
   - enabled: 1

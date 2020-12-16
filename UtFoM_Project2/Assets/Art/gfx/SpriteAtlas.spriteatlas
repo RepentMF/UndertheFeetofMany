@@ -43,10 +43,11 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 46151a80513d5d641b9d56bfee005b25, type: 3}
-    totalSpriteSurfaceArea: 1529398
+    totalSpriteSurfaceArea: 1854694
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 12b059208806bca48872651e5988bf9f, type: 3}
   - {fileID: 21301654, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
   - {fileID: 21301674, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
   - {fileID: 21301694, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
@@ -1120,6 +1121,10 @@ SpriteAtlas:
   - {fileID: 21301246, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
   - {fileID: 21301346, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
   - {fileID: 21300258, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
+  - {fileID: -4683998418971264338, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
+  - {fileID: 7088160253405218265, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
+  - {fileID: -3268874430650260426, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
+  - {fileID: 5867589390420878045, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
   - {fileID: -8046433660304297415, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
   - {fileID: -4641832665535523426, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
   - {fileID: -7977959474954063619, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
@@ -1834,6 +1839,7 @@ SpriteAtlas:
   - {fileID: 21300146, guid: f8f7f51d951fa2d4d91d63ea90d4a4da, type: 3}
   - {fileID: 21300140, guid: f8f7f51d951fa2d4d91d63ea90d4a4da, type: 3}
   - {fileID: 21300142, guid: f8f7f51d951fa2d4d91d63ea90d4a4da, type: 3}
+  - {fileID: 21300000, guid: bc2dd52eb0410bd4e89c26571bca168f, type: 3}
   - {fileID: 441131002860442923, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
   - {fileID: -3079465430885623683, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
   - {fileID: -4858294329200505192, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
@@ -1961,6 +1967,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 98e071ee4e35dc8479ff923a34455a23, type: 3}
   - {fileID: 21300000, guid: 01f9990fa5ba3a8488c567b6be41f9f0, type: 3}
   m_PackedSpriteNamesToIndex:
+  - BB
   - Overworld_827
   - Overworld_837
   - Overworld_847
@@ -3034,6 +3041,10 @@ SpriteAtlas:
   - Overworld_623
   - Overworld_673
   - Overworld_129
+  - TiledSprites_0
+  - TiledSprites_1
+  - TiledSprites_2
+  - TiledSprites_3
   - MC_Male2_hammer_96
   - MC_Male2_hammer_97
   - MC_Male2_hammer_94
@@ -3748,6 +3759,7 @@ SpriteAtlas:
   - character_73
   - character_70
   - character_71
+  - BB_nobg
   - MC_Male2_80
   - MC_Male2_81
   - MC_Male2_31

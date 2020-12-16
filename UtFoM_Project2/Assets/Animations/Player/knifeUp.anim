@@ -51,7 +51,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeUp/up_hitbox1
+    path: Knife/KnifeUp/up_hitbox1
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -88,7 +88,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeUp/up_hitbox2
+    path: Knife/KnifeUp/up_hitbox2
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -125,7 +125,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeUp/up_hitbox3
+    path: Knife/KnifeUp/up_hitbox3
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves:
@@ -157,21 +157,21 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 673372285
+      path: 2991638580
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2972420551
+      path: 727292302
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3324819793
+      path: 1549707544
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -245,7 +245,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeUp/up_hitbox1
+    path: Knife/KnifeUp/up_hitbox1
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -282,7 +282,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeUp/up_hitbox2
+    path: Knife/KnifeUp/up_hitbox2
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -319,7 +319,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: KnifeUp/up_hitbox3
+    path: Knife/KnifeUp/up_hitbox3
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []
