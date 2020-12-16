@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
 		light = "Knife";
 		animator.SetFloat("moveX", 0);
 		animator.SetFloat("moveY", -1);
-		transform.position = startingPosition.initialValue;
+		//transform.position = startingPosition.initialValue;
     }
 
     // Update is called once per frame
@@ -231,6 +231,12 @@ public class PlayerMovement : MonoBehaviour
     	{
 			change.Normalize();
 			rigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
+    	}
+
+    	if (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || animator.GetCurrentAnimatorStateInfo(0).IsName("Walking"))
+    	{
+    		attackBuffer = 0f;
+    		attackFrame = 0f;
     	}
     }
 }
