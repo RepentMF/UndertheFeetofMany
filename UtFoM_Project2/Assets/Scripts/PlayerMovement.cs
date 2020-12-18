@@ -20,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
 	public FloatValue currentHealth;
 	public Signal playerHealthSignal;
 	public Animator animator;
-	public VectorValue startingPosition;
 	private Rigidbody2D rigidbody;
 	public Vector3 change;
 	
@@ -65,7 +64,6 @@ public class PlayerMovement : MonoBehaviour
 		light = "Knife";
 		animator.SetFloat("moveX", 0);
 		animator.SetFloat("moveY", -1);
-		//transform.position = startingPosition.initialValue;
     }
 
     // Update is called once per frame

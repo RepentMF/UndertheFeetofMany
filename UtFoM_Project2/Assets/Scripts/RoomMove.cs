@@ -21,12 +21,21 @@ public class RoomMove : MonoBehaviour
 			cam.minPosition += cameraChange;
 			cam.maxPosition += cameraChange;
 			other.transform.position += playerChange;
+			cam.smoothing = 0.1f;
 			if (needText)
 			{
 				StartCoroutine(placeNameCo());
 			}
 		}
 	}
+
+	// private void OnTriggerExit2D(Collider2D other)
+	// {
+	// 	if (other.CompareTag("Player") && !other.isTrigger)
+	// 	{
+	// 		cam.smoothing = 2f;
+	// 	}
+	// }
 
 	private IEnumerator placeNameCo()
 	{

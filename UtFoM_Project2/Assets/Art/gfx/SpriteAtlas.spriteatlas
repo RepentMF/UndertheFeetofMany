@@ -43,11 +43,12 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 46151a80513d5d641b9d56bfee005b25, type: 3}
-    totalSpriteSurfaceArea: 3586150
+    totalSpriteSurfaceArea: 4044934
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 12b059208806bca48872651e5988bf9f, type: 3}
+  - {fileID: 21300000, guid: cfd001404f3e62f4283c368176545d55, type: 3}
   - {fileID: 21300000, guid: d427e8f1b3863d648b40e86a5a109dd7, type: 3}
   - {fileID: 21301654, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
   - {fileID: 21301674, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
@@ -1841,6 +1842,7 @@ SpriteAtlas:
   - {fileID: 21300146, guid: f8f7f51d951fa2d4d91d63ea90d4a4da, type: 3}
   - {fileID: 21300140, guid: f8f7f51d951fa2d4d91d63ea90d4a4da, type: 3}
   - {fileID: 21300142, guid: f8f7f51d951fa2d4d91d63ea90d4a4da, type: 3}
+  - {fileID: 21300000, guid: 2ba3fdbd6d718fa49aae5d808ccedcb2, type: 3}
   - {fileID: 21300000, guid: bc2dd52eb0410bd4e89c26571bca168f, type: 3}
   - {fileID: 441131002860442923, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
   - {fileID: -3079465430885623683, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
@@ -1970,6 +1972,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 01f9990fa5ba3a8488c567b6be41f9f0, type: 3}
   m_PackedSpriteNamesToIndex:
   - BB
+  - TT
   - TP_nobg
   - Overworld_827
   - Overworld_837
@@ -3763,6 +3766,7 @@ SpriteAtlas:
   - character_73
   - character_70
   - character_71
+  - TT_nobg
   - BB_nobg
   - MC_Male2_80
   - MC_Male2_81
