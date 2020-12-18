@@ -9813,7 +9813,7 @@ MonoBehaviour:
   currentHealth: {fileID: 11400000, guid: 713e190effe6aa340aeb3962248289ff, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: f2de9eacb21a0ab43b4eb8f3c64f3d2e, type: 2}
   animator: {fileID: 0}
-  startingPosition: {fileID: 0}
+  startingPosition: {fileID: 11400000, guid: 4bed1a8ded234e24ea7e4066c8c5031e, type: 2}
   change: {x: 0, y: 0, z: 0}
 --- !u!95 &8676862407922533657
 Animator:

@@ -228,13 +228,13 @@ PrefabInstance:
         type: 3}
       propertyPath: fadeInPanel
       value: 
-      objectReference: {fileID: 3237370276222634842, guid: fd4525edc09319f4fa38b9e0962b9b72,
+      objectReference: {fileID: 2923732638672300784, guid: f9510dfb88a5f8648ae3c628880f17f4,
         type: 3}
     - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: fadeOutPanel
       value: 
-      objectReference: {fileID: 3974048091055410891, guid: 3be4b31b9b251b74f8d7f62241788566,
+      objectReference: {fileID: 1957570387181775694, guid: 808be2c357dfb0e43ac9cca29ee75aec,
         type: 3}
     - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}

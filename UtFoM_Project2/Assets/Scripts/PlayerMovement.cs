@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
 	public string med;
 	public string launch;
 	public string heavy;
+	public VectorValue playerPos;
 	public FloatValue currentHealth;
 	public Signal playerHealthSignal;
 	public Animator animator;
@@ -56,6 +57,10 @@ public class PlayerMovement : MonoBehaviour
     	Application.targetFrameRate = 45;
 		animator = GetComponent<Animator>();
 		rigidbody = GetComponent<Rigidbody2D>();
+		if (playerPos.initialValue != Vector2.zero)
+		{
+			transform.position = playerPos.initialValue;
+		}
 		currentKBTime = 0f;
 		light = "Knife";
 		animator.SetFloat("moveX", 0);
