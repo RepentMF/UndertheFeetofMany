@@ -49,6 +49,11 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
 
+	public bool Anicheck(string name)
+	{
+		return animator.GetCurrentAnimatorStateInfo(0).IsName(name);
+	}
+
     // Start is called before the first frame update
     void Start()
     {
@@ -103,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
 		{
 			attackBuffer = (float) Math.Ceiling(animator.GetCurrentAnimatorStateInfo(0).normalizedTime * attackFrame);
 		}
-		else if (attackBuffer == attackFrame)
+		else if (attackBuffer >= attackFrame)
 		{
 			attackBuffer = 0f;
 			comboBool = false;
@@ -115,15 +120,15 @@ public class PlayerMovement : MonoBehaviour
 			switch (light)
 			{
 				case "Knife":
-					if (attackBuffer >= 1f && (Input.GetButtonDown(light) || Input.GetButtonDown(launch) || Input.GetButtonDown(heavy)))
+					if (attackBuffer >= 5f && (Input.GetButtonDown(light) || Input.GetButtonDown(launch) || Input.GetButtonDown(heavy)))
 					{
 						animator.SetBool("moving", false);
 						attackBuffer = 0f;
-						if (animator.GetCurrentAnimatorStateInfo(0).IsName("Knife"))
+						if (Anicheck("Knife"))
 						{
 							animator.Play(med);
 						}
-						if (animator.GetCurrentAnimatorStateInfo(0).IsName("Knife2"))
+						else if (Anicheck("Knife2"))
 						{
 							animator.Play(light);
 						}
@@ -136,7 +141,8 @@ public class PlayerMovement : MonoBehaviour
 						attackBuffer = 0f;
 						animator.Play(med);
 					}
-					else if (attackBuffer >= 10f && (Input.GetButtonDown(launch) || Input.GetButtonDown(heavy)) && animator.GetCurrentAnimatorStateInfo(0).IsName(med))
+					else if (attackBuffer >= 10f && (Input.GetButtonDown(launch) || Input.GetButtonDown(heavy)) && 
+						Anicheck(med))
 					{
 						animator.SetBool("moving", false);
 						attackBuffer = 0f;
@@ -146,19 +152,20 @@ public class PlayerMovement : MonoBehaviour
 					}
 					break;
 				case "Hammer":
-					if (attackBuffer >= 30f && (Input.GetButtonDown(light) || Input.GetButtonDown(med)))
+					if (attackBuffer >= 30f && (Input.GetButtonDown(light) || Input.GetButtonDown(med)) && 
+						!Anicheck(launch))
 					{
 						animator.SetBool("moving", false);
 						attackBuffer = 0f;
 						animator.Play(med);
 					}
-					else if (attackBuffer >= 30f && Input.GetButtonDown(launch) && animator.GetCurrentAnimatorStateInfo(0).IsName(med))
+					else if (attackBuffer >= 30f && Input.GetButtonDown(launch) && Anicheck(med))
 					{
 						animator.SetBool("moving", false);
 						attackBuffer = 0f;
 						animator.Play(launch);
 					}
-					else if (attackBuffer >= 40f && Input.GetButtonDown(heavy) && animator.GetCurrentAnimatorStateInfo(0).IsName(launch))
+					else if (attackBuffer >= 40f && Input.GetButtonDown(heavy) && Anicheck(launch))
 					{
 						animator.SetBool("moving", false);
 						attackBuffer = 0f;
@@ -170,6 +177,11 @@ public class PlayerMovement : MonoBehaviour
 				default:
 					break;
 			}
+
+			if (Anicheck("Idle") || Anicheck("Walking"))
+			{
+				comboBool = false;
+			}
 		}
 
 		//"State Machine" block
@@ -178,7 +190,7 @@ public class PlayerMovement : MonoBehaviour
 			currentKBTime -= Time.deltaTime;
 		}
 		else if ((!comboBool && (Input.GetButtonDown(light) || Input.GetButtonDown(med) || Input.GetButtonDown(launch) || Input.GetButtonDown(heavy)) && 
-			(animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || animator.GetCurrentAnimatorStateInfo(0).IsName("Walking"))))
+			(Anicheck("Idle") || Anicheck("Walking"))))
 		{
 			// Stop the player
 			animator.SetBool("moving", false);
@@ -212,9 +224,9 @@ public class PlayerMovement : MonoBehaviour
 
 			attackBuffer = 0f;
 		}
-		else if (change != Vector3.zero && (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || animator.GetCurrentAnimatorStateInfo(0).IsName("Walking"))
-			&& !(animator.GetCurrentAnimatorStateInfo(0).IsName(light) || animator.GetCurrentAnimatorStateInfo(0).IsName(med) || animator.GetCurrentAnimatorStateInfo(0).IsName(launch) 
-			|| animator.GetCurrentAnimatorStateInfo(0).IsName(heavy)))
+		else if (change != Vector3.zero && (Anicheck("Idle") || Anicheck("Walking"))
+			&& !(Anicheck(light) || Anicheck(med) || Anicheck(launch) 
+			|| Anicheck(heavy)))
 		{
 			animator.SetFloat("moveX", change.x);
 			animator.SetFloat("moveY", change.y);
@@ -230,13 +242,13 @@ public class PlayerMovement : MonoBehaviour
 			currentKBTime = 0f;
 		}
 
-		if (animator.GetBool("moving") && animator.GetCurrentAnimatorStateInfo(0).IsName("Walking"))
+		if (animator.GetBool("moving") && Anicheck("Walking"))
     	{
 			change.Normalize();
 			rigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
     	}
 
-    	if (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle") || animator.GetCurrentAnimatorStateInfo(0).IsName("Walking"))
+    	if (Anicheck("Idle") || Anicheck("Walking"))
     	{
     		attackBuffer = 0f;
     		attackFrame = 0f;
