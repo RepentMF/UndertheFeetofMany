@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 	public string launch;
 	public string heavy;
 	public VectorValue playerPos;
+	public VectorValue playerDir;
 	public FloatValue currentHealth;
 	public Signal playerHealthSignal;
 	public Animator animator;
@@ -65,10 +66,17 @@ public class PlayerMovement : MonoBehaviour
 		{
 			transform.position = playerPos.initialValue;
 		}
-		currentKBTime = 0f;
-		light = "Knife";
+
 		animator.SetFloat("moveX", 0);
 		animator.SetFloat("moveY", -1);
+
+		if (playerDir.initialValue != Vector2.zero)
+		{
+			animator.SetFloat("moveX", playerDir.initialValue.x);
+			animator.SetFloat("moveY", playerDir.initialValue.y);
+		}
+		currentKBTime = 0f;
+		light = "Knife";
     }
 
     // Update is called once per frame

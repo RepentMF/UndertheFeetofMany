@@ -7,7 +7,9 @@ public class SceneTransition : MonoBehaviour
 {
 	public string sceneToLoad;
 	public Vector2 playerPosition;
-	public VectorValue playerStorage;
+	public Vector2 playerDirection;
+	public VectorValue playerNewPos;
+	public VectorValue playerNewDir;
 	public GameObject fadeInPanel;
 	public GameObject fadeOutPanel;
 	public float fadeWait;
@@ -25,7 +27,8 @@ public class SceneTransition : MonoBehaviour
 	{
 		if(collision.CompareTag("Player") && !collision.isTrigger)
 		{
-			playerStorage.initialValue = playerPosition;
+			playerNewPos.initialValue = playerPosition;
+			playerNewDir.initialValue = playerDirection;
 			StartCoroutine(FadeCo());
 			//SceneManager.LoadScene(sceneToLoad);
 		}
