@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+	public Vector2 difference;
 	public Transform target;
 	public float smoothing;
+	public float oldSmoothing;
+	public Vector2 camChange;
 	public Vector2 maxPosition;
 	public Vector2 minPosition;
+
+	void CamChange()
+	{
+		if (target.position.x > maxPosition.x || target.position.y > maxPosition.y)
+		{
+			maxPosition += camChange;
+			minPosition += camChange;
+		}
+		if (target.position.x < minPosition.x || target.position.y < minPosition.y)
+		{
+			maxPosition -= camChange;
+			minPosition -= camChange;
+		}
+	}
 
     // Start is called before the first frame update
     void Start()
     {
-		//transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);   
+		//transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
+		oldSmoothing = smoothing;
+		CamChange();
     }
 
 	private Vector3 RoundPosition(Vector3 position)
@@ -37,6 +56,10 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
+    	//CamChange();
+    	difference.x = maxPosition.x - target.position.x;
+    	difference.y = maxPosition.y - target.position.y;
+
 		if (transform.position != target.position)
 		{
 			Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);

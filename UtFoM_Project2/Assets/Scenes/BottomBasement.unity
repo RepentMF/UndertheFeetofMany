@@ -2105,16 +2105,15 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 8676862407922533656, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
-<<<<<<< Updated upstream
       propertyPath: light
       value: 
       objectReference: {fileID: 0}
-=======
+    - target: {fileID: 8676862407922533656, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
       propertyPath: playerDir
       value: 
       objectReference: {fileID: 11400000, guid: c4f53b491cd59ac478d5751da8e6de48,
         type: 2}
->>>>>>> Stashed changes
     - target: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_LocalPosition.x

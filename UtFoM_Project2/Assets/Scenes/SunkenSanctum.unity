@@ -134,6 +134,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 4bed1a8ded234e24ea7e4066c8c5031e,
         type: 2}
+    - target: {fileID: 8676862407922533656, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: playerDir
+      value: 
+      objectReference: {fileID: 11400000, guid: c4f53b491cd59ac478d5751da8e6de48,
+        type: 2}
     - target: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -351,12 +357,12 @@ PrefabInstance:
     - target: {fileID: 2052488379910948612, guid: 7c6034b183f1a2f4c917a66262db128b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1
+      value: 9.8
       objectReference: {fileID: 0}
     - target: {fileID: 2052488379910948612, guid: 7c6034b183f1a2f4c917a66262db128b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.24
+      value: 12.18
       objectReference: {fileID: 0}
     - target: {fileID: 2052488379910948612, guid: 7c6034b183f1a2f4c917a66262db128b,
         type: 3}
@@ -445,22 +451,42 @@ PrefabInstance:
     - target: {fileID: 2211619218807816704, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: m_Name
-      value: Scene Transition (East)
+      value: Scene Transition (South)
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816704, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2211619218807816705, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211619218807816705, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211619218807816705, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211619218807816705, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816710, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.98
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816710, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.24
+      value: -10.98
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816710, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
@@ -510,22 +536,22 @@ PrefabInstance:
     - target: {fileID: 2211619218807816710, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.01
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816710, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 7
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: playerPosition.x
-      value: -10.4
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: playerPosition.y
-      value: 1.33
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
@@ -548,7 +574,24 @@ PrefabInstance:
     - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: sceneToLoad
-      value: BottomBasement
+      value: ThePits
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: playerNewPos
+      value: 
+      objectReference: {fileID: 11400000, guid: 4bed1a8ded234e24ea7e4066c8c5031e,
+        type: 2}
+    - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: playerNewDir
+      value: 
+      objectReference: {fileID: 11400000, guid: c4f53b491cd59ac478d5751da8e6de48,
+        type: 2}
+    - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: playerDirection.y
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d03073aba2d829e41b9e189a764f336f, type: 3}
@@ -767,17 +810,17 @@ PrefabInstance:
     - target: {fileID: 3479239084847866428, guid: c577048ce2e077947a41f87bff0432bf,
         type: 3}
       propertyPath: maxPosition.x
-      value: 6.88
+      value: 7.87
       objectReference: {fileID: 0}
     - target: {fileID: 3479239084847866428, guid: c577048ce2e077947a41f87bff0432bf,
         type: 3}
       propertyPath: minPosition.x
-      value: -6.88
+      value: -7.87
       objectReference: {fileID: 0}
     - target: {fileID: 3479239084847866428, guid: c577048ce2e077947a41f87bff0432bf,
         type: 3}
       propertyPath: maxPosition.y
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3479239084847866428, guid: c577048ce2e077947a41f87bff0432bf,
         type: 3}
