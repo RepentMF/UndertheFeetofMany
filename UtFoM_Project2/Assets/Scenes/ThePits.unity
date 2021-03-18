@@ -2957,12 +2957,12 @@ PrefabInstance:
     - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: playerPosition.x
-      value: -10.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: playerPosition.y
-      value: 1.33
+      value: -9.5
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
