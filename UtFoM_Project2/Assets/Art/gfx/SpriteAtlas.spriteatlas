@@ -43,12 +43,15 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 46151a80513d5d641b9d56bfee005b25, type: 3}
-    totalSpriteSurfaceArea: 6144454
+    totalSpriteSurfaceArea: 13683286
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 12b059208806bca48872651e5988bf9f, type: 3}
+  - {fileID: 21300000, guid: 0ab93e201cd88834e93754c9645963d2, type: 3}
   - {fileID: 21300000, guid: cfd001404f3e62f4283c368176545d55, type: 3}
+  - {fileID: 21300000, guid: a73478b05a28b5241838fcc1f8c7b91a, type: 3}
+  - {fileID: 21300000, guid: 42779bd0a451e7244a978228e6fc3875, type: 3}
   - {fileID: 21300000, guid: d427e8f1b3863d648b40e86a5a109dd7, type: 3}
   - {fileID: 21301654, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
   - {fileID: 21301674, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
@@ -1129,6 +1132,8 @@ SpriteAtlas:
   - {fileID: -3268874430650260426, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
   - {fileID: 5867589390420878045, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
   - {fileID: 21300000, guid: 8c2724e29c20fc841945aa0dfa7fedd7, type: 3}
+  - {fileID: 21300000, guid: 721c1353d90b8f54c836b2f5cfa722a8, type: 3}
+  - {fileID: 21300000, guid: 3e7c48942cfa1ff4c8d962dca9adfad0, type: 3}
   - {fileID: -8046433660304297415, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
   - {fileID: -4641832665535523426, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
   - {fileID: -7977959474954063619, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
@@ -1311,6 +1316,8 @@ SpriteAtlas:
   - {fileID: 7540427358155989450, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
   - {fileID: 7427473825912618326, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
   - {fileID: 1540438928351404177, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  - {fileID: 21300000, guid: 156315169f6f93f46aa509cebe0cbb8f, type: 3}
+  - {fileID: 21300000, guid: f1f8293744a10464683aa51fce50de40, type: 3}
   - {fileID: 6151049599958356191, guid: e3fc485736054744a85223730e9a7369, type: 3}
   - {fileID: -8793897229306068037, guid: e3fc485736054744a85223730e9a7369, type: 3}
   - {fileID: -6900571148803751901, guid: e3fc485736054744a85223730e9a7369, type: 3}
@@ -1350,6 +1357,8 @@ SpriteAtlas:
   - {fileID: -2086765476746818828, guid: a9a757d770916d340aa6ad78b501bfa5, type: 3}
   - {fileID: 5566842953363755866, guid: a9a757d770916d340aa6ad78b501bfa5, type: 3}
   - {fileID: -7445369939883215787, guid: a9a757d770916d340aa6ad78b501bfa5, type: 3}
+  - {fileID: 21300000, guid: efdc6119682148c489727c81b1f46819, type: 3}
+  - {fileID: 21300000, guid: d421be39784897c4b8f5958d317cbcb4, type: 3}
   - {fileID: -1986772863260763996, guid: 001a2599f9cb4aa4eb109174fb4e704a, type: 3}
   - {fileID: 5760800594879907098, guid: 001a2599f9cb4aa4eb109174fb4e704a, type: 3}
   - {fileID: 7597474578557255370, guid: 001a2599f9cb4aa4eb109174fb4e704a, type: 3}
@@ -1764,6 +1773,7 @@ SpriteAtlas:
   - {fileID: 536419509007563539, guid: f45b5cca3ee54fd4e93402fd06b8938e, type: 3}
   - {fileID: 1036803682579554421, guid: f45b5cca3ee54fd4e93402fd06b8938e, type: 3}
   - {fileID: 5559694988392259305, guid: f45b5cca3ee54fd4e93402fd06b8938e, type: 3}
+  - {fileID: 21300000, guid: 79ad225c8ac6f504f8b16d0c893a4e4e, type: 3}
   - {fileID: 21300000, guid: df7ead7c58b7efb4fab88a855e3057cb, type: 3}
   - {fileID: 21300028, guid: f8f7f51d951fa2d4d91d63ea90d4a4da, type: 3}
   - {fileID: 21300030, guid: f8f7f51d951fa2d4d91d63ea90d4a4da, type: 3}
@@ -1974,7 +1984,10 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 01f9990fa5ba3a8488c567b6be41f9f0, type: 3}
   m_PackedSpriteNamesToIndex:
   - BB
+  - CH_B1
   - TT
+  - FR
+  - OR
   - TP_nobg
   - Overworld_827
   - Overworld_837
@@ -3055,6 +3068,8 @@ SpriteAtlas:
   - TiledSprites_2
   - TiledSprites_3
   - TP
+  - TB_R1
+  - CH_F1
   - MC_Male2_hammer_96
   - MC_Male2_hammer_97
   - MC_Male2_hammer_94
@@ -3237,6 +3252,8 @@ SpriteAtlas:
   - slime_27
   - slime_24
   - slime_25
+  - TB_R3
+  - TB_R2
   - modified gfx melee sprites 1_9
   - modified gfx melee sprites 1_8
   - modified gfx melee sprites 1_5
@@ -3276,6 +3293,8 @@ SpriteAtlas:
   - log_20
   - log_21
   - log_22
+  - FR_HT
+  - FR_GR
   - objects_71
   - objects_70
   - objects_73
@@ -3690,6 +3709,7 @@ SpriteAtlas:
   - Inner_38
   - Inner_42
   - Inner_43
+  - FR_CL
   - NPC_test
   - character_14
   - character_15

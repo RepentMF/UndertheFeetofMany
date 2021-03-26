@@ -9775,7 +9775,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.53}
+  m_Offset: {x: 0, y: -0.37}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9786,7 +9786,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.2}
+  m_Size: {x: 0.5, y: 0.9}
   m_EdgeRadius: 0
 --- !u!114 &8676862407922533656
 MonoBehaviour:
@@ -9810,10 +9810,11 @@ MonoBehaviour:
   med: 
   launch: 
   heavy: 
+  playerPos: {fileID: 11400000, guid: 4bed1a8ded234e24ea7e4066c8c5031e, type: 2}
+  playerDir: {fileID: 11400000, guid: c4f53b491cd59ac478d5751da8e6de48, type: 2}
   currentHealth: {fileID: 11400000, guid: 713e190effe6aa340aeb3962248289ff, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: f2de9eacb21a0ab43b4eb8f3c64f3d2e, type: 2}
   animator: {fileID: 0}
-  startingPosition: {fileID: 11400000, guid: 4bed1a8ded234e24ea7e4066c8c5031e, type: 2}
   change: {x: 0, y: 0, z: 0}
 --- !u!95 &8676862407922533657
 Animator:
@@ -9847,7 +9848,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.21854228}
+  m_Offset: {x: 0, y: -0.59}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9858,7 +9859,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7603084, y: 0.8156413}
+  m_Size: {x: 0.7603084, y: 0.85}
   m_EdgeRadius: 0
 --- !u!1 &8799230934454852391
 GameObject:

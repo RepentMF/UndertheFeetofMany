@@ -67,9 +67,6 @@ public class PlayerMovement : MonoBehaviour
 			transform.position = playerPos.initialValue;
 		}
 
-		animator.SetFloat("moveX", 0);
-		animator.SetFloat("moveY", -1);
-
 		if (playerDir.initialValue != Vector2.zero)
 		{
 			animator.SetFloat("moveX", playerDir.initialValue.x);
