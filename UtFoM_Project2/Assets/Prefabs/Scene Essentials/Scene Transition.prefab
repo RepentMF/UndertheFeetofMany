@@ -71,3 +71,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: SampleScene
+  playerPosition: {x: 0, y: 0}
+  playerDirection: {x: 0, y: 0}
+  playerNewPos: {fileID: 11400000, guid: 4bed1a8ded234e24ea7e4066c8c5031e, type: 2}
+  playerNewDir: {fileID: 11400000, guid: c4f53b491cd59ac478d5751da8e6de48, type: 2}
+  fadeInPanel: {fileID: 2923732638672300784, guid: f9510dfb88a5f8648ae3c628880f17f4,
+    type: 3}
+  fadeOutPanel: {fileID: 1957570387181775694, guid: 808be2c357dfb0e43ac9cca29ee75aec,
+    type: 3}
+  fadeWait: 0
