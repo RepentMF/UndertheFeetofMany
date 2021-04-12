@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 0}
+  thrust: {x: 0, y: -125}
   damage: 1.5
 --- !u!4 &39080513 stripped
 Transform:
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 0}
+  thrust: {x: 0, y: 125}
   damage: 1.5
 --- !u!1 &215359027 stripped
 GameObject:
@@ -671,7 +671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 0}
+  thrust: {x: 0, y: 45}
   damage: 1.5
 --- !u!1 &629415283 stripped
 GameObject:
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 0}
+  thrust: {x: 0, y: -45}
   damage: 1.5
 --- !u!1 &803928721 stripped
 GameObject:

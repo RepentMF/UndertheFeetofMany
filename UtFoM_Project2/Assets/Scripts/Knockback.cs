@@ -19,33 +19,37 @@ public class Knockback : MonoBehaviour
 			}
 			else if(GetComponentInParent<PlayerMovement>().light == "Sword")
 			{
-				if(transform.parent.tag == "Light")
+				collider.GetComponent<Rigidbody2D>().gravityScale = 2f;
+				
+				if(!collider.GetComponent<Enemy>().hit && transform.parent.tag == "Light")
 				{
 					if(hurtbox != null)
 					{
 						hurtbox.velocity = Vector2.zero;
+						hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
 
-						collider.GetComponent<Enemy>().currentState = EnemyState.stagger;
+						collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
 						collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
 						collider.GetComponent<Enemy>().hit = true;
 						collider.GetComponent<Enemy>().combo++;
 					}
 				}
-				else if(transform.parent.tag == "Medium")
+				else if(!collider.GetComponent<Enemy>().hit && transform.parent.tag == "Medium")
 				{
+
 					if(hurtbox != null)
 					{
 						hurtbox.velocity = Vector2.zero;
+						hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
 
-						collider.GetComponent<Enemy>().currentState = EnemyState.stagger;
+						collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
 						collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
 						collider.GetComponent<Enemy>().hit = true;
 						collider.GetComponent<Enemy>().combo++;
 					}
 				}
-				else if(transform.parent.tag == "Heavy")
-				{	
-					collider.GetComponent<Rigidbody2D>().gravityScale = 2f;
+				else if(!collider.GetComponent<Enemy>().hit && transform.parent.tag == "Heavy")
+				{
 					
 					if(hurtbox != null)
 					{

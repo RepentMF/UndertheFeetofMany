@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -56,6 +56,7 @@ public class Enemy : MonoBehaviour
     	if(GetComponent<Rigidbody2D>().velocity.y < 0f)
     	{
     		currentState = EnemyState.freefall;
+    		hit = false;
     	}
     	//Debug.Break();
         if(transform.position.y < homePos && currentState == EnemyState.freefall)
