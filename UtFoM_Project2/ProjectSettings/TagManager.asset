@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Breakable
   - Enemy
+  - Light
+  - Launch
+  - Heavy
+  - Medium
   layers:
   - Default
   - TransparentFX

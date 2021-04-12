@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,25 +7,34 @@ public enum EnemyState
 	idle,
 	walk,
 	attack,
-	stagger
+	stagger,
+	juggle,
+	freefall
 }
 
 public class Enemy : MonoBehaviour
 {
 	public EnemyState currentState;
 	public FloatValue maxHealth;
+	public bool hit;
+	public int combo;
 	public int baseAtk;
 	public float health;
 	public float moveSpeed;
+	public float homePos;
 	public string enemyName;
 
-	public void Knock(Rigidbody2D rigidbody, float kbTime, float damage)
+	public void Knock(float damage)
 	{
-		StartCoroutine(KnockCo(rigidbody, kbTime));
+		if(combo == 0)
+		{
+			homePos = transform.position.y;
+		}
+
 		TakeDamage(damage);
 	}
 
-	private void TakeDamage(float damage)
+	public void TakeDamage(float damage)
 	{
 		health -= damage;
 		if(health <= 0)
@@ -33,32 +42,29 @@ public class Enemy : MonoBehaviour
 			this.gameObject.SetActive(false);
 		}
 	}
-	
-	private IEnumerator KnockCo(Rigidbody2D rigidbody, float kbTime)
-	{
-		if(rigidbody != null)
-		{
-			yield return new WaitForSeconds(kbTime);
-			rigidbody.velocity = Vector2.zero;
-			currentState = EnemyState.idle;
-			rigidbody.velocity = Vector2.zero;
-		}
-	}
-
-	private void Awake()
-	{
-		health = maxHealth.initialValue;
-	}
 
     // Start is called before the first frame update
     void Start()
     {
-		
+    	hit = false;
+    	combo = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+    	if(GetComponent<Rigidbody2D>().velocity.y < 0f)
+    	{
+    		currentState = EnemyState.freefall;
+    	}
+    	//Debug.Break();
+        if(transform.position.y < homePos && currentState == EnemyState.freefall)
+		{
+			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+			GetComponent<Rigidbody2D>().gravityScale = 0.0f;
+			currentState = EnemyState.idle;
+			hit = false;
+			combo = 0;
+		}
     }
 }

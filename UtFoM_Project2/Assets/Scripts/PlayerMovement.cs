@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
 	public Vector3 change;
 	
 
-	private IEnumerator KnockCo(float kbTime)
+	/*private IEnumerator KnockCo(float kbTime)
 	{
 		if(rigidbody != null)
 		{
@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
 		{
 			this.gameObject.SetActive(false);
 		}
-	}
+	}*/
 
 	public bool Anicheck(string name)
 	{
@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
 			animator.SetFloat("moveY", playerDir.initialValue.y);
 		}
 		currentKBTime = 0f;
-		light = "Knife";
+		light = "Sword";
     }
 
     // Update is called once per frame
@@ -170,7 +170,7 @@ public class PlayerMovement : MonoBehaviour
 						attackBuffer = 0f;
 						animator.Play(launch);
 					}
-					else if (attackBuffer >= 40f && Input.GetButtonDown(heavy) && Anicheck(launch))
+					else if (attackBuffer >= 34f && Input.GetButtonDown(heavy) && Anicheck(launch))
 					{
 						animator.SetBool("moving", false);
 						attackBuffer = 0f;
