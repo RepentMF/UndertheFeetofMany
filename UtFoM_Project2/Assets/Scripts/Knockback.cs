@@ -7,134 +7,156 @@ public class Knockback : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D collider)
 	{
 		Rigidbody2D hurtbox = collider.GetComponent<Rigidbody2D>();
-
-		if(collider.gameObject.CompareTag("Enemy") && collider.isTrigger)
+		
+		if(collider.GetComponent<Enemy>().hitBy != GetComponentInParent<Attack>().hitbox)
 		{
-			if(GetComponentInParent<PlayerMovement>().light == "Knife")
+			collider.GetComponent<Enemy>().hitBy = GetComponentInParent<Attack>().hitbox;
+
+			if(collider.gameObject.CompareTag("Enemy") && collider.isTrigger)
 			{
-				if(hurtbox != null)
-				{
-					collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
-				}
-			}
-			else if(GetComponentInParent<PlayerMovement>().light == "Sword")
-			{
-				collider.GetComponent<Rigidbody2D>().gravityScale = 2f;
-				
-				if(!collider.GetComponent<Enemy>().hit && transform.parent.tag == "Light")
+				if(GetComponentInParent<PlayerMovement>().light == "Knife")
 				{
 					if(hurtbox != null)
 					{
-						hurtbox.velocity = Vector2.zero;
-						hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
-
-						collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
 						collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
-						collider.GetComponent<Enemy>().hit = true;
-						collider.GetComponent<Enemy>().combo++;
 					}
 				}
-				else if(!collider.GetComponent<Enemy>().hit && transform.parent.tag == "Medium")
+				else if(GetComponentInParent<PlayerMovement>().light == "Sword")
 				{
-
-					if(hurtbox != null)
+					if(GetComponentInParent<Animator>().GetFloat("moveX") != 0f)
 					{
-						hurtbox.velocity = Vector2.zero;
-						hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
-
-						collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
-						collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
-						collider.GetComponent<Enemy>().hit = true;
-						collider.GetComponent<Enemy>().combo++;
+						collider.GetComponent<Enemy>().currentStagger = Mathf.Abs(GetComponentInParent<Attack>().thrust.y) / 20;
 					}
-				}
-				else if(!collider.GetComponent<Enemy>().hit && transform.parent.tag == "Heavy")
-				{
-					
-					if(hurtbox != null)
+					else if(GetComponentInParent<Animator>().GetFloat("moveY") != 0f)
 					{
-						hurtbox.velocity = Vector2.zero;
-						hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
+						collider.GetComponent<Enemy>().currentStagger = Mathf.Abs(GetComponentInParent<Attack>().thrust.x) / 20;
+						Debug.Log(collider.GetComponent<Enemy>().currentStagger);
+					}
 
-						collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
-						collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
-						collider.GetComponent<Enemy>().hit = true;
-						collider.GetComponent<Enemy>().combo++;
+					collider.GetComponent<Enemy>().currentStagger = Mathf.Abs(GetComponentInParent<Attack>().thrust.y) / 20;
 
-						if(GetComponentInParent<Animator>().GetFloat("moveY") != 0)
+					if(!collider.GetComponent<Enemy>().hit && transform.parent.tag == "Light")
+					{
+						if(hurtbox != null)
 						{
-							collider.GetComponent<Rigidbody2D>().gravityScale = 0f;
+							hurtbox.velocity = Vector2.zero;
+							hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
+							//collider.GetComponent<Enemy>().currentStagger = Mathf.Abs(GetComponentInParent<Attack>().thrust.y) / 20;
+
+							collider.GetComponent<Enemy>().currentState = EnemyState.stagger;
+							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+							collider.GetComponent<Enemy>().hit = true;
+							collider.GetComponent<Enemy>().combo++;
+						}
+					}
+					else if(!collider.GetComponent<Enemy>().hit && transform.parent.tag == "Medium")
+					{
+						if(hurtbox != null)
+						{
+							hurtbox.velocity = Vector2.zero;
+							hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
+							//collider.GetComponent<Enemy>().currentStagger = Mathf.Abs(GetComponentInParent<Attack>().thrust.y) / 20;
+
+							collider.GetComponent<Enemy>().currentState = EnemyState.stagger;
+							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+							collider.GetComponent<Enemy>().hit = true;
+							collider.GetComponent<Enemy>().combo++;
+						}
+					}
+					else if(!collider.GetComponent<Enemy>().hit && transform.parent.tag == "Heavy")
+					{
+						
+						collider.GetComponent<Rigidbody2D>().gravityScale = 2f;
+						if(hurtbox != null)
+						{
+							hurtbox.velocity = Vector2.zero;
+							hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
+
+							collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
+							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+							collider.GetComponent<Enemy>().hit = true;
+							collider.GetComponent<Enemy>().combo++;
+
+							if(GetComponentInParent<Animator>().GetFloat("moveY") != 0)
+							{
+								collider.GetComponent<Rigidbody2D>().gravityScale = 0f;
+							}
 						}
 					}
 				}
-			}
-			else if(GetComponentInParent<PlayerMovement>().light == "Hammer")
-			{
-				collider.GetComponent<Rigidbody2D>().gravityScale = 2f;
-
-				if(!collider.GetComponent<Enemy>().hit && transform.parent.tag == "Light")
+				else if(GetComponentInParent<PlayerMovement>().light == "Hammer")
 				{
-					if(hurtbox != null)
+					collider.GetComponent<Rigidbody2D>().gravityScale = 2f;
+
+					if(!collider.GetComponent<Enemy>().hit && transform.parent.tag == "Light")
 					{
-						hurtbox.velocity = Vector2.zero;
-						hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
-
-						collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
-						collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
-						collider.GetComponent<Enemy>().hit = true;
-						collider.GetComponent<Enemy>().combo++;
-					}
-				}
-				else if(transform.parent.tag == "Medium"
-					&& collider.GetComponent<Enemy>().currentState != EnemyState.juggle)
-				{
-					if(hurtbox != null)
-					{
-						hurtbox.velocity = Vector2.zero;
-						hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
-
-						collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
-						collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
-						collider.GetComponent<Enemy>().hit = true;
-						collider.GetComponent<Enemy>().combo++;
-					}
-				}
-				else if(transform.parent.tag == "Launch" 
-					&& collider.GetComponent<Enemy>().currentState != EnemyState.juggle)
-				{
-					if(hurtbox != null)
-					{
-						hurtbox.velocity = Vector2.zero;
-						hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
-
-						collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
-						collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
-						collider.GetComponent<Enemy>().hit = true;
-						collider.GetComponent<Enemy>().combo++;
-					}
-				}
-				else if(transform.parent.tag == "Heavy" 
-					&& collider.GetComponent<Enemy>().currentState != EnemyState.juggle)
-				{	
-					if(hurtbox != null)
-					{
-						hurtbox.velocity = Vector2.zero;
-						hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
-
-						collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
-						collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
-						collider.GetComponent<Enemy>().hit = true;
-						collider.GetComponent<Enemy>().combo++;
-
-						if(GetComponentInParent<Animator>().GetFloat("moveY") != 0)
+						if(hurtbox != null)
 						{
-							collider.GetComponent<Rigidbody2D>().gravityScale = 0f;
+							hurtbox.velocity = Vector2.zero;
+							hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
+
+							collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
+							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+							collider.GetComponent<Enemy>().hit = true;
+							collider.GetComponent<Enemy>().combo++;
+						}
+					}
+					else if(transform.parent.tag == "Medium"
+						&& collider.GetComponent<Enemy>().currentState != EnemyState.juggle)
+					{
+						if(hurtbox != null)
+						{
+							hurtbox.velocity = Vector2.zero;
+							hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
+
+							collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
+							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+							collider.GetComponent<Enemy>().hit = true;
+							collider.GetComponent<Enemy>().combo++;
+						}
+					}
+					else if(transform.parent.tag == "Launch" 
+						&& collider.GetComponent<Enemy>().currentState != EnemyState.juggle)
+					{
+						if(hurtbox != null)
+						{
+							hurtbox.velocity = Vector2.zero;
+							hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
+
+							collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
+							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+							collider.GetComponent<Enemy>().hit = true;
+							collider.GetComponent<Enemy>().combo++;
+						}
+					}
+					else if(transform.parent.tag == "Heavy" 
+						&& collider.GetComponent<Enemy>().currentState != EnemyState.juggle)
+					{	
+						if(hurtbox != null)
+						{
+							hurtbox.velocity = Vector2.zero;
+							hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
+
+							collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
+							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+							collider.GetComponent<Enemy>().hit = true;
+							collider.GetComponent<Enemy>().combo++;
+
+							if(GetComponentInParent<Animator>().GetFloat("moveY") != 0)
+							{
+								collider.GetComponent<Rigidbody2D>().gravityScale = 0f;
+							}
 						}
 					}
 				}
 			}
 		}
-		else if(collider.gameObject.CompareTag("Player"))
+		else if(collider.GetComponent<Enemy>().hitBy == GetComponentInParent<Attack>().hitbox)
+		{
+
+		}
+
+		if(collider.gameObject.CompareTag("Player"))
 		{
 			// if(!collider.GetComponent<PlayerMovement>().animator.GetCurrentAnimatorStateInfo(0).IsName("Staggered"))
 			// {

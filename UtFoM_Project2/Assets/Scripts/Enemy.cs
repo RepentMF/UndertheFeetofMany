@@ -22,7 +22,9 @@ public class Enemy : MonoBehaviour
 	public float health;
 	public float moveSpeed;
 	public float homePos;
+	public float currentStagger;
 	public string enemyName;
+	public string hitBy;
 
 	public void Knock(float damage)
 	{
@@ -31,7 +33,10 @@ public class Enemy : MonoBehaviour
 			homePos = transform.position.y;
 		}
 
-		TakeDamage(damage);
+		if(!hit)
+		{
+			TakeDamage(damage);
+		}
 	}
 
 	public void TakeDamage(float damage)
@@ -48,22 +53,41 @@ public class Enemy : MonoBehaviour
     {
     	hit = false;
     	combo = 0;
+    	currentStagger = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-    	if(GetComponent<Rigidbody2D>().velocity.y < 0f)
+    	if(GetComponent<Rigidbody2D>().velocity.y < 0f && currentState == EnemyState.juggle)
     	{
     		currentState = EnemyState.freefall;
     		hit = false;
     	}
-    	//Debug.Break();
-        if(transform.position.y < homePos && currentState == EnemyState.freefall)
+        
+    	if(currentState == EnemyState.stagger)
+    	{
+			if(currentStagger < 0f)
+			{
+				GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+				GetComponent<Rigidbody2D>().gravityScale = 0.0f;
+				currentState = EnemyState.idle;
+				hitBy = "";
+				hit = false;
+				combo = 0;			
+			}
+			else
+			{
+				Debug.Break();
+				currentStagger--;
+			}
+    	}
+		else if(transform.position.y < homePos && currentState == EnemyState.freefall)
 		{
 			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 			GetComponent<Rigidbody2D>().gravityScale = 0.0f;
 			currentState = EnemyState.idle;
+			hitBy = "";
 			hit = false;
 			combo = 0;
 		}

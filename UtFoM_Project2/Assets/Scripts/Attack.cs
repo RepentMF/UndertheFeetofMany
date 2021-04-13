@@ -6,6 +6,7 @@ public class Attack : MonoBehaviour
 {
 	public Vector2 thrust;
 	public float damage;
+	public string hitbox;
 
     // Start is called before the first frame update
     void Start()

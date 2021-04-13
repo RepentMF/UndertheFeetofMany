@@ -141,6 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: -125}
   damage: 1.5
+  hitbox: sword2
 --- !u!4 &39080513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -167,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 165}
   damage: 2
+  hitbox: 
 --- !u!1 &64200444 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5504168858165661338, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -187,6 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 0}
   damage: 0.334
+  hitbox: 
 --- !u!1 &83701171 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3626775669844698439, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -207,6 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: -120, y: 60}
   damage: 3.5
+  hitbox: 
 --- !u!1 &88589407 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5999313289432426805, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -225,8 +229,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 0}
+  thrust: {x: -80, y: 0}
   damage: 1.5
+  hitbox: sword1
 --- !u!1001 &104414091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -381,6 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 250}
   damage: 2.5
+  hitbox: 
 --- !u!1 &156413586
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,7 +427,9 @@ MonoBehaviour:
   health: 20
   moveSpeed: 1
   homePos: 0
+  currentStagger: 0
   enemyName: 
+  hitBy: 
 --- !u!212 &156413588
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -553,6 +561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 175}
   damage: 2
+  hitbox: 
 --- !u!1 &183013671 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5274779205138465140, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -573,6 +582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 0}
   damage: 0.334
+  hitbox: 
 --- !u!1 &204011308 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4324089519645820488, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -591,8 +601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 125}
+  thrust: {x: 0, y: 120}
   damage: 1.5
+  hitbox: sword2
 --- !u!1 &215359027 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3423805072529770644, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -613,6 +624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 0}
   damage: 3.5
+  hitbox: 
 --- !u!1 &259295921 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7710875624203859708, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -633,6 +645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 120}
   damage: 3.5
+  hitbox: 
 --- !u!1 &518831461 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8041371030288223560, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -653,6 +666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 250}
   damage: 2.5
+  hitbox: 
 --- !u!1 &611230656 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7954290625040054212, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -673,6 +687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 45}
   damage: 1.5
+  hitbox: sword1
 --- !u!1 &629415283 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4927827596179017388, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -693,6 +708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 0}
   damage: 0.334
+  hitbox: 
 --- !u!1 &647594106 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7755492007614937771, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -713,6 +729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 250}
   damage: 2.5
+  hitbox: 
 --- !u!1 &691798803 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4291681833051275823, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -731,8 +748,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: -45}
+  thrust: {x: 0, y: -80}
   damage: 1.5
+  hitbox: sword1
 --- !u!1 &803928721 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3069615488327175408, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -753,6 +771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 0}
   damage: 2.5
+  hitbox: sword3
 --- !u!1 &840209739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2427,6 +2446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: -100, y: 60}
   damage: 2.5
+  hitbox: sword3
 --- !u!1 &899594625
 GameObject:
   m_ObjectHideFlags: 0
@@ -2528,6 +2548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 175}
   damage: 2
+  hitbox: 
 --- !u!1 &1001069989 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1893898506206551223, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -2548,6 +2569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 0}
   damage: 0
+  hitbox: 
 --- !u!1001 &1007712141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2662,6 +2684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 0}
   damage: 0.334
+  hitbox: 
 --- !u!1001 &1080504897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3513,6 +3536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 0}
   damage: 2.5
+  hitbox: sword3
 --- !u!1 &1165076464 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 230666991443082981, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -3533,6 +3557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 120, y: 60}
   damage: 3.5
+  hitbox: 
 --- !u!1 &1185747726 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4755688775004330727, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -3553,6 +3578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 0}
   damage: 2
+  hitbox: 
 --- !u!1 &1292552058 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 108194064454167124, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -3571,8 +3597,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 0}
+  thrust: {x: -120, y: 0}
   damage: 1.5
+  hitbox: sword2
 --- !u!1001 &1528723028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3715,8 +3742,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 0}
+  thrust: {x: 120, y: 0}
   damage: 1.5
+  hitbox: sword2
 --- !u!1 &1752226473 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 554136972607716128, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -3737,6 +3765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 165}
   damage: 2
+  hitbox: 
 --- !u!1 &1759823903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3683334492810680404, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -3757,6 +3786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 175}
   damage: 2
+  hitbox: 
 --- !u!1 &1843814125 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8643676519897918764, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -3775,8 +3805,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 0}
+  thrust: {x: 80, y: 0}
   damage: 1.5
+  hitbox: sword1
 --- !u!1 &1897762249 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1942141944345630075, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -3797,6 +3828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 0}
   damage: 0
+  hitbox: 
 --- !u!1 &1952549100 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7078994673868358926, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -3817,6 +3849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 165}
   damage: 2
+  hitbox: 
 --- !u!1 &2080143938 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3772665772150429066, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -3837,3 +3870,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 100, y: 60}
   damage: 2.5
+  hitbox: sword3
