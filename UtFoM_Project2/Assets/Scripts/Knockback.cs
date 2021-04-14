@@ -11,7 +11,6 @@ public class Knockback : MonoBehaviour
 		if(collider.GetComponent<Enemy>().hitBy != GetComponentInParent<Attack>().hitbox)
 		{
 			collider.GetComponent<Enemy>().hitBy = GetComponentInParent<Attack>().hitbox;
-
 			if(collider.gameObject.CompareTag("Enemy") && collider.isTrigger)
 			{
 				if(GetComponentInParent<PlayerMovement>().light == "Knife")
@@ -30,10 +29,7 @@ public class Knockback : MonoBehaviour
 					else if(GetComponentInParent<Animator>().GetFloat("moveY") != 0f)
 					{
 						collider.GetComponent<Enemy>().currentStagger = Mathf.Abs(GetComponentInParent<Attack>().thrust.x) / 20;
-						Debug.Log(collider.GetComponent<Enemy>().currentStagger);
 					}
-
-					collider.GetComponent<Enemy>().currentStagger = Mathf.Abs(GetComponentInParent<Attack>().thrust.y) / 20;
 
 					if(!collider.GetComponent<Enemy>().hit && transform.parent.tag == "Light")
 					{
@@ -41,7 +37,6 @@ public class Knockback : MonoBehaviour
 						{
 							hurtbox.velocity = Vector2.zero;
 							hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
-							//collider.GetComponent<Enemy>().currentStagger = Mathf.Abs(GetComponentInParent<Attack>().thrust.y) / 20;
 
 							collider.GetComponent<Enemy>().currentState = EnemyState.stagger;
 							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
@@ -55,7 +50,6 @@ public class Knockback : MonoBehaviour
 						{
 							hurtbox.velocity = Vector2.zero;
 							hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
-							//collider.GetComponent<Enemy>().currentStagger = Mathf.Abs(GetComponentInParent<Attack>().thrust.y) / 20;
 
 							collider.GetComponent<Enemy>().currentState = EnemyState.stagger;
 							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
@@ -65,8 +59,17 @@ public class Knockback : MonoBehaviour
 					}
 					else if(!collider.GetComponent<Enemy>().hit && transform.parent.tag == "Heavy")
 					{
-						
-						collider.GetComponent<Rigidbody2D>().gravityScale = 2f;
+
+						if(GetComponentInParent<Animator>().GetFloat("moveX") != 0f)
+						{
+							collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
+							collider.GetComponent<Rigidbody2D>().gravityScale = 2f;
+						}
+						else if(GetComponentInParent<Animator>().GetFloat("moveY") != 0f)
+						{
+							collider.GetComponent<Enemy>().currentState = EnemyState.stagger;
+						}
+
 						if(hurtbox != null)
 						{
 							hurtbox.velocity = Vector2.zero;
@@ -132,12 +135,22 @@ public class Knockback : MonoBehaviour
 					else if(transform.parent.tag == "Heavy" 
 						&& collider.GetComponent<Enemy>().currentState != EnemyState.juggle)
 					{	
+						if(GetComponentInParent<Animator>().GetFloat("moveX") != 0f)
+						{
+							collider.GetComponent<Enemy>().currentStagger = Mathf.Abs(GetComponentInParent<Attack>().thrust.y) / 20;
+							collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
+						}
+						else if(GetComponentInParent<Animator>().GetFloat("moveY") != 0f)
+						{
+							collider.GetComponent<Enemy>().currentStagger = Mathf.Abs(GetComponentInParent<Attack>().thrust.x) / 20;
+							collider.GetComponent<Enemy>().currentState = EnemyState.stagger;
+						}
+
 						if(hurtbox != null)
 						{
 							hurtbox.velocity = Vector2.zero;
 							hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
 
-							collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
 							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
 							collider.GetComponent<Enemy>().hit = true;
 							collider.GetComponent<Enemy>().combo++;
@@ -150,10 +163,6 @@ public class Knockback : MonoBehaviour
 					}
 				}
 			}
-		}
-		else if(collider.GetComponent<Enemy>().hitBy == GetComponentInParent<Attack>().hitbox)
-		{
-
 		}
 
 		if(collider.gameObject.CompareTag("Player"))

@@ -59,6 +59,15 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    	if(currentState == EnemyState.idle)
+    	{
+			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+			GetComponent<Rigidbody2D>().gravityScale = 0.0f;
+			hit = false;
+			combo = 0;
+			hitBy = "";
+    	}
+
     	if(GetComponent<Rigidbody2D>().velocity.y < 0f && currentState == EnemyState.juggle)
     	{
     		currentState = EnemyState.freefall;
@@ -69,27 +78,19 @@ public class Enemy : MonoBehaviour
     	{
 			if(currentStagger < 0f)
 			{
-				GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-				GetComponent<Rigidbody2D>().gravityScale = 0.0f;
 				currentState = EnemyState.idle;
-				hitBy = "";
-				hit = false;
-				combo = 0;			
 			}
 			else
 			{
-				Debug.Break();
 				currentStagger--;
 			}
     	}
-		else if(transform.position.y < homePos && currentState == EnemyState.freefall)
+		
+		if(transform.position.y < homePos && currentState == EnemyState.freefall)
 		{
-			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-			GetComponent<Rigidbody2D>().gravityScale = 0.0f;
 			currentState = EnemyState.idle;
-			hitBy = "";
-			hit = false;
-			combo = 0;
 		}
+
+
     }
 }
