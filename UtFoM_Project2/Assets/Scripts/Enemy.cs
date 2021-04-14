@@ -64,7 +64,7 @@ public class Enemy : MonoBehaviour
 			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 			GetComponent<Rigidbody2D>().gravityScale = 0.0f;
 			hit = false;
-			combo = 0;
+			//combo = 0;
 			hitBy = "";
     	}
 

@@ -132,7 +132,7 @@ public class Knockback : MonoBehaviour
 							collider.GetComponent<Enemy>().combo++;
 						}
 					}
-					else if(transform.parent.tag == "Heavy" 
+					else if(transform.parent.tag == "Heavy" && !collider.GetComponent<Enemy>().hit 
 						&& collider.GetComponent<Enemy>().currentState != EnemyState.juggle)
 					{	
 						if(GetComponentInParent<Animator>().GetFloat("moveX") != 0f)
