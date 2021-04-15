@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: -125}
+  thrust: {x: 0, y: -90}
   damage: 1.5
   hitbox: sword2
 --- !u!4 &39080513 stripped
@@ -488,7 +488,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156413586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.534, y: -0.596, z: -8.09}
+  m_LocalPosition: {x: -2.45, y: 0.18, z: -8.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 120}
+  thrust: {x: 0, y: 90}
   damage: 1.5
   hitbox: sword2
 --- !u!1 &215359027 stripped
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 45}
+  thrust: {x: 0, y: 80}
   damage: 1.5
   hitbox: sword1
 --- !u!1 &629415283 stripped
@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 240, y: 0}
+  thrust: {x: 0, y: 180}
   damage: 2.5
   hitbox: sword3
 --- !u!1 &840209739
@@ -2568,7 +2568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 250}
-  damage: 0
+  damage: 2.5
   hitbox: hammer3
 --- !u!1001 &1007712141
 PrefabInstance:
@@ -2722,6 +2722,11 @@ PrefabInstance:
       propertyPath: damage
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 457340003563541217, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 554136972607716128, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_TagString
@@ -2771,6 +2776,11 @@ PrefabInstance:
         type: 3}
       propertyPath: damage
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251490633805134952, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1355087625822879926, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
@@ -2827,6 +2837,11 @@ PrefabInstance:
       propertyPath: damage
       value: 3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2402346322839844136, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2409893912659288398, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: damage
@@ -2857,6 +2872,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Heavy
       objectReference: {fileID: 0}
+    - target: {fileID: 3079864441820995806, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3095134651624208261, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_TagString
@@ -2882,6 +2902,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Heavy
       objectReference: {fileID: 0}
+    - target: {fileID: 3423805072529770644, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3423916502310911036, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: thrust
@@ -2901,6 +2926,11 @@ PrefabInstance:
         type: 3}
       propertyPath: damage
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3554473612753375851, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3578628675649105722, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
@@ -2986,6 +3016,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Medium
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404084405053901436, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4511679742464875083, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
@@ -3156,6 +3191,11 @@ PrefabInstance:
         type: 3}
       propertyPath: damage
       value: 0.333
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629281984367677469, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6640633932589352234, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
@@ -3504,6 +3544,11 @@ PrefabInstance:
       propertyPath: damage
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9061982616124650571, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9111978513076714976, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_TagString
@@ -3557,7 +3602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: {x: 120, y: 60}
   damage: 3.5
-  hitbox: 
+  hitbox: hammer4
 --- !u!1 &1185747726 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4755688775004330727, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -3597,7 +3642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: -120, y: 0}
+  thrust: {x: -90, y: 0}
   damage: 1.5
   hitbox: sword2
 --- !u!1001 &1528723028
@@ -3742,7 +3787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 120, y: 0}
+  thrust: {x: 90, y: 0}
   damage: 1.5
   hitbox: sword2
 --- !u!1 &1752226473 stripped
@@ -3827,7 +3872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: {x: 0, y: 175}
-  damage: 0
+  damage: 2
   hitbox: hammer2
 --- !u!1 &1952549100 stripped
 GameObject:

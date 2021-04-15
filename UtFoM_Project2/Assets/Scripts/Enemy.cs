@@ -7,6 +7,7 @@ public enum EnemyState
 	idle,
 	walk,
 	attack,
+	standby, //buffer state for Knockback script
 	stagger,
 	juggle,
 	freefall
@@ -57,14 +58,14 @@ public class Enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
     	if(currentState == EnemyState.idle)
     	{
 			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 			GetComponent<Rigidbody2D>().gravityScale = 0.0f;
 			hit = false;
-			//combo = 0;
+			combo = 0;
 			hitBy = "";
     	}
 
@@ -90,7 +91,5 @@ public class Enemy : MonoBehaviour
 		{
 			currentState = EnemyState.idle;
 		}
-
-
     }
 }
