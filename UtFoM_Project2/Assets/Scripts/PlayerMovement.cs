@@ -2,9 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+	InputController controls;
+
+	public bool shortcut = false;
 	public bool comboBool = false;
 	public int swipe = 0;
 	//public int comboCounter = 1;
@@ -16,13 +20,23 @@ public class PlayerMovement : MonoBehaviour
 	public string med;
 	public string launch;
 	public string heavy;
+	public Transform magicStart;
+	public GameObject spark;
+	public GameObject burst;
+	public GameObject flurry;
 	public VectorValue playerPos;
 	public VectorValue playerDir;
 	public FloatValue currentHealth;
+	public FloatValue currentMana;
+	public FloatValue currentStamina;
+	public FloatValue currentEstus;
 	public Signal playerHealthSignal;
+	public Signal playerManaSignal;
+	public Signal playerStaminaSignal;
+	public Signal playerEstusSignal;
 	public Animator animator;
 	private Rigidbody2D rigidbody;
-	public Vector3 change;
+	public Vector2 change;
 	
 
 	/*private IEnumerator KnockCo(float kbTime)
@@ -55,6 +69,75 @@ public class PlayerMovement : MonoBehaviour
 		return animator.GetCurrentAnimatorStateInfo(0).IsName(name);
 	}
 
+	public void SparkTrigger()
+	{
+		GameObject fire = Instantiate(spark);
+		fire.transform.position = magicStart.position;
+		Rigidbody2D rb = fire.GetComponentInChildren<Rigidbody2D>();
+
+		if(animator.GetFloat("moveX") > 0)
+		{
+			rb.AddForce(magicStart.right * 20f, ForceMode2D.Impulse);
+			fire.transform.Rotate(0, 0, 270);
+		}
+		else if(animator.GetFloat("moveY") > 0)
+		{
+			rb.AddForce(magicStart.up * 20f, ForceMode2D.Impulse);
+		}
+		else if(animator.GetFloat("moveX") < 0)
+		{
+			rb.AddForce(magicStart.right * -20f, ForceMode2D.Impulse);
+			fire.transform.Rotate(0, 0, 90);
+		}
+		else if(animator.GetFloat("moveY") < 0)
+		{
+			rb.AddForce(magicStart.up * -20f, ForceMode2D.Impulse);
+			fire.transform.Rotate(0, 0, 180);
+		}
+	}
+
+	public void LightningBurst()
+	{
+		GameObject lightning = Instantiate(burst);
+		lightning.transform.position = magicStart.position;
+		Rigidbody2D rb = lightning.GetComponentInChildren<Rigidbody2D>();
+	}
+
+	public void FlurryField()
+	{
+		GameObject ice = Instantiate(flurry);
+		ice.transform.position = magicStart.position;
+		Rigidbody2D rb = ice.GetComponentInChildren<Rigidbody2D>();
+
+		if(animator.GetFloat("moveX") > 0)
+		{
+			ice.transform.Rotate(0, 0, 270);
+		}
+		else if(animator.GetFloat("moveY") > 0)
+		{
+		}
+		else if(animator.GetFloat("moveX") < 0)
+		{
+			ice.transform.Rotate(0, 0, 90);
+		}
+		else if(animator.GetFloat("moveY") < 0)
+		{
+			ice.transform.Rotate(0, 0, 180);
+		}
+	}
+
+	void OnShortcutButton()
+	{
+		controls.Player.ShortcutButton.started += ctx => shortcut = true;
+		controls.Player.ShortcutButton.canceled += ctx => shortcut = false;
+	}
+
+	void Awake()
+	{
+		controls = new InputController();
+    	controls.Enable();
+	}
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,25 +145,24 @@ public class PlayerMovement : MonoBehaviour
     	Application.targetFrameRate = 45;
 		animator = GetComponent<Animator>();
 		rigidbody = GetComponent<Rigidbody2D>();
-		if (playerPos.initialValue != Vector2.zero)
+		if(playerPos.initialValue != Vector2.zero)
 		{
 			transform.position = playerPos.initialValue;
 		}
 
-		if (playerDir.initialValue != Vector2.zero)
+		if(playerDir.initialValue != Vector2.zero)
 		{
 			animator.SetFloat("moveX", playerDir.initialValue.x);
 			animator.SetFloat("moveY", playerDir.initialValue.y);
 		}
 		currentKBTime = 0f;
-		light = "Hammer";
+		light = "Sword";
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-		change.x = Input.GetAxisRaw("Horizontal");
-		change.y = Input.GetAxisRaw("Vertical");
+		change = controls.Player.Move.ReadValue<Vector2>();
 
 		// Choose which weapon is being used
 		switch (light)
@@ -104,49 +186,49 @@ public class PlayerMovement : MonoBehaviour
 				break;
 		}
 
-		if (comboBool && attackBuffer == 0f)
+		if(comboBool && attackBuffer == 0f)
 		{
 			attackFrame = animator.GetCurrentAnimatorStateInfo(0).length * 60f;
 		}
 
-		if (attackBuffer < attackFrame)
+		if(attackBuffer < attackFrame)
 		{
 			attackBuffer = (float) Math.Ceiling(animator.GetCurrentAnimatorStateInfo(0).normalizedTime * attackFrame);
 		}
-		else if (attackBuffer >= attackFrame)
+		else if(attackBuffer >= attackFrame)
 		{
 			attackBuffer = 0f;
 			comboBool = false;
 			attackFrame = 0f;
 		}
 
-		if (comboBool)
+		if(comboBool)
 		{
 			switch (light)
 			{
 				case "Knife":
-					if (attackBuffer >= 5f && (Input.GetButtonDown(light) || Input.GetButtonDown(launch) || Input.GetButtonDown(heavy)))
+					if(attackBuffer >= 5f && (controls.Player.LightButton.triggered || controls.Player.LaunchButton.triggered || controls.Player.HeavyButton.triggered))
 					{
 						animator.SetBool("moving", false);
 						attackBuffer = 0f;
-						if (Anicheck("Knife"))
+						if(Anicheck("Knife"))
 						{
 							animator.Play(med);
 						}
-						else if (Anicheck("Knife2"))
+						else if(Anicheck("Knife2"))
 						{
 							animator.Play(light);
 						}
 					}
 					break;
 				case "Sword":
-					if (attackBuffer >= 10f && (Input.GetButtonDown(light) || Input.GetButtonDown(med)))
+					if(attackBuffer >= 10f && (controls.Player.LightButton.triggered))
 					{
 						animator.SetBool("moving", false);
 						attackBuffer = 0f;
 						animator.Play(med);
 					}
-					else if (attackBuffer >= 10f && (Input.GetButtonDown(launch) || Input.GetButtonDown(heavy)) && 
+					else if(attackBuffer >= 10f && (controls.Player.LaunchButton.triggered || controls.Player.HeavyButton.triggered) && 
 						Anicheck(med))
 					{
 						animator.SetBool("moving", false);
@@ -157,20 +239,20 @@ public class PlayerMovement : MonoBehaviour
 					}
 					break;
 				case "Hammer":
-					if (attackBuffer >= 30f && (Input.GetButtonDown(light) || Input.GetButtonDown(med)) && 
+					if(attackBuffer >= 30f && (controls.Player.LightButton.triggered) && 
 						!Anicheck(launch))
 					{
 						animator.SetBool("moving", false);
 						attackBuffer = 0f;
 						animator.Play(med);
 					}
-					else if (attackBuffer >= 30f && Input.GetButtonDown(launch) && Anicheck(med))
+					else if(attackBuffer >= 30f && controls.Player.LaunchButton.triggered && Anicheck(med))
 					{
 						animator.SetBool("moving", false);
 						attackBuffer = 0f;
 						animator.Play(launch);
 					}
-					else if (attackBuffer >= 34f && Input.GetButtonDown(heavy) && Anicheck(launch))
+					else if(attackBuffer >= 34f && controls.Player.HeavyButton.triggered && Anicheck(launch))
 					{
 						animator.SetBool("moving", false);
 						attackBuffer = 0f;
@@ -183,41 +265,67 @@ public class PlayerMovement : MonoBehaviour
 					break;
 			}
 
-			if (Anicheck("Idle") || Anicheck("Walking"))
+			if(Anicheck("Idle") || Anicheck("Walking"))
 			{
 				comboBool = false;
 			}
 		}
 
 		//"State Machine" block
-		if (currentKBTime > 0f)
+		if(currentKBTime > 0f)
 		{
 			currentKBTime -= Time.deltaTime;
 		}
-		else if ((!comboBool && (Input.GetButtonDown(light) || Input.GetButtonDown(med) || Input.GetButtonDown(launch) || Input.GetButtonDown(heavy)) && 
+		else if((!comboBool && (controls.Player.LightButton.triggered || controls.Player.LaunchButton.triggered || controls.Player.HeavyButton.triggered) && 
 			(Anicheck("Idle") || Anicheck("Walking"))))
 		{
-			// Stop the player
-			animator.SetBool("moving", false);
-			// Swing the weapon
-			if (Input.GetButtonDown(light) || Input.GetButtonDown(med))
+			//Swing the weapon
+			if(shortcut)
 			{
+				if(controls.Player.LaunchButton.triggered)
+				{
+					// Stop the player
+					animator.SetBool("moving", false);
+					Debug.Log("no");
+					SparkTrigger();
+				}
+				else if(controls.Player.HeavyButton.triggered)
+				{
+					// Stop the player
+					animator.SetBool("moving", false);
+					LightningBurst();
+				}
+				else if(controls.Player.LightButton.triggered)
+				{
+					// Stop the player
+					animator.SetBool("moving", false);
+					FlurryField();
+				}
+			}
+			else if(controls.Player.LightButton.triggered)
+			{
+				// Stop the player
+				animator.SetBool("moving", false);
 				animator.Play(light);
 				swipe++;
 				comboBool = true;
 			}
-			else if (Input.GetButtonDown(launch))
+			else if(controls.Player.LaunchButton.triggered)
 			{
+				// Stop the player
+				animator.SetBool("moving", false);
 				animator.Play(launch);
-				if (light == "Hammer")
+				if(light == "Hammer")
 				{
 					comboBool = true;
 				}
 			}
 			else
 			{
+				// Stop the player
+				animator.SetBool("moving", false);
 				animator.Play(heavy);
-				if (light != "Knife")
+				if(light != "Knife")
 				{
 					comboBool = false;	
 				}
@@ -229,7 +337,7 @@ public class PlayerMovement : MonoBehaviour
 
 			attackBuffer = 0f;
 		}
-		else if (change != Vector3.zero && (Anicheck("Idle") || Anicheck("Walking"))
+		else if(change != Vector2.zero && (Anicheck("Idle") || Anicheck("Walking"))
 			&& !(Anicheck(light) || Anicheck(med) || Anicheck(launch) 
 			|| Anicheck(heavy)))
 		{
@@ -237,23 +345,23 @@ public class PlayerMovement : MonoBehaviour
 			animator.SetFloat("moveY", change.y);
 			animator.SetBool("moving", true);
 		}
-		else if (change == Vector3.zero)
+		else if(change == Vector2.zero)
 		{
 			animator.SetBool("moving", false);
 		}
 
-		if (currentKBTime < 0f)
+		if(currentKBTime < 0f)
 		{
 			currentKBTime = 0f;
 		}
 
-		if (animator.GetBool("moving") && Anicheck("Walking"))
+		if(animator.GetBool("moving") && Anicheck("Walking"))
     	{
 			change.Normalize();
-			rigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
+			rigidbody.MovePosition(transform.position + new Vector3 (change.x * speed * Time.deltaTime, change.y * speed * Time.deltaTime, 0));
     	}
 
-    	if (Anicheck("Idle") || Anicheck("Walking"))
+    	if(Anicheck("Idle") || Anicheck("Walking"))
     	{
     		attackBuffer = 0f;
     		attackFrame = 0f;

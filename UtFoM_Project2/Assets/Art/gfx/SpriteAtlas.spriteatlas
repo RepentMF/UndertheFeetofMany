@@ -40,11 +40,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 46151a80513d5d641b9d56bfee005b25, type: 3}
-    totalSpriteSurfaceArea: 13683286
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 12b059208806bca48872651e5988bf9f, type: 3}
@@ -52,6 +55,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: cfd001404f3e62f4283c368176545d55, type: 3}
   - {fileID: 21300000, guid: a73478b05a28b5241838fcc1f8c7b91a, type: 3}
   - {fileID: 21300000, guid: 42779bd0a451e7244a978228e6fc3875, type: 3}
+  - {fileID: 21300000, guid: 2b87a4f126b72e64b9e729b42fb9bfd3, type: 3}
   - {fileID: 21300000, guid: d427e8f1b3863d648b40e86a5a109dd7, type: 3}
   - {fileID: 21301654, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
   - {fileID: 21301674, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
@@ -1126,6 +1130,8 @@ SpriteAtlas:
   - {fileID: 21301246, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
   - {fileID: 21301346, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
   - {fileID: 21300258, guid: 67b93bf16f558504e961cc95e88a3c98, type: 3}
+  - {fileID: 21300000, guid: d6d49df19f3da7d44ae585162cd64510, type: 3}
+  - {fileID: 21300000, guid: 3f166b22125ffa746af1ed82170d758c, type: 3}
   - {fileID: 21300000, guid: a2570052cc9f4074ca2e852e011f34d0, type: 3}
   - {fileID: -4683998418971264338, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
   - {fileID: 7088160253405218265, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
@@ -1988,6 +1994,7 @@ SpriteAtlas:
   - TT
   - FR
   - OR
+  - LightningBurst
   - TP_nobg
   - Overworld_827
   - Overworld_837
@@ -3062,6 +3069,8 @@ SpriteAtlas:
   - Overworld_623
   - Overworld_673
   - Overworld_129
+  - FlurryField
+  - SparkTrigger 1
   - SS
   - TiledSprites_0
   - TiledSprites_1
@@ -3918,5 +3927,6 @@ SpriteAtlas:
   - SS_nobg
   - modified gfx melee sprites
   - cave
+  m_RenderDataMap: {}
   m_Tag: SpriteAtlas
   m_IsVariant: 0

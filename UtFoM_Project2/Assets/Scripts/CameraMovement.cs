@@ -14,12 +14,12 @@ public class CameraMovement : MonoBehaviour
 
 	void CamChange()
 	{
-		if (target.position.x > maxPosition.x || target.position.y > maxPosition.y)
+		if(target.position.x > maxPosition.x || target.position.y > maxPosition.y)
 		{
 			maxPosition += camChange;
 			minPosition += camChange;
 		}
-		if (target.position.x < minPosition.x || target.position.y < minPosition.y)
+		if(target.position.x < minPosition.x || target.position.y < minPosition.y)
 		{
 			maxPosition -= camChange;
 			minPosition -= camChange;
@@ -60,7 +60,7 @@ public class CameraMovement : MonoBehaviour
     	difference.x = maxPosition.x - target.position.x;
     	difference.y = maxPosition.y - target.position.y;
 
-		if (transform.position != target.position)
+		if(transform.position != target.position)
 		{
 			Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
 			targetPosition.x = Mathf.Clamp(targetPosition.x, minPosition.x, maxPosition.x);

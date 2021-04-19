@@ -16,7 +16,7 @@ public class SceneTransition : MonoBehaviour
 
 	private void Awake()
 	{
-		if (fadeInPanel != null)
+		if(fadeInPanel != null)
 		{
 			GameObject panel = Instantiate(fadeInPanel, Vector3.zero, Quaternion.identity) as GameObject;
 			Destroy(panel, 1);
@@ -36,7 +36,7 @@ public class SceneTransition : MonoBehaviour
 
 	public IEnumerator FadeCo()
 	{
-		if (fadeOutPanel != null)
+		if(fadeOutPanel != null)
 		{
 			Instantiate(fadeOutPanel, Vector3.zero, Quaternion.identity);
 		}

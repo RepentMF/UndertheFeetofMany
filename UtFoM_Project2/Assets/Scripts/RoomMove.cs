@@ -16,13 +16,13 @@ public class RoomMove : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.CompareTag("Player") && !other.isTrigger)
+		if(other.CompareTag("Player") && !other.isTrigger)
 		{
 			cam.minPosition += cameraChange;
 			cam.maxPosition += cameraChange;
 			other.transform.position += playerChange;
 			cam.smoothing = 0.1f;
-			if (needText)
+			if(needText)
 			{
 				StartCoroutine(placeNameCo());
 			}
@@ -31,7 +31,7 @@ public class RoomMove : MonoBehaviour
 
 	// private void OnTriggerExit2D(Collider2D other)
 	// {
-	// 	if (other.CompareTag("Player") && !other.isTrigger)
+	// 	if(other.CompareTag("Player") && !other.isTrigger)
 	// 	{
 	// 		cam.smoothing = 2f;
 	// 	}

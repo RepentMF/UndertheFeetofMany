@@ -41,4 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PreppedScenes/TheGarden.unity
     guid: b6987ff286ec05747a4335690d722497
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: cada44bd834077849a261c70b6657474,
+      type: 2}

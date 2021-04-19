@@ -20,7 +20,8 @@ public class Enemy : MonoBehaviour
 	public bool hit;
 	public int combo;
 	public int baseAtk;
-	public float health;
+	public FloatValue currentHealth;
+	public FloatValue currentStamina;
 	public float moveSpeed;
 	public float homePos;
 	public float currentStagger;
@@ -42,11 +43,8 @@ public class Enemy : MonoBehaviour
 
 	public void TakeDamage(float damage)
 	{
-		health -= damage;
-		if(health <= 0)
-		{
-			this.gameObject.SetActive(false);
-		}
+		currentHealth.runtimeValue -= damage;
+		Debug.Log(damage);
 	}
 
     // Start is called before the first frame update
@@ -90,6 +88,12 @@ public class Enemy : MonoBehaviour
 		if(transform.position.y < homePos && currentState == EnemyState.freefall)
 		{
 			currentState = EnemyState.idle;
+		}
+
+		
+		if(currentHealth.runtimeValue <= 0)
+		{
+			this.gameObject.SetActive(false);
 		}
     }
 }
