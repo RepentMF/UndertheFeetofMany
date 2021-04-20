@@ -85,10 +85,20 @@ public class StatusMod : MonoBehaviour
 		        	switch (status.name)
 		        	{
 		        		case Status.leech:
+		        			//need a way to pull user's info to give illusion of health being sapped
+							enemy.currentHealth.runtimeValue -= status.intensity;
+		    				status.stattimer -= Time.deltaTime;
 		        			break;
 		    			case Status.poison:
+		    				enemy.maxHealth.runtimeValue /= 2;
+		    				if(enemy.maxHealth.runtimeValue < enemy.currentHealth.runtimeValue)
+		    				{
+		    					enemy.currentHealth.runtimeValue = enemy.maxHealth.runtimeValue;
+		    				}
 		    				break;
 						case Status.burn:
+							enemy.currentHealth.runtimeValue -= status.intensity;
+		    				status.stattimer -= Time.deltaTime;
 							break;
 						case Status.struggle:
 							enemy.currentStamina.runtimeValue -= status.intensity;

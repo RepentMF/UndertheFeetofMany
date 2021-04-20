@@ -6,12 +6,13 @@ public class Knockback : MonoBehaviour
 {
 
 	public bool done;
+	public bool magic;
 	public float timer;
 
 	private void OnTriggerEnter2D(Collider2D collider)
 	{
 		Rigidbody2D hurtbox = collider.GetComponent<Rigidbody2D>();
-
+		Debug.Log("ya");
 		if(collider.gameObject.CompareTag("Enemy"))
 		{
 			if((collider.GetComponent<Enemy>().hitBy != GetComponentInParent<Attack>().hitbox) || 
@@ -26,15 +27,23 @@ public class Knockback : MonoBehaviour
 					{
 						if(hurtbox != null)
 						{
-							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage, false);
 							collider.GetComponent<StatusMod>().AddStatus(Status.struggle, 10f, 1.0f * .1f);
 						}
 					}
 					else if(transform.parent.tag == "Burst")
 					{
 						if(hurtbox != null)
-						{
-							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+						{	
+							collider.GetComponent<Enemy>().currentStagger = Mathf.Abs(GetComponentInParent<Attack>().thrust.y) / 40;
+							
+							hurtbox.velocity = Vector2.zero;
+							hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
+
+							collider.GetComponent<Enemy>().currentState = EnemyState.stagger;
+							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage, true);
+							collider.GetComponent<Enemy>().hit = true;
+							collider.GetComponent<Enemy>().combo++;
 						}
 					}
 					else if(transform.parent.tag == "Spark")
@@ -47,7 +56,7 @@ public class Knockback : MonoBehaviour
 							hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
 
 							collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
-							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage, false);
 							collider.GetComponent<Enemy>().hit = true;
 							collider.GetComponent<Enemy>().combo++;
 							Destroy(transform.parent.gameObject);
@@ -58,7 +67,7 @@ public class Knockback : MonoBehaviour
 					{
 						if(hurtbox != null)
 						{
-							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+							collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage, false);
 						}
 					}
 					else if(GetComponentInParent<PlayerMovement>().light == "Sword")
@@ -80,7 +89,7 @@ public class Knockback : MonoBehaviour
 								hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
 
 								collider.GetComponent<Enemy>().currentState = EnemyState.stagger;
-								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage, false);
 								collider.GetComponent<Enemy>().hit = true;
 								collider.GetComponent<Enemy>().combo++;
 							}
@@ -93,7 +102,7 @@ public class Knockback : MonoBehaviour
 								hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
 
 								collider.GetComponent<Enemy>().currentState = EnemyState.stagger;
-								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage, false);
 								collider.GetComponent<Enemy>().hit = true;
 								collider.GetComponent<Enemy>().combo++;
 							}
@@ -116,7 +125,7 @@ public class Knockback : MonoBehaviour
 								hurtbox.velocity = Vector2.zero;
 								hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
 
-								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage, false);
 								collider.GetComponent<Enemy>().hit = true;
 								collider.GetComponent<Enemy>().combo++;
 
@@ -139,7 +148,7 @@ public class Knockback : MonoBehaviour
 								hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
 
 								collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
-								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage, false);
 								collider.GetComponent<Enemy>().hit = true;
 								collider.GetComponent<Enemy>().combo++;
 							}
@@ -153,7 +162,7 @@ public class Knockback : MonoBehaviour
 								hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
 
 								collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
-								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage, false);
 								collider.GetComponent<Enemy>().hit = true;
 								collider.GetComponent<Enemy>().combo++;
 							}
@@ -167,7 +176,7 @@ public class Knockback : MonoBehaviour
 								hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
 
 								collider.GetComponent<Enemy>().currentState = EnemyState.juggle;
-								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage, false);
 								collider.GetComponent<Enemy>().hit = true;
 								collider.GetComponent<Enemy>().combo++;
 							}
@@ -190,7 +199,7 @@ public class Knockback : MonoBehaviour
 								hurtbox.velocity = Vector2.zero;
 								hurtbox.AddForce(GetComponentInParent<Attack>().thrust, ForceMode2D.Force);
 
-								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage);
+								collider.GetComponent<Enemy>().Knock(GetComponentInParent<Attack>().damage, false);
 								collider.GetComponent<Enemy>().hit = true;
 								collider.GetComponent<Enemy>().combo++;
 
@@ -228,7 +237,7 @@ public class Knockback : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(done)
+        if(done && magic)
         {
         	timer -= Time.deltaTime;
         	if(timer <= 0f)

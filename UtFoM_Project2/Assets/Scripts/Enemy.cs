@@ -16,10 +16,11 @@ public enum EnemyState
 public class Enemy : MonoBehaviour
 {
 	public EnemyState currentState;
-	public FloatValue maxHealth;
+	
 	public bool hit;
 	public int combo;
 	public int baseAtk;
+	public FloatValue maxHealth;
 	public FloatValue currentHealth;
 	public FloatValue currentStamina;
 	public float moveSpeed;
@@ -28,7 +29,7 @@ public class Enemy : MonoBehaviour
 	public string enemyName;
 	public string hitBy;
 
-	public void Knock(float damage)
+	public void Knock(float damage, bool execute)
 	{
 		if(combo == 0)
 		{
@@ -37,15 +38,21 @@ public class Enemy : MonoBehaviour
 
 		if(!hit)
 		{
-			TakeDamage(damage);
+			if(execute)
+			{
+				float percent = (currentHealth.initialValue - currentHealth.runtimeValue) / currentHealth.initialValue;
+				damage += (percent * 4);
+			}
+			currentHealth.runtimeValue -= damage;
+			Debug.Log(damage);
 		}
 	}
 
-	public void TakeDamage(float damage)
-	{
-		currentHealth.runtimeValue -= damage;
-		Debug.Log(damage);
-	}
+	// public void TakeDamage(float damage)
+	// {
+	// 	currentHealth.runtimeValue -= damage;
+	// 	Debug.Log(damage);
+	// }
 
     // Start is called before the first frame update
     void Start()
@@ -78,6 +85,7 @@ public class Enemy : MonoBehaviour
 			if(currentStagger < 0f)
 			{
 				currentState = EnemyState.idle;
+				currentStagger = 0f;
 			}
 			else
 			{

@@ -99,7 +99,16 @@ public class PlayerMovement : MonoBehaviour
 	public void LightningBurst()
 	{
 		GameObject lightning = Instantiate(burst);
-		lightning.transform.position = magicStart.position;
+		lightning.transform.position = magicStart.position + new Vector3(.75f, .75f, 0f);
+		GameObject lightning2 = Instantiate(burst);
+		lightning2.transform.position = magicStart.position + new Vector3(-.75f, .75f, 0f);
+		lightning2.transform.GetComponentInParent<Attack>().thrust.x *= -1;
+		GameObject lightning3 = Instantiate(burst);
+		lightning3.transform.position = magicStart.position + new Vector3(.75f, -.75f, 0f);
+		lightning3.transform.GetComponentInParent<Attack>().thrust.y *= -1f;
+		GameObject lightning4 = Instantiate(burst);
+		lightning4.transform.position = magicStart.position + new Vector3(-.75f, -.75f, 0f);
+		lightning4.transform.GetComponentInParent<Attack>().thrust *= -1f;
 		Rigidbody2D rb = lightning.GetComponentInChildren<Rigidbody2D>();
 	}
 
@@ -156,7 +165,7 @@ public class PlayerMovement : MonoBehaviour
 			animator.SetFloat("moveY", playerDir.initialValue.y);
 		}
 		currentKBTime = 0f;
-		light = "Sword";
+		light = "Hammer";
     }
 
     // Update is called once per frame
@@ -286,7 +295,6 @@ public class PlayerMovement : MonoBehaviour
 				{
 					// Stop the player
 					animator.SetBool("moving", false);
-					Debug.Log("no");
 					SparkTrigger();
 				}
 				else if(controls.Player.HeavyButton.triggered)
