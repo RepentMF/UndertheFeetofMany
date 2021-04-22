@@ -33,6 +33,7 @@ public class StatusMod : MonoBehaviour
 	private Enemy enemy;
 	List<StatusEffect> statuses;
 	StatusEffect remove;
+	StatusEffect staminaVar;
 	bool pullCheck;
 
 	public void AddStatus(Status name, float statTimer, float intensity)
@@ -87,7 +88,7 @@ public class StatusMod : MonoBehaviour
 		        		case Status.leech:
 		        			//need a way to pull user's info to give illusion of health being sapped
 							enemy.currentHealth.runtimeValue -= status.intensity;
-		    				status.stattimer -= Time.deltaTime;
+		    				status.statTimer -= Time.deltaTime;
 		        			break;
 		    			case Status.poison:
 		    				enemy.maxHealth.runtimeValue /= 2;
@@ -98,7 +99,7 @@ public class StatusMod : MonoBehaviour
 		    				break;
 						case Status.burn:
 							enemy.currentHealth.runtimeValue -= status.intensity;
-		    				status.stattimer -= Time.deltaTime;
+		    				status.statTimer -= Time.deltaTime;
 							break;
 						case Status.struggle:
 							enemy.currentStamina.runtimeValue -= status.intensity;
@@ -113,7 +114,18 @@ public class StatusMod : MonoBehaviour
 		        		pullCheck = true;
 		        		//remove
 		        	}
+
+		        	if(status.name == Status.struggle && staminaVar != null)
+		        	{
+		        		staminaVar = status;
+		        	}
 	       		}
+
+	        	if(enemy.currentStamina.runtimeValue < 0f && statuses.Contains(staminaVar))
+				{
+					statuses.Remove(staminaVar);
+					statuses.Add(new StatusEffect(Status.exhaust, 0f, 0f));
+				}
 	       		if(statuses.Contains(remove) && pullCheck)
 	       		{
 	       			statuses.Remove(remove);
