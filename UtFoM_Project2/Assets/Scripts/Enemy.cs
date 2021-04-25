@@ -103,5 +103,8 @@ public class Enemy : MonoBehaviour
 		{
 			this.gameObject.SetActive(false);
 		}
+
+
+		GetComponent<Rigidbody2D>().velocity = new Vector2 (3f, 0);
     }
 }
