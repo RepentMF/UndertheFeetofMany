@@ -423,10 +423,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  maxHealth: {fileID: 0}
   hit: 0
   combo: 0
   baseAtk: 0
+  maxHealth: {fileID: 0}
   currentHealth: {fileID: 11400000, guid: 752e0e4ccf8cb314baebd8440e89278e, type: 2}
   currentStamina: {fileID: 11400000, guid: cd87973f6bc98944abeb5f80bbede954, type: 2}
   moveSpeed: 1
@@ -806,7 +806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &840209740
 Transform:
   m_ObjectHideFlags: 0

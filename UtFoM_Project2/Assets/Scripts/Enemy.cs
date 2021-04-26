@@ -105,6 +105,7 @@ public class Enemy : MonoBehaviour
 		}
 
 
-		GetComponent<Rigidbody2D>().velocity = new Vector2 (3f, 0);
+		//GetComponent<Rigidbody2D>().velocity = new Vector2 (3f, 0);
+		Debug.Log(currentStamina.runtimeValue);
     }
 }
