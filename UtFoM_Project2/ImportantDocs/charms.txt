@@ -18,9 +18,12 @@
 -(volt trap becomes lightning burst), (flurry field becomes blizzard fall), 
 (spark trigger becomes flare shot)
 
--(kitchen knife becomes the traitor's daggers), 
-(training sword becomes the serpant's blade), 
-(bell hammer becomes the giant's gauntlet)
+-(switch between weapons at the start of weapon cooldown frames)
+
+-(kitchen knife becomes the traitor's daggers; ignores status immunity), 
+(training sword becomes the serpant's blade; ignores ), 
+(bell hammer becomes the giant's gauntlet; acts as if target has weight 
+class 1 lower than its actual weight class, unless it is already at feather-weight)
 
 
 
