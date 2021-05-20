@@ -478,6 +478,7 @@ GameObject:
   - component: {fileID: 156413590}
   - component: {fileID: 156413591}
   - component: {fileID: 156413592}
+  - component: {fileID: 156413593}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Enemy
@@ -501,14 +502,22 @@ MonoBehaviour:
   hit: 0
   combo: 0
   baseAtk: 0
+  baseWeight: 0
+  currentWeight: 0
   maxHealth: {fileID: 0}
   currentHealth: {fileID: 11400000, guid: 752e0e4ccf8cb314baebd8440e89278e, type: 2}
   currentStamina: {fileID: 11400000, guid: cd87973f6bc98944abeb5f80bbede954, type: 2}
   moveSpeed: 1
-  homePos: 0
+  home: 0
   currentStagger: 0
   enemyName: 
   hitBy: 
+  rigidbody: {fileID: 0}
+  target: {fileID: 0}
+  homePos: {fileID: 0}
+  chaseRadius: 0
+  attackRadius: 0
+  animator: {fileID: 0}
 --- !u!212 &156413588
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -634,6 +643,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b638f8e309b7f5a42ba75c7421301852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &156413593
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156413586}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f1553b9e93d409146bfbe037aa32b747, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &158703202 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2455186546803438167, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -4037,12 +4065,12 @@ PrefabInstance:
     - target: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.654
+      value: -2.17
       objectReference: {fileID: 0}
     - target: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.132
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
