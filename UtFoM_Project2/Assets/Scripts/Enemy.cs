@@ -38,21 +38,6 @@ public class Enemy : MonoBehaviour
 	public float attackRadius;
 	public Animator animator;
 
-	void CheckDistance()
-	{
-		if(Vector3.Distance(transform.position, target.transform.position) < 5.0f)
-		{
-			//move toward player
-			rigidbody.velocity = Vector2.left;
-			Debug.Log("yea");
-		}
-		else
-		{
-			//move randomly
-			Debug.Log("na");
-		}
-	}
-
 	private void SetAnimFloat(Vector2 vec)
 	{
 		animator.SetFloat("moveX", vec.x);
@@ -111,7 +96,7 @@ public class Enemy : MonoBehaviour
 	// }
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
     	hit = false;
     	combo = 0;
@@ -167,7 +152,6 @@ public class Enemy : MonoBehaviour
 			this.gameObject.SetActive(false);
 		}
 
-		CheckDistance();
 		if(currentState == EnemyState.stagger || currentState == EnemyState.juggle)
 		{
 			animator.Play("stagger");

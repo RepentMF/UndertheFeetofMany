@@ -6,6 +6,19 @@ public class Slime : Enemy
 {
     public int randDir;
 
+    void CheckDistance()
+    {
+        if(Vector3.Distance(transform.position, target.transform.position) < 3.0f)
+        {
+            //move toward player
+            rigidbody.velocity = target.transform.position - transform.position;
+        }
+        else
+        {
+            //move randomly
+        }
+    }
+
     void Rush(float spd)
     {
         // randDir = Random.Range(0, 4);
@@ -13,9 +26,9 @@ public class Slime : Enemy
     }
 
     // Start is called before the first frame update
-    void Start()
-    {
-    }
+    // void Start()
+    // {
+    // }
 
     // Update is called once per frame
     // void Update()
@@ -23,8 +36,8 @@ public class Slime : Enemy
         
     // }
 
-    // void FixedUpdate()
-    // {
-
-    // }
+    void FixedUpdate()
+    {
+        CheckDistance();
+    }
 }
