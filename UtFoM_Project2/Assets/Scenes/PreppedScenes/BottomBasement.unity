@@ -479,6 +479,7 @@ GameObject:
   - component: {fileID: 156413591}
   - component: {fileID: 156413592}
   - component: {fileID: 156413593}
+  - component: {fileID: 156413594}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Enemy
@@ -493,7 +494,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156413586}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3fb4c5cc16fcfe4aa72f8e2a12b268d, type: 3}
   m_Name: 
@@ -662,6 +663,39 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &156413594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156413586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 868753bbe99202e45a15bc0a0ac20a53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  hit: 0
+  combo: 0
+  baseAtk: 0
+  baseWeight: 0
+  currentWeight: 0
+  maxHealth: {fileID: 0}
+  currentHealth: {fileID: 0}
+  currentStamina: {fileID: 0}
+  moveSpeed: 0
+  home: 0
+  currentStagger: 0
+  enemyName: 
+  hitBy: 
+  rigidbody: {fileID: 0}
+  target: {fileID: 0}
+  homePos: {fileID: 0}
+  chaseRadius: 0
+  attackRadius: 0
+  animator: {fileID: 0}
+  randDir: 0
 --- !u!1 &158703202 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2455186546803438167, guid: 37a7ab54d42670e4b974904b087b9837,

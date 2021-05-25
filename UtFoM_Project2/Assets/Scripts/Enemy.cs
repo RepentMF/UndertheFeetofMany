@@ -40,6 +40,17 @@ public class Enemy : MonoBehaviour
 
 	void CheckDistance()
 	{
+		if(Vector3.Distance(transform.position, target.transform.position) < 5.0f)
+		{
+			//move toward player
+			rigidbody.velocity = Vector2.left;
+			Debug.Log("yea");
+		}
+		else
+		{
+			//move randomly
+			Debug.Log("na");
+		}
 	}
 
 	private void SetAnimFloat(Vector2 vec)
