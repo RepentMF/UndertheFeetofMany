@@ -12,7 +12,6 @@ public class Knockback : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D collider)
 	{
 		Rigidbody2D hurtbox = collider.GetComponent<Rigidbody2D>();
-		Debug.Log("ya");
 		if(collider.gameObject.CompareTag("Enemy"))
 		{
 			if((collider.GetComponent<Enemy>().hitBy != GetComponentInParent<Attack>().hitbox) || 

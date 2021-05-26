@@ -5,7 +5,7 @@ using UnityEngine;
 public enum EnemyState
 {
 	idle,
-	walk,
+	move,
 	attack,
 	standby, //buffer state for Knockback script
 	stagger,
@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
 	public float attackRadius;
 	public Animator animator;
 
-	private void SetAnimFloat(Vector2 vec)
+	protected void SetAnimFloat(Vector2 vec)
 	{
 		animator.SetFloat("moveX", vec.x);
 		animator.SetFloat("moveY", vec.y);
@@ -111,7 +111,7 @@ public class Enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    public void FixedUpdate()
     {
     	if(currentState == EnemyState.idle)
     	{

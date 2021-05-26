@@ -695,7 +695,18 @@ MonoBehaviour:
   chaseRadius: 0
   attackRadius: 0
   animator: {fileID: 0}
-  randDir: 0
+  dir: {x: 0, y: 0, z: 0}
+  spd: 1.5
+  movRange: 6
+  rushRange: 3
+  actTimerBase: 1
+  movTimerBase: 0.5
+  rushTimerBase: 1.167
+  actTimer: 1
+  movTimer: 0.5
+  atkTimer: 1.167
+  inRange: 0
+  inRushRange: 0
 --- !u!1 &158703202 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2455186546803438167, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -4099,12 +4110,12 @@ PrefabInstance:
     - target: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.17
+      value: -2.95
       objectReference: {fileID: 0}
     - target: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.09
+      value: -0.58
       objectReference: {fileID: 0}
     - target: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}

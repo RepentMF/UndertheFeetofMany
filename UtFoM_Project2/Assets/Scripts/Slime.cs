@@ -4,25 +4,91 @@ using UnityEngine;
 
 public class Slime : Enemy
 {
-    public int randDir;
+    public Vector3 dir;
+    public float spd;
+    public float movRange = 7.5f;
+    public float rushRange = 4.5f;
+    public float actTimerBase;
+    public float movTimerBase;
+    public float rushTimerBase;
+    public float actTimer;
+    public float movTimer;
+    public float atkTimer;
+    public bool inRange;
+    public bool inRushRange;
 
-    void CheckDistance()
+    void CheckRange()
     {
-        if(Vector3.Distance(transform.position, target.transform.position) < 3.0f)
+        if(Vector3.Distance(transform.position, target.transform.position) < movRange)
         {
-            //move toward player
-            rigidbody.velocity = target.transform.position - transform.position;
+            inRange = true;
+            inRushRange = false;
+
+            if(Vector3.Distance(transform.position, target.transform.position) < rushRange)
+            {
+                inRushRange = true;
+            }
         }
         else
         {
-            //move randomly
+            inRange = false;
+            inRushRange = false;
         }
     }
 
-    void Rush(float spd)
+    void CheckDirection()
     {
-        // randDir = Random.Range(0, 4);
-        // Debug.Log(randDir);
+        if(inRange)
+        {
+            dir = (target.transform.position - transform.position);
+
+            if(dir.x > 0 && Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+            {
+                dir = Vector3.right;
+            }
+            else if(dir.y > 0 && Mathf.Abs(dir.y) > Mathf.Abs(dir.x))
+            {
+                dir = Vector3.up;
+            }
+            else if(dir.x < 0 && Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+            {
+                dir = Vector3.left;
+            }
+            else if(dir.y < 0 && Mathf.Abs(dir.y) > Mathf.Abs(dir.x))
+            {
+                dir = Vector3.down;
+            }
+        }
+    }
+
+    void Move()
+    {
+        currentState = EnemyState.move;
+        rigidbody.velocity = dir * spd;
+        movTimer = movTimerBase;
+    }
+
+    void StartRush()
+    {
+        currentState = EnemyState.attack;
+        //rigidbody.velocity = dir * 1.75f;
+        atkTimer = rushTimerBase;
+        animator.Play("rush");
+    }
+
+    void Rush()
+    {
+        if(atkTimer < 0)
+        {
+            currentState = EnemyState.idle;
+            actTimer = actTimerBase;
+            rigidbody.velocity = Vector3.zero;
+            animator.Play("idle");
+        }
+        else if(atkTimer < 0.583f)
+        {
+            rigidbody.velocity = dir * 1.75f;
+        }
     }
 
     // Start is called before the first frame update
@@ -36,8 +102,44 @@ public class Slime : Enemy
         
     // }
 
-    void FixedUpdate()
+    void FixedUpdate() 
     {
-        CheckDistance();
+        CheckRange();
+
+        if(currentState == EnemyState.idle && inRange)
+        {
+            if(actTimer < 0)
+            {
+                if(inRushRange)
+                {
+                    StartRush();
+                }
+                else
+                {
+                    Move();
+                }
+            }
+            else
+            {
+                CheckDirection();
+                SetAnimFloat(dir);
+                actTimer -= Time.deltaTime;
+            }  
+        }
+        else if(currentState == EnemyState.move)
+        {
+            movTimer -= Time.deltaTime;
+            if(movTimer < 0)
+            {
+                currentState = EnemyState.idle;
+                actTimer = actTimerBase;
+                rigidbody.velocity = Vector3.zero;
+            }
+        }
+        else if(currentState == EnemyState.attack)
+        {
+            atkTimer -= Time.deltaTime;
+            Rush();
+        }
     }
 }
