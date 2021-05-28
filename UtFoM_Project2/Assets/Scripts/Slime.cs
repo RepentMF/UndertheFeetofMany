@@ -6,7 +6,6 @@ public class Slime : Enemy
 {
     public Vector3 dir;
     public float spd;
-    public float movRange = 7.5f;
     public float rushRange = 4.5f;
     public float actTimerBase;
     public float movTimerBase;
@@ -104,42 +103,51 @@ public class Slime : Enemy
 
     void FixedUpdate() 
     {
+        IdleReset();
         CheckRange();
 
-        if(currentState == EnemyState.idle && inRange)
+        if(currentState != EnemyState.stagger && currentState != EnemyState.juggle && currentState != EnemyState.freefall)
         {
-            if(actTimer < 0)
+            if(currentState == EnemyState.idle && inRange)
             {
-                if(inRushRange)
+                if(actTimer < 0)
                 {
-                    StartRush();
+                    if(inRushRange)
+                    {
+                        StartRush();
+                    }
+                    else
+                    {
+                        Move();
+                    }
                 }
                 else
                 {
-                    Move();
+                    CheckDirection();
+                    SetAnimFloat(dir);
+                    actTimer -= Time.deltaTime;
+                }  
+            }
+            else if(currentState == EnemyState.move)
+            {
+                movTimer -= Time.deltaTime;
+                if(movTimer < 0)
+                {
+                    currentState = EnemyState.idle;
+                    actTimer = actTimerBase;
+                    rigidbody.velocity = Vector3.zero;
                 }
             }
-            else
+            else if(currentState == EnemyState.attack)
             {
-                CheckDirection();
-                SetAnimFloat(dir);
-                actTimer -= Time.deltaTime;
-            }  
-        }
-        else if(currentState == EnemyState.move)
-        {
-            movTimer -= Time.deltaTime;
-            if(movTimer < 0)
-            {
-                currentState = EnemyState.idle;
-                actTimer = actTimerBase;
-                rigidbody.velocity = Vector3.zero;
+                atkTimer -= Time.deltaTime;
+                Rush();
             }
         }
-        else if(currentState == EnemyState.attack)
+        else
         {
-            atkTimer -= Time.deltaTime;
-            Rush();
+            base.FixedUpdate();
         }
+        Debug.Log(currentState);
     }
 }

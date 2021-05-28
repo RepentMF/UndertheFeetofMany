@@ -16,7 +16,7 @@ public enum EnemyState
 public class Enemy : MonoBehaviour
 {
 	public EnemyState currentState;
-	public bool hit;
+	public bool isInvuln;
 	public int combo;
 	public int baseAtk;
 	public int baseWeight;
@@ -34,8 +34,7 @@ public class Enemy : MonoBehaviour
 	public Rigidbody2D rigidbody;
 	public Transform target;
 	public Transform homePos;
-	public float chaseRadius;
-	public float attackRadius;
+	public float movRange;
 	public Animator animator;
 
 	protected void SetAnimFloat(Vector2 vec)
@@ -70,14 +69,14 @@ public class Enemy : MonoBehaviour
 		}
 	}
 
-	public void Knock(float damage, bool execute)
+	public void TakeDamage(float damage, bool execute = false)
 	{
 		if(combo == 0)
 		{
 			home = transform.position.y;
 		}
 
-		if(!hit)
+		if(!isInvuln)
 		{
 			if(execute)
 			{
@@ -89,20 +88,94 @@ public class Enemy : MonoBehaviour
 		}
 	}
 
-	// public void TakeDamage(float damage)
-	// {
-	// 	currentHealth.runtimeValue -= damage;
-	// 	Debug.Log(damage);
-	// }
+	public void IdleReset()
+	{
+		if(currentState == EnemyState.idle)
+    	{
+			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+			GetComponent<Rigidbody2D>().gravityScale = 0.0f;
+			isInvuln = false;
+			combo = 0;
+			hitBy = "";
+    	}
+	}
+
+	public void Knockback()
+	{
+
+	}
+
+	public void OnTriggerEnter2D(Collider2D collider)
+	{
+		if(!collider.gameObject.CompareTag("Player") && !collider.gameObject.CompareTag("Enemy") 
+			&& !isInvuln)
+		{
+			Attack attack = collider.GetComponentInParent<Attack>();
+			Rigidbody2D body = GetComponent<Rigidbody2D>();
+			Animator playerAnim = collider.GetComponentInParent<PlayerMovement>().animator;
+			if(hitBy != attack.hitbox || attack.hitbox == "knife")
+			{
+				hitBy = attack.hitbox;
+				TakeDamage(attack.damage);
+				Debug.Log(attack.thrust);
+				Debug.Break();
+
+				if(attack.hitbox.Contains("sword"))
+				{
+					currentState = EnemyState.stagger;
+
+					if(playerAnim.GetFloat("moveX") != 0f)
+					{
+						currentStagger = Mathf.Abs(attack.thrust.y) / 10;
+						if(attack.gameObject.tag == "Heavy")
+						{
+							currentState = EnemyState.juggle;
+							body.gravityScale = 2f;
+						}
+					}
+					else if(playerAnim.GetFloat("moveY") != 0f)
+					{
+						currentStagger = Mathf.Abs(attack.thrust.x) / 10;
+						if(attack.gameObject.tag == "Heavy")
+						{
+							currentStagger = (Mathf.Abs(attack.thrust.y) / 10) - 12;
+							body.gravityScale = 0f;
+						}
+					}
+
+					body.velocity = Vector2.zero;
+					body.AddForce(attack.thrust, ForceMode2D.Force);
+					isInvuln = true;
+					combo++;
+				}
+				else if(attack.hitbox.Contains("hammer"))
+				{
+					body.gravityScale = 2f;
+					currentState = EnemyState.juggle;
+
+					if(attack.gameObject.tag == "Heavy" && playerAnim.GetFloat("moveY") != 0f)
+					{
+						currentStagger = Mathf.Abs(attack.thrust.y) / 10;
+						currentState = EnemyState.stagger;
+						body.gravityScale = 0f;
+					}
+
+					body.velocity = Vector2.zero;
+					body.AddForce(attack.thrust, ForceMode2D.Force);
+					isInvuln = true;
+					combo++;
+				}
+			}
+			
+		}
+	}
 
     // Start is called before the first frame update
     public void Start()
     {
-    	hit = false;
+    	isInvuln = false;
     	combo = 0;
     	currentStagger = 0f;
-    	currentWeight = baseWeight;
-
 
 		currentState = EnemyState.idle;
 		rigidbody = GetComponent<Rigidbody2D>();
@@ -113,19 +186,10 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     public void FixedUpdate()
     {
-    	if(currentState == EnemyState.idle)
-    	{
-			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-			GetComponent<Rigidbody2D>().gravityScale = 0.0f;
-			hit = false;
-			combo = 0;
-			hitBy = "";
-    	}
-
     	if(GetComponent<Rigidbody2D>().velocity.y < 0f && currentState == EnemyState.juggle)
     	{
     		currentState = EnemyState.freefall;
-    		hit = false;
+    		isInvuln = false;
     	}
         
     	if(currentState == EnemyState.stagger)

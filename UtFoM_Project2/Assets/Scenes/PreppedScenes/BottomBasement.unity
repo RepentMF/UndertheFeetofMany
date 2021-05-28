@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 1269918548128972736, guid: 6facb4a6a42075a43b43f74c653218ab,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1269918548128972736, guid: 6facb4a6a42075a43b43f74c653218ab,
         type: 3}
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  hit: 0
+  isInvuln: 0
   combo: 0
   baseAtk: 0
   baseWeight: 0
@@ -516,8 +516,7 @@ MonoBehaviour:
   rigidbody: {fileID: 0}
   target: {fileID: 0}
   homePos: {fileID: 0}
-  chaseRadius: 0
-  attackRadius: 0
+  movRange: 0
   animator: {fileID: 0}
 --- !u!212 &156413588
 SpriteRenderer:
@@ -579,11 +578,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156413586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6, y: 0.56, z: -1}
+  m_LocalPosition: {x: 1.4, y: 0.89, z: -1}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &156413590
 Rigidbody2D:
@@ -676,14 +675,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  hit: 0
+  isInvuln: 0
   combo: 0
   baseAtk: 0
   baseWeight: 0
   currentWeight: 0
   maxHealth: {fileID: 0}
-  currentHealth: {fileID: 0}
-  currentStamina: {fileID: 0}
+  currentHealth: {fileID: 11400000, guid: 752e0e4ccf8cb314baebd8440e89278e, type: 2}
+  currentStamina: {fileID: 11400000, guid: cd87973f6bc98944abeb5f80bbede954, type: 2}
   moveSpeed: 0
   home: 0
   currentStagger: 0
@@ -692,12 +691,10 @@ MonoBehaviour:
   rigidbody: {fileID: 0}
   target: {fileID: 0}
   homePos: {fileID: 0}
-  chaseRadius: 0
-  attackRadius: 0
+  movRange: 6
   animator: {fileID: 0}
   dir: {x: 0, y: 0, z: 0}
   spd: 1.5
-  movRange: 6
   rushRange: 3
   actTimerBase: 1
   movTimerBase: 0.5
@@ -3264,7 +3261,7 @@ PrefabInstance:
     - target: {fileID: 108194064454167124, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_TagString
-      value: Medium
+      value: Light
       objectReference: {fileID: 0}
     - target: {fileID: 215747671568864222, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
@@ -3466,6 +3463,11 @@ PrefabInstance:
       propertyPath: damage
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3416526663385470388, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_TagString
+      value: Sword
+      objectReference: {fileID: 0}
     - target: {fileID: 3423805072529770644, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_IsActive
@@ -3584,7 +3586,7 @@ PrefabInstance:
     - target: {fileID: 4324089519645820488, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_TagString
-      value: Medium
+      value: Light
       objectReference: {fileID: 0}
     - target: {fileID: 4404084405053901436, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
@@ -3605,6 +3607,11 @@ PrefabInstance:
         type: 3}
       propertyPath: damage
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4688534223293840995, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_TagString
+      value: Knife
       objectReference: {fileID: 0}
     - target: {fileID: 4694291984734067338, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
@@ -3659,7 +3666,7 @@ PrefabInstance:
     - target: {fileID: 5205567853011011115, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_TagString
-      value: Medium
+      value: Light
       objectReference: {fileID: 0}
     - target: {fileID: 5274779205138465140, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
@@ -3739,7 +3746,7 @@ PrefabInstance:
     - target: {fileID: 6158849826912359175, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_TagString
-      value: Medium
+      value: Light
       objectReference: {fileID: 0}
     - target: {fileID: 6237911432654773026, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
@@ -3850,6 +3857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: damage
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404938568080233792, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_TagString
+      value: Hammer
       objectReference: {fileID: 0}
     - target: {fileID: 7526656931513079125, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
@@ -4110,12 +4122,12 @@ PrefabInstance:
     - target: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.95
+      value: -2.05
       objectReference: {fileID: 0}
     - target: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.58
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 8676862407922533661, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
@@ -4450,7 +4462,7 @@ PrefabInstance:
     - target: {fileID: 1269918548128972736, guid: 6facb4a6a42075a43b43f74c653218ab,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1269918548128972736, guid: 6facb4a6a42075a43b43f74c653218ab,
         type: 3}
@@ -4820,7 +4832,7 @@ PrefabInstance:
     - target: {fileID: 1269918548128972736, guid: 6facb4a6a42075a43b43f74c653218ab,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1269918548128972736, guid: 6facb4a6a42075a43b43f74c653218ab,
         type: 3}
