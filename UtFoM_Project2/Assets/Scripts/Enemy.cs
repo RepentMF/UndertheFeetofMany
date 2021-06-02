@@ -118,7 +118,6 @@ public class Enemy : MonoBehaviour
 				hitBy = attack.hitbox;
 				TakeDamage(attack.damage);
 				Debug.Log(attack.thrust);
-				Debug.Break();
 
 				if(attack.hitbox.Contains("sword"))
 				{

@@ -165,7 +165,7 @@ public class PlayerMovement : MonoBehaviour
 			animator.SetFloat("moveY", playerDir.initialValue.y);
 		}
 		currentKBTime = 0f;
-		light = "Sword";
+		light = "Hammer";
     }
 
     // Update is called once per frame
