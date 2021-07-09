@@ -1,0 +1,25 @@
+equippedWeapon - string, weapon equipped
+
+item class
+-name
+-description
+-image
+weapon will extend item
+-
+spell will extend item
+charm will extend item
+doorkey will extend item
+-door code?
+
+weaponsArray
+spellsArray
+charmsArray (mods and upgs)
+keysArray
+diaryArray
+dnaArray
+catalystArray - array, adds gameobject to array when player receives item-
+destroys item gameobject in world
+
+hasMap - bool
+hasGem - bool
+

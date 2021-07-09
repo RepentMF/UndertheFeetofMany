@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class Sign : MonoBehaviour
 {
+	InputController controls;
+
 	public Signal contextOn;
 	public Signal contextOff;
 	public GameObject box;
@@ -14,7 +17,7 @@ public class Sign : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.CompareTag("Player"))
+		if (collision.CompareTag("Player") && collision.isTrigger)
 		{
 			contextOn.Raise();
 			active = true;
@@ -23,12 +26,23 @@ public class Sign : MonoBehaviour
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-		if (collision.CompareTag("Player")) 
+		if (collision.CompareTag("Player") && collision.isTrigger) 
 		{
 			contextOff.Raise();
 			active = false;
 			box.SetActive(false);
+			if (dialogue.text == insert)
+			{
+				collision.GetComponent<Inventory>().AddItem(GetComponentInChildren<Item>());
+				this.gameObject.SetActive(false);
+			}
 		}
+	}
+
+	void Awake()
+	{
+		controls = new InputController();
+		controls.Enable();
 	}
 
     // Start is called before the first frame update
@@ -40,17 +54,10 @@ public class Sign : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetButtonDown("context") && active) 
+		if (controls.Player.ContextConfirm.triggered && active) 
 		{
-			if (box.activeInHierarchy) 
-			{
-				box.SetActive(false);
-			} 
-			else 
-			{
 				box.SetActive(true);
 				dialogue.text = insert;
-			}
 		}
     }
 }

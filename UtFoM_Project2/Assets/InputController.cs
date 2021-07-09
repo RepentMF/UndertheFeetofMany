@@ -57,6 +57,14 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""ContextConfirm"",
+                    ""type"": ""Button"",
+                    ""id"": ""6a480aab-e6ea-4a27-b63f-1c74bf84ae5c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -257,6 +265,28 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""84fa7912-064d-4112-bdc0-ee973134dd6e"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ContextConfirm"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""667f2e62-f77d-4918-8a2a-f52cf9acafae"",
+                    ""path"": ""<DualShockGamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ContextConfirm"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -270,6 +300,7 @@ public class @InputController : IInputActionCollection, IDisposable
         m_Player_LaunchButton = m_Player.FindAction("LaunchButton", throwIfNotFound: true);
         m_Player_HeavyButton = m_Player.FindAction("HeavyButton", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
+        m_Player_ContextConfirm = m_Player.FindAction("ContextConfirm", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -324,6 +355,7 @@ public class @InputController : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_LaunchButton;
     private readonly InputAction m_Player_HeavyButton;
     private readonly InputAction m_Player_Move;
+    private readonly InputAction m_Player_ContextConfirm;
     public struct PlayerActions
     {
         private @InputController m_Wrapper;
@@ -333,6 +365,7 @@ public class @InputController : IInputActionCollection, IDisposable
         public InputAction @LaunchButton => m_Wrapper.m_Player_LaunchButton;
         public InputAction @HeavyButton => m_Wrapper.m_Player_HeavyButton;
         public InputAction @Move => m_Wrapper.m_Player_Move;
+        public InputAction @ContextConfirm => m_Wrapper.m_Player_ContextConfirm;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -357,6 +390,9 @@ public class @InputController : IInputActionCollection, IDisposable
                 @Move.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
+                @ContextConfirm.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnContextConfirm;
+                @ContextConfirm.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnContextConfirm;
+                @ContextConfirm.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnContextConfirm;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -376,6 +412,9 @@ public class @InputController : IInputActionCollection, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
+                @ContextConfirm.started += instance.OnContextConfirm;
+                @ContextConfirm.performed += instance.OnContextConfirm;
+                @ContextConfirm.canceled += instance.OnContextConfirm;
             }
         }
     }
@@ -387,5 +426,6 @@ public class @InputController : IInputActionCollection, IDisposable
         void OnLaunchButton(InputAction.CallbackContext context);
         void OnHeavyButton(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
+        void OnContextConfirm(InputAction.CallbackContext context);
     }
 }

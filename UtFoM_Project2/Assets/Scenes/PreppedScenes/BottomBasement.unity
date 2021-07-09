@@ -798,6 +798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 242017343}
   - component: {fileID: 242017344}
+  - component: {fileID: 242017345}
   m_Layer: 0
   m_Name: hammer_item
   m_TagString: Untagged
@@ -871,6 +872,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &242017345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242017342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33c59d2d5f732bb45b4fa6e384a25c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  category: 
+  name: Hammer
+  description: 
 --- !u!1 &246057493
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 246057494}
   - component: {fileID: 246057495}
+  - component: {fileID: 246057496}
   m_Layer: 0
   m_Name: knife_item
   m_TagString: Untagged
@@ -954,6 +971,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &246057496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246057493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33c59d2d5f732bb45b4fa6e384a25c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  category: Weapon
+  name: Knife
+  description: stab go brrr haha
 --- !u!1 &259295921 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7710875624203859708, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -4114,6 +4146,16 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8676862407922533659, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 5.0555553
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676862407922533659, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 3.2222223
+      objectReference: {fileID: 0}
     - target: {fileID: 8676862407922533660, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_Size.x
@@ -4188,6 +4230,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676862407922533670, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 5.0555553
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676862407922533670, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 3.2222223
       objectReference: {fileID: 0}
     - target: {fileID: 8748078327140331384, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
@@ -4325,6 +4377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1388786553}
   - component: {fileID: 1388786554}
+  - component: {fileID: 1388786555}
   m_Layer: 0
   m_Name: sword_item
   m_TagString: Untagged
@@ -4398,6 +4451,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1388786555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388786552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33c59d2d5f732bb45b4fa6e384a25c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  category: 
+  name: Sword
+  description: 
 --- !u!1 &1416648858 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8676862407922533663, guid: 37a7ab54d42670e4b974904b087b9837,
@@ -4467,6 +4535,77 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1416648861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416648858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f271be6d1fec1ef48852ad1c393fc999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equippedWeapon: 
+  spellsList: []
+  charmsList: []
+  doorKeysList: []
+  weaponsList: []
+  diariesList: []
+  keyItemsList: []
+  hasMap: 0
+  hasGem: 0
+--- !u!1 &1483204195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1269918548128972738, guid: 6facb4a6a42075a43b43f74c653218ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 1269918547278203139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1483204196
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483204195}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.13}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.83, y: 1.38}
+  m_EdgeRadius: 0
+--- !u!114 &1483204197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483204195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8b7d2d6f1af154a8492072599bb352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextOn: {fileID: 11400000, guid: 494ea12d251b8ba43bd34d683da31eb5, type: 2}
+  contextOff: {fileID: 11400000, guid: 9aab7d85ddd8e9345872bc7348bbf0a6, type: 2}
+  box: {fileID: 1528723030}
+  dialogue: {fileID: 1528723029}
+  insert: u smell like dog buns
+  active: 0
 --- !u!1001 &1521510219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4660,6 +4799,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7b7cd5bf8b408642ab68fb3a96903c7, type: 3}
+--- !u!114 &1528723029 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5037108281000341925, guid: a7b7cd5bf8b408642ab68fb3a96903c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1528723028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1528723030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5037108280274466180, guid: a7b7cd5bf8b408642ab68fb3a96903c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1528723028}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1664455287 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5205567853011011115, guid: 37a7ab54d42670e4b974904b087b9837,
