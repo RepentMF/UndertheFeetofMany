@@ -4606,6 +4606,7 @@ MonoBehaviour:
   dialogue: {fileID: 1528723029}
   insert: u smell like dog buns
   active: 0
+  animator: {fileID: 0}
 --- !u!1001 &1521510219
 PrefabInstance:
   m_ObjectHideFlags: 0

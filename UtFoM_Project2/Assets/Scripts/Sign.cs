@@ -14,10 +14,12 @@ public class Sign : MonoBehaviour
 	public Text dialogue;
 	public string insert;
 	public bool active;
+	public bool obtained;
+	public Animator animator;
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.CompareTag("Player") && collision.isTrigger)
+		if(collision.CompareTag("Player") && collision.isTrigger)
 		{
 			contextOn.Raise();
 			active = true;
@@ -26,15 +28,20 @@ public class Sign : MonoBehaviour
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-		if (collision.CompareTag("Player") && collision.isTrigger) 
+		if(collision.CompareTag("Player") && collision.isTrigger) 
 		{
 			contextOff.Raise();
 			active = false;
 			box.SetActive(false);
-			if (dialogue.text == insert)
+
+			if(dialogue.text == insert)
 			{
 				collision.GetComponent<Inventory>().AddItem(GetComponentInChildren<Item>());
-				this.gameObject.SetActive(false);
+				GetComponentInChildren<Item>().gameObject.SetActive(false);
+				animator.Play("item_holder_voip");
+				obtained = true;
+
+				//this.gameObject.SetActive(false);
 			}
 		}
 	}
@@ -48,16 +55,22 @@ public class Sign : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
+        obtained = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-		if (controls.Player.ContextConfirm.triggered && active) 
+		if(controls.Player.ContextConfirm.triggered && active) 
 		{
-				box.SetActive(true);
-				dialogue.text = insert;
+			box.SetActive(true);
+			dialogue.text = insert;
+		}
+
+		if(obtained);
+		{
+			this.gameObject.SetActive(false);
 		}
     }
 }

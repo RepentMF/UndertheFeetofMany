@@ -1966,12 +1966,24 @@ SpriteAtlas:
   - {fileID: 21300140, guid: f8f7f51d951fa2d4d91d63ea90d4a4da, type: 3}
   - {fileID: 21300142, guid: f8f7f51d951fa2d4d91d63ea90d4a4da, type: 3}
   - {fileID: 21300000, guid: bbeffe6d98912784ebcbff4e83d229cf, type: 3}
+  - {fileID: 3000696153878756389, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
+  - {fileID: -7638738936969319913, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
   - {fileID: 465625315162889304, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
   - {fileID: 7097433992794156261, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
   - {fileID: 3015641449658138622, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
   - {fileID: -4308804983602798707, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
   - {fileID: -6383615982371929892, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
   - {fileID: 2161998847209283038, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
+  - {fileID: -4824420560708734682, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
+  - {fileID: 1918457510649017912, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
+  - {fileID: 20199794151928923, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
+  - {fileID: -6874223944606563523, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
+  - {fileID: -1359726772549391391, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
+  - {fileID: 6349736405434237123, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
+  - {fileID: 8055168333691471754, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
+  - {fileID: -8313986692804853130, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
+  - {fileID: 3750328241259782564, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
+  - {fileID: -2027498993358051863, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
   - {fileID: 21300000, guid: 2ba3fdbd6d718fa49aae5d808ccedcb2, type: 3}
   - {fileID: 21300000, guid: bc2dd52eb0410bd4e89c26571bca168f, type: 3}
   - {fileID: 441131002860442923, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
@@ -4018,12 +4030,24 @@ SpriteAtlas:
   - character_70
   - character_71
   - sword_item
+  - item_holder_6
+  - item_holder_7
   - item_holder_4
   - item_holder_5
   - item_holder_2
   - item_holder_3
   - item_holder_0
   - item_holder_1
+  - item_holder_8
+  - item_holder_9
+  - item_holder_15
+  - item_holder_14
+  - item_holder_17
+  - item_holder_16
+  - item_holder_11
+  - item_holder_10
+  - item_holder_13
+  - item_holder_12
   - TT_nobg
   - BB_nobg
   - MC_Male2_80
