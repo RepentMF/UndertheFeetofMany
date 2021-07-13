@@ -14,7 +14,6 @@ public class Sign : MonoBehaviour
 	public Text dialogue;
 	public string insert;
 	public bool active;
-	public bool obtained;
 	public Animator animator;
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -39,9 +38,6 @@ public class Sign : MonoBehaviour
 				collision.GetComponent<Inventory>().AddItem(GetComponentInChildren<Item>());
 				GetComponentInChildren<Item>().gameObject.SetActive(false);
 				animator.Play("item_holder_voip");
-				obtained = true;
-
-				//this.gameObject.SetActive(false);
 			}
 		}
 	}
@@ -56,7 +52,6 @@ public class Sign : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        obtained = false;
     }
 
     // Update is called once per frame
@@ -68,7 +63,7 @@ public class Sign : MonoBehaviour
 			dialogue.text = insert;
 		}
 
-		if(obtained);
+		if(animator.GetCurrentAnimatorStateInfo(0).IsName("item_holder_gone"))
 		{
 			this.gameObject.SetActive(false);
 		}
