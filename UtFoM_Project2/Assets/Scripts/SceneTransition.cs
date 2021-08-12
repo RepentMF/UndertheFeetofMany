@@ -29,8 +29,8 @@ public class SceneTransition : MonoBehaviour
 		{
 			playerNewPos.initialValue = playerPosition;
 			playerNewDir.initialValue = playerDirection;
+			collision.GetComponent<PlayerMovement>().newScene = sceneToLoad;
 			StartCoroutine(FadeCo());
-			//SceneManager.LoadScene(sceneToLoad);
 		}
 	}
 

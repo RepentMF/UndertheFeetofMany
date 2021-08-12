@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
 	public float attackBuffer;
 	public float speed;
 	public float currentKBTime;
+	public string curScene;
+	public string newScene;
 	public string light;
 	public string med;
 	public string launch;
@@ -170,7 +172,16 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void FixedUpdate()
-    {
+    {	
+    	DontDestroyOnLoad(this.gameObject);
+    	if(curScene != newScene)
+    	{
+    		curScene = newScene;
+			transform.position = playerPos.initialValue;
+    		animator.SetFloat("moveX", playerDir.initialValue.x);
+			animator.SetFloat("moveY", playerDir.initialValue.y);
+    	}
+
 		change = controls.Player.Move.ReadValue<Vector2>();
 
 		// Choose which weapon is being used

@@ -26,6 +26,11 @@ public class CameraMovement : MonoBehaviour
 		}
 	}
 
+	void Awake()
+	{
+		target = GameObject.FindWithTag("Player").transform;
+	}
+
     // Start is called before the first frame update
     void Start()
     {
