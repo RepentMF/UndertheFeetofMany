@@ -65,6 +65,7 @@ public class Sign : MonoBehaviour
 
 		if(animator.GetCurrentAnimatorStateInfo(0).IsName("item_holder_gone"))
 		{
+        	DontDestroyOnLoad(this.gameObject);
 			this.gameObject.SetActive(false);
 		}
     }

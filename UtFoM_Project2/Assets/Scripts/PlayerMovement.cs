@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,8 +9,10 @@ public class PlayerMovement : MonoBehaviour
 {
 	InputController controls;
 
+	public List<GameObject> playerList;
 	public bool shortcut = false;
 	public bool comboBool = false;
+	public bool newPlayer = true;
 	public int swipe = 0;
 	//public int comboCounter = 1;
 	public float attackFrame;
@@ -152,6 +155,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+    	playerList = GameObject.FindGameObjectsWithTag("Player").OfType<GameObject>().ToList();
     	QualitySettings.vSyncCount = 0;
     	Application.targetFrameRate = 45;
 		animator = GetComponent<Animator>();
@@ -166,14 +170,22 @@ public class PlayerMovement : MonoBehaviour
 			animator.SetFloat("moveX", playerDir.initialValue.x);
 			animator.SetFloat("moveY", playerDir.initialValue.y);
 		}
+
+		foreach(GameObject player in playerList)
+		{
+			if(player.GetComponent<PlayerMovement>().newPlayer && playerList.Count > 1)
+			{
+				Destroy(player);
+				playerList.RemoveAt(1);
+			}
+		}
 		currentKBTime = 0f;
 		light = "Hammer";
     }
 
     // Update is called once per frame
     void FixedUpdate()
-    {	
-    	DontDestroyOnLoad(this.gameObject);
+    {
     	if(curScene != newScene)
     	{
     		curScene = newScene;
@@ -182,6 +194,8 @@ public class PlayerMovement : MonoBehaviour
 			animator.SetFloat("moveY", playerDir.initialValue.y);
     	}
 
+    	DontDestroyOnLoad(this.gameObject);
+    	
 		change = controls.Player.Move.ReadValue<Vector2>();
 
 		// Choose which weapon is being used

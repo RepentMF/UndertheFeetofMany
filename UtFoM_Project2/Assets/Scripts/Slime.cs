@@ -103,6 +103,7 @@ public class Slime : Enemy
 
     void FixedUpdate() 
     {
+        FindTarget();
         IdleReset();
         CheckRange();
 

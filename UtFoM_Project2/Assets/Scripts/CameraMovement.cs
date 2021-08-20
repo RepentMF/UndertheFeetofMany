@@ -61,6 +61,10 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
+    	if(target == null)
+    	{
+			target = GameObject.FindWithTag("Player").transform;
+    	}
     	//CamChange();
     	difference.x = maxPosition.x - target.position.x;
     	difference.y = maxPosition.y - target.position.y;

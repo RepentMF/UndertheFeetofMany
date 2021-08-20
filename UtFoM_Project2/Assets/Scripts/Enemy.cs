@@ -69,6 +69,14 @@ public class Enemy : MonoBehaviour
 		}
 	}
 
+	public void FindTarget()
+	{
+        if(target == null)
+        {
+            target = GameObject.FindWithTag("Player").transform;
+        }
+	}
+
 	public void TakeDamage(float damage, bool execute = false)
 	{
 		if(combo == 0)
@@ -185,6 +193,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     public void FixedUpdate()
     {
+
     	if(GetComponent<Rigidbody2D>().velocity.y < 0f && currentState == EnemyState.juggle)
     	{
     		currentState = EnemyState.freefall;
