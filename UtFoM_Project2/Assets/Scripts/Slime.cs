@@ -131,6 +131,7 @@ public class Slime : Enemy
             }
             else if(currentState == EnemyState.move)
             {
+                KillEnemy();
                 movTimer -= Time.deltaTime;
                 if(movTimer < 0)
                 {
@@ -149,6 +150,5 @@ public class Slime : Enemy
         {
             base.FixedUpdate();
         }
-        Debug.Log(currentState);
     }
 }

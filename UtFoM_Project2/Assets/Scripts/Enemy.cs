@@ -108,9 +108,12 @@ public class Enemy : MonoBehaviour
     	}
 	}
 
-	public void Knockback()
+	public void KillEnemy()
 	{
-
+		if(currentHealth.runtimeValue <= 0)
+		{
+			this.gameObject.SetActive(false);
+		}
 	}
 
 	public void OnTriggerEnter2D(Collider2D collider)
@@ -120,12 +123,24 @@ public class Enemy : MonoBehaviour
 		{
 			Attack attack = collider.GetComponentInParent<Attack>();
 			Rigidbody2D body = GetComponent<Rigidbody2D>();
-			Animator playerAnim = collider.GetComponentInParent<PlayerMovement>().animator;
-			if(hitBy != attack.hitbox || attack.hitbox == "knife")
+
+			if(hitBy != attack.hitbox && attack.hitbox == "spark")
 			{
+				body.gravityScale = 2f;
+				currentState = EnemyState.juggle;
+				TakeDamage(attack.damage);
+
+				body.velocity = Vector2.zero;
+				body.AddForce(attack.thrust, ForceMode2D.Force);
+				isInvuln = true;
+				combo++;
+				Destroy(collider.gameObject);
+			}
+			else if(hitBy != attack.hitbox || attack.hitbox == "knife")
+			{
+				Animator playerAnim = collider.GetComponentInParent<PlayerMovement>().animator;
 				hitBy = attack.hitbox;
 				TakeDamage(attack.damage);
-				Debug.Log(attack.thrust);
 
 				if(attack.hitbox.Contains("sword"))
 				{
@@ -173,7 +188,6 @@ public class Enemy : MonoBehaviour
 					combo++;
 				}
 			}
-			
 		}
 	}
 
@@ -219,10 +233,10 @@ public class Enemy : MonoBehaviour
 		}
 
 		
-		if(currentHealth.runtimeValue <= 0)
-		{
-			this.gameObject.SetActive(false);
-		}
+		// if(currentHealth.runtimeValue <= 0)
+		// {
+		// 	this.gameObject.SetActive(false);
+		// }
 
 		if(currentState == EnemyState.stagger || currentState == EnemyState.juggle)
 		{
@@ -233,6 +247,6 @@ public class Enemy : MonoBehaviour
 			animator.Play("idle");
 		}
 		//GetComponent<Rigidbody2D>().velocity = new Vector2 (3f, 0);
-		Debug.Log(currentStamina.runtimeValue);
+		Debug.Log(currentHealth.runtimeValue);
     }
 }
