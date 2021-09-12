@@ -5,7 +5,6 @@ using UnityEngine;
 public class Slime : Enemy
 {
     public Vector3 dir;
-    public float spd;
     public float rushRange = 4.5f;
     public float actTimerBase;
     public float movTimerBase;

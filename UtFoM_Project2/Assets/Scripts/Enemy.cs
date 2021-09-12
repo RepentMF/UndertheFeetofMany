@@ -16,15 +16,20 @@ public enum EnemyState
 public class Enemy : MonoBehaviour
 {
 	public EnemyState currentState;
+	public StatusMod statMod;
 	public bool isInvuln;
 	public int combo;
 	public int baseAtk;
 	public int baseWeight;
 	public int currentWeight;
-	public FloatValue maxHealth;
-	public FloatValue currentHealth;
-	public FloatValue currentStamina;
-	public float moveSpeed;
+	public float maxHealth;
+	public float currentHealth;
+	public float maxStamina;
+	public float currentStamina;
+	public float stamRgn;
+	public float currentMana;
+	public float maxMana;
+	public float spd;
 	public float home;
 	public float currentStagger;
 	public string enemyName;
@@ -43,31 +48,31 @@ public class Enemy : MonoBehaviour
 		animator.SetFloat("moveY", vec.y);
 	}
 
-	private void ChangeDir(Vector2 dir)
-	{
-		if(Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
-		{
-			if(dir.x > 0)
-			{
-				SetAnimFloat(Vector2.right);
-			}
-			else if(dir.x < 0)
-			{
-				SetAnimFloat(Vector2.left);
-			}
-		}
-		else if(Mathf.Abs(dir.x) < Mathf.Abs(dir.y))
-		{
-			if(dir.y > 0)
-			{
-				SetAnimFloat(Vector2.up);
-			}
-			else if(dir.y < 0)
-			{
-				SetAnimFloat(Vector2.down);
-			}
-		}
-	}
+	// private void ChangeDir(Vector2 dir)
+	// {
+	// 	if(Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+	// 	{
+	// 		if(dir.x > 0)
+	// 		{
+	// 			SetAnimFloat(Vector2.right);
+	// 		}
+	// 		else if(dir.x < 0)
+	// 		{
+	// 			SetAnimFloat(Vector2.left);
+	// 		}
+	// 	}
+	// 	else if(Mathf.Abs(dir.x) < Mathf.Abs(dir.y))
+	// 	{
+	// 		if(dir.y > 0)
+	// 		{
+	// 			SetAnimFloat(Vector2.up);
+	// 		}
+	// 		else if(dir.y < 0)
+	// 		{
+	// 			SetAnimFloat(Vector2.down);
+	// 		}
+	// 	}
+	// }
 
 	public void FindTarget()
 	{
@@ -88,11 +93,10 @@ public class Enemy : MonoBehaviour
 		{
 			if(execute)
 			{
-				float percent = (currentHealth.initialValue - currentHealth.runtimeValue) / currentHealth.initialValue;
+				float percent = (maxHealth - currentHealth) / maxHealth;
 				damage += (percent * 4);
 			}
-			currentHealth.runtimeValue -= damage;
-			Debug.Log(damage);
+			currentHealth -= damage;
 		}
 	}
 
@@ -100,6 +104,7 @@ public class Enemy : MonoBehaviour
 	{
 		if(currentState == EnemyState.idle)
     	{
+    		animator.Play("idle");
 			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 			GetComponent<Rigidbody2D>().gravityScale = 0.0f;
 			isInvuln = false;
@@ -108,9 +113,21 @@ public class Enemy : MonoBehaviour
     	}
 	}
 
+	public void RegenStamina()
+	{
+		if(currentStamina < maxStamina)
+		{
+			currentStamina += stamRgn * Time.deltaTime;
+			if(currentStamina > maxStamina)
+			{
+				currentStamina = maxStamina;
+			}
+		}
+	}
+
 	public void KillEnemy()
 	{
-		if(currentHealth.runtimeValue <= 0)
+		if(currentHealth <= 0)
 		{
 			this.gameObject.SetActive(false);
 		}
@@ -247,6 +264,5 @@ public class Enemy : MonoBehaviour
 			animator.Play("idle");
 		}
 		//GetComponent<Rigidbody2D>().velocity = new Vector2 (3f, 0);
-		Debug.Log(currentHealth.runtimeValue);
     }
 }

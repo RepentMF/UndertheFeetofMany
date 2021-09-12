@@ -36,6 +36,18 @@ public class StatusMod : MonoBehaviour
 	StatusEffect staminaVar;
 	bool pullCheck;
 
+	public bool GetStatus(Status name)
+	{
+		foreach(StatusEffect status in statuses)
+		{
+			if(status.name == name)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
 	public void AddStatus(Status name, float statTimer, float intensity)
 	{
 		bool check = false;
@@ -87,29 +99,37 @@ public class StatusMod : MonoBehaviour
 		        	{
 		        		case Status.leech:
 		        			//need a way to pull user's info to give illusion of health being sapped
-							enemy.currentHealth.runtimeValue -= status.intensity;
+							enemy.currentHealth -= status.intensity;
 		    				status.statTimer -= Time.deltaTime;
 		        			break;
 		    			case Status.poison:
-		    				enemy.maxHealth.runtimeValue /= 2;
-		    				if(enemy.maxHealth.runtimeValue < enemy.currentHealth.runtimeValue)
+		    				//add check to make sure halving doesn't happen every frame
+		    				enemy.maxHealth /= 2;
+		    				if(enemy.maxHealth < enemy.currentHealth)
 		    				{
-		    					enemy.currentHealth.runtimeValue = enemy.maxHealth.runtimeValue;
+		    					enemy.currentHealth = enemy.maxHealth;
 		    				}
 		    				break;
 						case Status.burn:
-							enemy.currentHealth.runtimeValue -= status.intensity;
+							enemy.currentHealth -= status.intensity;
 		    				status.statTimer -= Time.deltaTime;
 							break;
 						case Status.struggle:
-							enemy.currentStamina.runtimeValue -= status.intensity;
+							enemy.currentStamina -= status.intensity;
 							status.statTimer -= Time.deltaTime;
 							break;
 						case Status.exhaust:
+							status.statTimer -= Time.deltaTime;
+							enemy.animator.speed = 0.5f;
+							enemy.RegenStamina();
 							break;
 		        	}
 		        	if(status.statTimer <= 0f)
 		        	{
+		        		if(status.name == Status.exhaust)
+		        		{
+		        			enemy.animator.speed = 1f;
+		        		}
 		        		remove = status;
 		        		pullCheck = true;
 		        		//remove
@@ -121,10 +141,10 @@ public class StatusMod : MonoBehaviour
 		        	}
 	       		}
 
-	        	if(enemy.currentStamina.runtimeValue < 0f && statuses.Contains(staminaVar))
+	        	if(enemy.currentStamina < 0f && statuses.Contains(staminaVar))
 				{
 					statuses.Remove(staminaVar);
-					statuses.Add(new StatusEffect(Status.exhaust, 0f, 0f));
+					statuses.Add(new StatusEffect(Status.exhaust, enemy.maxStamina, 0f));
 				}
 	       		if(statuses.Contains(remove) && pullCheck)
 	       		{
