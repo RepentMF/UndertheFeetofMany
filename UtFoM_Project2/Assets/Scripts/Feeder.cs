@@ -11,6 +11,7 @@ public class Feeder : Enemy
     public float rushTimerBase;
     public float devourTimerBase;
     public float rushStaminaCost;
+    public float devourManaCost;
     public float movTimer;
     public float atkTimer;
     public bool inRange;
@@ -58,8 +59,7 @@ public class Feeder : Enemy
         {
             if(inDevourRange)
             {
-                //StartDevour();
-                StartRush();
+                StartDevour();
             }
             else if(inRushRange && currentStamina > rushStaminaCost)
             {
@@ -102,12 +102,20 @@ public class Feeder : Enemy
 
     void StartDevour()
     {
-
+        currentMana -= devourManaCost;
+        currentState = EnemyState.attack;
+        //rigidbody.velocity = Vector2.zero;
+        atkTimer = devourTimerBase;
+        animator.Play("devour");
     }
 
     void Devour()
     {
-
+        rigidbody.velocity = Vector3.zero;
+        if(atkTimer < 0)
+        {
+            currentState = EnemyState.idle;
+        }
     }
 
     void FixedUpdate() 

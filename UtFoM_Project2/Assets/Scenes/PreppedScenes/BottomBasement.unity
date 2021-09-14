@@ -2819,8 +2819,9 @@ MonoBehaviour:
   devourRange: 2
   movTimerBase: 0.5
   rushTimerBase: 1.167
-  devourTimerBase: 1.167
+  devourTimerBase: 2
   rushStaminaCost: 3
+  devourManaCost: 2
   movTimer: 0.5
   atkTimer: 1.167
   inRange: 0
@@ -2874,7 +2875,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 1.25}
+    oldSize: {x: 1.1111112, y: 1.1111112}
     newSize: {x: 0.6875, y: 0.6875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2945,7 +2946,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 368543389579951487, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
+  m_Sprite: {fileID: 1245596321312410548, guid: 7eae60ee79d9c6946b95aea93185a1f9,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
