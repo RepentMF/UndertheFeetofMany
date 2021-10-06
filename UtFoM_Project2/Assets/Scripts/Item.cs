@@ -2,9 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public enum ItemCategory
+{
+    None, // Default
+    Charm,
+    Diary,
+    DoorKey,
+    KeyItem,
+    Spell,
+	Weapon
+}
+
 public class Item : MonoBehaviour
 {
-	public string category;
+	public ItemCategory category;
 	public string name;
 	public string description;
 

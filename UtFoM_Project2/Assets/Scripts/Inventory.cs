@@ -18,7 +18,22 @@ public class Inventory : MonoBehaviour
 	{
 		switch (item.category)
 		{
-			case "Weapon":
+			case ItemCategory.Charm:
+				charmsList.Add(item);
+				break;
+			case ItemCategory.Diary:
+				diariesList.Add(item);
+				break;
+			case ItemCategory.DoorKey:
+				doorKeysList.Add(item);
+				break;
+			case ItemCategory.KeyItem:
+				keyItemsList.Add(item);
+				break;
+			case ItemCategory.Spell:
+				spellsList.Add(item);
+				break;
+			case ItemCategory.Weapon:
 				weaponsList.Add(item);
 				break;
 			default:
