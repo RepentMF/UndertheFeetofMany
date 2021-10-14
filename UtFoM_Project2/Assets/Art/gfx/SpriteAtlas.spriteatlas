@@ -1173,6 +1173,7 @@ SpriteAtlas:
   - {fileID: -5391558741029475898, guid: f5fd53d305f6e2b4ca31e5dbd4147f3c, type: 3}
   - {fileID: 1360279299232230662, guid: f5fd53d305f6e2b4ca31e5dbd4147f3c, type: 3}
   - {fileID: 8575472855895464824, guid: f5fd53d305f6e2b4ca31e5dbd4147f3c, type: 3}
+  - {fileID: 21300000, guid: 539efcd3ed63e784a9396d33b143e2a9, type: 3}
   - {fileID: 21300000, guid: ec31afd35e5e3014782208e17cd369b6, type: 3}
   - {fileID: 21300000, guid: 3e7c48942cfa1ff4c8d962dca9adfad0, type: 3}
   - {fileID: -8046433660304297415, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
@@ -3281,6 +3282,7 @@ SpriteAtlas:
   - new_player_run_7
   - new_player_run_4
   - new_player_run_5
+  - UI_demo_stats_scaledUp1
   - knife_item
   - CH_F1
   - MC_Male2_hammer_96
