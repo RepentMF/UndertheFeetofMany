@@ -50,6 +50,7 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 5eeadd1077665294c81ee69f8633273e, type: 3}
   - {fileID: 21300000, guid: 12b059208806bca48872651e5988bf9f, type: 3}
   - {fileID: 21300000, guid: 0ab93e201cd88834e93754c9645963d2, type: 3}
   - {fileID: 21300000, guid: cfd001404f3e62f4283c368176545d55, type: 3}
@@ -1134,6 +1135,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d6d49df19f3da7d44ae585162cd64510, type: 3}
   - {fileID: 21300000, guid: 3f166b22125ffa746af1ed82170d758c, type: 3}
   - {fileID: 21300000, guid: a2570052cc9f4074ca2e852e011f34d0, type: 3}
+  - {fileID: 21300000, guid: b0697292153e0ff40957ee7cdb9f8da4, type: 3}
   - {fileID: -4683998418971264338, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
   - {fileID: 7088160253405218265, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
   - {fileID: -3268874430650260426, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
@@ -2159,6 +2161,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 98e071ee4e35dc8479ff923a34455a23, type: 3}
   - {fileID: 21300000, guid: 01f9990fa5ba3a8488c567b6be41f9f0, type: 3}
   m_PackedSpriteNamesToIndex:
+  - UI_demo_stats_scaledUp1_health
   - BB
   - CH_B1
   - TT
@@ -3243,6 +3246,7 @@ SpriteAtlas:
   - FlurryField
   - SparkTrigger 1
   - SS
+  - UI_demo_stats_scaledUp1_health
   - TiledSprites_0
   - TiledSprites_1
   - TiledSprites_2

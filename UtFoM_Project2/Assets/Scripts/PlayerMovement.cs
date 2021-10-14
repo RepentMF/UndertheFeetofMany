@@ -31,7 +31,8 @@ public class PlayerMovement : MonoBehaviour
 	public GameObject flurry;
 	public VectorValue playerPos;
 	public VectorValue playerDir;
-	public FloatValue currentHealth;
+	public float currentHealth;
+	public float maxHealth;
 	public FloatValue currentMana;
 	public FloatValue currentStamina;
 	public FloatValue currentEstus;
