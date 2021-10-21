@@ -30,7 +30,7 @@ public class Feeder : Enemy
             {
                 inRushRange = true;
             }
-            if(Vector3.Distance(transform.position, target.transform.position) < devourRange)
+            if(Vector3.Distance(transform.position, target.transform.position) < devourRange && currentMana > 0f)
             {
                 inDevourRange = true;
             }
@@ -164,6 +164,10 @@ public class Feeder : Enemy
                 //Devour();
             }
 
+            if(currentMana <= 0)
+            {
+                currentMana = 0f;
+            }
             if(currentStamina <= 0)
             {
                 currentStamina = 0f;

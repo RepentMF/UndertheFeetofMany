@@ -44,9 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 0}
-  damage: 0.5
+  magic: 1
   hitbox: flurry
+  damage: 0.5
+  timer: 5
+  thrust: {x: 0, y: 0}
 --- !u!1 &7781148682358135597
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,7 +61,6 @@ GameObject:
   - component: {fileID: 4239785195584878504}
   - component: {fileID: 7826234946451727297}
   - component: {fileID: 7151303784881478500}
-  - component: {fileID: 5214405611181193503}
   m_Layer: 0
   m_Name: FlurryField
   m_TagString: Untagged
@@ -158,16 +159,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.28178644, y: 1.0060579}
-      - {x: -0.7215827, y: 0.76914465}
-      - {x: -1.0009359, y: 0.331011}
-      - {x: -1.0051558, y: -0.06522775}
-      - {x: -0.40087932, y: -1.0103118}
-      - {x: 0.39572334, y: -1.005156}
-      - {x: 1.0075812, y: -0.06533182}
-      - {x: 1.0103118, y: 0.33293396}
-      - {x: 0.7422062, y: 0.7646283}
-      - {x: 0.2919662, y: 1.0051558}
+    - - {x: -0.32919413, y: 1.3379112}
+      - {x: -1.0297322, y: 1.0298868}
+      - {x: -1.3446413, y: 0.41397446}
+      - {x: -1.3370093, y: -0.005968094}
+      - {x: -0.31791592, y: -1.3421654}
+      - {x: 0.33646378, y: -1.3488615}
+      - {x: 1.3631386, y: 0.029483557}
+      - {x: 1.3658692, y: 0.47515684}
+      - {x: 0.9792444, y: 1.0372223}
+      - {x: 0.32752192, y: 1.3370092}
 --- !u!50 &7151303784881478500
 Rigidbody2D:
   serializedVersion: 4
@@ -189,18 +190,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5214405611181193503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7781148682358135597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9357d065eae20f440bc825c00cd9dd56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  done: 0
-  magic: 1
-  timer: 1.5

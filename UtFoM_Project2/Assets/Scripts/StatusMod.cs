@@ -36,6 +36,8 @@ public class StatusMod : MonoBehaviour
 	StatusEffect staminaVar;
 	bool pullCheck;
 
+	public string statusLog;
+
 	public bool GetStatus(Status name)
 	{
 		foreach(StatusEffect status in statuses)
@@ -98,7 +100,15 @@ public class StatusMod : MonoBehaviour
 		        	switch (status.name)
 		        	{
 		        		case Status.leech:
-		        			//need a way to pull user's info to give illusion of health being sapped
+							if(enemy.currentHealth - status.intensity < 0f)
+							{
+								float difference = status.intensity - enemy.currentHealth;
+								//player.currentHealth += difference;
+							}
+							else
+							{
+								//player.currentHealth += status.intensity;
+							}
 							enemy.currentHealth -= status.intensity;
 		    				status.statTimer -= Time.deltaTime;
 		        			break;

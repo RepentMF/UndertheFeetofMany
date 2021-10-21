@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 907025456867676470}
   - component: {fileID: 907025456867676465}
   - component: {fileID: 907025456867676464}
-  - component: {fileID: 907025456867676467}
   m_Layer: 0
   m_Name: LightningBurst
   m_TagString: Untagged
@@ -148,21 +147,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &907025456867676467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907025456867676477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9357d065eae20f440bc825c00cd9dd56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  done: 0
-  magic: 1
-  timer: 0.5
 --- !u!1 &907025456922738281
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 300, y: 300}
-  damage: 2
+  magic: 1
   hitbox: burst
+  damage: 2
+  timer: 0.2
+  thrust: {x: 300, y: 300}

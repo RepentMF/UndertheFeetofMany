@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-	public Vector2 thrust;
-	public float damage;
+	public bool magic;
 	public string hitbox;
+	public float damage;
+	public float timer;
+	public Vector2 thrust;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,16 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(magic)
+        {
+        	if(timer > 0.0f)
+        	{
+        		timer -= Time.deltaTime;
+        	}
+        	else
+        	{
+        		Destroy(this.gameObject);
+        	}
+        }
     }
 }

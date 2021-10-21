@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5737973860634034097}
   - component: {fileID: 7432488486728704608}
   - component: {fileID: 902297679383105319}
-  - component: {fileID: 2023298395516288647}
   - component: {fileID: 4650986807092990965}
   m_Layer: 0
   m_Name: SparkTrigger
@@ -112,21 +111,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.22007465, y: 0.66721106}
   m_EdgeRadius: 0
---- !u!114 &2023298395516288647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3551936783675437767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9357d065eae20f440bc825c00cd9dd56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  done: 0
-  magic: 1
-  timer: 9
 --- !u!50 &4650986807092990965
 Rigidbody2D:
   serializedVersion: 4
@@ -192,6 +176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 175}
-  damage: 1
+  magic: 1
   hitbox: spark
+  damage: 1
+  timer: 8
+  thrust: {x: 0, y: 175}

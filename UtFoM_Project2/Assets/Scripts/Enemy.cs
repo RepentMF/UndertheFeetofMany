@@ -153,7 +153,15 @@ public class Enemy : MonoBehaviour
 				combo++;
 				Destroy(collider.gameObject);
 			}
-			else if(hitBy != attack.hitbox || attack.hitbox == "knife")
+			else if(hitBy != attack.hitbox && attack.hitbox == "flurry")
+			{
+				statMod.AddStatus(Status.struggle, 1.0f, 1.0f);
+			}
+			else if(hitBy != attack.hitbox && attack.hitbox == "burst")
+			{
+				//make enemy fly off in diagonal direction
+			}
+			else if(hitBy != "knife")
 			{
 				Animator playerAnim = collider.GetComponentInParent<PlayerMovement>().animator;
 				hitBy = attack.hitbox;
