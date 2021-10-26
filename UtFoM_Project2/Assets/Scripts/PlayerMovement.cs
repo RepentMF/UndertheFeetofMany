@@ -46,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
 	public Animator animator;
 	private Rigidbody2D rigidbody;
 	public Vector2 change;
+	public Transform particles;
 	
 
 	/*private IEnumerator KnockCo(float kbTime)

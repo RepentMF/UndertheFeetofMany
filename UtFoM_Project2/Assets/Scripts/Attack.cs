@@ -16,6 +16,12 @@ public class Attack : MonoBehaviour
         
     }
 
+    public void OnCollisionEnter2D(Collider2D collision)
+    {
+        Debug.Break();
+        GetComponentInParent<PlayerMovement>().particles.GetComponent<ParticleSystem>().enableEmission = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
