@@ -1182,6 +1182,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3e7c48942cfa1ff4c8d962dca9adfad0, type: 3}
   - {fileID: 21300000, guid: 848c6a55c1508be4e90bbb0ae690ccc0, type: 3}
   - {fileID: 21300000, guid: 3ea2e0859605d6f40b931667f80b207e, type: 3}
+  - {fileID: 21300000, guid: 00fff3c552acd3840b6dba3e41612e46, type: 3}
   - {fileID: -8046433660304297415, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
   - {fileID: -4641832665535523426, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
   - {fileID: -7977959474954063619, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
@@ -3300,6 +3301,7 @@ SpriteAtlas:
   - CH_F1
   - UI_demo_stats_scaledUp1_stamina
   - UI_demo_stats_scaledUp1_lifeblood3
+  - star1_particle
   - MC_Male2_hammer_96
   - MC_Male2_hammer_97
   - MC_Male2_hammer_94
