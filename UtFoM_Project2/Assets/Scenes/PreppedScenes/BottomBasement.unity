@@ -689,7 +689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c59d2d5f732bb45b4fa6e384a25c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  category: 0
+  category: 6
   name: Hammer
   description: A hammer used to toll the bell at the chapel. It will hit hard if
     I swing my hardest, but I can't attack with it very fast.
@@ -789,7 +789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c59d2d5f732bb45b4fa6e384a25c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  category: 0
+  category: 6
   name: Kitchen Knife
   description: A small knife I found in my kitchen. I can't swing it very hard but
     that means I can swing it really fast.
@@ -3356,7 +3356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c59d2d5f732bb45b4fa6e384a25c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  category: 0
+  category: 6
   name: Sword
   description: A sword I found in my room. I can swing it well but not very quickly.
 --- !u!1 &1395424022 stripped

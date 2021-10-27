@@ -175,7 +175,7 @@ public class PlayerMovement : MonoBehaviour
 			animator.SetFloat("moveX", playerDir.initialValue.x);
 			animator.SetFloat("moveY", playerDir.initialValue.y);
 		}
-
+		
 		foreach(GameObject player in playerList)
 		{
 			if(player.GetComponent<PlayerMovement>().newPlayer && playerList.Count > 1)
