@@ -41,6 +41,7 @@ public class Enemy : MonoBehaviour
 	public Transform homePos;
 	public float movRange;
 	public Animator animator;
+	public ParticleSystem particles;
 
 	protected void SetAnimFloat(Vector2 vec)
 	{
@@ -164,6 +165,9 @@ public class Enemy : MonoBehaviour
 			else if(hitBy != "knife")
 			{
 				Animator playerAnim = collider.GetComponentInParent<PlayerMovement>().animator;
+				particles = collider.GetComponentInParent<PlayerMovement>().sparkles;
+				Instantiate(particles, transform.position, Quaternion.identity);
+				
 				hitBy = attack.hitbox;
 				TakeDamage(attack.damage);
 
