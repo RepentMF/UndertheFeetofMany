@@ -28,7 +28,7 @@ public class CameraMovement : MonoBehaviour
 
 	void Awake()
 	{
-		target = GameObject.FindWithTag("Player").transform;
+		target = GameObject.FindWithTag("P1").transform;
 	}
 
     // Start is called before the first frame update
@@ -63,7 +63,7 @@ public class CameraMovement : MonoBehaviour
     {
     	if(target == null)
     	{
-			target = GameObject.FindWithTag("Player").transform;
+			target = GameObject.FindWithTag("P1").transform;
     	}
     	//CamChange();
     	difference.x = maxPosition.x - target.position.x;

@@ -100,14 +100,15 @@ public class StatusMod : MonoBehaviour
 		        	switch (status.name)
 		        	{
 		        		case Status.leech:
+							PlayerMovement p1 = GameObject.FindWithTag("P1").GetComponent<PlayerMovement>();
 							if(enemy.currentHealth - status.intensity < 0f)
 							{
 								float difference = status.intensity - enemy.currentHealth;
-								//player.currentHealth += difference;
+								p1.currentHealth += difference;
 							}
 							else
 							{
-								//player.currentHealth += status.intensity;
+								p1.currentHealth += status.intensity;
 							}
 							enemy.currentHealth -= status.intensity;
 		    				status.statTimer -= Time.deltaTime;

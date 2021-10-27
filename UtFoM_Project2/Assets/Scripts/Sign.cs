@@ -18,7 +18,7 @@ public class Sign : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if(collision.CompareTag("Player") && collision.isTrigger)
+		if(collision.CompareTag("P1") && collision.isTrigger)
 		{
 			contextOn.Raise();
 			active = true;
@@ -27,7 +27,7 @@ public class Sign : MonoBehaviour
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-		if(collision.CompareTag("Player") && collision.isTrigger) 
+		if(collision.CompareTag("P1") && collision.isTrigger) 
 		{
 			contextOff.Raise();
 			active = false;

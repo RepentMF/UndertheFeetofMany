@@ -160,7 +160,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    	playerList = GameObject.FindGameObjectsWithTag("Player").OfType<GameObject>().ToList();
+    	playerList = GameObject.FindGameObjectsWithTag("P1").OfType<GameObject>().ToList();
     	QualitySettings.vSyncCount = 0;
     	Application.targetFrameRate = 45;
 		animator = GetComponent<Animator>();

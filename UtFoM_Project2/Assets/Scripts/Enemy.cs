@@ -79,7 +79,7 @@ public class Enemy : MonoBehaviour
 	{
         if(target == null)
         {
-            target = GameObject.FindWithTag("Player").transform;
+            target = GameObject.FindWithTag("P1").transform;
         }
 	}
 
@@ -136,7 +136,7 @@ public class Enemy : MonoBehaviour
 
 	public void OnTriggerEnter2D(Collider2D collider)
 	{
-		if(!collider.gameObject.CompareTag("Player") && !collider.gameObject.CompareTag("Enemy") 
+		if(!collider.gameObject.CompareTag("P1") && !collider.gameObject.CompareTag("Enemy") 
 			&& !isInvuln)
 		{
 			Attack attack = collider.GetComponentInParent<Attack>();
@@ -230,7 +230,7 @@ public class Enemy : MonoBehaviour
 		currentState = EnemyState.idle;
 		rigidbody = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
-		target = GameObject.FindWithTag("Player").transform;
+		target = GameObject.FindWithTag("P1").transform;
     }
 
     // Update is called once per frame

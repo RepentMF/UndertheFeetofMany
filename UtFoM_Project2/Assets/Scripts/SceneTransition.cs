@@ -25,7 +25,7 @@ public class SceneTransition : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if(collision.CompareTag("Player") && !collision.isTrigger)
+		if(collision.CompareTag("P1") && !collision.isTrigger)
 		{
 			playerNewPos.initialValue = playerPosition;
 			playerNewDir.initialValue = playerDirection;
