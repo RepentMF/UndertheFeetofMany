@@ -5,60 +5,69 @@ using UnityEngine.SceneManagement;
 
 public class RoomManager : MonoBehaviour
 {
-	private SceneManager sceneManager;
-	public List<List<bool>> listHolder = new List<List<bool>>(38);
-	public List<bool> treasureHolder;
-	public int index;
+	public static RoomManager RM;
 
-	void SetTreasureInRoom(List<bool> list, int sceneNum)
+	private SceneManager sceneManager;
+	public List<List<bool>> treasureListHolder = new List<List<bool>>(38);
+	public List<bool> treasureBoolHolder;
+	public int index = 0;
+	public bool sceneChange = false;
+
+	//Take treasure information from the data of our data structure and set up the current scene
+	void SetTreasureInRoom()
 	{
 		for(int i = 0; i < FindObjectsOfType<Sign>(true).Length; i++)
 		{
-			FindObjectsOfType<Sign>()[i].obtained = treasureHolder[i];
+			//Debug.Log(FindObjectsOfType<Sign>().Length);
+			if(FindObjectsOfType<Sign>() != null)
+			{
+				//Debug.Log(i);
+				FindObjectsOfType<Sign>()[i].obtained = treasureBoolHolder[i];
+			}
 		}
 	}
 
+	//Take treasure information from the current scene and put it in our data structure
 	void GetTreasureInRoom()
 	{
-		Sign[] test1 = FindObjectsOfType<Sign>();
-		List<bool> boolHolder = new List<bool>(test1.Length); 
-		for(int i = 0; i < test1.Length; i++)
+		List<bool> boolHolder = new List<bool>(FindObjectsOfType<Sign>().Length);
+
+		for(int i = 0; i < FindObjectsOfType<Sign>().Length; i++)
 		{
-			boolHolder.Add(test1[i].obtained);
+			boolHolder.Add(FindObjectsOfType<Sign>()[i].obtained);
 		}
 
-		listHolder.Add(boolHolder);
+		treasureListHolder.Add(boolHolder);
 	}
 
     // Start is called before the first frame update
     void Start()
     {
-    	//GetRoom();
-    	// boolHolder2 = new List<bool>(3);
-    	// boolHolder2.Add(false);
-    	// boolHolder2.Add(true);
-    	// boolHolder2.Add(true);
-    	// listHolder.Add(boolHolder2);
-    	if(index != SceneManager.GetActiveScene().buildIndex)
+    	if(RM != null)
     	{
-    		index = SceneManager.GetActiveScene().buildIndex;
-    		SetTreasureInRoom(listHolder[index], index);
+    		Destroy(this.gameObject);
+    		return;
     	}
 
-    	foreach(List<bool> list in listHolder)
-    	{
-    		foreach(bool boolean in list)
-    		{
-    			Debug.Log(boolean);
-    		}
-    	}
-
-    	SetTreasureInRoom(treasureHolder, SceneManager.GetActiveScene().buildIndex);
+    	RM = this;
+    	GameObject.DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-    	
+    	//index = SceneManager.GetActiveScene().buildIndex;
+    	if(sceneChange)
+    	{
+    		GetTreasureInRoom();
+    		sceneChange = false;
+    	}
+    	else if(index != SceneManager.GetActiveScene().buildIndex)
+    	{
+    		//Debug.Log(treasureListHolder[index]);
+    		index = SceneManager.GetActiveScene().buildIndex;
+			//treasureBoolHolder = treasureListHolder[index];
+    		SetTreasureInRoom();
+    	}
     }
 }

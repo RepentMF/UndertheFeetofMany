@@ -27,6 +27,7 @@ public class SceneTransition : MonoBehaviour
 	{
 		if(collision.CompareTag("P1") && !collision.isTrigger)
 		{
+			FindObjectOfType<RoomManager>().sceneChange = true;
 			playerNewPos.initialValue = playerPosition;
 			playerNewDir.initialValue = playerDirection;
 			collision.GetComponent<PlayerMovement>().newScene = sceneToLoad;
