@@ -45,8 +45,15 @@ public class Sign : MonoBehaviour
 
 	void Awake()
 	{
-		controls = new InputController();
-		controls.Enable();
+		if(!obtained)
+		{
+			controls = new InputController();
+			controls.Enable();
+		}
+		else
+		{
+			this.gameObject.SetActive(false);
+		}
 	}
 
     // Start is called before the first frame update
