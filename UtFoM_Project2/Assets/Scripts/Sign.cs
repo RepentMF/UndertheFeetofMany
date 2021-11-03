@@ -14,6 +14,7 @@ public class Sign : MonoBehaviour
 	public Text dialogue;
 	public string insert;
 	public bool active;
+	public bool obtained;
 	public Animator animator;
 
 	private void OnTriggerEnter2D(Collider2D collision)
