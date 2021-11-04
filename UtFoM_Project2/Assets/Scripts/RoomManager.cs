@@ -18,9 +18,9 @@ public class RoomManager : MonoBehaviour
 	//Take treasure information from the data of our data structure and set up the current scene
 	void SetTreasureInRoom()
 	{
-		string json = JsonUtility.ToJson(treasureBoolHolder);
-		Debug.Log(json);
-		//Debug.Break();
+
+		// string json = JsonUtility.ToJson(treasureBoolHolder);
+
 		for(int i = 0; i < FindObjectsOfType<Sign>(true).Length; i++)
 		{
 			//Debug.Log(FindObjectsOfType<Sign>().Length);
@@ -60,16 +60,35 @@ public class RoomManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		
+
     	//index = SceneManager.GetActiveScene().buildIndex;
     	if(sceneChange)
     	{
-    		GetTreasureInRoom();
     		sceneChange = false;
+    		Sign sign = new Sign("barf");
+    		Sign sign2 = new Sign("burp");
+    		List<string> strings = new List<string>();
+			string json = JsonUtility.ToJson(sign, false);
+			string json2 = JsonUtility.ToJson(sign2, false);
+    		strings.Add(json);
+    		strings.Add(json2);
+			Debug.Log(json);
+			System.IO.File.AppendAllLines(@"D:\jsonFile.json", strings);
+			string[] readStrings = System.IO.File.ReadAllLines(@"D:\jsonFile.json");
+			foreach(string s in readStrings)
+			{
+				Debug.Log(s);
+			}
+			//System.IO.File.AppendAllLines(@"D:\jsonFile.json", json2);
+			
+
+    		GetTreasureInRoom();
     	}
     	else if(index != SceneManager.GetActiveScene().buildIndex)
     	{
     		//Debug.Log(treasureListHolder[index]);    		
-    		GetTreasureInRoom();
+    		//GetTreasureInRoom();
 
     		index = SceneManager.GetActiveScene().buildIndex;
 			treasureBoolHolder = treasureListHolder[index];

@@ -20,6 +20,20 @@ public class Item : MonoBehaviour
 	public string name;
 	public string description;
 
+	public Item(string name, string description, ItemCategory category)
+	{
+		this.name = name;
+		this.description = description;
+		this.category = category;
+	}
+
+	public Item(Item item)
+	{
+		this.name = item.name;
+		this.description = item.description;
+		this.category = item.category;
+	}
+
     // Start is called before the first frame update
     void Start()
     {

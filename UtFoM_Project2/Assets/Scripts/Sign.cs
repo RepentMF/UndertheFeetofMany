@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
+[System.Serializable]
 public class Sign : MonoBehaviour
 {
 	InputController controls;
@@ -16,6 +17,11 @@ public class Sign : MonoBehaviour
 	public bool active;
 	public bool obtained;
 	public Animator animator;
+
+	public Sign(string insert)
+	{
+		this.insert = insert;
+	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{

@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+	public static PlayerMovement player;
 	InputController controls;
 
 	public List<GameObject> playerList;
@@ -160,7 +161,15 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    	playerList = GameObject.FindGameObjectsWithTag("P1").OfType<GameObject>().ToList();
+    	if(player != null)
+    	{
+    		Destroy(this.gameObject);
+    		return;
+    	}
+
+    	player = this;
+    	GameObject.DontDestroyOnLoad(this.gameObject);
+
     	QualitySettings.vSyncCount = 0;
     	Application.targetFrameRate = 45;
 		animator = GetComponent<Animator>();
@@ -175,15 +184,7 @@ public class PlayerMovement : MonoBehaviour
 			animator.SetFloat("moveX", playerDir.initialValue.x);
 			animator.SetFloat("moveY", playerDir.initialValue.y);
 		}
-		
-		foreach(GameObject player in playerList)
-		{
-			if(player.GetComponent<PlayerMovement>().newPlayer && playerList.Count > 1)
-			{
-				Destroy(player);
-				playerList.RemoveAt(1);
-			}
-		}
+
 		currentKBTime = 0f;
 		light = "Hammer";
     }
@@ -198,8 +199,6 @@ public class PlayerMovement : MonoBehaviour
     		animator.SetFloat("moveX", playerDir.initialValue.x);
 			animator.SetFloat("moveY", playerDir.initialValue.y);
     	}
-
-    	DontDestroyOnLoad(this.gameObject);
     	
 		change = controls.Player.Move.ReadValue<Vector2>();
 
