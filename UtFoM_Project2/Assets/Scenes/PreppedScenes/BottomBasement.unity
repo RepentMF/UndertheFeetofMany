@@ -3173,6 +3173,7 @@ MonoBehaviour:
   box: {fileID: 5037108281532629968}
   dialogue: {fileID: 5037108281721112561}
   insert: haha funnyyy
+  ID: 3
   active: 0
   obtained: 0
   animator: {fileID: 0}
@@ -3497,6 +3498,7 @@ MonoBehaviour:
   box: {fileID: 5037108281532629968}
   dialogue: {fileID: 5037108281721112561}
   insert: u smell like dog buns
+  ID: 1
   active: 0
   obtained: 0
   animator: {fileID: 0}
@@ -3680,6 +3682,7 @@ MonoBehaviour:
   box: {fileID: 5037108281532629968}
   dialogue: {fileID: 5037108281721112561}
   insert: uh ohh stinkyyy
+  ID: 2
   active: 0
   obtained: 0
   animator: {fileID: 0}

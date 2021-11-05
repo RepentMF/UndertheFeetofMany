@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
+using System.Linq;
 
 [System.Serializable]
 public class RoomManager : MonoBehaviour
@@ -18,30 +19,51 @@ public class RoomManager : MonoBehaviour
 	//Take treasure information from the data of our data structure and set up the current scene
 	void SetTreasureInRoom()
 	{
+		string[] strings = System.IO.File.ReadAllLines(@"treasures.txt");
+		int found = 0;
 
-		// string json = JsonUtility.ToJson(treasureBoolHolder);
-
-		for(int i = 0; i < FindObjectsOfType<Sign>(true).Length; i++)
+		foreach(string s in strings)
 		{
-			//Debug.Log(FindObjectsOfType<Sign>().Length);
-			if(FindObjectsOfType<Sign>(true) != null)
+			for(int i = 0; i < FindObjectsOfType<Sign>(true).Length; i++)
 			{
-				FindObjectsOfType<Sign>(true)[i].obtained = treasureBoolHolder[i];
-			}
+				if(s.Contains(FindObjectsOfType<Sign>(true)[i].ID + ", "))
+				{
+					found = s.IndexOf(", ");
+					FindObjectsOfType<Sign>(true)[i].obtained = bool.Parse(s.Substring(found + 2));
+				}
+			}	
 		}
 	}
 
 	//Take treasure information from the current scene and put it in our data structure
 	void GetTreasureInRoom()
 	{
-		List<bool> boolHolder = new List<bool>(FindObjectsOfType<Sign>(true).Length);
+		List<string> strings = new List<string>();
 
 		for(int i = 0; i < FindObjectsOfType<Sign>(true).Length; i++)
 		{
-			boolHolder.Add(FindObjectsOfType<Sign>(true)[i].obtained);
+			//Grab item holder data
+			string s = FindObjectsOfType<Sign>(true)[i].ID + ", " + FindObjectsOfType<Sign>(true)[i].obtained;
+			//Put item holder data in a list of strings
+			strings.Add(s);
+		}
+		
+		string[] stringsArray = System.IO.File.ReadAllLines(@"treasures.txt");
+		List<string> stringsList = stringsArray.ToList();
+		//Write the strings to a JSON file
+		foreach(string s in stringsArray)
+		{
+			for(int i = 0; i < FindObjectsOfType<Sign>(true).Length; i++)
+			{
+				if(s.Contains(FindObjectsOfType<Sign>(true)[i].ID + ", "))
+				{
+					stringsList.Remove(s);
+				}
+			}
 		}
 
-		treasureListHolder.Add(boolHolder);
+		System.IO.File.WriteAllLines(@"treasures.txt", stringsList);
+		System.IO.File.AppendAllLines(@"treasures.txt", strings);
 	}
 
     // Start is called before the first frame update
@@ -60,39 +82,15 @@ public class RoomManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		
-
-    	//index = SceneManager.GetActiveScene().buildIndex;
     	if(sceneChange)
     	{
     		sceneChange = false;
-    		Sign sign = new Sign("barf");
-    		Sign sign2 = new Sign("burp");
-    		List<string> strings = new List<string>();
-			string json = JsonUtility.ToJson(sign, false);
-			string json2 = JsonUtility.ToJson(sign2, false);
-    		strings.Add(json);
-    		strings.Add(json2);
-			Debug.Log(json);
-			System.IO.File.AppendAllLines(@"D:\jsonFile.json", strings);
-			string[] readStrings = System.IO.File.ReadAllLines(@"D:\jsonFile.json");
-			foreach(string s in readStrings)
-			{
-				Debug.Log(s);
-			}
-			//System.IO.File.AppendAllLines(@"D:\jsonFile.json", json2);
-			
-
     		GetTreasureInRoom();
     	}
     	else if(index != SceneManager.GetActiveScene().buildIndex)
     	{
-    		//Debug.Log(treasureListHolder[index]);    		
-    		//GetTreasureInRoom();
-
-    		index = SceneManager.GetActiveScene().buildIndex;
-			treasureBoolHolder = treasureListHolder[index];
-    		SetTreasureInRoom();
+     		index = SceneManager.GetActiveScene().buildIndex;
+			SetTreasureInRoom();
     	}
     }
 }

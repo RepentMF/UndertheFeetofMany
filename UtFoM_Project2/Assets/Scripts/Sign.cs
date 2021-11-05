@@ -14,6 +14,7 @@ public class Sign : MonoBehaviour
 	public GameObject box;
 	public Text dialogue;
 	public string insert;
+	public int ID;
 	public bool active;
 	public bool obtained;
 	public Animator animator;
@@ -42,7 +43,10 @@ public class Sign : MonoBehaviour
 
 			if(dialogue.text == insert)
 			{
-				collision.GetComponent<Inventory>().AddItem(GetComponentInChildren<Item>());
+				Item item = GetComponentInChildren<Item>();
+				collision.GetComponent<Inventory>().AddItem(new Item (item.name, item.description, item.category));
+				Debug.Log(item.name + item.description + item.category);
+				Debug.Log(item);
 				GetComponentInChildren<Item>().gameObject.SetActive(false);
 				animator.Play("item_holder_voip");
 			}
@@ -51,15 +55,8 @@ public class Sign : MonoBehaviour
 
 	void Awake()
 	{
-		if(!obtained)
-		{
-			controls = new InputController();
-			controls.Enable();
-		}
-		else
-		{
-			this.gameObject.SetActive(false);
-		}
+		controls = new InputController();
+		controls.Enable();
 	}
 
     // Start is called before the first frame update
@@ -71,6 +68,11 @@ public class Sign : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    	if(obtained)
+    	{
+			this.gameObject.SetActive(false);
+    	}
+
 		if(controls.Player.ContextConfirm.triggered && active) 
 		{
 			box.SetActive(true);
@@ -79,8 +81,7 @@ public class Sign : MonoBehaviour
 
 		if(animator.GetCurrentAnimatorStateInfo(0).IsName("item_holder_gone"))
 		{
-        	DontDestroyOnLoad(this.gameObject);
-			this.gameObject.SetActive(false);
+			obtained = true;
 		}
     }
 }
