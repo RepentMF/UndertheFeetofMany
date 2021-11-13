@@ -15,11 +15,11 @@ C:/Users/mnels/Documents/GitHub/tutorialGame/UtFoM_Project2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54432
+59432
 Successfully changed project path to: C:/Users/mnels/Documents/GitHub/tutorialGame/UtFoM_Project2
 C:/Users/mnels/Documents/GitHub/tutorialGame/UtFoM_Project2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 265.36 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 113.98 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.3f1 (4bef613afd59)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.3f1/Editor/Data/Resources/UnitySubsystems
@@ -35,107 +35,53 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56708
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005771 seconds.
+Registered in 0.010351 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 163.75 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 254.69 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.949 seconds
+- Completed reload, in  6.259 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010903 seconds.
+Registered in 0.026741 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 206.02 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 192.79 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.492 seconds
+- Completed reload, in  3.269 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 1.83 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2130 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.6 MB.
-System memory in use after: 95.7 MB.
+System memory in use before: 95.5 MB.
+System memory in use after: 95.6 MB.
 
 Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 2570.
-Total: 14.731000 ms (FindLiveObjects: 0.342800 ms CreateObjectMapping: 0.274700 ms MarkObjects: 14.048500 ms  DeleteObjects: 0.061000 ms)
+Total: 8.253800 ms (FindLiveObjects: 0.244800 ms CreateObjectMapping: 0.125900 ms MarkObjects: 7.828300 ms  DeleteObjects: 0.052700 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/RoomManager.cs
-  artifactKey: Guid(8e7dd524f83c76242b9e411d4d3e86bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/RoomManager.cs using Guid(8e7dd524f83c76242b9e411d4d3e86bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '972887b40770f78b796aec533db13c4a') in 0.068119 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007327 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.07 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.576 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.7 MB.
-System memory in use after: 95.8 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 2573.
-Total: 10.991600 ms (FindLiveObjects: 0.256200 ms CreateObjectMapping: 0.142300 ms MarkObjects: 10.545900 ms  DeleteObjects: 0.044400 ms)
-
+  path: Assets/Art/gfx/hammer1_down.png
+  artifactKey: Guid(99f3315cb05323f42ad9b18514186e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/gfx/hammer1_down.png using Guid(99f3315cb05323f42ad9b18514186e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8f56de27fb4eebe3567f7e72233acd2') in 0.621587 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 67.380159 seconds.
-  path: Assets/Scripts/RoomManager.cs
-  artifactKey: Guid(8e7dd524f83c76242b9e411d4d3e86bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/RoomManager.cs using Guid(8e7dd524f83c76242b9e411d4d3e86bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e84051b82384edd76c4addd20ce5bf6') in 0.011568 seconds 
+  Time since last request: 73.893610 seconds.
+  path: Assets/Art/gfx/hammer1_down.png
+  artifactKey: Guid(99f3315cb05323f42ad9b18514186e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/gfx/hammer1_down.png using Guid(99f3315cb05323f42ad9b18514186e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa080dae46c5d04fdba65b3878cdd83b') in 0.148380 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005088 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.720 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.99 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.7 MB.
-System memory in use after: 95.8 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 2576.
-Total: 9.091900 ms (FindLiveObjects: 0.328600 ms CreateObjectMapping: 0.208000 ms MarkObjects: 8.517200 ms  DeleteObjects: 0.035900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011454 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.946 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.9 MB.
-
-Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 2579.
-Total: 8.466000 ms (FindLiveObjects: 0.622300 ms CreateObjectMapping: 0.342700 ms MarkObjects: 7.436400 ms  DeleteObjects: 0.062600 ms)
-
+Received Import Request.
+  Time since last request: 406.435760 seconds.
+  path: Assets/Art/gfx/hammer1_down.png
+  artifactKey: Guid(99f3315cb05323f42ad9b18514186e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/gfx/hammer1_down.png using Guid(99f3315cb05323f42ad9b18514186e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a835a255e08676bf5e0df1ad835c92') in 0.134602 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

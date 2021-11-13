@@ -277,14 +277,14 @@ public class PlayerMovement : MonoBehaviour
 					}
 					break;
 				case "Hammer":
-					if(attackBuffer >= 30f && (controls.Player.LightButton.triggered) && 
+					if(attackBuffer >= 60f && (controls.Player.LightButton.triggered) && 
 						!Anicheck(launch))
 					{
 						animator.SetBool("moving", false);
 						attackBuffer = 0f;
 						animator.Play(med);
 					}
-					else if(attackBuffer >= 30f && controls.Player.LaunchButton.triggered && Anicheck(med))
+					else if(attackBuffer >= 50f && controls.Player.LaunchButton.triggered && Anicheck(med))
 					{
 						animator.SetBool("moving", false);
 						attackBuffer = 0f;
