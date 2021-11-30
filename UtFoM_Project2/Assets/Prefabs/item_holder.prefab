@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c59d2d5f732bb45b4fa6e384a25c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  category: 
+  category: 0
   name: 
   description: 
 --- !u!1 &5475861431726506998
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 3378971372661333708}
   - component: {fileID: 3253252468829550561}
   m_Layer: 0
-  m_Name: item_holder 2
+  m_Name: item_holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -173,7 +173,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -248,5 +248,7 @@ MonoBehaviour:
   box: {fileID: 0}
   dialogue: {fileID: 0}
   insert: u smell like dog buns
+  ID: 0
   active: 0
+  obtained: 0
   animator: {fileID: 0}

@@ -55,6 +55,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 0ab93e201cd88834e93754c9645963d2, type: 3}
   - {fileID: 21300000, guid: cfd001404f3e62f4283c368176545d55, type: 3}
   - {fileID: 21300000, guid: 519d4e80691f83847b6436404aec5d0e, type: 3}
+  - {fileID: 21300000, guid: 4207af803488b7f4d83347bed8ad66ec, type: 3}
   - {fileID: 21300000, guid: a73478b05a28b5241838fcc1f8c7b91a, type: 3}
   - {fileID: 21300000, guid: 42779bd0a451e7244a978228e6fc3875, type: 3}
   - {fileID: 21300000, guid: 5cda9201f24aeef4494667ee8d3cffc4, type: 3}
@@ -1650,6 +1651,7 @@ SpriteAtlas:
   - {fileID: 4446112526288549623, guid: 62541dd9f72a49d4f8401d7e72dc9ce1, type: 3}
   - {fileID: 38528588938192158, guid: 62541dd9f72a49d4f8401d7e72dc9ce1, type: 3}
   - {fileID: 21300000, guid: 1bcab1e9849269d4caa1f4f9c267e9ee, type: 3}
+  - {fileID: 21300000, guid: ee43882a017c7f740ba04f96c1af866f, type: 3}
   - {fileID: 21300000, guid: a3ad596acdf876f46b7425261ad9db4e, type: 3}
   - {fileID: -464034680190023423, guid: f45b5cca3ee54fd4e93402fd06b8938e, type: 3}
   - {fileID: -6069640938520168933, guid: f45b5cca3ee54fd4e93402fd06b8938e, type: 3}
@@ -2252,6 +2254,7 @@ SpriteAtlas:
   - CH_B1
   - TT
   - hammer_item
+  - bb_house
   - FR
   - OR
   - UI_demo_stats_scaledUp1_lifeblood2
@@ -3847,6 +3850,7 @@ SpriteAtlas:
   - item_holder_front_4
   - item_holder_front_5
   - character_1_side_swing
+  - entryway
   - font
   - Inner_48
   - Inner_49

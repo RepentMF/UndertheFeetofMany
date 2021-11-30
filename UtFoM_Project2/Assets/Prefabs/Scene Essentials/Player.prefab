@@ -236,9 +236,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 80, y: 0}
-  damage: 1.5
+  magic: 0
   hitbox: sword1
+  damage: 1.5
+  timer: 0
+  thrust: {x: 80, y: 0}
 --- !u!1 &660729248335287819
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +305,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -395,13 +397,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18c7f4d519ac92447a64d2e1dbb64e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerList: []
   shortcut: 0
   comboBool: 0
+  newPlayer: 1
   swipe: 0
   attackFrame: 0
   attackBuffer: 0
   speed: 6
   currentKBTime: 0
+  curScene: 
+  newScene: 
   light: 
   med: 
   launch: 
@@ -412,17 +418,22 @@ MonoBehaviour:
   flurry: {fileID: 5073338114709111968, guid: 5a4d370d9764a4449b1a2288e4b32743, type: 3}
   playerPos: {fileID: 11400000, guid: 4bed1a8ded234e24ea7e4066c8c5031e, type: 2}
   playerDir: {fileID: 11400000, guid: c4f53b491cd59ac478d5751da8e6de48, type: 2}
-  currentHealth: {fileID: 11400000, guid: 713e190effe6aa340aeb3962248289ff, type: 2}
-  currentMana: {fileID: 11400000, guid: 8289ceceb129309429f01e2112a65156, type: 2}
-  currentStamina: {fileID: 11400000, guid: d7e7aba257b97f749a685b4d30e0a725, type: 2}
-  currentEstus: {fileID: 11400000, guid: 41a166f8164ab744b840b095f3f0cbfd, type: 2}
+  currentHealth: 0
+  maxHealth: 0
+  maxMana: 0
+  maxStamina: 0
+  maxLifeblood: 0
+  currentMana: 0
+  currentStamina: 0
+  currentLifeblood: 0
   playerHealthSignal: {fileID: 11400000, guid: f2de9eacb21a0ab43b4eb8f3c64f3d2e, type: 2}
   playerManaSignal: {fileID: 11400000, guid: b4420d0b9e7124e479272a8585d20f98, type: 2}
   playerStaminaSignal: {fileID: 11400000, guid: 8e19d18faeedaeb47a5805f419dde2f3,
     type: 2}
-  playerEstusSignal: {fileID: 11400000, guid: 25ecc54408151ba478668b1878a8f848, type: 2}
+  playerLifebloodSignal: {fileID: 0}
   animator: {fileID: 0}
   change: {x: 0, y: 0}
+  sparkles: {fileID: 0}
 --- !u!95 &660729248335287821
 Animator:
   serializedVersion: 3
@@ -480,6 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b638f8e309b7f5a42ba75c7421301852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  statusLog: 
 --- !u!114 &8160814597243337161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1236,9 +1248,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 250}
-  damage: 2.5
+  magic: 0
   hitbox: hammer3
+  damage: 2.5
+  timer: 0
+  thrust: {x: 0, y: 250}
 --- !u!1 &1298824625691805424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,9 +1299,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: -240}
-  damage: 2.5
+  magic: 0
   hitbox: sword3
+  damage: 2.5
+  timer: 0
+  thrust: {x: 0, y: -240}
 --- !u!1 &1393447855422044584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,9 +1415,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 165}
-  damage: 2
+  magic: 0
   hitbox: hammer1
+  damage: 2
+  timer: 0
+  thrust: {x: 0, y: 165}
 --- !u!1 &1441222463738251149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,9 +1705,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 180}
-  damage: 3.5
+  magic: 0
   hitbox: hammer4
+  damage: 3.5
+  timer: 0
+  thrust: {x: 0, y: 180}
 --- !u!1 &1936551415376865727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,9 +1757,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 250}
-  damage: 2.5
+  magic: 0
   hitbox: hammer3
+  damage: 2.5
+  timer: 0
+  thrust: {x: 0, y: 250}
 --- !u!1 &1987716661498657218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,9 +1809,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 165}
-  damage: 2
+  magic: 0
   hitbox: hammer1
+  damage: 2
+  timer: 0
+  thrust: {x: 0, y: 165}
 --- !u!1 &2223012381622525532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,9 +1861,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 250}
-  damage: 2.5
+  magic: 0
   hitbox: hammer3
+  damage: 2.5
+  timer: 0
+  thrust: {x: 0, y: 250}
 --- !u!1 &2243452928997123280
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,9 +1912,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 80}
-  damage: 1.5
+  magic: 0
   hitbox: sword1
+  damage: 1.5
+  timer: 0
+  thrust: {x: 0, y: 80}
 --- !u!1 &2282758709885425261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,9 +1964,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 175}
-  damage: 2
+  magic: 0
   hitbox: hammer2
+  damage: 2
+  timer: 0
+  thrust: {x: 0, y: 175}
 --- !u!1 &2333033232175709098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1990,7 +2020,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2128,9 +2158,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: -80, y: 0}
-  damage: 1.5
+  magic: 0
   hitbox: sword1
+  damage: 1.5
+  timer: 0
+  thrust: {x: -80, y: 0}
 --- !u!1 &2455052324043818338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2500,9 +2532,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: -90}
-  damage: 1.5
+  magic: 0
   hitbox: sword2
+  damage: 1.5
+  timer: 0
+  thrust: {x: 0, y: -90}
 --- !u!1 &2705690507892997653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,9 +3362,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 165}
-  damage: 2
+  magic: 0
   hitbox: hammer1
+  damage: 2
+  timer: 0
+  thrust: {x: 0, y: 165}
 --- !u!1 &3545423431077615663
 GameObject:
   m_ObjectHideFlags: 0
@@ -3749,9 +3785,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 0}
-  damage: 0.334
+  magic: 0
   hitbox: knife
+  damage: 0.334
+  timer: 0
+  thrust: {x: 0, y: 0}
 --- !u!1 &3888285047003943486
 GameObject:
   m_ObjectHideFlags: 0
@@ -4169,9 +4207,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 0}
-  damage: 0.334
+  magic: 0
   hitbox: knife
+  damage: 0.334
+  timer: 0
+  thrust: {x: 0, y: 0}
 --- !u!1 &4101111548408968161
 GameObject:
   m_ObjectHideFlags: 0
@@ -4287,9 +4327,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 90, y: 0}
-  damage: 1.5
+  magic: 0
   hitbox: sword2
+  damage: 1.5
+  timer: 0
+  thrust: {x: 90, y: 0}
 --- !u!1 &4249772267160683567
 GameObject:
   m_ObjectHideFlags: 0
@@ -4463,9 +4505,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 0}
-  damage: 0.334
+  magic: 0
   hitbox: knife
+  damage: 0.334
+  timer: 0
+  thrust: {x: 0, y: 0}
 --- !u!1 &4425684234270922751
 GameObject:
   m_ObjectHideFlags: 0
@@ -4824,9 +4868,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 175}
-  damage: 2
+  magic: 0
   hitbox: hammer2
+  damage: 2
+  timer: 0
+  thrust: {x: 0, y: 175}
 --- !u!1 &4834030234343503443
 GameObject:
   m_ObjectHideFlags: 0
@@ -4874,9 +4920,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: -180, y: 60}
-  damage: 3.5
+  magic: 0
   hitbox: hammer4
+  damage: 3.5
+  timer: 0
+  thrust: {x: -180, y: 60}
 --- !u!1 &4859972627429415478
 GameObject:
   m_ObjectHideFlags: 0
@@ -5043,9 +5091,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 100, y: 60}
-  damage: 2.5
+  magic: 0
   hitbox: sword3
+  damage: 2.5
+  timer: 0
+  thrust: {x: 100, y: 60}
 --- !u!1 &5030012938381949648
 GameObject:
   m_ObjectHideFlags: 0
@@ -5282,9 +5332,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: -80}
-  damage: 1.5
+  magic: 0
   hitbox: sword1
+  damage: 1.5
+  timer: 0
+  thrust: {x: 0, y: -80}
 --- !u!1 &5451835166967490595
 GameObject:
   m_ObjectHideFlags: 0
@@ -5582,9 +5634,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 90}
-  damage: 1.5
+  magic: 0
   hitbox: sword2
+  damage: 1.5
+  timer: 0
+  thrust: {x: 0, y: 90}
 --- !u!1 &5612902887493346536
 GameObject:
   m_ObjectHideFlags: 0
@@ -5936,9 +5990,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 175}
-  damage: 2
+  magic: 0
   hitbox: hammer2
+  damage: 2
+  timer: 0
+  thrust: {x: 0, y: 175}
 --- !u!1 &6032183316862107379
 GameObject:
   m_ObjectHideFlags: 0
@@ -6419,9 +6475,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 180}
-  damage: 2.5
+  magic: 0
   hitbox: sword3
+  damage: 2.5
+  timer: 0
+  thrust: {x: 0, y: 180}
 --- !u!1 &6628429793120318410
 GameObject:
   m_ObjectHideFlags: 0
@@ -6822,9 +6880,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: -180}
-  damage: 3.5
+  magic: 0
   hitbox: hammer4
+  damage: 3.5
+  timer: 0
+  thrust: {x: 0, y: -180}
 --- !u!1 &6926318225986383740
 GameObject:
   m_ObjectHideFlags: 0
@@ -7514,9 +7574,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 0}
-  damage: 0.334
+  magic: 0
   hitbox: knife
+  damage: 0.334
+  timer: 0
+  thrust: {x: 0, y: 0}
 --- !u!1 &7586538644080679208
 GameObject:
   m_ObjectHideFlags: 0
@@ -7753,9 +7815,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 250}
-  damage: 2.5
+  magic: 0
   hitbox: hammer3
+  damage: 2.5
+  timer: 0
+  thrust: {x: 0, y: 250}
 --- !u!1 &7760500873810019951
 GameObject:
   m_ObjectHideFlags: 0
@@ -7803,9 +7867,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 175}
-  damage: 2
+  magic: 0
   hitbox: hammer2
+  damage: 2
+  timer: 0
+  thrust: {x: 0, y: 175}
 --- !u!1 &7762856402805354167
 GameObject:
   m_ObjectHideFlags: 0
@@ -7977,9 +8043,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: -90, y: 0}
-  damage: 1.5
+  magic: 0
   hitbox: sword2
+  damage: 1.5
+  timer: 0
+  thrust: {x: -90, y: 0}
 --- !u!1 &8152032723678482534
 GameObject:
   m_ObjectHideFlags: 0
@@ -8121,9 +8189,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 180, y: 60}
-  damage: 3.5
+  magic: 0
   hitbox: hammer4
+  damage: 3.5
+  timer: 0
+  thrust: {x: 180, y: 60}
 --- !u!1 &8251478763308002232
 GameObject:
   m_ObjectHideFlags: 0
@@ -8725,9 +8795,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: 0, y: 165}
-  damage: 2
+  magic: 0
   hitbox: hammer1
+  damage: 2
+  timer: 0
+  thrust: {x: 0, y: 165}
 --- !u!1 &8582108182794371573
 GameObject:
   m_ObjectHideFlags: 0
@@ -8898,9 +8970,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {x: -100, y: 60}
-  damage: 2.5
+  magic: 0
   hitbox: sword3
+  damage: 2.5
+  timer: 0
+  thrust: {x: -100, y: 60}
 --- !u!1 &8824769512770270431
 GameObject:
   m_ObjectHideFlags: 0
