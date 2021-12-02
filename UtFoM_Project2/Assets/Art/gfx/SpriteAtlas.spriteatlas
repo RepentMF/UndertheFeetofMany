@@ -1917,6 +1917,7 @@ SpriteAtlas:
   - {fileID: 1036803682579554421, guid: f45b5cca3ee54fd4e93402fd06b8938e, type: 3}
   - {fileID: 5559694988392259305, guid: f45b5cca3ee54fd4e93402fd06b8938e, type: 3}
   - {fileID: 21300000, guid: aed528eb8c6d3854e91f237707bd857c, type: 3}
+  - {fileID: 21300000, guid: b141c62c433eef04d8e403bb642613a3, type: 3}
   - {fileID: 8067977573546626770, guid: 99f3315cb05323f42ad9b18514186e14, type: 3}
   - {fileID: -4438079907222477514, guid: 99f3315cb05323f42ad9b18514186e14, type: 3}
   - {fileID: -3156119607861744886, guid: 99f3315cb05323f42ad9b18514186e14, type: 3}
@@ -4116,6 +4117,7 @@ SpriteAtlas:
   - Inner_42
   - Inner_43
   - UI_demo_stats_scaledUp1_lifeblood1
+  - bb_house1
   - hammer1_down_40
   - hammer1_down_41
   - hammer1_down_42
