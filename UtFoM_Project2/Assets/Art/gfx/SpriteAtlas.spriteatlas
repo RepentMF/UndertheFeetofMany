@@ -59,6 +59,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a73478b05a28b5241838fcc1f8c7b91a, type: 3}
   - {fileID: 21300000, guid: 42779bd0a451e7244a978228e6fc3875, type: 3}
   - {fileID: 21300000, guid: 5cda9201f24aeef4494667ee8d3cffc4, type: 3}
+  - {fileID: 21300000, guid: 04cb24419d54bac43bb8272fd7c2d737, type: 3}
+  - {fileID: 21300000, guid: f75d08711f6d7da4486d28091b5b72ce, type: 3}
   - {fileID: 21300000, guid: 9d7d63b1972d01044a4a1bd99789ceb9, type: 3}
   - {fileID: 21300000, guid: 2b87a4f126b72e64b9e729b42fb9bfd3, type: 3}
   - {fileID: 21300000, guid: d427e8f1b3863d648b40e86a5a109dd7, type: 3}
@@ -1916,7 +1918,9 @@ SpriteAtlas:
   - {fileID: 536419509007563539, guid: f45b5cca3ee54fd4e93402fd06b8938e, type: 3}
   - {fileID: 1036803682579554421, guid: f45b5cca3ee54fd4e93402fd06b8938e, type: 3}
   - {fileID: 5559694988392259305, guid: f45b5cca3ee54fd4e93402fd06b8938e, type: 3}
+  - {fileID: 21300000, guid: 9ded65eb26a973e4b86c8faa565979d5, type: 3}
   - {fileID: 21300000, guid: aed528eb8c6d3854e91f237707bd857c, type: 3}
+  - {fileID: 21300000, guid: 9564c11ce83f7bf419f41cbcf16efd9a, type: 3}
   - {fileID: 21300000, guid: b141c62c433eef04d8e403bb642613a3, type: 3}
   - {fileID: 8067977573546626770, guid: 99f3315cb05323f42ad9b18514186e14, type: 3}
   - {fileID: -4438079907222477514, guid: 99f3315cb05323f42ad9b18514186e14, type: 3}
@@ -2259,6 +2263,8 @@ SpriteAtlas:
   - FR
   - OR
   - UI_demo_stats_scaledUp1_lifeblood2
+  - bb_house3
+  - bb_house3
   - UI_demo_stats_scaledUp1_mana
   - LightningBurst
   - TP_nobg
@@ -4116,7 +4122,9 @@ SpriteAtlas:
   - Inner_38
   - Inner_42
   - Inner_43
+  - bb_side_house
   - UI_demo_stats_scaledUp1_lifeblood1
+  - bb_house4
   - bb_house1
   - hammer1_down_40
   - hammer1_down_41
