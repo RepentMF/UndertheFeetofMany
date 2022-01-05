@@ -55,7 +55,7 @@ public class Feeder : Enemy
 
     void ChooseAction()
     {
-        if(!statMod.GetStatus(Status.exhaust))
+        if(!statMod.GetStatus(Status.Exhaust))
         {
             if(inDevourRange)
             {
@@ -128,7 +128,7 @@ public class Feeder : Enemy
         if(currentState != EnemyState.stagger && currentState != EnemyState.juggle && currentState != EnemyState.freefall)
         {   
             animator.SetBool("moving", false);
-            if(currentState == EnemyState.idle && !statMod.GetStatus(Status.exhaust))
+            if(currentState == EnemyState.idle && !statMod.GetStatus(Status.Exhaust))
             {   
                 RegenStamina();
                 if(inRange)
@@ -172,7 +172,7 @@ public class Feeder : Enemy
             {
                 currentStamina = 0f;
                 currentState = EnemyState.idle;
-                statMod.AddStatus(Status.exhaust, maxStamina, 0f);
+                statMod.AddStatus(Status.Exhaust, maxStamina, 0f);
             }
         }
         else

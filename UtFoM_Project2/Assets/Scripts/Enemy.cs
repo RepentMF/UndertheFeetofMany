@@ -156,7 +156,7 @@ public class Enemy : MonoBehaviour
 			}
 			else if(hitBy != attack.hitbox && attack.hitbox == "flurry")
 			{
-				statMod.AddStatus(Status.struggle, 1.0f, 1.0f);
+				statMod.AddStatus(Status.Struggle, 1.0f, 1.0f);
 			}
 			else if(hitBy != attack.hitbox && attack.hitbox == "burst")
 			{

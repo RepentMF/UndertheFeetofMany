@@ -12,9 +12,12 @@ GameObject:
   - component: {fileID: 7899703265987485777}
   - component: {fileID: 7899703265987485782}
   - component: {fileID: 7899703265987485783}
-  - component: {fileID: 7899703265987485780}
   - component: {fileID: 7899703265987485781}
-  - component: {fileID: 7899703265987485866}
+  - component: {fileID: -7993906972529507044}
+  - component: {fileID: -2846475353361542735}
+  - component: {fileID: 7899703265987485780}
+  - component: {fileID: 5323291326135493785}
+  - component: {fileID: -6232623040607330593}
   m_Layer: 0
   m_Name: Feeder
   m_TagString: Enemy
@@ -137,19 +140,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.56, y: 0.56}
   m_EdgeRadius: 0
---- !u!114 &7899703265987485780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7899703265987485867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b638f8e309b7f5a42ba75c7421301852, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statusLog: 
 --- !u!95 &7899703265987485781
 Animator:
   serializedVersion: 3
@@ -169,7 +159,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7899703265987485866
+--- !u!114 &-7993906972529507044
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,47 +168,134 @@ MonoBehaviour:
   m_GameObject: {fileID: 7899703265987485867}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c7135f444282424ebf84468ca4924e3, type: 3}
+  m_Script: {fileID: 11500000, guid: aaa99d550eabb8142a764968b7ca190d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 0
-  statMod: {fileID: 7899703265987485780}
-  isInvuln: 0
-  combo: 0
-  baseAtk: 0
-  baseWeight: 0
-  currentWeight: 0
-  maxHealth: 45
-  currentHealth: 45
-  maxStamina: 15
-  currentStamina: 15
-  stamRgn: 1
-  currentMana: 15
-  maxMana: 15
-  spd: 2
-  home: 0
-  currentStagger: 0
-  enemyName: 
-  hitBy: 
-  rigidbody: {fileID: 0}
-  target: {fileID: 0}
-  homePos: {fileID: 0}
-  movRange: 6
-  animator: {fileID: 0}
-  particles: {fileID: 0}
-  dir: {x: 0, y: 0, z: 0}
-  rushRange: 3
-  devourRange: 2
-  movTimerBase: 0.5
-  rushTimerBase: 1.167
-  devourTimerBase: 2
-  rushStaminaCost: 3
-  devourManaCost: 2
-  movTimer: 0.5
-  atkTimer: 1.167
-  inRange: 0
-  inRushRange: 0
-  inDevourRange: 0
+  MovementSpeed: 2
+  MovementRange: 6
+  MovementCost: 1
+  QuadDirectionOnly: 0
+  AttackOneRange: 3
+  AttackOneTimer: 1.167
+  AttackOneCost: 3
+  AttackOneAnimationName: rush
+  AttackTwoRange: -1
+  AttackTwoTimer: -1
+  AttackTwoCost: -1
+  AttackTwoAnimationName: 
+  AttackThreeRange: -1
+  AttackThreeTimer: -1
+  AttackThreeCost: -1
+  AttackThreeAnimationName: 
+  SpellOneRange: 1.5
+  SpellOneTimer: 2
+  SpellOneCost: 2
+  SpellOneAnimationName: 
+  SpellTwoRange: -1
+  SpellTwoTimer: -1
+  SpellTwoCost: -1
+  SpellTwoAnimationName: devour
+  SpellThreeRange: -1
+  SpellThreeTimer: -1
+  SpellThreeCost: -1
+  SpellThreeAnimationName: 
+  DisplayRuntimeValues: 0
+  RuntimeTarget: {fileID: 0}
+  RuntimeDirection: {x: 0, y: 0, z: 0}
+  RuntimeCanAct: 0
+  RuntimeActionTimer: 0
+  RuntimeCooldownTimer: 0
+  RuntimeInMovementRange: 0
+  RuntimeInAttackOneRange: 0
+  RuntimeInAttackTwoRange: 0
+  RuntimeInAttackThreeRange: 0
+  RuntimeInSpellOneRange: 0
+  RuntimeInSpellTwoRange: 0
+  RuntimeInSpellThreeRange: 0
+  RushDirectionModifier: 5
+  RushWaitTime: 0.583
+--- !u!114 &-2846475353361542735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7899703265987485867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca553585a9f12e4db2407fc3492aeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OriginalHealth: 45
+  BaseHealthRegen: 0
+  OriginalStamina: 15
+  BaseStaminaRegen: 1
+  OriginalMana: 15
+  BaseManaRegen: 0
+  OriginalLifeblood: 0
+  BaseLifebloodRegen: 0
+  DisplayRuntimeValues: 0
+  RuntimeIsInvulnerable: 0
+  RuntimeComboCount: 0
+  RuntimeMaxHealth: 0
+  RuntimeCurrentHealth: 0
+  RuntimeMaxStamina: 0
+  RuntimeCurrentStamina: 0
+  RuntimeMaxMana: 0
+  RuntimeCurrentMana: 0
+  RuntimeMaxLifeblood: 0
+  RuntimeCurrentLifeblood: 0
+--- !u!114 &7899703265987485780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7899703265987485867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b638f8e309b7f5a42ba75c7421301852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayRuntimeValues: 0
+  RuntimeStatuses: []
+--- !u!114 &5323291326135493785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7899703265987485867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87170527e5838ec49b6f590cc29fddae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IdleAnimationName: idle
+  MoveAnimationName: move
+  MoveAnimationTimer: 0.5
+  StaggerAnimationName: stagger
+  JuggleAnimationName: stagger
+  FreefallAnimationName: stagger
+  DeathAnimationName: death
+  DeathAnimationTimer: -1
+  DisplayRuntimeValues: 0
+  RuntimeCurrentState: 0
+  RuntimeCurrentAnimationName: 
+  RuntimeCurrentAnimationTimer: 0
+  RuntimeCooldownTimer: 0
+--- !u!114 &-6232623040607330593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7899703265987485867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 268db093e507ec840a0d16046329d22a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7899703267575361657
 GameObject:
   m_ObjectHideFlags: 0
