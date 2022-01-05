@@ -63,6 +63,7 @@ public abstract class EnemyAi : MonoBehaviour
     private Animator AnimatorScript;
     protected internal Rigidbody2D Rigidbody2DScript;
     private StateManager StateManagerScript;
+    private SpriteRenderer SpriteRendererScript; // Used to manage layering compared to the player
 
     [Header("Runtime Values")]
     [SerializeField] private bool DisplayRuntimeValues = false;
@@ -424,6 +425,30 @@ public abstract class EnemyAi : MonoBehaviour
         StateManagerScript.CooldownTimer = cooldownTimer;
     }
 
+    void OnTriggerStay2D(Collider2D collider)
+    {
+        // If a player has entered the enemy's space
+        if (collider.GetComponent<PlayerMovement>() != null)
+        {
+            if (this.gameObject.transform.position.y < collider.bounds.center.y)
+            {
+                SpriteRendererScript.sortingLayerName = "Enemy_Front";
+            } else
+            {
+                SpriteRendererScript.sortingLayerName = "Enemy_Back";
+            }
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        // If a player has exited the enemy's space
+        if (collider.GetComponent<PlayerMovement>() != null)
+        {
+            SpriteRendererScript.sortingLayerName = "Enemy_Back";
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -432,6 +457,7 @@ public abstract class EnemyAi : MonoBehaviour
         AnimatorScript = this.gameObject.GetComponent<Animator>();
         Rigidbody2DScript = this.gameObject.GetComponent<Rigidbody2D>();
         StateManagerScript = this.gameObject.GetComponent<StateManager>();
+        SpriteRendererScript = this.gameObject.GetComponent<SpriteRenderer>();
         Target = GameObject.FindWithTag("P1").transform;
     }
 
