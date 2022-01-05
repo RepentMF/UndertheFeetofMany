@@ -2235,6 +2235,11 @@ SpriteAtlas:
   - {fileID: 7597352074823555036, guid: 7eae60ee79d9c6946b95aea93185a1f9, type: 3}
   - {fileID: 21300000, guid: 98e071ee4e35dc8479ff923a34455a23, type: 3}
   - {fileID: 21300000, guid: 01f9990fa5ba3a8488c567b6be41f9f0, type: 3}
+  - {fileID: 5030290666744600015, guid: c98e819fcde282f489c30a24b503c547, type: 3}
+  - {fileID: 6557094435153962602, guid: c98e819fcde282f489c30a24b503c547, type: 3}
+  - {fileID: 7509860518518112746, guid: c98e819fcde282f489c30a24b503c547, type: 3}
+  - {fileID: 6717470441782034276, guid: c98e819fcde282f489c30a24b503c547, type: 3}
+  - {fileID: 8954718260495684846, guid: c98e819fcde282f489c30a24b503c547, type: 3}
   - {fileID: 3000696153878756389, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
   - {fileID: -7638738936969319913, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
   - {fileID: 465625315162889304, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
@@ -4439,6 +4444,11 @@ SpriteAtlas:
   - feeder_4
   - modified gfx melee sprites
   - cave
+  - torch_2
+  - torch_3
+  - torch_0
+  - torch_1
+  - torch_4
   - item_holder_6
   - item_holder_7
   - item_holder_4
