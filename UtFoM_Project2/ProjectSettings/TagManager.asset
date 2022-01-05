@@ -61,11 +61,14 @@ TagManager:
   - name: Signs
     uniqueID: 674821381
     locked: 0
+  - name: Enemy_Back
+    uniqueID: 4158862079
+    locked: 0
   - name: Player
     uniqueID: 2164896425
     locked: 0
-  - name: Enemy
-    uniqueID: 4158862079
+  - name: Enemy_Front
+    uniqueID: 1950470269
     locked: 0
   - name: ArtLayer_Foreground
     uniqueID: 4190425103

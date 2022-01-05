@@ -212,7 +212,7 @@ Transform:
   - {fileID: 242017343}
   - {fileID: 896298952}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &46847925 stripped
 GameObject:
@@ -523,7 +523,7 @@ PrefabInstance:
     - target: {fileID: 2211619218807816710, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816710, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
@@ -647,6 +647,8 @@ GameObject:
   m_Component:
   - component: {fileID: 105803653}
   - component: {fileID: 105803652}
+  - component: {fileID: 105803655}
+  - component: {fileID: 105803654}
   m_Layer: 0
   m_Name: bb_side_house
   m_TagString: Untagged
@@ -693,7 +695,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -104542193
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9ded65eb26a973e4b86c8faa565979d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -720,6 +722,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &105803654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105803651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f40d7e24a8f7c24da2dfcc02747a62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeSpeed: 1
+--- !u!61 &105803655
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105803651}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.6875, y: 7}
+    newSize: {x: 3.6875, y: 7}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.6875, y: 6}
+  m_EdgeRadius: 0
 --- !u!1 &140675904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,7 +1643,7 @@ Transform:
   - {fileID: 899594626}
   - {fileID: 866059440}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &840209741
 Grid:
@@ -4217,6 +4258,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1271564791}
   - component: {fileID: 1271564790}
+  - component: {fileID: 1271564793}
+  - component: {fileID: 1271564792}
   m_Layer: 0
   m_Name: bb_house4
   m_TagString: Untagged
@@ -4290,6 +4333,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1271564792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271564789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f40d7e24a8f7c24da2dfcc02747a62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeSpeed: 1
+--- !u!61 &1271564793
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271564789}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.1875, y: 6.375}
+    newSize: {x: 1.15, y: 1.02}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.1875, y: 5.375}
+  m_EdgeRadius: 0
 --- !u!1 &1297910977
 GameObject:
   m_ObjectHideFlags: 0
@@ -4447,6 +4529,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1415316673}
   - component: {fileID: 1415316672}
+  - component: {fileID: 1415316675}
+  - component: {fileID: 1415316674}
   m_Layer: 0
   m_Name: bb_house
   m_TagString: Untagged
@@ -4493,7 +4577,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -104542193
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b141c62c433eef04d8e403bb642613a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4521,6 +4605,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1415316674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415316671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f40d7e24a8f7c24da2dfcc02747a62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeSpeed: 1
+--- !u!61 &1415316675
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415316671}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.1875, y: 6.375}
+    newSize: {x: 7.7222223, y: 7.4444447}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.1875, y: 5.375}
+  m_EdgeRadius: 0
 --- !u!1001 &1478530087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5107,6 +5230,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1587576148}
   - component: {fileID: 1587576147}
+  - component: {fileID: 1587576150}
+  - component: {fileID: 1587576149}
   m_Layer: 0
   m_Name: bb_house3
   m_TagString: Untagged
@@ -5180,6 +5305,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1587576149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587576146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f40d7e24a8f7c24da2dfcc02747a62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeSpeed: 1
+--- !u!61 &1587576150
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587576146}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.1875, y: 6.375}
+    newSize: {x: 7.1875, y: 6.375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.1875, y: 5.375}
+  m_EdgeRadius: 0
 --- !u!1 &1711326378
 GameObject:
   m_ObjectHideFlags: 0
@@ -5299,6 +5463,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1788453025}
   - component: {fileID: 1788453024}
+  - component: {fileID: 1788453027}
+  - component: {fileID: 1788453026}
   m_Layer: 0
   m_Name: bb_house (1)
   m_TagString: Untagged
@@ -5345,7 +5511,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -104542193
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4207af803488b7f4d83347bed8ad66ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5372,6 +5538,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1788453026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788453023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f40d7e24a8f7c24da2dfcc02747a62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeSpeed: 1
+--- !u!61 &1788453027
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788453023}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.1875, y: 6.375}
+    newSize: {x: 7.1875, y: 6.375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.1875, y: 5.375}
+  m_EdgeRadius: 0
 --- !u!1 &1966566964 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3479239084847866430, guid: c577048ce2e077947a41f87bff0432bf,
@@ -6058,6 +6263,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 635486645992222835, guid: 74a99facd06f13c43a5e1440772f29b3,
+        type: 3}
+      propertyPath: MoveAnimationName
+      value: move
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603963570709661842, guid: 74a99facd06f13c43a5e1440772f29b3,
+        type: 3}
+      propertyPath: DisplayRuntimeValues
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7603963570709661848, guid: 74a99facd06f13c43a5e1440772f29b3,
         type: 3}
       propertyPath: m_Name
@@ -6066,7 +6281,7 @@ PrefabInstance:
     - target: {fileID: 7603963570709661855, guid: 74a99facd06f13c43a5e1440772f29b3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7603963570709661855, guid: 74a99facd06f13c43a5e1440772f29b3,
         type: 3}
