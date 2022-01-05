@@ -28,6 +28,9 @@ public class RoofFader : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Decrements the alpha value over time until it reaches 0f
+    /// </summary>
     private void FadeObjectOut()
     {
         if (SpriteRendererScript.color.a > 0f)
@@ -38,6 +41,9 @@ public class RoofFader : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Increments the alpha value over time until it reaches 1f
+    /// </summary>
     private void FadeObjectIn()
     {
         if (SpriteRendererScript.color.a < 1f)
