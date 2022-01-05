@@ -212,7 +212,7 @@ Transform:
   - {fileID: 242017343}
   - {fileID: 896298952}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &46847925 stripped
 GameObject:
@@ -449,7 +449,7 @@ PrefabInstance:
     - target: {fileID: 2211619218807816710, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816710, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
@@ -621,7 +621,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -104542193
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9ded65eb26a973e4b86c8faa565979d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1495,7 +1495,7 @@ Transform:
   - {fileID: 899594626}
   - {fileID: 866059440}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &840209741
 Grid:
@@ -4365,7 +4365,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -104542193
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b141c62c433eef04d8e403bb642613a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5225,7 +5225,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -104542193
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4207af803488b7f4d83347bed8ad66ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5995,7 +5995,7 @@ PrefabInstance:
     - target: {fileID: 7603963570709661855, guid: 74a99facd06f13c43a5e1440772f29b3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7603963570709661855, guid: 74a99facd06f13c43a5e1440772f29b3,
         type: 3}

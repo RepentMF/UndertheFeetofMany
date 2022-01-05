@@ -79,7 +79,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -136105217
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1245596321312410548, guid: 7eae60ee79d9c6946b95aea93185a1f9,
     type: 3}
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementSpeed: 2
-  MovementRange: 6
+  MovementRange: 8
   MovementCost: 1
   QuadDirectionOnly: 0
   AttackOneRange: 3
@@ -190,11 +190,11 @@ MonoBehaviour:
   SpellOneRange: 1.5
   SpellOneTimer: 2
   SpellOneCost: 2
-  SpellOneAnimationName: 
+  SpellOneAnimationName: devour
   SpellTwoRange: -1
   SpellTwoTimer: -1
   SpellTwoCost: -1
-  SpellTwoAnimationName: devour
+  SpellTwoAnimationName: 
   SpellThreeRange: -1
   SpellThreeTimer: -1
   SpellThreeCost: -1
