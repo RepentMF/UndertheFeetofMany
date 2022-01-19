@@ -8,23 +8,8 @@ public class CameraMovement : MonoBehaviour
 	public Transform target;
 	public float smoothing;
 	public float oldSmoothing;
-	public Vector2 camChange;
 	public Vector2 maxPosition;
 	public Vector2 minPosition;
-
-	void CamChange()
-	{
-		if(target.position.x > maxPosition.x || target.position.y > maxPosition.y)
-		{
-			maxPosition += camChange;
-			minPosition += camChange;
-		}
-		if(target.position.x < minPosition.x || target.position.y < minPosition.y)
-		{
-			maxPosition -= camChange;
-			minPosition -= camChange;
-		}
-	}
 
 	void Awake()
 	{
@@ -36,7 +21,6 @@ public class CameraMovement : MonoBehaviour
     {
 		//transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
 		oldSmoothing = smoothing;
-		CamChange();
     }
 
 	private Vector3 RoundPosition(Vector3 position)
