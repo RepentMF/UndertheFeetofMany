@@ -43,11 +43,9 @@ public class Sign : MonoBehaviour
 
 			if(dialogue.text == insert)
 			{
-				Item item = GetComponentInChildren<Item>();
-				collision.GetComponent<Inventory>().AddItem(new Item (item.name, item.description, item.category));
-				Debug.Log(item.name + item.description + item.category);
-				Debug.Log(item);
-				GetComponentInChildren<Item>().gameObject.SetActive(false);
+				var item = GetComponentInChildren<Item>();
+				collision.GetComponent<Inventory>().AddItem(item);
+				// GetComponentInChildren<Item>().gameObject.SetActive(false);
 				animator.Play("item_holder_voip");
 			}
 		}

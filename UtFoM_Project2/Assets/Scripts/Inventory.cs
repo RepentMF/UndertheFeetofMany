@@ -4,47 +4,50 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-	public string equippedWeapon;
-	public List<Item> spellsList = new List<Item>();
-	public List<Item> charmsList = new List<Item>();
-	public List<Item> doorKeysList = new List<Item>();
-	public List<Item> weaponsList = new List<Item>();
-	public List<Item> diariesList = new List<Item>();
-	public List<Item> keyItemsList = new List<Item>();
-	public bool hasMap;
-	public bool hasGem;
+	public Weapon EquippedWeapon;
+	public List<Item> SpellsList = new List<Item>();
+	public List<Item> CharmsList = new List<Item>();
+	public List<Item> DoorKeysList = new List<Item>();
+	public List<Weapon> WeaponsList = new List<Weapon>();
+	public List<Item> DiariesList = new List<Item>();
+	public List<Item> KeyItemsList = new List<Item>();
+	public bool HasMap;
+	public bool HasGem;
 
 	public void AddItem(Item item)
 	{
-		switch (item.category)
+		switch (item.Category)
 		{
 			case ItemCategory.Charm:
-				charmsList.Add(item);
+				CharmsList.Add(item.Clone());
 				break;
 			case ItemCategory.Diary:
-				diariesList.Add(item);
+				DiariesList.Add(item.Clone());
 				break;
 			case ItemCategory.DoorKey:
-				doorKeysList.Add(item);
+				DoorKeysList.Add(item.Clone());
 				break;
 			case ItemCategory.KeyItem:
-				keyItemsList.Add(item);
+				KeyItemsList.Add(item.Clone());
 				break;
 			case ItemCategory.Spell:
-				spellsList.Add(item);
+				SpellsList.Add(item.Clone());
 				break;
 			case ItemCategory.Weapon:
-				weaponsList.Add(item);
+				WeaponsList.Add((Weapon)item.Clone());
+				if (EquippedWeapon == null)
+				{
+					EquippedWeapon = WeaponsList[0];
+				}
 				break;
 			default:
 				break;
 		}
 	}
 
-	public void ChangeWeapon(Item weapon)
+	public void ChangeWeapon(Weapon weapon)
 	{
-		equippedWeapon = weapon.name;
-		GetComponent<PlayerMovement>().light = equippedWeapon;
+		EquippedWeapon = weapon;
 	}
 
     // Start is called before the first frame update

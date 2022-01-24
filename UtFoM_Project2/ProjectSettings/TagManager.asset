@@ -55,11 +55,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Scene_Items
+    uniqueID: 674821381
+    locked: 0
   - name: ArtLayer_Background
     uniqueID: 1913720019
-    locked: 0
-  - name: Signs
-    uniqueID: 674821381
     locked: 0
   - name: Enemy_Back
     uniqueID: 4158862079
