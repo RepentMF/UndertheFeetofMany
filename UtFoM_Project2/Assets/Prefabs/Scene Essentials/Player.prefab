@@ -253,12 +253,15 @@ GameObject:
   - component: {fileID: 660729248335287816}
   - component: {fileID: 660729248335287822}
   - component: {fileID: 660729248335287823}
-  - component: {fileID: 660729248335287820}
   - component: {fileID: 660729248335287821}
   - component: {fileID: 660729248335287858}
-  - component: {fileID: 8160814597243337166}
   - component: {fileID: 8160814597243337161}
+  - component: {fileID: 660729248335287820}
+  - component: {fileID: 8160814597243337166}
   - component: {fileID: 8160814597243337160}
+  - component: {fileID: 8332205668163415030}
+  - component: {fileID: -7642948778667013698}
+  - component: {fileID: 5829869062835696444}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -324,7 +327,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2130070871
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 8284859347849952574, guid: a649072e1e8c9054bb4c0488990b55aa,
     type: 3}
@@ -385,55 +388,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 1.0771923}
   m_EdgeRadius: 0
---- !u!114 &660729248335287820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660729248335287819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18c7f4d519ac92447a64d2e1dbb64e26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerList: []
-  shortcut: 0
-  comboBool: 0
-  newPlayer: 1
-  swipe: 0
-  attackFrame: 0
-  attackBuffer: 0
-  speed: 6
-  currentKBTime: 0
-  curScene: 
-  newScene: 
-  light: 
-  med: 
-  launch: 
-  heavy: 
-  magicStart: {fileID: 8160814596828108999}
-  spark: {fileID: 5737973861737994793, guid: c02af529e6dc4cd4481ea2dbc37365de, type: 3}
-  burst: {fileID: 907025456922738281, guid: c8a8d249a41f7ba4d95a4fbbb9adbeb9, type: 3}
-  flurry: {fileID: 5073338114709111968, guid: 5a4d370d9764a4449b1a2288e4b32743, type: 3}
-  playerPos: {fileID: 11400000, guid: 4bed1a8ded234e24ea7e4066c8c5031e, type: 2}
-  playerDir: {fileID: 11400000, guid: c4f53b491cd59ac478d5751da8e6de48, type: 2}
-  currentHealth: 0
-  maxHealth: 0
-  maxMana: 0
-  maxStamina: 0
-  maxLifeblood: 0
-  currentMana: 0
-  currentStamina: 0
-  currentLifeblood: 0
-  playerHealthSignal: {fileID: 11400000, guid: f2de9eacb21a0ab43b4eb8f3c64f3d2e, type: 2}
-  playerManaSignal: {fileID: 11400000, guid: b4420d0b9e7124e479272a8585d20f98, type: 2}
-  playerStaminaSignal: {fileID: 11400000, guid: 8e19d18faeedaeb47a5805f419dde2f3,
-    type: 2}
-  playerLifebloodSignal: {fileID: 0}
-  animator: {fileID: 0}
-  change: {x: 0, y: 0}
-  sparkles: {fileID: 0}
 --- !u!95 &660729248335287821
 Animator:
   serializedVersion: 3
@@ -479,19 +433,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7603084, y: 0.88474464}
   m_EdgeRadius: 0
---- !u!114 &8160814597243337166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660729248335287819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b638f8e309b7f5a42ba75c7421301852, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statusLog: 
 --- !u!114 &8160814597243337161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,6 +484,69 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &660729248335287820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660729248335287819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c7f4d519ac92447a64d2e1dbb64e26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerList: []
+  shortcut: 0
+  comboBool: 0
+  newPlayer: 1
+  swipe: 0
+  attackFrame: 0
+  attackBuffer: 0
+  speed: 6
+  currentKBTime: 0
+  curScene: 
+  newScene: 
+  light: 
+  med: 
+  launch: 
+  heavy: 
+  magicStart: {fileID: 8160814596828108999}
+  spark: {fileID: 5737973861737994793, guid: c02af529e6dc4cd4481ea2dbc37365de, type: 3}
+  burst: {fileID: 907025456922738281, guid: c8a8d249a41f7ba4d95a4fbbb9adbeb9, type: 3}
+  flurry: {fileID: 5073338114709111968, guid: 5a4d370d9764a4449b1a2288e4b32743, type: 3}
+  playerPos: {fileID: 11400000, guid: 4bed1a8ded234e24ea7e4066c8c5031e, type: 2}
+  playerDir: {fileID: 11400000, guid: c4f53b491cd59ac478d5751da8e6de48, type: 2}
+  currentHealth: 0
+  maxHealth: 0
+  maxMana: 0
+  maxStamina: 0
+  maxLifeblood: 0
+  currentMana: 0
+  currentStamina: 0
+  currentLifeblood: 0
+  playerHealthSignal: {fileID: 11400000, guid: f2de9eacb21a0ab43b4eb8f3c64f3d2e, type: 2}
+  playerManaSignal: {fileID: 11400000, guid: b4420d0b9e7124e479272a8585d20f98, type: 2}
+  playerStaminaSignal: {fileID: 11400000, guid: 8e19d18faeedaeb47a5805f419dde2f3,
+    type: 2}
+  playerLifebloodSignal: {fileID: 0}
+  animator: {fileID: 0}
+  change: {x: 0, y: 0}
+  sparkles: {fileID: 0}
+--- !u!114 &8160814597243337166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660729248335287819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b638f8e309b7f5a42ba75c7421301852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayRuntimeValues: 0
+  RuntimeStatuses: []
 --- !u!114 &8160814597243337160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,6 +568,78 @@ MonoBehaviour:
   keyItemsList: []
   hasMap: 0
   hasGem: 0
+--- !u!114 &8332205668163415030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660729248335287819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca553585a9f12e4db2407fc3492aeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OriginalHealth: 20
+  BaseHealthRegen: 0
+  OriginalStamina: 20
+  BaseStaminaRegen: 1
+  OriginalMana: 20
+  BaseManaRegen: 0
+  OriginalLifeblood: 0
+  BaseLifebloodRegen: 0
+  DisplayRuntimeValues: 0
+  RuntimeIsInvulnerable: 0
+  RuntimeComboCount: 0
+  RuntimeMaxHealth: 0
+  RuntimeCurrentHealth: 0
+  RuntimeMaxStamina: 0
+  RuntimeCurrentStamina: 0
+  RuntimeMaxMana: 0
+  RuntimeCurrentMana: 0
+  RuntimeMaxLifeblood: 0
+  RuntimeCurrentLifeblood: 0
+--- !u!114 &-7642948778667013698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660729248335287819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87170527e5838ec49b6f590cc29fddae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IdleAnimationName: Idle
+  MoveAnimationName: Walking
+  MoveAnimationTimer: -1
+  StaggerAnimationName: Stagger
+  JuggleAnimationName: Stagger
+  FreefallAnimationName: Stagger
+  DeathAnimationName: death
+  DeathAnimationTimer: -1
+  DisplayRuntimeValues: 0
+  RuntimeCurrentState: 0
+  RuntimeCurrentAnimationName: 
+  RuntimeCurrentAnimationTimer: 0
+  RuntimeCooldownTimer: 0
+--- !u!114 &5829869062835696444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660729248335287819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32a502dba5f6fa4c962ab64eb2f2a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementSpeed: 6
+  VoltTrapObject: {fileID: 0}
+  SparkTriggerObject: {fileID: 0}
+  FlurryFieldObject: {fileID: 0}
 --- !u!1 &660729248390061051
 GameObject:
   m_ObjectHideFlags: 0

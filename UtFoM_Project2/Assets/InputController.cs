@@ -64,7 +64,15 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""id"": ""6a480aab-e6ea-4a27-b63f-1c74bf84ae5c"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""MenuButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""b0edabfd-1d2b-4536-9552-6ba575bd6942"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -138,7 +146,7 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""8b2fa617-56e7-4aa3-94b6-bfdc4d409cf7"",
                     ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""ShortcutButton"",
@@ -149,7 +157,7 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""2c0339e2-5242-418b-b957-20c784a6cf71"",
                     ""path"": ""<DualShockGamepad>/rightShoulder"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""ShortcutButton"",
@@ -287,6 +295,28 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""action"": ""ContextConfirm"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a17bb799-3e3d-4d2e-b066-940a9dca9b92"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MenuButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""78605b43-1a3e-4661-ad23-b58f4d86bc13"",
+                    ""path"": ""<DualShockGamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MenuButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -301,6 +331,7 @@ public class @InputController : IInputActionCollection, IDisposable
         m_Player_HeavyButton = m_Player.FindAction("HeavyButton", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_ContextConfirm = m_Player.FindAction("ContextConfirm", throwIfNotFound: true);
+        m_Player_MenuButton = m_Player.FindAction("MenuButton", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -356,6 +387,7 @@ public class @InputController : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_HeavyButton;
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_ContextConfirm;
+    private readonly InputAction m_Player_MenuButton;
     public struct PlayerActions
     {
         private @InputController m_Wrapper;
@@ -366,6 +398,7 @@ public class @InputController : IInputActionCollection, IDisposable
         public InputAction @HeavyButton => m_Wrapper.m_Player_HeavyButton;
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @ContextConfirm => m_Wrapper.m_Player_ContextConfirm;
+        public InputAction @MenuButton => m_Wrapper.m_Player_MenuButton;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -393,6 +426,9 @@ public class @InputController : IInputActionCollection, IDisposable
                 @ContextConfirm.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnContextConfirm;
                 @ContextConfirm.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnContextConfirm;
                 @ContextConfirm.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnContextConfirm;
+                @MenuButton.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenuButton;
+                @MenuButton.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenuButton;
+                @MenuButton.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenuButton;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -415,6 +451,9 @@ public class @InputController : IInputActionCollection, IDisposable
                 @ContextConfirm.started += instance.OnContextConfirm;
                 @ContextConfirm.performed += instance.OnContextConfirm;
                 @ContextConfirm.canceled += instance.OnContextConfirm;
+                @MenuButton.started += instance.OnMenuButton;
+                @MenuButton.performed += instance.OnMenuButton;
+                @MenuButton.canceled += instance.OnMenuButton;
             }
         }
     }
@@ -427,5 +466,6 @@ public class @InputController : IInputActionCollection, IDisposable
         void OnHeavyButton(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
         void OnContextConfirm(InputAction.CallbackContext context);
+        void OnMenuButton(InputAction.CallbackContext context);
     }
 }

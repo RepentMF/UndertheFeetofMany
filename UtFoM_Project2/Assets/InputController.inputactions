@@ -51,7 +51,15 @@
                     "id": "6a480aab-e6ea-4a27-b63f-1c74bf84ae5c",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Press"
+                },
+                {
+                    "name": "MenuButton",
+                    "type": "Button",
+                    "id": "b0edabfd-1d2b-4536-9552-6ba575bd6942",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
                 }
             ],
             "bindings": [
@@ -125,7 +133,7 @@
                     "name": "",
                     "id": "8b2fa617-56e7-4aa3-94b6-bfdc4d409cf7",
                     "path": "<Keyboard>/a",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
                     "action": "ShortcutButton",
@@ -136,7 +144,7 @@
                     "name": "",
                     "id": "2c0339e2-5242-418b-b957-20c784a6cf71",
                     "path": "<DualShockGamepad>/rightShoulder",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
                     "action": "ShortcutButton",
@@ -272,6 +280,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "ContextConfirm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a17bb799-3e3d-4d2e-b066-940a9dca9b92",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "78605b43-1a3e-4661-ad23-b58f4d86bc13",
+                    "path": "<DualShockGamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

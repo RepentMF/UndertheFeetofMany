@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -80,14 +81,17 @@ public class StateManager : MonoBehaviour
         }
     }
 
-    private void DetermineCurrentAnimation()
+    private IEnumerator DetermineCurrentAnimation()
     {
         switch (CurrentState)
         {
             case ActionState.Idle:
                 SetNextAnimation(IdleAnimationName);
-                Rigidbody2DScript.velocity = Vector2.zero;
-                Rigidbody2DScript.gravityScale = 0.0f;
+                if (Rigidbody2DScript != null)
+                {
+                    Rigidbody2DScript.velocity = Vector2.zero;
+                    Rigidbody2DScript.gravityScale = 0.0f;
+                }
                 break;
             case ActionState.Move:
                 SetNextAnimation(MoveAnimationName, MoveAnimationTimer);
@@ -117,7 +121,16 @@ public class StateManager : MonoBehaviour
             AnimatorScript.Play(NextAnimation.AnimationName);
             // Properties have to be copied individually so as not to copy reference and memory and have two variables pointing to the same object data
             CurrentAnimation.AnimationName = NextAnimation.AnimationName;
-            CurrentAnimation.AnimationTimer = NextAnimation.AnimationTimer;
+            if (NextAnimation.AnimationTimer == -1)
+            {
+                yield return new WaitForEndOfFrame();
+                // In order to properly read the animation length, we must wait until the end of the current frame before reading the value
+                CurrentAnimation.AnimationTimer = AnimatorScript.GetCurrentAnimatorStateInfo(0).length;
+            }
+            else
+            {
+                CurrentAnimation.AnimationTimer = NextAnimation.AnimationTimer;
+            }
         }
     }
 
@@ -155,6 +168,11 @@ public class StateManager : MonoBehaviour
         AttackAnimation.AnimationTimer = animationTimer;
     }
 
+    public string GetCurrentAnimationName()
+    {
+        return CurrentAnimation.AnimationName;
+    }
+
     public float GetCurrentAnimationTimer()
     {
         return CurrentAnimation.AnimationTimer;
@@ -185,7 +203,7 @@ public class StateManager : MonoBehaviour
     {
         UpdateRuntimeValues();
         RemoveEntity();
-        DetermineCurrentAnimation();
+        StartCoroutine(DetermineCurrentAnimation());
         ManageTimers();
     }
 }
