@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: idleLeft
+  m_Name: zots_staggerUp
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -5544547193473811699, guid: 7aeab01185562b54699c3e37721a875b,
+      value: {fileID: 4363160393629796844, guid: 55246484c3ec08448b65ab4c19166ac9,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -41,7 +41,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -5544547193473811699, guid: 7aeab01185562b54699c3e37721a875b, type: 3}
+    - {fileID: 4363160393629796844, guid: 55246484c3ec08448b65ab4c19166ac9, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

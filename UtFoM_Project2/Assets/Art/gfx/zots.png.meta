@@ -266,6 +266,18 @@ TextureImporter:
   - first:
       213: -186011564009679689
     second: zots_87
+  - first:
+      213: 3585606493003525199
+    second: zots_88
+  - first:
+      213: -4099821212480298169
+    second: zots_89
+  - first:
+      213: 3868295213321169949
+    second: zots_90
+  - first:
+      213: 4363160393629796844
+    second: zots_91
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2198,6 +2210,90 @@ TextureImporter:
       bones: []
       spriteID: 7b49613d7772b6df0800000000000000
       internalID: -186011564009679689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zots_88
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c2fc7ab12a2c130800000000000000
+      internalID: 3585606493003525199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zots_89
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743208b34528a17c0800000000000000
+      internalID: -4099821212480298169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zots_90
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c2a5c5002fea530800000000000000
+      internalID: 3868295213321169949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zots_91
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce98b50d24f0d8c30800000000000000
+      internalID: 4363160393629796844
       vertices: []
       indices: 
       edges: []
