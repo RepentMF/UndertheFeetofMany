@@ -15,11 +15,11 @@ D:/Documents/Projects/tutorialGame/UtFoM_Project2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50581
+51266
 Successfully changed project path to: D:/Documents/Projects/tutorialGame/UtFoM_Project2
 D:/Documents/Projects/tutorialGame/UtFoM_Project2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 62.93 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 62.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.3f1 (4bef613afd59)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.3f1/Editor/Data/Resources/UnitySubsystems
@@ -36,41 +36,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001591 seconds.
+Registered in 0.092910 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 61.94 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 58.94 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.933 seconds
+- Completed reload, in  3.353 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002154 seconds.
+Registered in 0.235791 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 64.47 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 61.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.964 seconds
+- Completed reload, in  3.061 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3463 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 152.5 MB.
 System memory in use after: 152.8 MB.
 
 Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 3895.
-Total: 4.765700 ms (FindLiveObjects: 0.202500 ms CreateObjectMapping: 0.131500 ms MarkObjects: 4.407400 ms  DeleteObjects: 0.023500 ms)
+Total: 4.607800 ms (FindLiveObjects: 0.193300 ms CreateObjectMapping: 0.128700 ms MarkObjects: 4.263100 ms  DeleteObjects: 0.022000 ms)
 
 ========================================================================
 Received Import Request.
+  path: Assets/Art/gfx/zots.png
+  artifactKey: Guid(55246484c3ec08448b65ab4c19166ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/gfx/zots.png using Guid(55246484c3ec08448b65ab4c19166ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '925d53ea7180c69cbe896bb1b76c98a2') in 0.868434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.443760 seconds.
+  path: Assets/Art/gfx/zots.png
+  artifactKey: Guid(55246484c3ec08448b65ab4c19166ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/gfx/zots.png using Guid(55246484c3ec08448b65ab4c19166ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03df28cfa59d95bc38c2459a6ec06e41') in 0.092680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 900.336550 seconds.
+  path: Assets/Art/gfx/new_player_idle.png
+  artifactKey: Guid(7aeab01185562b54699c3e37721a875b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/gfx/new_player_idle.png using Guid(7aeab01185562b54699c3e37721a875b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '166b39d4de617d498c4fb1cad256d622') in 0.024807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.299844 seconds.
+  path: Assets/Art/gfx/new_player_idle.png
+  artifactKey: Guid(7aeab01185562b54699c3e37721a875b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/gfx/new_player_idle.png using Guid(7aeab01185562b54699c3e37721a875b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e11853c05f09bcd66287bccd85e18fe') in 0.007660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.279171 seconds.
+  path: Assets/Art/gfx/new_player_idle.png
+  artifactKey: Guid(7aeab01185562b54699c3e37721a875b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/gfx/new_player_idle.png using Guid(7aeab01185562b54699c3e37721a875b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76528574e6327837195b86467c23f145') in 0.012035 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002104 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.818 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3353 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.1 MB.
+System memory in use after: 155.3 MB.
+
+Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 3981.
+Total: 5.363200 ms (FindLiveObjects: 0.220300 ms CreateObjectMapping: 0.147000 ms MarkObjects: 4.976500 ms  DeleteObjects: 0.018600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 127.747859 seconds.
   path: Assets/Art/gfx/SpriteAtlas.spriteatlas
   artifactKey: Guid(0b6a9e1b3b46dbf4f8b34f62f7a621e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Art/gfx/SpriteAtlas.spriteatlas using Guid(0b6a9e1b3b46dbf4f8b34f62f7a621e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Invalid sprite atlas asset encountered when matching atlas for sprite hammer1_up1. Please repack all your sprite atlases.
@@ -268,6 +319,14 @@ Invalid sprite atlas asset encountered when matching atlas for sprite zots_85. P
 Invalid sprite atlas asset encountered when matching atlas for sprite zots_86. Please repack all your sprite atlases.
 
 Invalid sprite atlas asset encountered when matching atlas for sprite zots_87. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite zots_88. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite zots_89. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite zots_90. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite zots_91. Please repack all your sprite atlases.
 
 Invalid sprite atlas asset encountered when matching atlas for sprite feeder_0. Please repack all your sprite atlases.
 
@@ -3999,11 +4058,19 @@ Invalid sprite atlas asset encountered when matching atlas for sprite item_holde
 
 Invalid sprite atlas asset encountered when matching atlas for sprite item_holder_17. Please repack all your sprite atlases.
 
-Invalid sprite atlas asset encountered when matching atlas for sprite TT_nobg. Please repack all your sprite atlases.
+Invalid sprite atlas asset encountered when matching atlas for sprite new_player_idle_0. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite new_player_idle_1. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite new_player_idle_2. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite new_player_idle_3. Please repack all your sprite atlases.
 
 Invalid sprite atlas asset encountered when matching atlas for sprite OR. Please repack all your sprite atlases.
 
 Invalid sprite atlas asset encountered when matching atlas for sprite shriek. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite TT_nobg. Please repack all your sprite atlases.
 
 Invalid sprite atlas asset encountered when matching atlas for sprite TB_R1. Please repack all your sprite atlases.
 
@@ -4747,5 +4814,5 @@ Invalid sprite atlas asset encountered when matching atlas for sprite FR_HT. Ple
 
 Invalid sprite atlas asset encountered when matching atlas for sprite item_holder_front. Please repack all your sprite atlases.
 
- -> (artifact id: '9aef15055a4c2436a49e64ef5f3222dd') in 0.168741 seconds 
+ -> (artifact id: 'dac81e99e193f37208fff20b5191d736') in 0.131620 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
