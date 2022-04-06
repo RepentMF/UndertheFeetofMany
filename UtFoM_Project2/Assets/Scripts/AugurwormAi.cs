@@ -9,7 +9,6 @@ public class AugurwormAi : EnemyAi
     protected internal override void AttackOne()
     {
     	//Create a rock to be thrown
-    	Debug.Log("A rock was thrown!");
     }
 
     protected internal override void AttackTwo()

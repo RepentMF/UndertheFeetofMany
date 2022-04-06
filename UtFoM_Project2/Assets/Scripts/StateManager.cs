@@ -19,29 +19,41 @@ public class ActionStateAnimation
 {
     public string AnimationName;
     public float AnimationTimer;
+    public float AnimationStartFrame;
+
+    public ActionStateAnimation(string animationName, float animationTimer, int animationStartFrame)
+    {
+        AnimationName = animationName;
+        AnimationTimer = animationTimer < 0.0f ? 0.0f : animationTimer;
+        AnimationStartFrame = animationStartFrame < 0.0f ? 0.0f : animationStartFrame;
+    }
 
     public ActionStateAnimation(string animationName, float animationTimer)
     {
         AnimationName = animationName;
         AnimationTimer = animationTimer < 0.0f ? 0.0f : animationTimer;
+        AnimationStartFrame = 0.0f;
     }
 
     public ActionStateAnimation(string animationName)
     {
         AnimationName = animationName;
         AnimationTimer = 0.0f;
+        AnimationStartFrame = 0.0f;
     }
 
     public ActionStateAnimation()
     {
         AnimationName = "";
         AnimationTimer = 0.0f;
+        AnimationStartFrame = 0.0f;
     }
 }
 
 public class StateManager : MonoBehaviour
 {
     [Header("Animations")]
+    [SerializeField] private Boolean RandomizeStartFrame = false;
     [SerializeField] private string IdleAnimationName = "idle";
     [SerializeField] private string MoveAnimationName = "move";
     [SerializeField] private float MoveAnimationTimer = -1.0f;
@@ -115,10 +127,14 @@ public class StateManager : MonoBehaviour
                 SetNextAnimation();
                 break;
         }
+        if (RandomizeStartFrame)
+        {
+            RandomizeNextAnimationStartFrame();
+        }
         // If there is a NextAnimation and it's not already playing, play that animation
         if ((NextAnimation.AnimationName != CurrentAnimation.AnimationName) || (NextAnimation.AnimationName != "idle" && NextAnimation.AnimationName == CurrentAnimation.AnimationName && CurrentAnimation.AnimationTimer <= 0.0f))
         {
-            AnimatorScript.Play(NextAnimation.AnimationName);
+            AnimatorScript.Play(NextAnimation.AnimationName, -1, NextAnimation.AnimationStartFrame);
             // Properties have to be copied individually so as not to copy reference and memory and have two variables pointing to the same object data
             CurrentAnimation.AnimationName = NextAnimation.AnimationName;
             if (NextAnimation.AnimationTimer == -1)
@@ -134,10 +150,16 @@ public class StateManager : MonoBehaviour
         }
     }
 
-    private void SetNextAnimation(string animationName = "", float animationTimer = 0.0f)
+    private void SetNextAnimation(string animationName = "", float animationTimer = 0.0f, int animationStartFrame = 0)
     {
         NextAnimation.AnimationName = animationName;
         NextAnimation.AnimationTimer = animationTimer;
+        NextAnimation.AnimationStartFrame = animationStartFrame;
+    }
+
+    private void RandomizeNextAnimationStartFrame()
+    {
+        NextAnimation.AnimationStartFrame = UnityEngine.Random.Range(0.0f, 1.0f);
     }
 
     /// <summary>

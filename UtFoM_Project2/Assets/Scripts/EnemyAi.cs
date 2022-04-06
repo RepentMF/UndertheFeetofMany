@@ -428,7 +428,7 @@ public abstract class EnemyAi : MonoBehaviour
     void OnTriggerStay2D(Collider2D collider)
     {
         // If a player has entered the enemy's space
-        if (collider.GetComponent<PlayerMovement>() != null)
+        if (collider.GetComponent<PlayerController>() != null)
         {
             if (this.gameObject.transform.position.y < collider.bounds.center.y)
             {
@@ -443,7 +443,7 @@ public abstract class EnemyAi : MonoBehaviour
     void OnTriggerExit2D(Collider2D collider)
     {
         // If a player has exited the enemy's space
-        if (collider.GetComponent<PlayerMovement>() != null)
+        if (collider.GetComponent<PlayerController>() != null)
         {
             SpriteRendererScript.sortingLayerName = "Enemy_Back";
         }
