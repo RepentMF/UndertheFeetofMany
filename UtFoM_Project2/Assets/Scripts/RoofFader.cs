@@ -13,7 +13,7 @@ public class RoofFader : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         // If a player has entered the object's space
-        if (collider.GetComponent<PlayerMovement>() != null)
+        if (collider.GetComponent<PlayerController>() != null)
         {
             ShouldFadeObject = true;
         }
@@ -22,7 +22,7 @@ public class RoofFader : MonoBehaviour
     void OnTriggerExit2D(Collider2D collider)
     {
         // If a player has exited the object's space
-        if (collider.GetComponent<PlayerMovement>() != null)
+        if (collider.GetComponent<PlayerController>() != null)
         {
             ShouldFadeObject = false;
         }
