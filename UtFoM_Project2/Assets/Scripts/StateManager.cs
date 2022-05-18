@@ -139,7 +139,7 @@ public class StateManager : MonoBehaviour
             RandomizeNextAnimationStartFrame();
         }
         // If there is a NextAnimation and it's not already playing, play that animation
-        if (HasReachedAttackAnimationBuffer() || (NextAnimation.AnimationName != CurrentAnimation.AnimationName && (CurrentState != ActionState.Attack || CurrentAnimation.AnimationName == "Walking")) || (NextAnimation.AnimationName != "idle" && NextAnimation.AnimationName == CurrentAnimation.AnimationName && CurrentAnimation.AnimationTimer <= 0.0f))
+        if ((NextAnimation.AnimationName != CurrentAnimation.AnimationName) || (NextAnimation.AnimationName != "idle" && NextAnimation.AnimationName == CurrentAnimation.AnimationName && CurrentAnimation.AnimationTimer <= 0.0f))
         {
             AnimatorScript.Play(NextAnimation.AnimationName, -1, NextAnimation.AnimationStartFrame);
             // Properties have to be copied individually so as not to copy reference and memory and have two variables pointing to the same object data
@@ -222,9 +222,9 @@ public class StateManager : MonoBehaviour
         }
     }
 
-    private bool HasReachedAttackAnimationBuffer()
+    public bool HasReachedAttackAnimationBufferThreshold()
     {
-        if (CurrentState == ActionState.Attack && NextAnimation.AnimationName != CurrentAnimation.AnimationName && NextAnimation.AnimationName == AttackAnimation.AnimationName && CurrentAnimation.AnimationTimer <= CurrentAnimation.AnimationBufferThreshold)
+        if (CurrentState == ActionState.Attack && CurrentAnimation.AnimationTimer <= CurrentAnimation.AnimationBufferThreshold)
         {
             return true;
         }

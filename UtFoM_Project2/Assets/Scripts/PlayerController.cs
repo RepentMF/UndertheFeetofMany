@@ -74,7 +74,7 @@ public class PlayerController : GenericSingleton<PlayerController>
         IsShortcutButtonPressed = value.isPressed;
     }
 
-    private void OnLightButton() // GG TODO: Add attack buffering
+    private void OnLightButton()
     {
         if (CanAttack() && !StatusModScript.GetStatus(Status.Exhaust))
         {
@@ -92,13 +92,13 @@ public class PlayerController : GenericSingleton<PlayerController>
                     StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LightAttackAnimationName, InventoryScript.EquippedWeapon.LightAttackAnimationTimer, InventoryScript.EquippedWeapon.LightAttackBufferThreshold);
                     StateManagerScript.CurrentState = ActionState.Attack;
                 }
-                else if (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LightAttackAnimationName)
+                else if (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LightAttackAnimationName)
                 {
                     CurrentAttackAnimationName = InventoryScript.EquippedWeapon.MediumAttackAnimationName;
                     StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.MediumAttackAnimationName, InventoryScript.EquippedWeapon.MediumAttackAnimationTimer, InventoryScript.EquippedWeapon.MediumAttackBufferThreshold);
                     StateManagerScript.CurrentState = ActionState.Attack;
                 }
-                else if (CurrentAttackAnimationName == "Knife2")
+                else if (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == "Knife2")
                 {
                     CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LightAttackAnimationName;
                     StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LightAttackAnimationName, InventoryScript.EquippedWeapon.LightAttackAnimationTimer, InventoryScript.EquippedWeapon.LightAttackBufferThreshold);
@@ -131,7 +131,7 @@ public class PlayerController : GenericSingleton<PlayerController>
                 }
                 else if (InventoryScript.EquippedWeapon.Name == "Hammer")
                 {
-                    if (CurrentAttackAnimationName == "" || CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName)
+                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName))
                     {
                         CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LaunchAttackAnimationName;
                         StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LaunchAttackAnimationName, InventoryScript.EquippedWeapon.LaunchAttackAnimationTimer, InventoryScript.EquippedWeapon.LaunchAttackBufferThreshold);
@@ -160,7 +160,7 @@ public class PlayerController : GenericSingleton<PlayerController>
                 }
                 else if (InventoryScript.EquippedWeapon.Name == "Sword")
                 {
-                    if (CurrentAttackAnimationName == "" || CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName)
+                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName))
                     {
                         CurrentAttackAnimationName = InventoryScript.EquippedWeapon.HeavyAttackAnimationName;
                         StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.HeavyAttackAnimationName, InventoryScript.EquippedWeapon.HeavyAttackAnimationTimer, InventoryScript.EquippedWeapon.HeavyAttackBufferThreshold);
@@ -169,7 +169,7 @@ public class PlayerController : GenericSingleton<PlayerController>
                 }
                 else if (InventoryScript.EquippedWeapon.Name == "Hammer")
                 {
-                    if (CurrentAttackAnimationName == "" || CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LaunchAttackAnimationName)
+                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LaunchAttackAnimationName))
                     {
                         CurrentAttackAnimationName = InventoryScript.EquippedWeapon.HeavyAttackAnimationName;
                         StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.HeavyAttackAnimationName, InventoryScript.EquippedWeapon.HeavyAttackAnimationTimer, InventoryScript.EquippedWeapon.HeavyAttackBufferThreshold);
