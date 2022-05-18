@@ -190,12 +190,12 @@ TextureImporter:
       name: knife_player_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 252
-        width: 100
-        height: 84
+        x: 44
+        y: 278
+        width: 16
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,12 +211,12 @@ TextureImporter:
       name: knife_player_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 252
-        width: 100
-        height: 84
+        x: 138
+        y: 278
+        width: 28
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,12 +232,12 @@ TextureImporter:
       name: knife_player_2
       rect:
         serializedVersion: 2
-        x: 200
-        y: 252
-        width: 100
-        height: 84
+        x: 237
+        y: 278
+        width: 30
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: knife_player_3
       rect:
         serializedVersion: 2
-        x: 300
-        y: 252
-        width: 100
-        height: 84
+        x: 337
+        y: 278
+        width: 30
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,12 +274,12 @@ TextureImporter:
       name: knife_player_4
       rect:
         serializedVersion: 2
-        x: 400
-        y: 252
-        width: 100
-        height: 84
+        x: 437
+        y: 278
+        width: 30
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,12 +295,12 @@ TextureImporter:
       name: knife_player_5
       rect:
         serializedVersion: 2
-        x: 500
-        y: 252
-        width: 100
-        height: 84
+        x: 537
+        y: 278
+        width: 30
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -316,12 +316,12 @@ TextureImporter:
       name: knife_player_6
       rect:
         serializedVersion: 2
-        x: 600
-        y: 252
-        width: 100
-        height: 84
+        x: 637
+        y: 278
+        width: 30
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -337,12 +337,12 @@ TextureImporter:
       name: knife_player_7
       rect:
         serializedVersion: 2
-        x: 700
-        y: 252
-        width: 100
-        height: 84
+        x: 742
+        y: 278
+        width: 19
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -358,12 +358,12 @@ TextureImporter:
       name: knife_player_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 168
-        width: 100
-        height: 84
+        x: 26
+        y: 186
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -379,12 +379,12 @@ TextureImporter:
       name: knife_player_9
       rect:
         serializedVersion: 2
-        x: 100
-        y: 168
-        width: 100
-        height: 84
+        x: 129
+        y: 186
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -400,12 +400,12 @@ TextureImporter:
       name: knife_player_10
       rect:
         serializedVersion: 2
-        x: 200
-        y: 168
-        width: 100
-        height: 84
+        x: 228
+        y: 186
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -421,12 +421,12 @@ TextureImporter:
       name: knife_player_11
       rect:
         serializedVersion: 2
-        x: 300
-        y: 168
-        width: 100
-        height: 84
+        x: 328
+        y: 186
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -442,12 +442,12 @@ TextureImporter:
       name: knife_player_12
       rect:
         serializedVersion: 2
-        x: 400
-        y: 168
-        width: 100
-        height: 84
+        x: 427
+        y: 186
+        width: 52
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -463,12 +463,12 @@ TextureImporter:
       name: knife_player_13
       rect:
         serializedVersion: 2
-        x: 500
-        y: 168
-        width: 100
-        height: 84
+        x: 530
+        y: 186
+        width: 46
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -484,12 +484,12 @@ TextureImporter:
       name: knife_player_14
       rect:
         serializedVersion: 2
-        x: 600
-        y: 168
-        width: 100
-        height: 84
+        x: 628
+        y: 186
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -505,12 +505,12 @@ TextureImporter:
       name: knife_player_15
       rect:
         serializedVersion: 2
-        x: 700
-        y: 168
-        width: 100
-        height: 84
+        x: 728
+        y: 186
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -526,12 +526,12 @@ TextureImporter:
       name: knife_player_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 84
-        width: 100
-        height: 84
+        x: 29
+        y: 96
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -547,12 +547,12 @@ TextureImporter:
       name: knife_player_17
       rect:
         serializedVersion: 2
-        x: 100
-        y: 84
-        width: 100
-        height: 84
+        x: 125
+        y: 96
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -568,12 +568,12 @@ TextureImporter:
       name: knife_player_18
       rect:
         serializedVersion: 2
-        x: 200
-        y: 84
-        width: 100
-        height: 84
+        x: 228
+        y: 96
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -589,12 +589,12 @@ TextureImporter:
       name: knife_player_19
       rect:
         serializedVersion: 2
-        x: 300
-        y: 84
-        width: 100
-        height: 84
+        x: 328
+        y: 96
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -610,12 +610,12 @@ TextureImporter:
       name: knife_player_20
       rect:
         serializedVersion: 2
-        x: 400
-        y: 84
-        width: 100
-        height: 84
+        x: 428
+        y: 96
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -631,12 +631,12 @@ TextureImporter:
       name: knife_player_21
       rect:
         serializedVersion: 2
-        x: 500
-        y: 84
-        width: 100
-        height: 84
+        x: 528
+        y: 96
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -652,12 +652,12 @@ TextureImporter:
       name: knife_player_22
       rect:
         serializedVersion: 2
-        x: 600
-        y: 84
-        width: 100
-        height: 84
+        x: 628
+        y: 96
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -673,12 +673,12 @@ TextureImporter:
       name: knife_player_23
       rect:
         serializedVersion: 2
-        x: 700
-        y: 84
-        width: 100
-        height: 84
+        x: 728
+        y: 96
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -694,12 +694,12 @@ TextureImporter:
       name: knife_player_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 100
-        height: 84
+        x: 18
+        y: 12
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -715,12 +715,12 @@ TextureImporter:
       name: knife_player_25
       rect:
         serializedVersion: 2
-        x: 100
-        y: 0
-        width: 100
-        height: 84
+        x: 125
+        y: 12
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -736,12 +736,12 @@ TextureImporter:
       name: knife_player_26
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 100
-        height: 84
+        x: 222
+        y: 12
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -757,12 +757,12 @@ TextureImporter:
       name: knife_player_27
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 100
-        height: 84
+        x: 322
+        y: 12
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -778,12 +778,12 @@ TextureImporter:
       name: knife_player_28
       rect:
         serializedVersion: 2
-        x: 400
-        y: 0
-        width: 100
-        height: 84
+        x: 422
+        y: 12
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -799,12 +799,12 @@ TextureImporter:
       name: knife_player_29
       rect:
         serializedVersion: 2
-        x: 500
-        y: 0
-        width: 100
-        height: 84
+        x: 522
+        y: 12
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -820,12 +820,12 @@ TextureImporter:
       name: knife_player_30
       rect:
         serializedVersion: 2
-        x: 600
-        y: 0
-        width: 100
-        height: 84
+        x: 622
+        y: 12
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -841,12 +841,12 @@ TextureImporter:
       name: knife_player_31
       rect:
         serializedVersion: 2
-        x: 700
-        y: 0
-        width: 100
-        height: 84
+        x: 721
+        y: 12
+        width: 50
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
