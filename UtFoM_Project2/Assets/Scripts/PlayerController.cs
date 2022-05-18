@@ -13,6 +13,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     private string CurrentAttackAnimationName = "";
     private bool IsShortcutButtonPressed = false;
     private Vector2 MovementVector;
+    private Vector2 DodgeVector;
     [SerializeField] public float MovementSpeed = 6;
     [SerializeField] private float DodgeSpeed = 6;
     [SerializeField] private float DodgeCost = 5.0f;
@@ -195,6 +196,8 @@ public class PlayerController : GenericSingleton<PlayerController>
     {
         if (CanAct() && !StatusModScript.GetStatus(Status.Exhaust) && StateManagerScript.CurrentState != ActionState.Idle)
         {
+            DodgeVector = InputControllerScript.Player.Move.ReadValue<Vector2>();
+            DodgeVector.Normalize();
             StateManagerScript.CurrentState = ActionState.Dodge;
         }
     }
@@ -216,11 +219,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     {
         MovementVector = InputControllerScript.Player.Move.ReadValue<Vector2>();
         MovementVector.Normalize();
-        if (StateManagerScript.CurrentState == ActionState.Dodge)
-        {
-            Action = Dodge;
-        }
-        else if (MovementVector != Vector2.zero)
+        if (MovementVector != Vector2.zero)
         {
             Action = Move;
         }
@@ -282,7 +281,7 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void Dodge()
     {
-        Rigidbody2DScript.MovePosition(this.gameObject.transform.position + new Vector3(MovementVector.x * DodgeSpeed * Time.deltaTime, MovementVector.y * DodgeSpeed * Time.deltaTime, 0));
+        Rigidbody2DScript.MovePosition(this.gameObject.transform.position + new Vector3(DodgeVector.x * DodgeSpeed * Time.deltaTime, DodgeVector.y * DodgeSpeed * Time.deltaTime, 0));
     }
 
     /// <summary>
@@ -343,7 +342,11 @@ public class PlayerController : GenericSingleton<PlayerController>
     {
         CheckAttackTimer();
         CheckDodgeTimer();
-        if (CanAct() || StateManagerScript.CurrentState == ActionState.Dodge)
+        if (StateManagerScript.CurrentState == ActionState.Dodge)
+        {
+            Dodge();
+        }
+        else if (CanAct())
         {
             ReadInput();
             Action();
