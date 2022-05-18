@@ -7,6 +7,7 @@ public enum ActionState
 {
     Idle,
     Move,
+    Dodge,
     Attack,
     Stagger,
     Juggle,
@@ -62,6 +63,8 @@ public class StateManager : MonoBehaviour
     [SerializeField] private string IdleAnimationName = "idle";
     [SerializeField] private string MoveAnimationName = "move";
     [SerializeField] private float MoveAnimationTimer = -1.0f;
+    [SerializeField] private string DodgeAnimationName = "Dodging";
+    [SerializeField] private float DodgeAnimationTimer = -1.0f;
     private ActionStateAnimation AttackAnimation = new ActionStateAnimation();
     [SerializeField] private string StaggerAnimationName = "stagger";
     [SerializeField] private string JuggleAnimationName = "stagger";
@@ -114,6 +117,9 @@ public class StateManager : MonoBehaviour
                 break;
             case ActionState.Move:
                 SetNextAnimation(MoveAnimationName, MoveAnimationTimer);
+                break;
+            case ActionState.Dodge:
+                SetNextAnimation(DodgeAnimationName, DodgeAnimationTimer);
                 break;
             case ActionState.Attack:
                 NextAnimation = AttackAnimation;

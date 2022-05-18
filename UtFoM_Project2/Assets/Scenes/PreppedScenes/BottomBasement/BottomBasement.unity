@@ -10568,6 +10568,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3884911629036381785, guid: 9502b863cbb057846bfcf08ba07fd3a7,
         type: 3}
+    - target: {fileID: 8332205668163415030, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: DisplayRuntimeValues
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9063466032152099462, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_Offset.y

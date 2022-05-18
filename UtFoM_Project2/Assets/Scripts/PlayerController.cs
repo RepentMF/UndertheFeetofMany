@@ -13,7 +13,10 @@ public class PlayerController : GenericSingleton<PlayerController>
     private string CurrentAttackAnimationName = "";
     private bool IsShortcutButtonPressed = false;
     private Vector2 MovementVector;
-    [SerializeField] private float MovementSpeed = 6;
+    private Vector2 DodgeVector;
+    [SerializeField] public float MovementSpeed = 6;
+    [SerializeField] private float DodgeSpeed = 6;
+    [SerializeField] private float DodgeCost = 5.0f;
     [SerializeField] private GameObject VoltTrapObject;
     [SerializeField] private GameObject SparkTriggerObject;
     [SerializeField] private GameObject FlurryFieldObject;
@@ -51,9 +54,18 @@ public class PlayerController : GenericSingleton<PlayerController>
         }
     }
 
+    private void CheckDodgeTimer()
+    {
+        if (StateManagerScript.CurrentState == ActionState.Dodge && StateManagerScript.GetCurrentAnimationTimer() <= 0.0f)
+        {
+            StatsScript.DamageStamina(DodgeCost);
+            StateManagerScript.CurrentState = ActionState.Idle;
+        }
+    }
+
     private bool CanAct()
     {
-        if (IsPaused || StateManagerScript.CurrentState == ActionState.Attack || StateManagerScript.CurrentState == ActionState.Stagger || StateManagerScript.CurrentState == ActionState.Juggle || StateManagerScript.CurrentState == ActionState.Freefall || StateManagerScript.CurrentState == ActionState.Death)
+        if (IsPaused || StateManagerScript.CurrentState == ActionState.Attack || StateManagerScript.CurrentState == ActionState.Stagger || StateManagerScript.CurrentState == ActionState.Juggle || StateManagerScript.CurrentState == ActionState.Freefall || StateManagerScript.CurrentState == ActionState.Death || StateManagerScript.CurrentState == ActionState.Dodge)
         {
             return false;
         }
@@ -62,7 +74,7 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private bool CanAttack()
     {
-        if (IsPaused || StateManagerScript.CurrentState == ActionState.Stagger || StateManagerScript.CurrentState == ActionState.Juggle || StateManagerScript.CurrentState == ActionState.Freefall || StateManagerScript.CurrentState == ActionState.Death)
+        if (IsPaused || StateManagerScript.CurrentState == ActionState.Stagger || StateManagerScript.CurrentState == ActionState.Juggle || StateManagerScript.CurrentState == ActionState.Freefall || StateManagerScript.CurrentState == ActionState.Death || StateManagerScript.CurrentState == ActionState.Dodge)
         {
             return false;
         }
@@ -180,6 +192,18 @@ public class PlayerController : GenericSingleton<PlayerController>
         }
     }
 
+    private void OnDodge()
+    {
+        if (CanAct() && !StatusModScript.GetStatus(Status.Exhaust) && StateManagerScript.CurrentState != ActionState.Idle)
+        {
+            DodgeVector = InputControllerScript.Player.Move.ReadValue<Vector2>();
+            DodgeVector.Normalize();
+            SetAnimatorFloats(DodgeVector);
+            StateManagerScript.CurrentState = ActionState.Dodge;
+            Rigidbody2DScript.MovePosition(this.gameObject.transform.position + new Vector3(DodgeVector.x * DodgeSpeed * Time.deltaTime, DodgeVector.y * DodgeSpeed * Time.deltaTime, 0));
+        }
+    }
+
     private void OnMenuButton()
     {
         PauseGame();
@@ -253,7 +277,8 @@ public class PlayerController : GenericSingleton<PlayerController>
     {
         SetAnimatorFloats(MovementVector);
         StateManagerScript.CurrentState = ActionState.Move;
-        Rigidbody2DScript.MovePosition(this.gameObject.transform.position + new Vector3(MovementVector.x * MovementSpeed * Time.deltaTime, MovementVector.y * MovementSpeed * Time.deltaTime, 0));
+        float currentSpeed = StatusModScript.GetStatus(Status.Exhaust) ? MovementSpeed/2 : MovementSpeed;
+        Rigidbody2DScript.MovePosition(this.gameObject.transform.position + new Vector3(MovementVector.x * currentSpeed * Time.deltaTime, MovementVector.y * currentSpeed * Time.deltaTime, 0));
     }
 
     /// <summary>
@@ -313,6 +338,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     void FixedUpdate()
     {
         CheckAttackTimer();
+        CheckDodgeTimer();
         if (CanAct())
         {
             ReadInput();

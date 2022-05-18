@@ -73,6 +73,14 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""Dodge"",
+                    ""type"": ""Button"",
+                    ""id"": ""e535bb67-8a85-4f1c-91dd-e0f4b621e744"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -317,6 +325,28 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""action"": ""MenuButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""544ccd4d-181b-4c7c-9712-8179a5d95f73"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dodge"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d765cb9a-8142-4794-8955-5d6c8f837fc6"",
+                    ""path"": ""<DualShockGamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dodge"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -332,6 +362,7 @@ public class @InputController : IInputActionCollection, IDisposable
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_ContextConfirm = m_Player.FindAction("ContextConfirm", throwIfNotFound: true);
         m_Player_MenuButton = m_Player.FindAction("MenuButton", throwIfNotFound: true);
+        m_Player_Dodge = m_Player.FindAction("Dodge", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -388,6 +419,7 @@ public class @InputController : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_ContextConfirm;
     private readonly InputAction m_Player_MenuButton;
+    private readonly InputAction m_Player_Dodge;
     public struct PlayerActions
     {
         private @InputController m_Wrapper;
@@ -399,6 +431,7 @@ public class @InputController : IInputActionCollection, IDisposable
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @ContextConfirm => m_Wrapper.m_Player_ContextConfirm;
         public InputAction @MenuButton => m_Wrapper.m_Player_MenuButton;
+        public InputAction @Dodge => m_Wrapper.m_Player_Dodge;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -429,6 +462,9 @@ public class @InputController : IInputActionCollection, IDisposable
                 @MenuButton.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenuButton;
                 @MenuButton.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenuButton;
                 @MenuButton.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenuButton;
+                @Dodge.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDodge;
+                @Dodge.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDodge;
+                @Dodge.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDodge;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -454,6 +490,9 @@ public class @InputController : IInputActionCollection, IDisposable
                 @MenuButton.started += instance.OnMenuButton;
                 @MenuButton.performed += instance.OnMenuButton;
                 @MenuButton.canceled += instance.OnMenuButton;
+                @Dodge.started += instance.OnDodge;
+                @Dodge.performed += instance.OnDodge;
+                @Dodge.canceled += instance.OnDodge;
             }
         }
     }
@@ -467,5 +506,6 @@ public class @InputController : IInputActionCollection, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnContextConfirm(InputAction.CallbackContext context);
         void OnMenuButton(InputAction.CallbackContext context);
+        void OnDodge(InputAction.CallbackContext context);
     }
 }
