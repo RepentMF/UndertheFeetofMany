@@ -60,6 +60,15 @@ public class PlayerController : GenericSingleton<PlayerController>
         return true;
     }
 
+    private bool CanAttack()
+    {
+        if (IsPaused || StateManagerScript.CurrentState == ActionState.Stagger || StateManagerScript.CurrentState == ActionState.Juggle || StateManagerScript.CurrentState == ActionState.Freefall || StateManagerScript.CurrentState == ActionState.Death)
+        {
+            return false;
+        }
+        return true;
+    }
+
     private void OnShortcutButton(InputValue value)
     {
         IsShortcutButtonPressed = value.isPressed;
@@ -67,7 +76,7 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void OnLightButton() // GG TODO: Add attack buffering
     {
-        if (CanAct() && !StatusModScript.GetStatus(Status.Exhaust))
+        if (CanAttack() && !StatusModScript.GetStatus(Status.Exhaust))
         {
             if (IsShortcutButtonPressed)
             {
@@ -77,16 +86,32 @@ public class PlayerController : GenericSingleton<PlayerController>
             else if (InventoryScript.EquippedWeapon != null)
             {
                 // Light weapon attack
-                CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LightAttackAnimationName;
-                StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LightAttackAnimationName, InventoryScript.EquippedWeapon.LightAttackAnimationTimer);
-                StateManagerScript.CurrentState = ActionState.Attack;
+                if (CurrentAttackAnimationName == "")
+                {
+                    CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LightAttackAnimationName;
+                    StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LightAttackAnimationName, InventoryScript.EquippedWeapon.LightAttackAnimationTimer, InventoryScript.EquippedWeapon.LightAttackBufferThreshold);
+                    StateManagerScript.CurrentState = ActionState.Attack;
+                }
+                else if (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LightAttackAnimationName)
+                {
+                    CurrentAttackAnimationName = InventoryScript.EquippedWeapon.MediumAttackAnimationName;
+                    StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.MediumAttackAnimationName, InventoryScript.EquippedWeapon.MediumAttackAnimationTimer, InventoryScript.EquippedWeapon.MediumAttackBufferThreshold);
+                    StateManagerScript.CurrentState = ActionState.Attack;
+                }
+                else if (CurrentAttackAnimationName == "Knife2")
+                {
+                    CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LightAttackAnimationName;
+                    StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LightAttackAnimationName, InventoryScript.EquippedWeapon.LightAttackAnimationTimer, InventoryScript.EquippedWeapon.LightAttackBufferThreshold);
+                    StateManagerScript.CurrentState = ActionState.Attack;
+                }
+                
             }
         }
     }
 
     private void OnLaunchButton()
     {
-        if (CanAct() && !StatusModScript.GetStatus(Status.Exhaust))
+        if (CanAttack() && !StatusModScript.GetStatus(Status.Exhaust))
         {
             if (IsShortcutButtonPressed)
             {
@@ -96,16 +121,30 @@ public class PlayerController : GenericSingleton<PlayerController>
             else if (InventoryScript.EquippedWeapon != null)
             {
                 // Launch weapon attack
-                CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LaunchAttackAnimationName;
-                StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LaunchAttackAnimationName, InventoryScript.EquippedWeapon.LaunchAttackAnimationTimer);
-                StateManagerScript.CurrentState = ActionState.Attack;
+                if (InventoryScript.EquippedWeapon.Name == "Knife")
+                {
+                    OnLightButton();
+                }
+                else if (InventoryScript.EquippedWeapon.Name == "Sword")
+                {
+                    OnLightButton();
+                }
+                else if (InventoryScript.EquippedWeapon.Name == "Hammer")
+                {
+                    if (CurrentAttackAnimationName == "" || CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName)
+                    {
+                        CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LaunchAttackAnimationName;
+                        StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LaunchAttackAnimationName, InventoryScript.EquippedWeapon.LaunchAttackAnimationTimer, InventoryScript.EquippedWeapon.LaunchAttackBufferThreshold);
+                        StateManagerScript.CurrentState = ActionState.Attack;
+                    }
+                }
             }
         }
     }
 
     private void OnHeavyButton()
     {
-        if (CanAct() && !StatusModScript.GetStatus(Status.Exhaust))
+        if (CanAttack() && !StatusModScript.GetStatus(Status.Exhaust))
         {
             if (IsShortcutButtonPressed)
             {
@@ -115,9 +154,28 @@ public class PlayerController : GenericSingleton<PlayerController>
             else if (InventoryScript.EquippedWeapon != null)
             {
                 // Heavy weapon attack
-                CurrentAttackAnimationName = InventoryScript.EquippedWeapon.HeavyAttackAnimationName;
-                StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.HeavyAttackAnimationName, InventoryScript.EquippedWeapon.HeavyAttackAnimationTimer);
-                StateManagerScript.CurrentState = ActionState.Attack;
+                if (InventoryScript.EquippedWeapon.Name == "Knife")
+                {
+                    OnLightButton();
+                }
+                else if (InventoryScript.EquippedWeapon.Name == "Sword")
+                {
+                    if (CurrentAttackAnimationName == "" || CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName)
+                    {
+                        CurrentAttackAnimationName = InventoryScript.EquippedWeapon.HeavyAttackAnimationName;
+                        StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.HeavyAttackAnimationName, InventoryScript.EquippedWeapon.HeavyAttackAnimationTimer, InventoryScript.EquippedWeapon.HeavyAttackBufferThreshold);
+                        StateManagerScript.CurrentState = ActionState.Attack;
+                    }
+                }
+                else if (InventoryScript.EquippedWeapon.Name == "Hammer")
+                {
+                    if (CurrentAttackAnimationName == "" || CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LaunchAttackAnimationName)
+                    {
+                        CurrentAttackAnimationName = InventoryScript.EquippedWeapon.HeavyAttackAnimationName;
+                        StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.HeavyAttackAnimationName, InventoryScript.EquippedWeapon.HeavyAttackAnimationTimer, InventoryScript.EquippedWeapon.HeavyAttackBufferThreshold);
+                        StateManagerScript.CurrentState = ActionState.Attack;
+                    }
+                }
             }
         }
     }

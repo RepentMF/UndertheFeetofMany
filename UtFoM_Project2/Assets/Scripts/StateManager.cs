@@ -20,12 +20,14 @@ public class ActionStateAnimation
     public string AnimationName;
     public float AnimationTimer;
     public float AnimationStartFrame;
+    public float AnimationBufferThreshold;
 
-    public ActionStateAnimation(string animationName, float animationTimer, int animationStartFrame)
+    public ActionStateAnimation(string animationName, float animationTimer, float animationStartFrame)
     {
         AnimationName = animationName;
         AnimationTimer = animationTimer < 0.0f ? 0.0f : animationTimer;
         AnimationStartFrame = animationStartFrame < 0.0f ? 0.0f : animationStartFrame;
+        AnimationBufferThreshold = 0.0f;
     }
 
     public ActionStateAnimation(string animationName, float animationTimer)
@@ -33,6 +35,7 @@ public class ActionStateAnimation
         AnimationName = animationName;
         AnimationTimer = animationTimer < 0.0f ? 0.0f : animationTimer;
         AnimationStartFrame = 0.0f;
+        AnimationBufferThreshold = 0.0f;
     }
 
     public ActionStateAnimation(string animationName)
@@ -40,6 +43,7 @@ public class ActionStateAnimation
         AnimationName = animationName;
         AnimationTimer = 0.0f;
         AnimationStartFrame = 0.0f;
+        AnimationBufferThreshold = 0.0f;
     }
 
     public ActionStateAnimation()
@@ -47,6 +51,7 @@ public class ActionStateAnimation
         AnimationName = "";
         AnimationTimer = 0.0f;
         AnimationStartFrame = 0.0f;
+        AnimationBufferThreshold = 0.0f;
     }
 }
 
@@ -78,6 +83,7 @@ public class StateManager : MonoBehaviour
     [SerializeField] private string RuntimeCurrentAnimationName;
     [SerializeField] private float RuntimeCurrentAnimationTimer;
     [SerializeField] private float RuntimeCooldownTimer;
+    [SerializeField] private float RuntimeCurrentAnimationBufferThreshold;
 
     /// <summary>
     /// Updates the Runtime variables for debugging purposes when DisplayRuntimeValues is true
@@ -90,6 +96,7 @@ public class StateManager : MonoBehaviour
             RuntimeCurrentAnimationName = CurrentAnimation.AnimationName;
             RuntimeCurrentAnimationTimer = CurrentAnimation.AnimationTimer;
             RuntimeCooldownTimer = CooldownTimer;
+            RuntimeCurrentAnimationBufferThreshold = CurrentAnimation.AnimationBufferThreshold;
         }
     }
 
@@ -132,11 +139,12 @@ public class StateManager : MonoBehaviour
             RandomizeNextAnimationStartFrame();
         }
         // If there is a NextAnimation and it's not already playing, play that animation
-        if ((NextAnimation.AnimationName != CurrentAnimation.AnimationName) || (NextAnimation.AnimationName != "idle" && NextAnimation.AnimationName == CurrentAnimation.AnimationName && CurrentAnimation.AnimationTimer <= 0.0f))
+        if (HasReachedAttackAnimationBuffer() || (NextAnimation.AnimationName != CurrentAnimation.AnimationName && (CurrentState != ActionState.Attack || CurrentAnimation.AnimationName == "Walking")) || (NextAnimation.AnimationName != "idle" && NextAnimation.AnimationName == CurrentAnimation.AnimationName && CurrentAnimation.AnimationTimer <= 0.0f))
         {
             AnimatorScript.Play(NextAnimation.AnimationName, -1, NextAnimation.AnimationStartFrame);
             // Properties have to be copied individually so as not to copy reference and memory and have two variables pointing to the same object data
             CurrentAnimation.AnimationName = NextAnimation.AnimationName;
+            CurrentAnimation.AnimationBufferThreshold = NextAnimation.AnimationBufferThreshold;
             if (NextAnimation.AnimationTimer == -1)
             {
                 yield return new WaitForEndOfFrame();
@@ -150,11 +158,12 @@ public class StateManager : MonoBehaviour
         }
     }
 
-    private void SetNextAnimation(string animationName = "", float animationTimer = 0.0f, int animationStartFrame = 0)
+    private void SetNextAnimation(string animationName = "", float animationTimer = 0.0f, float animationStartFrame = 0.0f, float animationBufferThreshold = 0.0f)
     {
         NextAnimation.AnimationName = animationName;
         NextAnimation.AnimationTimer = animationTimer;
         NextAnimation.AnimationStartFrame = animationStartFrame;
+        NextAnimation.AnimationBufferThreshold = animationBufferThreshold;
     }
 
     private void RandomizeNextAnimationStartFrame()
@@ -184,10 +193,11 @@ public class StateManager : MonoBehaviour
         }
     }
 
-    public void SetAttackAnimation(string animationName, float animationTimer)
+    public void SetAttackAnimation(string animationName, float animationTimer, float animationBufferThreshold = 0.0f)
     {
         AttackAnimation.AnimationName = animationName;
         AttackAnimation.AnimationTimer = animationTimer;
+        AttackAnimation.AnimationBufferThreshold = animationBufferThreshold;
     }
 
     public string GetCurrentAnimationName()
@@ -210,6 +220,15 @@ public class StateManager : MonoBehaviour
         {
             CooldownTimer -= Time.deltaTime;
         }
+    }
+
+    private bool HasReachedAttackAnimationBuffer()
+    {
+        if (CurrentState == ActionState.Attack && NextAnimation.AnimationName != CurrentAnimation.AnimationName && NextAnimation.AnimationName == AttackAnimation.AnimationName && CurrentAnimation.AnimationTimer <= CurrentAnimation.AnimationBufferThreshold)
+        {
+            return true;
+        }
+        return false;
     }
     
 

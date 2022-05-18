@@ -18,13 +18,13 @@ MonoBehaviour:
   Sprite: {fileID: 21300000, guid: 519d4e80691f83847b6436404aec5d0e, type: 3}
   LightAttackAnimationName: Hammer
   LightAttackAnimationTimer: -1
-  LightAttackBufferThreshold: 0
+  LightAttackBufferThreshold: 0.25
   MediumAttackAnimationName: Hammer2
   MediumAttackAnimationTimer: -1
-  MediumAttackBufferThreshold: 0
+  MediumAttackBufferThreshold: 0.25
   LaunchAttackAnimationName: Hammer3
   LaunchAttackAnimationTimer: -1
-  LaunchAttackBufferThreshold: 0
+  LaunchAttackBufferThreshold: 0.25
   HeavyAttackAnimationName: Hammer4
   HeavyAttackAnimationTimer: -1
-  HeavyAttackBufferThreshold: 0
+  HeavyAttackBufferThreshold: 0.25

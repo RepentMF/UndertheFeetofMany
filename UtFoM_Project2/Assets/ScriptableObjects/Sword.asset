@@ -18,13 +18,13 @@ MonoBehaviour:
   Sprite: {fileID: 21300000, guid: bbeffe6d98912784ebcbff4e83d229cf, type: 3}
   LightAttackAnimationName: Sword
   LightAttackAnimationTimer: -1
-  LightAttackBufferThreshold: 0
+  LightAttackBufferThreshold: 0.08333
   MediumAttackAnimationName: Sword2
   MediumAttackAnimationTimer: -1
-  MediumAttackBufferThreshold: 0
+  MediumAttackBufferThreshold: 0.0833
   LaunchAttackAnimationName: Sword
   LaunchAttackAnimationTimer: -1
-  LaunchAttackBufferThreshold: 0
+  LaunchAttackBufferThreshold: 0.08333
   HeavyAttackAnimationName: Sword3
   HeavyAttackAnimationTimer: -1
   HeavyAttackBufferThreshold: 0

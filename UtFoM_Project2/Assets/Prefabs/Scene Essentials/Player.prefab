@@ -335,7 +335,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.0555553, y: 3.2222223}
+  m_Size: {x: 2.25, y: 2.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -380,7 +380,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.25, y: 2.25}
-    newSize: {x: 5.0555553, y: 3.2222223}
+    newSize: {x: 2.25, y: 2.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -425,7 +425,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.25, y: 2.25}
-    newSize: {x: 5.0555553, y: 3.2222223}
+    newSize: {x: 2.25, y: 2.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -515,8 +515,8 @@ MonoBehaviour:
   spark: {fileID: 5737973861737994793, guid: c02af529e6dc4cd4481ea2dbc37365de, type: 3}
   burst: {fileID: 907025456922738281, guid: c8a8d249a41f7ba4d95a4fbbb9adbeb9, type: 3}
   flurry: {fileID: 5073338114709111968, guid: 5a4d370d9764a4449b1a2288e4b32743, type: 3}
-  playerPos: {fileID: 11400000, guid: 4bed1a8ded234e24ea7e4066c8c5031e, type: 2}
-  playerDir: {fileID: 11400000, guid: c4f53b491cd59ac478d5751da8e6de48, type: 2}
+  playerPos: {fileID: 0}
+  playerDir: {fileID: 0}
   currentHealth: 0
   maxHealth: 0
   maxMana: 0
@@ -525,10 +525,9 @@ MonoBehaviour:
   currentMana: 0
   currentStamina: 0
   currentLifeblood: 0
-  playerHealthSignal: {fileID: 11400000, guid: f2de9eacb21a0ab43b4eb8f3c64f3d2e, type: 2}
+  playerHealthSignal: {fileID: 0}
   playerManaSignal: {fileID: 11400000, guid: b4420d0b9e7124e479272a8585d20f98, type: 2}
-  playerStaminaSignal: {fileID: 11400000, guid: 8e19d18faeedaeb47a5805f419dde2f3,
-    type: 2}
+  playerStaminaSignal: {fileID: 0}
   playerLifebloodSignal: {fileID: 0}
   animator: {fileID: 0}
   change: {x: 0, y: 0}
@@ -559,15 +558,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f271be6d1fec1ef48852ad1c393fc999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  equippedWeapon: 
-  spellsList: []
-  charmsList: []
-  doorKeysList: []
-  weaponsList: []
-  diariesList: []
-  keyItemsList: []
-  hasMap: 0
-  hasGem: 0
+  EquippedWeapon: {fileID: 0}
+  SpellsList: []
+  CharmsList: []
+  DoorKeysList: []
+  WeaponsList: []
+  DiariesList: []
+  KeyItemsList: []
+  HasMap: 0
+  HasGem: 0
 --- !u!114 &8332205668163415030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,6 +610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87170527e5838ec49b6f590cc29fddae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RandomizeStartFrame: 0
   IdleAnimationName: Idle
   MoveAnimationName: Walking
   MoveAnimationTimer: -1
@@ -2125,7 +2125,7 @@ SpriteRenderer:
   m_Size: {x: 0.8125, y: 0.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2392160231990561263

@@ -18,13 +18,13 @@ MonoBehaviour:
   Sprite: {fileID: 21300000, guid: ec31afd35e5e3014782208e17cd369b6, type: 3}
   LightAttackAnimationName: Knife
   LightAttackAnimationTimer: -1
-  LightAttackBufferThreshold: 0
+  LightAttackBufferThreshold: 0.1
   MediumAttackAnimationName: Knife2
   MediumAttackAnimationTimer: -1
-  MediumAttackBufferThreshold: 0
+  MediumAttackBufferThreshold: 0.1
   LaunchAttackAnimationName: Knife
   LaunchAttackAnimationTimer: -1
-  LaunchAttackBufferThreshold: 0
+  LaunchAttackBufferThreshold: 0.1
   HeavyAttackAnimationName: Knife
   HeavyAttackAnimationTimer: -1
-  HeavyAttackBufferThreshold: 0
+  HeavyAttackBufferThreshold: 0.1
