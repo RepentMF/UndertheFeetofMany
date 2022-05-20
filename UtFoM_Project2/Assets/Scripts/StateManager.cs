@@ -65,6 +65,7 @@ public class StateManager : MonoBehaviour
     [SerializeField] private float MoveAnimationTimer = -1.0f;
     [SerializeField] private string DodgeAnimationName = "Dodging";
     [SerializeField] private float DodgeAnimationTimer = -1.0f;
+    [SerializeField] private float DodgeAnimationBufferThreshold = 0.0f;
     private ActionStateAnimation AttackAnimation = new ActionStateAnimation();
     [SerializeField] private string StaggerAnimationName = "stagger";
     [SerializeField] private string JuggleAnimationName = "stagger";
@@ -119,7 +120,7 @@ public class StateManager : MonoBehaviour
                 SetNextAnimation(MoveAnimationName, MoveAnimationTimer);
                 break;
             case ActionState.Dodge:
-                SetNextAnimation(DodgeAnimationName, DodgeAnimationTimer);
+                SetNextAnimation(DodgeAnimationName, DodgeAnimationTimer, 0, DodgeAnimationBufferThreshold);
                 break;
             case ActionState.Attack:
                 NextAnimation = AttackAnimation;
@@ -231,6 +232,15 @@ public class StateManager : MonoBehaviour
     public bool HasReachedAttackAnimationBufferThreshold()
     {
         if (CurrentState == ActionState.Attack && CurrentAnimation.AnimationTimer <= CurrentAnimation.AnimationBufferThreshold)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public bool HasReachedDodgeAnimationBufferThreshold()
+    {
+        if (CurrentState == ActionState.Dodge && CurrentAnimation.AnimationTimer <= CurrentAnimation.AnimationBufferThreshold)
         {
             return true;
         }

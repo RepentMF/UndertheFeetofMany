@@ -5974,6 +5974,11 @@ PrefabInstance:
       propertyPath: DisplayRuntimeValues
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7642948778667013698, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: DodgeAnimationBufferThreshold
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 389313231256218778, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size

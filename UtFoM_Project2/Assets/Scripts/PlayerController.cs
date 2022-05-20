@@ -281,7 +281,10 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void Dodge()
     {
-        Rigidbody2DScript.MovePosition(this.gameObject.transform.position + new Vector3(DodgeVector.x * DodgeSpeed * Time.deltaTime, DodgeVector.y * DodgeSpeed * Time.deltaTime, 0));
+        if (StateManagerScript.CurrentState == ActionState.Dodge && !StateManagerScript.HasReachedDodgeAnimationBufferThreshold())
+        {
+            Rigidbody2DScript.MovePosition(this.gameObject.transform.position + new Vector3(DodgeVector.x * DodgeSpeed * Time.deltaTime, DodgeVector.y * DodgeSpeed * Time.deltaTime, 0));
+        }
     }
 
     /// <summary>
