@@ -962,6 +962,7 @@ SpriteAtlas:
   - {fileID: 4172704333083150637, guid: db17e0b87eeb3954cb19a3675944fa4a, type: 3}
   - {fileID: -1983796696862322707, guid: db17e0b87eeb3954cb19a3675944fa4a, type: 3}
   - {fileID: 6189241352744501037, guid: db17e0b87eeb3954cb19a3675944fa4a, type: 3}
+  - {fileID: 21300000, guid: 2dc826e8957dbf14ea623ac49814b111, type: 3}
   - {fileID: 21300000, guid: efdc6119682148c489727c81b1f46819, type: 3}
   - {fileID: 21300000, guid: 9da1ce19b9d0d6948b7bf805603998d3, type: 3}
   - {fileID: 21300000, guid: d421be39784897c4b8f5958d317cbcb4, type: 3}
@@ -2410,6 +2411,7 @@ SpriteAtlas:
   - player_volt_trap_0
   - player_volt_trap_3
   - player_volt_trap_2
+  - Cutscene_bg
   - FR_HT
   - character_1_side_swing_alt_2-Sheet
   - FR_GR
