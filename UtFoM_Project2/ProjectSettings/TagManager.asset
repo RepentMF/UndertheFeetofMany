@@ -55,6 +55,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Environment_NoLight
+    uniqueID: 2463332871
+    locked: 0
   - name: Scene_Items
     uniqueID: 674821381
     locked: 0
