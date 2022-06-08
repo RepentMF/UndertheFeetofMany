@@ -87,6 +87,7 @@ SpriteAtlas:
   - {fileID: 2690668709228345259, guid: 05fc1f30e0df5db48928764ce90df4a5, type: 3}
   - {fileID: 21300000, guid: cfd001404f3e62f4283c368176545d55, type: 3}
   - {fileID: 21300000, guid: 80643140291d9264cbc414d9a8385f4f, type: 3}
+  - {fileID: 21300000, guid: 4a29f16035c872f47ba7659d499f087c, type: 3}
   - {fileID: -6360194850055812327, guid: bed9f98001f258142873bb444bc07a6d, type: 3}
   - {fileID: -4485358645641938697, guid: bed9f98001f258142873bb444bc07a6d, type: 3}
   - {fileID: -8089272785291647593, guid: bed9f98001f258142873bb444bc07a6d, type: 3}
@@ -915,6 +916,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3c78dc48cd8254c4b8112688bdb3a23e, type: 3}
   - {fileID: 21300000, guid: 1f713a582f1e33e41aea90cab8f0bb98, type: 3}
   - {fileID: 21300000, guid: 174e0e5864f0ffb439163d816cff94a8, type: 3}
+  - {fileID: 21300000, guid: b1438f989088fb146bf202d4640d5e5b, type: 3}
   - {fileID: -6007503228372751094, guid: db17e0b87eeb3954cb19a3675944fa4a, type: 3}
   - {fileID: 6766357532237771873, guid: db17e0b87eeb3954cb19a3675944fa4a, type: 3}
   - {fileID: -8281285801406690007, guid: db17e0b87eeb3954cb19a3675944fa4a, type: 3}
@@ -1052,6 +1054,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ee43882a017c7f740ba04f96c1af866f, type: 3}
   - {fileID: 21300000, guid: 8ee14e4a06d78b446872f46fce8b3647, type: 3}
   - {fileID: 21300000, guid: a3ad596acdf876f46b7425261ad9db4e, type: 3}
+  - {fileID: 21300000, guid: fbdd081b7e0feb2478943c80edb97b22, type: 3}
+  - {fileID: 21300000, guid: cea4842b8747c8c438f34c5fd5e8cfd3, type: 3}
   - {fileID: 21300000, guid: 9ded65eb26a973e4b86c8faa565979d5, type: 3}
   - {fileID: 21300000, guid: 9564c11ce83f7bf419f41cbcf16efd9a, type: 3}
   - {fileID: 21300000, guid: b141c62c433eef04d8e403bb642613a3, type: 3}
@@ -1245,11 +1249,13 @@ SpriteAtlas:
   - {fileID: -1244871760956018271, guid: ab39ad2d3fcb4e249977c3bd24a20f8c, type: 3}
   - {fileID: 6042828094241456540, guid: ab39ad2d3fcb4e249977c3bd24a20f8c, type: 3}
   - {fileID: 21300000, guid: 45242e3d3da75fb48a6d36bc795e2fda, type: 3}
+  - {fileID: 21300000, guid: 5a7bf56d2cd302147bf61b7178cf116b, type: 3}
   - {fileID: 21300000, guid: bbeffe6d98912784ebcbff4e83d229cf, type: 3}
   - {fileID: 21300000, guid: 7436a07d0bed6f441886a875690bf2f6, type: 3}
   - {fileID: 21300000, guid: 2ba3fdbd6d718fa49aae5d808ccedcb2, type: 3}
   - {fileID: 21300000, guid: 238592ed29282194a88129fdf53f4b03, type: 3}
   - {fileID: 21300000, guid: 3764161e602ac2d48903c0789b4c17be, type: 3}
+  - {fileID: 21300000, guid: cc805a1e0568b3f4c82dffdfefed2fc5, type: 3}
   - {fileID: 21300000, guid: bc2dd52eb0410bd4e89c26571bca168f, type: 3}
   - {fileID: 441131002860442923, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
   - {fileID: -3079465430885623683, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
@@ -1375,7 +1381,9 @@ SpriteAtlas:
   - {fileID: -6078724373379458116, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
   - {fileID: -273364847723830072, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
   - {fileID: -8869802986581731362, guid: a649072e1e8c9054bb4c0488990b55aa, type: 3}
+  - {fileID: 21300000, guid: 3fb0bb5e31431ec4cbe4d4d1780acb50, type: 3}
   - {fileID: 21300000, guid: 0a06f16ec91f33246a2dee9f7577ff2f, type: 3}
+  - {fileID: 21300000, guid: 16d4498e589b4da46b74ef6811f5eab0, type: 3}
   - {fileID: 7274584711917437183, guid: 7eae60ee79d9c6946b95aea93185a1f9, type: 3}
   - {fileID: -695863718703891352, guid: 7eae60ee79d9c6946b95aea93185a1f9, type: 3}
   - {fileID: -6840761961803072650, guid: 7eae60ee79d9c6946b95aea93185a1f9, type: 3}
@@ -1537,6 +1545,7 @@ SpriteAtlas:
   - zots_shriek_19
   - TT
   - tp_house2
+  - Cutscene_cloud2
   - weaver_15
   - weaver_14
   - weaver_17
@@ -2365,6 +2374,7 @@ SpriteAtlas:
   - item_holder_front
   - character_1_side_swing_alt_2
   - hammer1_up1
+  - Cutscene_car6
   - player_volt_trap_14
   - player_volt_trap_15
   - player_volt_trap_16
@@ -2502,6 +2512,8 @@ SpriteAtlas:
   - entryway
   - BB1
   - font
+  - Cutscene_car3
+  - Cutscene_car
   - bb_side_house
   - bb_house4
   - bb_house1
@@ -2695,11 +2707,13 @@ SpriteAtlas:
   - player_roll_dodge_115
   - player_roll_dodge_114
   - shriek
+  - Cutscene_car4
   - sword_item
   - UI_stats_empty
   - TT_nobg
   - note
   - UI_stats_lifeblood1
+  - Cutscene_car2
   - BB_nobg
   - MC_Male2_80
   - MC_Male2_81
@@ -2825,7 +2839,9 @@ SpriteAtlas:
   - MC_Male2_20
   - MC_Male2_72
   - MC_Male2_21
+  - Cutscene_car5
   - SS_nobg
+  - Cutscene_cloud
   - feeder_18
   - feeder_19
   - feeder_16
