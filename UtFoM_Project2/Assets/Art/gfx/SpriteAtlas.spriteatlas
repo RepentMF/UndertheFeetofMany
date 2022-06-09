@@ -1059,6 +1059,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9ded65eb26a973e4b86c8faa565979d5, type: 3}
   - {fileID: 21300000, guid: 9564c11ce83f7bf419f41cbcf16efd9a, type: 3}
   - {fileID: 21300000, guid: b141c62c433eef04d8e403bb642613a3, type: 3}
+  - {fileID: 21300000, guid: 5e6b053cd49a837469659eb5919b3aae, type: 3}
   - {fileID: 6243485486061266018, guid: 637cb74cf76dccc4d91211a0349089b9, type: 3}
   - {fileID: -7698984724918590131, guid: 637cb74cf76dccc4d91211a0349089b9, type: 3}
   - {fileID: 2212257249451123071, guid: 637cb74cf76dccc4d91211a0349089b9, type: 3}
@@ -1254,6 +1255,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 7436a07d0bed6f441886a875690bf2f6, type: 3}
   - {fileID: 21300000, guid: 2ba3fdbd6d718fa49aae5d808ccedcb2, type: 3}
   - {fileID: 21300000, guid: 238592ed29282194a88129fdf53f4b03, type: 3}
+  - {fileID: 21300000, guid: db1128fdb1d7eee41874114d8e474c78, type: 3}
   - {fileID: 21300000, guid: 3764161e602ac2d48903c0789b4c17be, type: 3}
   - {fileID: 21300000, guid: cc805a1e0568b3f4c82dffdfefed2fc5, type: 3}
   - {fileID: 21300000, guid: bc2dd52eb0410bd4e89c26571bca168f, type: 3}
@@ -2517,6 +2519,7 @@ SpriteAtlas:
   - bb_side_house
   - bb_house4
   - bb_house1
+  - Family
   - player_lightning_burst_1
   - player_lightning_burst_0
   - player_lightning_burst_3
@@ -2712,6 +2715,7 @@ SpriteAtlas:
   - UI_stats_empty
   - TT_nobg
   - note
+  - Family2
   - UI_stats_lifeblood1
   - Cutscene_car2
   - BB_nobg
