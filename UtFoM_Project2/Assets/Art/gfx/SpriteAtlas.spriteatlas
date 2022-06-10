@@ -533,6 +533,7 @@ SpriteAtlas:
   - {fileID: -1913778570687502808, guid: 55246484c3ec08448b65ab4c19166ac9, type: 3}
   - {fileID: -8212640585724460654, guid: 55246484c3ec08448b65ab4c19166ac9, type: 3}
   - {fileID: 21300000, guid: 3e7c48942cfa1ff4c8d962dca9adfad0, type: 3}
+  - {fileID: 21300000, guid: f811eae43fcd47a409da5875c21e3b1f, type: 3}
   - {fileID: 21300000, guid: 00fff3c552acd3840b6dba3e41612e46, type: 3}
   - {fileID: -8046433660304297415, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
   - {fileID: -4641832665535523426, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
@@ -1993,6 +1994,7 @@ SpriteAtlas:
   - zots_42
   - zots_43
   - CH_F1
+  - SS
   - star1_particle
   - MC_Male2_hammer_96
   - MC_Male2_hammer_97
