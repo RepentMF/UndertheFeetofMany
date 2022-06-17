@@ -14,6 +14,9 @@ public class Inventory : MonoBehaviour
 	public bool HasMap;
 	public bool HasGem;
 
+	// Script references
+	public ParticleSystem ParticleSystemScript;
+
 	public void AddItem(Item item)
 	{
 		switch (item.Category)
@@ -53,7 +56,7 @@ public class Inventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+		
     }
 
     // Update is called once per frame

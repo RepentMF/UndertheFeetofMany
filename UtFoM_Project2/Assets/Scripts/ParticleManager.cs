@@ -15,7 +15,6 @@ public class ParticleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	Debug.Log(particles.IsAlive());
         if(!particles.IsAlive())
         {
         	Destroy(this.gameObject);

@@ -430,7 +430,7 @@ public abstract class EnemyAi : MonoBehaviour
         // If a player has entered the enemy's space
         if (collider.GetComponent<PlayerController>() != null)
         {
-            if (this.gameObject.transform.position.y < collider.bounds.center.y)
+            if (this.gameObject.transform.position.y < collider.bounds.center.y - .2)
             {
                 SpriteRendererScript.sortingLayerName = "Enemy_Front";
             } else

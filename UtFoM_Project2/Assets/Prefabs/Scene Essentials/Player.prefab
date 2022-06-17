@@ -199,7 +199,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8477665560018798511}
-  - component: {fileID: 8160814596850253754}
   m_Layer: 0
   m_Name: Sword1Down
   m_TagString: Light
@@ -224,23 +223,6 @@ Transform:
   m_Father: {fileID: 4875993485730015053}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814596850253754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483442467345268280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: sword1
-  damage: 1.5
-  timer: 0
-  thrust: {x: 80, y: 0}
 --- !u!1 &660729248335287819
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +309,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2130070871
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 8284859347849952574, guid: a649072e1e8c9054bb4c0488990b55aa,
     type: 3}
@@ -567,6 +549,7 @@ MonoBehaviour:
   KeyItemsList: []
   HasMap: 0
   HasGem: 0
+  ParticleSystemScript: {fileID: 0}
 --- !u!114 &8332205668163415030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,6 +597,9 @@ MonoBehaviour:
   IdleAnimationName: Idle
   MoveAnimationName: Walking
   MoveAnimationTimer: -1
+  DodgeAnimationName: Dodging
+  DodgeAnimationTimer: -1
+  DodgeAnimationBufferThreshold: 0
   StaggerAnimationName: Stagger
   JuggleAnimationName: Stagger
   FreefallAnimationName: Stagger
@@ -624,6 +610,7 @@ MonoBehaviour:
   RuntimeCurrentAnimationName: 
   RuntimeCurrentAnimationTimer: 0
   RuntimeCooldownTimer: 0
+  RuntimeCurrentAnimationBufferThreshold: 0
 --- !u!114 &5829869062835696444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,6 +624,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementSpeed: 6
+  DodgeSpeed: 6
+  DodgeCost: 5
   VoltTrapObject: {fileID: 0}
   SparkTriggerObject: {fileID: 0}
   FlurryFieldObject: {fileID: 0}
@@ -1286,7 +1275,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5285868508598159356}
-  - component: {fileID: 8160814596363307889}
   m_Layer: 0
   m_Name: Hammer3Up
   m_TagString: Launch
@@ -1312,23 +1300,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814596363307889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095862955724533492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer3
-  damage: 2.5
-  timer: 0
-  thrust: {x: 0, y: 250}
 --- !u!1 &1298824625691805424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,7 +1424,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3686748578819500471}
-  - component: {fileID: 8160814596707527099}
   m_Layer: 0
   m_Name: Hammer1Left
   m_TagString: Light
@@ -1479,23 +1449,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814596707527099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404187971252114970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer1
-  damage: 2
-  timer: 0
-  thrust: {x: 0, y: 165}
 --- !u!1 &1441222463738251149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,7 +1696,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3319742058259309084}
-  - component: {fileID: 8160814596287245286}
   m_Layer: 0
   m_Name: Hammer4Up
   m_TagString: Heavy
@@ -1769,23 +1721,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814596287245286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892498267719476712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer4
-  damage: 3.5
-  timer: 0
-  thrust: {x: 0, y: 180}
 --- !u!1 &1936551415376865727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,7 +1730,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6247518545294707063}
-  - component: {fileID: 8160814595866042665}
   m_Layer: 0
   m_Name: Hammer3Left
   m_TagString: Launch
@@ -1821,23 +1755,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814595866042665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936551415376865727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer3
-  damage: 2.5
-  timer: 0
-  thrust: {x: 0, y: 250}
 --- !u!1 &1987716661498657218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,7 +1764,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1112723007599293880}
-  - component: {fileID: 8160814596486452943}
   m_Layer: 0
   m_Name: Hammer1Up
   m_TagString: Light
@@ -1873,23 +1789,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814596486452943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987716661498657218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer1
-  damage: 2
-  timer: 0
-  thrust: {x: 0, y: 165}
 --- !u!1 &2223012381622525532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,7 +1798,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1263006153161781780}
-  - component: {fileID: 8160814595995212850}
   m_Layer: 0
   m_Name: Hammer3Right
   m_TagString: Launch
@@ -1925,23 +1823,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814595995212850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2223012381622525532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer3
-  damage: 2.5
-  timer: 0
-  thrust: {x: 0, y: 250}
 --- !u!1 &2243452928997123280
 GameObject:
   m_ObjectHideFlags: 0
@@ -2002,7 +1883,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8900858736811082179}
-  - component: {fileID: 8160814595530268584}
   m_Layer: 0
   m_Name: Hammer2Left
   m_TagString: Medium
@@ -2028,23 +1908,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814595530268584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2282758709885425261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer2
-  damage: 2
-  timer: 0
-  thrust: {x: 0, y: 175}
 --- !u!1 &2333033232175709098
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,7 +1978,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -136105217
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 351992477344869309, guid: 001a2599f9cb4aa4eb109174fb4e704a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3400,7 +3263,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4661726905525759711}
-  - component: {fileID: 8160814597475906117}
   m_Layer: 0
   m_Name: Hammer1Down
   m_TagString: Light
@@ -3426,23 +3288,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814597475906117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3512403217900603891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer1
-  damage: 2
-  timer: 0
-  thrust: {x: 0, y: 165}
 --- !u!1 &3545423431077615663
 GameObject:
   m_ObjectHideFlags: 0
@@ -3824,7 +3669,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7465588465917991756}
-  - component: {fileID: 8160814595917134880}
   m_Layer: 0
   m_Name: KnifeRight
   m_TagString: Light
@@ -3849,23 +3693,6 @@ Transform:
   m_Father: {fileID: 8312171927729754482}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814595917134880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3828658592665017784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: knife
-  damage: 0.334
-  timer: 0
-  thrust: {x: 0, y: 0}
 --- !u!1 &3888285047003943486
 GameObject:
   m_ObjectHideFlags: 0
@@ -4246,7 +4073,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1293477405948177154}
-  - component: {fileID: 8160814596330500220}
   m_Layer: 0
   m_Name: KnifeDown
   m_TagString: Light
@@ -4271,23 +4097,6 @@ Transform:
   m_Father: {fileID: 8312171927729754482}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814596330500220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4067540041854931552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: knife
-  damage: 0.334
-  timer: 0
-  thrust: {x: 0, y: 0}
 --- !u!1 &4101111548408968161
 GameObject:
   m_ObjectHideFlags: 0
@@ -4544,7 +4353,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6410553303294586701}
-  - component: {fileID: 8160814596481957803}
   m_Layer: 0
   m_Name: KnifeUp
   m_TagString: Light
@@ -4569,23 +4377,6 @@ Transform:
   m_Father: {fileID: 8312171927729754482}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814596481957803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4405564737407868302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: knife
-  damage: 0.334
-  timer: 0
-  thrust: {x: 0, y: 0}
 --- !u!1 &4425684234270922751
 GameObject:
   m_ObjectHideFlags: 0
@@ -4906,7 +4697,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6441454604182785925}
-  - component: {fileID: 8160814596900678004}
   m_Layer: 0
   m_Name: Hammer2Up
   m_TagString: Medium
@@ -4932,23 +4722,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814596900678004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4781939448654400320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer2
-  damage: 2
-  timer: 0
-  thrust: {x: 0, y: 175}
 --- !u!1 &4834030234343503443
 GameObject:
   m_ObjectHideFlags: 0
@@ -4958,7 +4731,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4459644538982120490}
-  - component: {fileID: 8160814596430466272}
   m_Layer: 0
   m_Name: Hammer4Left
   m_TagString: Heavy
@@ -4984,23 +4756,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814596430466272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4834030234343503443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer4
-  damage: 3.5
-  timer: 0
-  thrust: {x: -180, y: 60}
 --- !u!1 &4859972627429415478
 GameObject:
   m_ObjectHideFlags: 0
@@ -6028,7 +5783,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7048175189596290528}
-  - component: {fileID: 8160814596387979057}
   m_Layer: 0
   m_Name: Hammer2Right
   m_TagString: Medium
@@ -6054,23 +5808,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814596387979057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6004312622174626115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer2
-  damage: 2
-  timer: 0
-  thrust: {x: 0, y: 175}
 --- !u!1 &6032183316862107379
 GameObject:
   m_ObjectHideFlags: 0
@@ -6918,7 +6655,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4856206985947634556}
-  - component: {fileID: 8160814596297637728}
   m_Layer: 0
   m_Name: Hammer4Down
   m_TagString: Heavy
@@ -6944,23 +6680,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814596297637728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6828236802357517184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer4
-  damage: 3.5
-  timer: 0
-  thrust: {x: 0, y: -180}
 --- !u!1 &6926318225986383740
 GameObject:
   m_ObjectHideFlags: 0
@@ -7613,7 +7332,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4239338621189118260}
-  - component: {fileID: 8160814595460426226}
   m_Layer: 0
   m_Name: KnifeLeft
   m_TagString: Light
@@ -7638,23 +7356,6 @@ Transform:
   m_Father: {fileID: 8312171927729754482}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814595460426226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7544117128040001351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: knife
-  damage: 0.334
-  timer: 0
-  thrust: {x: 0, y: 0}
 --- !u!1 &7586538644080679208
 GameObject:
   m_ObjectHideFlags: 0
@@ -7853,7 +7554,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2567613955906502559}
-  - component: {fileID: 8160814595546135794}
   m_Layer: 0
   m_Name: Hammer3Down
   m_TagString: Launch
@@ -7879,23 +7579,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814595546135794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7712822329163648931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer3
-  damage: 2.5
-  timer: 0
-  thrust: {x: 0, y: 250}
 --- !u!1 &7760500873810019951
 GameObject:
   m_ObjectHideFlags: 0
@@ -7905,7 +7588,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6264218477010576437}
-  - component: {fileID: 8160814596797443230}
   m_Layer: 0
   m_Name: Hammer2Down
   m_TagString: Medium
@@ -7931,23 +7613,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814596797443230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7760500873810019951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer2
-  damage: 2
-  timer: 0
-  thrust: {x: 0, y: 175}
 --- !u!1 &7762856402805354167
 GameObject:
   m_ObjectHideFlags: 0
@@ -8227,7 +7892,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4127236273959491521}
-  - component: {fileID: 8160814597528553127}
   m_Layer: 0
   m_Name: Hammer4Right
   m_TagString: Heavy
@@ -8253,23 +7917,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814597528553127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8246785583188995569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer4
-  damage: 3.5
-  timer: 0
-  thrust: {x: 180, y: 60}
 --- !u!1 &8251478763308002232
 GameObject:
   m_ObjectHideFlags: 0
@@ -8833,7 +8480,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4909165593026996864}
-  - component: {fileID: 8160814596907760638}
   m_Layer: 0
   m_Name: Hammer1Right
   m_TagString: Light
@@ -8859,23 +8505,6 @@ Transform:
   m_Father: {fileID: 7286720449100666141}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8160814596907760638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8570835007720187956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20b6a61a3629a41b3270938ea2bb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magic: 0
-  hitbox: hammer1
-  damage: 2
-  timer: 0
-  thrust: {x: 0, y: 165}
 --- !u!1 &8582108182794371573
 GameObject:
   m_ObjectHideFlags: 0

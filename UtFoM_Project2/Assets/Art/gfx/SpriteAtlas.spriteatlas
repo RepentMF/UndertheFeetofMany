@@ -921,6 +921,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3c78dc48cd8254c4b8112688bdb3a23e, type: 3}
   - {fileID: 21300000, guid: 1f713a582f1e33e41aea90cab8f0bb98, type: 3}
   - {fileID: 21300000, guid: 174e0e5864f0ffb439163d816cff94a8, type: 3}
+  - {fileID: 21300000, guid: 1f6d119855b6bab4eab713a4084fa26b, type: 3}
   - {fileID: 21300000, guid: b1438f989088fb146bf202d4640d5e5b, type: 3}
   - {fileID: -6007503228372751094, guid: db17e0b87eeb3954cb19a3675944fa4a, type: 3}
   - {fileID: 6766357532237771873, guid: db17e0b87eeb3954cb19a3675944fa4a, type: 3}
@@ -2387,6 +2388,7 @@ SpriteAtlas:
   - item_holder_front
   - character_1_side_swing_alt_2
   - hammer1_up1
+  - TP
   - Cutscene_car6
   - player_volt_trap_14
   - player_volt_trap_15

@@ -58,6 +58,7 @@ public class Hurtbox : MonoBehaviour
             } else
             {
                 CurrentStagger -= Time.deltaTime;
+                Debug.Log(CurrentStagger);
             }
         }
     }
