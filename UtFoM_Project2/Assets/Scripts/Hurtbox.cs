@@ -6,6 +6,7 @@ public class Hurtbox : MonoBehaviour
 {
     public float CurrentStagger { get; set; } = 0.0f;
     private Vector3 HomePosition;
+    public string LastHitBy { get; set; } = "";
 
     // Script References
     private Rigidbody2D Rigidbody2DScript;
@@ -40,7 +41,7 @@ public class Hurtbox : MonoBehaviour
     {
         if (StateManagerScript.CurrentState == ActionState.Freefall && this.transform.position.y <= HomePosition.y)
         {
-            StateManagerScript.CurrentState = ActionState.Idle;
+            EnterIdle();
         }
     }
 
@@ -53,12 +54,18 @@ public class Hurtbox : MonoBehaviour
         {
             if (CurrentStagger <= 0.0f)
             {
-                StateManagerScript.CurrentState = ActionState.Idle;
+                EnterIdle();
             } else
             {
                 CurrentStagger -= Time.deltaTime;
             }
         }
+    }
+
+    private void EnterIdle()
+    {
+        LastHitBy = "";
+        StateManagerScript.CurrentState = ActionState.Idle;
     }
 
     // Start is called before the first frame update
@@ -70,11 +77,11 @@ public class Hurtbox : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         UpdateHomePosition();
         EndStagger();
         EnterFreefall();
         EndFreefall();
     }
-} // GG TODO: Make sure the stagger/other state animations play
+}

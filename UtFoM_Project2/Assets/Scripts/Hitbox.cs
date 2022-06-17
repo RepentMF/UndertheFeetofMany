@@ -25,26 +25,29 @@ public class Hitbox : MonoBehaviour
         Stats targetStatsScript = collider.GetComponent<Stats>();
         StateManager targetStateManagerScript = collider.GetComponent<StateManager>();
         StatusMod targetStatusModScript = collider.GetComponent<StatusMod>();
-        
+
         if (targetHurtboxScript != null && targetRigidbody2DScript != null && targetStatsScript != null && !targetStatsScript.IsInvulnerable)
         {
-            StatsScript.ComboCount++; // Increase the ComboCount
-            if (StateToInflict != ActionState.None) // Inflict the relevant ActionState
+            if (targetHurtboxScript.LastHitBy != HitboxName || HitboxName.IndexOf("Knife") > -1)
             {
-                targetStateManagerScript.CurrentState = StateToInflict;
-                targetHurtboxScript.CurrentStagger = StaggerAmount;
+                StatsScript.ComboCount++; // Increase the ComboCount
+                if (StateToInflict != ActionState.None) // Inflict the relevant ActionState
+                {
+                    targetStateManagerScript.CurrentState = StateToInflict;
+                    targetHurtboxScript.CurrentStagger = StaggerAmount;
+                }
+                if (targetStatusModScript != null && StatusesToInflict.Count > 0) // Inflict any StatusEffect(s)
+                {
+                    targetStatusModScript.AddStatuses(StatusesToInflict);
+                }
+                targetRigidbody2DScript.gravityScale = GravityScale; // Inflict the appropriate GravityScale; This needs to happen before velocity and force
+                if (Velocity != Vector2.negativeInfinity) // Inflict the appropriate velocity
+                {
+                    targetRigidbody2DScript.velocity = Velocity;
+                    targetRigidbody2DScript.AddForce(Thrust, ForceMode2D.Force);
+                }
+                targetStatsScript.DamageHealth(Damage, Execute); // Damaging health should happen at the end of this logic
             }
-            if (targetStatusModScript != null && StatusesToInflict.Count > 0) // Inflict any StatusEffect(s)
-            {
-                targetStatusModScript.AddStatuses(StatusesToInflict);
-            }
-            targetRigidbody2DScript.gravityScale = GravityScale; // Inflict the appropriate GravityScale; This needs to happen before velocity and force
-            if (Velocity != Vector2.negativeInfinity) // Inflict the appropriate velocity
-            {
-                targetRigidbody2DScript.velocity = Velocity;
-                targetRigidbody2DScript.AddForce(Thrust, ForceMode2D.Force);
-            }
-            targetStatsScript.DamageHealth(Damage, Execute); // Damaging health should happen at the end of this logic
         }
     }
 
