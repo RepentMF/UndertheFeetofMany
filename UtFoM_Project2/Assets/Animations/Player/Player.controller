@@ -231,7 +231,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Staggered
+  m_Name: Stagger
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -1623,7 +1623,7 @@ BlendTree:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Staggered
+  m_Name: Stagger
   m_Childs:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: c3b1fbaa7834e11468e7ecd6655d8e3c, type: 2}

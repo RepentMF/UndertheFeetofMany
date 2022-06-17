@@ -443,7 +443,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 645
+        y: 473
         width: 50
         height: 43
       alignment: 0
@@ -464,7 +464,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 50
-        y: 645
+        y: 473
         width: 50
         height: 43
       alignment: 0
@@ -485,7 +485,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 100
-        y: 645
+        y: 473
         width: 50
         height: 43
       alignment: 0
@@ -506,7 +506,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 645
+        y: 473
         width: 50
         height: 43
       alignment: 0
@@ -527,7 +527,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 645
+        y: 473
         width: 50
         height: 43
       alignment: 0
@@ -548,7 +548,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 250
-        y: 645
+        y: 473
         width: 50
         height: 43
       alignment: 0
@@ -569,7 +569,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 300
-        y: 645
+        y: 473
         width: 50
         height: 43
       alignment: 0
@@ -590,7 +590,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 350
-        y: 645
+        y: 473
         width: 50
         height: 43
       alignment: 0
@@ -611,7 +611,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 645
+        y: 473
         width: 50
         height: 43
       alignment: 0
@@ -632,7 +632,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 602
+        y: 430
         width: 50
         height: 43
       alignment: 0
@@ -653,7 +653,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 50
-        y: 602
+        y: 430
         width: 50
         height: 43
       alignment: 0
@@ -674,7 +674,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 100
-        y: 602
+        y: 430
         width: 50
         height: 43
       alignment: 0
@@ -695,7 +695,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 602
+        y: 430
         width: 50
         height: 43
       alignment: 0
@@ -716,7 +716,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 602
+        y: 430
         width: 50
         height: 43
       alignment: 0
@@ -737,7 +737,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 250
-        y: 602
+        y: 430
         width: 50
         height: 43
       alignment: 0
@@ -757,8 +757,8 @@ TextureImporter:
       name: player_roll_dodge_15
       rect:
         serializedVersion: 2
-        x: 300
-        y: 602
+        x: 350
+        y: 430
         width: 50
         height: 43
       alignment: 0
@@ -778,8 +778,8 @@ TextureImporter:
       name: player_roll_dodge_16
       rect:
         serializedVersion: 2
-        x: 350
-        y: 602
+        x: 400
+        y: 430
         width: 50
         height: 43
       alignment: 0
@@ -799,8 +799,8 @@ TextureImporter:
       name: player_roll_dodge_17
       rect:
         serializedVersion: 2
-        x: 400
-        y: 602
+        x: 450
+        y: 430
         width: 50
         height: 43
       alignment: 0
@@ -820,8 +820,8 @@ TextureImporter:
       name: player_roll_dodge_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 559
+        x: 500
+        y: 430
         width: 50
         height: 43
       alignment: 0
@@ -841,8 +841,8 @@ TextureImporter:
       name: player_roll_dodge_19
       rect:
         serializedVersion: 2
-        x: 50
-        y: 559
+        x: 0
+        y: 387
         width: 50
         height: 43
       alignment: 0
@@ -862,8 +862,8 @@ TextureImporter:
       name: player_roll_dodge_20
       rect:
         serializedVersion: 2
-        x: 100
-        y: 559
+        x: 50
+        y: 387
         width: 50
         height: 43
       alignment: 0
@@ -883,8 +883,8 @@ TextureImporter:
       name: player_roll_dodge_21
       rect:
         serializedVersion: 2
-        x: 150
-        y: 559
+        x: 100
+        y: 387
         width: 50
         height: 43
       alignment: 0
@@ -904,8 +904,8 @@ TextureImporter:
       name: player_roll_dodge_22
       rect:
         serializedVersion: 2
-        x: 200
-        y: 559
+        x: 150
+        y: 387
         width: 50
         height: 43
       alignment: 0
@@ -925,8 +925,8 @@ TextureImporter:
       name: player_roll_dodge_23
       rect:
         serializedVersion: 2
-        x: 250
-        y: 559
+        x: 200
+        y: 387
         width: 50
         height: 43
       alignment: 0
@@ -946,8 +946,8 @@ TextureImporter:
       name: player_roll_dodge_24
       rect:
         serializedVersion: 2
-        x: 300
-        y: 559
+        x: 250
+        y: 387
         width: 50
         height: 43
       alignment: 0
@@ -967,8 +967,8 @@ TextureImporter:
       name: player_roll_dodge_25
       rect:
         serializedVersion: 2
-        x: 350
-        y: 559
+        x: 300
+        y: 387
         width: 50
         height: 43
       alignment: 0
@@ -988,8 +988,8 @@ TextureImporter:
       name: player_roll_dodge_26
       rect:
         serializedVersion: 2
-        x: 400
-        y: 559
+        x: 350
+        y: 387
         width: 50
         height: 43
       alignment: 0
@@ -1009,8 +1009,8 @@ TextureImporter:
       name: player_roll_dodge_27
       rect:
         serializedVersion: 2
-        x: 0
-        y: 516
+        x: 400
+        y: 387
         width: 50
         height: 43
       alignment: 0
@@ -1030,8 +1030,8 @@ TextureImporter:
       name: player_roll_dodge_28
       rect:
         serializedVersion: 2
-        x: 50
-        y: 516
+        x: 0
+        y: 344
         width: 50
         height: 43
       alignment: 0
@@ -1051,8 +1051,8 @@ TextureImporter:
       name: player_roll_dodge_29
       rect:
         serializedVersion: 2
-        x: 100
-        y: 516
+        x: 50
+        y: 344
         width: 50
         height: 43
       alignment: 0
@@ -1072,8 +1072,8 @@ TextureImporter:
       name: player_roll_dodge_30
       rect:
         serializedVersion: 2
-        x: 150
-        y: 516
+        x: 100
+        y: 344
         width: 50
         height: 43
       alignment: 0
@@ -1093,8 +1093,8 @@ TextureImporter:
       name: player_roll_dodge_31
       rect:
         serializedVersion: 2
-        x: 200
-        y: 516
+        x: 150
+        y: 344
         width: 50
         height: 43
       alignment: 0
@@ -1114,8 +1114,8 @@ TextureImporter:
       name: player_roll_dodge_32
       rect:
         serializedVersion: 2
-        x: 250
-        y: 516
+        x: 200
+        y: 344
         width: 50
         height: 43
       alignment: 0
@@ -1135,8 +1135,8 @@ TextureImporter:
       name: player_roll_dodge_33
       rect:
         serializedVersion: 2
-        x: 300
-        y: 516
+        x: 250
+        y: 344
         width: 50
         height: 43
       alignment: 0
@@ -1157,7 +1157,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 350
-        y: 516
+        y: 344
         width: 50
         height: 43
       alignment: 0
@@ -1178,7 +1178,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 400
-        y: 516
+        y: 344
         width: 50
         height: 43
       alignment: 0
@@ -1198,8 +1198,8 @@ TextureImporter:
       name: player_roll_dodge_36
       rect:
         serializedVersion: 2
-        x: 0
-        y: 473
+        x: 450
+        y: 344
         width: 50
         height: 43
       alignment: 0
@@ -1219,8 +1219,8 @@ TextureImporter:
       name: player_roll_dodge_37
       rect:
         serializedVersion: 2
-        x: 50
-        y: 473
+        x: 500
+        y: 344
         width: 50
         height: 43
       alignment: 0
@@ -1240,8 +1240,8 @@ TextureImporter:
       name: player_roll_dodge_38
       rect:
         serializedVersion: 2
-        x: 100
-        y: 473
+        x: 0
+        y: 301
         width: 50
         height: 43
       alignment: 0
@@ -1261,8 +1261,8 @@ TextureImporter:
       name: player_roll_dodge_39
       rect:
         serializedVersion: 2
-        x: 150
-        y: 473
+        x: 50
+        y: 301
         width: 50
         height: 43
       alignment: 0
@@ -1282,8 +1282,8 @@ TextureImporter:
       name: player_roll_dodge_40
       rect:
         serializedVersion: 2
-        x: 200
-        y: 473
+        x: 100
+        y: 301
         width: 50
         height: 43
       alignment: 0
@@ -1303,8 +1303,8 @@ TextureImporter:
       name: player_roll_dodge_41
       rect:
         serializedVersion: 2
-        x: 250
-        y: 473
+        x: 150
+        y: 301
         width: 50
         height: 43
       alignment: 0
@@ -1324,8 +1324,8 @@ TextureImporter:
       name: player_roll_dodge_42
       rect:
         serializedVersion: 2
-        x: 300
-        y: 473
+        x: 200
+        y: 301
         width: 50
         height: 43
       alignment: 0
@@ -1345,8 +1345,8 @@ TextureImporter:
       name: player_roll_dodge_43
       rect:
         serializedVersion: 2
-        x: 350
-        y: 473
+        x: 250
+        y: 301
         width: 50
         height: 43
       alignment: 0
@@ -1366,8 +1366,8 @@ TextureImporter:
       name: player_roll_dodge_44
       rect:
         serializedVersion: 2
-        x: 400
-        y: 473
+        x: 300
+        y: 301
         width: 50
         height: 43
       alignment: 0
@@ -1387,8 +1387,8 @@ TextureImporter:
       name: player_roll_dodge_45
       rect:
         serializedVersion: 2
-        x: 0
-        y: 430
+        x: 350
+        y: 301
         width: 50
         height: 43
       alignment: 0
@@ -1408,8 +1408,8 @@ TextureImporter:
       name: player_roll_dodge_46
       rect:
         serializedVersion: 2
-        x: 50
-        y: 430
+        x: 400
+        y: 301
         width: 50
         height: 43
       alignment: 0
@@ -1429,8 +1429,8 @@ TextureImporter:
       name: player_roll_dodge_47
       rect:
         serializedVersion: 2
-        x: 100
-        y: 430
+        x: 0
+        y: 258
         width: 50
         height: 43
       alignment: 0
@@ -1450,8 +1450,8 @@ TextureImporter:
       name: player_roll_dodge_48
       rect:
         serializedVersion: 2
-        x: 150
-        y: 430
+        x: 50
+        y: 258
         width: 50
         height: 43
       alignment: 0
@@ -1471,8 +1471,8 @@ TextureImporter:
       name: player_roll_dodge_49
       rect:
         serializedVersion: 2
-        x: 200
-        y: 430
+        x: 100
+        y: 258
         width: 50
         height: 43
       alignment: 0
@@ -1492,8 +1492,8 @@ TextureImporter:
       name: player_roll_dodge_50
       rect:
         serializedVersion: 2
-        x: 250
-        y: 430
+        x: 150
+        y: 258
         width: 50
         height: 43
       alignment: 0
@@ -1513,8 +1513,8 @@ TextureImporter:
       name: player_roll_dodge_51
       rect:
         serializedVersion: 2
-        x: 0
-        y: 387
+        x: 200
+        y: 258
         width: 50
         height: 43
       alignment: 0
@@ -1534,8 +1534,8 @@ TextureImporter:
       name: player_roll_dodge_52
       rect:
         serializedVersion: 2
-        x: 50
-        y: 387
+        x: 250
+        y: 258
         width: 50
         height: 43
       alignment: 0
@@ -1555,8 +1555,8 @@ TextureImporter:
       name: player_roll_dodge_53
       rect:
         serializedVersion: 2
-        x: 100
-        y: 387
+        x: 350
+        y: 258
         width: 50
         height: 43
       alignment: 0
@@ -1576,8 +1576,8 @@ TextureImporter:
       name: player_roll_dodge_54
       rect:
         serializedVersion: 2
-        x: 150
-        y: 387
+        x: 400
+        y: 258
         width: 50
         height: 43
       alignment: 0
@@ -1597,8 +1597,8 @@ TextureImporter:
       name: player_roll_dodge_55
       rect:
         serializedVersion: 2
-        x: 200
-        y: 387
+        x: 450
+        y: 258
         width: 50
         height: 43
       alignment: 0
@@ -1618,8 +1618,8 @@ TextureImporter:
       name: player_roll_dodge_56
       rect:
         serializedVersion: 2
-        x: 250
-        y: 387
+        x: 500
+        y: 258
         width: 50
         height: 43
       alignment: 0
@@ -1639,8 +1639,8 @@ TextureImporter:
       name: player_roll_dodge_57
       rect:
         serializedVersion: 2
-        x: 300
-        y: 387
+        x: 0
+        y: 215
         width: 50
         height: 43
       alignment: 0
@@ -1660,8 +1660,8 @@ TextureImporter:
       name: player_roll_dodge_58
       rect:
         serializedVersion: 2
-        x: 350
-        y: 387
+        x: 50
+        y: 215
         width: 50
         height: 43
       alignment: 0
@@ -1681,8 +1681,8 @@ TextureImporter:
       name: player_roll_dodge_59
       rect:
         serializedVersion: 2
-        x: 400
-        y: 387
+        x: 100
+        y: 215
         width: 50
         height: 43
       alignment: 0
@@ -1702,8 +1702,8 @@ TextureImporter:
       name: player_roll_dodge_60
       rect:
         serializedVersion: 2
-        x: 0
-        y: 344
+        x: 150
+        y: 215
         width: 50
         height: 43
       alignment: 0
@@ -1723,8 +1723,8 @@ TextureImporter:
       name: player_roll_dodge_61
       rect:
         serializedVersion: 2
-        x: 50
-        y: 344
+        x: 200
+        y: 215
         width: 50
         height: 43
       alignment: 0
@@ -1744,8 +1744,8 @@ TextureImporter:
       name: player_roll_dodge_62
       rect:
         serializedVersion: 2
-        x: 100
-        y: 344
+        x: 250
+        y: 215
         width: 50
         height: 43
       alignment: 0
@@ -1765,8 +1765,8 @@ TextureImporter:
       name: player_roll_dodge_63
       rect:
         serializedVersion: 2
-        x: 150
-        y: 344
+        x: 300
+        y: 215
         width: 50
         height: 43
       alignment: 0
@@ -1786,8 +1786,8 @@ TextureImporter:
       name: player_roll_dodge_64
       rect:
         serializedVersion: 2
-        x: 200
-        y: 344
+        x: 350
+        y: 215
         width: 50
         height: 43
       alignment: 0
@@ -1807,8 +1807,8 @@ TextureImporter:
       name: player_roll_dodge_65
       rect:
         serializedVersion: 2
-        x: 250
-        y: 344
+        x: 400
+        y: 215
         width: 50
         height: 43
       alignment: 0
@@ -1829,7 +1829,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 301
+        y: 172
         width: 50
         height: 43
       alignment: 0
@@ -1850,7 +1850,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 50
-        y: 301
+        y: 172
         width: 50
         height: 43
       alignment: 0
@@ -1871,7 +1871,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 100
-        y: 301
+        y: 172
         width: 50
         height: 43
       alignment: 0
@@ -1892,7 +1892,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 301
+        y: 172
         width: 50
         height: 43
       alignment: 0
@@ -1913,7 +1913,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 301
+        y: 172
         width: 50
         height: 43
       alignment: 0
@@ -1934,7 +1934,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 250
-        y: 301
+        y: 172
         width: 50
         height: 43
       alignment: 0
@@ -1954,8 +1954,8 @@ TextureImporter:
       name: player_roll_dodge_72
       rect:
         serializedVersion: 2
-        x: 300
-        y: 301
+        x: 350
+        y: 172
         width: 50
         height: 43
       alignment: 0
@@ -1975,8 +1975,8 @@ TextureImporter:
       name: player_roll_dodge_73
       rect:
         serializedVersion: 2
-        x: 350
-        y: 301
+        x: 400
+        y: 172
         width: 50
         height: 43
       alignment: 0
@@ -1996,8 +1996,8 @@ TextureImporter:
       name: player_roll_dodge_74
       rect:
         serializedVersion: 2
-        x: 400
-        y: 301
+        x: 450
+        y: 172
         width: 50
         height: 43
       alignment: 0
@@ -2017,8 +2017,8 @@ TextureImporter:
       name: player_roll_dodge_75
       rect:
         serializedVersion: 2
-        x: 0
-        y: 258
+        x: 500
+        y: 172
         width: 50
         height: 43
       alignment: 0
@@ -2038,8 +2038,8 @@ TextureImporter:
       name: player_roll_dodge_76
       rect:
         serializedVersion: 2
-        x: 50
-        y: 258
+        x: 0
+        y: 129
         width: 50
         height: 43
       alignment: 0
@@ -2059,8 +2059,8 @@ TextureImporter:
       name: player_roll_dodge_77
       rect:
         serializedVersion: 2
-        x: 100
-        y: 258
+        x: 50
+        y: 129
         width: 50
         height: 43
       alignment: 0
@@ -2080,8 +2080,8 @@ TextureImporter:
       name: player_roll_dodge_78
       rect:
         serializedVersion: 2
-        x: 150
-        y: 258
+        x: 100
+        y: 129
         width: 50
         height: 43
       alignment: 0
@@ -2101,8 +2101,8 @@ TextureImporter:
       name: player_roll_dodge_79
       rect:
         serializedVersion: 2
-        x: 200
-        y: 258
+        x: 150
+        y: 129
         width: 50
         height: 43
       alignment: 0
@@ -2122,8 +2122,8 @@ TextureImporter:
       name: player_roll_dodge_80
       rect:
         serializedVersion: 2
-        x: 250
-        y: 258
+        x: 200
+        y: 129
         width: 50
         height: 43
       alignment: 0
@@ -2144,7 +2144,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 215
+        y: 86
         width: 50
         height: 43
       alignment: 0
@@ -2165,7 +2165,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 50
-        y: 215
+        y: 86
         width: 50
         height: 43
       alignment: 0
@@ -2186,7 +2186,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 100
-        y: 215
+        y: 86
         width: 50
         height: 43
       alignment: 0
@@ -2207,7 +2207,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 215
+        y: 86
         width: 50
         height: 43
       alignment: 0
@@ -2228,7 +2228,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 215
+        y: 86
         width: 50
         height: 43
       alignment: 0
@@ -2248,8 +2248,8 @@ TextureImporter:
       name: player_roll_dodge_86
       rect:
         serializedVersion: 2
-        x: 250
-        y: 215
+        x: 0
+        y: 43
         width: 50
         height: 43
       alignment: 0
@@ -2269,8 +2269,8 @@ TextureImporter:
       name: player_roll_dodge_87
       rect:
         serializedVersion: 2
-        x: 300
-        y: 215
+        x: 50
+        y: 43
         width: 50
         height: 43
       alignment: 0
@@ -2290,8 +2290,8 @@ TextureImporter:
       name: player_roll_dodge_88
       rect:
         serializedVersion: 2
-        x: 350
-        y: 215
+        x: 100
+        y: 43
         width: 50
         height: 43
       alignment: 0
@@ -2311,8 +2311,8 @@ TextureImporter:
       name: player_roll_dodge_89
       rect:
         serializedVersion: 2
-        x: 400
-        y: 215
+        x: 150
+        y: 43
         width: 50
         height: 43
       alignment: 0
@@ -2332,8 +2332,8 @@ TextureImporter:
       name: player_roll_dodge_90
       rect:
         serializedVersion: 2
-        x: 0
-        y: 172
+        x: 200
+        y: 43
         width: 50
         height: 43
       alignment: 0
@@ -2353,8 +2353,8 @@ TextureImporter:
       name: player_roll_dodge_91
       rect:
         serializedVersion: 2
-        x: 50
-        y: 172
+        x: 0
+        y: 0
         width: 50
         height: 43
       alignment: 0
@@ -2374,8 +2374,8 @@ TextureImporter:
       name: player_roll_dodge_92
       rect:
         serializedVersion: 2
-        x: 100
-        y: 172
+        x: 50
+        y: 0
         width: 50
         height: 43
       alignment: 0
@@ -2395,8 +2395,8 @@ TextureImporter:
       name: player_roll_dodge_93
       rect:
         serializedVersion: 2
-        x: 150
-        y: 172
+        x: 100
+        y: 0
         width: 50
         height: 43
       alignment: 0
@@ -2416,8 +2416,8 @@ TextureImporter:
       name: player_roll_dodge_94
       rect:
         serializedVersion: 2
-        x: 200
-        y: 172
+        x: 150
+        y: 0
         width: 50
         height: 43
       alignment: 0
@@ -2437,8 +2437,8 @@ TextureImporter:
       name: player_roll_dodge_95
       rect:
         serializedVersion: 2
-        x: 250
-        y: 172
+        x: 200
+        y: 0
         width: 50
         height: 43
       alignment: 0
@@ -2450,426 +2450,6 @@ TextureImporter:
       bones: []
       spriteID: 2beb5152efee60850800000000000000
       internalID: 6343019900509208242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_96
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 129
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 690f2b0eea39eb750800000000000000
-      internalID: 6322653306178171030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_97
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 129
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd878f3769975aa00800000000000000
-      internalID: 767152998634256607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_98
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 129
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a57aaa3737089d3c0800000000000000
-      internalID: -4334291933017233574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_99
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 129
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a902e54d249ea7c20800000000000000
-      internalID: 3205130558067581082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_100
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 129
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3172dc192299573a0800000000000000
-      internalID: -6668255299498072301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_101
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 86
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2dc897e32e1b07d60800000000000000
-      internalID: 7885998532794617042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_102
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 86
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9af01aa91d151c30800000000000000
-      internalID: 4329398612851227295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_103
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 86
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7176ca333ad6c03d0800000000000000
-      internalID: -3239093484272195817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_104
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 86
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03de6bcfd34b4a730800000000000000
-      internalID: 4009527746592435504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_105
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 86
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99e97937b14476610800000000000000
-      internalID: 1614333876129734297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_106
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 43
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca14ea1e25b8f2bd0800000000000000
-      internalID: -2652748467408059988
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_107
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 43
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd02c28d566048b00800000000000000
-      internalID: 829795265831248092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_108
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 43
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f33bf77c1ffa82110800000000000000
-      internalID: 1236431550682215231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_109
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 43
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc1520f89a56b0cf0800000000000000
-      internalID: -285022372484722227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_110
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 43
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e55102217bd42e10800000000000000
-      internalID: 2172102199247721957
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_111
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7218e32dcf0607dd0800000000000000
-      internalID: -2490383954960547545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_112
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 0
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebdbece61e249ba80800000000000000
-      internalID: -8450649689789907522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_113
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 0
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5901a420fcbf0c220800000000000000
-      internalID: 2504278259333206165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_114
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 0
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c91430ca2207cd350800000000000000
-      internalID: 6042828094241456540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_roll_dodge_115
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 0
-        width: 50
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a13d41aab359bee0800000000000000
-      internalID: -1244871760956018271
       vertices: []
       indices: 
       edges: []
