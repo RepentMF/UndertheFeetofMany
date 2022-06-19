@@ -3550,6 +3550,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9212180095111255648, guid: 74a99facd06f13c43a5e1440772f29b3,
+        type: 3}
+      propertyPath: ParticleSystemScript
+      value: 
+      objectReference: {fileID: 904346252373375755, guid: 3e97a265cca02fa4c99cea94db3a177e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a99facd06f13c43a5e1440772f29b3, type: 3}
 --- !u!1 &758681384 stripped
@@ -4191,6 +4197,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268db093e507ec840a0d16046329d22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleSystemScript: {fileID: 3884911629036381786, guid: 9502b863cbb057846bfcf08ba07fd3a7,
+    type: 3}
 --- !u!1 &861973275 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6080274720230193841, guid: 37a7ab54d42670e4b974904b087b9837,

@@ -47,14 +47,12 @@ public class Hitbox : MonoBehaviour
                     targetRigidbody2DScript.velocity = Velocity;
                     targetRigidbody2DScript.AddForce(Thrust, ForceMode2D.Force);
                 }
-                
                 targetStatsScript.DamageHealth(Damage, Execute); // Damaging health should happen at the end of this logic
-
-                if (collider.GetComponentInParent<Inventory>() != null)
+                if (this.gameObject.GetComponentInParent<Hurtbox>() != null)
                 {
                     Vector3 tempPosition = collider.transform.position;
                     tempPosition.y -= .1f;
-				    Instantiate(this.gameObject.GetComponentInParent<Inventory>().ParticleSystemScript, tempPosition, Quaternion.identity);
+				    Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().ParticleSystemScript, tempPosition, Quaternion.identity);
                 }
             }
         }

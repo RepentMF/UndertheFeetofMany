@@ -14,9 +14,6 @@ public class Inventory : MonoBehaviour
 	public bool HasMap;
 	public bool HasGem;
 
-	// Script references
-	public ParticleSystem ParticleSystemScript;
-
 	public void AddItem(Item item)
 	{
 		switch (item.Category)
