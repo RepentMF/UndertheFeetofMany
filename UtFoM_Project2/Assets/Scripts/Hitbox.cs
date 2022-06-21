@@ -26,33 +26,37 @@ public class Hitbox : MonoBehaviour
         StateManager targetStateManagerScript = collider.GetComponent<StateManager>();
         StatusMod targetStatusModScript = collider.GetComponent<StatusMod>();
 
-        if (targetHurtboxScript != null && targetRigidbody2DScript != null && targetStatsScript != null && !targetStatsScript.IsInvulnerable)
+        if ((GetComponentInParent<EnemyAi>() && collider.GetComponentInParent<PlayerController>()) ||
+                GetComponentInParent<PlayerController>() && collider.GetComponentInParent<EnemyAi>())
         {
-            if (targetHurtboxScript.LastHitBy != HitboxName || HitboxName.IndexOf("Knife") > -1)
+            if (targetHurtboxScript != null && targetRigidbody2DScript != null && targetStatsScript != null && !targetStatsScript.IsInvulnerable)
             {
-                targetHurtboxScript.LastHitBy = HitboxName; // Prevent double hits
-                StatsScript.ComboCount++; // Increase the ComboCount
-                if (StateToInflict != ActionState.None) // Inflict the relevant ActionState
+                if (targetHurtboxScript.LastHitBy != HitboxName || HitboxName.IndexOf("Knife") > -1)
                 {
-                    targetStateManagerScript.CurrentState = StateToInflict;
-                    targetHurtboxScript.CurrentStagger = StaggerAmount;
-                }
-                if (targetStatusModScript != null && StatusesToInflict.Count > 0) // Inflict any StatusEffect(s)
-                {
-                    targetStatusModScript.AddStatuses(StatusesToInflict);
-                }
-                targetRigidbody2DScript.gravityScale = GravityScale; // Inflict the appropriate GravityScale; This needs to happen before velocity and force
-                if (Velocity.x >= 0f && Velocity.y >= 0f) // Inflict the appropriate velocity
-                {
-                    targetRigidbody2DScript.velocity = Velocity;
-                    targetRigidbody2DScript.AddForce(Thrust, ForceMode2D.Force);
-                }
-                targetStatsScript.DamageHealth(Damage, Execute); // Damaging health should happen at the end of this logic
-                if (this.gameObject.GetComponentInParent<Hurtbox>() != null)
-                {
-                    Vector3 tempPosition = collider.transform.position;
-                    tempPosition.y -= .1f;
-				    Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().ParticleSystemScript, tempPosition, Quaternion.identity);
+                    targetHurtboxScript.LastHitBy = HitboxName; // Prevent double hits
+                    StatsScript.ComboCount++; // Increase the ComboCount
+                    if (StateToInflict != ActionState.None) // Inflict the relevant ActionState
+                    {
+                        targetStateManagerScript.CurrentState = StateToInflict;
+                        targetHurtboxScript.CurrentStagger = StaggerAmount;
+                    }
+                    if (targetStatusModScript != null && StatusesToInflict.Count > 0) // Inflict any StatusEffect(s)
+                    {
+                        targetStatusModScript.AddStatuses(StatusesToInflict);
+                    }
+                    targetRigidbody2DScript.gravityScale = GravityScale; // Inflict the appropriate GravityScale; This needs to happen before velocity and force
+                    if (Velocity.x >= 0f && Velocity.y >= 0f) // Inflict the appropriate velocity
+                    {
+                        targetRigidbody2DScript.velocity = Velocity;
+                        targetRigidbody2DScript.AddForce(Thrust, ForceMode2D.Force);
+                    }
+                    targetStatsScript.DamageHealth(Damage, Execute); // Damaging health should happen at the end of this logic
+                    if (this.gameObject.GetComponentInParent<Hurtbox>() != null)
+                    {
+                        Vector3 tempPosition = collider.transform.position;
+                        tempPosition.y -= .1f;
+				        Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().ParticleSystemScript, tempPosition, Quaternion.identity);
+                    }
                 }
             }
         }
