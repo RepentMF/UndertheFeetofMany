@@ -101,7 +101,8 @@ public class StatusMod : MonoBehaviour
 			if(statusEntry.Name == Status.Exhaust)
 			{
 				indexOfExhaust = index; // Exhaust is present
-			} else if (statusEntry.Name == Status.Struggle)
+			} 
+			else if (statusEntry.Name == Status.Struggle)
 			{
 				indexOfStruggle = index; // Struggle is present
 			}

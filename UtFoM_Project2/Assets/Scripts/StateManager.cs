@@ -60,12 +60,12 @@ public class StateManager : MonoBehaviour
 {
     [Header("Animations")]
     [SerializeField] private Boolean RandomizeStartFrame = false;
-    [SerializeField] private string IdleAnimationName = "idle";
-    [SerializeField] private string MoveAnimationName = "move";
-    [SerializeField] private float MoveAnimationTimer = -1.0f;
-    [SerializeField] private string DodgeAnimationName = "Dodging";
-    [SerializeField] private float DodgeAnimationTimer = -1.0f;
-    [SerializeField] private float DodgeAnimationBufferThreshold = 0.0f;
+    [SerializeField] public string IdleAnimationName = "idle";
+    [SerializeField] public string MoveAnimationName = "move";
+    [SerializeField] public float MoveAnimationTimer = -1.0f;
+    [SerializeField] public string DodgeAnimationName = "Dodging";
+    [SerializeField] public float DodgeAnimationTimer = -1.0f;
+    [SerializeField] public float DodgeAnimationBufferThreshold = 0.0f;
     private ActionStateAnimation AttackAnimation = new ActionStateAnimation();
     [SerializeField] private string StaggerAnimationName = "stagger";
     [SerializeField] private string JuggleAnimationName = "stagger";

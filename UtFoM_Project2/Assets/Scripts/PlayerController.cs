@@ -100,26 +100,22 @@ public class PlayerController : GenericSingleton<PlayerController>
                 // Light weapon attack
                 if (CurrentAttackAnimationName == "")
                 {
-                    Debug.Break();
                     CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LightAttackAnimationName;
                     StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LightAttackAnimationName, InventoryScript.EquippedWeapon.LightAttackAnimationTimer, InventoryScript.EquippedWeapon.LightAttackBufferThreshold);
                     StateManagerScript.CurrentState = ActionState.Attack;
                 }
                 else if (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LightAttackAnimationName)
                 {
-                    Debug.Break();
                     CurrentAttackAnimationName = InventoryScript.EquippedWeapon.MediumAttackAnimationName;
                     StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.MediumAttackAnimationName, InventoryScript.EquippedWeapon.MediumAttackAnimationTimer, InventoryScript.EquippedWeapon.MediumAttackBufferThreshold);
                     StateManagerScript.CurrentState = ActionState.Attack;
                 }
                 else if (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == "Knife2")
                 {
-                    Debug.Break();
                     CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LightAttackAnimationName;
                     StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LightAttackAnimationName, InventoryScript.EquippedWeapon.LightAttackAnimationTimer, InventoryScript.EquippedWeapon.LightAttackBufferThreshold);
                     StateManagerScript.CurrentState = ActionState.Attack;
                 }
-                
             }
         }
     }
@@ -302,6 +298,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     private void NoAction()
     {
         StateManagerScript.CurrentState = ActionState.Idle;
+        CurrentAttackAnimationName = "";
     }
 
     public void OnTriggerEnter2D(Collider2D collider2D)
