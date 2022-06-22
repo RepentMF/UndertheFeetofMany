@@ -297,8 +297,8 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void NoAction()
     {
-        StateManagerScript.CurrentState = ActionState.Idle;
         CurrentAttackAnimationName = "";
+        StateManagerScript.CurrentState = ActionState.Idle;
     }
 
     public void OnTriggerEnter2D(Collider2D collider2D)

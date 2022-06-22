@@ -2,57 +2,78 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BBPuzzleManager : MonoBehaviour
+public class BBPuzzleManager : GenericSingleton<BBPuzzleManager>
 {
-    // Set variables for use
-    public bool puzzleAComplete;
-    public bool closed;
-    public int currentSlimeCount;
-    public int initSlimeCount;
-    public Animator AnimatorScript;
-    public Collider2D TilemapCollider;
-    public SpriteRenderer BackGate;
+    private bool PuzzleCompleted = false;
+    private int CurrentSlimeCount;
+    private int InitialSlimeCount;
+
+    // Script References
+    private Animator AnimatorScript;
+    private Collider2D Collider2DScript;
+    private SpriteRenderer[] SpriteRendererScript; // Index 0 should be foreground gate with animations, Index 1 should be the background gate after completion
+    private StateManager StateManagerScript;
 
     // Start is called before the first frame update
     void Start()
     {
-        // Grab all the Slimes in the room
-        puzzleAComplete = false;
-        closed = true;
-        currentSlimeCount = FindObjectsOfType<SlimeAi>().Length;
-        initSlimeCount = currentSlimeCount;
+        AnimatorScript = this.gameObject.GetComponent<Animator>();
+        Collider2DScript = this.gameObject.GetComponent<Collider2D>();
+        SpriteRendererScript = this.gameObject.GetComponentsInChildren<SpriteRenderer>();
+        StateManagerScript = this.gameObject.GetComponent<StateManager>();
+        StateManagerScript.RemoveOnDeath = false;
+
+        if (PuzzleCompleted)
+        {
+            CompletePuzzle();
+        }
+        else
+        {
+            // Grab all the Slimes in the room
+            InitialSlimeCount = FindObjectsOfType<SlimeAi>().Length;
+            SpriteRendererScript[1].enabled = false; // Ensure background gate is not visible
+        }
     }
+
+    void GetCurrentSlimeCount()
+    {
+        CurrentSlimeCount = FindObjectsOfType<SlimeAi>().Length;
+    }
+
+    void ManageState()
+    {
+        if (StateManagerScript.CurrentState == ActionState.Idle && CurrentSlimeCount < InitialSlimeCount)
+        {
+            StateManagerScript.CurrentState = ActionState.Move;
+        }
+        else if (StateManagerScript.CurrentState == ActionState.Move && CurrentSlimeCount <= 0)
+        {
+            StateManagerScript.CurrentState = ActionState.Death;
+        }
+        else if (StateManagerScript.CurrentState == ActionState.Death && StateManagerScript.GetCurrentAnimationTimer() <= 0.0f)
+        {
+            CompletePuzzle();
+        }
+    }
+
+    void CompletePuzzle()
+    {
+        PuzzleCompleted = true;
+        StateManagerScript.IdleAnimationName = "BB_gate_opened";
+        StateManagerScript.CurrentState = ActionState.Idle;
+        Collider2DScript.enabled = false;
+        SpriteRendererScript[1].enabled = true;
+    }
+
+
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (currentSlimeCount == 0 && closed)
+        if (!PuzzleCompleted)
         {
-            puzzleAComplete = true;
-            // Make animation of door open
-            AnimatorScript.Play("BB_gate_fall");
-            closed = false;
-        }
-        else
-        {
-            if (currentSlimeCount != FindObjectsOfType<SlimeAi>().Length)
-            {
-                currentSlimeCount = FindObjectsOfType<SlimeAi>().Length;
-            }
-        }
-
-        if (currentSlimeCount > 0 && currentSlimeCount < initSlimeCount)
-        {
-            AnimatorScript.Play("BB_gate_drip");
-        }
-
-        if (!closed)
-        {
-            // WHY WON'T THE FUCKING BB_GATE_4 STAY SETACTIVE(TRUE)?!?!?!
-            // Play the room, kill all the slimes, and watch the door open 
-            // and you'll know what I mean- please help with troubleshooting
-            TilemapCollider.gameObject.SetActive(false);
-            BackGate.gameObject.SetActive(true);
+            GetCurrentSlimeCount();
+            ManageState();
         }
     }
 }

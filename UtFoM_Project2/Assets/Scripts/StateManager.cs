@@ -72,6 +72,7 @@ public class StateManager : MonoBehaviour
     [SerializeField] private string FreefallAnimationName = "stagger";
     [SerializeField] private string DeathAnimationName = "death";
     [SerializeField] private float DeathAnimationTimer = -1.0f;
+    public bool RemoveOnDeath = true;
     public ActionState CurrentState { get; set; } = ActionState.Idle;
     private ActionStateAnimation NextAnimation = new ActionStateAnimation();
     private ActionStateAnimation CurrentAnimation = new ActionStateAnimation();
@@ -194,7 +195,7 @@ public class StateManager : MonoBehaviour
     /// </summary>
     private void RemoveEntity()
     {
-        if (CurrentAnimation.AnimationName == DeathAnimationName && CurrentAnimation.AnimationTimer <= 0 && CurrentState == ActionState.Death)
+        if (RemoveOnDeath && CurrentAnimation.AnimationName == DeathAnimationName && CurrentAnimation.AnimationTimer <= 0 && CurrentState == ActionState.Death)
         {
             this.gameObject.SetActive(false);
         }
@@ -260,7 +261,10 @@ public class StateManager : MonoBehaviour
     {
         UpdateRuntimeValues();
         RemoveEntity();
-        StartCoroutine(DetermineCurrentAnimation());
+        if (this.gameObject.activeSelf)
+        {
+            StartCoroutine(DetermineCurrentAnimation());
+        }
         ManageTimers();
     }
 }
