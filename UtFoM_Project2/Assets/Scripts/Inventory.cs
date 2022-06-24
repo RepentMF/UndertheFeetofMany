@@ -50,6 +50,38 @@ public class Inventory : MonoBehaviour
 		EquippedWeapon = weapon;
 	}
 
+	public void ChangeWeaponForward()
+	{
+		if (WeaponsList.Count != 1)
+		{
+			int weaponIndex = WeaponsList.IndexOf(EquippedWeapon);
+			if (weaponIndex < WeaponsList.Count - 1) // less than total number of weapons
+			{
+				EquippedWeapon = WeaponsList[weaponIndex +  1];
+			}
+			else // the total number of weapons
+			{
+				EquippedWeapon = WeaponsList[0];
+			}
+		}
+	}
+
+	public void ChangeWeaponBack()
+	{
+		if (WeaponsList.Count != 1)
+		{
+			int weaponIndex = WeaponsList.IndexOf(EquippedWeapon);
+			if (weaponIndex > 0) // greater than 0
+			{
+				EquippedWeapon = WeaponsList[weaponIndex -  1];
+			}
+			else // index 0
+			{
+				EquippedWeapon = WeaponsList[WeaponsList.Count - 1];
+			}
+		}
+	}
+
     // Start is called before the first frame update
     void Start()
     {

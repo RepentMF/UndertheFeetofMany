@@ -7,7 +7,7 @@ public enum Status
 {
 	Leech,
 	Poison,
-	Burn,
+	Bleed,
 	Struggle,
 	Exhaust
 }
@@ -199,7 +199,7 @@ public class StatusMod : MonoBehaviour
 							StatsScript.CurrentHealth = StatsScript.MaxHealth;
 						}
 						break;
-					case Status.Burn:
+					case Status.Bleed:
 						StatsScript.DamageHealth(StatusEntry.Intensity);
 						break;
 					case Status.Struggle:

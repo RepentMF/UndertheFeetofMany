@@ -348,7 +348,7 @@ public class Stats : MonoBehaviour
         UpdateRuntimeValues();
         InflictExhaust();
         // if (!running && inTown)
-            RegenStamina();
+        //    RegenStamina();
         KillEntity();
     }
 }

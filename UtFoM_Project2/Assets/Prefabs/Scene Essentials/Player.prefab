@@ -1,5 +1,198 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &140675904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 140675905}
+  - component: {fileID: 140675906}
+  m_Layer: 0
+  m_Name: Player Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &140675905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140675904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 660729248335287817}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &140675906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140675904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 1
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.735
+  m_Color: {r: 0.9333334, g: 0.78823537, b: 0.49803925, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeIntensityEnabled: 0
+  m_ApplyToSortingLayers: 00000000d30c117205f53828a9b20981ff32e3f70fd0c4f9077ad392
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowIntensityEnabled: 0
+  m_ShadowIntensity: 0.216
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_Vertices:
+  - position: {x: 0.9985302, y: 0.9985302, z: 0}
+    color: {r: 0.70710677, g: 0.70710677, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: 0.9985302, y: 0.9985302, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.9985302, y: 0.9985302, z: 0}
+    color: {r: -0.70710677, g: 0.70710677, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.9985302, y: 0.9985302, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.99853003, y: -0.9985304, z: 0}
+    color: {r: -0.70710665, g: -0.7071069, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.99853003, y: -0.9985304, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: 0.99853003, y: -0.9985304, z: 0}
+    color: {r: 0.70710665, g: -0.7071069, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: 0.99853003, y: -0.9985304, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: 0, y: 0, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  m_Triangles: 030001000800020000000100030002000100050003000800040002000300050004000300070005000800060004000500070006000500010007000800000006000700010000000700
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1.25
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &1191717082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1191717083}
+  - component: {fileID: 1191717084}
+  m_Layer: 6
+  m_Name: Player Minimap Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1191717083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191717082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.03, y: -0.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 660729248335287817}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1191717084
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191717082}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f,
+    type: 3}
+  m_Color: {r: 0.4441048, g: 0.5849056, b: 0.22347811, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &237400680178312472
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,6 +203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4738209328039800666}
   - component: {fileID: 3685783627883306831}
+  - component: {fileID: 1952962753}
   m_Layer: 0
   m_Name: right_hitbox3
   m_TagString: Untagged
@@ -56,14 +250,44 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.1902051, y: -0.8427973}
-      - {x: 1.3183124, y: -1.0167532}
-      - {x: 1.5348439, y: -1.0195713}
-      - {x: 1.6703236, y: -0.83121777}
-      - {x: 1.699779, y: -0.4778738}
-      - {x: 1.5624647, y: -0.26529598}
-      - {x: 1.3181219, y: -0.24229813}
-      - {x: 1.2102501, y: -0.40056705}
+    - - {x: -2.0197706, y: -1.1303219}
+      - {x: -1.8632067, y: -1.2827761}
+      - {x: -1.8125297, y: -1.2840971}
+      - {x: -1.6054441, y: -1.1113367}
+      - {x: -1.3038719, y: -1.0534822}
+      - {x: -1.3057173, y: -0.9957351}
+      - {x: -1.5609797, y: -0.9216208}
+      - {x: -1.5875944, y: -0.56463665}
+      - {x: -1.6950034, y: -0.16335283}
+      - {x: -1.7466979, y: -0.17438424}
+      - {x: -1.8422934, y: -0.35098404}
+      - {x: -1.8652477, y: 0.16913435}
+      - {x: -1.9262432, y: 0.16663067}
+      - {x: -1.988862, y: -0.14649835}
+      - {x: -2.0326, y: -0.8980575}
+      - {x: -2.2500129, y: -1.0000532}
+      - {x: -2.2487705, y: -1.0608945}
+--- !u!114 &1952962753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237400680178312472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 180, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight4
 --- !u!1 &403297896185704817
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,6 +298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 775532177701584798}
   - component: {fileID: 3339819147531626986}
+  - component: {fileID: 575266956}
   m_Layer: 0
   m_Name: left_hitbox3
   m_TagString: Untagged
@@ -108,7 +333,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.52, y: 0.31}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -120,16 +345,36 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.44394588, y: -0.30465126}
-      - {x: -0.8723445, y: -0.4143877}
-      - {x: -0.87549305, y: -0.37165642}
-      - {x: -0.9388323, y: -0.37257957}
-      - {x: -0.9405794, y: -0.56844425}
-      - {x: -0.61431503, y: -0.75425816}
-      - {x: -0.30219412, y: -0.38712215}
-      - {x: -0.30251026, y: -0.44008636}
-      - {x: -0.3107581, y: -0.44093037}
-      - {x: -0.31488085, y: -0.31053638}
+    - - {x: -0.5293213, y: -0.6742088}
+      - {x: -0.5343343, y: -0.41185692}
+      - {x: 0.20452961, y: -0.32954416}
+      - {x: 0.19363874, y: -0.48773402}
+      - {x: 0.28066605, y: -0.5041106}
+      - {x: 0.39391053, y: -0.71191305}
+      - {x: -0.19335687, y: -1.1709521}
+      - {x: -0.3653632, y: -1.1720637}
+      - {x: -0.4786112, y: -0.998831}
+--- !u!114 &575266956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403297896185704817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordLeft1
 --- !u!1 &416514523605788565
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,6 +385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7687201359199596188}
   - component: {fileID: 1634354996710829570}
+  - component: {fileID: 1549586137}
   m_Layer: 0
   m_Name: down_hitbox4
   m_TagString: Untagged
@@ -186,10 +432,45 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.4807308, y: -0.42776012}
-      - {x: 1.1334596, y: -0.2419939}
-      - {x: 0.8660207, y: -0.83531284}
-      - {x: 1.2068434, y: -1.030303}
+    - - {x: 1.5379194, y: 0.11719005}
+      - {x: 1.641319, y: -0.027251065}
+      - {x: 1.6556393, y: -0.041259468}
+      - {x: 1.9828404, y: -0.2480483}
+      - {x: 2.0653937, y: 0.10859555}
+      - {x: 1.6096523, y: 0.87673163}
+      - {x: 0.50456095, y: 1.4260924}
+      - {x: -0.464374, y: 1.3823477}
+      - {x: -0.96823996, y: 0.9333208}
+      - {x: -1.0013413, y: 0.67145455}
+      - {x: -1.0019305, y: 0.28340507}
+      - {x: -0.8314191, y: 0.1813154}
+      - {x: -0.5976914, y: 0.15923196}
+      - {x: -0.44427675, y: 0.57523143}
+      - {x: -0.54099387, y: 0.7329178}
+      - {x: -0.1041314, y: 0.8693858}
+      - {x: 0.44726312, y: 0.80682236}
+      - {x: 1.2233005, y: 0.46657103}
+--- !u!114 &1549586137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416514523605788565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerDown1
 --- !u!1 &483442467345268280
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,9 +524,10 @@ GameObject:
   - component: {fileID: 8332205668163415030}
   - component: {fileID: -7642948778667013698}
   - component: {fileID: 5829869062835696444}
+  - component: {fileID: 861862747}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: P1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -266,6 +548,8 @@ Transform:
   - {fileID: 4875993485730015053}
   - {fileID: 7286720449100666141}
   - {fileID: 8160814596828108999}
+  - {fileID: 140675905}
+  - {fileID: 1191717083}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -310,13 +594,12 @@ SpriteRenderer:
   m_SortingLayerID: -2130070871
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8284859347849952574, guid: a649072e1e8c9054bb4c0488990b55aa,
-    type: 3}
+  m_Sprite: {fileID: 770156636147851783, guid: 7aeab01185562b54699c3e37721a875b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.25, y: 2.25}
+  m_Size: {x: 4.6666665, y: 4.6666665}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -334,13 +617,13 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.4
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &660729248335287823
@@ -353,15 +636,15 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 0e3d2705266db98458c376ab752fbc1a, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.47249413}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.25, y: 2.25}
-    newSize: {x: 2.25, y: 2.25}
+    oldSize: {x: 2.7777777, y: 2.3888888}
+    newSize: {x: 4.6666665, y: 4.6666665}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -398,21 +681,21 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.56567955}
+  m_Offset: {x: 0.000000052154064, y: -0.56567955}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.25, y: 2.25}
-    newSize: {x: 2.25, y: 2.25}
+    oldSize: {x: 2.7777777, y: 2.3888888}
+    newSize: {x: 4.6666665, y: 4.6666665}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7603084, y: 0.88474464}
+  m_Size: {x: 0.4999534, y: 0.88474464}
   m_EdgeRadius: 0
 --- !u!114 &8160814597243337161
 MonoBehaviour:
@@ -500,7 +783,6 @@ MonoBehaviour:
   KeyItemsList: []
   HasMap: 0
   HasGem: 0
-  ParticleSystemScript: {fileID: 0}
 --- !u!114 &8332205668163415030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,9 +801,9 @@ MonoBehaviour:
   BaseStaminaRegen: 1
   OriginalMana: 20
   BaseManaRegen: 0
-  OriginalLifeblood: 0
+  OriginalLifeblood: 30
   BaseLifebloodRegen: 0
-  DisplayRuntimeValues: 0
+  DisplayRuntimeValues: 1
   RuntimeIsInvulnerable: 0
   RuntimeComboCount: 0
   RuntimeMaxHealth: 0
@@ -550,12 +832,13 @@ MonoBehaviour:
   MoveAnimationTimer: -1
   DodgeAnimationName: Dodging
   DodgeAnimationTimer: -1
-  DodgeAnimationBufferThreshold: 0
+  DodgeAnimationBufferThreshold: 0.3
   StaggerAnimationName: Stagger
   JuggleAnimationName: Stagger
   FreefallAnimationName: Stagger
   DeathAnimationName: death
   DeathAnimationTimer: -1
+  RemoveOnDeath: 1
   DisplayRuntimeValues: 0
   RuntimeCurrentState: 0
   RuntimeCurrentAnimationName: 
@@ -580,6 +863,20 @@ MonoBehaviour:
   VoltTrapObject: {fileID: 0}
   SparkTriggerObject: {fileID: 0}
   FlurryFieldObject: {fileID: 0}
+--- !u!114 &861862747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660729248335287819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 268db093e507ec840a0d16046329d22a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParticleSystemScript: {fileID: 3884911629036381786, guid: 9502b863cbb057846bfcf08ba07fd3a7,
+    type: 3}
 --- !u!1 &660729248390061051
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,6 +887,7 @@ GameObject:
   m_Component:
   - component: {fileID: 660729248390061048}
   - component: {fileID: 660729248390061049}
+  - component: {fileID: 627484374}
   m_Layer: 0
   m_Name: right_hitbox1
   m_TagString: Untagged
@@ -636,16 +934,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.9432318, y: -0.50001526}
-      - {x: 0.93566513, y: 0.06558323}
-      - {x: 0.43951225, y: 0.062152863}
-      - {x: 0.43189907, y: -0.06508541}
-      - {x: 0.56545544, y: -0.060168266}
-      - {x: 0.92956805, y: -0.49157143}
-      - {x: 0.9370661, y: -0.5036335}
-      - {x: 0.9355116, y: -0.49060345}
-      - {x: 0.94529223, y: -0.48944473}
-      - {x: 0.95449066, y: -0.48093605}
+    - - {x: -0.05133999, y: -0.18882701}
+      - {x: 0.18186328, y: -0.4710562}
+      - {x: 0.44700184, y: -0.47660157}
+      - {x: 0.715961, y: -0.18198307}
+      - {x: 0.7735612, y: -0.033960678}
+      - {x: 0.78454334, y: 0.4217262}
+      - {x: 0.5640284, y: 0.53181857}
+      - {x: 0.44613147, y: 0.2506233}
+      - {x: 0.27478868, y: 0.024624936}
+      - {x: -0.0041995347, y: -0.0842496}
+--- !u!114 &627484374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660729248390061051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.25
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: -1, y: -1}
+  StaggerAmount: 0
+  StateToInflict: 8
+  StatusesToInflict: []
+  HitboxName: KnifeRight
 --- !u!1 &660729248739535692
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 660729248739535693}
   - component: {fileID: 660729248739535730}
+  - component: {fileID: 1590653711}
   m_Layer: 0
   m_Name: left_hitbox1
   m_TagString: Untagged
@@ -702,14 +1022,39 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.87296534, y: 0.49873066}
-      - {x: -0.8774595, y: -0.062348366}
-      - {x: -0.88090754, y: -0.058167458}
-      - {x: -0.8762326, y: -0.060585022}
-      - {x: -0.8894472, y: -0.060570717}
-      - {x: -0.38401604, y: -0.06448841}
-      - {x: -0.37304163, y: 0.06444454}
-      - {x: -0.5479255, y: 0.06352329}
+    - - {x: -0.69007844, y: 0.49808928}
+      - {x: -0.7712722, y: 0.4208311}
+      - {x: -0.7802842, y: 0.024605304}
+      - {x: -0.73216236, y: -0.1776634}
+      - {x: -0.454051, y: -0.4666462}
+      - {x: -0.17157036, y: -0.48233044}
+      - {x: 0.0433124, y: -0.19259782}
+      - {x: 0.06324817, y: -0.0943535}
+      - {x: -0.25135937, y: -0.007880777}
+      - {x: -0.46676487, y: 0.2582339}
+      - {x: -0.5511382, y: 0.5258764}
+      - {x: -0.6153863, y: 0.5249555}
+--- !u!114 &1590653711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660729248739535692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.25
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: -1, y: -1}
+  StaggerAmount: 0
+  StateToInflict: 8
+  StatusesToInflict: []
+  HitboxName: KnifeLeft
 --- !u!1 &660729249673183186
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +1065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 660729249673183187}
   - component: {fileID: 660729249673183184}
+  - component: {fileID: 343473048}
   m_Layer: 0
   m_Name: up_hitbox1
   m_TagString: Untagged
@@ -766,12 +1112,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.18989515, y: 1.0605211}
-      - {x: 0.20089865, y: 0.5618801}
-      - {x: 0.31661272, y: 0.5646105}
-      - {x: 0.31257486, y: 0.7584791}
-      - {x: 0.7549219, y: 1.0631523}
-      - {x: 0.20050526, y: 1.0542698}
+    - - {x: -0.10228754, y: 0.78395027}
+      - {x: -0.63008165, y: 0.362041}
+      - {x: -0.54106355, y: 0.27167436}
+      - {x: 0.3429683, y: 0.39000115}
+      - {x: 0.6126913, y: 0.3895103}
+      - {x: 0.7168972, y: 0.33187115}
+      - {x: 1.0110519, y: 0.57008}
+      - {x: 0.9989187, y: 0.7851395}
+--- !u!114 &343473048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660729249673183186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.25
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: -1, y: -1}
+  StaggerAmount: 0
+  StateToInflict: 8
+  StatusesToInflict: []
+  HitboxName: KnifeUp
 --- !u!1 &660729249747219251
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,6 +1151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 660729249747219248}
   - component: {fileID: 660729249747219249}
+  - component: {fileID: 844805256}
   m_Layer: 0
   m_Name: down_hitbox1
   m_TagString: Untagged
@@ -828,11 +1198,36 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.31244612, y: -0.5574808}
-      - {x: -0.31182528, y: -0.375}
-      - {x: -0.18550062, y: -0.375}
-      - {x: -0.1889143, y: -0.875}
-      - {x: -0.7573767, y: -0.875}
+    - - {x: -0.6136012, y: -0.5845882}
+      - {x: -0.4828227, y: -0.52376884}
+      - {x: -0.009719044, y: -0.58150303}
+      - {x: 0.6940491, y: -0.41706544}
+      - {x: 0.85196114, y: -0.56031513}
+      - {x: 0.6729225, y: -0.74851257}
+      - {x: 0.11872515, y: -0.9678501}
+      - {x: -0.78009236, y: -0.9749178}
+      - {x: -0.78361374, y: -0.7495087}
+--- !u!114 &844805256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660729249747219251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.25
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: -1, y: -1}
+  StaggerAmount: 0
+  StateToInflict: 8
+  StatusesToInflict: []
+  HitboxName: KnifeDown
 --- !u!1 &683005112116751810
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,6 +1238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3352082788326006085}
   - component: {fileID: 321228180176518170}
+  - component: {fileID: 1826951603}
   m_Layer: 0
   m_Name: down_hitbox3
   m_TagString: Untagged
@@ -877,7 +1273,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.14, y: -0.1}
+  m_Offset: {x: -0.01, y: -0.18}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -889,14 +1285,31 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.58034146, y: -0.47192517}
-      - {x: -0.58606017, y: -0.6348785}
-      - {x: -0.5817653, y: -0.957827}
-      - {x: -0.452119, y: -0.9601892}
-      - {x: -0.45813715, y: -0.5988859}
-      - {x: -0.45563662, y: -0.60231626}
-      - {x: -0.45707, y: -0.40691033}
-      - {x: -0.58215487, y: -0.41078702}
+    - - {x: 0.3316158, y: -1.8624563}
+      - {x: 0.13951294, y: -1.2586639}
+      - {x: 0.28095937, y: -0.8313497}
+      - {x: 0.33298588, y: -0.9873648}
+--- !u!114 &1826951603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683005112116751810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: -135}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.3
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordDown3
 --- !u!1 &752341626698180904
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,6 +1320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 513737330887355928}
   - component: {fileID: 1255901799377191260}
+  - component: {fileID: 649445067}
   m_Layer: 0
   m_Name: right_hitbox2
   m_TagString: Untagged
@@ -941,7 +1355,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 0.05}
+  m_Offset: {x: 0.55, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -953,18 +1367,36 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.7953073, y: 0.071904376}
-      - {x: 0.5540105, y: -0.16580372}
-      - {x: 0.46095076, y: -0.15375309}
-      - {x: 0.45808402, y: -0.14600067}
-      - {x: 0.45206824, y: -0.15240459}
-      - {x: 0.39877787, y: -0.15544777}
-      - {x: 0.33518353, y: -0.30076867}
-      - {x: 0.57997596, y: -0.41607076}
-      - {x: 0.839394, y: -0.4260233}
-      - {x: 0.833151, y: -0.25697118}
-      - {x: 0.9127189, y: -0.22958736}
-      - {x: 0.89710844, y: 0.030817222}
+    - - {x: 0.588024, y: 0.55347145}
+      - {x: 0.4453926, y: 0.56363696}
+      - {x: 0.2000454, y: 0.444397}
+      - {x: -0.18137673, y: 0.06485808}
+      - {x: 0.0149078965, y: -0.06165432}
+      - {x: 0.037382558, y: -0.43787074}
+      - {x: 0.75282747, y: -0.25007093}
+      - {x: 0.77763027, y: 0.034554094}
+      - {x: 0.63831466, y: 0.48736936}
+--- !u!114 &649445067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752341626698180904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordRight2
 --- !u!1 &818577925901830195
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,6 +1407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2848923096388257816}
   - component: {fileID: 6653244872445524135}
+  - component: {fileID: 523875513}
   m_Layer: 0
   m_Name: right_hitbox1
   m_TagString: Untagged
@@ -1009,7 +1442,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.135, y: 0}
+  m_Offset: {x: 0.54, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1021,16 +1454,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.7908623, y: 0.5665684}
-      - {x: 0.68806505, y: 0.6496649}
-      - {x: 0.5410919, y: 0.25261402}
-      - {x: 0.3684125, y: 0.12537575}
-      - {x: 0.47022486, y: 0.016016006}
-      - {x: 0.48515773, y: 0.01632595}
-      - {x: 0.49265623, y: 0.023309708}
-      - {x: 0.4911015, y: 0.01729393}
-      - {x: 0.6215074, y: 0.07559109}
-      - {x: 0.79577255, y: 0.128541}
+    - - {x: 0.588024, y: 0.55347145}
+      - {x: 0.4453926, y: 0.56363696}
+      - {x: 0.20004539, y: 0.444397}
+      - {x: -0.18137673, y: 0.06485808}
+      - {x: 0.009671733, y: -0.22921376}
+      - {x: 0.030585855, y: -1.1679534}
+      - {x: 0.40293807, y: -1.2207819}
+      - {x: 0.65857536, y: -0.82605654}
+      - {x: 0.77763027, y: 0.034554094}
+      - {x: 0.63831466, y: 0.48736936}
+--- !u!114 &523875513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818577925901830195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordRight2
 --- !u!1 &880185196861617158
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,6 +1495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6316901959568546603}
   - component: {fileID: 7453912285342118319}
+  - component: {fileID: 2007729327}
   m_Layer: 0
   m_Name: up_hitbox1
   m_TagString: Untagged
@@ -1087,12 +1542,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.18989515, y: 1.0605211}
-      - {x: 0.18820143, y: 0.5618798}
-      - {x: 0.31026363, y: 0.5646102}
-      - {x: 0.31257486, y: 0.7584791}
-      - {x: 0.76127076, y: 1.0441061}
-      - {x: 0.20050526, y: 1.0542698}
+    - - {x: 0.064411536, y: 1.3234391}
+      - {x: -0.67225754, y: 0.9204044}
+      - {x: -0.71313256, y: 0.55149657}
+      - {x: -0.21600729, y: 0.36989143}
+      - {x: 0.29908934, y: 0.7129076}
+      - {x: 0.6867145, y: 0.6482659}
+      - {x: 0.87426335, y: 0.50153655}
+      - {x: 1.3468609, y: 1.0919096}
+      - {x: 1.3371931, y: 1.2608484}
+      - {x: 0.76219386, y: 1.4546223}
+--- !u!114 &2007729327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880185196861617158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordUp1
 --- !u!1 &901749679120344927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,6 +1583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6955377086564558978}
   - component: {fileID: 929397874003392149}
+  - component: {fileID: 1081402676}
   m_Layer: 0
   m_Name: up_hitbox3
   m_TagString: Untagged
@@ -1149,10 +1630,41 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.25480795, y: 0.678772}
-      - {x: -0.24153566, y: 0.06461334}
-      - {x: 0.2429452, y: 0.07136631}
-      - {x: 0.24444962, y: 0.6807833}
+    - - {x: 0.17228426, y: 1.0416594}
+      - {x: 0.07350832, y: 1.7170569}
+      - {x: -0.05422543, y: 1.0172551}
+      - {x: -0.06404695, y: 0.49830234}
+      - {x: -0.38751537, y: 0.43335587}
+      - {x: -0.3946819, y: 0.3999219}
+      - {x: -0.12966901, y: 0.37641776}
+      - {x: -0.066025935, y: 0.2401232}
+      - {x: 0.3683093, y: 0.24687603}
+      - {x: 0.3770791, y: 0.3548706}
+      - {x: 0.6446784, y: 0.39598012}
+      - {x: 0.6451654, y: 0.4422356}
+      - {x: 0.40107, y: 0.47127005}
+      - {x: 0.36981368, y: 1.00673}
+--- !u!114 &1081402676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901749679120344927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.45
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: HammerUp4
 --- !u!1 &1020518887782208401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8619141553448032501}
   - component: {fileID: 1637899942692800500}
+  - component: {fileID: 1056454203}
   m_Layer: 0
   m_Name: left_hitbox2
   m_TagString: Untagged
@@ -1209,14 +1722,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.1945286, y: -0.15563393}
-      - {x: -1.2984891, y: 0.0023593903}
-      - {x: -1.5576663, y: 0.0073719025}
-      - {x: -1.696322, y: -0.12711906}
-      - {x: -1.6930366, y: -0.6287174}
-      - {x: -1.5562425, y: -0.7579813}
-      - {x: -1.3784165, y: -0.7591839}
-      - {x: -1.1971908, y: -0.5645752}
+    - - {x: -1.6812829, y: -0.67664003}
+      - {x: -2.0611057, y: -0.5955666}
+      - {x: -2.1001363, y: 0.12011425}
+      - {x: -2.2379816, y: 0.118269585}
+      - {x: -2.2561262, y: -0.7638502}
+      - {x: -2.1957443, y: -1.0572553}
+      - {x: -2.0342264, y: -1.2524476}
+      - {x: -1.716302, y: -1.2371683}
+--- !u!114 &1056454203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020518887782208401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: -180, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft4
 --- !u!1 &1095862955724533492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,6 +1846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3144425531359071005}
   - component: {fileID: 3650308082256826912}
+  - component: {fileID: 1341626708}
   m_Layer: 0
   m_Name: up_hitbox2
   m_TagString: Untagged
@@ -1346,7 +1881,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.55, y: 1.3}
+  m_Offset: {x: -1.55, y: 1.55}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1358,14 +1893,33 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.3054307, y: -0.10981345}
-      - {x: 1.4365041, y: -0.23010325}
-      - {x: 1.6818454, y: -0.2362678}
-      - {x: 1.8023646, y: -0.15335822}
-      - {x: 1.8081048, y: 0.31693745}
-      - {x: 1.688406, y: 0.44981384}
-      - {x: 1.42346, y: 0.4402876}
-      - {x: 1.3134403, y: 0.2960348}
+    - - {x: 1.4459063, y: -1.2476659}
+      - {x: 1.449769, y: -1.4531838}
+      - {x: 1.5180105, y: -1.7285595}
+      - {x: 1.8304468, y: -1.7369896}
+      - {x: 1.9553424, y: 0.057317972}
+      - {x: 1.4399133, y: 0.0589993}
+--- !u!114 &1341626708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393447855422044584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerUp3
 --- !u!1 &1404187971252114970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,6 +1964,7 @@ GameObject:
   m_Component:
   - component: {fileID: 892872173558419544}
   - component: {fileID: 4535558781651491498}
+  - component: {fileID: 1237046254}
   m_Layer: 0
   m_Name: right_hitbox2
   m_TagString: Untagged
@@ -1456,16 +2011,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.8714917, y: 0.25601673}
-      - {x: 0.68733335, y: 0.25321102}
-      - {x: 0.6768069, y: 0.18907738}
-      - {x: 0.38223267, y: 0.1777277}
-      - {x: 0.44956732, y: 0.0667572}
-      - {x: 0.44946027, y: 0.054759026}
-      - {x: 0.69425297, y: 0.053732872}
-      - {x: 0.81410503, y: -0.06016159}
-      - {x: 0.9508107, y: -0.06452179}
-      - {x: 0.87171364, y: 0.2530222}
+    - - {x: -0.05133999, y: -0.18882701}
+      - {x: 0.18186328, y: -0.4710562}
+      - {x: 0.44700184, y: -0.47660157}
+      - {x: 0.715961, y: -0.18198307}
+      - {x: 0.7735612, y: -0.033960678}
+      - {x: 0.44613147, y: 0.2506233}
+      - {x: 0.27478868, y: 0.024624936}
+      - {x: -0.0041995347, y: -0.0842496}
+--- !u!114 &1237046254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441222463738251149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.25
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: -1, y: -1}
+  StaggerAmount: 0
+  StateToInflict: 8
+  StatusesToInflict: []
+  HitboxName: KnifeRight
 --- !u!1 &1694103079736477268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1522,6 +2096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2827296572048732358}
   - component: {fileID: 3327938553780493511}
+  - component: {fileID: 1060839086}
   m_Layer: 0
   m_Name: up_hitbox3
   m_TagString: Untagged
@@ -1556,7 +2131,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.06}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1568,12 +2143,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.58361626, y: 0.79395294}
-      - {x: -0.202322, y: 0.4104662}
-      - {x: -0.11337042, y: 0.5346985}
-      - {x: -0.25708055, y: 0.7049036}
-      - {x: -0.19242954, y: 1.0585327}
-      - {x: -0.37500858, y: 1.0666838}
+    - - {x: 0.70893806, y: 1.4432001}
+      - {x: 0.48432705, y: 0.7188829}
+      - {x: 0.6867145, y: 0.6482659}
+      - {x: 0.87426335, y: 0.50153655}
+      - {x: 1.3468609, y: 1.0919096}
+      - {x: 1.3371931, y: 1.2608484}
+      - {x: 1.084866, y: 1.3948685}
+--- !u!114 &1060839086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787193050553356222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordUp1
 --- !u!1 &1837930044415049490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,6 +2181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7651262541638775321}
   - component: {fileID: 4001473982118481110}
+  - component: {fileID: 758681387}
   m_Layer: 0
   m_Name: left_hitbox4
   m_TagString: Untagged
@@ -1638,6 +2236,27 @@ PolygonCollider2D:
       - {x: -1.3481693, y: -1.001009}
       - {x: -1.1906738, y: -0.87729836}
       - {x: -1.1871743, y: -0.38328934}
+--- !u!114 &758681387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837930044415049490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: -180, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft4
 --- !u!1 &1892498267719476712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,6 +2571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7630226499525073348}
   - component: {fileID: 6420428528812159935}
+  - component: {fileID: 509590620}
   m_Layer: 0
   m_Name: up_hitbox3
   m_TagString: Untagged
@@ -1986,7 +2606,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.09, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1998,10 +2618,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.30403852, y: 1.0626383}
-      - {x: 0.42370653, y: 1.066412}
-      - {x: 0.44369793, y: 0.5192766}
-      - {x: 0.31223774, y: 0.5171118}
+    - - {x: 0.07189928, y: 1.1101829}
+      - {x: 0.15136796, y: 1.3990555}
+      - {x: 0.24920137, y: 1.4644758}
+      - {x: 0.3531007, y: 1.1472279}
+      - {x: 0.27810118, y: 0.54124296}
+      - {x: 0.11563866, y: 0.5417917}
+      - {x: 0.05633893, y: 0.90283334}
+--- !u!114 &509590620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2392160231990561263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: 135}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.4
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordUp3
 --- !u!1 &2450202313943677473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2063,6 +2707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8086329873514878765}
   - component: {fileID: 8913252277770522881}
+  - component: {fileID: 2096825521}
   m_Layer: 0
   m_Name: left_hitbox4
   m_TagString: Untagged
@@ -2113,6 +2758,27 @@ PolygonCollider2D:
       - {x: -1.2776089, y: 1.2013655}
       - {x: -1.1103992, y: 0.7638655}
       - {x: -0.48254442, y: 1.0527287}
+--- !u!114 &2096825521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2455052324043818338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft2
 --- !u!1 &2471334925353779644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2123,6 +2789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4830678637889850808}
   - component: {fileID: 70252055617071525}
+  - component: {fileID: 728547856}
   m_Layer: 0
   m_Name: right_hitbox3
   m_TagString: Untagged
@@ -2169,17 +2836,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.74645996, y: 0.6857481}
-      - {x: 0.63211966, y: 0.68341064}
-      - {x: 0.37545872, y: 0.42814636}
-      - {x: 0.37289214, y: 0.31986427}
-      - {x: 0.8065314, y: 0.31514168}
-      - {x: 0.8129263, y: 0.25636387}
-      - {x: 0.8844085, y: 0.25565052}
-      - {x: 0.88653874, y: 0.25928307}
-      - {x: 0.8952255, y: 0.26907444}
-      - {x: 0.88174963, y: 0.26809216}
-      - {x: 0.87794185, y: 0.26863098}
+    - - {x: -0.05133999, y: -0.18882701}
+      - {x: 0.18186328, y: -0.4710562}
+      - {x: 0.44700184, y: -0.47660157}
+      - {x: 0.5620966, y: -0.35642737}
+      - {x: 0.56915236, y: -0.15607567}
+      - {x: 0.27478868, y: 0.024624936}
+      - {x: -0.0041995347, y: -0.0842496}
+--- !u!114 &728547856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2471334925353779644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.25
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: -1, y: -1}
+  StaggerAmount: 0
+  StateToInflict: 8
+  StatusesToInflict: []
+  HitboxName: KnifeRight
 --- !u!1 &2534166609833156020
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,6 +2874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 242627954208105156}
   - component: {fileID: 3715316957576796950}
+  - component: {fileID: 876024116}
   m_Layer: 0
   m_Name: right_hitbox2
   m_TagString: Untagged
@@ -2224,7 +2909,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 0.05}
+  m_Offset: {x: 0.5, y: 0.31}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2236,18 +2921,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.8714917, y: 0.25601673}
-      - {x: 0.6619388, y: 0.26590842}
-      - {x: 0.6450633, y: 0.19542618}
-      - {x: 0.5406171, y: 0.18413182}
-      - {x: 0.40127864, y: 0.12693806}
-      - {x: 0.42417255, y: -0.015776444}
-      - {x: 0.45580903, y: -0.0023792274}
-      - {x: 0.59902227, y: 0.07277985}
-      - {x: 0.7695583, y: 0.05647869}
-      - {x: 0.81410503, y: -0.06016159}
-      - {x: 0.9762057, y: -0.058172036}
-      - {x: 0.89710844, y: 0.25937098}
+    - - {x: 0.6280578, y: -0.63964313}
+      - {x: 0.6337678, y: -0.39294976}
+      - {x: 0.51533973, y: -0.20579024}
+      - {x: -0.062502086, y: 0.011057487}
+      - {x: -0.13928625, y: -0.48625618}
+      - {x: -0.3402881, y: -0.7198575}
+      - {x: 0.08892464, y: -1.0658753}
+      - {x: 0.26916265, y: -1.1729423}
+      - {x: 0.4211611, y: -1.1708152}
+      - {x: 0.5456684, y: -0.99458504}
+--- !u!114 &876024116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2534166609833156020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordRight1
 --- !u!1 &2534202792211798289
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,6 +2962,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3487537428087527372}
   - component: {fileID: 2997924611909215430}
+  - component: {fileID: 157475525}
   m_Layer: 0
   m_Name: down_hitbox3
   m_TagString: Untagged
@@ -2304,14 +3009,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.0045666695, y: -0.2473402}
-      - {x: -0.0064673424, y: -0.619236}
-      - {x: -0.060682297, y: -0.7533035}
-      - {x: 0.116122246, y: -0.7514715}
-      - {x: 0.24864769, y: -0.6257467}
-      - {x: 0.3794942, y: -0.62362766}
-      - {x: 0.37386632, y: -0.50134945}
-      - {x: 0.12099838, y: -0.24594688}
+    - - {x: -0.6136012, y: -0.5845882}
+      - {x: -0.4828227, y: -0.52376884}
+      - {x: -0.009719044, y: -0.58150303}
+      - {x: 0.13779145, y: -0.7083669}
+      - {x: 0.167829, y: -0.9095393}
+      - {x: -0.058698535, y: -0.97125846}
+      - {x: -0.77472746, y: -0.9812124}
+      - {x: -0.78361374, y: -0.7495087}
+--- !u!114 &157475525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2534202792211798289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.25
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: -1, y: -1}
+  StaggerAmount: 0
+  StateToInflict: 8
+  StatusesToInflict: []
+  HitboxName: KnifeDown
 --- !u!1 &2561476579130005715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2322,6 +3048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 217962569476789242}
   - component: {fileID: 7177162771047961051}
+  - component: {fileID: 504922534}
   m_Layer: 0
   m_Name: down_hitbox2
   m_TagString: Untagged
@@ -2356,7 +3083,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.06, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2368,14 +3095,32 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.22346544, y: -1.0366106}
-      - {x: 0.23709011, y: -0.5774317}
-      - {x: 0.12651443, y: -0.44760513}
-      - {x: -0.13242388, y: -0.43959904}
-      - {x: -0.24404716, y: -0.570899}
-      - {x: -0.24532032, y: -1.0167942}
-      - {x: -0.13314867, y: -1.1254177}
-      - {x: 0.123134136, y: -1.1331491}
+    - - {x: 0.074642666, y: -1.2181518}
+      - {x: 0.30947104, y: -1.3005111}
+      - {x: 0.34248364, y: 0.6461908}
+      - {x: 0.05268369, y: 0.63570243}
+      - {x: 0.06223032, y: -0.30290902}
+--- !u!114 &504922534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2561476579130005715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerDown3
 --- !u!1 &2610303182559232019
 GameObject:
   m_ObjectHideFlags: 0
@@ -2437,6 +3182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5784555397078907339}
   - component: {fileID: 7908695361962057348}
+  - component: {fileID: 1122424352}
   m_Layer: 0
   m_Name: right_hitbox2
   m_TagString: Untagged
@@ -2471,7 +3217,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.4}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2483,10 +3229,40 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.7367501, y: 0.18314648}
-      - {x: 1.3048735, y: 0.18223381}
-      - {x: 1.3164277, y: -0.44272995}
-      - {x: 1.7504895, y: -0.444273}
+    - - {x: 1.816765, y: -1.1266335}
+      - {x: 2.4110055, y: -0.46424186}
+      - {x: 2.3853164, y: 0.075919114}
+      - {x: 2.2073555, y: 0.28172588}
+      - {x: 1.9385011, y: 0.26961103}
+      - {x: 1.5668635, y: 0.049156763}
+      - {x: 1.3481057, y: 0.052536637}
+      - {x: 1.2804677, y: -0.13577333}
+      - {x: 1.3352082, y: -0.5810404}
+      - {x: 0.77188796, y: -0.8732796}
+      - {x: -0.06673333, y: -1.0755041}
+      - {x: -0.39845586, y: -1.3794312}
+      - {x: 0.8137884, y: -1.3809743}
+--- !u!114 &1122424352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2705690507892997653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight1
 --- !u!1 &2718851056128953759
 GameObject:
   m_ObjectHideFlags: 0
@@ -2497,6 +3273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5308388047474950930}
   - component: {fileID: 5957288506701471954}
+  - component: {fileID: 443665530}
   m_Layer: 0
   m_Name: up_hitbox3
   m_TagString: Untagged
@@ -2543,10 +3320,48 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.2547245, y: 0.9690857}
-      - {x: -0.9632344, y: 0.67083263}
-      - {x: -0.47746372, y: 1.1499901}
+    - - {x: -1.3521411, y: 1.2710769}
+      - {x: -1.8023349, y: 0.78542256}
+      - {x: -1.8931979, y: -0.14782256}
+      - {x: -1.3844371, y: -1.0719848}
+      - {x: -0.39246, y: -1.4857082}
+      - {x: 0.17763497, y: -1.4899168}
+      - {x: 0.49453726, y: -1.4231668}
+      - {x: 1.078205, y: -0.96158844}
+      - {x: 1.131386, y: -0.6111487}
+      - {x: 1.0045798, y: -0.60532427}
+      - {x: 1.0130093, y: -0.35022485}
+      - {x: 0.8122912, y: -0.2005105}
+      - {x: 0.5689519, y: -0.21516198}
+      - {x: 0.4473144, y: -0.56032956}
+      - {x: 0.48741812, y: -0.8031929}
+      - {x: 0.20210093, y: -0.9303261}
+      - {x: -0.11145875, y: -0.9253017}
+      - {x: -0.74541485, y: -0.76953495}
+      - {x: -1.3897915, y: -0.10809854}
+      - {x: -1.2484461, y: 0.6882589}
       - {x: -0.8000884, y: 1.4274807}
+--- !u!114 &443665530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2718851056128953759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerUp1
 --- !u!1 &2866033605075022101
 GameObject:
   m_ObjectHideFlags: 0
@@ -2557,6 +3372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7104113641004576641}
   - component: {fileID: 4681311560323377957}
+  - component: {fileID: 2141003181}
   m_Layer: 0
   m_Name: right_hitbox2
   m_TagString: Untagged
@@ -2603,10 +3419,42 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.7367501, y: 0.24558258}
-      - {x: 1.322712, y: 0.244668}
-      - {x: 1.307508, y: -0.3802948}
-      - {x: 1.7415695, y: -0.38183784}
+    - - {x: -0.19844295, y: -0.51287854}
+      - {x: -0.53189176, y: -0.5706274}
+      - {x: -1.0039707, y: -0.32997248}
+      - {x: -1.7293, y: 0.20761204}
+      - {x: -1.1371161, y: 0.5159467}
+      - {x: -1.2692676, y: 0.73010516}
+      - {x: -1.752523, y: 0.60064375}
+      - {x: -2.1632555, y: 0.24266288}
+      - {x: -2.0854187, y: -0.12273793}
+      - {x: -1.193862, y: -0.87457526}
+      - {x: -0.5962974, y: -1.0549905}
+      - {x: -0.09088969, y: -1.0605569}
+      - {x: 0.12593098, y: -0.9010497}
+      - {x: 0.27605563, y: -0.74109584}
+      - {x: 0.26822552, y: -0.5103847}
+--- !u!114 &2141003181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2866033605075022101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight2
 --- !u!1 &2916477008711674323
 GameObject:
   m_ObjectHideFlags: 0
@@ -2617,6 +3465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5354878933222606620}
   - component: {fileID: 2309242040113940733}
+  - component: {fileID: 2076279137}
   m_Layer: 0
   m_Name: left_hitbox3
   m_TagString: Untagged
@@ -2671,6 +3520,27 @@ PolygonCollider2D:
       - {x: -1.2380219, y: 0.7769203}
       - {x: -0.8841572, y: 1.0835276}
       - {x: -0.8737354, y: 1.316122}
+--- !u!114 &2076279137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2916477008711674323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft3
 --- !u!1 &2925166760680619690
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,6 +3551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7634053966054358507}
   - component: {fileID: 484942708085954745}
+  - component: {fileID: 1292820895}
   m_Layer: 0
   m_Name: left_hitbox1
   m_TagString: Untagged
@@ -2727,14 +3598,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.31777, y: -0.17703533}
-      - {x: -1.4501324, y: -0.30429745}
-      - {x: -1.684258, y: -0.3086748}
-      - {x: -1.8193865, y: -0.16132355}
-      - {x: -1.8121333, y: 0.2962265}
-      - {x: -1.6844954, y: 0.44128895}
-      - {x: -1.4350262, y: 0.4407711}
-      - {x: -1.2952752, y: 0.30508995}
+    - - {x: -1.7221825, y: 0.061279446}
+      - {x: -1.811215, y: 0.03512028}
+      - {x: -2.0670056, y: 0.28350103}
+      - {x: -2.0649228, y: 0.74860513}
+      - {x: -2.0071182, y: 0.9895053}
+      - {x: -1.713382, y: 1.2212276}
+      - {x: -0.8356288, y: 1.5312412}
+      - {x: -1.1334448, y: 1.0232491}
+      - {x: -1.5327644, y: 0.71865493}
+      - {x: -1.425265, y: 0.41341475}
+--- !u!114 &1292820895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2925166760680619690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: -180, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft4
 --- !u!1 &2965424696333080521
 GameObject:
   m_ObjectHideFlags: 0
@@ -2745,6 +3639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7704715063719657234}
   - component: {fileID: 1295207605047870437}
+  - component: {fileID: 646065651}
   m_Layer: 0
   m_Name: left_hitbox2
   m_TagString: Untagged
@@ -2779,7 +3674,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13, y: -0.06}
+  m_Offset: {x: -0.51, y: 0.31}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2791,16 +3686,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.80060685, y: 0.013949927}
-      - {x: -0.7517811, y: -0.02296013}
-      - {x: -0.7453772, y: -0.0555777}
-      - {x: -0.6708666, y: -0.078609884}
-      - {x: -0.45765603, y: 0.18090779}
-      - {x: -0.28925574, y: 0.18637234}
-      - {x: -0.23929179, y: 0.31513935}
-      - {x: -0.5053793, y: 0.4327312}
-      - {x: -0.7270385, y: 0.4320131}
-      - {x: -0.79992545, y: 0.24281746}
+    - - {x: -0.70646346, y: -0.2297304}
+      - {x: 0.02224958, y: -0.45914364}
+      - {x: 0.015897207, y: -0.12651336}
+      - {x: 0.13200733, y: -0.11042656}
+      - {x: 0.24979565, y: 0.041688688}
+      - {x: -0.1405836, y: 0.4399941}
+      - {x: -0.37856698, y: 0.56089616}
+      - {x: -0.5262077, y: 0.55382216}
+      - {x: -0.65179414, y: 0.39599943}
+      - {x: -0.69770086, y: 0.043841362}
+--- !u!114 &646065651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2965424696333080521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordLeft2
 --- !u!1 &2969173804719959162
 GameObject:
   m_ObjectHideFlags: 0
@@ -2811,6 +3727,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7414896431893948796}
   - component: {fileID: 2756114494452954174}
+  - component: {fileID: 1620886117}
   m_Layer: 0
   m_Name: down_hitbox1
   m_TagString: Untagged
@@ -2857,11 +3774,36 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.50764537, y: -1.0249329}
-      - {x: 0.9921198, y: -0.5882225}
-      - {x: 0.9872298, y: -0.57182217}
-      - {x: 1.28725, y: -0.8832016}
-      - {x: 0.78439546, y: -1.3178492}
+    - - {x: 1.3155794, y: -1.4435894}
+      - {x: 1.1608951, y: -1.2411753}
+      - {x: 1.1757407, y: -0.94812036}
+      - {x: 1.2149202, y: -0.8215472}
+      - {x: 1.3385628, y: -0.71739703}
+      - {x: 1.4550015, y: -0.72193}
+      - {x: 1.7210777, y: -0.94010216}
+      - {x: 1.7646656, y: -1.0447884}
+      - {x: 1.6097293, y: -1.4531498}
+--- !u!114 &1620886117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2969173804719959162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerDown2
 --- !u!1 &3080173472261096201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2872,6 +3814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7150745545991666571}
   - component: {fileID: 4540646507130029994}
+  - component: {fileID: 277824924}
   m_Layer: 0
   m_Name: down_hitbox1
   m_TagString: Untagged
@@ -2918,10 +3861,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.22660589, y: -0.87223434}
-      - {x: -0.23391533, y: -0.8672857}
-      - {x: -0.21916151, y: -0.24863815}
-      - {x: 0.23603964, y: -0.25755882}
+    - - {x: 0.38084787, y: 0.44249463}
+      - {x: 0.38698357, y: -0.123428494}
+      - {x: 0.22341752, y: -0.32353294}
+      - {x: 0.008481208, y: -0.30520898}
+      - {x: -0.05124657, y: -0.2770026}
+      - {x: -0.064983726, y: -0.044662}
+      - {x: -0.10729596, y: 0.0024681687}
+      - {x: -0.10625141, y: 0.19817184}
+      - {x: 0.001184091, y: 0.66212386}
+      - {x: 0.27276397, y: 0.660548}
+--- !u!114 &277824924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3080173472261096201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: -180}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.45
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: HammerDown4
 --- !u!1 &3116820922214316193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,6 +3902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8974724199380649607}
   - component: {fileID: 2381829348116887780}
+  - component: {fileID: 248240534}
   m_Layer: 0
   m_Name: left_hitbox2
   m_TagString: Untagged
@@ -2978,10 +3949,43 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.3004441, y: 0.24127197}
-      - {x: -1.7398028, y: 0.24107742}
-      - {x: -1.7460871, y: -0.37712193}
-      - {x: -1.3120255, y: -0.37866592}
+    - - {x: -0.20461744, y: -0.5032108}
+      - {x: -0.4222389, y: -0.59465885}
+      - {x: -0.9943263, y: -0.32596648}
+      - {x: -1.4766374, y: -0.042978786}
+      - {x: -1.6658167, y: 0.2536574}
+      - {x: -1.1326995, y: 0.53624845}
+      - {x: -1.2771956, y: 0.74345416}
+      - {x: -1.7583178, y: 0.5698893}
+      - {x: -2.1747851, y: 0.25446296}
+      - {x: -2.0632854, y: -0.12144373}
+      - {x: -1.765487, y: -0.42818436}
+      - {x: -1.1432434, y: -0.89884925}
+      - {x: -0.5841284, y: -1.0615952}
+      - {x: -0.08014476, y: -1.0655937}
+      - {x: 0.20463061, y: -0.8415787}
+      - {x: 0.260934, y: -0.49013555}
+--- !u!114 &248240534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3116820922214316193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft2
 --- !u!1 &3211476631076405614
 GameObject:
   m_ObjectHideFlags: 0
@@ -2992,6 +3996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7556149638155792970}
   - component: {fileID: 1894038200849071451}
+  - component: {fileID: 275664033}
   m_Layer: 0
   m_Name: down_hitbox2
   m_TagString: Untagged
@@ -3038,13 +4043,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.4410057, y: -0.36121213}
-      - {x: -0.56317234, y: -0.55139196}
-      - {x: -0.56261873, y: -0.80625474}
-      - {x: -0.12446165, y: -0.86784875}
-      - {x: -0.056705475, y: -0.7356094}
-      - {x: -0.3041544, y: -0.5921844}
-      - {x: -0.32037973, y: -0.36790407}
+    - - {x: 0.44723415, y: -0.5715325}
+      - {x: 0.6873367, y: -0.35265493}
+      - {x: 1.1367476, y: -1.0051671}
+      - {x: 1.1137415, y: -1.145673}
+      - {x: 0.54538953, y: -1.309678}
+      - {x: -0.14925553, y: -1.1880606}
+      - {x: 0.12496507, y: -0.5876624}
+--- !u!114 &275664033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3211476631076405614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordDown2
 --- !u!1 &3333321178539017345
 GameObject:
   m_ObjectHideFlags: 0
@@ -3055,6 +4081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 949609195800669477}
   - component: {fileID: 996435883134960743}
+  - component: {fileID: 1588086343}
   m_Layer: 0
   m_Name: up_hitbox1
   m_TagString: Untagged
@@ -3101,10 +4128,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.31718397, y: 0.9975707}
-      - {x: 0.4384811, y: 1.0010124}
-      - {x: 0.44123363, y: 0.45641392}
-      - {x: 0.31735086, y: 0.44606262}
+    - - {x: 0.5298352, y: 2.240819}
+      - {x: 0.6668204, y: 2.1626825}
+      - {x: 0.6728403, y: 1.8389095}
+      - {x: 0.5515213, y: 1.4032259}
+      - {x: 0.27810118, y: 0.54124296}
+      - {x: 0.04386036, y: 0.65924704}
+      - {x: 0.04328835, y: 0.8767321}
+--- !u!114 &1588086343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333321178539017345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: 135}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.4
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordUp3
 --- !u!1 &3425226507034876493
 GameObject:
   m_ObjectHideFlags: 0
@@ -3115,6 +4166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8540355018085110487}
   - component: {fileID: 8879688839379957971}
+  - component: {fileID: 313695959}
   m_Layer: 0
   m_Name: right_hitbox1
   m_TagString: Untagged
@@ -3149,7 +4201,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.135, y: 0}
+  m_Offset: {x: 0.53, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3161,16 +4213,38 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.9432318, y: -0.50001526}
-      - {x: 0.93566513, y: 0.06558323}
-      - {x: 0.43951225, y: 0.062152863}
-      - {x: 0.43189907, y: -0.06508541}
-      - {x: 0.56545544, y: -0.060168266}
-      - {x: 0.92956805, y: -0.49157143}
-      - {x: 0.9370661, y: -0.5036335}
-      - {x: 0.9355116, y: -0.49060345}
-      - {x: 0.94529223, y: -0.48944473}
-      - {x: 0.95449066, y: -0.48093605}
+    - - {x: 0.59217054, y: -0.6575868}
+      - {x: 0.48423755, y: 0.22311482}
+      - {x: 0.13027479, y: 0.7644885}
+      - {x: -0.146239, y: 0.53142256}
+      - {x: -0.08174957, y: 0.38042605}
+      - {x: -0.24694802, y: -0.5161623}
+      - {x: -0.3402881, y: -0.7198575}
+      - {x: 0.08892463, y: -1.0658753}
+      - {x: 0.26916265, y: -1.1729423}
+      - {x: 0.42116106, y: -1.1708152}
+      - {x: 0.5456684, y: -0.99458504}
+--- !u!114 &313695959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3425226507034876493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordRight1
 --- !u!1 &3481296438357749111
 GameObject:
   m_ObjectHideFlags: 0
@@ -3249,6 +4323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2665764607219423592}
   - component: {fileID: 998763003543663012}
+  - component: {fileID: 483316022}
   m_Layer: 0
   m_Name: right_hitbox1
   m_TagString: Untagged
@@ -3295,14 +4370,33 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.8017814, y: -0.12701607}
-      - {x: 1.6622317, y: -0.37014675}
-      - {x: 1.3702216, y: -0.3803358}
-      - {x: 1.2530637, y: -0.2594452}
-      - {x: 1.2812641, y: 0.2541647}
-      - {x: 1.3954358, y: 0.3833046}
-      - {x: 1.7028995, y: 0.37349033}
-      - {x: 1.7910805, y: 0.23098469}
+    - - {x: -1.1943479, y: -0.23578627}
+      - {x: -1.2053509, y: -0.7261225}
+      - {x: -1.5665781, y: -0.69675875}
+      - {x: -1.66396, y: -0.48687407}
+      - {x: -1.6159828, y: 0.036623746}
+      - {x: -1.3139353, y: 0.04710552}
+--- !u!114 &483316022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3545423431077615663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight3
 --- !u!1 &3566215866133743172
 GameObject:
   m_ObjectHideFlags: 0
@@ -3313,6 +4407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6266824520167666396}
   - component: {fileID: 1747085407140285110}
+  - component: {fileID: 153427214}
   m_Layer: 0
   m_Name: left_hitbox3
   m_TagString: Untagged
@@ -3359,10 +4454,45 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.1025562, y: 1.2042208}
-      - {x: -1.564641, y: 0.7175131}
-      - {x: -1.2826185, y: 0.41122627}
-      - {x: -0.8023801, y: 0.8969126}
+    - - {x: 2.074605, y: 0.580587}
+      - {x: 1.4894426, y: 1.0606257}
+      - {x: 0.87493867, y: 1.2813488}
+      - {x: 0.4222572, y: 1.2843344}
+      - {x: -0.18253386, y: 0.99561995}
+      - {x: -0.1786182, y: 0.78203535}
+      - {x: 0.44891527, y: 0.61833346}
+      - {x: 0.58051103, y: 0.8141048}
+      - {x: 0.9235171, y: 0.7391556}
+      - {x: 1.3755136, y: 0.49259007}
+      - {x: 1.6069634, y: 0.1560059}
+      - {x: 1.4939293, y: -0.2625362}
+      - {x: 0.9649909, y: -0.6339197}
+      - {x: 0.14480895, y: -0.79441994}
+      - {x: 0.60617876, y: -1.0163367}
+      - {x: 1.007791, y: -0.9667088}
+      - {x: 2.126505, y: -0.5901009}
+      - {x: 2.2567964, y: 0.07944679}
+--- !u!114 &153427214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3566215866133743172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft2
 --- !u!1 &3610857811993169925
 GameObject:
   m_ObjectHideFlags: 0
@@ -3373,6 +4503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5569196054311884080}
   - component: {fileID: 6010378520034571139}
+  - component: {fileID: 1257425427}
   m_Layer: 0
   m_Name: up_hitbox3
   m_TagString: Untagged
@@ -3419,14 +4550,39 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.25572062, y: 1.2407446}
+    - - {x: -0.07310231, y: 1.6621714}
+      - {x: -0.10085973, y: 1.6024207}
       - {x: -0.113204956, y: 1.1352816}
-      - {x: 0.14472246, y: 1.1324635}
-      - {x: 0.24273062, y: 1.2609806}
-      - {x: 0.2601967, y: 1.6885691}
-      - {x: 0.099012375, y: 1.8237829}
-      - {x: -0.11027765, y: 1.8188782}
-      - {x: -0.26519108, y: 1.6813622}
+      - {x: -0.1047085, y: 0.39997655}
+      - {x: 0.22900788, y: 0.10699159}
+      - {x: 0.38456857, y: 1.2701542}
+      - {x: 0.39049715, y: 1.6167908}
+      - {x: 0.33403975, y: 1.6543123}
+      - {x: 0.3304345, y: 2.1099958}
+      - {x: 0.26758307, y: 2.2241383}
+      - {x: 0.0021027625, y: 2.2192338}
+      - {x: -0.040430114, y: 2.1098127}
+--- !u!114 &1257425427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3610857811993169925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerUp3
 --- !u!1 &3690033327716002119
 GameObject:
   m_ObjectHideFlags: 0
@@ -3437,6 +4593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3354042699807220254}
   - component: {fileID: 5441602663759745300}
+  - component: {fileID: 883038045}
   m_Layer: 0
   m_Name: up_hitbox2
   m_TagString: Untagged
@@ -3483,10 +4640,46 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.34204817, y: 1.6866398}
-      - {x: -0.33365965, y: 1.2333488}
-      - {x: 0.3147874, y: 1.2359476}
-      - {x: 0.29509687, y: 1.695674}
+    - - {x: -0.795728, y: 1.8771853}
+      - {x: -1.2137988, y: 1.5781455}
+      - {x: -0.5941466, y: 1.4809428}
+      - {x: -0.24584615, y: 1.6037964}
+      - {x: 0.5303338, y: 1.6142564}
+      - {x: 0.7976673, y: 1.3073834}
+      - {x: 0.7285596, y: 1.124045}
+      - {x: 0.891255, y: 1.1086057}
+      - {x: 0.9627418, y: 1.2149477}
+      - {x: 1.1936725, y: 1.1956246}
+      - {x: 1.250958, y: 0.92165}
+      - {x: 1.4516829, y: 0.6701909}
+      - {x: 1.5760174, y: 0.6643109}
+      - {x: 1.8495876, y: 0.88109004}
+      - {x: 1.8972942, y: 1.2048906}
+      - {x: 1.3902186, y: 1.7812049}
+      - {x: 1.0441178, y: 1.9902399}
+      - {x: 0.65560627, y: 2.0516486}
+      - {x: -0.22209811, y: 2.058618}
+--- !u!114 &883038045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3690033327716002119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerUp2
 --- !u!1 &3702008315449010335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3497,6 +4690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7782050472487365880}
   - component: {fileID: 3517612547304953940}
+  - component: {fileID: 2118762629}
   m_Layer: 0
   m_Name: left_hitbox1
   m_TagString: Untagged
@@ -3543,10 +4737,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.5507841, y: -0.8527136}
-      - {x: -1.2713323, y: -0.5390177}
-      - {x: -0.8251715, y: -1.0474749}
-      - {x: -1.1074162, y: -1.3260498}
+    - - {x: -0.4782337, y: 1.0191263}
+      - {x: -0.19472015, y: 1.1416036}
+      - {x: -0.13403079, y: 0.70343614}
+      - {x: -0.37109095, y: 0.50050867}
+      - {x: -0.6951027, y: 0.41779062}
+      - {x: -0.77344465, y: 0.5303536}
+      - {x: -0.75900793, y: 0.7439046}
+--- !u!114 &2118762629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3702008315449010335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft2
 --- !u!1 &3779388331060932778
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,6 +4775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8685373360645318598}
   - component: {fileID: 3797855248203533405}
+  - component: {fileID: 2009169726}
   m_Layer: 0
   m_Name: right_hitbox2
   m_TagString: Untagged
@@ -3603,14 +4822,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.2729425, y: 1.4942942}
-      - {x: 1.010534, y: 1.5022993}
-      - {x: 0.87045956, y: 1.3589821}
-      - {x: 0.8712723, y: 1.1055727}
-      - {x: 1.1843529, y: 0.76111126}
-      - {x: 1.3323152, y: 0.7456465}
-      - {x: 1.5620601, y: 1.00809}
-      - {x: 1.5453434, y: 1.1790524}
+    - - {x: -0.0860132, y: 1.5276052}
+      - {x: 0.2396239, y: 1.8972889}
+      - {x: -0.446445, y: 1.8536279}
+      - {x: -0.9068481, y: 1.5863123}
+      - {x: -1.3606956, y: 1.0745733}
+      - {x: -1.5539412, y: 0.6061134}
+      - {x: -1.5919762, y: -0.659667}
+      - {x: -1.2898991, y: -0.60388684}
+      - {x: -1.1606655, y: 0.58417034}
+      - {x: -0.54195976, y: 1.158386}
+--- !u!114 &2009169726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3779388331060932778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight3
 --- !u!1 &3828658592665017784
 GameObject:
   m_ObjectHideFlags: 0
@@ -3654,6 +4896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8435312942694499139}
   - component: {fileID: 3671724685284371231}
+  - component: {fileID: 1255935881}
   m_Layer: 0
   m_Name: right_hitbox2
   m_TagString: Untagged
@@ -3688,7 +4931,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 0.05}
+  m_Offset: {x: 0.58, y: 0.29}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3700,10 +4943,36 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.9667226, y: -0.49313146}
-      - {x: 0.4270362, y: -0.48323995}
-      - {x: 0.42920724, y: -0.3632601}
-      - {x: 0.9659811, y: -0.35550863}
+    - - {x: 1.0763597, y: -1.1738374}
+      - {x: 1.3630772, y: -1.0075524}
+      - {x: 1.3628813, y: -0.7757442}
+      - {x: 1.1998715, y: -0.3936022}
+      - {x: 1.0126989, y: -0.08995427}
+      - {x: 0.60860944, y: -0.45659178}
+      - {x: 0.76574075, y: -0.8496517}
+      - {x: 0.5389687, y: -0.9406746}
+      - {x: 0.5226556, y: -1.1679139}
+--- !u!114 &1255935881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3888285047003943486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 150, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: SwordRight3
 --- !u!1 &3922679913887369165
 GameObject:
   m_ObjectHideFlags: 0
@@ -3714,6 +4983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1970469963850356470}
   - component: {fileID: 4234180951847794790}
+  - component: {fileID: 1486647805}
   m_Layer: 0
   m_Name: up_hitbox4
   m_TagString: Untagged
@@ -3760,10 +5030,42 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.83483076, y: 0.9835243}
-      - {x: -1.1205363, y: 0.34927654}
-      - {x: -1.4667077, y: 0.5257101}
-      - {x: -1.2499995, y: 1.177804}
+    - - {x: 0.4459675, y: -0.8190379}
+      - {x: 0.4518396, y: -0.5134438}
+      - {x: 0.551611, y: -0.23401685}
+      - {x: 0.81608623, y: -0.20748445}
+      - {x: 1.006342, y: -0.35108256}
+      - {x: 1.0181358, y: -0.60187054}
+      - {x: 1.1104246, y: -0.6241747}
+      - {x: 1.1038064, y: -0.86307263}
+      - {x: 0.61685526, y: -1.3834095}
+      - {x: 0.14288926, y: -1.495754}
+      - {x: -0.4438653, y: -1.5021887}
+      - {x: -1.4152665, y: -1.0679873}
+      - {x: -1.666069, y: -0.8392054}
+      - {x: -0.7458252, y: -0.77967167}
+      - {x: -0.012809157, y: -0.9263935}
+--- !u!114 &1486647805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3922679913887369165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerUp1
 --- !u!1 &3948405140462475794
 GameObject:
   m_ObjectHideFlags: 0
@@ -3774,6 +5076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3888927456764641110}
   - component: {fileID: 9067137781945731551}
+  - component: {fileID: 445747177}
   m_Layer: 0
   m_Name: right_hitbox4
   m_TagString: Untagged
@@ -3828,6 +5131,27 @@ PolygonCollider2D:
       - {x: 1.2383366, y: 0.78612137}
       - {x: 1.366864, y: 0.73552895}
       - {x: 1.550055, y: 0.91161346}
+--- !u!114 &445747177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3948405140462475794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight3
 --- !u!1 &3956775112450187594
 GameObject:
   m_ObjectHideFlags: 0
@@ -3838,6 +5162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 805200081651523091}
   - component: {fileID: 5552988302560351825}
+  - component: {fileID: 1295790230}
   m_Layer: 0
   m_Name: left_hitbox2
   m_TagString: Untagged
@@ -3884,14 +5209,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.86409426, y: 0.058390617}
-      - {x: -0.8724065, y: -0.06740093}
-      - {x: -0.8152132, y: -0.0682745}
-      - {x: -0.8105383, y: -0.26272297}
-      - {x: -0.30830145, y: -0.1818533}
-      - {x: -0.378963, y: -0.05943489}
-      - {x: -0.67624855, y: -0.056837082}
-      - {x: -0.7491355, y: 0.05870533}
+    - - {x: -0.7802842, y: 0.024605304}
+      - {x: -0.73216236, y: -0.1776634}
+      - {x: -0.454051, y: -0.4666462}
+      - {x: -0.17157036, y: -0.48233044}
+      - {x: 0.0433124, y: -0.19259782}
+      - {x: 0.06324817, y: -0.0943535}
+      - {x: -0.25135937, y: -0.007880777}
+      - {x: -0.46676487, y: 0.2582339}
+--- !u!114 &1295790230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956775112450187594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.25
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: -1, y: -1}
+  StaggerAmount: 0
+  StateToInflict: 8
+  StatusesToInflict: []
+  HitboxName: KnifeLeft
 --- !u!1 &3970551059177065159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3902,6 +5248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2074002526426326757}
   - component: {fileID: 4243274045754238610}
+  - component: {fileID: 972893880}
   m_Layer: 0
   m_Name: right_hitbox3
   m_TagString: Untagged
@@ -3936,7 +5283,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.37}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3948,10 +5295,47 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.091311, y: 1.1325331}
-      - {x: 0.8043189, y: 0.8397722}
-      - {x: 1.2735257, y: 0.37090397}
-      - {x: 1.5555043, y: 0.67012405}
+    - - {x: 2.2952828, y: 0.12027323}
+      - {x: 1.999951, y: 0.54967743}
+      - {x: 0.50046885, y: 1.218998}
+      - {x: -0.17421359, y: 1.2238295}
+      - {x: -0.584707, y: 1.1774887}
+      - {x: -1.2084506, y: 0.8298625}
+      - {x: -1.56424, y: 0.4607246}
+      - {x: -1.6601826, y: 0.05420348}
+      - {x: -1.4923944, y: -0.14244235}
+      - {x: -1.2395774, y: -0.37761378}
+      - {x: -0.85213405, y: 0.014333963}
+      - {x: -1.0387713, y: 0.19611913}
+      - {x: -1.003913, y: 0.33321857}
+      - {x: -0.73146826, y: 0.57239664}
+      - {x: -0.27575517, y: 0.7261764}
+      - {x: 0.5881568, y: 0.710075}
+      - {x: 1.1753337, y: 0.61358815}
+      - {x: 1.6846637, y: 0.20996326}
+      - {x: 1.9508325, y: -0.21993852}
+      - {x: 2.3048658, y: -0.3386314}
+--- !u!114 &972893880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3970551059177065159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight1
 --- !u!1 &4055414228809617432
 GameObject:
   m_ObjectHideFlags: 0
@@ -3962,6 +5346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1337674222631790695}
   - component: {fileID: 3641038138492207045}
+  - component: {fileID: 1040846757}
   m_Layer: 0
   m_Name: down_hitbox2
   m_TagString: Untagged
@@ -4008,13 +5393,31 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.4283085, y: -0.36756074}
-      - {x: -0.43619823, y: -0.55774057}
-      - {x: -0.44199324, y: -0.9268812}
-      - {x: -0.3085742, y: -0.9249872}
-      - {x: -0.3106537, y: -0.8054451}
-      - {x: -0.3041544, y: -0.5921844}
-      - {x: -0.32037973, y: -0.36790407}
+    - - {x: 0.3316158, y: -1.8624564}
+      - {x: 0.0077796355, y: -1.0110055}
+      - {x: 0.19138072, y: -0.6785391}
+      - {x: 0.33298588, y: -0.9873649}
+--- !u!114 &1040846757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4055414228809617432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: -135}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.4
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordDown3
 --- !u!1 &4067540041854931552
 GameObject:
   m_ObjectHideFlags: 0
@@ -4058,6 +5461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5017008320149611486}
   - component: {fileID: 8865423129416918366}
+  - component: {fileID: 1483145220}
   m_Layer: 0
   m_Name: right_hitbox3
   m_TagString: Untagged
@@ -4092,7 +5496,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 0.07}
+  m_Offset: {x: 0.52, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4104,19 +5508,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.47346488, y: -0.5586007}
-      - {x: 0.3527762, y: -0.42761546}
-      - {x: 0.3564128, y: -0.42893058}
-      - {x: 0.35384598, y: -0.4292844}
-      - {x: 0.28560582, y: -0.5140441}
-      - {x: 0.28144327, y: -0.5233157}
-      - {x: 0.635116, y: -0.8974622}
-      - {x: 0.8954593, y: -0.6070617}
-      - {x: 0.8971058, y: -0.37287265}
-      - {x: 0.88019, y: -0.36289245}
-      - {x: 0.89522564, y: -0.37849456}
-      - {x: 0.83730876, y: -0.37947685}
-      - {x: 0.70652664, y: -0.54400474}
+    - - {x: 0.588024, y: 0.55347145}
+      - {x: 0.4453926, y: 0.56363696}
+      - {x: 0.2000454, y: 0.444397}
+      - {x: -0.18137673, y: 0.06485808}
+      - {x: 0.0149078965, y: -0.06165432}
+      - {x: 0.053091258, y: -0.25983882}
+      - {x: 0.7161738, y: 0.29973352}
+      - {x: 0.63831466, y: 0.48736936}
+--- !u!114 &1483145220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4101111548408968161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordRight2
 --- !u!1 &4142447177748157759
 GameObject:
   m_ObjectHideFlags: 0
@@ -4178,6 +5598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2350402506292623253}
   - component: {fileID: 9167106314407234003}
+  - component: {fileID: 134476023}
   m_Layer: 0
   m_Name: right_hitbox1
   m_TagString: Untagged
@@ -4224,14 +5645,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.6720357, y: 0.42346}
-      - {x: 1.806464, y: 0.3122425}
-      - {x: 1.8083494, y: -0.16527939}
-      - {x: 1.7043884, y: -0.30092907}
-      - {x: 1.4445574, y: -0.3024845}
-      - {x: 1.3212159, y: -0.17275333}
-      - {x: 1.321084, y: 0.31772804}
-      - {x: 1.4369929, y: 0.43047237}
+    - - {x: -0.78209496, y: 1.5574467}
+      - {x: -0.97895736, y: 1.0810084}
+      - {x: -1.5519178, y: 0.68178964}
+      - {x: -1.4381559, y: 0.49823985}
+      - {x: -1.4259377, y: 0.3823793}
+      - {x: -1.6952293, y: 0.060732245}
+      - {x: -1.820729, y: 0.06951016}
+      - {x: -2.0784023, y: 0.26124054}
+      - {x: -2.0268679, y: 0.9997182}
+      - {x: -1.1359704, y: 1.4534577}
+--- !u!114 &134476023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4249772267160683567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 180, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight4
 --- !u!1 &4376188027260191427
 GameObject:
   m_ObjectHideFlags: 0
@@ -4242,6 +5686,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8330138721463943489}
   - component: {fileID: 3339283164794867379}
+  - component: {fileID: 85194264}
   m_Layer: 0
   m_Name: down_hitbox2
   m_TagString: Untagged
@@ -4288,13 +5733,38 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.1851201, y: -0.37379646}
-      - {x: -0.18983078, y: -0.685627}
-      - {x: -0.31092787, y: -0.8691778}
-      - {x: 0.0001206398, y: -0.81331444}
-      - {x: 0.0039772987, y: -0.62780666}
-      - {x: -0.06309366, y: -0.6274948}
-      - {x: -0.06868887, y: -0.3091755}
+    - - {x: -0.6136012, y: -0.5845882}
+      - {x: -0.4828227, y: -0.52376884}
+      - {x: -0.009719044, y: -0.58150303}
+      - {x: 0.41170233, y: -0.6963435}
+      - {x: 0.50417435, y: -0.91048086}
+      - {x: 0.32644886, y: -0.97277594}
+      - {x: 0.11872515, y: -0.9678501}
+      - {x: -0.17291504, y: -1.0280414}
+      - {x: -0.55522627, y: -1.022181}
+      - {x: -0.78009236, y: -0.9749178}
+      - {x: -0.78361374, y: -0.7495087}
+--- !u!114 &85194264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4376188027260191427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.25
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: -1, y: -1}
+  StaggerAmount: 0
+  StateToInflict: 8
+  StatusesToInflict: []
+  HitboxName: KnifeDown
 --- !u!1 &4405564737407868302
 GameObject:
   m_ObjectHideFlags: 0
@@ -4338,6 +5808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7806544485346282509}
   - component: {fileID: 3383675418891769451}
+  - component: {fileID: 9690145}
   m_Layer: 0
   m_Name: up_hitbox1
   m_TagString: Untagged
@@ -4384,12 +5855,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5275097, y: 0.8827569}
-      - {x: -0.13558292, y: 0.7713868}
-      - {x: -0.026218414, y: 0.51382035}
-      - {x: 0.071323395, y: 0.53627366}
-      - {x: -0.013272762, y: 0.98696774}
-      - {x: -0.42801762, y: 0.99078244}
+    - - {x: -0.8979851, y: 0.7811749}
+      - {x: -0.42240262, y: 0.16189504}
+      - {x: -0.06804626, y: 0.49589413}
+      - {x: 0.23572913, y: 0.3710188}
+      - {x: 0.32102054, y: 0.9360933}
+      - {x: -0.10196349, y: 1.1039375}
+      - {x: -0.64069074, y: 1.0526971}
+      - {x: -0.88214874, y: 0.93700355}
+--- !u!114 &9690145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4425684234270922751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordUp2
 --- !u!1 &4579074644079167550
 GameObject:
   m_ObjectHideFlags: 0
@@ -4400,6 +5894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1095003071983826245}
   - component: {fileID: 2728254657461400738}
+  - component: {fileID: 1310109232}
   m_Layer: 0
   m_Name: down_hitbox3
   m_TagString: Untagged
@@ -4446,10 +5941,57 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.97227454, y: -0.5589752}
-      - {x: 0.50198936, y: -1.0292816}
-      - {x: 0.79221225, y: -1.3109655}
-      - {x: 1.2560492, y: -0.8580828}
+    - - {x: 1.820088, y: 0.15197657}
+      - {x: 1.6005917, y: 0.7379359}
+      - {x: 1.4128782, y: 0.8330388}
+      - {x: 1.3803371, y: 1.0089309}
+      - {x: 0.38053823, y: 1.4354355}
+      - {x: -0.17688441, y: 1.4506981}
+      - {x: -0.5000577, y: 1.3900155}
+      - {x: -1.1186646, y: 0.7849069}
+      - {x: -1.0894979, y: 0.5571016}
+      - {x: -0.99747175, y: 0.5655613}
+      - {x: -1.0101769, y: 0.26131356}
+      - {x: -0.81289196, y: 0.17832002}
+      - {x: -0.57026273, y: 0.16175863}
+      - {x: -0.45905867, y: 0.323504}
+      - {x: -0.44481748, y: 0.59610516}
+      - {x: -0.43896306, y: 0.767154}
+      - {x: -0.22667629, y: 0.88487923}
+      - {x: 0.1390847, y: 0.8898031}
+      - {x: 0.82720727, y: 0.6717425}
+      - {x: 1.244842, y: 0.40582797}
+      - {x: 1.3756905, y: 0.058020107}
+      - {x: 1.3818822, y: -0.2644493}
+      - {x: 1.273787, y: -0.8138982}
+      - {x: 0.7865885, y: -1.2595383}
+      - {x: 0.5520798, y: -1.9056597}
+      - {x: 1.65937, y: -1.1073936}
+      - {x: 1.7032058, y: -1.1115248}
+      - {x: 1.7102757, y: -1.1113198}
+      - {x: 1.7851208, y: -0.85731703}
+      - {x: 1.7818468, y: -0.86491126}
+--- !u!114 &1310109232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579074644079167550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerDown1
 --- !u!1 &4595096943903474499
 GameObject:
   m_ObjectHideFlags: 0
@@ -4460,6 +6002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3109355554215089453}
   - component: {fileID: 7498936542351359087}
+  - component: {fileID: 1576566081}
   m_Layer: 0
   m_Name: up_hitbox2
   m_TagString: Untagged
@@ -4506,13 +6049,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.18426561, y: 1.0597811}
-      - {x: -0.06333113, y: 0.9166422}
-      - {x: 0.09155083, y: 0.5043287}
-      - {x: 0.19000006, y: 0.51281357}
-      - {x: 0.20322657, y: 0.8102751}
-      - {x: 0.31177616, y: 0.9307833}
-      - {x: 0.31560755, y: 1.0657797}
+    - - {x: -0.10228754, y: 0.78395027}
+      - {x: -0.28435975, y: 0.71144086}
+      - {x: -0.17695211, y: 0.5033817}
+      - {x: 0.3429683, y: 0.39000115}
+      - {x: 0.6126913, y: 0.3895103}
+      - {x: 0.7168972, y: 0.33187115}
+      - {x: 1.0110519, y: 0.57008}
+      - {x: 0.9989187, y: 0.7851395}
+      - {x: 0.773872, y: 0.8358892}
+      - {x: 0.4060892, y: 0.83763623}
+--- !u!114 &1576566081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4595096943903474499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.25
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: -1, y: -1}
+  StaggerAmount: 0
+  StateToInflict: 8
+  StatusesToInflict: []
+  HitboxName: KnifeUp
 --- !u!1 &4617613796549034367
 GameObject:
   m_ObjectHideFlags: 0
@@ -4523,6 +6090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3246037910446439375}
   - component: {fileID: 2106228238062466933}
+  - component: {fileID: 677993703}
   m_Layer: 0
   m_Name: up_hitbox1
   m_TagString: Untagged
@@ -4569,10 +6137,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.24188852, y: 1.007206}
-      - {x: 0.23704672, y: 1.0012541}
-      - {x: 0.2389307, y: 0.43760586}
-      - {x: -0.24781466, y: 0.42636204}
+    - - {x: -0.01623322, y: 2.1229467}
+      - {x: 0.31226516, y: 2.1169949}
+      - {x: 0.34571016, y: 1.88789}
+      - {x: 0.4441217, y: 1.9012173}
+      - {x: 0.47487304, y: 1.737407}
+      - {x: 0.3116055, y: 1.4996274}
+      - {x: 0.007072352, y: 1.5033191}
+      - {x: -0.15925159, y: 1.6550586}
+      - {x: -0.12462514, y: 2.0548027}
+      - {x: -0.072304934, y: 2.0310225}
+--- !u!114 &677993703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4617613796549034367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.45
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: HammerUp4
 --- !u!1 &4743389480621666965
 GameObject:
   m_ObjectHideFlags: 0
@@ -4583,6 +6178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7345293098701070554}
   - component: {fileID: 6315444558131420766}
+  - component: {fileID: 1492598657}
   m_Layer: 0
   m_Name: left_hitbox3
   m_TagString: Untagged
@@ -4617,7 +6213,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.53, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4629,16 +6225,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.38045835, y: 0.38735867}
-      - {x: -0.32000637, y: 0.46808338}
-      - {x: -0.63424206, y: 0.81555367}
-      - {x: -0.9388323, y: 0.56068134}
-      - {x: -0.9405794, y: 0.43465328}
-      - {x: -0.9317508, y: 0.31232643}
-      - {x: -0.86088085, y: 0.317585}
-      - {x: -0.8738947, y: 0.3154106}
-      - {x: -0.74247074, y: 0.49867916}
-      - {x: -0.5243883, y: 0.50209904}
+    - - {x: 0.010394037, y: -0.16503564}
+      - {x: 0.13200733, y: -0.11042656}
+      - {x: 0.24979565, y: 0.04168868}
+      - {x: -0.14058363, y: 0.4399941}
+      - {x: -0.37856698, y: 0.56089616}
+      - {x: -0.5262077, y: 0.55382216}
+      - {x: -0.66280055, y: 0.32445812}
+--- !u!114 &1492598657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4743389480621666965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordLeft2
 --- !u!1 &4781939448654400320
 GameObject:
   m_ObjectHideFlags: 0
@@ -4717,6 +6331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7688769710345392611}
   - component: {fileID: 3841857130379386490}
+  - component: {fileID: 905185680}
   m_Layer: 0
   m_Name: right_hitbox1
   m_TagString: Untagged
@@ -4763,10 +6378,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.79961777, y: 0.9052782}
-      - {x: 1.1189361, y: 1.2128067}
-      - {x: 1.55127, y: 0.7302656}
-      - {x: 1.2826767, y: 0.4182911}
+    - - {x: -0.1353508, y: 0.70245594}
+      - {x: -0.394534, y: 0.50097764}
+      - {x: -0.52838546, y: 0.43397838}
+      - {x: -0.72445387, y: 0.43332735}
+      - {x: -0.7627202, y: 0.75695497}
+      - {x: -0.54228413, y: 1.0150425}
+      - {x: -0.19894433, y: 1.1159059}
+      - {x: -0.13133824, y: 0.8039315}
+--- !u!114 &905185680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4859972627429415478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight2
 --- !u!1 &4885759027749538324
 GameObject:
   m_ObjectHideFlags: 0
@@ -4777,6 +6417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3583892975068790965}
   - component: {fileID: 8296673700491723239}
+  - component: {fileID: 2098083200}
   m_Layer: 0
   m_Name: right_hitbox3
   m_TagString: Untagged
@@ -4823,10 +6464,46 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.314295, y: -0.5532274}
-      - {x: 0.7775605, y: -1.0154562}
-      - {x: 1.0951381, y: -1.3237753}
-      - {x: 1.5555048, y: -0.84616756}
+    - - {x: -0.19860186, y: 0.9992227}
+      - {x: -0.1949252, y: 0.74437076}
+      - {x: 0.07087382, y: 0.52569664}
+      - {x: 0.50359225, y: 0.68482757}
+      - {x: 0.5866387, y: 0.802716}
+      - {x: 1.0431721, y: 0.6969527}
+      - {x: 1.6414716, y: 0.102301985}
+      - {x: 1.2190778, y: -0.5360396}
+      - {x: 0.37762302, y: -0.7164016}
+      - {x: 0.34137672, y: -0.88482153}
+      - {x: 0.63490134, y: -1.0015167}
+      - {x: 1.7913173, y: -0.8076499}
+      - {x: 2.0334024, y: -0.6307134}
+      - {x: 2.2025146, y: -0.4388523}
+      - {x: 2.1913943, y: 0.2404964}
+      - {x: 2.086971, y: 0.5360597}
+      - {x: 1.5092883, y: 1.0314045}
+      - {x: 0.88748556, y: 1.2768254}
+      - {x: 0.43813646, y: 1.2896869}
+--- !u!114 &2098083200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4885759027749538324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight2
 --- !u!1 &4979356296447297182
 GameObject:
   m_ObjectHideFlags: 0
@@ -4888,6 +6565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3889045141574207149}
   - component: {fileID: 4662988103102534653}
+  - component: {fileID: 1882220555}
   m_Layer: 0
   m_Name: left_hitbox1
   m_TagString: Untagged
@@ -4934,10 +6612,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.5015788, y: 0.6644554}
-      - {x: -1.0663095, y: 1.1503706}
-      - {x: -0.7677655, y: 0.8551369}
-      - {x: -1.2058272, y: 0.34693623}
+    - - {x: -0.3572818, y: -0.82313085}
+      - {x: -0.3625667, y: -0.7205553}
+      - {x: -0.1298014, y: -0.4381708}
+      - {x: 0.30926636, y: -0.43490192}
+      - {x: 0.43070602, y: -0.6180381}
+      - {x: 0.48132437, y: -0.7410885}
+      - {x: 0.42802477, y: -0.8899164}
+      - {x: -0.29611105, y: -0.8889047}
+--- !u!114 &1882220555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5030012938381949648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft1
 --- !u!1 &5160176739713565152
 GameObject:
   m_ObjectHideFlags: 0
@@ -4948,6 +6651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8585521584904133258}
   - component: {fileID: 7150672045622853160}
+  - component: {fileID: 1206756723}
   m_Layer: 0
   m_Name: left_hitbox3
   m_TagString: Untagged
@@ -4994,15 +6698,33 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.44394588, y: -0.30465126}
-      - {x: -0.8056574, y: -0.25103092}
-      - {x: -0.80550957, y: -0.44241524}
-      - {x: -0.6802821, y: -0.68906975}
-      - {x: -0.550828, y: -0.6844225}
-      - {x: -0.30219412, y: -0.38712215}
-      - {x: -0.30251026, y: -0.44008636}
-      - {x: -0.3107581, y: -0.44093037}
-      - {x: -0.31488085, y: -0.31053638}
+    - - {x: -0.5759268, y: -0.15399139}
+      - {x: -0.454051, y: -0.4666462}
+      - {x: -0.17157036, y: -0.48233044}
+      - {x: 0.0433124, y: -0.19259782}
+      - {x: 0.06324817, y: -0.0943535}
+      - {x: -0.25135937, y: -0.007880777}
+--- !u!114 &1206756723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160176739713565152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.25
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: -1, y: -1}
+  StaggerAmount: 0
+  StateToInflict: 8
+  StatusesToInflict: []
+  HitboxName: KnifeLeft
 --- !u!1 &5186706130095385884
 GameObject:
   m_ObjectHideFlags: 0
@@ -5013,6 +6735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3788028677407291462}
   - component: {fileID: 5016115279978920095}
+  - component: {fileID: 724108864}
   m_Layer: 0
   m_Name: up_hitbox2
   m_TagString: Untagged
@@ -5059,15 +6782,33 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.50805044, y: 1.0343864}
-      - {x: 0.31010723, y: 1.093313}
-      - {x: 0.07641268, y: 1.0956266}
-      - {x: -0.012188435, y: 0.9806144}
-      - {x: 0.282012, y: 0.84081054}
-      - {x: 0.2217431, y: 0.59534526}
-      - {x: 0.21592379, y: 0.5880697}
-      - {x: 0.31177568, y: 0.53716254}
-      - {x: 0.4933715, y: 0.77373767}
+    - - {x: -0.8979851, y: 0.7811749}
+      - {x: -0.42240262, y: 0.16189504}
+      - {x: -0.06804626, y: 0.4958941}
+      - {x: -0.10196349, y: 1.1039375}
+      - {x: -0.64069074, y: 1.0526971}
+      - {x: -0.88214874, y: 0.93700355}
+--- !u!114 &724108864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5186706130095385884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordUp2
 --- !u!1 &5390268073189134651
 GameObject:
   m_ObjectHideFlags: 0
@@ -5129,6 +6870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1515002528116864107}
   - component: {fileID: 4126531596884703836}
+  - component: {fileID: 836508796}
   m_Layer: 0
   m_Name: left_hitbox4
   m_TagString: Untagged
@@ -5183,6 +6925,27 @@ PolygonCollider2D:
       - {x: -1.1561594, y: 0.8234501}
       - {x: -0.8591132, y: 1.1272402}
       - {x: -0.86607695, y: 1.2846327}
+--- !u!114 &836508796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451835166967490595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft3
 --- !u!1 &5503252293820537192
 GameObject:
   m_ObjectHideFlags: 0
@@ -5193,6 +6956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1354848918220949450}
   - component: {fileID: 8034071121056543416}
+  - component: {fileID: 763966307}
   m_Layer: 0
   m_Name: down_hitbox3
   m_TagString: Untagged
@@ -5239,14 +7003,50 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.10082197, y: -0.6396704}
-      - {x: -0.08488417, y: -0.63288593}
-      - {x: -0.23035955, y: -0.75085735}
-      - {x: -0.2411027, y: -1.1680813}
-      - {x: -0.13303614, y: -1.3015976}
-      - {x: 0.14127064, y: -1.3089228}
-      - {x: 0.24416351, y: -1.1819801}
-      - {x: 0.23985338, y: -0.7679949}
+    - - {x: 0.1742706, y: -0.96284395}
+      - {x: 0.1142866, y: -1.1915824}
+      - {x: 0.04998427, y: -1.2680317}
+      - {x: 0.05743555, y: -0.9562252}
+      - {x: 0.0032538474, y: -0.9487146}
+      - {x: 0.004675716, y: -1.1988934}
+      - {x: -0.10984928, y: -1.3339407}
+      - {x: -0.1187092, y: -1.6637028}
+      - {x: -0.057481408, y: -1.6748762}
+      - {x: -0.061064377, y: -1.8298283}
+      - {x: -0.3832963, y: -1.8872349}
+      - {x: -0.39173156, y: -1.9469937}
+      - {x: -0.12596247, y: -1.9519893}
+      - {x: 0.052312914, y: -2.010616}
+      - {x: 0.10199942, y: -2.2711184}
+      - {x: 0.1763248, y: -2.2755523}
+      - {x: 0.23675363, y: -1.9993391}
+      - {x: 0.423532, y: -1.9375404}
+      - {x: 0.6602138, y: -1.9393438}
+      - {x: 0.66138285, y: -1.8891337}
+      - {x: 0.33142954, y: -1.835938}
+      - {x: 0.32495713, y: -1.2848082}
+      - {x: 0.27657768, y: -0.9589611}
+--- !u!114 &763966307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5503252293820537192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: -180}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.45
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: HammerDown4
 --- !u!1 &5539738723627505927
 GameObject:
   m_ObjectHideFlags: 0
@@ -5257,6 +7057,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4378900234827265204}
   - component: {fileID: 1845485344800006281}
+  - component: {fileID: 770481659}
   m_Layer: 0
   m_Name: down_hitbox1
   m_TagString: Untagged
@@ -5303,13 +7104,38 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.11109352, y: -0.60781896}
-      - {x: -0.18597984, y: -0.32885683}
-      - {x: -0.06804466, y: -0.30788267}
+    - - {x: -0.94807965, y: -0.08082782}
+      - {x: -0.5683068, y: 0.08446954}
+      - {x: -0.24370845, y: -0.3957144}
       - {x: 0.016905785, y: -0.5332197}
-      - {x: 0.44450736, y: -0.6988157}
-      - {x: 0.37209368, y: -0.7933372}
-      - {x: -0.06103182, y: -0.79949224}
+      - {x: 0.44723415, y: -0.5715325}
+      - {x: 0.6873367, y: -0.35265493}
+      - {x: 1.1367476, y: -1.0051671}
+      - {x: 1.1137415, y: -1.145673}
+      - {x: 0.54538953, y: -1.309678}
+      - {x: -0.14925553, y: -1.1880606}
+      - {x: -0.90835106, y: -0.7943256}
+--- !u!114 &770481659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5539738723627505927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordDown2
 --- !u!1 &5561338829657461050
 GameObject:
   m_ObjectHideFlags: 0
@@ -5320,6 +7146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8138001242273016008}
   - component: {fileID: 2211484053119739218}
+  - component: {fileID: 1093814447}
   m_Layer: 0
   m_Name: down_hitbox3
   m_TagString: Untagged
@@ -5366,10 +7193,51 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.96314096, y: -0.5671768}
-      - {x: -1.2858095, y: -0.8488617}
-      - {x: -0.8069658, y: -1.3191671}
-      - {x: -0.5071478, y: -1.0221004}
+    - - {x: 0.719301, y: 0.1658272}
+      - {x: 0.9992736, y: 0.16386701}
+      - {x: 1.1560024, y: 0.2672997}
+      - {x: 1.1846807, y: 0.5557554}
+      - {x: 1.1208191, y: 0.54283947}
+      - {x: 1.1301427, y: 0.9017941}
+      - {x: 0.9249916, y: 1.1415938}
+      - {x: 0.49311045, y: 1.4814752}
+      - {x: 0.14786547, y: 1.5453264}
+      - {x: -0.40556124, y: 1.5409261}
+      - {x: -1.3853967, y: 1.1275123}
+      - {x: -1.8962816, y: 0.20430815}
+      - {x: -1.8927985, y: -0.45040646}
+      - {x: -1.667018, y: -0.95055264}
+      - {x: -1.2673997, y: -1.3396777}
+      - {x: -1.319184, y: -0.45134786}
+      - {x: -1.3655286, y: 0.1484667}
+      - {x: -1.310626, y: 0.27599624}
+      - {x: -1.1717513, y: 0.5311793}
+      - {x: -0.6289059, y: 0.84737176}
+      - {x: -0.15937585, y: 0.9859365}
+      - {x: 0.21140935, y: 0.9967973}
+      - {x: 0.52222806, y: 0.87895125}
+      - {x: 0.5945802, y: 0.5937674}
+--- !u!114 &1093814447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5561338829657461050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerDown2
 --- !u!1 &5567373972287198556
 GameObject:
   m_ObjectHideFlags: 0
@@ -5431,6 +7299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3139178821935715770}
   - component: {fileID: 3783848772071514061}
+  - component: {fileID: 1343279224}
   m_Layer: 0
   m_Name: down_hitbox1
   m_TagString: Untagged
@@ -5477,14 +7346,33 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.44366026, y: -1.1479464}
-      - {x: -0.45944166, y: -0.776844}
-      - {x: -0.15269709, y: -0.5554209}
-      - {x: 0.060825348, y: -0.5630436}
-      - {x: 0.18832731, y: -0.7027817}
-      - {x: 0.18735027, y: -0.9989824}
-      - {x: -0.061007977, y: -1.2435999}
-      - {x: -0.33912992, y: -1.2604427}
+    - - {x: 0.2827717, y: -0.33020172}
+      - {x: -0.16885732, y: -0.3294262}
+      - {x: -0.17215936, y: -1.3467975}
+      - {x: -0.0332029, y: -1.5814685}
+      - {x: 0.22538462, y: -1.5048999}
+      - {x: 0.29177502, y: -1.4175124}
+--- !u!114 &1343279224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5612902887493346536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerDown3
 --- !u!1 &5771311124611868220
 GameObject:
   m_ObjectHideFlags: 0
@@ -5495,6 +7383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3896524883249064582}
   - component: {fileID: 889505912136250403}
+  - component: {fileID: 118097132}
   m_Layer: 0
   m_Name: up_hitbox4
   m_TagString: Untagged
@@ -5545,6 +7434,27 @@ PolygonCollider2D:
       - {x: -0.24153566, y: 0.06461334}
       - {x: 0.2429452, y: 0.07136631}
       - {x: 0.24444962, y: 0.6807833}
+--- !u!114 &118097132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5771311124611868220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.45
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: HammerUp4
 --- !u!1 &5950246183139119841
 GameObject:
   m_ObjectHideFlags: 0
@@ -5555,6 +7465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5191065713804114231}
   - component: {fileID: 6725915646793534924}
+  - component: {fileID: 644196942}
   m_Layer: 0
   m_Name: up_hitbox1
   m_TagString: Untagged
@@ -5601,10 +7512,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.48836017, y: 1.1518803}
-      - {x: 0.77106357, y: 1.4367266}
-      - {x: 1.2711604, y: 1.0253849}
-      - {x: 0.98166704, y: 0.6786127}
+    - - {x: 1.4572942, y: 0.5075326}
+      - {x: 1.2562468, y: 0.7466068}
+      - {x: 1.2685845, y: 1.0582397}
+      - {x: 1.4521695, y: 1.2119946}
+      - {x: 1.7451413, y: 1.2234247}
+      - {x: 1.8684051, y: 0.79786295}
+      - {x: 1.8269478, y: 0.7059993}
+      - {x: 1.550472, y: 0.50086117}
+--- !u!114 &644196942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5950246183139119841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerUp1
 --- !u!1 &5950374182848977029
 GameObject:
   m_ObjectHideFlags: 0
@@ -5615,6 +7551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2310592667284632721}
   - component: {fileID: 5273176843719302926}
+  - component: {fileID: 824566608}
   m_Layer: 0
   m_Name: up_hitbox3
   m_TagString: Untagged
@@ -5661,10 +7598,50 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.48915052, y: 1.2056923}
-      - {x: 0.9646673, y: 0.71464825}
-      - {x: 1.2576475, y: 1.0360689}
-      - {x: 0.7772851, y: 1.5238752}
+    - - {x: 1.5445027, y: -0.11037013}
+      - {x: 1.2740407, y: -0.4997144}
+      - {x: 0.7804506, y: -0.7924592}
+      - {x: 0.32245737, y: -0.9012091}
+      - {x: -0.050866015, y: -0.89629376}
+      - {x: -0.2976, y: -0.7600395}
+      - {x: -0.28013363, y: -0.64404035}
+      - {x: -0.3287413, y: -0.27982292}
+      - {x: -0.4182092, y: -0.20978886}
+      - {x: -0.670839, y: -0.21499775}
+      - {x: -0.8319049, y: -0.34696257}
+      - {x: -0.8474269, y: -0.63347316}
+      - {x: -0.9480171, y: -0.6165343}
+      - {x: -0.9337654, y: -0.8427054}
+      - {x: -0.43374893, y: -1.3759137}
+      - {x: 0.006601393, y: -1.4937384}
+      - {x: 0.5610443, y: -1.4953642}
+      - {x: 1.3520384, y: -1.1969247}
+      - {x: 1.581541, y: -1.0325271}
+      - {x: 1.9411625, y: -0.47419083}
+      - {x: 2.0580168, y: -0.12766698}
+      - {x: 1.9815419, y: 0.7367127}
+      - {x: 1.5485408, y: 0.20820352}
+--- !u!114 &824566608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5950374182848977029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerUp2
 --- !u!1 &5977235939459231755
 GameObject:
   m_ObjectHideFlags: 0
@@ -5675,6 +7652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5700502427263189804}
   - component: {fileID: 8439256320063988944}
+  - component: {fileID: 2096054046}
   m_Layer: 0
   m_Name: left_hitbox2
   m_TagString: Untagged
@@ -5721,10 +7699,38 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.2512383, y: 0.1920662}
-      - {x: -1.6741958, y: 0.20007229}
-      - {x: -1.68048, y: -0.44272995}
+    - - {x: -1.3656374, y: 0.39193535}
+      - {x: -1.9285895, y: 0.6198668}
+      - {x: -2.2089467, y: 0.62074274}
+      - {x: -2.368258, y: 0.43104753}
+      - {x: -2.4092078, y: 0.20343299}
+      - {x: -2.4210637, y: -0.10996066}
+      - {x: -1.835324, y: -0.779564}
+      - {x: -0.8106186, y: -1.048781}
+      - {x: 0.17040789, y: -1.0674989}
+      - {x: -0.17630333, y: -0.709166}
       - {x: -1.2464185, y: -0.444273}
+--- !u!114 &2096054046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977235939459231755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft1
 --- !u!1 &6004312622174626115
 GameObject:
   m_ObjectHideFlags: 0
@@ -5769,6 +7775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6076791356581068952}
   - component: {fileID: 8515087331707028920}
+  - component: {fileID: 2121511478}
   m_Layer: 0
   m_Name: right_hitbox3
   m_TagString: Untagged
@@ -5823,6 +7830,27 @@ PolygonCollider2D:
       - {x: 0.85593224, y: 1.0500231}
       - {x: 1.246767, y: 0.76335716}
       - {x: 1.3771172, y: 0.7682371}
+--- !u!114 &2121511478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6032183316862107379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight3
 --- !u!1 &6080274720230193841
 GameObject:
   m_ObjectHideFlags: 0
@@ -5833,6 +7861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6966549246110732002}
   - component: {fileID: 3305768976625967321}
+  - component: {fileID: 861973278}
   m_Layer: 0
   m_Name: up_hitbox4
   m_TagString: Untagged
@@ -5883,6 +7912,27 @@ PolygonCollider2D:
       - {x: 1.4908938, y: 0.5858822}
       - {x: 1.1096699, y: 0.36797333}
       - {x: 0.870692, y: 1.0551186}
+--- !u!114 &861973278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6080274720230193841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerUp2
 --- !u!1 &6082718388040211611
 GameObject:
   m_ObjectHideFlags: 0
@@ -5893,6 +7943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4150926833094414533}
   - component: {fileID: 4374537648678283297}
+  - component: {fileID: 1216238695}
   m_Layer: 0
   m_Name: left_hitbox1
   m_TagString: Untagged
@@ -5927,7 +7978,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.07, y: -0.32}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5939,14 +7990,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.8207393, y: -0.13020897}
-      - {x: -1.8273921, y: 0.22580242}
-      - {x: -1.6984005, y: 0.3774233}
+    - - {x: -1.6925523, y: 0.116245165}
+      - {x: -1.6646907, y: 0.38585067}
       - {x: -1.3697429, y: 0.37948418}
       - {x: -1.2680206, y: 0.24006844}
-      - {x: -1.2622261, y: -0.26465034}
-      - {x: -1.3538756, y: -0.37633896}
-      - {x: -1.6404753, y: -0.3911457}
+      - {x: -1.2622261, y: -0.41634488}
+      - {x: -1.5224254, y: -0.45218605}
+      - {x: -1.6382002, y: -0.33852535}
+      - {x: -1.707895, y: -0.19731367}
+--- !u!114 &1216238695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6082718388040211611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft3
 --- !u!1 &6188817985416731299
 GameObject:
   m_ObjectHideFlags: 0
@@ -5957,6 +8029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5978512421515813560}
   - component: {fileID: 752953479793552228}
+  - component: {fileID: 1209415348}
   m_Layer: 0
   m_Name: right_hitbox3
   m_TagString: Untagged
@@ -5991,7 +8064,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 0.07}
+  m_Offset: {x: 0.58, y: 0.31}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6003,10 +8076,36 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.9686645, y: -0.38083678}
-      - {x: 0.96860135, y: -0.51014835}
-      - {x: 0.41989985, y: -0.49876624}
-      - {x: 0.4173328, y: -0.38484317}
+    - - {x: 1.0763597, y: -1.1738374}
+      - {x: 1.3630772, y: -1.0075524}
+      - {x: 1.3628813, y: -0.7757442}
+      - {x: 1.265601, y: -0.50713515}
+      - {x: 1.0428956, y: -0.6924168}
+      - {x: 0.74978083, y: -0.5560365}
+      - {x: 0.76574075, y: -0.8496517}
+      - {x: 0.5389687, y: -0.9406746}
+      - {x: 0.5226556, y: -1.1679139}
+--- !u!114 &1209415348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6188817985416731299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 150, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: SwordRight3
 --- !u!1 &6434305182302290631
 GameObject:
   m_ObjectHideFlags: 0
@@ -6017,6 +8116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8179656802240861220}
   - component: {fileID: 6103879675679350698}
+  - component: {fileID: 901369702}
   m_Layer: 0
   m_Name: down_hitbox1
   m_TagString: Untagged
@@ -6063,11 +8163,39 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.31244612, y: -0.5574808}
-      - {x: -0.31182528, y: -0.375}
-      - {x: -0.18550062, y: -0.375}
-      - {x: -0.1889143, y: -0.875}
+    - - {x: -0.3744451, y: -0.48514855}
+      - {x: -0.26532602, y: -0.4679984}
+      - {x: -0.16483429, y: -0.6901616}
+      - {x: 0.4221217, y: -0.5483218}
+      - {x: 0.77069956, y: -0.27251524}
+      - {x: 0.91075516, y: 0.13702841}
+      - {x: 1.2215624, y: 0.029151633}
+      - {x: 1.1685027, y: -0.92016375}
+      - {x: 0.43804425, y: -1.312362}
+      - {x: -0.28400296, y: -1.4113638}
+      - {x: -0.84320575, y: -1.2468051}
       - {x: -0.7573767, y: -0.875}
+--- !u!114 &901369702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6434305182302290631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordDown1
 --- !u!1 &6534906176152714488
 GameObject:
   m_ObjectHideFlags: 0
@@ -6078,6 +8206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2426697120777529966}
   - component: {fileID: 4328674344871639775}
+  - component: {fileID: 1299254439}
   m_Layer: 0
   m_Name: down_hitbox2
   m_TagString: Untagged
@@ -6124,13 +8253,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.1851201, y: -0.37379646}
-      - {x: -0.18983078, y: -0.685627}
-      - {x: -0.31092787, y: -0.8691778}
-      - {x: 0.07269621, y: -0.8133148}
-      - {x: 0.052360535, y: -0.55523145}
-      - {x: 0.0020694733, y: -0.54604185}
-      - {x: -0.06868887, y: -0.3091755}
+    - - {x: -0.3744451, y: -0.48514855}
+      - {x: -0.26532602, y: -0.4679984}
+      - {x: -0.16483429, y: -0.6901616}
+      - {x: 0.18743378, y: -0.6844579}
+      - {x: 0.27091157, y: -0.8130009}
+      - {x: 0.55884624, y: -0.9253303}
+      - {x: 0.43804425, y: -1.312362}
+      - {x: -0.28400296, y: -1.4113638}
+      - {x: -0.84320575, y: -1.2468051}
+      - {x: -0.7573767, y: -0.875}
+--- !u!114 &1299254439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6534906176152714488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordDown1
 --- !u!1 &6608233324513436817
 GameObject:
   m_ObjectHideFlags: 0
@@ -6141,6 +8294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1733525182938668239}
   - component: {fileID: 2805485123388319235}
+  - component: {fileID: 1845937434}
   m_Layer: 0
   m_Name: up_hitbox3
   m_TagString: Untagged
@@ -6187,12 +8341,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.3741083, y: 0.6288862}
-      - {x: -0.0753479, y: 0.42951202}
-      - {x: 0.11518335, y: 0.73150826}
-      - {x: 0.11114502, y: 0.72394943}
-      - {x: 0.02977562, y: 0.86172295}
-      - {x: -0.37500858, y: 0.7492485}
+    - - {x: 0.052184135, y: 0.78395027}
+      - {x: 0.056926064, y: 0.6660056}
+      - {x: 0.20841976, y: 0.45517468}
+      - {x: 0.3429683, y: 0.39000115}
+      - {x: 0.6126913, y: 0.3895103}
+      - {x: 0.7168972, y: 0.33187115}
+      - {x: 1.0110519, y: 0.57008}
+      - {x: 0.9989187, y: 0.7851395}
+--- !u!114 &1845937434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6608233324513436817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.25
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: -1, y: -1}
+  StaggerAmount: 0
+  StateToInflict: 8
+  StatusesToInflict: []
+  HitboxName: KnifeUp
 --- !u!1 &6618178906339074020
 GameObject:
   m_ObjectHideFlags: 0
@@ -6254,6 +8431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3228528648698427731}
   - component: {fileID: 2231700777866232198}
+  - component: {fileID: 1159710539}
   m_Layer: 0
   m_Name: down_hitbox4
   m_TagString: Untagged
@@ -6308,6 +8486,27 @@ PolygonCollider2D:
       - {x: -0.23580694, y: -1.1732683}
       - {x: -0.12683439, y: -1.3013372}
       - {x: 0.13252306, y: -1.3009329}
+--- !u!114 &1159710539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6628429793120318410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: -180}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.45
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: HammerDown4
 --- !u!1 &6684911407294503200
 GameObject:
   m_ObjectHideFlags: 0
@@ -6318,6 +8517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5082417011628455450}
   - component: {fileID: 2597583609342490695}
+  - component: {fileID: 26485189}
   m_Layer: 0
   m_Name: left_hitbox2
   m_TagString: Untagged
@@ -6364,14 +8564,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.8633952, y: 1.3472729}
-      - {x: -1.0084147, y: 1.5076275}
-      - {x: -1.2360878, y: 1.5178108}
-      - {x: -1.5559902, y: 1.1757755}
-      - {x: -1.5889778, y: 0.99922466}
-      - {x: -1.3259544, y: 0.7465}
-      - {x: -1.166328, y: 0.80023384}
-      - {x: -0.8660569, y: 1.1465454}
+    - - {x: -1.5382787, y: 0.5965378}
+      - {x: -1.2118441, y: 1.2133325}
+      - {x: -0.7629641, y: 1.668889}
+      - {x: -0.9056388, y: 0.8637024}
+      - {x: -1.1197792, y: 0.5342082}
+      - {x: -1.3010755, y: -0.020303786}
+      - {x: -1.3212184, y: -0.59332216}
+      - {x: -1.555377, y: -0.6304239}
+      - {x: -1.6488374, y: -0.49432358}
+      - {x: -1.581483, y: -0.21416846}
+--- !u!114 &26485189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6684911407294503200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft3
 --- !u!1 &6747459055691580165
 GameObject:
   m_ObjectHideFlags: 0
@@ -6382,6 +8605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8962897544773430210}
   - component: {fileID: 8026333468630805241}
+  - component: {fileID: 260749473}
   m_Layer: 0
   m_Name: up_hitbox1
   m_TagString: Untagged
@@ -6428,10 +8652,36 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.2993302, y: 1.0467215}
-      - {x: -0.7712579, y: 1.533123}
-      - {x: -0.47271395, y: 1.191886}
-      - {x: -0.96376085, y: 0.73119164}
+    - - {x: -1.4422777, y: 0.49958378}
+      - {x: -1.7593718, y: 0.70935786}
+      - {x: -1.7988607, y: 0.9015993}
+      - {x: -1.7691478, y: 1.1637951}
+      - {x: -1.6816012, y: 1.220982}
+      - {x: -1.3220872, y: 1.2225692}
+      - {x: -1.1674693, y: 1.0534986}
+      - {x: -1.1678216, y: 0.71226174}
+      - {x: -1.331794, y: 0.49278736}
+--- !u!114 &260749473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6747459055691580165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerUp2
 --- !u!1 &6760259098960992945
 GameObject:
   m_ObjectHideFlags: 0
@@ -6442,6 +8692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6348643021348233757}
   - component: {fileID: 6665557605711420248}
+  - component: {fileID: 65681477}
   m_Layer: 0
   m_Name: up_hitbox2
   m_TagString: Untagged
@@ -6476,7 +8727,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.03}
+  m_Offset: {x: 0, y: 0.06}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6488,13 +8739,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.13347626, y: 1.040735}
-      - {x: -0.06967974, y: 1.0309188}
-      - {x: 0.021714687, y: 0.5297239}
-      - {x: 0.15190744, y: 0.58264804}
-      - {x: 0.10799551, y: 0.7658336}
-      - {x: 0.19749928, y: 0.7974603}
-      - {x: 0.15054083, y: 0.9578502}
+    - - {x: 0.064411536, y: 1.3234391}
+      - {x: 0.29908934, y: 0.7129076}
+      - {x: 0.6867145, y: 0.6482659}
+      - {x: 0.87426335, y: 0.50153655}
+      - {x: 1.3468609, y: 1.0919096}
+      - {x: 1.3371931, y: 1.2608484}
+      - {x: 0.76219386, y: 1.4546223}
+--- !u!114 &65681477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6760259098960992945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordUp1
 --- !u!1 &6784946915095627424
 GameObject:
   m_ObjectHideFlags: 0
@@ -6547,6 +8819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8000577729772092284}
   - component: {fileID: 5767863601943421990}
+  - component: {fileID: 1208824003}
   m_Layer: 0
   m_Name: right_hitbox1
   m_TagString: Untagged
@@ -6593,10 +8866,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.799618, y: -1.09266}
-      - {x: 1.2794843, y: -0.6156635}
-      - {x: 1.569109, y: -0.8930588}
-      - {x: 1.1578054, y: -1.4101791}
+    - - {x: -0.2145804, y: -0.8064963}
+      - {x: -0.35195905, y: -0.7527203}
+      - {x: -0.35847098, y: -0.47018492}
+      - {x: -0.32677758, y: -0.3754006}
+      - {x: 0.13112354, y: -0.38130388}
+      - {x: 0.22861297, y: -0.4946841}
+      - {x: 0.25491127, y: -0.83565325}
+--- !u!114 &1208824003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6814650678949219513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight1
 --- !u!1 &6828236802357517184
 GameObject:
   m_ObjectHideFlags: 0
@@ -6641,6 +8938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2662377913609286181}
   - component: {fileID: 2984841403160934679}
+  - component: {fileID: 1960405216}
   m_Layer: 0
   m_Name: down_hitbox2
   m_TagString: Untagged
@@ -6687,14 +8985,44 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.2516842, y: -0.5629606}
-      - {x: 0.12000561, y: -0.44482994}
-      - {x: -0.09447718, y: -0.4362564}
-      - {x: -0.2397542, y: -0.55423737}
-      - {x: -0.21999884, y: -1.0208073}
-      - {x: -0.111561775, y: -1.1325159}
-      - {x: 0.12397194, y: -1.1228275}
+    - - {x: 0.22843328, y: -0.7772422}
+      - {x: 0.13416627, y: -0.73189235}
+      - {x: 0.039212286, y: -0.7239344}
+      - {x: -0.0063391626, y: -0.7888094}
+      - {x: -0.100201935, y: -0.7819279}
+      - {x: -0.1163483, y: -1.1677477}
+      - {x: -0.16680805, y: -1.1637194}
+      - {x: -0.16453382, y: -1.4966704}
+      - {x: -0.109825894, y: -1.483533}
+      - {x: -0.10421708, y: -1.8596565}
+      - {x: -0.052304655, y: -1.9454511}
+      - {x: 0.23645423, y: -1.9522642}
+      - {x: 0.27523708, y: -1.8785886}
+      - {x: 0.33474666, y: -1.7084529}
+      - {x: 0.32751948, y: -1.455041}
+      - {x: 0.24553913, y: -1.2710338}
       - {x: 0.2393837, y: -1.0216312}
+--- !u!114 &1960405216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6926318225986383740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: -180}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.45
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: HammerDown4
 --- !u!1 &6941226243253146257
 GameObject:
   m_ObjectHideFlags: 0
@@ -6705,6 +9033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4949446653561049697}
   - component: {fileID: 2555537271271919174}
+  - component: {fileID: 626656171}
   m_Layer: 0
   m_Name: right_hitbox4
   m_TagString: Untagged
@@ -6755,6 +9084,27 @@ PolygonCollider2D:
       - {x: 0.46687245, y: -1.1577454}
       - {x: 0.6707232, y: -1.5481958}
       - {x: 1.300313, y: -1.3003902}
+--- !u!114 &626656171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6941226243253146257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight2
 --- !u!1 &6995612210652621349
 GameObject:
   m_ObjectHideFlags: 0
@@ -6765,6 +9115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3425979851179074020}
   - component: {fileID: 6418721472683165206}
+  - component: {fileID: 426759442}
   m_Layer: 0
   m_Name: right_hitbox2
   m_TagString: Untagged
@@ -6811,14 +9162,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.2001646, y: -0.5818434}
-      - {x: 1.359947, y: -0.7499809}
-      - {x: 1.555021, y: -0.7561455}
-      - {x: 1.6875296, y: -0.6286135}
-      - {x: 1.6836998, y: -0.14240456}
-      - {x: 1.5735703, y: 0.00004196167}
-      - {x: 1.3181944, y: 0.009654999}
-      - {x: 1.1794653, y: -0.1441679}
+    - - {x: -2.0500872, y: -1.2513305}
+      - {x: -1.674341, y: -1.2251009}
+      - {x: -1.6952305, y: -0.734549}
+      - {x: -1.7678876, y: -0.6610081}
+      - {x: -2.063268, y: -0.57433176}
+      - {x: -2.1194067, y: 0.11882181}
+      - {x: -2.2128098, y: 0.12843484}
+      - {x: -2.2651536, y: -0.9216368}
+--- !u!114 &426759442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6995612210652621349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 180, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight4
 --- !u!1 &7037188635513132224
 GameObject:
   m_ObjectHideFlags: 0
@@ -6829,6 +9201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7982224500480336602}
   - component: {fileID: 7152577668430313082}
+  - component: {fileID: 427134271}
   m_Layer: 0
   m_Name: left_hitbox2
   m_TagString: Untagged
@@ -6863,7 +9236,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13, y: -0.06}
+  m_Offset: {x: -0.47, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6875,16 +9248,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.8640939, y: 0.36313015}
-      - {x: -0.8597094, y: 0.3579622}
-      - {x: -0.87235177, y: 0.36343914}
-      - {x: -0.5375434, y: 0.36580044}
-      - {x: -0.47670233, y: 0.36502033}
-      - {x: -0.32099926, y: 0.35778767}
-      - {x: -0.32182515, y: 0.3659292}
-      - {x: -0.32126677, y: 0.49621826}
-      - {x: -0.8794075, y: 0.50184876}
-      - {x: -0.863413, y: 0.36344296}
+    - - {x: -1.2880787, y: -1.119549}
+      - {x: -1.1025046, y: -1.1647749}
+      - {x: -0.57248414, y: -1.1837196}
+      - {x: -0.6023959, y: -0.9225354}
+      - {x: -0.69772875, y: -0.45507967}
+      - {x: -0.9065739, y: -0.17892617}
+      - {x: -0.98544395, y: -0.08946143}
+      - {x: -1.2276597, y: -0.36681628}
+      - {x: -1.3910242, y: -0.63595617}
+      - {x: -1.4065431, y: -0.99818957}
+--- !u!114 &427134271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7037188635513132224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: -150, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: SwordLeft3
 --- !u!1 &7052443356051620707
 GameObject:
   m_ObjectHideFlags: 0
@@ -6895,6 +9289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7191176116830310431}
   - component: {fileID: 390128355505728641}
+  - component: {fileID: 2062743079}
   m_Layer: 0
   m_Name: right_hitbox3
   m_TagString: Untagged
@@ -6929,7 +9324,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 0.07}
+  m_Offset: {x: 0.51, y: 0.31}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6941,19 +9336,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.68297255, y: 0.6476552}
-      - {x: 0.58767855, y: 0.68341035}
-      - {x: 0.2929255, y: 0.39005345}
-      - {x: 0.29670778, y: 0.26907414}
-      - {x: 0.3363959, y: 0.24145287}
-      - {x: 0.49729958, y: 0.3528077}
-      - {x: 0.8255776, y: 0.353234}
-      - {x: 0.83832085, y: 0.29445523}
-      - {x: 0.8844085, y: 0.25565052}
-      - {x: 0.88653886, y: 0.2846772}
-      - {x: 0.8888768, y: 0.30081815}
-      - {x: 0.9198419, y: 0.29983586}
-      - {x: 0.89698803, y: 0.49083585}
+    - - {x: 0.60413295, y: -0.60973704}
+      - {x: -0.092408136, y: -0.2999654}
+      - {x: -0.13928625, y: -0.48625618}
+      - {x: -0.3402881, y: -0.7198575}
+      - {x: 0.08892463, y: -1.0658753}
+      - {x: 0.26916265, y: -1.1729423}
+      - {x: 0.42116106, y: -1.1708152}
+      - {x: 0.5456684, y: -0.99458504}
+--- !u!114 &2062743079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7052443356051620707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordRight1
 --- !u!1 &7109746513231154803
 GameObject:
   m_ObjectHideFlags: 0
@@ -6964,6 +9375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6213095400896588787}
   - component: {fileID: 366273202605144950}
+  - component: {fileID: 896503157}
   m_Layer: 0
   m_Name: down_hitbox3
   m_TagString: Untagged
@@ -6998,7 +9410,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.14, y: -0.1}
+  m_Offset: {x: -0.03, y: -0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7010,14 +9422,33 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.8469869, y: -0.21797696}
-      - {x: -1.214583, y: -0.52695024}
-      - {x: -0.9499904, y: -0.8372015}
-      - {x: -0.7060677, y: -0.8395637}
-      - {x: -0.69938815, y: -0.789348}
-      - {x: -0.88734925, y: -0.6404079}
-      - {x: -0.8887826, y: -0.41325894}
-      - {x: -0.7599193, y: -0.2711157}
+    - - {x: 0.44723415, y: -0.5715325}
+      - {x: 0.6873367, y: -0.35265493}
+      - {x: 1.1367476, y: -1.0051671}
+      - {x: 1.1137415, y: -1.145673}
+      - {x: 0.9310912, y: -1.3049256}
+      - {x: 0.576389, y: -1.3665102}
+--- !u!114 &896503157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7109746513231154803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordDown2
 --- !u!1 &7247821929936831122
 GameObject:
   m_ObjectHideFlags: 0
@@ -7028,6 +9459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5535267988887061977}
   - component: {fileID: 2284017886304514724}
+  - component: {fileID: 1198402197}
   m_Layer: 0
   m_Name: left_hitbox2
   m_TagString: Untagged
@@ -7062,7 +9494,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13, y: -0.06}
+  m_Offset: {x: -0.53, y: 0.31}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7074,15 +9506,39 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.86409426, y: 0.058390617}
-      - {x: -0.8724065, y: -0.06740093}
-      - {x: -0.8152132, y: -0.0682745}
-      - {x: -0.8105383, y: -0.26272297}
-      - {x: -0.5592357, y: -0.24445575}
-      - {x: -0.33369648, y: -0.12471527}
-      - {x: -0.35991728, y: -0.014994089}
-      - {x: -0.67624855, y: -0.056837082}
-      - {x: -0.7491355, y: 0.05870533}
+    - - {x: -0.52932125, y: -0.6742088}
+      - {x: -0.5343343, y: -0.41185692}
+      - {x: -0.5318725, y: -0.33381128}
+      - {x: -0.41441894, y: -0.16657932}
+      - {x: -0.41092342, y: 0.15636143}
+      - {x: 0.1725921, y: 0.14847383}
+      - {x: 0.19363874, y: -0.48773402}
+      - {x: 0.28066605, y: -0.5041106}
+      - {x: 0.39391053, y: -0.71191305}
+      - {x: -0.19335687, y: -1.1709521}
+      - {x: -0.3653632, y: -1.1720637}
+      - {x: -0.47861123, y: -0.998831}
+--- !u!114 &1198402197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7247821929936831122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordLeft1
 --- !u!1 &7327996063131892951
 GameObject:
   m_ObjectHideFlags: 0
@@ -7093,6 +9549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9186337820430133218}
   - component: {fileID: 914764570476577594}
+  - component: {fileID: 423301288}
   m_Layer: 0
   m_Name: down_hitbox1
   m_TagString: Untagged
@@ -7139,13 +9596,33 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.44122696, y: -0.7982801}
-      - {x: -0.4272313, y: -0.21457992}
-      - {x: -0.31564426, y: -0.21900116}
-      - {x: -0.30687857, y: -0.22213398}
-      - {x: -0.31733847, y: -0.22266231}
-      - {x: -0.31356764, y: -0.2536968}
-      - {x: -0.3022828, y: -0.7931427}
+    - - {x: 0.3316158, y: -1.8624564}
+      - {x: 0.0077796355, y: -1.0110055}
+      - {x: -0.17094916, y: -0.21016131}
+      - {x: 0.03328067, y: -0.1398625}
+      - {x: 0.16640364, y: -0.54715747}
+      - {x: 0.33298588, y: -0.9873649}
+--- !u!114 &423301288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7327996063131892951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: -135}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.4
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordDown3
 --- !u!1 &7395264838858242639
 GameObject:
   m_ObjectHideFlags: 0
@@ -7156,6 +9633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5604676731243638614}
   - component: {fileID: 6075721649260832857}
+  - component: {fileID: 1257633479}
   m_Layer: 0
   m_Name: left_hitbox3
   m_TagString: Untagged
@@ -7202,14 +9680,42 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.3152838, y: -0.24789429}
-      - {x: -1.54462, y: -0.23644543}
-      - {x: -1.691884, y: -0.393363}
-      - {x: -1.6805925, y: -0.8659506}
-      - {x: -1.5421872, y: -0.9950552}
-      - {x: -1.3315063, y: -1.004859}
-      - {x: -1.1921244, y: -0.84742355}
-      - {x: -1.193532, y: -0.3700056}
+    - - {x: -1.5751786, y: -0.5516159}
+      - {x: -1.6950794, y: -0.17452447}
+      - {x: -1.8660231, y: 0.17561}
+      - {x: -1.9226351, y: 0.19175577}
+      - {x: -2.018478, y: -0.519824}
+      - {x: -2.0366538, y: -0.9028405}
+      - {x: -2.2451658, y: -1.0008076}
+      - {x: -2.24889, y: -1.0494196}
+      - {x: -1.9768255, y: -1.1535494}
+      - {x: -1.8562099, y: -1.2786791}
+      - {x: -1.7991064, y: -1.2773095}
+      - {x: -1.5842848, y: -1.1041958}
+      - {x: -1.309927, y: -1.0523334}
+      - {x: -1.3086528, y: -0.9984789}
+      - {x: -1.564696, y: -0.93106735}
+--- !u!114 &1257633479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395264838858242639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: -180, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft4
 --- !u!1 &7396912707926170404
 GameObject:
   m_ObjectHideFlags: 0
@@ -7220,6 +9726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6580673040940269788}
   - component: {fileID: 7242805433601903133}
+  - component: {fileID: 832261477}
   m_Layer: 0
   m_Name: down_hitbox4
   m_TagString: Untagged
@@ -7274,6 +9781,27 @@ PolygonCollider2D:
       - {x: -0.12320328, y: 0.17139244}
       - {x: -0.24110222, y: 0.017582893}
       - {x: -0.25292015, y: -0.39063263}
+--- !u!114 &832261477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7396912707926170404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerDown3
 --- !u!1 &7544117128040001351
 GameObject:
   m_ObjectHideFlags: 0
@@ -7317,6 +9845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9068306450132942512}
   - component: {fileID: 8911880193582931373}
+  - component: {fileID: 1232393661}
   m_Layer: 0
   m_Name: down_hitbox3
   m_TagString: Untagged
@@ -7351,7 +9880,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.14, y: -0.1}
+  m_Offset: {x: 0.03, y: -0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7363,14 +9892,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.012212411, y: -0.28089944}
-      - {x: -0.0064673424, y: -0.619236}
-      - {x: -0.014539376, y: -0.83300626}
-      - {x: 0.17484985, y: -0.8353685}
-      - {x: 0.1857246, y: -0.8396858}
-      - {x: 0.28720748, y: -0.6991352}
-      - {x: 0.35708702, y: -0.5265192}
-      - {x: 0.104218826, y: -0.2753109}
+    - - {x: -0.3744451, y: -0.48514858}
+      - {x: -0.26532602, y: -0.46799842}
+      - {x: -0.16483429, y: -0.6901616}
+      - {x: -0.01406288, y: -0.7516235}
+      - {x: -0.08767286, y: -1.4475298}
+      - {x: -0.5986435, y: -1.412612}
+      - {x: -0.84320575, y: -1.2468051}
+      - {x: -0.7573767, y: -0.875}
+--- !u!114 &1232393661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7586538644080679208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordDown1
 --- !u!1 &7625145927423181375
 GameObject:
   m_ObjectHideFlags: 0
@@ -7381,6 +9931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5853308650451393833}
   - component: {fileID: 493387793330294643}
+  - component: {fileID: 83255467}
   m_Layer: 0
   m_Name: down_hitbox1
   m_TagString: Untagged
@@ -7427,11 +9978,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.2883549, y: -0.89371777}
-      - {x: -0.96789837, y: -0.56362057}
-      - {x: -0.75136375, y: -0.80144787}
-      - {x: -0.5251517, y: -1.0472193}
-      - {x: -0.77377844, y: -1.3178492}
+    - - {x: -1.5619369, y: -1.2724487}
+      - {x: -1.5638556, y: -0.95752865}
+      - {x: -1.2680819, y: -0.7177615}
+      - {x: -1.1638476, y: -0.7177937}
+      - {x: -0.9983643, y: -0.9509622}
+      - {x: -0.9994369, y: -1.2801847}
+      - {x: -1.1605659, y: -1.4345609}
+      - {x: -1.4418832, y: -1.4411187}
+--- !u!114 &83255467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7625145927423181375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerDown1
 --- !u!1 &7695586260817051357
 GameObject:
   m_ObjectHideFlags: 0
@@ -7442,6 +10017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5018279456690793319}
   - component: {fileID: 1360161779800927041}
+  - component: {fileID: 1491084895}
   m_Layer: 0
   m_Name: down_hitbox3
   m_TagString: Untagged
@@ -7476,7 +10052,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.09, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7488,14 +10064,36 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.111178875, y: 0.006887436}
-      - {x: -0.10487795, y: -0.0041685104}
-      - {x: -0.24463272, y: -0.12963104}
-      - {x: -0.23751831, y: -0.56453514}
-      - {x: -0.1295371, y: -0.6998644}
-      - {x: 0.11239958, y: -0.6924658}
-      - {x: 0.23455048, y: -0.5810852}
-      - {x: 0.24733639, y: -0.13640213}
+    - - {x: 0.37168244, y: -0.085494764}
+      - {x: 0.43643624, y: 1.1711705}
+      - {x: -0.027427197, y: 1.1962191}
+      - {x: 0.049161226, y: -0.13697587}
+      - {x: 0.06539816, y: -0.7118957}
+      - {x: 0.11284313, y: -0.32527685}
+      - {x: 0.17115852, y: -0.3472576}
+      - {x: 0.2712748, y: -0.6178095}
+      - {x: 0.2840607, y: -0.12171246}
+--- !u!114 &1491084895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7695586260817051357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerDown3
 --- !u!1 &7712822329163648931
 GameObject:
   m_ObjectHideFlags: 0
@@ -7574,6 +10172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1469574681720450201}
   - component: {fileID: 5644255830322116822}
+  - component: {fileID: 1246237338}
   m_Layer: 0
   m_Name: right_hitbox1
   m_TagString: Untagged
@@ -7608,7 +10207,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.135, y: 0}
+  m_Offset: {x: 0.59, y: 0.28}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7620,10 +10219,38 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.80355954, y: -0.4365282}
-      - {x: 0.79599357, y: -0.31534004}
-      - {x: 0.24905108, y: -0.31242085}
-      - {x: 0.24778675, y: -0.42696285}
+    - - {x: 1.0763597, y: -1.1738374}
+      - {x: 1.3630772, y: -1.0075524}
+      - {x: 1.3628813, y: -0.7757442}
+      - {x: 1.1998715, y: -0.3936022}
+      - {x: 0.9230678, y: -0.06007734}
+      - {x: 0.6167313, y: 0.29415178}
+      - {x: 0.5358708, y: -0.12718308}
+      - {x: 0.644462, y: -0.486469}
+      - {x: 0.76574075, y: -0.8496517}
+      - {x: 0.5389686, y: -0.9406746}
+      - {x: 0.5226556, y: -1.1679139}
+--- !u!114 &1246237338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7762856402805354167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 150, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: SwordRight3
 --- !u!1 &7919314252093761501
 GameObject:
   m_ObjectHideFlags: 0
@@ -7634,6 +10261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4618311612853068166}
   - component: {fileID: 5281296918788080019}
+  - component: {fileID: 209130728}
   m_Layer: 0
   m_Name: left_hitbox1
   m_TagString: Untagged
@@ -7668,7 +10296,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13, y: 0}
+  m_Offset: {x: -0.49, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7680,15 +10308,38 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.7459909, y: 0.3019209}
-      - {x: -0.74573004, y: 0.29886723}
-      - {x: -0.73778784, y: 0.29952908}
-      - {x: -0.73488677, y: 0.2910118}
-      - {x: -0.73021233, y: 0.30764103}
-      - {x: -0.7370783, y: 0.30765533}
-      - {x: -0.1681596, y: 0.3164339}
-      - {x: -0.1635338, y: 0.43266964}
-      - {x: -0.75108397, y: 0.43809795}
+    - - {x: -1.2880787, y: -1.119549}
+      - {x: -1.1025046, y: -1.1647749}
+      - {x: -0.5944967, y: -1.172713}
+      - {x: -0.602396, y: -0.9225354}
+      - {x: -0.5656527, y: -0.11388281}
+      - {x: -0.6589309, y: -0.07986887}
+      - {x: -0.6129075, y: 0.25851423}
+      - {x: -0.6497501, y: 0.334283}
+      - {x: -1.2276597, y: -0.36681628}
+      - {x: -1.3910242, y: -0.63595617}
+      - {x: -1.4065431, y: -0.99818957}
+--- !u!114 &209130728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7919314252093761501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: -150, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: SwordLeft3
 --- !u!1 &8124889890527459648
 GameObject:
   m_ObjectHideFlags: 0
@@ -7750,6 +10401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2165104970664945572}
   - component: {fileID: 7791755233390007072}
+  - component: {fileID: 2144975825}
   m_Layer: 0
   m_Name: right_hitbox4
   m_TagString: Untagged
@@ -7804,6 +10456,27 @@ PolygonCollider2D:
       - {x: 1.5996325, y: -0.24797058}
       - {x: 1.7053697, y: -0.4154358}
       - {x: 1.692765, y: -0.8544216}
+--- !u!114 &2144975825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8152032723678482534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 180, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight4
 --- !u!1 &8160814596828108996
 GameObject:
   m_ObjectHideFlags: 0
@@ -7878,6 +10551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7739197551312657627}
   - component: {fileID: 2411938415755805425}
+  - component: {fileID: 1736859705}
   m_Layer: 0
   m_Name: down_hitbox4
   m_TagString: Untagged
@@ -7928,6 +10602,27 @@ PolygonCollider2D:
       - {x: -1.1135907, y: -0.2419939}
       - {x: -1.4794402, y: -0.39246273}
       - {x: -1.2616324, y: -1.0467052}
+--- !u!114 &1736859705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8251478763308002232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerDown2
 --- !u!1 &8254132069149654065
 GameObject:
   m_ObjectHideFlags: 0
@@ -7938,6 +10633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8291628121102006943}
   - component: {fileID: 4565734498562118784}
+  - component: {fileID: 946316415}
   m_Layer: 0
   m_Name: down_hitbox2
   m_TagString: Untagged
@@ -7984,10 +10680,47 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.2987342, y: -1.0626736}
-      - {x: -0.3210454, y: -1.0546684}
-      - {x: -0.33553028, y: -1.5088491}
-      - {x: 0.31175518, y: -1.5021906}
+    - - {x: 1.563585, y: -1.7785568}
+      - {x: 0.74992645, y: -1.6640669}
+      - {x: 0.012285246, y: -1.6576068}
+      - {x: -0.23428471, y: -1.4506919}
+      - {x: -0.34705305, y: -1.167145}
+      - {x: -0.48423094, y: -1.2721453}
+      - {x: -0.7663499, y: -1.2459564}
+      - {x: -0.7681266, y: -0.9645025}
+      - {x: -0.95208865, y: -0.7246488}
+      - {x: -1.0555308, y: -0.7168051}
+      - {x: -1.221868, y: -0.84967047}
+      - {x: -1.2823521, y: -0.9015337}
+      - {x: -1.306628, y: -1.0527254}
+      - {x: -1.3938726, y: -1.0609734}
+      - {x: -1.3901657, y: -1.2698419}
+      - {x: -1.3192208, y: -1.3986304}
+      - {x: -0.9729099, y: -1.7085552}
+      - {x: -0.63683647, y: -1.991554}
+      - {x: -0.144564, y: -2.1037822}
+      - {x: 0.7157223, y: -2.1044688}
+--- !u!114 &946316415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8254132069149654065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerDown2
 --- !u!1 &8329147520261715578
 GameObject:
   m_ObjectHideFlags: 0
@@ -7998,6 +10731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6739598084418768748}
   - component: {fileID: 5462533915895423418}
+  - component: {fileID: 1325116770}
   m_Layer: 0
   m_Name: up_hitbox1
   m_TagString: Untagged
@@ -8032,7 +10766,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.15, y: 0.3}
+  m_Offset: {x: -1.15, y: 0.49}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8044,14 +10778,36 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.0579675, y: 1.4585917}
-      - {x: 1.3056182, y: 1.4630167}
-      - {x: 1.5428194, y: 1.0867283}
-      - {x: 1.5249847, y: 0.92398185}
-      - {x: 1.3409046, y: 0.72469157}
-      - {x: 1.166489, y: 0.75872535}
-      - {x: 0.89045084, y: 1.0706112}
-      - {x: 0.889912, y: 1.2925465}
+    - - {x: 0.9796549, y: -0.49337298}
+      - {x: 0.9837394, y: -0.42873055}
+      - {x: 1.1159762, y: -0.44745165}
+      - {x: 1.3672249, y: -0.45850343}
+      - {x: 1.4406993, y: -0.522917}
+      - {x: 1.4322138, y: -0.96803945}
+      - {x: 1.3236463, y: -1.0500576}
+      - {x: 1.108188, y: -1.0224755}
+      - {x: 1.0374115, y: -0.9761346}
+--- !u!114 &1325116770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8329147520261715578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerUp3
 --- !u!1 &8416372685280913888
 GameObject:
   m_ObjectHideFlags: 0
@@ -8062,6 +10818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2863079221446788294}
   - component: {fileID: 1436563163546457242}
+  - component: {fileID: 83253200}
   m_Layer: 0
   m_Name: left_hitbox3
   m_TagString: Untagged
@@ -8096,7 +10853,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.49, y: 0.31}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8108,17 +10865,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.4439454, y: 0.31752205}
-      - {x: -0.43428326, y: 0.43634033}
-      - {x: -0.6850319, y: 0.440979}
-      - {x: -0.89439106, y: 0.44005585}
-      - {x: -0.99771786, y: 0.43465328}
-      - {x: -1.0079355, y: 0.31232643}
-      - {x: -0.86088085, y: 0.317585}
-      - {x: -0.8738947, y: 0.3154106}
-      - {x: -0.7043786, y: 0.3145666}
-      - {x: -0.5985117, y: 0.31627655}
-      - {x: -0.4926448, y: 0.3179865}
+    - - {x: -1.2880787, y: -1.119549}
+      - {x: -1.1025046, y: -1.1647749}
+      - {x: -0.57248414, y: -1.1837196}
+      - {x: -0.60239595, y: -0.9225354}
+      - {x: -0.8146801, y: -0.85742617}
+      - {x: -0.8039235, y: -0.53911513}
+      - {x: -1.0944821, y: -0.7288647}
+      - {x: -1.2800728, y: -0.48212504}
+      - {x: -1.3910242, y: -0.63595617}
+      - {x: -1.4065431, y: -0.99818957}
+--- !u!114 &83253200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8416372685280913888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: -150, y: 60}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: SwordLeft3
 --- !u!1 &8422951468692763515
 GameObject:
   m_ObjectHideFlags: 0
@@ -8129,6 +10906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6444059022134456584}
   - component: {fileID: 9063466032152099462}
+  - component: {fileID: 396100993}
   m_Layer: 0
   m_Name: right_hitbox4
   m_TagString: Untagged
@@ -8163,7 +10941,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.33}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8175,10 +10953,38 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.2892005, y: 1.1129074}
-      - {x: 0.69877577, y: 1.3842735}
-      - {x: 0.47449684, y: 1.0295019}
-      - {x: 1.1040869, y: 0.69754887}
+    - - {x: -0.892195, y: -0.080232844}
+      - {x: -0.7946039, y: 0.2782142}
+      - {x: -0.611476, y: 0.62938154}
+      - {x: 0.84493774, y: 0.85349023}
+      - {x: 0.4929275, y: 1.2826931}
+      - {x: -0.5160663, y: 1.2513587}
+      - {x: -0.7764905, y: 1.1697977}
+      - {x: -1.2123828, y: 0.8875282}
+      - {x: -1.6809847, y: 0.2755275}
+      - {x: -1.6438892, y: 0.10721135}
+      - {x: -1.504266, y: -0.09504461}
+--- !u!114 &396100993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8422951468692763515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerRight1
 --- !u!1 &8443890894960117514
 GameObject:
   m_ObjectHideFlags: 0
@@ -8189,6 +10995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5105369585483619187}
   - component: {fileID: 6560059022076759208}
+  - component: {fileID: 1780590775}
   m_Layer: 0
   m_Name: up_hitbox3
   m_TagString: Untagged
@@ -8223,7 +11030,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.06}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8235,13 +11042,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.7386873, y: 0.86581707}
-      - {x: 0.7517431, y: 0.65636635}
-      - {x: 0.62411785, y: 0.511076}
-      - {x: 0.70588255, y: 0.42690277}
-      - {x: 1.0724092, y: 0.79114056}
-      - {x: 0.8208575, y: 1.0657187}
-      - {x: 0.55204153, y: 1.0594969}
+    - - {x: -0.8979851, y: 0.7811749}
+      - {x: -0.42240262, y: 0.16189504}
+      - {x: -0.21743155, y: 0.39431232}
+      - {x: -0.19338033, y: 0.73306113}
+      - {x: -0.47243884, y: 1.0621097}
+      - {x: -0.64069074, y: 1.0526971}
+      - {x: -0.88214874, y: 0.93700355}
+--- !u!114 &1780590775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8443890894960117514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordUp2
 --- !u!1 &8449033656779889465
 GameObject:
   m_ObjectHideFlags: 0
@@ -8252,6 +11080,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6651661176146535044}
   - component: {fileID: 473352381587386555}
+  - component: {fileID: 1242181944}
   m_Layer: 0
   m_Name: left_hitbox4
   m_TagString: Untagged
@@ -8298,10 +11127,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.40547943, y: -1.2150478}
-      - {x: -1.0315814, y: -0.98827744}
-      - {x: -1.2826185, y: -1.3519697}
-      - {x: -0.5727544, y: -1.6125679}
+    - - {x: 0.74891055, y: 1.4552867}
+      - {x: 0.17614274, y: 1.5679342}
+      - {x: -0.52985275, y: 1.5699438}
+      - {x: 0.31166196, y: 1.0496922}
+      - {x: 0.96974605, y: 0.63692844}
+      - {x: 0.8721462, y: 0.3505033}
+      - {x: 0.9293365, y: 0.27748632}
+      - {x: 1.5761412, y: 0.22363208}
+      - {x: 1.6375263, y: 0.5907906}
+      - {x: 1.4452324, y: 0.9839592}
+--- !u!114 &1242181944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8449033656779889465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft1
 --- !u!1 &8452016732987512186
 GameObject:
   m_ObjectHideFlags: 0
@@ -8312,6 +11168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1032393427237714088}
   - component: {fileID: 8499318657735249712}
+  - component: {fileID: 743691249}
   m_Layer: 0
   m_Name: up_hitbox2
   m_TagString: Untagged
@@ -8346,7 +11203,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.03}
+  m_Offset: {x: -0.06, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8358,10 +11215,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.434242, y: 0.49312565}
-      - {x: 0.43312144, y: 1.0277059}
-      - {x: 0.30603838, y: 1.0300195}
-      - {x: 0.30764723, y: 0.4967601}
+    - - {x: 0.07189928, y: 1.1101829}
+      - {x: 0.30797508, y: 1.7775228}
+      - {x: 0.38623264, y: 1.7842153}
+      - {x: 0.44445488, y: 1.4408661}
+      - {x: 0.40143946, y: 1.0573852}
+      - {x: 0.27810118, y: 0.54124296}
+      - {x: 0.11563866, y: 0.5417917}
+      - {x: 0.05633893, y: 0.90283334}
+--- !u!114 &743691249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8452016732987512186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: 135}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.4
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordUp3
 --- !u!1 &8551630035311937337
 GameObject:
   m_ObjectHideFlags: 0
@@ -8372,6 +11254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 626917892749711078}
   - component: {fileID: 1679520809076625824}
+  - component: {fileID: 1621875299}
   m_Layer: 0
   m_Name: up_hitbox2
   m_TagString: Untagged
@@ -8418,10 +11301,48 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.32452297, y: 1.6252975}
-      - {x: -0.3248973, y: 1.1807699}
-      - {x: 0.30602503, y: 1.1833687}
-      - {x: 0.30385923, y: 1.6255693}
+    - - {x: 0.40070307, y: 2.0447912}
+      - {x: -0.48586422, y: 2.047289}
+      - {x: -0.93951416, y: 1.9506149}
+      - {x: -1.3213818, y: 1.668487}
+      - {x: -1.7117248, y: 1.22266}
+      - {x: -1.7127104, y: 1.0187826}
+      - {x: -1.6878235, y: 0.90202737}
+      - {x: -1.4056264, y: 0.6617357}
+      - {x: -1.2834873, y: 0.66205597}
+      - {x: -1.1106824, y: 0.9044631}
+      - {x: -1.0675372, y: 1.194465}
+      - {x: -0.9144107, y: 1.2467086}
+      - {x: -0.73065835, y: 1.1085267}
+      - {x: -0.5476764, y: 1.1214105}
+      - {x: -0.3563183, y: 1.5093423}
+      - {x: 0.4159666, y: 1.6067775}
+      - {x: 0.624637, y: 1.5391663}
+      - {x: 1.1254979, y: 1.2213635}
+      - {x: 1.5328965, y: 1.2777535}
+      - {x: 1.358314, y: 1.5957521}
+      - {x: 0.9579847, y: 1.8815316}
+--- !u!114 &1621875299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8551630035311937337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerUp1
 --- !u!1 &8570835007720187956
 GameObject:
   m_ObjectHideFlags: 0
@@ -8466,6 +11387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7607159251018521749}
   - component: {fileID: 389313231256218778}
+  - component: {fileID: 30275721}
   m_Layer: 0
   m_Name: up_hitbox2
   m_TagString: Untagged
@@ -8512,10 +11434,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.2610278, y: 1.1794596}
-      - {x: 0.23704672, y: 1.1830778}
-      - {x: 0.2389307, y: 0.5524416}
-      - {x: -0.2573843, y: 0.5411968}
+    - - {x: -0.10407343, y: 1.022302}
+      - {x: -0.09805456, y: 1.5806247}
+      - {x: -0.026217934, y: 1.671998}
+      - {x: 0.31835508, y: 1.5922958}
+      - {x: 0.3892882, y: 1.5262487}
+      - {x: 0.3874034, y: 1.2214887}
+      - {x: 0.31414917, y: 1.1040435}
+      - {x: 0.27059555, y: 0.9515634}
+      - {x: 0.21485038, y: 0.8905982}
+      - {x: 0.018416673, y: 0.8922164}
+--- !u!114 &30275721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8582108182794371573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 3
+  Execute: 0
+  Thrust: {x: 0, y: 180}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.45
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: HammerUp4
 --- !u!1 &8645202941784490295
 GameObject:
   m_ObjectHideFlags: 0
@@ -8526,6 +11475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7278683149586623139}
   - component: {fileID: 7289562531276101139}
+  - component: {fileID: 338387756}
   m_Layer: 0
   m_Name: left_hitbox1
   m_TagString: Untagged
@@ -8560,7 +11510,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13, y: 0}
+  m_Offset: {x: -0.54, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8572,14 +11522,41 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.87296534, y: 0.49873066}
-      - {x: -0.8774595, y: -0.062348366}
-      - {x: -0.88090754, y: -0.058167458}
-      - {x: -0.8762326, y: -0.060585022}
-      - {x: -0.8894472, y: -0.060570717}
-      - {x: -0.38401604, y: -0.06448841}
-      - {x: -0.37304163, y: 0.06444454}
-      - {x: -0.5479255, y: 0.06352329}
+    - - {x: -0.52932125, y: -0.6742088}
+      - {x: -0.5343343, y: -0.41185692}
+      - {x: -0.481906, y: 0.049265355}
+      - {x: -0.3494418, y: 0.4222712}
+      - {x: -0.09570849, y: 0.7652187}
+      - {x: 0.2799244, y: 0.83920187}
+      - {x: 0.52907205, y: 0.49536777}
+      - {x: 0.19479942, y: 0.4205139}
+      - {x: 0.19363874, y: -0.48773405}
+      - {x: 0.28066605, y: -0.5041106}
+      - {x: 0.39391053, y: -0.71191305}
+      - {x: -0.19335687, y: -1.1709521}
+      - {x: -0.3653632, y: -1.1720637}
+      - {x: -0.47861123, y: -0.998831}
+--- !u!114 &338387756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8645202941784490295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordLeft1
 --- !u!1 &8717409840636457758
 GameObject:
   m_ObjectHideFlags: 0
@@ -8641,6 +11618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4359943080212718969}
   - component: {fileID: 1917282860421235490}
+  - component: {fileID: 543045779}
   m_Layer: 0
   m_Name: left_hitbox3
   m_TagString: Untagged
@@ -8687,10 +11665,40 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.2009668, y: -0.6245823}
-      - {x: -1.5236363, y: -0.8816652}
-      - {x: -1.036591, y: -1.368372}
-      - {x: -0.736773, y: -1.0959101}
+    - - {x: 0.74891055, y: 1.4552867}
+      - {x: 0.17614274, y: 1.5679342}
+      - {x: -0.52985275, y: 1.5699438}
+      - {x: -1.7998819, y: 1.0220726}
+      - {x: -1.0872352, y: 0.9382204}
+      - {x: -0.5949166, y: 1.0442005}
+      - {x: 0.31166196, y: 1.0496922}
+      - {x: 0.96974605, y: 0.63692844}
+      - {x: 0.848234, y: 0.33982635}
+      - {x: 1.200933, y: 0.004143685}
+      - {x: 1.5468465, y: 0.1767601}
+      - {x: 1.6375263, y: 0.5907906}
+      - {x: 1.4452324, y: 0.9839592}
+--- !u!114 &543045779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8824769512770270431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerLeft1
 --- !u!1 &8948385477546734519
 GameObject:
   m_ObjectHideFlags: 0
@@ -8701,6 +11709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8079252127955291265}
   - component: {fileID: 4862683866531078685}
+  - component: {fileID: 188524973}
   m_Layer: 0
   m_Name: down_hitbox2
   m_TagString: Untagged
@@ -8747,10 +11756,46 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.2987342, y: -1.0626736}
-      - {x: -0.3210454, y: -1.0546684}
-      - {x: -0.33553028, y: -1.5088491}
-      - {x: 0.31175518, y: -1.5021906}
+    - - {x: 0.33059314, y: -2.1034398}
+      - {x: 0.9335515, y: -1.9240859}
+      - {x: 1.561399, y: -1.2763422}
+      - {x: 1.5525253, y: -1.0570592}
+      - {x: 1.5839955, y: -1.1498437}
+      - {x: 1.5179198, y: -0.94979465}
+      - {x: 1.2258874, y: -0.7129183}
+      - {x: 1.1318158, y: -0.7212466}
+      - {x: 0.94150966, y: -0.94715756}
+      - {x: 0.9490173, y: -1.2613766}
+      - {x: 0.5502485, y: -1.165998}
+      - {x: 0.37271357, y: -1.1627749}
+      - {x: 0.39386553, y: -1.4490664}
+      - {x: 0.14804813, y: -1.6593652}
+      - {x: -0.60101616, y: -1.6624082}
+      - {x: -1.9413096, y: -0.8370763}
+      - {x: -1.5549638, y: -1.6120138}
+      - {x: -0.9978986, y: -2.0073323}
+      - {x: -0.55546904, y: -2.0962734}
+--- !u!114 &188524973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8948385477546734519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 165}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerDown1
 --- !u!1 &9004809655870103218
 GameObject:
   m_ObjectHideFlags: 0
@@ -8761,6 +11806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 442389859285757809}
   - component: {fileID: 1762581146244089276}
+  - component: {fileID: 897574099}
   m_Layer: 0
   m_Name: left_hitbox1
   m_TagString: Untagged
@@ -8795,7 +11841,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13, y: 0}
+  m_Offset: {x: -0.52, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8807,14 +11853,40 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5618783, y: -0.12344265}
-      - {x: -0.73778784, y: -0.119485855}
-      - {x: -0.74123585, y: -0.57241344}
-      - {x: -0.61593544, y: -0.63196945}
-      - {x: -0.4704324, y: -0.19389343}
-      - {x: -0.3014828, y: -0.12797642}
-      - {x: -0.32860053, y: -0.005391121}
-      - {x: -0.5479256, y: -0.050753593}
+    - - {x: -0.6592916, y: -0.6437939}
+      - {x: -0.35636428, y: -1.2392372}
+      - {x: 0.023073256, y: -1.1548681}
+      - {x: -0.07621786, y: -1.0258665}
+      - {x: 0.02224958, y: -0.8994141}
+      - {x: 0.015897207, y: -0.12651336}
+      - {x: 0.13200733, y: -0.11042656}
+      - {x: 0.24979565, y: 0.041688688}
+      - {x: -0.1405836, y: 0.4399941}
+      - {x: -0.37856698, y: 0.56089616}
+      - {x: -0.5262077, y: 0.55382216}
+      - {x: -0.65179414, y: 0.39599943}
+      - {x: -0.69770086, y: 0.043841362}
+--- !u!114 &897574099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9004809655870103218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1.5
+  Execute: 0
+  Thrust: {x: 0, y: 0}
+  GravityScale: 0
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0.9
+  StateToInflict: 4
+  StatusesToInflict: []
+  HitboxName: SwordLeft2
 --- !u!1 &9182190868985659215
 GameObject:
   m_ObjectHideFlags: 0
@@ -8825,6 +11897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7648776561661572721}
   - component: {fileID: 6988106614021722079}
+  - component: {fileID: 445511577}
   m_Layer: 0
   m_Name: up_hitbox4
   m_TagString: Untagged
@@ -8879,3 +11952,24 @@ PolygonCollider2D:
       - {x: 0.12741709, y: 1.8201418}
       - {x: 0.25944376, y: 1.6877298}
       - {x: 0.25560236, y: 1.2399807}
+--- !u!114 &445511577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9182190868985659215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 2
+  Execute: 0
+  Thrust: {x: 0, y: 200}
+  GravityScale: 1.75
+  Velocity: {x: 0, y: 0}
+  StaggerAmount: 0
+  StateToInflict: 5
+  StatusesToInflict: []
+  HitboxName: HammerUp3

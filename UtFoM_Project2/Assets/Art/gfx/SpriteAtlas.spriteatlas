@@ -326,6 +326,7 @@ SpriteAtlas:
   - {fileID: 1796760543078141811, guid: 0113b15209373224692c9b8a914175c9, type: 3}
   - {fileID: -5257254284976219510, guid: 0113b15209373224692c9b8a914175c9, type: 3}
   - {fileID: 5868545564279994651, guid: 0113b15209373224692c9b8a914175c9, type: 3}
+  - {fileID: 21300000, guid: 802b7272a3dc07640aff903cbc5a0b3f, type: 3}
   - {fileID: 21300000, guid: 1fcd7ec2bdcd3c6489a234f1cd562d4f, type: 3}
   - {fileID: -4683998418971264338, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
   - {fileID: 7088160253405218265, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
@@ -463,6 +464,9 @@ SpriteAtlas:
   - {fileID: 1632237040898492842, guid: a387f524879b12b4b89cdc9120a550d4, type: 3}
   - {fileID: -2796727119674232980, guid: a387f524879b12b4b89cdc9120a550d4, type: 3}
   - {fileID: 21300000, guid: 2a6efc2466c8fc74982784eb39451eac, type: 3}
+  - {fileID: -3296646334680106803, guid: ddbd6a64214d29f42bcb179fac97ca56, type: 3}
+  - {fileID: 6566091243712006654, guid: ddbd6a64214d29f42bcb179fac97ca56, type: 3}
+  - {fileID: -8215038564238222106, guid: ddbd6a64214d29f42bcb179fac97ca56, type: 3}
   - {fileID: 21300000, guid: 2a65a874dcf4a794183e335bde2448cb, type: 3}
   - {fileID: 1253897710507442745, guid: 55246484c3ec08448b65ab4c19166ac9, type: 3}
   - {fileID: 6488804604740640999, guid: 55246484c3ec08448b65ab4c19166ac9, type: 3}
@@ -1184,6 +1188,7 @@ SpriteAtlas:
   - {fileID: 175763103350854087, guid: 99f3315cb05323f42ad9b18514186e14, type: 3}
   - {fileID: 5258944380827480903, guid: 99f3315cb05323f42ad9b18514186e14, type: 3}
   - {fileID: 21300000, guid: 79ad225c8ac6f504f8b16d0c893a4e4e, type: 3}
+  - {fileID: 1891714270699469896, guid: 860b437c944d30146baa189862ed745e, type: 3}
   - {fileID: 21300000, guid: 7e5f38ac80b4d354892c4f8ccd5e491d, type: 3}
   - {fileID: -5858365058660786110, guid: e760940d1517457409cd828dc2099a2a, type: 3}
   - {fileID: -4673169823664839120, guid: e760940d1517457409cd828dc2099a2a, type: 3}
@@ -1832,6 +1837,7 @@ SpriteAtlas:
   - bb_gate_5
   - bb_gate_20
   - bb_gate_21
+  - UI_stats_enemy_health
   - UI_stats_empty 1
   - TiledSprites_0
   - TiledSprites_1
@@ -1969,6 +1975,9 @@ SpriteAtlas:
   - cyclod_40
   - cyclod_41
   - UI_stats_full
+  - UI_demo_stats_enemies_1
+  - UI_demo_stats_enemies_0
+  - UI_demo_stats_enemies_2
   - bb_side_house_inner2
   - zots_62
   - zots_63
@@ -2690,6 +2699,7 @@ SpriteAtlas:
   - hammer1_down_11
   - hammer1_down_10
   - FR_CL
+  - UI_map_0
   - UI_stats_magic
   - hammer1_right_4
   - hammer1_right_5

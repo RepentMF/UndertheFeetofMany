@@ -8,36 +8,43 @@ public class HealthManager : MonoBehaviour
 	public Image healthBar;
 	public Image manaBar;
 	public Image staminaBar;
-	public Image lifebloodNotches;
 	public Image lbFlare1;
 	public Image lbFlare2;
 	public Image lbFlare3;
-	public Stats playerStats;
-	public Enemy enemy;
+	public Stats stats;
 
-	public void UpdatePlayerStats()
+	public void UpdateStats()
 	{
-		healthBar.fillAmount = playerStats.CurrentHealth / playerStats.MaxHealth;
-		manaBar.fillAmount = playerStats.CurrentMana / playerStats.MaxMana;
-		staminaBar.fillAmount = playerStats.CurrentStamina / playerStats.MaxStamina;
-
-		if(playerStats.CurrentLifeblood >= 0f && playerStats.CurrentLifeblood <= 10f)
+		if (healthBar != null)
 		{
-			lbFlare3.fillAmount = playerStats.CurrentLifeblood / 10f;
+			healthBar.fillAmount = stats.CurrentHealth / stats.MaxHealth;
+		}
+		if (manaBar != null)
+		{
+			manaBar.fillAmount = stats.CurrentMana / stats.MaxMana;
+		}
+		if (staminaBar != null)
+		{
+			staminaBar.fillAmount = stats.CurrentStamina / stats.MaxStamina;
+		}
+
+		if((stats.CurrentLifeblood >= 0f && stats.CurrentLifeblood <= 10f) && lbFlare1 != null)
+		{
+			lbFlare3.fillAmount = stats.CurrentLifeblood / 10f;
 			lbFlare1.gameObject.SetActive(false);
 			lbFlare2.gameObject.SetActive(false);
 			lbFlare3.gameObject.SetActive(true);
 		}
-		else if(playerStats.CurrentLifeblood > 10f && playerStats.CurrentLifeblood <= 20f)
+		else if((stats.CurrentLifeblood > 10f && stats.CurrentLifeblood <= 20f) && lbFlare1 != null)
 		{
-			lbFlare2.fillAmount = (playerStats.CurrentLifeblood - 10f) / 10f;
+			lbFlare2.fillAmount = (stats.CurrentLifeblood - 10f) / 10f;
 			lbFlare1.gameObject.SetActive(false);
 			lbFlare2.gameObject.SetActive(true);
 			lbFlare3.gameObject.SetActive(true);
 		}
-		else if(playerStats.CurrentLifeblood > 20f && playerStats.CurrentLifeblood <= 30f)
+		else if((stats.CurrentLifeblood > 20f && stats.CurrentLifeblood <= 30f) && lbFlare1 != null)
 		{
-			lbFlare1.fillAmount = (playerStats.CurrentLifeblood - 20f) / 10f;
+			lbFlare1.fillAmount = (stats.CurrentLifeblood - 20f) / 10f;
 			lbFlare1.gameObject.SetActive(true);
 			lbFlare2.gameObject.SetActive(true);
 			lbFlare3.gameObject.SetActive(true);
@@ -47,12 +54,12 @@ public class HealthManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		UpdatePlayerStats();
+		UpdateStats();
     }
 
     // Update is called once per frame
     void Update()
     {
-		UpdatePlayerStats();
+		UpdateStats();
     }
 }

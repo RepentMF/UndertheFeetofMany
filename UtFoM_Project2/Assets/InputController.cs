@@ -81,6 +81,22 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""WeaponChangeLeft"",
+                    ""type"": ""Button"",
+                    ""id"": ""b904fe94-656b-4e05-9222-ed7e205b3fbc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""WeaponChangeRight"",
+                    ""type"": ""Button"",
+                    ""id"": ""ee9bde5b-c915-421c-8d2c-18007fa86c06"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -347,6 +363,50 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""action"": ""Dodge"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6a7d1b87-8553-4b58-91b7-02ecbc031b07"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WeaponChangeLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""86ab8c2d-3c03-49d1-b60f-666ca9c90822"",
+                    ""path"": ""<DualShockGamepad>/rightStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WeaponChangeLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""081be089-c8aa-4421-a9fe-c4f143c5218d"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WeaponChangeRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""77cf3e38-1fb2-4765-a92a-ae98d35debb9"",
+                    ""path"": ""<DualShockGamepad>/rightStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""WeaponChangeRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -363,6 +423,8 @@ public class @InputController : IInputActionCollection, IDisposable
         m_Player_ContextConfirm = m_Player.FindAction("ContextConfirm", throwIfNotFound: true);
         m_Player_MenuButton = m_Player.FindAction("MenuButton", throwIfNotFound: true);
         m_Player_Dodge = m_Player.FindAction("Dodge", throwIfNotFound: true);
+        m_Player_WeaponChangeLeft = m_Player.FindAction("WeaponChangeLeft", throwIfNotFound: true);
+        m_Player_WeaponChangeRight = m_Player.FindAction("WeaponChangeRight", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -420,6 +482,8 @@ public class @InputController : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_ContextConfirm;
     private readonly InputAction m_Player_MenuButton;
     private readonly InputAction m_Player_Dodge;
+    private readonly InputAction m_Player_WeaponChangeLeft;
+    private readonly InputAction m_Player_WeaponChangeRight;
     public struct PlayerActions
     {
         private @InputController m_Wrapper;
@@ -432,6 +496,8 @@ public class @InputController : IInputActionCollection, IDisposable
         public InputAction @ContextConfirm => m_Wrapper.m_Player_ContextConfirm;
         public InputAction @MenuButton => m_Wrapper.m_Player_MenuButton;
         public InputAction @Dodge => m_Wrapper.m_Player_Dodge;
+        public InputAction @WeaponChangeLeft => m_Wrapper.m_Player_WeaponChangeLeft;
+        public InputAction @WeaponChangeRight => m_Wrapper.m_Player_WeaponChangeRight;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -465,6 +531,12 @@ public class @InputController : IInputActionCollection, IDisposable
                 @Dodge.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDodge;
                 @Dodge.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDodge;
                 @Dodge.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDodge;
+                @WeaponChangeLeft.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWeaponChangeLeft;
+                @WeaponChangeLeft.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWeaponChangeLeft;
+                @WeaponChangeLeft.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWeaponChangeLeft;
+                @WeaponChangeRight.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWeaponChangeRight;
+                @WeaponChangeRight.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWeaponChangeRight;
+                @WeaponChangeRight.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWeaponChangeRight;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -493,6 +565,12 @@ public class @InputController : IInputActionCollection, IDisposable
                 @Dodge.started += instance.OnDodge;
                 @Dodge.performed += instance.OnDodge;
                 @Dodge.canceled += instance.OnDodge;
+                @WeaponChangeLeft.started += instance.OnWeaponChangeLeft;
+                @WeaponChangeLeft.performed += instance.OnWeaponChangeLeft;
+                @WeaponChangeLeft.canceled += instance.OnWeaponChangeLeft;
+                @WeaponChangeRight.started += instance.OnWeaponChangeRight;
+                @WeaponChangeRight.performed += instance.OnWeaponChangeRight;
+                @WeaponChangeRight.canceled += instance.OnWeaponChangeRight;
             }
         }
     }
@@ -507,5 +585,7 @@ public class @InputController : IInputActionCollection, IDisposable
         void OnContextConfirm(InputAction.CallbackContext context);
         void OnMenuButton(InputAction.CallbackContext context);
         void OnDodge(InputAction.CallbackContext context);
+        void OnWeaponChangeLeft(InputAction.CallbackContext context);
+        void OnWeaponChangeRight(InputAction.CallbackContext context);
     }
 }

@@ -42,7 +42,11 @@ public class BBPuzzleManager : GenericSingleton<BBPuzzleManager>
 
     void ManageState()
     {
-        if (StateManagerScript.CurrentState == ActionState.Idle && CurrentSlimeCount < InitialSlimeCount)
+        if ((StateManagerScript.CurrentState == ActionState.Idle || StateManagerScript.CurrentState == ActionState.Dodge) && CurrentSlimeCount == InitialSlimeCount)
+        {
+            StateManagerScript.CurrentState = ActionState.Dodge;
+        }
+        else if (StateManagerScript.CurrentState == ActionState.Dodge && CurrentSlimeCount < InitialSlimeCount)
         {
             StateManagerScript.CurrentState = ActionState.Move;
         }

@@ -201,6 +201,22 @@ public class PlayerController : GenericSingleton<PlayerController>
         }
     }
 
+    private void OnWeaponChangeRight()
+    {
+        if (CanAct())
+        {
+            InventoryScript.ChangeWeaponForward();
+        }
+    }
+
+    private void OnWeaponChangeLeft()
+    {
+        if (CanAct())
+        {
+            InventoryScript.ChangeWeaponBack();
+        }
+    }
+
     private void OnMenuButton()
     {
         PauseGame();

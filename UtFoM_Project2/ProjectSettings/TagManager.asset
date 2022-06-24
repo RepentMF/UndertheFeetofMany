@@ -25,7 +25,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Minimap
   - 
   - 
   - 
@@ -75,4 +75,10 @@ TagManager:
     locked: 0
   - name: ArtLayer_Foreground
     uniqueID: 4190425103
+    locked: 0
+  - name: UI
+    uniqueID: 3024145597
+    locked: 0
+  - name: Minimap
+    uniqueID: 1462539655
     locked: 0
