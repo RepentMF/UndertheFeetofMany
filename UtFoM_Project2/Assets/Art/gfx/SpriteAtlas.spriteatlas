@@ -1188,7 +1188,7 @@ SpriteAtlas:
   - {fileID: 175763103350854087, guid: 99f3315cb05323f42ad9b18514186e14, type: 3}
   - {fileID: 5258944380827480903, guid: 99f3315cb05323f42ad9b18514186e14, type: 3}
   - {fileID: 21300000, guid: 79ad225c8ac6f504f8b16d0c893a4e4e, type: 3}
-  - {fileID: 1891714270699469896, guid: 860b437c944d30146baa189862ed745e, type: 3}
+  - {fileID: 326451028875216603, guid: 860b437c944d30146baa189862ed745e, type: 3}
   - {fileID: 21300000, guid: 7e5f38ac80b4d354892c4f8ccd5e491d, type: 3}
   - {fileID: -5858365058660786110, guid: e760940d1517457409cd828dc2099a2a, type: 3}
   - {fileID: -4673169823664839120, guid: e760940d1517457409cd828dc2099a2a, type: 3}
@@ -1303,6 +1303,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 5a7bf56d2cd302147bf61b7178cf116b, type: 3}
   - {fileID: 21300000, guid: bbeffe6d98912784ebcbff4e83d229cf, type: 3}
   - {fileID: 21300000, guid: 7436a07d0bed6f441886a875690bf2f6, type: 3}
+  - {fileID: 21300000, guid: 57ca368df247c3949b08200c7e80e4e6, type: 3}
   - {fileID: 21300000, guid: 2ba3fdbd6d718fa49aae5d808ccedcb2, type: 3}
   - {fileID: 21300000, guid: 238592ed29282194a88129fdf53f4b03, type: 3}
   - {fileID: 21300000, guid: db1128fdb1d7eee41874114d8e474c78, type: 3}
@@ -2699,7 +2700,7 @@ SpriteAtlas:
   - hammer1_down_11
   - hammer1_down_10
   - FR_CL
-  - UI_map_0
+  - UI_map_BB_0
   - UI_stats_magic
   - hammer1_right_4
   - hammer1_right_5
@@ -2814,6 +2815,7 @@ SpriteAtlas:
   - Cutscene_car4
   - sword_item
   - UI_stats_empty
+  - UI_map_TP
   - TT_nobg
   - note
   - Family2
