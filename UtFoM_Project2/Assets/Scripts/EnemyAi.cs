@@ -17,7 +17,7 @@ public abstract class EnemyAi : MonoBehaviour
     [SerializeField] private float MovementSpeed = -1;
     [SerializeField] private float MovementRange = -1;
     [SerializeField] private float MovementCost = -1;
-    [SerializeField] private bool QuadDirectionOnly = false;
+    [SerializeField] protected internal bool QuadDirectionOnly = false;
 
     private bool InMovementRange;
 
@@ -187,11 +187,11 @@ public abstract class EnemyAi : MonoBehaviour
     /// <summary>
     /// Determines the direction in which to face the target
     /// </summary>
-    private void CheckDirection()
+    protected internal void CheckDirection()
     {
         if (IsInRange() && !StatusModScript.GetStatus(Status.Exhaust))
         {
-            Direction = (Target.transform.position - this.transform.position);
+            Direction = (Target.transform.position - this.transform.position).normalized;
             if (QuadDirectionOnly)
             {
                 if(Direction.x > 0 && Mathf.Abs(Direction.x) > Mathf.Abs(Direction.y))

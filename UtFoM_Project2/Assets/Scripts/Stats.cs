@@ -288,7 +288,7 @@ public class Stats : MonoBehaviour
     /// </summary>
     private void KillEntity()
     {
-        if (CurrentHealth <= 0 && StateManagerScript.CurrentState == ActionState.Idle)
+        if (CurrentHealth <= 0 && (StateManagerScript.CurrentState == ActionState.Idle || StateManagerScript.CurrentState == ActionState.Move))
         {
             IsInvulnerable = true;
             StateManagerScript.CurrentState = ActionState.Death;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Hitbox : MonoBehaviour
 {
+    [SerializeField] private string HitboxName = "";
     [SerializeField] private float Damage = 0.0f;
     [SerializeField] private bool Execute = false;
     [SerializeField] private Vector2 Thrust = new Vector2(0.0f, 0.0f); //  This controls distance of movement during hit
@@ -13,7 +14,6 @@ public class Hitbox : MonoBehaviour
     [SerializeField] private ActionState StateToInflict = ActionState.None;
     public List<StatusEffect> StatusesToInflict;
 
-    [SerializeField] private string HitboxName = "";
 
     // Script References
     private Stats StatsScript;
@@ -34,6 +34,7 @@ public class Hitbox : MonoBehaviour
                 if (targetHurtboxScript.LastHitBy != HitboxName || HitboxName.IndexOf("Knife") > -1)
                 {
                     targetHurtboxScript.LastHitBy = HitboxName; // Prevent double hits
+                    Debug.Log(targetHurtboxScript.LastHitBy);
                     StatsScript.ComboCount++; // Increase the ComboCount
                     if (StateToInflict != ActionState.None) // Inflict the relevant ActionState
                     {

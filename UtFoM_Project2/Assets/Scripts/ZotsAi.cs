@@ -25,10 +25,13 @@ public class ZotsAi : EnemyAi
     {
     	base.StartSpellTwo();
     	SetCooldownTimer(ShriekCooldownTimer);
+        QuadDirectionOnly = true;
+        CheckDirection();
     }
 
     protected internal override void SpellTwo()
     {
         Rigidbody2DScript.velocity = Vector3.zero;
+        QuadDirectionOnly = false;
     }
 }

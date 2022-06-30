@@ -17,6 +17,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     [SerializeField] public float MovementSpeed = 6;
     [SerializeField] private float DodgeSpeed = 6;
     [SerializeField] private float DodgeCost = 5.0f;
+    [SerializeField] private float LifebloodCost = 10f;
     [SerializeField] private GameObject VoltTrapObject;
     [SerializeField] private GameObject SparkTriggerObject;
     [SerializeField] private GameObject FlurryFieldObject;
@@ -198,6 +199,33 @@ public class PlayerController : GenericSingleton<PlayerController>
             DodgeVector = InputControllerScript.Player.Move.ReadValue<Vector2>();
             DodgeVector.Normalize();
             StateManagerScript.CurrentState = ActionState.Dodge;
+        }
+    }
+
+    private void OnHealthButton()
+    {
+        if (CanAct() && StatsScript.CurrentLifeblood >= LifebloodCost)
+        {
+            StatsScript.DamageLifeblood(LifebloodCost);
+            StatsScript.HealHealth(10f);
+        }
+    }
+
+    private void OnManaButton()
+    {
+        if (CanAct() && StatsScript.CurrentLifeblood >= LifebloodCost)
+        {
+            StatsScript.DamageLifeblood(LifebloodCost);
+            StatsScript.HealMana(10f);
+        }
+    }
+
+    private void OnStaminaButton()
+    {
+        if (CanAct() && StatsScript.CurrentLifeblood >= LifebloodCost)
+        {
+            StatsScript.DamageLifeblood(LifebloodCost);
+            StatsScript.HealStamina(10f);
         }
     }
 

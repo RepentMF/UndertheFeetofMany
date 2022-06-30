@@ -16,7 +16,7 @@ public enum Status
 public class StatusEffect
 {
 	public float StatTimer;
-	public float OriginalTimer;
+	private float OriginalTimer;
 	public float Intensity;
 	public Status Name;
 	public Stats Inflicter;
@@ -185,7 +185,7 @@ public class StatusMod : MonoBehaviour
 				switch (StatusEntry.Name)
 				{
 					case Status.Leech:
-						float amount = StatsScript.CurrentHealth - StatusEntry.Intensity < 0 ? StatsScript.CurrentHealth : StatsScript.CurrentHealth - StatusEntry.Intensity;
+						float amount = StatsScript.CurrentHealth - (StatusEntry.Intensity * Time.deltaTime) < 0 ? StatsScript.CurrentHealth : (StatusEntry.Intensity * Time.deltaTime);
 						StatsScript.DamageHealth(amount);
 						StatusEntry.Inflicter.HealHealth(amount);
 						break;

@@ -97,6 +97,30 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""HealthButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""18d94b0b-e67e-4862-a52f-613d632fa325"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""ManaButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""f5e5ee78-4055-4e36-8220-32e1c0904b1e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""StaminaButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""4c415d50-e69d-45b5-a153-8c7fe325206c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -407,6 +431,83 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""action"": ""WeaponChangeRight"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""39c0a023-8e93-4b41-9cf9-6d84b0ac0396"",
+                    ""path"": ""<Keyboard>/t"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HealthButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""29ac7fa1-e347-41e1-9baf-3ec4ec65f764"",
+                    ""path"": ""<DualShockGamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HealthButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""70e76456-49c7-44ae-bafb-f97f254205bb"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ManaButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7ef84dce-2390-4714-b6ac-4683cd9ee3d3"",
+                    ""path"": ""<DualShockGamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ManaButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1b38db04-9605-419d-abf4-f611d5a85277"",
+                    ""path"": ""<DualShockGamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ManaButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e0fb4115-577e-4093-a02c-599a2dad697c"",
+                    ""path"": ""<Keyboard>/v"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""StaminaButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5e806bf6-8129-4ad5-8ec9-541a56f840af"",
+                    ""path"": ""<DualShockGamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""StaminaButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -425,6 +526,9 @@ public class @InputController : IInputActionCollection, IDisposable
         m_Player_Dodge = m_Player.FindAction("Dodge", throwIfNotFound: true);
         m_Player_WeaponChangeLeft = m_Player.FindAction("WeaponChangeLeft", throwIfNotFound: true);
         m_Player_WeaponChangeRight = m_Player.FindAction("WeaponChangeRight", throwIfNotFound: true);
+        m_Player_HealthButton = m_Player.FindAction("HealthButton", throwIfNotFound: true);
+        m_Player_ManaButton = m_Player.FindAction("ManaButton", throwIfNotFound: true);
+        m_Player_StaminaButton = m_Player.FindAction("StaminaButton", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -484,6 +588,9 @@ public class @InputController : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Dodge;
     private readonly InputAction m_Player_WeaponChangeLeft;
     private readonly InputAction m_Player_WeaponChangeRight;
+    private readonly InputAction m_Player_HealthButton;
+    private readonly InputAction m_Player_ManaButton;
+    private readonly InputAction m_Player_StaminaButton;
     public struct PlayerActions
     {
         private @InputController m_Wrapper;
@@ -498,6 +605,9 @@ public class @InputController : IInputActionCollection, IDisposable
         public InputAction @Dodge => m_Wrapper.m_Player_Dodge;
         public InputAction @WeaponChangeLeft => m_Wrapper.m_Player_WeaponChangeLeft;
         public InputAction @WeaponChangeRight => m_Wrapper.m_Player_WeaponChangeRight;
+        public InputAction @HealthButton => m_Wrapper.m_Player_HealthButton;
+        public InputAction @ManaButton => m_Wrapper.m_Player_ManaButton;
+        public InputAction @StaminaButton => m_Wrapper.m_Player_StaminaButton;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -537,6 +647,15 @@ public class @InputController : IInputActionCollection, IDisposable
                 @WeaponChangeRight.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWeaponChangeRight;
                 @WeaponChangeRight.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWeaponChangeRight;
                 @WeaponChangeRight.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnWeaponChangeRight;
+                @HealthButton.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHealthButton;
+                @HealthButton.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHealthButton;
+                @HealthButton.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHealthButton;
+                @ManaButton.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnManaButton;
+                @ManaButton.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnManaButton;
+                @ManaButton.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnManaButton;
+                @StaminaButton.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStaminaButton;
+                @StaminaButton.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStaminaButton;
+                @StaminaButton.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStaminaButton;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -571,6 +690,15 @@ public class @InputController : IInputActionCollection, IDisposable
                 @WeaponChangeRight.started += instance.OnWeaponChangeRight;
                 @WeaponChangeRight.performed += instance.OnWeaponChangeRight;
                 @WeaponChangeRight.canceled += instance.OnWeaponChangeRight;
+                @HealthButton.started += instance.OnHealthButton;
+                @HealthButton.performed += instance.OnHealthButton;
+                @HealthButton.canceled += instance.OnHealthButton;
+                @ManaButton.started += instance.OnManaButton;
+                @ManaButton.performed += instance.OnManaButton;
+                @ManaButton.canceled += instance.OnManaButton;
+                @StaminaButton.started += instance.OnStaminaButton;
+                @StaminaButton.performed += instance.OnStaminaButton;
+                @StaminaButton.canceled += instance.OnStaminaButton;
             }
         }
     }
@@ -587,5 +715,8 @@ public class @InputController : IInputActionCollection, IDisposable
         void OnDodge(InputAction.CallbackContext context);
         void OnWeaponChangeLeft(InputAction.CallbackContext context);
         void OnWeaponChangeRight(InputAction.CallbackContext context);
+        void OnHealthButton(InputAction.CallbackContext context);
+        void OnManaButton(InputAction.CallbackContext context);
+        void OnStaminaButton(InputAction.CallbackContext context);
     }
 }
