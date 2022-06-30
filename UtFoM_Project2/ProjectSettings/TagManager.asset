@@ -58,17 +58,20 @@ TagManager:
   - name: Environment_NoLight
     uniqueID: 2463332871
     locked: 0
-  - name: Scene_Items
+  - name: Enemy_Back
+    uniqueID: 4158862079
+    locked: 0
+  - name: Scene_Items_Background
     uniqueID: 674821381
     locked: 0
   - name: ArtLayer_Background
     uniqueID: 1913720019
     locked: 0
-  - name: Enemy_Back
-    uniqueID: 4158862079
-    locked: 0
   - name: Player
     uniqueID: 2164896425
+    locked: 0
+  - name: Scene_Items_Foreground
+    uniqueID: 1227838039
     locked: 0
   - name: Enemy_Front
     uniqueID: 1950470269
