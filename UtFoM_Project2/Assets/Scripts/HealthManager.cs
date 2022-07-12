@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
+	public string target;
 	public Image healthBar;
 	public Image manaBar;
 	public Image staminaBar;
@@ -12,6 +13,9 @@ public class HealthManager : MonoBehaviour
 	public Image lbFlare2;
 	public Image lbFlare3;
 	public Stats stats;
+
+	 // Script References
+    private HealthManager HealthScript;
 
 	public void UpdateStats()
 	{
@@ -54,6 +58,24 @@ public class HealthManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		HealthManager[] HMArray = FindObjectsOfType<HealthManager>();
+
+		for(int i = 0; i < HMArray.Length; i++)
+		{
+			for(int j = 0; j < HMArray.Length; j++)
+			{
+				if(HMArray[i].target == HMArray[j].target && i != j)
+    			{
+    				Destroy(HMArray[j].GetComponentInParent<Canvas>().transform.parent.gameObject);
+    				return;
+    			}
+			}
+		}
+		
+
+    	HealthScript = this;
+    	GameObject.DontDestroyOnLoad(GetComponentInParent<Canvas>().transform.parent.gameObject);
+
 		UpdateStats();
     }
 

@@ -6,9 +6,10 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class SceneItem : MonoBehaviour // GG TODO: Add voip animation to scene items
 {
     public Item ItemData;
-    private bool HasBeenPickedUp = false;
+    protected internal bool HasBeenPickedUp;
     private bool ShouldTurnOffLight = false;
     public float LightFadeSpeed = 1f;
+    public string ID;
 
     // Script References
     private BoxCollider2D BoxCollider2DScript;
@@ -32,7 +33,9 @@ public class SceneItem : MonoBehaviour // GG TODO: Add voip animation to scene i
         {
             inventory.AddItem(ItemData);
         }
-        GameObject.Destroy(this.gameObject);
+        HasBeenPickedUp = true;
+        this.gameObject.SetActive(false);
+        //GameObject.Destroy(this.gameObject);
     }
     #nullable disable
 
@@ -63,9 +66,11 @@ public class SceneItem : MonoBehaviour // GG TODO: Add voip animation to scene i
     // Start is called before the first frame update
     void Start()
     {
+        
         if (HasBeenPickedUp)
         {
-            GameObject.Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
+            //GameObject.Destroy(this.gameObject);
         }
         else
         {

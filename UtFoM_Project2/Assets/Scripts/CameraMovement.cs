@@ -7,7 +7,6 @@ public class CameraMovement : MonoBehaviour
 {
 	public Transform target;
 	public float smoothing;
-	public float oldSmoothing;
 	public Vector2 maxPosition;
 	public Vector2 minPosition;
 	public Vector2 difference;

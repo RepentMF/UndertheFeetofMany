@@ -18,6 +18,8 @@ public class PlayerController : GenericSingleton<PlayerController>
     [SerializeField] private float DodgeSpeed = 6;
     [SerializeField] private float DodgeCost = 5.0f;
     [SerializeField] private float LifebloodCost = 10f;
+    [SerializeField] private string CurrentScene;
+    public string NextScene;
     [SerializeField] private GameObject VoltTrapObject;
     [SerializeField] private GameObject SparkTriggerObject;
     [SerializeField] private GameObject FlurryFieldObject;
@@ -26,6 +28,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     private Animator AnimatorScript;
     private InputController InputControllerScript;
     private Inventory InventoryScript;
+    private PlayerController PlayerScript;
     private Rigidbody2D Rigidbody2DScript;
     private StateManager StateManagerScript;
     private Stats StatsScript;
@@ -333,7 +336,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     /// <summary>
     /// Sets the moveX and moveY floats in the AnimatorScript according to the given vector
     /// </summary>
-    private void SetAnimatorFloats(Vector2 vector)
+    protected internal void  SetAnimatorFloats(Vector2 vector)
     {
         AnimatorScript.SetFloat("moveX", vector.x);
         AnimatorScript.SetFloat("moveY", vector.y);
@@ -381,12 +384,24 @@ public class PlayerController : GenericSingleton<PlayerController>
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(PlayerScript != null)
+    	{
+    		Destroy(this.gameObject);
+    		return;
+    	}
+
+    	PlayerScript = this;
+    	GameObject.DontDestroyOnLoad(this.gameObject.transform.parent.gameObject);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(CurrentScene != NextScene)
+    	{
+    		CurrentScene = NextScene;
+    	}
+
         CheckAttackTimer();
         CheckDodgeTimer();
         if (StateManagerScript.CurrentState == ActionState.Dodge)
