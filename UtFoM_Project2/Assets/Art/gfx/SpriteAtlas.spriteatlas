@@ -380,6 +380,7 @@ SpriteAtlas:
   - {fileID: -6477163450789895795, guid: b88f9713f02d14d40a32eddfc57cf3b1, type: 3}
   - {fileID: -73201850333893747, guid: b88f9713f02d14d40a32eddfc57cf3b1, type: 3}
   - {fileID: 5654254194933596388, guid: b88f9713f02d14d40a32eddfc57cf3b1, type: 3}
+  - {fileID: 21300000, guid: 87f92b13afa56e445b1cc189358cd4ab, type: 3}
   - {fileID: 21300000, guid: 721c1353d90b8f54c836b2f5cfa722a8, type: 3}
   - {fileID: -2278326774386042908, guid: f5fd53d305f6e2b4ca31e5dbd4147f3c, type: 3}
   - {fileID: -7806708145747584293, guid: f5fd53d305f6e2b4ca31e5dbd4147f3c, type: 3}
@@ -564,6 +565,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 8b1106c4f29612f47aa95487bbceb956, type: 3}
   - {fileID: 21300000, guid: f811eae43fcd47a409da5875c21e3b1f, type: 3}
   - {fileID: 21300000, guid: 00fff3c552acd3840b6dba3e41612e46, type: 3}
+  - {fileID: 21300000, guid: 7e0c04c54abadfc41be677508b1325de, type: 3}
   - {fileID: -8046433660304297415, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
   - {fileID: -4641832665535523426, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
   - {fileID: -7977959474954063619, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
@@ -783,6 +785,7 @@ SpriteAtlas:
   - {fileID: -5086816516320353920, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
   - {fileID: -1622549613547736378, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
   - {fileID: 21300000, guid: 156315169f6f93f46aa509cebe0cbb8f, type: 3}
+  - {fileID: 21300000, guid: cc3cb3267096dd24891b31824d77b2cf, type: 3}
   - {fileID: -6265154759363924145, guid: e21fe35640b832e499a9111c16d73ab1, type: 3}
   - {fileID: 4828160634897186554, guid: e21fe35640b832e499a9111c16d73ab1, type: 3}
   - {fileID: -8965724715653033206, guid: e21fe35640b832e499a9111c16d73ab1, type: 3}
@@ -944,6 +947,7 @@ SpriteAtlas:
   - {fileID: 5591604056092300552, guid: 0a4decc7e6a538a4ab8fda7c3348a5cd, type: 3}
   - {fileID: -6726566170445865772, guid: 0a4decc7e6a538a4ab8fda7c3348a5cd, type: 3}
   - {fileID: 21300000, guid: 74618428c49c26d46848083efe2891ff, type: 3}
+  - {fileID: 21300000, guid: 07c0e648862347c41a82e04a406e8051, type: 3}
   - {fileID: 21300000, guid: c90e774810176f14da4e414876da5869, type: 3}
   - {fileID: 21300000, guid: 3c78dc48cd8254c4b8112688bdb3a23e, type: 3}
   - {fileID: 21300000, guid: 1f713a582f1e33e41aea90cab8f0bb98, type: 3}
@@ -1005,6 +1009,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3ca14a593119b5e4db5f33bb3438f64a, type: 3}
   - {fileID: 21300000, guid: 67c47d792e3336d45a8bb2b4a044c98c, type: 3}
   - {fileID: 21300000, guid: dcc1bd79d7edac5488175973e7ceb9ee, type: 3}
+  - {fileID: 21300000, guid: accce9b9f68156c439024ef5b4d67768, type: 3}
   - {fileID: -9188278069611965236, guid: 62541dd9f72a49d4f8401d7e72dc9ce1, type: 3}
   - {fileID: 2197194847512346838, guid: 62541dd9f72a49d4f8401d7e72dc9ce1, type: 3}
   - {fileID: -1400477927964683698, guid: 62541dd9f72a49d4f8401d7e72dc9ce1, type: 3}
@@ -1481,6 +1486,7 @@ SpriteAtlas:
   - {fileID: 4431622472367006390, guid: 7eae60ee79d9c6946b95aea93185a1f9, type: 3}
   - {fileID: 2851931440064830808, guid: 7eae60ee79d9c6946b95aea93185a1f9, type: 3}
   - {fileID: 7597352074823555036, guid: 7eae60ee79d9c6946b95aea93185a1f9, type: 3}
+  - {fileID: 21300000, guid: da61f13f56455fb44a60d23f61d4c1ae, type: 3}
   - {fileID: 5030290666744600015, guid: c98e819fcde282f489c30a24b503c547, type: 3}
   - {fileID: 6557094435153962602, guid: c98e819fcde282f489c30a24b503c547, type: 3}
   - {fileID: 7509860518518112746, guid: c98e819fcde282f489c30a24b503c547, type: 3}
@@ -1892,6 +1898,7 @@ SpriteAtlas:
   - hammer_left_14
   - hammer_left_17
   - hammer_left_16
+  - ss_well_top
   - TB_R1
   - new_player_run_28
   - new_player_run_29
@@ -2076,6 +2083,7 @@ SpriteAtlas:
   - blood1_particle
   - SS
   - star1_particle
+  - ss_well
   - MC_Male2_hammer_96
   - MC_Male2_hammer_97
   - MC_Male2_hammer_94
@@ -2295,6 +2303,7 @@ SpriteAtlas:
   - slime_33
   - slime_32
   - TB_R3
+  - ss_well_bottom
   - hammer1_up_7
   - hammer1_up_6
   - hammer1_up_5
@@ -2456,6 +2465,7 @@ SpriteAtlas:
   - sword_player_2
   - sword_player_1
   - UI_stats_book
+  - ss_house
   - bb_house4_inner
   - item_holder_front
   - character_1_side_swing_alt_2
@@ -2517,6 +2527,7 @@ SpriteAtlas:
   - tp_house1
   - tp_house3
   - UI_stats_lifeblood2
+  - ss_house2
   - item_holder_front_2
   - item_holder_front_3
   - item_holder_front_0
@@ -2993,6 +3004,7 @@ SpriteAtlas:
   - feeder_6
   - feeder_5
   - feeder_4
+  - ss_well2
   - torch_2
   - torch_3
   - torch_0
