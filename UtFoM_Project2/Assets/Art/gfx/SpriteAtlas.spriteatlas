@@ -415,6 +415,7 @@ SpriteAtlas:
   - {fileID: 1360279299232230662, guid: f5fd53d305f6e2b4ca31e5dbd4147f3c, type: 3}
   - {fileID: 8575472855895464824, guid: f5fd53d305f6e2b4ca31e5dbd4147f3c, type: 3}
   - {fileID: 21300000, guid: ec31afd35e5e3014782208e17cd369b6, type: 3}
+  - {fileID: 21300000, guid: 985c2bf3ea845e7488a48c6357e071d7, type: 3}
   - {fileID: 21300000, guid: 21e08a14c09f7cf488bac36015da1874, type: 3}
   - {fileID: -7992502933764132926, guid: a387f524879b12b4b89cdc9120a550d4, type: 3}
   - {fileID: -1838653929771483311, guid: a387f524879b12b4b89cdc9120a550d4, type: 3}
@@ -832,6 +833,7 @@ SpriteAtlas:
   - {fileID: -3334616493871949431, guid: e21fe35640b832e499a9111c16d73ab1, type: 3}
   - {fileID: 21300000, guid: a74e10c63092cb342b54f53deaeb9db7, type: 3}
   - {fileID: 21300000, guid: 7e626dc6d9bcb724aa1c1aec7b4f1f26, type: 3}
+  - {fileID: 21300000, guid: b85d6fe6b00e28a499fb3a3dd7b6254b, type: 3}
   - {fileID: 21300000, guid: f1f8293744a10464683aa51fce50de40, type: 3}
   - {fileID: 21300000, guid: ede6fb77bc9e3f14e99d36400fd6b517, type: 3}
   - {fileID: 3807049566699419493, guid: 0a4decc7e6a538a4ab8fda7c3348a5cd, type: 3}
@@ -1017,6 +1019,7 @@ SpriteAtlas:
   - {fileID: 4446112526288549623, guid: 62541dd9f72a49d4f8401d7e72dc9ce1, type: 3}
   - {fileID: 38528588938192158, guid: 62541dd9f72a49d4f8401d7e72dc9ce1, type: 3}
   - {fileID: 21300000, guid: 1bcab1e9849269d4caa1f4f9c267e9ee, type: 3}
+  - {fileID: 21300000, guid: bb72c20ae444d234788f13a51c1389f3, type: 3}
   - {fileID: -1569775802240859652, guid: 2735a02abf4569547b14dd47f4110a77, type: 3}
   - {fileID: 7814071367150315307, guid: 2735a02abf4569547b14dd47f4110a77, type: 3}
   - {fileID: 288675911699077494, guid: 2735a02abf4569547b14dd47f4110a77, type: 3}
@@ -1442,6 +1445,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3fb0bb5e31431ec4cbe4d4d1780acb50, type: 3}
   - {fileID: 21300000, guid: 0a06f16ec91f33246a2dee9f7577ff2f, type: 3}
   - {fileID: 21300000, guid: 16d4498e589b4da46b74ef6811f5eab0, type: 3}
+  - {fileID: 21300000, guid: 97922aae5f1958048b68fef1d82368c5, type: 3}
   - {fileID: 7274584711917437183, guid: 7eae60ee79d9c6946b95aea93185a1f9, type: 3}
   - {fileID: -695863718703891352, guid: 7eae60ee79d9c6946b95aea93185a1f9, type: 3}
   - {fileID: -6840761961803072650, guid: 7eae60ee79d9c6946b95aea93185a1f9, type: 3}
@@ -1933,6 +1937,7 @@ SpriteAtlas:
   - new_player_run_4
   - new_player_run_5
   - knife_item
+  - TC
   - UI_stats_stamina
   - cyclod_24
   - cyclod_25
@@ -2350,6 +2355,7 @@ SpriteAtlas:
   - hammer1_up_42
   - bb_house_inner
   - bb_side_house_inner
+  - TC_B1
   - TB_R2
   - torch_holder
   - sword_player_0
@@ -2535,6 +2541,7 @@ SpriteAtlas:
   - item_holder_front_4
   - item_holder_front_5
   - character_1_side_swing
+  - tc_pew
   - Broderick_lightning_burst_9
   - Broderick_lightning_burst_8
   - Broderick_lightning_burst_3
@@ -2960,6 +2967,7 @@ SpriteAtlas:
   - Cutscene_car5
   - SS_nobg
   - Cutscene_cloud
+  - tc_pillars
   - feeder_18
   - feeder_19
   - feeder_16
