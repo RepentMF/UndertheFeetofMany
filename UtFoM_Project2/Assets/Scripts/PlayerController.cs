@@ -8,6 +8,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     private delegate void ActionDelegate();
     private ActionDelegate Action;
     private bool IsPaused = false;
+    [SerializeField] private GameObject PauseMenuReference;
     private bool IsSceneItemInRange = false;
     private bool IsInteractableInRange = false;
     private SceneItem SceneItemTarget;
@@ -36,7 +37,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     private Stats StatsScript;
     private StatusMod StatusModScript;
 
-    private void PauseGame()
+    private void TogglePauseGame()
     {
         IsPaused = !IsPaused;
         if (IsPaused)
@@ -252,7 +253,14 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void OnMenuButton()
     {
-        PauseGame();
+        TogglePauseGame();
+        if (IsPaused)
+        {
+            PauseMenuReference.SetActive(true);
+        } else if (!IsPaused)
+        {
+            PauseMenuReference.SetActive(false);
+        }
     }
 
     private void OnContextConfirm()
