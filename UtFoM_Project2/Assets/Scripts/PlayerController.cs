@@ -254,10 +254,10 @@ public class PlayerController : GenericSingleton<PlayerController>
     private void OnMenuButton()
     {
         TogglePauseGame();
-        if (IsPaused)
+        if (IsPaused && PauseMenuReference != null)
         {
             PauseMenuReference.SetActive(true);
-        } else if (!IsPaused)
+        } else if (!IsPaused && PauseMenuReference != null)
         {
             PauseMenuReference.SetActive(false);
         }
