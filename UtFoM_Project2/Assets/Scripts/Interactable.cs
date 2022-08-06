@@ -14,7 +14,7 @@ public class Interactable : MonoBehaviour
     StateManager StateManagerScript;
 
     #nullable enable
-    public void Interact(Inventory? inventory)
+    public void Interact(Inventory inventory = null)
     {
         // If there is dialogue text to iterate through, display that text
         if (DialogueBoxReference != null && DialogueTextReference != null && TextArray.Length > 0 && TextArray.Length > TextArrayIndex)

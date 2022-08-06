@@ -9,7 +9,9 @@ public class PlayerController : GenericSingleton<PlayerController>
     private ActionDelegate Action;
     private bool IsPaused = false;
     private bool IsSceneItemInRange = false;
+    private bool IsInteractableInRange = false;
     private SceneItem SceneItemTarget;
+    private Interactable InteractableTarget;
     private string CurrentAttackAnimationName = "";
     private bool IsShortcutButtonPressed = false;
     private Vector2 MovementVector;
@@ -258,6 +260,9 @@ public class PlayerController : GenericSingleton<PlayerController>
         if (IsSceneItemInRange)
         {
             SceneItemTarget.PickUp(InventoryScript);
+        } else if (IsInteractableInRange)
+        {
+            InteractableTarget.Interact();
         }
     }
 
@@ -355,6 +360,11 @@ public class PlayerController : GenericSingleton<PlayerController>
             SceneItemTarget = collider2D.GetComponent<SceneItem>();
             IsSceneItemInRange = true;
         }
+        else if (collider2D.GetComponent<Interactable>() != null)
+        {
+            InteractableTarget = collider2D.GetComponent<Interactable>();
+            IsInteractableInRange = true;
+        }
     }
 
     public void OnTriggerExit2D(Collider2D collider2D)
@@ -363,6 +373,11 @@ public class PlayerController : GenericSingleton<PlayerController>
         {
             IsSceneItemInRange = false;
             SceneItemTarget = null;
+        }
+        else if (collider2D.GetComponent<Interactable>() != null)
+        {
+            IsInteractableInRange = false;
+            InteractableTarget = null;
         }
     }
 

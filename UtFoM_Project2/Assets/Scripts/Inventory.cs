@@ -52,7 +52,7 @@ public class Inventory : MonoBehaviour
 
 	public void ChangeWeaponForward()
 	{
-		if (WeaponsList.Count != 1)
+		if (WeaponsList.Count > 1)
 		{
 			int weaponIndex = WeaponsList.IndexOf(EquippedWeapon);
 			if (weaponIndex < WeaponsList.Count - 1) // less than total number of weapons
@@ -68,7 +68,7 @@ public class Inventory : MonoBehaviour
 
 	public void ChangeWeaponBack()
 	{
-		if (WeaponsList.Count != 1)
+		if (WeaponsList.Count > 1)
 		{
 			int weaponIndex = WeaponsList.IndexOf(EquippedWeapon);
 			if (weaponIndex > 0) // greater than 0
