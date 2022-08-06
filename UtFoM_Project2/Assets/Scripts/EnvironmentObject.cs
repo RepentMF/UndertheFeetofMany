@@ -8,7 +8,7 @@ public class EnvironmentObject : MonoBehaviour
 
     void Start()
     {
-        if (changeHalf == 0)
+        if (changeHalf == -1)
         {
             changeHalf = 1.5f;
         }

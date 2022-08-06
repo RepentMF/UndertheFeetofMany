@@ -831,6 +831,7 @@ SpriteAtlas:
   - {fileID: 4014540011720573719, guid: e21fe35640b832e499a9111c16d73ab1, type: 3}
   - {fileID: -7580990576175227274, guid: e21fe35640b832e499a9111c16d73ab1, type: 3}
   - {fileID: -3334616493871949431, guid: e21fe35640b832e499a9111c16d73ab1, type: 3}
+  - {fileID: 21300000, guid: 3b94dd860e80a1747b715e1c50d5682e, type: 3}
   - {fileID: 21300000, guid: a74e10c63092cb342b54f53deaeb9db7, type: 3}
   - {fileID: 21300000, guid: 7e626dc6d9bcb724aa1c1aec7b4f1f26, type: 3}
   - {fileID: 21300000, guid: b85d6fe6b00e28a499fb3a3dd7b6254b, type: 3}
@@ -2353,6 +2354,7 @@ SpriteAtlas:
   - hammer1_up_40
   - hammer1_up_43
   - hammer1_up_42
+  - UI_map_SS
   - bb_house_inner
   - bb_side_house_inner
   - TC_B1
@@ -2967,7 +2969,7 @@ SpriteAtlas:
   - Cutscene_car5
   - SS_nobg
   - Cutscene_cloud
-  - tc_pillars
+  - TC_pillars
   - feeder_18
   - feeder_19
   - feeder_16
