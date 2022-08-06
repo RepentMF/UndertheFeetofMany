@@ -813,6 +813,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3850412, y: 6}
   m_EdgeRadius: 0
+--- !u!1 &116288304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3312632762610947185, guid: c56922d6c3b879e4bb78c8b4e67417b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 844895986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &127250846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3347,6 +3353,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56922d6c3b879e4bb78c8b4e67417b2, type: 3}
+--- !u!1 &858523663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 435097713, guid: c56922d6c3b879e4bb78c8b4e67417b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 844895986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &865751689
 GameObject:
   m_ObjectHideFlags: 0
@@ -10546,6 +10558,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5829869062835696444, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: MiniMapReference
+      value: 
+      objectReference: {fileID: 858523663}
+    - target: {fileID: 5829869062835696444, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: StatsBarReference
+      value: 
+      objectReference: {fileID: 116288304}
     - target: {fileID: 5829869062835696444, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: PauseMenuReference

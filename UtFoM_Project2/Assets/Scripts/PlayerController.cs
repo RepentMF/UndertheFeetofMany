@@ -9,6 +9,8 @@ public class PlayerController : GenericSingleton<PlayerController>
     private ActionDelegate Action;
     private bool IsPaused = false;
     [SerializeField] private GameObject PauseMenuReference;
+    [SerializeField] private GameObject MiniMapReference;
+    [SerializeField] private GameObject StatsBarReference;
     private bool IsSceneItemInRange = false;
     private bool IsInteractableInRange = false;
     private SceneItem SceneItemTarget;
@@ -46,6 +48,21 @@ public class PlayerController : GenericSingleton<PlayerController>
         } else
         {
             Time.timeScale = 1;
+        }
+    }
+
+    private void ToggleDisplayPauseMenu()
+    {
+        if (IsPaused && PauseMenuReference != null && StatsBarReference != null && MiniMapReference != null)
+        {
+            PauseMenuReference.SetActive(true);
+            StatsBarReference.SetActive(false);
+            MiniMapReference.SetActive(false);
+        } else if (!IsPaused && PauseMenuReference != null && StatsBarReference != null && MiniMapReference != null)
+        {
+            PauseMenuReference.SetActive(false);
+            StatsBarReference.SetActive(true);
+            MiniMapReference.SetActive(true);
         }
     }
 
@@ -254,13 +271,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     private void OnMenuButton()
     {
         TogglePauseGame();
-        if (IsPaused && PauseMenuReference != null)
-        {
-            PauseMenuReference.SetActive(true);
-        } else if (!IsPaused && PauseMenuReference != null)
-        {
-            PauseMenuReference.SetActive(false);
-        }
+        ToggleDisplayPauseMenu();
     }
 
     private void OnContextConfirm()
