@@ -152,7 +152,7 @@ public abstract class EnemyAi : MonoBehaviour
         if (distance <= MovementRange)
         {
             InMovementRange = true;
-        } 
+        }
     }
 
     /// <summary>
@@ -194,19 +194,19 @@ public abstract class EnemyAi : MonoBehaviour
             Direction = (Target.transform.position - this.transform.position).normalized;
             if (QuadDirectionOnly)
             {
-                if(Direction.x > 0 && Mathf.Abs(Direction.x) > Mathf.Abs(Direction.y))
+                if (Direction.x > 0 && Mathf.Abs(Direction.x) > Mathf.Abs(Direction.y))
                 {
                     Direction = Vector3.right;
                 }
-                else if(Direction.y > 0 && Mathf.Abs(Direction.y) > Mathf.Abs(Direction.x))
+                else if (Direction.y > 0 && Mathf.Abs(Direction.y) > Mathf.Abs(Direction.x))
                 {
                     Direction = Vector3.up;
                 }
-                else if(Direction.x < 0 && Mathf.Abs(Direction.x) > Mathf.Abs(Direction.y))
+                else if (Direction.x < 0 && Mathf.Abs(Direction.x) > Mathf.Abs(Direction.y))
                 {
                     Direction = Vector3.left;
                 }
-                else if(Direction.y < 0 && Mathf.Abs(Direction.y) > Mathf.Abs(Direction.x))
+                else if (Direction.y < 0 && Mathf.Abs(Direction.y) > Mathf.Abs(Direction.x))
                 {
                     Direction = Vector3.down;
                 }
@@ -391,7 +391,7 @@ public abstract class EnemyAi : MonoBehaviour
     /// </summary>
     protected internal virtual void Move()
     {
-        StatsScript.DamageStamina(MovementCost*Time.deltaTime);
+        StatsScript.DamageStamina(MovementCost * Time.deltaTime);
         StateManagerScript.CurrentState = ActionState.Move;
         Rigidbody2DScript.velocity = Direction.normalized * MovementSpeed;
     }
@@ -399,7 +399,7 @@ public abstract class EnemyAi : MonoBehaviour
     /// <summary>
     /// Empty function for when the AI has no targets in range or no attack options available
     /// </summary>
-    protected internal virtual void NoAction() 
+    protected internal virtual void NoAction()
     {
         StateManagerScript.CurrentState = ActionState.Idle;
     }
@@ -433,7 +433,8 @@ public abstract class EnemyAi : MonoBehaviour
             if (this.gameObject.transform.position.y < collider.bounds.center.y - .2)
             {
                 SpriteRendererScript.sortingLayerName = "Enemy_Front";
-            } else
+            }
+            else
             {
                 SpriteRendererScript.sortingLayerName = "Enemy_Back";
             }
@@ -442,11 +443,31 @@ public abstract class EnemyAi : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collider)
     {
+        // if (!GameStateManager.Instance.IsGameplay())
+        // {
+        //     return;
+        // }
         // If a player has exited the enemy's space
         if (collider.GetComponent<PlayerController>() != null)
         {
             SpriteRendererScript.sortingLayerName = "Enemy_Back";
         }
+    }
+
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+    }
+
+    void Awake()
+    {
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+ 
+    void OnDestroy()
+    {
+        if (GameStateManager.Instance != null)
+            GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
     }
 
     // Start is called before the first frame update

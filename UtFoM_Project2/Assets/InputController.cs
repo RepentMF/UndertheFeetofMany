@@ -510,6 +510,112 @@ public class @InputController : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Paused"",
+            ""id"": ""23a3745a-a776-4265-882b-f2de6960cc09"",
+            ""actions"": [
+                {
+                    ""name"": ""MenuButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""d4534f28-b31c-48e5-b613-e8d44db168a1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""4aa5dbf0-b61a-442d-b596-5f15258092e8"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MenuButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5cdcc5df-5ef3-4d2f-baeb-a2a9058a5abe"",
+                    ""path"": ""<DualShockGamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MenuButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Interacting"",
+            ""id"": ""b5f3dacd-db8b-46e5-817f-90c67a33252d"",
+            ""actions"": [
+                {
+                    ""name"": ""EndInteraction"",
+                    ""type"": ""Button"",
+                    ""id"": ""ca26cb18-381b-4614-b7ab-87eed7fa5e68"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""faa7d9e2-85af-477d-98f7-83911a73018b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""258ac595-529a-4ad7-93c6-36d064d1963d"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""EndInteraction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e7cb6c8b-921c-413c-9f66-7b43414416f6"",
+                    ""path"": ""<DualShockGamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""EndInteraction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""133cd8d7-d329-460f-9770-b2bfadc76a6d"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c27c0c13-eb09-4e9b-a619-63a1d9d5028a"",
+                    ""path"": ""<DualShockGamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -529,6 +635,13 @@ public class @InputController : IInputActionCollection, IDisposable
         m_Player_HealthButton = m_Player.FindAction("HealthButton", throwIfNotFound: true);
         m_Player_ManaButton = m_Player.FindAction("ManaButton", throwIfNotFound: true);
         m_Player_StaminaButton = m_Player.FindAction("StaminaButton", throwIfNotFound: true);
+        // Paused
+        m_Paused = asset.FindActionMap("Paused", throwIfNotFound: true);
+        m_Paused_MenuButton = m_Paused.FindAction("MenuButton", throwIfNotFound: true);
+        // Interacting
+        m_Interacting = asset.FindActionMap("Interacting", throwIfNotFound: true);
+        m_Interacting_EndInteraction = m_Interacting.FindAction("EndInteraction", throwIfNotFound: true);
+        m_Interacting_Interact = m_Interacting.FindAction("Interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -703,6 +816,80 @@ public class @InputController : IInputActionCollection, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // Paused
+    private readonly InputActionMap m_Paused;
+    private IPausedActions m_PausedActionsCallbackInterface;
+    private readonly InputAction m_Paused_MenuButton;
+    public struct PausedActions
+    {
+        private @InputController m_Wrapper;
+        public PausedActions(@InputController wrapper) { m_Wrapper = wrapper; }
+        public InputAction @MenuButton => m_Wrapper.m_Paused_MenuButton;
+        public InputActionMap Get() { return m_Wrapper.m_Paused; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PausedActions set) { return set.Get(); }
+        public void SetCallbacks(IPausedActions instance)
+        {
+            if (m_Wrapper.m_PausedActionsCallbackInterface != null)
+            {
+                @MenuButton.started -= m_Wrapper.m_PausedActionsCallbackInterface.OnMenuButton;
+                @MenuButton.performed -= m_Wrapper.m_PausedActionsCallbackInterface.OnMenuButton;
+                @MenuButton.canceled -= m_Wrapper.m_PausedActionsCallbackInterface.OnMenuButton;
+            }
+            m_Wrapper.m_PausedActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @MenuButton.started += instance.OnMenuButton;
+                @MenuButton.performed += instance.OnMenuButton;
+                @MenuButton.canceled += instance.OnMenuButton;
+            }
+        }
+    }
+    public PausedActions @Paused => new PausedActions(this);
+
+    // Interacting
+    private readonly InputActionMap m_Interacting;
+    private IInteractingActions m_InteractingActionsCallbackInterface;
+    private readonly InputAction m_Interacting_EndInteraction;
+    private readonly InputAction m_Interacting_Interact;
+    public struct InteractingActions
+    {
+        private @InputController m_Wrapper;
+        public InteractingActions(@InputController wrapper) { m_Wrapper = wrapper; }
+        public InputAction @EndInteraction => m_Wrapper.m_Interacting_EndInteraction;
+        public InputAction @Interact => m_Wrapper.m_Interacting_Interact;
+        public InputActionMap Get() { return m_Wrapper.m_Interacting; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(InteractingActions set) { return set.Get(); }
+        public void SetCallbacks(IInteractingActions instance)
+        {
+            if (m_Wrapper.m_InteractingActionsCallbackInterface != null)
+            {
+                @EndInteraction.started -= m_Wrapper.m_InteractingActionsCallbackInterface.OnEndInteraction;
+                @EndInteraction.performed -= m_Wrapper.m_InteractingActionsCallbackInterface.OnEndInteraction;
+                @EndInteraction.canceled -= m_Wrapper.m_InteractingActionsCallbackInterface.OnEndInteraction;
+                @Interact.started -= m_Wrapper.m_InteractingActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_InteractingActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_InteractingActionsCallbackInterface.OnInteract;
+            }
+            m_Wrapper.m_InteractingActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @EndInteraction.started += instance.OnEndInteraction;
+                @EndInteraction.performed += instance.OnEndInteraction;
+                @EndInteraction.canceled += instance.OnEndInteraction;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
+            }
+        }
+    }
+    public InteractingActions @Interacting => new InteractingActions(this);
     public interface IPlayerActions
     {
         void OnShortcutButton(InputAction.CallbackContext context);
@@ -718,5 +905,14 @@ public class @InputController : IInputActionCollection, IDisposable
         void OnHealthButton(InputAction.CallbackContext context);
         void OnManaButton(InputAction.CallbackContext context);
         void OnStaminaButton(InputAction.CallbackContext context);
+    }
+    public interface IPausedActions
+    {
+        void OnMenuButton(InputAction.CallbackContext context);
+    }
+    public interface IInteractingActions
+    {
+        void OnEndInteraction(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }

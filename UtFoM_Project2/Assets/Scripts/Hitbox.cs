@@ -63,6 +63,22 @@ public class Hitbox : MonoBehaviour
         }
     }
 
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+    }
+
+    void Awake()
+    {
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+ 
+    void OnDestroy()
+    {
+        if (GameStateManager.Instance != null)
+            GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

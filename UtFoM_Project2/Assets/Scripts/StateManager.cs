@@ -247,7 +247,32 @@ public class StateManager : MonoBehaviour
         }
         return false;
     }
-    
+
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+        AnimatorScript.enabled = newGameState == GameState.Gameplay;
+        if (Rigidbody2DScript != null && newGameState == GameState.Gameplay)
+        {
+            Rigidbody2DScript.WakeUp();
+        }
+        else if (Rigidbody2DScript != null)
+        {
+            Rigidbody2DScript.Sleep();
+        }
+    }
+
+    void Awake()
+    {
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+ 
+    void OnDestroy()
+    {
+        if (GameStateManager.Instance != null)
+            GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+    }
+
 
     // Start is called before the first frame update
     void Start()

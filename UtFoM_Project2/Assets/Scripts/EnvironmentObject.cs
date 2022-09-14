@@ -6,6 +6,22 @@ public class EnvironmentObject : MonoBehaviour
 {
     public float changeHalf;
 
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+    }
+
+    void Awake()
+    {
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+ 
+    void OnDestroy()
+    {
+        if (GameStateManager.Instance != null)
+            GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+    }
+
     void Start()
     {
         if (changeHalf == -1)

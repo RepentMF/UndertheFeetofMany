@@ -7,7 +7,6 @@ public class PlayerController : GenericSingleton<PlayerController>
 {
     private delegate void ActionDelegate();
     private ActionDelegate Action;
-    private bool IsPaused = false;
     [SerializeField] private GameObject PauseMenuReference;
     [SerializeField] private GameObject MiniMapReference;
     [SerializeField] private GameObject StatsBarReference;
@@ -39,26 +38,15 @@ public class PlayerController : GenericSingleton<PlayerController>
     private Stats StatsScript;
     private StatusMod StatusModScript;
 
-    private void TogglePauseGame()
-    {
-        IsPaused = !IsPaused;
-        if (IsPaused)
-        {
-            Time.timeScale = 0;
-        } else
-        {
-            Time.timeScale = 1;
-        }
-    }
-
     private void ToggleDisplayPauseMenu()
     {
-        if (IsPaused && PauseMenuReference != null && StatsBarReference != null && MiniMapReference != null)
+        if (GameStateManager.Instance.IsPaused() && PauseMenuReference != null && StatsBarReference != null && MiniMapReference != null)
         {
             PauseMenuReference.SetActive(true);
             StatsBarReference.SetActive(false);
             MiniMapReference.SetActive(false);
-        } else if (!IsPaused && PauseMenuReference != null && StatsBarReference != null && MiniMapReference != null)
+        }
+        else if (!GameStateManager.Instance.IsPaused() && PauseMenuReference != null && StatsBarReference != null && MiniMapReference != null)
         {
             PauseMenuReference.SetActive(false);
             StatsBarReference.SetActive(true);
@@ -89,7 +77,7 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private bool CanAct()
     {
-        if (IsPaused || StateManagerScript.CurrentState == ActionState.Attack || StateManagerScript.CurrentState == ActionState.Stagger || StateManagerScript.CurrentState == ActionState.Juggle || StateManagerScript.CurrentState == ActionState.Freefall || StateManagerScript.CurrentState == ActionState.Death || StateManagerScript.CurrentState == ActionState.Dodge)
+        if (!GameStateManager.Instance.IsGameplay() || StateManagerScript.CurrentState == ActionState.Attack || StateManagerScript.CurrentState == ActionState.Stagger || StateManagerScript.CurrentState == ActionState.Juggle || StateManagerScript.CurrentState == ActionState.Freefall || StateManagerScript.CurrentState == ActionState.Death || StateManagerScript.CurrentState == ActionState.Dodge)
         {
             return false;
         }
@@ -98,7 +86,7 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private bool CanAttack()
     {
-        if (IsPaused || StateManagerScript.CurrentState == ActionState.Stagger || StateManagerScript.CurrentState == ActionState.Juggle || StateManagerScript.CurrentState == ActionState.Freefall || StateManagerScript.CurrentState == ActionState.Death || StateManagerScript.CurrentState == ActionState.Dodge)
+        if (!GameStateManager.Instance.IsGameplay() || StateManagerScript.CurrentState == ActionState.Stagger || StateManagerScript.CurrentState == ActionState.Juggle || StateManagerScript.CurrentState == ActionState.Freefall || StateManagerScript.CurrentState == ActionState.Death || StateManagerScript.CurrentState == ActionState.Dodge)
         {
             return false;
         }
@@ -270,18 +258,39 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void OnMenuButton()
     {
-        TogglePauseGame();
+        if (GameStateManager.Instance.IsPaused())
+        {
+            GameStateManager.Instance.StartGameplay();
+        }
+        else if (GameStateManager.Instance.IsGameplay())
+        {
+            GameStateManager.Instance.PauseGame();
+        }
         ToggleDisplayPauseMenu();
     }
 
     private void OnContextConfirm()
     {
-        if (IsSceneItemInRange)
+        if (CanAct() && IsSceneItemInRange)
         {
             SceneItemTarget.PickUp(InventoryScript);
-        } else if (IsInteractableInRange)
+        }
+        else if (CanAct() && IsInteractableInRange)
         {
             InteractableTarget.Interact();
+        }
+    }
+
+    private void OnInteract()
+    {
+        InteractableTarget.Interact();
+    }
+
+    private void OnEndInteraction()
+    {
+        if (IsInteractableInRange)
+        {
+            InteractableTarget.EndInteraction();
         }
     }
 
@@ -302,50 +311,50 @@ public class PlayerController : GenericSingleton<PlayerController>
     // private void VoltTrap()
     // {
     //     GameObject volt = Instantiate(VoltTrapObject);
-	// 	volt.transform.position = this.gameObject.transform.position + new Vector3(.75f, .75f, 0f);
-	// 	GameObject volt2 = Instantiate(VoltTrapObject);
-	// 	volt2.transform.position = this.gameObject.transform.position + new Vector3(-.75f, .75f, 0f);
-	// 	volt2.transform.GetComponentInParent<Attack>().thrust.x *= -1;
-	// 	GameObject volt3 = Instantiate(VoltTrapObject);
-	// 	volt3.transform.position = this.gameObject.transform.position + new Vector3(.75f, -.75f, 0f);
-	// 	volt3.transform.GetComponentInParent<Attack>().thrust.y *= -1f;
-	// 	GameObject volt4 = Instantiate(VoltTrapObject);
-	// 	volt4.transform.position = this.gameObject.transform.position + new Vector3(-.75f, -.75f, 0f);
-	// 	volt4.transform.GetComponentInParent<Attack>().thrust *= -1f;
+    // 	volt.transform.position = this.gameObject.transform.position + new Vector3(.75f, .75f, 0f);
+    // 	GameObject volt2 = Instantiate(VoltTrapObject);
+    // 	volt2.transform.position = this.gameObject.transform.position + new Vector3(-.75f, .75f, 0f);
+    // 	volt2.transform.GetComponentInParent<Attack>().thrust.x *= -1;
+    // 	GameObject volt3 = Instantiate(VoltTrapObject);
+    // 	volt3.transform.position = this.gameObject.transform.position + new Vector3(.75f, -.75f, 0f);
+    // 	volt3.transform.GetComponentInParent<Attack>().thrust.y *= -1f;
+    // 	GameObject volt4 = Instantiate(VoltTrapObject);
+    // 	volt4.transform.position = this.gameObject.transform.position + new Vector3(-.75f, -.75f, 0f);
+    // 	volt4.transform.GetComponentInParent<Attack>().thrust *= -1f;
     // }
 
     // private void SparkTrigger()
     // {
-	// 	GameObject fire = Instantiate(SparkTriggerObject);
-	// 	fire.transform.position = this.gameObject.transform.position;
-	// 	Rigidbody2D rb = fire.GetComponentInChildren<Rigidbody2D>();
+    // 	GameObject fire = Instantiate(SparkTriggerObject);
+    // 	fire.transform.position = this.gameObject.transform.position;
+    // 	Rigidbody2D rb = fire.GetComponentInChildren<Rigidbody2D>();
 
-	// 	if(animator.GetFloat("moveX") > 0)
-	// 	{
-	// 		rb.AddForce(magicStart.right * 20f, ForceMode2D.Impulse);
-	// 		fire.transform.Rotate(0, 0, 270);
-	// 	}
-	// 	else if(animator.GetFloat("moveY") > 0)
-	// 	{
-	// 		rb.AddForce(magicStart.up * 20f, ForceMode2D.Impulse);
-	// 	}
-	// 	else if(animator.GetFloat("moveX") < 0)
-	// 	{
-	// 		rb.AddForce(magicStart.right * -20f, ForceMode2D.Impulse);
-	// 		fire.transform.Rotate(0, 0, 90);
-	// 	}
-	// 	else if(animator.GetFloat("moveY") < 0)
-	// 	{
-	// 		rb.AddForce(magicStart.up * -20f, ForceMode2D.Impulse);
-	// 		fire.transform.Rotate(0, 0, 180);
-	// 	}
+    // 	if(animator.GetFloat("moveX") > 0)
+    // 	{
+    // 		rb.AddForce(magicStart.right * 20f, ForceMode2D.Impulse);
+    // 		fire.transform.Rotate(0, 0, 270);
+    // 	}
+    // 	else if(animator.GetFloat("moveY") > 0)
+    // 	{
+    // 		rb.AddForce(magicStart.up * 20f, ForceMode2D.Impulse);
+    // 	}
+    // 	else if(animator.GetFloat("moveX") < 0)
+    // 	{
+    // 		rb.AddForce(magicStart.right * -20f, ForceMode2D.Impulse);
+    // 		fire.transform.Rotate(0, 0, 90);
+    // 	}
+    // 	else if(animator.GetFloat("moveY") < 0)
+    // 	{
+    // 		rb.AddForce(magicStart.up * -20f, ForceMode2D.Impulse);
+    // 		fire.transform.Rotate(0, 0, 180);
+    // 	}
     // }
 
     private void Move()
     {
         SetAnimatorFloats(MovementVector);
         StateManagerScript.CurrentState = ActionState.Move;
-        float currentSpeed = StatusModScript.GetStatus(Status.Exhaust) ? MovementSpeed/1.5f : MovementSpeed;
+        float currentSpeed = StatusModScript.GetStatus(Status.Exhaust) ? MovementSpeed / 1.5f : MovementSpeed;
         Rigidbody2DScript.MovePosition(this.gameObject.transform.position + new Vector3(MovementVector.x * currentSpeed * Time.deltaTime, MovementVector.y * currentSpeed * Time.deltaTime, 0));
     }
 
@@ -360,7 +369,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     /// <summary>
     /// Sets the moveX and moveY floats in the AnimatorScript according to the given vector
     /// </summary>
-    protected internal void  SetAnimatorFloats(Vector2 vector)
+    protected internal void SetAnimatorFloats(Vector2 vector)
     {
         AnimatorScript.SetFloat("moveX", vector.x);
         AnimatorScript.SetFloat("moveY", vector.y);
@@ -400,9 +409,15 @@ public class PlayerController : GenericSingleton<PlayerController>
         }
     }
 
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+    }
+
     public override void Awake()
     {
         base.Awake();
+        // Gather script references
         AnimatorScript = this.gameObject.GetComponent<Animator>();
         InputControllerScript = new InputController();
         InputControllerScript.Enable();
@@ -411,30 +426,33 @@ public class PlayerController : GenericSingleton<PlayerController>
         StateManagerScript = this.gameObject.GetComponent<StateManager>();
         StatsScript = this.gameObject.GetComponent<Stats>();
         StatusModScript = this.gameObject.GetComponent<StatusMod>();
+        // Subscribe to events
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+        // Initialize variables
         QualitySettings.vSyncCount = 0;
-    	Application.targetFrameRate = 45;
+        Application.targetFrameRate = 45;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        if(PlayerScript != null)
-    	{
-    		Destroy(this.gameObject);
-    		return;
-    	}
+        if (PlayerScript != null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
 
-    	PlayerScript = this;
-    	GameObject.DontDestroyOnLoad(this.gameObject.transform.parent.gameObject);
+        PlayerScript = this;
+        GameObject.DontDestroyOnLoad(this.gameObject.transform.parent.gameObject);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(CurrentScene != NextScene)
-    	{
-    		CurrentScene = NextScene;
-    	}
+        if (CurrentScene != NextScene)
+        {
+            CurrentScene = NextScene;
+        }
 
         CheckAttackTimer();
         CheckDodgeTimer();
@@ -447,5 +465,11 @@ public class PlayerController : GenericSingleton<PlayerController>
             ReadInput();
             Action();
         }
+    }
+    
+    void OnDestroy()
+    {
+        if (GameStateManager.Instance != null)
+            GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
     }
 }

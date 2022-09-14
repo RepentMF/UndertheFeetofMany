@@ -11,7 +11,7 @@ public class Hurtbox : MonoBehaviour
     // Script References
     private Rigidbody2D Rigidbody2DScript;
     private StateManager StateManagerScript;
-	public ParticleSystem ParticleSystemScript;
+    public ParticleSystem ParticleSystemScript;
 
     /// <summary>
     /// When the entity is idle save their position so we know where to end freefall
@@ -31,7 +31,7 @@ public class Hurtbox : MonoBehaviour
     {
         if (Rigidbody2DScript.velocity.y < 0f && StateManagerScript.CurrentState == ActionState.Juggle)
         {
-            StateManagerScript.CurrentState = ActionState.Freefall;            
+            StateManagerScript.CurrentState = ActionState.Freefall;
         }
     }
 
@@ -56,7 +56,8 @@ public class Hurtbox : MonoBehaviour
             if (CurrentStagger <= 0.0f)
             {
                 EnterIdle();
-            } else
+            }
+            else
             {
                 CurrentStagger -= Time.deltaTime;
             }
@@ -67,6 +68,22 @@ public class Hurtbox : MonoBehaviour
     {
         LastHitBy = "";
         StateManagerScript.CurrentState = ActionState.Idle;
+    }
+
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+    }
+
+    void Awake()
+    {
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+ 
+    void OnDestroy()
+    {
+        if (GameStateManager.Instance != null)
+            GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
     }
 
     // Start is called before the first frame update

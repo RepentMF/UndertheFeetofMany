@@ -2832,8 +2832,9 @@ MonoBehaviour:
   DialogueBoxReference: {fileID: 214392431}
   DialogueTextReference: {fileID: 1759292141}
   TextArray:
-  - Hello
-  - Dude
+  - Whoa!
+  - You found me!
+  - Don't tell anyone, okay? ;)
 --- !u!61 &732553004
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7578,7 +7579,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 8160814596512457045}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1792509776}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ca553585a9f12e4db2407fc3492aeda, type: 3}
@@ -9257,6 +9258,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1792509776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 660729248335287819, guid: 37a7ab54d42670e4b974904b087b9837,
+    type: 3}
+  m_PrefabInstance: {fileID: 8160814596512457045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1792509787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792509776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f815a5eddf94a94399f4d25c724fb1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1867818306
 GameObject:
   m_ObjectHideFlags: 0

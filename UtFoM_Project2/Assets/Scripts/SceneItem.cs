@@ -17,16 +17,17 @@ public class SceneItem : MonoBehaviour // GG TODO: Add voip animation to scene i
     private SpriteRenderer SpriteRendererScript;
     private SpriteRenderer TargetSpriteRendererScript;
 
-    private void Initialize(Item newData) {
+    private void Initialize(Item newData)
+    {
         ItemData = newData;
         if (SpriteRendererScript.sprite == null)
         {
-            SpriteRendererScript.sprite = ItemData.Sprite; 
-        }    
+            SpriteRendererScript.sprite = ItemData.Sprite;
+        }
         BoxCollider2DScript.size = SpriteRendererScript.size;
     }
 
-    #nullable enable
+#nullable enable
     public void PickUp(Inventory? inventory)
     {
         if (inventory != null)
@@ -37,7 +38,7 @@ public class SceneItem : MonoBehaviour // GG TODO: Add voip animation to scene i
         this.gameObject.SetActive(false);
         //GameObject.Destroy(this.gameObject);
     }
-    #nullable disable
+#nullable disable
 
     private void FadeLight()
     {
@@ -61,12 +62,24 @@ public class SceneItem : MonoBehaviour // GG TODO: Add voip animation to scene i
         BoxCollider2DScript = this.gameObject.GetComponent<BoxCollider2D>();
         Light2DScript = this.gameObject.GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
         SpriteRendererScript = this.gameObject.GetComponent<SpriteRenderer>();
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+    }
+ 
+    void OnDestroy()
+    {
+        if (GameStateManager.Instance != null)
+            GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
         if (HasBeenPickedUp)
         {
             this.gameObject.SetActive(false);

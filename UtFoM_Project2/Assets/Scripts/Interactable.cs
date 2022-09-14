@@ -13,7 +13,7 @@ public class Interactable : MonoBehaviour
     // Script References
     StateManager StateManagerScript;
 
-    #nullable enable
+#nullable enable
     public void Interact(Inventory inventory = null)
     {
         // If there is dialogue text to iterate through, display that text
@@ -25,44 +25,50 @@ public class Interactable : MonoBehaviour
             DialogueTextReference.text = TextArray[TextArrayIndex];
             TextArrayIndex++;
         }
-        else if (TextArray.Length <= TextArrayIndex) // If all of the dialogue text has been iterated through (or if none existed)
+        else // If all of the dialogue text has been iterated through (or if none existed)
         {
-            if (DialogueBoxReference != null)
-            {
-                DialogueBoxReference.SetActive(false);
-            }
-            TextArrayIndex = 0;
-            UnpauseGame();
+            EndInteraction();
         }
     }
-    #nullable disable
+
+    public void EndInteraction()
+    {
+        if (DialogueBoxReference != null)
+        {
+            DialogueBoxReference.SetActive(false);
+        }
+        TextArrayIndex = 0;
+        UnpauseGame();
+    }
 
     private void PauseGame()
     {
-        Time.timeScale = 0;
-        // GG TODO: Change button mapping here
+        GameStateManager.Instance.StartInteracting();
     }
 
     private void UnpauseGame()
     {
-        Time.timeScale = 1;
-        // GG TODO: Revert button mapping here
+        GameStateManager.Instance.StartGameplay();
+    }
+
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Interacting;
     }
 
     void Awake()
     {
-        StateManagerScript = this.gameObject.GetComponent<StateManager>();
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+ 
+    void OnDestroy()
+    {
+        if (GameStateManager.Instance != null)
+            GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        StateManagerScript = this.gameObject.GetComponent<StateManager>();
     }
 }

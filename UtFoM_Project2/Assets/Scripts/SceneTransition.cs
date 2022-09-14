@@ -26,7 +26,19 @@ public class SceneTransition : MonoBehaviour
 			Destroy(panel, 1);
 			RoomScript.SetTreasureInRoom();
 		}
+		GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
 	}
+
+	private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+    }
+ 
+    void OnDestroy()
+    {
+        if (GameStateManager.Instance != null)
+            GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+    }
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{

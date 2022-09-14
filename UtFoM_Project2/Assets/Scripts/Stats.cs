@@ -83,7 +83,6 @@ public class Stats : MonoBehaviour
             }
             CurrentHealth = CurrentHealth - damage <= 0.0f ? 0.0f : CurrentHealth - damage;
         }
-        
     }
 
     /// <summary>
@@ -304,6 +303,22 @@ public class Stats : MonoBehaviour
         {
             StatusModScript.AddStatus(Status.Exhaust, MaxStamina, 0f);
         }
+    }
+
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+    }
+
+    void Awake()
+    {
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+ 
+    void OnDestroy()
+    {
+        if (GameStateManager.Instance != null)
+            GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
     }
 
     // Start is called before the first frame update

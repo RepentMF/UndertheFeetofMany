@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ParticleManager : MonoBehaviour
 {
-	private ParticleSystem particles;
+    private ParticleSystem particles;
 
     // Start is called before the first frame update
     void Start()
@@ -15,9 +15,9 @@ public class ParticleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!particles.IsAlive())
+        if (!particles.IsAlive())
         {
-        	Destroy(this.gameObject);
+            Destroy(this.gameObject);
         }
     }
 }
