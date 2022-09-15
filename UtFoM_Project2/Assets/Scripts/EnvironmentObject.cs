@@ -24,7 +24,7 @@ public class EnvironmentObject : MonoBehaviour
 
     void Start()
     {
-        if (changeHalf == -1)
+        if (changeHalf == 0)
         {
             changeHalf = 1.5f;
         }

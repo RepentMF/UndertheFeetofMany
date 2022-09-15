@@ -1,0 +1,12 @@
+[gamestate] unpaused
+
+[gamestate] paused
+	[tab] Player Profile
+		[static information] HP label
+		[dynamic information] HP value
+	[tab] World Knowledge
+	[tab] Diaries
+	[tab] Sidequests
+	[tab] Charms
+	[tab] How to Play
+	[tab] Settings/ Save Files
