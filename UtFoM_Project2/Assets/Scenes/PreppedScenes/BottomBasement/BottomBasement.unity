@@ -3276,7 +3276,7 @@ PrefabInstance:
     - target: {fileID: 824030230810935874, guid: c56922d6c3b879e4bb78c8b4e67417b2,
         type: 3}
       propertyPath: m_UseSpriteMesh
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1563472578681019225, guid: c56922d6c3b879e4bb78c8b4e67417b2,
         type: 3}
