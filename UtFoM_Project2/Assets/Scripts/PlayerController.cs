@@ -8,8 +8,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     private delegate void ActionDelegate();
     private ActionDelegate Action;
     [SerializeField] private GameObject PauseMenuReference;
-    [SerializeField] private GameObject MiniMapReference;
-    [SerializeField] private GameObject StatsBarReference;
+    [SerializeField] private GameObject StatsBookReference;
     private bool IsSceneItemInRange = false;
     private bool IsInteractableInRange = false;
     private SceneItem SceneItemTarget;
@@ -40,17 +39,18 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void ToggleDisplayPauseMenu()
     {
-        if (GameStateManager.Instance.IsPaused() && PauseMenuReference != null && StatsBarReference != null && MiniMapReference != null)
+        if (GameStateManager.Instance.IsPaused() && PauseMenuReference != null && StatsBookReference != null)
         {
             PauseMenuReference.SetActive(true);
-            StatsBarReference.SetActive(false);
-            MiniMapReference.SetActive(false);
+            StateManager pauseMenuStateManager = PauseMenuReference.GetComponent<StateManager>();
+            pauseMenuStateManager.CurrentState = ActionState.Appear;
+            StatsBookReference.SetActive(false);
         }
-        else if (!GameStateManager.Instance.IsPaused() && PauseMenuReference != null && StatsBarReference != null && MiniMapReference != null)
+        else if (!GameStateManager.Instance.IsPaused() && PauseMenuReference != null && StatsBookReference != null)
         {
-            PauseMenuReference.SetActive(false);
-            StatsBarReference.SetActive(true);
-            MiniMapReference.SetActive(true);
+            StateManager pauseMenuStateManager = PauseMenuReference.GetComponent<StateManager>();
+            pauseMenuStateManager.InitializeOnDeath(StatsBookReference);
+            pauseMenuStateManager.CurrentState = ActionState.Death;
         }
     }
 

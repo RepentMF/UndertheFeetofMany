@@ -13,6 +13,7 @@ public enum ActionState
     Juggle,
     Freefall,
     Death,
+    Appear,
     None // Used in Hitbox logic for the knife
 }
 
@@ -59,7 +60,7 @@ public class ActionStateAnimation
 public class StateManager : MonoBehaviour
 {
     [Header("Animations")]
-    [SerializeField] private Boolean RandomizeStartFrame = false;
+    [SerializeField] private bool RandomizeStartFrame = false;
     [SerializeField] public string IdleAnimationName = "idle";
     [SerializeField] public string MoveAnimationName = "move";
     [SerializeField] public float MoveAnimationTimer = -1.0f;
@@ -72,7 +73,12 @@ public class StateManager : MonoBehaviour
     [SerializeField] private string FreefallAnimationName = "stagger";
     [SerializeField] private string DeathAnimationName = "death";
     [SerializeField] private float DeathAnimationTimer = -1.0f;
-    public bool RemoveOnDeath = true;
+    private GameObject DeathObject;
+    [SerializeField] public string AppearAnimationName = "appear";
+    [SerializeField] public float AppearAnimationTimer = -1.0f;
+    [SerializeField] public bool RemoveOnDeath = true;
+    [SerializeField] private bool IgnorePause = false;
+    [SerializeField] private bool IgnoreInteracting = false;
     public ActionState CurrentState { get; set; } = ActionState.Idle;
     private ActionStateAnimation NextAnimation = new ActionStateAnimation();
     private ActionStateAnimation CurrentAnimation = new ActionStateAnimation();
@@ -136,7 +142,10 @@ public class StateManager : MonoBehaviour
                 SetNextAnimation(FreefallAnimationName);
                 break;
             case ActionState.Death:
-                SetNextAnimation(DeathAnimationName, DeathAnimationTimer);
+                SetNextAnimation(DeathAnimationName, DeathAnimationTimer, CurrentAnimation.AnimationName == AppearAnimationName ? CurrentAnimation.AnimationTimer : 0.0f);
+                break;
+            case ActionState.Appear:
+                SetNextAnimation(AppearAnimationName, AppearAnimationTimer, CurrentAnimation.AnimationName == DeathAnimationName ? CurrentAnimation.AnimationTimer : 0.0f);
                 break;
             default:
                 SetNextAnimation();
@@ -147,21 +156,22 @@ public class StateManager : MonoBehaviour
             RandomizeNextAnimationStartFrame();
         }
         // If there is a NextAnimation and it's not already playing, play that animation
-        if ((NextAnimation.AnimationName != CurrentAnimation.AnimationName) || (NextAnimation.AnimationName != "idle" && NextAnimation.AnimationName == CurrentAnimation.AnimationName && CurrentAnimation.AnimationTimer <= 0.0f))
+        if ((NextAnimation.AnimationName != CurrentAnimation.AnimationName) || ((NextAnimation.AnimationName != "idle" && NextAnimation.AnimationName != AppearAnimationName && NextAnimation.AnimationName != DeathAnimationName) && NextAnimation.AnimationName == CurrentAnimation.AnimationName && CurrentAnimation.AnimationTimer <= 0.0f))
         {
             AnimatorScript.Play(NextAnimation.AnimationName, -1, NextAnimation.AnimationStartFrame);
             // Properties have to be copied individually so as not to copy reference and memory and have two variables pointing to the same object data
             CurrentAnimation.AnimationName = NextAnimation.AnimationName;
             CurrentAnimation.AnimationBufferThreshold = NextAnimation.AnimationBufferThreshold;
+            CurrentAnimation.AnimationStartFrame = NextAnimation.AnimationStartFrame;
             if (NextAnimation.AnimationTimer == -1)
             {
                 yield return new WaitForEndOfFrame();
                 // In order to properly read the animation length, we must wait until the end of the current frame before reading the value
-                CurrentAnimation.AnimationTimer = AnimatorScript.GetCurrentAnimatorStateInfo(0).length;
+                CurrentAnimation.AnimationTimer = CurrentAnimation.AnimationStartFrame > 0.0f ? AnimatorScript.GetCurrentAnimatorStateInfo(0).length - CurrentAnimation.AnimationStartFrame : AnimatorScript.GetCurrentAnimatorStateInfo(0).length;
             }
             else
             {
-                CurrentAnimation.AnimationTimer = NextAnimation.AnimationTimer;
+                CurrentAnimation.AnimationTimer = CurrentAnimation.AnimationStartFrame > 0.0f ? NextAnimation.AnimationTimer - CurrentAnimation.AnimationStartFrame : NextAnimation.AnimationTimer;
             }
         }
     }
@@ -193,11 +203,34 @@ public class StateManager : MonoBehaviour
     /// <summary>
     /// Removes the gameObject once the death animation finishes playing
     /// </summary>
-    private void RemoveEntity()
+    private IEnumerator RemoveEntity()
     {
-        if (RemoveOnDeath && CurrentAnimation.AnimationName == DeathAnimationName && CurrentAnimation.AnimationTimer <= 0 && CurrentState == ActionState.Death)
+        yield return new WaitForEndOfFrame();
+        if (RemoveOnDeath && CurrentAnimation.AnimationName == DeathAnimationName && CurrentAnimation.AnimationTimer <= 0.0f && CurrentState == ActionState.Death)
         {
+            if (DeathObject != null)
+            {
+                DeathObject.SetActive(true);
+                DeathObject = null;
+            }
             this.gameObject.SetActive(false);
+        }
+    }
+
+    public void InitializeOnDeath(GameObject obj)
+    {
+        DeathObject = obj;
+    }
+
+    /// <summary>
+    /// Transitions to idle once the appear animation finishes playing
+    /// </summary>
+    private IEnumerator CompleteAppear()
+    {
+        yield return new WaitForEndOfFrame();
+        if (CurrentAnimation.AnimationName == AppearAnimationName && CurrentAnimation.AnimationTimer <= 0.0f && CurrentState == ActionState.Appear)
+        {
+            CurrentState = ActionState.Idle;
         }
     }
 
@@ -250,15 +283,18 @@ public class StateManager : MonoBehaviour
 
     private void OnGameStateChanged(GameState newGameState)
     {
-        enabled = newGameState == GameState.Gameplay;
-        AnimatorScript.enabled = newGameState == GameState.Gameplay;
-        if (Rigidbody2DScript != null && newGameState == GameState.Gameplay)
+        if (!(newGameState == GameState.Paused && IgnorePause) && !(newGameState == GameState.Interacting && IgnoreInteracting))
         {
-            Rigidbody2DScript.WakeUp();
-        }
-        else if (Rigidbody2DScript != null)
-        {
-            Rigidbody2DScript.Sleep();
+            enabled = newGameState == GameState.Gameplay;
+            AnimatorScript.enabled = newGameState == GameState.Gameplay;
+            if (Rigidbody2DScript != null && newGameState == GameState.Gameplay)
+            {
+                Rigidbody2DScript.WakeUp();
+            }
+            else if (Rigidbody2DScript != null)
+            {
+                Rigidbody2DScript.Sleep();
+            }
         }
     }
 
@@ -266,7 +302,7 @@ public class StateManager : MonoBehaviour
     {
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
     }
- 
+
     void OnDestroy()
     {
         if (GameStateManager.Instance != null)
@@ -285,10 +321,11 @@ public class StateManager : MonoBehaviour
     void FixedUpdate()
     {
         UpdateRuntimeValues();
-        RemoveEntity();
         if (this.gameObject.activeSelf)
         {
             StartCoroutine(DetermineCurrentAnimation());
+            StartCoroutine(CompleteAppear());
+            StartCoroutine(RemoveEntity());
         }
         ManageTimers();
     }

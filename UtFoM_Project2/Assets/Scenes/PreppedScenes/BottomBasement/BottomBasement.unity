@@ -1967,6 +1967,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &573466314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3664987782546573376, guid: c56922d6c3b879e4bb78c8b4e67417b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 844895986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &588193193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,6 +2321,7 @@ GameObject:
   - component: {fileID: 650348790}
   - component: {fileID: 650348789}
   - component: {fileID: 650348791}
+  - component: {fileID: 650348792}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -2369,7 +2376,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &650348790
 CanvasRenderer:
@@ -2398,6 +2405,41 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &650348792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650348787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87170527e5838ec49b6f590cc29fddae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandomizeStartFrame: 0
+  IdleAnimationName: idle
+  MoveAnimationName: move
+  MoveAnimationTimer: -1
+  DodgeAnimationName: Dodging
+  DodgeAnimationTimer: -1
+  DodgeAnimationBufferThreshold: 0
+  StaggerAnimationName: stagger
+  JuggleAnimationName: stagger
+  FreefallAnimationName: stagger
+  DeathAnimationName: close_pause
+  DeathAnimationTimer: -1
+  AppearAnimationName: open_pause
+  AppearAnimationTimer: -1
+  RemoveOnDeath: 1
+  IgnorePause: 1
+  IgnoreInteracting: 0
+  DisplayRuntimeValues: 1
+  RuntimeCurrentState: 0
+  RuntimeCurrentAnimationName: 
+  RuntimeCurrentAnimationTimer: 0
+  RuntimeCooldownTimer: 0
+  RuntimeCurrentAnimationBufferThreshold: 0
 --- !u!1 &653479538
 GameObject:
   m_ObjectHideFlags: 0
@@ -9466,7 +9508,11 @@ MonoBehaviour:
   FreefallAnimationName: stagger
   DeathAnimationName: BB_gate_fall
   DeathAnimationTimer: 1.017
+  AppearAnimationName: appear
+  AppearAnimationTimer: -1
   RemoveOnDeath: 1
+  IgnorePause: 0
+  IgnoreInteracting: 0
   DisplayRuntimeValues: 0
   RuntimeCurrentState: 0
   RuntimeCurrentAnimationName: 
@@ -10612,6 +10658,11 @@ PrefabInstance:
       propertyPath: PauseMenuReference
       value: 
       objectReference: {fileID: 650348787}
+    - target: {fileID: 5829869062835696444, guid: 37a7ab54d42670e4b974904b087b9837,
+        type: 3}
+      propertyPath: StatsBookReference
+      value: 
+      objectReference: {fileID: 573466314}
     - target: {fileID: 8160814597243337166, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: DisplayRuntimeValues
