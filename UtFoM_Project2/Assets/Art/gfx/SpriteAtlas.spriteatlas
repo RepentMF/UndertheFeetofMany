@@ -1099,6 +1099,7 @@ SpriteAtlas:
   - {fileID: 2692928676352496126, guid: 2735a02abf4569547b14dd47f4110a77, type: 3}
   - {fileID: -8042581017329395205, guid: 2735a02abf4569547b14dd47f4110a77, type: 3}
   - {fileID: 21300000, guid: ee43882a017c7f740ba04f96c1af866f, type: 3}
+  - {fileID: 21300000, guid: 829fa04a6104fd74d9822a08bb046659, type: 3}
   - {fileID: 21300000, guid: 8ee14e4a06d78b446872f46fce8b3647, type: 3}
   - {fileID: 21300000, guid: a3ad596acdf876f46b7425261ad9db4e, type: 3}
   - {fileID: 21300000, guid: 4e3d7b9a5ce2f9b4bb05ca1e9160ee90, type: 3}
@@ -2640,6 +2641,7 @@ SpriteAtlas:
   - Broderick_lightning_burst_42
   - Broderick_lightning_burst_11
   - entryway
+  - TC_F2
   - BB1
   - font
   - book_opening_5
