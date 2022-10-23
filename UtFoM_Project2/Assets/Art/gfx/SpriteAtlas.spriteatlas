@@ -330,6 +330,7 @@ SpriteAtlas:
   - {fileID: -5257254284976219510, guid: 0113b15209373224692c9b8a914175c9, type: 3}
   - {fileID: 5868545564279994651, guid: 0113b15209373224692c9b8a914175c9, type: 3}
   - {fileID: 21300000, guid: 802b7272a3dc07640aff903cbc5a0b3f, type: 3}
+  - {fileID: 21300000, guid: e55d1b92b5e77bc42853a36ce3112c8c, type: 3}
   - {fileID: 21300000, guid: 1fcd7ec2bdcd3c6489a234f1cd562d4f, type: 3}
   - {fileID: -4683998418971264338, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
   - {fileID: 7088160253405218265, guid: 8f4852e264471ec4a89bd4de842ef795, type: 3}
@@ -569,6 +570,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3e7c48942cfa1ff4c8d962dca9adfad0, type: 3}
   - {fileID: 21300000, guid: 8b1106c4f29612f47aa95487bbceb956, type: 3}
   - {fileID: 21300000, guid: f811eae43fcd47a409da5875c21e3b1f, type: 3}
+  - {fileID: 21300000, guid: a4fc4ab5d952a2142ac194958ad0c064, type: 3}
   - {fileID: 21300000, guid: 00fff3c552acd3840b6dba3e41612e46, type: 3}
   - {fileID: 21300000, guid: 7e0c04c54abadfc41be677508b1325de, type: 3}
   - {fileID: -8046433660304297415, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
@@ -1872,6 +1874,7 @@ SpriteAtlas:
   - bb_gate_20
   - bb_gate_21
   - UI_stats_enemy_health
+  - profile_ashe
   - UI_stats_empty 1
   - TiledSprites_0
   - TiledSprites_1
@@ -2111,6 +2114,7 @@ SpriteAtlas:
   - CH_F1
   - blood1_particle
   - SS
+  - UI_profilepage
   - star1_particle
   - ss_well
   - MC_Male2_hammer_96
