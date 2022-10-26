@@ -32,6 +32,11 @@ public class Stats : MonoBehaviour
     public float CurrentLifeblood { get; set; } = -1; // Defaulted for Start method logic
     [SerializeField] private float BaseLifebloodRegen;
 
+    [Header("Trinket")]
+    [SerializeField] protected internal float OriginalTrinket;
+    public float MaxTrinket { get; set; }
+    public float CurrentTrinket { get; set; } = -1; // Defaulted for Start method logic
+
     // Script References
     private StatusMod StatusModScript; // Used only to inflict exhaust
     private StateManager StateManagerScript;
@@ -48,6 +53,8 @@ public class Stats : MonoBehaviour
     [SerializeField] private float RuntimeCurrentMana;
     [SerializeField] private float RuntimeMaxLifeblood;
     [SerializeField] private float RuntimeCurrentLifeblood;
+    [SerializeField] private float RuntimeMaxTrinket;
+    [SerializeField] private float RuntimeCurrentTrinket;
 
     /// <summary>
     /// Updates the Runtime variables for debugging purposes when DisplayRuntimeValues is true
@@ -66,6 +73,8 @@ public class Stats : MonoBehaviour
             RuntimeCurrentMana = CurrentMana;
             RuntimeMaxLifeblood = MaxLifeblood;
             RuntimeCurrentLifeblood = CurrentLifeblood;
+            RuntimeMaxTrinket = MaxTrinket;
+            RuntimeCurrentTrinket = CurrentTrinket;
         }
     }
 
@@ -350,6 +359,13 @@ public class Stats : MonoBehaviour
         if (CurrentLifeblood == -1)
         {
             CurrentLifeblood = MaxLifeblood;
+        }
+
+        // Set Trinket Points
+        MaxTrinket = OriginalTrinket;
+        if (CurrentTrinket == -1)
+        {
+            CurrentTrinket = MaxTrinket;
         }
 
         // Retrieve Script References
