@@ -2953,29 +2953,6 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
---- !u!1 &356504458 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 673790528571797560, guid: dde37a77ff3a6bc4390260588ca9e719,
-    type: 3}
-  m_PrefabInstance: {fileID: 945828583}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &356504459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 356504458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fced41a71690e749933fcca0c71b3e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  smoothing: 1
-  maxPosition: {x: 1.24, y: 22}
-  minPosition: {x: -1.69, y: 0}
-  difference: {x: 0, y: 0}
 --- !u!1 &379242408
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,16 +3197,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MinimapCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 673790528571797560, guid: dde37a77ff3a6bc4390260588ca9e719,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 673790528571797560, guid: dde37a77ff3a6bc4390260588ca9e719,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 673790528571797561, guid: dde37a77ff3a6bc4390260588ca9e719,
         type: 3}

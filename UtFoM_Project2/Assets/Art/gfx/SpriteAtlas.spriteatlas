@@ -838,11 +838,13 @@ SpriteAtlas:
   - {fileID: 4014540011720573719, guid: e21fe35640b832e499a9111c16d73ab1, type: 3}
   - {fileID: -7580990576175227274, guid: e21fe35640b832e499a9111c16d73ab1, type: 3}
   - {fileID: -3334616493871949431, guid: e21fe35640b832e499a9111c16d73ab1, type: 3}
+  - {fileID: 21300000, guid: 59b9f75646373d74da31c991355ddb02, type: 3}
   - {fileID: 21300000, guid: 3b94dd860e80a1747b715e1c50d5682e, type: 3}
   - {fileID: 21300000, guid: a74e10c63092cb342b54f53deaeb9db7, type: 3}
   - {fileID: 21300000, guid: 7e626dc6d9bcb724aa1c1aec7b4f1f26, type: 3}
   - {fileID: 21300000, guid: b85d6fe6b00e28a499fb3a3dd7b6254b, type: 3}
   - {fileID: 21300000, guid: f1f8293744a10464683aa51fce50de40, type: 3}
+  - {fileID: 21300000, guid: adf3d747f0eeade4e96a99dd5b790059, type: 3}
   - {fileID: 21300000, guid: ede6fb77bc9e3f14e99d36400fd6b517, type: 3}
   - {fileID: 3807049566699419493, guid: 0a4decc7e6a538a4ab8fda7c3348a5cd, type: 3}
   - {fileID: -1984734878122456809, guid: 0a4decc7e6a538a4ab8fda7c3348a5cd, type: 3}
@@ -2382,11 +2384,13 @@ SpriteAtlas:
   - hammer1_up_40
   - hammer1_up_43
   - hammer1_up_42
+  - UI_map_TC_F2
   - UI_map_SS
   - bb_house_inner
   - bb_side_house_inner
   - TC_B1
   - TB_R2
+  - UI_map_TC_F1
   - torch_holder
   - sword_player_0
   - sword_player_92
