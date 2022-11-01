@@ -12,12 +12,17 @@ public class HealthManager : MonoBehaviour
 	public Image lbFlare1;
 	public Image lbFlare2;
 	public Image lbFlare3;
+	public Image Knife;
+	public Image Hammer;
+	public Image Sword;
+	public Image Weapon;
 	public Stats stats;
+	public Inventory inventory;
 
 	 // Script References
     private HealthManager HealthScript;
 
-	public void UpdateStats()
+	public void UpdateStatsUI()
 	{
 		if (healthBar != null)
 		{
@@ -55,6 +60,53 @@ public class HealthManager : MonoBehaviour
 		}
 	}
 
+	public void UpdateInvUI()
+	{
+		if (inventory != null)
+		{
+			if (inventory.EquippedWeapon != null)
+			{
+				if (Weapon.color.a == 0f)
+				{
+					var tempColor = Weapon.color;
+          			tempColor.a = 1f;
+          			Weapon.color = tempColor;
+					Debug.Log("yes");
+				}
+
+				switch (inventory.EquippedWeapon.Name)
+				{
+					case "Knife":
+						Weapon.sprite = Knife.sprite;
+						Weapon.gameObject.GetComponent<RectTransform>().localScale =
+							new Vector2(.8f, .25f);
+						Weapon.gameObject.GetComponent<RectTransform>().rotation =
+							Knife.gameObject.GetComponent<RectTransform>().rotation;
+						break;
+					case "Hammer":
+						Weapon.sprite = Hammer.sprite;
+						Weapon.gameObject.GetComponent<RectTransform>().localScale =
+							new Vector3(.6f, 1.03f, .70f);
+						Weapon.gameObject.GetComponent<RectTransform>().rotation =
+							new Quaternion(0f, 0f, 0f, 0f);
+						break;
+					case "Sword":
+						Weapon.sprite = Sword.sprite;
+						Weapon.gameObject.GetComponent<RectTransform>().localScale =
+							new Vector3(1.1f, 1.1f, .70f);
+						Weapon.gameObject.GetComponent<RectTransform>().rotation =
+							new Quaternion(0f, 0f, 0f, 0f);
+						break;
+				}
+			}
+		}
+		else if (Weapon != null)
+		{
+			Weapon.gameObject.SetActive(false);
+		}
+		
+	}
+
     // Start is called before the first frame update
     void Start()
     {
@@ -76,12 +128,14 @@ public class HealthManager : MonoBehaviour
     	HealthScript = this;
     	GameObject.DontDestroyOnLoad(GetComponentInParent<Canvas>().transform.parent.gameObject);
 
-		UpdateStats();
+		UpdateStatsUI();
+		UpdateInvUI();
     }
 
     // Update is called once per frame
     void Update()
     {
-		UpdateStats();
+		UpdateStatsUI();
+		UpdateInvUI();
     }
 }
