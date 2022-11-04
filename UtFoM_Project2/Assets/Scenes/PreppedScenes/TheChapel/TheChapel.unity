@@ -132,16 +132,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 2022787118}
     m_Modifications:
     - target: {fileID: 356504459, guid: dde37a77ff3a6bc4390260588ca9e719, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 356504459, guid: dde37a77ff3a6bc4390260588ca9e719, type: 3}
       propertyPath: maxPosition.x
-      value: 0
+      value: -1.45
       objectReference: {fileID: 0}
     - target: {fileID: 356504459, guid: dde37a77ff3a6bc4390260588ca9e719, type: 3}
       propertyPath: maxPosition.y
-      value: 0
+      value: 4.57
       objectReference: {fileID: 0}
     - target: {fileID: 356504459, guid: dde37a77ff3a6bc4390260588ca9e719, type: 3}
       propertyPath: minPosition.x
-      value: 0
+      value: -1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 356504459, guid: dde37a77ff3a6bc4390260588ca9e719, type: 3}
+      propertyPath: minPosition.y
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 673790528571797560, guid: dde37a77ff3a6bc4390260588ca9e719,
         type: 3}
@@ -287,6 +295,21 @@ PrefabInstance:
         type: 3}
       propertyPath: sceneToLoad
       value: TheChapelFloor2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: playerPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: playerPosition.y
+      value: -8.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211619218807816711, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: playerDirection.y
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d03073aba2d829e41b9e189a764f336f, type: 3}
@@ -1628,7 +1651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &720878103
 Transform:
   m_ObjectHideFlags: 0
@@ -4414,7 +4437,7 @@ PrefabInstance:
     - target: {fileID: 2211619218807816710, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.56
+      value: 6.47
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816710, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
