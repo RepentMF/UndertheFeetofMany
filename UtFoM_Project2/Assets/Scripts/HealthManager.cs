@@ -79,7 +79,7 @@ public class HealthManager : MonoBehaviour
 					case "Knife":
 						Weapon.sprite = Knife.sprite;
 						Weapon.gameObject.GetComponent<RectTransform>().localScale =
-							new Vector2(.8f, .25f);
+							new Vector2(.3f, .1f);
 						Weapon.gameObject.GetComponent<RectTransform>().rotation =
 							Knife.gameObject.GetComponent<RectTransform>().rotation;
 						break;
