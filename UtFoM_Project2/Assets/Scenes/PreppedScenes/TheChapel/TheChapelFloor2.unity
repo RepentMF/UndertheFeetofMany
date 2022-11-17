@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 528418934}
   - component: {fileID: 528418935}
   m_Layer: 0
-  m_Name: tc_BookCaseEmpty
+  m_Name: tc_BookCase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -498,7 +498,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528418933}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.267, y: -5.556, z: 0}
+  m_LocalPosition: {x: 8.42, y: -5.556, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1215154750}
@@ -546,7 +546,7 @@ SpriteRenderer:
   m_SortingLayerID: 1913720019
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f6a6855e6dd3e434ab2b954dafefd58b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 03b04115edab0b94582db9259c42652d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

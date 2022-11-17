@@ -1,0 +1,4848 @@
+fileFormatVersion: 2
+guid: 7bce66f98095c0643ae8ab3280a86179
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8385574534874107594
+    second: Broderick_0
+  - first:
+      213: -2902697852608399783
+    second: Broderick_1
+  - first:
+      213: 8632278030231843559
+    second: Broderick_2
+  - first:
+      213: 1686670985947898623
+    second: Broderick_3
+  - first:
+      213: -102436186410084975
+    second: Broderick_4
+  - first:
+      213: -7443649119798497232
+    second: Broderick_5
+  - first:
+      213: -7922065314779593169
+    second: Broderick_6
+  - first:
+      213: 1859477621970210486
+    second: Broderick_7
+  - first:
+      213: -2540975848910928304
+    second: Broderick_8
+  - first:
+      213: 372699720971938790
+    second: Broderick_9
+  - first:
+      213: 5727157537733783421
+    second: Broderick_10
+  - first:
+      213: -6954367981466796358
+    second: Broderick_11
+  - first:
+      213: 4390622742404991047
+    second: Broderick_12
+  - first:
+      213: -1371446203184988114
+    second: Broderick_13
+  - first:
+      213: 7909496413248162228
+    second: Broderick_14
+  - first:
+      213: 5804732397254196613
+    second: Broderick_15
+  - first:
+      213: -5987781119084272761
+    second: Broderick_16
+  - first:
+      213: 4627379978213525031
+    second: Broderick_17
+  - first:
+      213: 7821486643166774614
+    second: Broderick_18
+  - first:
+      213: 5591002392741865119
+    second: Broderick_19
+  - first:
+      213: -5422514841561440552
+    second: Broderick_20
+  - first:
+      213: 7900826038421144784
+    second: Broderick_21
+  - first:
+      213: 5436403493812267382
+    second: Broderick_22
+  - first:
+      213: 6723042454789260115
+    second: Broderick_23
+  - first:
+      213: -1854263499843214350
+    second: Broderick_24
+  - first:
+      213: -6263563703037705242
+    second: Broderick_25
+  - first:
+      213: 5151369180551819052
+    second: Broderick_26
+  - first:
+      213: -6888003429808004159
+    second: Broderick_27
+  - first:
+      213: -4602039420666993475
+    second: Broderick_28
+  - first:
+      213: 14273655202674532
+    second: Broderick_29
+  - first:
+      213: -5514353792971264342
+    second: Broderick_30
+  - first:
+      213: 6476259688398365212
+    second: Broderick_31
+  - first:
+      213: 6670272168953056109
+    second: Broderick_32
+  - first:
+      213: -349281446105035124
+    second: Broderick_33
+  - first:
+      213: -6895559236070217963
+    second: Broderick_34
+  - first:
+      213: -2933550531673820378
+    second: Broderick_35
+  - first:
+      213: 8335086395488143647
+    second: Broderick_36
+  - first:
+      213: -734061982390919341
+    second: Broderick_37
+  - first:
+      213: -214147219931146870
+    second: Broderick_38
+  - first:
+      213: -8144123899651423965
+    second: Broderick_39
+  - first:
+      213: 1839524335981089741
+    second: Broderick_40
+  - first:
+      213: -1801229052372631061
+    second: Broderick_41
+  - first:
+      213: 2352032958288766519
+    second: Broderick_42
+  - first:
+      213: -4689201536403152586
+    second: Broderick_43
+  - first:
+      213: 877411640827067156
+    second: Broderick_44
+  - first:
+      213: -1636423433519691227
+    second: Broderick_45
+  - first:
+      213: -8762384048206593558
+    second: Broderick_46
+  - first:
+      213: 238056046286496941
+    second: Broderick_47
+  - first:
+      213: 2564565513165457979
+    second: Broderick_48
+  - first:
+      213: -8273203857708118927
+    second: Broderick_49
+  - first:
+      213: -7543243736957127546
+    second: Broderick_50
+  - first:
+      213: -5871157048317196771
+    second: Broderick_51
+  - first:
+      213: 5159959307711222943
+    second: Broderick_52
+  - first:
+      213: -9103751956190394049
+    second: Broderick_53
+  - first:
+      213: 8066434963579590597
+    second: Broderick_54
+  - first:
+      213: -8771265801143135937
+    second: Broderick_55
+  - first:
+      213: -7237137553424476556
+    second: Broderick_56
+  - first:
+      213: -5231438032435038616
+    second: Broderick_57
+  - first:
+      213: 2656963946575099659
+    second: Broderick_58
+  - first:
+      213: -3721317337040120827
+    second: Broderick_59
+  - first:
+      213: 6559685884105943948
+    second: Broderick_60
+  - first:
+      213: 2082281853901619824
+    second: Broderick_61
+  - first:
+      213: 4817428694744688632
+    second: Broderick_62
+  - first:
+      213: -7556165768935116777
+    second: Broderick_63
+  - first:
+      213: 2161099285111601543
+    second: Broderick_64
+  - first:
+      213: -1393257742783853753
+    second: Broderick_65
+  - first:
+      213: -3838643751248270072
+    second: Broderick_66
+  - first:
+      213: 5901539824217552088
+    second: Broderick_67
+  - first:
+      213: 6264523957564129226
+    second: Broderick_68
+  - first:
+      213: -8430750833725493308
+    second: Broderick_69
+  - first:
+      213: 3957344404494910092
+    second: Broderick_70
+  - first:
+      213: 3787255730489625500
+    second: Broderick_71
+  - first:
+      213: -3879886319919337919
+    second: Broderick_72
+  - first:
+      213: -8661215475469096443
+    second: Broderick_73
+  - first:
+      213: -3532924874553000367
+    second: Broderick_74
+  - first:
+      213: 7728940123604089806
+    second: Broderick_75
+  - first:
+      213: 8686361582923662773
+    second: Broderick_76
+  - first:
+      213: -8633425360700261980
+    second: Broderick_77
+  - first:
+      213: -79692485473050386
+    second: Broderick_78
+  - first:
+      213: 5320050797187969824
+    second: Broderick_79
+  - first:
+      213: 1237391650192940250
+    second: Broderick_80
+  - first:
+      213: -7697109498463223347
+    second: Broderick_81
+  - first:
+      213: 4120145127993582951
+    second: Broderick_82
+  - first:
+      213: -1431107597830966053
+    second: Broderick_83
+  - first:
+      213: 6790036380429697893
+    second: Broderick_84
+  - first:
+      213: 500572472957178321
+    second: Broderick_85
+  - first:
+      213: 4813465400709320655
+    second: Broderick_86
+  - first:
+      213: -9200436185432110704
+    second: Broderick_87
+  - first:
+      213: -3682947552439922919
+    second: Broderick_88
+  - first:
+      213: -2667434648024953157
+    second: Broderick_89
+  - first:
+      213: 6330949119234442572
+    second: Broderick_90
+  - first:
+      213: 3391901091012607908
+    second: Broderick_91
+  - first:
+      213: 4394664930623814058
+    second: Broderick_92
+  - first:
+      213: -7599328647701971069
+    second: Broderick_93
+  - first:
+      213: -1191975929705015631
+    second: Broderick_94
+  - first:
+      213: 903775847676712720
+    second: Broderick_95
+  - first:
+      213: -4296397530069411888
+    second: Broderick_96
+  - first:
+      213: 3774584391629191176
+    second: Broderick_97
+  - first:
+      213: 6206591159580168078
+    second: Broderick_98
+  - first:
+      213: -2052788314618936007
+    second: Broderick_99
+  - first:
+      213: -5744097795190581938
+    second: Broderick_100
+  - first:
+      213: -912504557747232551
+    second: Broderick_101
+  - first:
+      213: -6774284360774251243
+    second: Broderick_102
+  - first:
+      213: 6701351045626343785
+    second: Broderick_103
+  - first:
+      213: -1647869751882094694
+    second: Broderick_104
+  - first:
+      213: 3709990776981326915
+    second: Broderick_105
+  - first:
+      213: 4397082602424414638
+    second: Broderick_106
+  - first:
+      213: -7486297591055895896
+    second: Broderick_107
+  - first:
+      213: -3963161730669268146
+    second: Broderick_108
+  - first:
+      213: -1398341848845923770
+    second: Broderick_109
+  - first:
+      213: -8696920716936669664
+    second: Broderick_110
+  - first:
+      213: 6087431155909298145
+    second: Broderick_111
+  - first:
+      213: 828414487981875096
+    second: Broderick_112
+  - first:
+      213: -3751324203641378851
+    second: Broderick_113
+  - first:
+      213: -13326084875215946
+    second: Broderick_114
+  - first:
+      213: -187178569254852343
+    second: Broderick_115
+  - first:
+      213: -6220856791642889979
+    second: Broderick_116
+  - first:
+      213: -146664600911051353
+    second: Broderick_117
+  - first:
+      213: 2171116552765901376
+    second: Broderick_118
+  - first:
+      213: 994622101059107340
+    second: Broderick_119
+  - first:
+      213: -6371627473617179690
+    second: Broderick_120
+  - first:
+      213: 1812844985350850084
+    second: Broderick_121
+  - first:
+      213: 5143799548413654394
+    second: Broderick_122
+  - first:
+      213: -5998737558599180125
+    second: Broderick_123
+  - first:
+      213: -354457408517862630
+    second: Broderick_124
+  - first:
+      213: 6029945721735866851
+    second: Broderick_125
+  - first:
+      213: -7183436964714442692
+    second: Broderick_126
+  - first:
+      213: -5295105240195507627
+    second: Broderick_127
+  - first:
+      213: -8457989264343719000
+    second: Broderick_128
+  - first:
+      213: 1683649644286487091
+    second: Broderick_129
+  - first:
+      213: 486884085458899754
+    second: Broderick_130
+  - first:
+      213: -8602681658898429864
+    second: Broderick_131
+  - first:
+      213: -4115153450884082141
+    second: Broderick_132
+  - first:
+      213: 2740023803086992224
+    second: Broderick_133
+  - first:
+      213: -2667392606790897885
+    second: Broderick_134
+  - first:
+      213: 4281837458904223658
+    second: Broderick_135
+  - first:
+      213: 1371123016355037313
+    second: Broderick_136
+  - first:
+      213: -6363975120189369854
+    second: Broderick_137
+  - first:
+      213: 5950022581590661012
+    second: Broderick_138
+  - first:
+      213: 8518727671812124205
+    second: Broderick_139
+  - first:
+      213: -6552379252365522062
+    second: Broderick_140
+  - first:
+      213: -6756484742113516825
+    second: Broderick_141
+  - first:
+      213: 8819442858927081828
+    second: Broderick_142
+  - first:
+      213: -2676541330897931074
+    second: Broderick_143
+  - first:
+      213: -925578586584083877
+    second: Broderick_144
+  - first:
+      213: -3132825825567772331
+    second: Broderick_145
+  - first:
+      213: -7063735131729651890
+    second: Broderick_146
+  - first:
+      213: 7063063777538486076
+    second: Broderick_147
+  - first:
+      213: 5339085318858145872
+    second: Broderick_148
+  - first:
+      213: 7586714236007666262
+    second: Broderick_149
+  - first:
+      213: 4590585910008589857
+    second: Broderick_150
+  - first:
+      213: 4210463063975993657
+    second: Broderick_151
+  - first:
+      213: 270829159613156957
+    second: Broderick_152
+  - first:
+      213: -2980261623028043574
+    second: Broderick_153
+  - first:
+      213: -7905702448274794761
+    second: Broderick_154
+  - first:
+      213: 940302940279026333
+    second: Broderick_155
+  - first:
+      213: -6949831498960197208
+    second: Broderick_156
+  - first:
+      213: 4294410828602305647
+    second: Broderick_157
+  - first:
+      213: 514545259004208840
+    second: Broderick_158
+  - first:
+      213: 5582704957422215727
+    second: Broderick_159
+  - first:
+      213: -4180201223004350822
+    second: Broderick_160
+  - first:
+      213: 2899573057641827984
+    second: Broderick_161
+  - first:
+      213: -8897794034911675934
+    second: Broderick_162
+  - first:
+      213: -2405818296359403876
+    second: Broderick_163
+  - first:
+      213: 635141358912333427
+    second: Broderick_164
+  - first:
+      213: -6347614754734856918
+    second: Broderick_165
+  - first:
+      213: 2447643598388677609
+    second: Broderick_166
+  - first:
+      213: -2583306066902102452
+    second: Broderick_167
+  - first:
+      213: 1520238946105622231
+    second: Broderick_168
+  - first:
+      213: 1576747659992559591
+    second: Broderick_169
+  - first:
+      213: 7489549805002670955
+    second: Broderick_170
+  - first:
+      213: -7900314076522116334
+    second: Broderick_171
+  - first:
+      213: 4339457869289485397
+    second: Broderick_172
+  - first:
+      213: -2626351070745251887
+    second: Broderick_173
+  - first:
+      213: -4286602965727143418
+    second: Broderick_174
+  - first:
+      213: -2871497589768087224
+    second: Broderick_175
+  - first:
+      213: 151113897700537986
+    second: Broderick_176
+  - first:
+      213: -758371158583705220
+    second: Broderick_177
+  - first:
+      213: -4454240665006235410
+    second: Broderick_178
+  - first:
+      213: 5807886537287873774
+    second: Broderick_179
+  - first:
+      213: -3457137428011350859
+    second: Broderick_180
+  - first:
+      213: 5084666453108157478
+    second: Broderick_181
+  - first:
+      213: -5913143121059372048
+    second: Broderick_182
+  - first:
+      213: 8122817218467720007
+    second: Broderick_183
+  - first:
+      213: -5619526724745195254
+    second: Broderick_184
+  - first:
+      213: 5690296487646694412
+    second: Broderick_185
+  - first:
+      213: -7931682092147502011
+    second: Broderick_186
+  - first:
+      213: 800476250244792896
+    second: Broderick_187
+  - first:
+      213: -7753168802297375541
+    second: Broderick_188
+  - first:
+      213: -4667046368472789595
+    second: Broderick_189
+  - first:
+      213: 1696925244475098072
+    second: Broderick_190
+  - first:
+      213: -2690672135387272087
+    second: Broderick_191
+  - first:
+      213: 1323662267720977886
+    second: Broderick_192
+  - first:
+      213: -2287195921732215581
+    second: Broderick_193
+  - first:
+      213: 3142349296992937352
+    second: Broderick_194
+  - first:
+      213: -3149029556780280512
+    second: Broderick_195
+  - first:
+      213: -6636791161590644394
+    second: Broderick_196
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Broderick_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace8bbc5c9b8f5470800000000000000
+      internalID: 8385574534874107594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956bcf4aeab87b7d0800000000000000
+      internalID: -2902697852608399783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2b06af1230cc770800000000000000
+      internalID: 8632278030231843559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2e16a4352486710800000000000000
+      internalID: 1686670985947898623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19591e8c4d2149ef0800000000000000
+      internalID: -102436186410084975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030f2cd4098d2b890800000000000000
+      internalID: -7443649119798497232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f268e11b19b2f0290800000000000000
+      internalID: -7922065314779593169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be82559b013ec910800000000000000
+      internalID: 1859477621970210486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05641d69de3acbcd0800000000000000
+      internalID: -2540975848910928304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb6b6ceb681c2500800000000000000
+      internalID: 372699720971938790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fa251df63fa7f40800000000000000
+      internalID: 5727157537733783421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_11
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe325baa2f1d7f90800000000000000
+      internalID: -6954367981466796358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7480dc72f10aeec30800000000000000
+      internalID: 4390622742404991047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_13
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1121
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20c996c1f4a7fce0800000000000000
+      internalID: -1371446203184988114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1062
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b902efd41d24cd60800000000000000
+      internalID: 7909496413248162228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_15
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1062
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58db98a4c5d8e8050800000000000000
+      internalID: 5804732397254196613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_16
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1062
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783e03cfbc027eca0800000000000000
+      internalID: -5987781119084272761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_17
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1062
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7260c22c291c73040800000000000000
+      internalID: 4627379978213525031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1062
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6550b6579a08b8c60800000000000000
+      internalID: 7821486643166774614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_19
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1062
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96ecb5cd0b379d40800000000000000
+      internalID: 5591002392741865119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_20
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1062
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de52773b7b5fb4b0800000000000000
+      internalID: -5422514841561440552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_21
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1062
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4cf3ceb6f55ad60800000000000000
+      internalID: 7900826038421144784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1062
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6796f50ac2cf17b40800000000000000
+      internalID: 5436403493812267382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_23
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1062
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353859f0e7b0d4d50800000000000000
+      internalID: 6723042454789260115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_24
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1062
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f36fd3db255446e0800000000000000
+      internalID: -1854263499843214350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e348647ff95319a0800000000000000
+      internalID: -6263563703037705242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_26
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fafa10af65d7740800000000000000
+      internalID: 5151369180551819052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c32f92ff55e860a0800000000000000
+      internalID: -6888003429808004159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_28
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4acc097854220c0800000000000000
+      internalID: -4602039420666993475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_29
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467700450d5b23000800000000000000
+      internalID: 14273655202674532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_30
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaeae1c01741973b0800000000000000
+      internalID: -5514353792971264342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_31
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12aa28bfdb40e950800000000000000
+      internalID: 6476259688398365212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_32
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b0f917231919c50800000000000000
+      internalID: 6670272168953056109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_33
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e4646106a172bf0800000000000000
+      internalID: -349281446105035124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_34
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517ee56b86d0e40a0800000000000000
+      internalID: -6895559236070217963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_35
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6237ce4855fe947d0800000000000000
+      internalID: -2933550531673820378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_36
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19034f5aec2ca370800000000000000
+      internalID: 8335086395488143647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_37
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f5878248610d5f0800000000000000
+      internalID: -734061982390919341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_38
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1003
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85dd52fc32370df0800000000000000
+      internalID: -214147219931146870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321028276724afe80800000000000000
+      internalID: -8144123899651423965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3d6d923ad478910800000000000000
+      internalID: 1839524335981089741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_41
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1473e58bfb007e0800000000000000
+      internalID: -1801229052372631061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_42
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73620d2938914a020800000000000000
+      internalID: 2352032958288766519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_43
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631697e0c0c9ceeb0800000000000000
+      internalID: -4689201536403152586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_44
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b3a451d313d2c00800000000000000
+      internalID: 877411640827067156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_45
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a0feeae814a49e0800000000000000
+      internalID: -1636423433519691227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_46
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1c81d1222c56680800000000000000
+      internalID: -8762384048206593558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_47
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da46a8b76bebd4300800000000000000
+      internalID: 238056046286496941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_48
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ac17f1fba279320800000000000000
+      internalID: 2564565513165457979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_49
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c8aeabcecaf2d80800000000000000
+      internalID: -8273203857708118927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_50
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684fa7c79c3015790800000000000000
+      internalID: -7543243736957127546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_51
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16c58275c5758ea0800000000000000
+      internalID: -5871157048317196771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_52
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 944
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f941997d6abdb9740800000000000000
+      internalID: 5159959307711222943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 885
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39010064d9f8a180800000000000000
+      internalID: -9103751956190394049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_54
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 885
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7d3ff8cdbb1ff60800000000000000
+      internalID: 8066434963579590597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_55
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 885
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31d45cd934364680800000000000000
+      internalID: -8771265801143135937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_56
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 885
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4769e793db5809b90800000000000000
+      internalID: -7237137553424476556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_57
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 885
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866bd3ca3d23667b0800000000000000
+      internalID: -5231438032435038616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_58
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 885
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07f0a8d1ae6fd420800000000000000
+      internalID: 2656963946575099659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_59
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 885
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504983d29993b5cc0800000000000000
+      internalID: -3721317337040120827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_60
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 885
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b67409e8fa80b50800000000000000
+      internalID: 6559685884105943948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_61
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 885
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0724c005050c5ec10800000000000000
+      internalID: 2082281853901619824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_62
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 885
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7e701cfd1fad240800000000000000
+      internalID: 4817428694744688632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 826
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710f7a6744b132790800000000000000
+      internalID: -7556165768935116777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_64
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 826
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7897d6d8954cdfd10800000000000000
+      internalID: 2161099285111601543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_65
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 826
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b4ec8f6772aace0800000000000000
+      internalID: -1393257742783853753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_66
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 826
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80de293a8d56abac0800000000000000
+      internalID: -3838643751248270072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_67
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 826
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4fe42d33b76e150800000000000000
+      internalID: 5901539824217552088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_68
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 826
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfb889395f00f650800000000000000
+      internalID: 6264523957564129226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_69
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 826
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfa6f5e8c4fffa80800000000000000
+      internalID: -8430750833725493308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_70
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 826
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c828ccbd4cf4be630800000000000000
+      internalID: 3957344404494910092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_71
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 826
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b856965090f8430800000000000000
+      internalID: 3787255730489625500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_72
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 826
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e6f44d2ffd72ac0800000000000000
+      internalID: -3879886319919337919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 767
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a6c850a6e2dc780800000000000000
+      internalID: -8661215475469096443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_74
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 767
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e702a7b8788fec0800000000000000
+      internalID: -3532924874553000367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_75
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 767
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb7fadb716b24b60800000000000000
+      internalID: 7728940123604089806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_76
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 767
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5c3cc56d72c8870800000000000000
+      internalID: 8686361582923662773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_77
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 767
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9bc945069ef2880800000000000000
+      internalID: -8633425360700261980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_78
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 767
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee06c105b10e4eef0800000000000000
+      internalID: -79692485473050386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_79
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 767
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0233c61630e94d940800000000000000
+      internalID: 5320050797187969824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_80
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 767
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcd8cd56291c2110800000000000000
+      internalID: 1237391650192940250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_81
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 767
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc180d231bf5e2590800000000000000
+      internalID: -7697109498463223347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_82
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 767
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7652d191a22bd2930800000000000000
+      internalID: 4120145127993582951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 708
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd43cebd83fa32ce0800000000000000
+      internalID: -1431107597830966053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_84
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 708
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563cd73ec1e0b3e50800000000000000
+      internalID: 6790036380429697893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_85
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 708
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d193f2130462f600800000000000000
+      internalID: 500572472957178321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_86
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 708
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf89e3774ddcc240800000000000000
+      internalID: 4813465400709320655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_87
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 708
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0994bac090c715080800000000000000
+      internalID: -9200436185432110704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_88
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 708
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f8c62d6ba83ecc0800000000000000
+      internalID: -3682947552439922919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_89
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 708
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe47eef15e5bfad0800000000000000
+      internalID: -2667434648024953157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_90
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 708
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c458a0f5eac0cd750800000000000000
+      internalID: 6330949119234442572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_91
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 708
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aff01b3214721f20800000000000000
+      internalID: 3391901091012607908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_92
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 708
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9f2b0787cfcfc30800000000000000
+      internalID: 4394664930623814058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_93
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 649
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f364e9bd2c98690800000000000000
+      internalID: -7599328647701971069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_94
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 649
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6dd111530457fe0800000000000000
+      internalID: -1191975929705015631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_95
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 649
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0171955585bda8c00800000000000000
+      internalID: 903775847676712720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_96
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 649
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7d85ea5312064c0800000000000000
+      internalID: -4296397530069411888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_97
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 649
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808bacd6184026430800000000000000
+      internalID: 3774584391629191176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_98
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 649
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f0bd496cd322650800000000000000
+      internalID: 6206591159580168078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_99
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 649
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935c01c67e70383e0800000000000000
+      internalID: -2052788314618936007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_100
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 649
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e459f822d7dd840b0800000000000000
+      internalID: -5744097795190581938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_101
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 590
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d02d8b70f12653f0800000000000000
+      internalID: -912504557747232551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_102
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 590
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d019cf348ecf1a0800000000000000
+      internalID: -6774284360774251243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_103
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 590
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96130cd454bfffc50800000000000000
+      internalID: 6701351045626343785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_104
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 590
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97e4f201379129e0800000000000000
+      internalID: -1647869751882094694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_105
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 590
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c82fd84f88c7330800000000000000
+      internalID: 3709990776981326915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_106
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 590
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1be858453950d30800000000000000
+      internalID: 4397082602424414638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_107
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 590
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2304a41045b1890800000000000000
+      internalID: -7486297591055895896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_108
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 590
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43390857650009c0800000000000000
+      internalID: -3963161730669268146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 531
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ac9f84f77189ce0800000000000000
+      internalID: -1398341848845923770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_110
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 531
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026114bafa45e4780800000000000000
+      internalID: -8696920716936669664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_111
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 531
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e78e9a3266ea7450800000000000000
+      internalID: 6087431155909298145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_112
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 531
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f52f2769e1f7b00800000000000000
+      internalID: 828414487981875096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_113
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 531
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd761ac138e90fbc0800000000000000
+      internalID: -3751324203641378851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_114
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 531
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb14c41ff7a0dff0800000000000000
+      internalID: -13326084875215946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_115
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 531
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909affd3512076df0800000000000000
+      internalID: -187178569254852343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_116
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 531
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501ac8f15b31ba9a0800000000000000
+      internalID: -6220856791642889979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 472
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a582919251f6fdf0800000000000000
+      internalID: -146664600911051353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_118
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 472
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a059d600b512e10800000000000000
+      internalID: 2171116552765901376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_119
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 472
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a716bf78b9dcd00800000000000000
+      internalID: 994622101059107340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_120
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 472
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbade1329e6397a0800000000000000
+      internalID: -6371627473617179690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_121
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 472
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4268fa8c8e4882910800000000000000
+      internalID: 1812844985350850084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_122
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 472
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75b20faf62726740800000000000000
+      internalID: 5143799548413654394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_123
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 472
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0e6ee19f330cca0800000000000000
+      internalID: -5998737558599180125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_124
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 472
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b894d6dd6b41bf0800000000000000
+      internalID: -354457408517862630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_125
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9e3f69fabaea350800000000000000
+      internalID: 6029945721735866851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_126
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3019cbd32e4f4c90800000000000000
+      internalID: -7183436964714442692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_127
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a56d5b6d10486b0800000000000000
+      internalID: -5295105240195507627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_128
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3a9b0939f2f9a80800000000000000
+      internalID: -8457989264343719000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_129
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33aa8ed5e668d5710800000000000000
+      internalID: 1683649644286487091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_130
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2391900f72c1c600800000000000000
+      internalID: 486884085458899754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_131
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85847953c922d9880800000000000000
+      internalID: -8602681658898429864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_132
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326d4db4db904e6c0800000000000000
+      internalID: -4115153450884082141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_133
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0637d13b125860620800000000000000
+      internalID: 2740023803086992224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_134
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fa9bb7e848bfad0800000000000000
+      internalID: -2667392606790897885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_135
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf82f39b742c6b30800000000000000
+      internalID: 4281837458904223658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_136
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180443d6e15370310800000000000000
+      internalID: 1371123016355037313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_137
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20250b1985e9ea7a0800000000000000
+      internalID: -6363975120189369854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_138
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 413
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497934d630ab29250800000000000000
+      internalID: 5950022581590661012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_139
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 354
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ee6a0fea9983670800000000000000
+      internalID: 8518727671812124205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_140
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 354
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b0d1539c54115a0800000000000000
+      internalID: -6552379252365522062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_141
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 354
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e22af7ace42c32a0800000000000000
+      internalID: -6756484742113516825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_142
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 354
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46944338d84f46a70800000000000000
+      internalID: 8819442858927081828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_143
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 354
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb47d2927d30bdad0800000000000000
+      internalID: -2676541330897931074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_144
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 354
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5292feed2fa723f0800000000000000
+      internalID: -925578586584083877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551fcd39287f584d0800000000000000
+      internalID: -3132825825567772331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_146
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e479ecda25298fd90800000000000000
+      internalID: -7063735131729651890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_147
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f2c1e751b050260800000000000000
+      internalID: 7063063777538486076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_148
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0500b005fcd381a40800000000000000
+      internalID: 5339085318858145872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_149
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652d2a9c66c694960800000000000000
+      internalID: 7586714236007666262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_150
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ea9fc209905bf30800000000000000
+      internalID: 4590585910008589857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_151
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931213449d19e6a30800000000000000
+      internalID: 4210463063975993657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_152
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e4f8d8fad22c300800000000000000
+      internalID: 270829159613156957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_153
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac03fad08dbf3a6d0800000000000000
+      internalID: -2980261623028043574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_154
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f615ae628d494290800000000000000
+      internalID: -7905702448274794761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_155
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d923690da80ac0d00800000000000000
+      internalID: 940302940279026333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_156
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a928afc21d3d8f90800000000000000
+      internalID: -6949831498960197208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_157
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c6e6655efc89b30800000000000000
+      internalID: 4294410828602305647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_158
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 295
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6aec7df28042700800000000000000
+      internalID: 514545259004208840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_159
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 236
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22a6f09490c97d40800000000000000
+      internalID: 5582704957422215727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_160
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 236
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a961c25a221fcf5c0800000000000000
+      internalID: -4180201223004350822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_161
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 236
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ec805555a5d3820800000000000000
+      internalID: 2899573057641827984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_162
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 236
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9ff70c77fa48480800000000000000
+      internalID: -8897794034911675934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_163
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ebc5b8101dc9ed0800000000000000
+      internalID: -2405818296359403876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_164
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376e02863b970d800800000000000000
+      internalID: 635141358912333427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_165
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25200df20eb8e7a0800000000000000
+      internalID: -6347614754734856918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_166
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb47b272e6c7f120800000000000000
+      internalID: 2447643598388677609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_167
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e4030b1d0462cd0800000000000000
+      internalID: -2583306066902102452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_168
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7def6545449f81510800000000000000
+      internalID: 1520238946105622231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_169
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efe84e84abb1e510800000000000000
+      internalID: 1576747659992559591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_170
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63c7c6cdd930f760800000000000000
+      internalID: 7489549805002670955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_171
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b81ee74327c5290800000000000000
+      internalID: -7900314076522116334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_172
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554f5c0d0f9d83c30800000000000000
+      internalID: 4339457869289485397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_173
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df23ccbd935d8bd0800000000000000
+      internalID: -2626351070745251887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_174
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a92b6605de284c0800000000000000
+      internalID: -4286602965727143418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_175
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8499b7ce7246628d0800000000000000
+      internalID: -2871497589768087224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_176
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 177
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286b0111a4dd81200800000000000000
+      internalID: 151113897700537986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_177
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 118
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7187b40379b975f0800000000000000
+      internalID: -758371158583705220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_178
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 118
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0243af6bb5f22c0800000000000000
+      internalID: -4454240665006235410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_179
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 118
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee431deb802c99050800000000000000
+      internalID: 5807886537287873774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b40daf63d7c500d0800000000000000
+      internalID: -3457137428011350859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_181
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c6bda033d509640800000000000000
+      internalID: 5084666453108157478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_182
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3263b19ab40fda0800000000000000
+      internalID: -5913143121059372048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_183
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74be132493b0ab070800000000000000
+      internalID: 8122817218467720007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_184
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a019fb5a73e6302b0800000000000000
+      internalID: -5619526724745195254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_185
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c85dcc18ef7fe40800000000000000
+      internalID: 5690296487646694412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_186
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544983a39210de190800000000000000
+      internalID: -7931682092147502011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_187
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0424af298ecdb1b00800000000000000
+      internalID: 800476250244792896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_188
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc49c676d06376490800000000000000
+      internalID: -7753168802297375541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_189
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad07e01e025b3fb0800000000000000
+      internalID: -4667046368472789595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_190
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3c457e480bc8710800000000000000
+      internalID: 1696925244475098072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_191
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c233bd2ffc8aad0800000000000000
+      internalID: -2690672135387272087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_192
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddc816c1d79e5210800000000000000
+      internalID: 1323662267720977886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_193
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 59
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecdd616d6f3240e0800000000000000
+      internalID: -2287195921732215581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_194
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8856677690edb9b20800000000000000
+      internalID: 3142349296992937352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_195
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045d7e86d466c44d0800000000000000
+      internalID: -3149029556780280512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broderick_196
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65100fc0a9165e3a0800000000000000
+      internalID: -6636791161590644394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
