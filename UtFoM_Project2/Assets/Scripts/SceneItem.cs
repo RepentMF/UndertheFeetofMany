@@ -16,6 +16,7 @@ public class SceneItem : MonoBehaviour // GG TODO: Add voip animation to scene i
     private Light2D Light2DScript;
     private SpriteRenderer SpriteRendererScript;
     private SpriteRenderer TargetSpriteRendererScript;
+    private StateManager StateManagerScript;
 
     private void Initialize(Item newData)
     {
@@ -35,8 +36,14 @@ public class SceneItem : MonoBehaviour // GG TODO: Add voip animation to scene i
             inventory.AddItem(ItemData);
         }
         HasBeenPickedUp = true;
-        this.gameObject.SetActive(false);
-        //GameObject.Destroy(this.gameObject);
+        if (StateManagerScript != null)
+        {
+            StateManagerScript.CurrentState = ActionState.Death;
+        }
+        else
+        {            
+            this.gameObject.SetActive(false);
+        }
     }
 #nullable disable
 
@@ -62,6 +69,7 @@ public class SceneItem : MonoBehaviour // GG TODO: Add voip animation to scene i
         BoxCollider2DScript = this.gameObject.GetComponent<BoxCollider2D>();
         Light2DScript = this.gameObject.GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
         SpriteRendererScript = this.gameObject.GetComponent<SpriteRenderer>();
+        StateManagerScript = this.gameObject.GetComponent<StateManager>();
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
     }
 
