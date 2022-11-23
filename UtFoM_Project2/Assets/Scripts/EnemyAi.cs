@@ -112,6 +112,7 @@ public abstract class EnemyAi : MonoBehaviour
     {
         if (StateManagerScript.CurrentState == ActionState.Attack || StateManagerScript.CurrentState == ActionState.Stagger || StateManagerScript.CurrentState == ActionState.Juggle || StateManagerScript.CurrentState == ActionState.Freefall || StateManagerScript.CurrentState == ActionState.Death)
         {
+            
             return false;
         }
         return true;
@@ -491,8 +492,14 @@ public abstract class EnemyAi : MonoBehaviour
         {
             Action();
         }
+        else if (StateManagerScript.CurrentState == ActionState.Juggle || StateManagerScript.CurrentState == ActionState.Stagger)
+        {
+            SpriteRendererScript.sortingLayerName = "Enemy_Front";
+        }
         else if (CanAct())
         {
+            SpriteRendererScript.sortingLayerName = "Enemy_Back";
+
             if ((StateManagerScript.CurrentState == ActionState.Move || ActionTimer <= 0.0f) && CooldownTimer <= 0.0f)
             {
                 CheckRange();
