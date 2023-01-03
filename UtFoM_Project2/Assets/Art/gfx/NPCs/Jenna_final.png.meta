@@ -1,0 +1,1008 @@
+fileFormatVersion: 2
+guid: 67a147db74200a041852c55e45fbd566
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5417103759960491518
+    second: Jenna_final_0
+  - first:
+      213: 3872480536663153968
+    second: Jenna_final_1
+  - first:
+      213: 426686103184634655
+    second: Jenna_final_2
+  - first:
+      213: 2468439503009729550
+    second: Jenna_final_3
+  - first:
+      213: 8578744843240479382
+    second: Jenna_final_4
+  - first:
+      213: -1429935434328415516
+    second: Jenna_final_5
+  - first:
+      213: -7679516748325762877
+    second: Jenna_final_6
+  - first:
+      213: -2463204565678060609
+    second: Jenna_final_7
+  - first:
+      213: 1628068154715607185
+    second: Jenna_final_8
+  - first:
+      213: -2295265426623696524
+    second: Jenna_final_9
+  - first:
+      213: 3476316962574760890
+    second: Jenna_final_10
+  - first:
+      213: 5680773168398874212
+    second: Jenna_final_11
+  - first:
+      213: -8783392671894244990
+    second: Jenna_final_12
+  - first:
+      213: -2448668232177173723
+    second: Jenna_final_13
+  - first:
+      213: -7975957523802194386
+    second: Jenna_final_14
+  - first:
+      213: -6136925298991579503
+    second: Jenna_final_15
+  - first:
+      213: 7649933510524900006
+    second: Jenna_final_16
+  - first:
+      213: 3196006245741201432
+    second: Jenna_final_17
+  - first:
+      213: 1669151830117056581
+    second: Jenna_final_18
+  - first:
+      213: -5478862726773522141
+    second: Jenna_final_19
+  - first:
+      213: 8610562404382436823
+    second: Jenna_final_20
+  - first:
+      213: 7881780163832605168
+    second: Jenna_final_21
+  - first:
+      213: -782205303580939854
+    second: Jenna_final_22
+  - first:
+      213: 8872591253917169287
+    second: Jenna_final_23
+  - first:
+      213: 6774419948886627957
+    second: Jenna_final_24
+  - first:
+      213: 201307648992466254
+    second: Jenna_final_25
+  - first:
+      213: -3933901919908677241
+    second: Jenna_final_26
+  - first:
+      213: -5360625729171670610
+    second: Jenna_final_27
+  - first:
+      213: 2534571803794549739
+    second: Jenna_final_28
+  - first:
+      213: -1352038517450999812
+    second: Jenna_final_29
+  - first:
+      213: 3214303077610361982
+    second: Jenna_final_30
+  - first:
+      213: -2164005772285557186
+    second: Jenna_final_31
+  - first:
+      213: -6424056911227841750
+    second: Jenna_final_32
+  - first:
+      213: 5929601526426601885
+    second: Jenna_final_33
+  - first:
+      213: -3707385612637140231
+    second: Jenna_final_34
+  - first:
+      213: 539224435261933104
+    second: Jenna_final_35
+  - first:
+      213: 5806541474822653763
+    second: Jenna_final_36
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 22
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jenna_final_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 172
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5c0eb2b2b6d2b40800000000000000
+      internalID: 5417103759960491518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 172
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ddb63e780ddb530800000000000000
+      internalID: 3872480536663153968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 172
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f137aea00c4ebe500800000000000000
+      internalID: 426686103184634655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 172
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ccf6e46a8a14220800000000000000
+      internalID: 2468439503009729550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 172
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a10189bf2dd0770800000000000000
+      internalID: 8578744843240479382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 172
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e26c117c49d72ce0800000000000000
+      internalID: -1429935434328415516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 172
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c841698430ec6590800000000000000
+      internalID: -7679516748325762877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 172
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb83a58f70f0ddd0800000000000000
+      internalID: -2463204565678060609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 172
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19013ff5c5f089610800000000000000
+      internalID: 1628068154715607185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471fbdc51449520e0800000000000000
+      internalID: -2295265426623696524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 129
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbfee0fbdb5e3030800000000000000
+      internalID: 3476316962574760890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 129
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4663cff391926de40800000000000000
+      internalID: 5680773168398874212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_12
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 129
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28179fcb6ee1b1680800000000000000
+      internalID: -8783392671894244990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 129
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bbb486735940ed0800000000000000
+      internalID: -2448668232177173723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_14
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 129
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e7a2af3e4bf4190800000000000000
+      internalID: -7975957523802194386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_15
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 129
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ebf7494f245daa0800000000000000
+      internalID: -6136925298991579503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_16
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 129
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2913a2ff50a2a60800000000000000
+      internalID: 7649933510524900006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 129
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81885515fbe7a5c20800000000000000
+      internalID: 3196006245741201432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5400256feb40a2710800000000000000
+      internalID: 1669151830117056581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_19
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 86
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3214985d06b27f3b0800000000000000
+      internalID: -5478862726773522141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 86
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd6c85d2ecde7770800000000000000
+      internalID: 8610562404382436823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 86
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f966feac45b16d60800000000000000
+      internalID: 7881780163832605168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 86
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9a1a2bb6c0525f0800000000000000
+      internalID: -782205303580939854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_23
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 86
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78678f68cb6c12b70800000000000000
+      internalID: 8872591253917169287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_24
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 86
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57615b41d03930e50800000000000000
+      internalID: 6774419948886627957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_25
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 86
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45d3cc7d303bc200800000000000000
+      internalID: 201307648992466254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_26
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 86
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789bd9aeb09f769c0800000000000000
+      internalID: -3933901919908677241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea937e61d4b3b95b0800000000000000
+      internalID: -5360625729171670610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_28
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 43
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb25e670ab9c2320800000000000000
+      internalID: 2534571803794549739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_29
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 43
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7ffacb1289c3de0800000000000000
+      internalID: -1352038517450999812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_30
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 43
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7419657e9f7b9c20800000000000000
+      internalID: 3214303077610361982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 43
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36460b2738e7f1e0800000000000000
+      internalID: -2164005772285557186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_32
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 43
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a231f5d764a29d6a0800000000000000
+      internalID: -6424056911227841750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_33
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 43
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9985420c2d2a4250800000000000000
+      internalID: 5929601526426601885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_34
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 43
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa8e598d68bc8cc0800000000000000
+      internalID: -3707385612637140231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_35
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 43
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0368ff554c5bb7700800000000000000
+      internalID: 539224435261933104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenna_final_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347806cf4baf49050800000000000000
+      internalID: 5806541474822653763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
