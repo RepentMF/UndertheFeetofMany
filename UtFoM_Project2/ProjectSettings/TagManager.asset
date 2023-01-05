@@ -19,6 +19,8 @@ TagManager:
   - SceneTransition
   - P1
   - Interactable
+  - DialogueBox
+  - Dialogue
   layers:
   - Default
   - TransparentFX

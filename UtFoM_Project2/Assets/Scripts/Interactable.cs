@@ -70,5 +70,10 @@ public class Interactable : MonoBehaviour
     void Start()
     {
         StateManagerScript = this.gameObject.GetComponent<StateManager>();
+        if (DialogueBoxReference == null && DialogueTextReference == null)
+        {
+            DialogueBoxReference = GameObject.FindGameObjectsWithTag("DialogueBox")[1];
+            DialogueTextReference = GameObject.FindGameObjectsWithTag("Dialogue")[1].gameObject.GetComponent<Text>();
+        }    
     }
 }
