@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1462539655
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f,
     type: 3}
@@ -155,7 +155,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1462539655
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f,
     type: 3}
@@ -320,6 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HitboxName: SlimeRushRight
   Damage: 2
   Execute: 0
   Thrust: {x: 100, y: 0}
@@ -328,7 +329,6 @@ MonoBehaviour:
   StaggerAmount: 0.2
   StateToInflict: 4
   StatusesToInflict: []
-  HitboxName: SlimeRushRight
 --- !u!1 &3881115094508345109
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HitboxName: SlimeRushLeft
   Damage: 2
   Execute: 0
   Thrust: {x: -100, y: 0}
@@ -413,7 +414,6 @@ MonoBehaviour:
   StaggerAmount: 0.2
   StateToInflict: 4
   StatusesToInflict: []
-  HitboxName: SlimeRushLeft
 --- !u!1 &3881115094720223018
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,6 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HitboxName: SlimeRushDown
   Damage: 2
   Execute: 0
   Thrust: {x: 0, y: -100}
@@ -532,7 +533,6 @@ MonoBehaviour:
   StaggerAmount: 0.2
   StateToInflict: 4
   StatusesToInflict: []
-  HitboxName: SlimeRushDown
 --- !u!1 &3881115095068226089
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,6 +644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d5bbc81c5612e94cba821f50da6362f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HitboxName: SlimeRushUp
   Damage: 2
   Execute: 0
   Thrust: {x: 0, y: 100}
@@ -652,7 +653,6 @@ MonoBehaviour:
   StaggerAmount: 0.2
   StateToInflict: 4
   StatusesToInflict: []
-  HitboxName: SlimeRushUp
 --- !u!1 &3881115095826021321
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,13 +836,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a76b40d049ec64b8ed141ba2b3761c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: 
   healthBar: {fileID: 6595229487283121633}
   manaBar: {fileID: 0}
   staminaBar: {fileID: 0}
   lbFlare1: {fileID: 0}
   lbFlare2: {fileID: 0}
   lbFlare3: {fileID: 0}
+  Knife: {fileID: 0}
+  Hammer: {fileID: 0}
+  Sword: {fileID: 0}
+  Weapon: {fileID: 0}
   stats: {fileID: 3022837024901162313}
+  inventory: {fileID: 0}
 --- !u!1 &6654852442941469577
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,7 +865,6 @@ GameObject:
   - component: {fileID: 6654852442941469570}
   - component: {fileID: 8783529257077135112}
   - component: {fileID: 3022837024901162313}
-  - component: {fileID: 1950042945242521740}
   - component: {fileID: 4399399052590795618}
   - component: {fileID: 5333459742692240753}
   - component: {fileID: 2381787212923089175}
@@ -932,7 +937,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -136105217
-  m_SortingLayer: 4
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 368543389579951487, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1102,6 +1107,7 @@ MonoBehaviour:
   BaseManaRegen: 0
   OriginalLifeblood: 0
   BaseLifebloodRegen: 0
+  OriginalTrinket: 0
   DisplayRuntimeValues: 0
   RuntimeIsInvulnerable: 0
   RuntimeComboCount: 0
@@ -1113,20 +1119,8 @@ MonoBehaviour:
   RuntimeCurrentMana: 0
   RuntimeMaxLifeblood: 0
   RuntimeCurrentLifeblood: 0
---- !u!114 &1950042945242521740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6654852442941469577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b638f8e309b7f5a42ba75c7421301852, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayRuntimeValues: 0
-  RuntimeStatuses: []
+  RuntimeMaxTrinket: 0
+  RuntimeCurrentTrinket: 0
 --- !u!114 &4399399052590795618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1151,7 +1145,11 @@ MonoBehaviour:
   FreefallAnimationName: stagger
   DeathAnimationName: death
   DeathAnimationTimer: -1
+  AppearAnimationName: appear
+  AppearAnimationTimer: -1
   RemoveOnDeath: 1
+  IgnorePause: 0
+  IgnoreInteracting: 0
   DisplayRuntimeValues: 0
   RuntimeCurrentState: 0
   RuntimeCurrentAnimationName: 

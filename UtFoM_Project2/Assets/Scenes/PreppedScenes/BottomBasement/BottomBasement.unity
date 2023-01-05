@@ -1320,6 +1320,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627412411814251781, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
+      propertyPath: ID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627412411814251781, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
+        type: 3}
       propertyPath: ItemData
       value: 
       objectReference: {fileID: 11400000, guid: 5e9fee6f424822742b5bb119f47a4fd2,
@@ -1685,7 +1690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518931868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -5.9, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8676862406851229532}
@@ -2298,6 +2303,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &624107316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6654852442941469577, guid: 016d247afea7c2846927407433735bc1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1149037476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &624107321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624107316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b248e8635e94bbb49b0725a1b6bffec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasBeenDefeated: 0
+  LightFadeSpeed: 1
+  ID: 101
 --- !u!1 &642846236
 GameObject:
   m_ObjectHideFlags: 0
@@ -6393,6 +6419,21 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 8676862406851229532}
+    - target: {fileID: 3479239084847866428, guid: c577048ce2e077947a41f87bff0432bf,
+        type: 3}
+      propertyPath: difference.x
+      value: 10.889999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479239084847866428, guid: c577048ce2e077947a41f87bff0432bf,
+        type: 3}
+      propertyPath: difference.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479239084847866428, guid: c577048ce2e077947a41f87bff0432bf,
+        type: 3}
+      propertyPath: minPosition.x
+      value: -5.47
+      objectReference: {fileID: 0}
     - target: {fileID: 3479239084847866430, guid: c577048ce2e077947a41f87bff0432bf,
         type: 3}
       propertyPath: m_Name
@@ -10301,6 +10342,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627412411814251781, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
+        type: 3}
+      propertyPath: ID
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1627412411814251781, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}

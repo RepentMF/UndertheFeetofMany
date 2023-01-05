@@ -17,7 +17,7 @@ public enum ActionState
     None // Used in Hitbox logic for the knife
 }
 
-public class ActionStateAnimation
+public class ActionStateAnimation : MonoBehaviour
 {
     public string AnimationName;
     public float AnimationTimer;

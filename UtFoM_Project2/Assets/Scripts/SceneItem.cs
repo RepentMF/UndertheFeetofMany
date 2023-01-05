@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
-public class SceneItem : MonoBehaviour // GG TODO: Add voip animation to scene items
+public class SceneItem : MonoBehaviour
 {
     public Item ItemData;
-    protected internal bool HasBeenPickedUp;
+    public bool HasBeenPickedUp = false;
     private bool ShouldTurnOffLight = false;
     public float LightFadeSpeed = 1f;
     public string ID;
@@ -76,7 +76,9 @@ public class SceneItem : MonoBehaviour // GG TODO: Add voip animation to scene i
     void OnDestroy()
     {
         if (GameStateManager.Instance != null)
+        {
             GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+        }
     }
 
     // Start is called before the first frame update
@@ -85,7 +87,6 @@ public class SceneItem : MonoBehaviour // GG TODO: Add voip animation to scene i
 
         if (HasBeenPickedUp)
         {
-            Debug.Break();
             this.gameObject.SetActive(false);
             //GameObject.Destroy(this.gameObject);
         }
@@ -104,5 +105,9 @@ public class SceneItem : MonoBehaviour // GG TODO: Add voip animation to scene i
             this.gameObject.SetActive(false);
         }
         FadeLight();
+        if (StateManagerScript.CurrentState == ActionState.Death && StateManagerScript.GetCurrentAnimationTimer() <= 0f)
+        {
+            HasBeenPickedUp = true;
+        }
     }
 }

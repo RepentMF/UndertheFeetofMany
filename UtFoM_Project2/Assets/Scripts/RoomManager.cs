@@ -39,6 +39,7 @@ public class RoomManager : GenericSingleton<RoomManager>
 
     void SetEnemiesInRoom()
     {
+
     }
 
     //Take treasure information from the current scene and put it in our data structure
@@ -74,7 +75,33 @@ public class RoomManager : GenericSingleton<RoomManager>
 
     void GetEnemiesInRoom()
     {
+        List<string> strings = new List<string>();
 
+        for (int i = 0; i < FindObjectsOfType<EnemyInfo>(true).Length; i++)
+        {
+            //Grab enemy info data
+            string s = FindObjectsOfType<EnemyInfo>(true)[i].ID + ", " + FindObjectsOfType<EnemyInfo>(true)[i].HasBeenDefeated
+             + ", " + FindObjectsOfType<EnemyInfo>(true)[i].DeathPlace;
+            //Put item holder data in a list of strings
+            strings.Add(s);
+        }
+
+        string[] stringsArray = System.IO.File.ReadAllLines(@"enemies.txt");
+        List<string> stringsList = stringsArray.ToList();
+        //Write the strings to a JSON file
+        foreach (string s in stringsArray)
+        {
+            for (int i = 0; i < FindObjectsOfType<EnemyInfo>(true).Length; i++)
+            {
+                if (s.Contains(FindObjectsOfType<EnemyInfo>(true)[i].ID + ", "))
+                {
+                    stringsList.Remove(s);
+                }
+            }
+        }
+
+        System.IO.File.WriteAllLines(@"enemies.txt", stringsList);
+        System.IO.File.AppendAllLines(@"enemies.txt", strings);
     }
 
     private void OnGameStateChanged(GameState newGameState)
@@ -117,9 +144,9 @@ public class RoomManager : GenericSingleton<RoomManager>
         }
         else if (index != SceneManager.GetActiveScene().buildIndex)
         {
-            //index = SceneManager.GetActiveScene().buildIndex;
-            //SetTreasureInRoom();
-            //SetEnemiesInRoom();
+            index = SceneManager.GetActiveScene().buildIndex;
+            SetTreasureInRoom();
+            SetEnemiesInRoom();
         }
     }
 }
