@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca520cb67727a9e46b044c55357d0272, type: 3}
-  m_Name: Hammer
+  m_Name: Darren's Diary
   m_EditorClassIdentifier: 
   Category: 2
-  Name: Hammer
-  Description: Badda-bing, badda-boom
-  Sprite: {fileID: 21300000, guid: c4fa08e94a8b5ca40a099320cc410e9a, type: 3}
-  LightAttackAnimationName: Hammer
+  Name: Darren's Diary
+  Description: September 15, 2030, ID:1440, M-4478
+  Sprite: {fileID: 21300000, guid: 41791528e12dc6b49b4c2d960e7a31c6, type: 3}
+  LightAttackAnimationName: 
   LightAttackAnimationTimer: -1
-  LightAttackBufferThreshold: 0.25
-  MediumAttackAnimationName: Hammer2
+  LightAttackBufferThreshold: 0
+  MediumAttackAnimationName: 
   MediumAttackAnimationTimer: -1
-  MediumAttackBufferThreshold: 0.25
-  LaunchAttackAnimationName: Hammer3
+  MediumAttackBufferThreshold: 0
+  LaunchAttackAnimationName: 
   LaunchAttackAnimationTimer: -1
-  LaunchAttackBufferThreshold: 0.25
-  HeavyAttackAnimationName: Hammer4
+  LaunchAttackBufferThreshold: 0
+  HeavyAttackAnimationName: 
   HeavyAttackAnimationTimer: -1
-  HeavyAttackBufferThreshold: 0.25
+  HeavyAttackBufferThreshold: 0
