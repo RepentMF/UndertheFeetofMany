@@ -374,21 +374,21 @@ PrefabInstance:
         type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1181902254}
     - target: {fileID: 3479239084847866428, guid: c577048ce2e077947a41f87bff0432bf,
         type: 3}
       propertyPath: difference.x
-      value: 0
+      value: 4.68
       objectReference: {fileID: 0}
     - target: {fileID: 3479239084847866428, guid: c577048ce2e077947a41f87bff0432bf,
         type: 3}
       propertyPath: difference.y
-      value: 0
+      value: 16.75
       objectReference: {fileID: 0}
     - target: {fileID: 3479239084847866428, guid: c577048ce2e077947a41f87bff0432bf,
         type: 3}
       propertyPath: maxPosition.x
-      value: 1.88
+      value: 2.51
       objectReference: {fileID: 0}
     - target: {fileID: 3479239084847866428, guid: c577048ce2e077947a41f87bff0432bf,
         type: 3}
@@ -398,12 +398,12 @@ PrefabInstance:
     - target: {fileID: 3479239084847866428, guid: c577048ce2e077947a41f87bff0432bf,
         type: 3}
       propertyPath: minPosition.x
-      value: -2.8
+      value: -3.61
       objectReference: {fileID: 0}
     - target: {fileID: 3479239084847866428, guid: c577048ce2e077947a41f87bff0432bf,
         type: 3}
       propertyPath: minPosition.y
-      value: -6.98
+      value: -7.97
       objectReference: {fileID: 0}
     - target: {fileID: 3479239084847866430, guid: c577048ce2e077947a41f87bff0432bf,
         type: 3}
@@ -839,6 +839,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37a7ab54d42670e4b974904b087b9837, type: 3}
+--- !u!4 &1181902254 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 660729248335287817, guid: 37a7ab54d42670e4b974904b087b9837,
+    type: 3}
+  m_PrefabInstance: {fileID: 851985428}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1215154749
 GameObject:
   m_ObjectHideFlags: 0
