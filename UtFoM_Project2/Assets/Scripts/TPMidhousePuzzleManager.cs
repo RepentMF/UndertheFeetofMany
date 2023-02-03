@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class TPMidhousePuzzleManager : MonoBehaviour
+public class TPMidhousePuzzleManager : PuzzleManager
 {
-    public bool PuzzleCompleted;
     public List<Sprite> TPMapList;
     public SpriteRenderer SpriteRendererScript;
 

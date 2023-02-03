@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca520cb67727a9e46b044c55357d0272, type: 3}
-  m_Name: Markus' Journal
+  m_Name: Vitality Arts
   m_EditorClassIdentifier: 
-  Category: 0
-  Name: Markus' Journal
-  Description: Day 1
-  Sprite: {fileID: 21300000, guid: d5111903e03c6a84a963d03ba34c7e8f, type: 3}
+  Category: 1
+  Name: red tinted scroll
+  Description: A scroll I found lying on the ground [next to Marcus]. If I concentrate
+    on it I feel more lively.
+  Sprite: {fileID: 21300000, guid: b105fca918465424e8352b0541b6d4e4, type: 3}
   LightAttackAnimationName: 
   LightAttackAnimationTimer: -1
   LightAttackBufferThreshold: 0

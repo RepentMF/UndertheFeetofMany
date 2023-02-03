@@ -24,7 +24,7 @@ public class SceneTransition : MonoBehaviour
 		{
 			GameObject panel = Instantiate(fadeInPanel, Vector3.zero, Quaternion.identity) as GameObject;
 			Destroy(panel, 1);
-			RoomScript.SetTreasureInRoom();
+			//RoomScript.SetTreasureInRoom();
 		}
 		GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
 	}

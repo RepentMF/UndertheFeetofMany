@@ -16,8 +16,8 @@ public class RoomManager : GenericSingleton<RoomManager>
     public int index = 0;
     public bool sceneChange = false;
 
-    //Take treasure information from the data of our data structure and set up the current scene
-    public void SetTreasureInRoom()
+    //Takes information from our data structure and sets up the current scene
+    public void PlaceTreasureInRoom()
     {
         string[] strings = System.IO.File.ReadAllLines(@"treasures.txt");
         int found = 0;
@@ -30,20 +30,55 @@ public class RoomManager : GenericSingleton<RoomManager>
                 {
                     found = s.IndexOf(", ");
                     FindObjectsOfType<SceneItem>(true)[i].HasBeenPickedUp = bool.Parse(s.Substring(found + 2));
-                    Debug.Log(bool.Parse(s.Substring(found + 2)));
-                    Debug.Log(FindObjectsOfType<SceneItem>(true)[i].HasBeenPickedUp);
+                    //Debug.Log(bool.Parse(s.Substring(found + 2)));
+                    //Debug.Log(FindObjectsOfType<SceneItem>(true)[i].HasBeenPickedUp);
                 }
             }
         }
     }
 
-    void SetEnemiesInRoom()
+    public void PlaceEnemiesInRoom()
     {
+        string[] strings = System.IO.File.ReadAllLines(@"enemies.txt");
+        int found = 0;
 
+        foreach (string s in strings)
+        {
+            for (int i = 0; i < FindObjectsOfType<EnemyInfo>(true).Length; i++)
+            {
+                if (s.Contains(FindObjectsOfType<EnemyInfo>(true)[i].ID + ", "))
+                {
+                    found = s.IndexOf(", ");
+                    FindObjectsOfType<EnemyInfo>(true)[i].HasBeenDefeated = bool.Parse(s.Substring(found + 2));
+                    //Debug.Log(bool.Parse(s.Substring(found + 2)));
+                    //Debug.Log(FindObjectsOfType<EnemyInfo>(true)[i].HasBeenDefeated);
+                }
+            }
+        }
+    }
+    
+    public void PlacePuzzlesInRoom()
+    {
+        string[] strings = System.IO.File.ReadAllLines(@"puzzles.txt");
+        int found = 0;
+
+        foreach (string s in strings)
+        {
+            for (int i = 0; i < FindObjectsOfType<PuzzleManager>(true).Length; i++)
+            {
+                if (s.Contains(FindObjectsOfType<PuzzleManager>(true)[i].ID + ", "))
+                {
+                    found = s.IndexOf(", ");
+                    FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted = bool.Parse(s.Substring(found + 2));
+                    //Debug.Log(bool.Parse(s.Substring(found + 2)));
+                    //Debug.Log(FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted);
+                }
+            }
+        }
     }
 
-    //Take treasure information from the current scene and put it in our data structure
-    public void GetTreasureInRoom()
+    //Takes information from the current scene and puts it in our data structure
+    public void ObserveTreasureInRoom()
     {
         List<string> strings = new List<string>();
 
@@ -73,7 +108,7 @@ public class RoomManager : GenericSingleton<RoomManager>
         System.IO.File.AppendAllLines(@"treasures.txt", strings);
     }
 
-    void GetEnemiesInRoom()
+    public void ObserveEnemiesInRoom()
     {
         List<string> strings = new List<string>();
 
@@ -81,7 +116,7 @@ public class RoomManager : GenericSingleton<RoomManager>
         {
             //Grab enemy info data
             string s = FindObjectsOfType<EnemyInfo>(true)[i].ID + ", " + FindObjectsOfType<EnemyInfo>(true)[i].HasBeenDefeated
-             + ", " + FindObjectsOfType<EnemyInfo>(true)[i].DeathPlace;
+            /* + ", " + FindObjectsOfType<EnemyInfo>(true)[i].DeathPlace*/;
             //Put item holder data in a list of strings
             strings.Add(s);
         }
@@ -104,6 +139,37 @@ public class RoomManager : GenericSingleton<RoomManager>
         System.IO.File.AppendAllLines(@"enemies.txt", strings);
     }
 
+    public void ObservePuzzlesInRoom()
+    {
+        
+        List<string> strings = new List<string>();
+
+        for (int i = 0; i < FindObjectsOfType<PuzzleManager>(true).Length; i++)
+        {
+            //Grab puzzle data
+            string s = FindObjectsOfType<PuzzleManager>(true)[i].ID + ", " + FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted;
+            //Put puzzle data in a list of strings
+            strings.Add(s);
+        }
+
+        string[] stringsArray = System.IO.File.ReadAllLines(@"puzzles.txt");
+        List<string> stringsList = stringsArray.ToList();
+        //Write the strings to a JSON file
+        foreach (string s in stringsArray)
+        {
+            for (int i = 0; i < FindObjectsOfType<PuzzleManager>(true).Length; i++)
+            {
+                if (s.Contains(FindObjectsOfType<PuzzleManager>(true)[i].ID + ", "))
+                {
+                    stringsList.Remove(s);
+                }
+            }
+        }
+
+        System.IO.File.WriteAllLines(@"puzzles.txt", stringsList);
+        System.IO.File.AppendAllLines(@"puzzles.txt", strings);
+    }
+    
     private void OnGameStateChanged(GameState newGameState)
     {
         enabled = newGameState == GameState.Gameplay;
@@ -131,6 +197,10 @@ public class RoomManager : GenericSingleton<RoomManager>
 
         RM = this;
         GameObject.DontDestroyOnLoad(this.gameObject);
+
+        PlaceTreasureInRoom();
+        PlaceEnemiesInRoom();
+        PlacePuzzlesInRoom();
     }
 
     // Update is called once per frame
@@ -139,14 +209,13 @@ public class RoomManager : GenericSingleton<RoomManager>
         if (sceneChange)
         {
             sceneChange = false;
-            GetTreasureInRoom();
-            GetEnemiesInRoom();
+            //ObserveTreasureInRoom();
+            //ObserveEnemiesInRoom();
+            ObservePuzzlesInRoom();
         }
         else if (index != SceneManager.GetActiveScene().buildIndex)
         {
             index = SceneManager.GetActiveScene().buildIndex;
-            SetTreasureInRoom();
-            SetEnemiesInRoom();
         }
     }
 }

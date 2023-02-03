@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BBPuzzleManager : GenericSingleton<BBPuzzleManager>
+public class BBPuzzleManager : PuzzleManager
 {
-    private bool PuzzleCompleted = false;
     private int CurrentSlimeCount;
     private int InitialSlimeCount;
 
@@ -25,6 +24,7 @@ public class BBPuzzleManager : GenericSingleton<BBPuzzleManager>
 
         if (PuzzleCompleted)
         {
+            StateManagerScript.CurrentState = ActionState.Death;
             CompletePuzzle();
         }
         else
@@ -62,6 +62,7 @@ public class BBPuzzleManager : GenericSingleton<BBPuzzleManager>
 
     void CompletePuzzle()
     {
+        FindObjectsOfType<RoomManager>(true)[0].ObservePuzzlesInRoom();
         PuzzleCompleted = true;
         StateManagerScript.IdleAnimationName = "BB_gate_opened";
         StateManagerScript.CurrentState = ActionState.Idle;

@@ -109,7 +109,7 @@ public class PlayerController : GenericSingleton<PlayerController>
             if (IsShortcutButtonPressed)
             {
                 // FlurryField
-                Debug.Log("Ice, ice, baby");
+                //Debug.Log("Ice, ice, baby");
             }
             else if (InventoryScript.EquippedWeapon != null)
             {
@@ -143,7 +143,7 @@ public class PlayerController : GenericSingleton<PlayerController>
             if (IsShortcutButtonPressed)
             {
                 // SparkTrigger
-                Debug.Log("It's gettin' hot in here!");
+                //Debug.Log("It's gettin' hot in here!");
             }
             else if (InventoryScript.EquippedWeapon != null)
             {
@@ -176,7 +176,7 @@ public class PlayerController : GenericSingleton<PlayerController>
             if (IsShortcutButtonPressed)
             {
                 // VoltTrap
-                Debug.Log("Zap!");
+                //Debug.Log("Zap!");
             }
             else if (InventoryScript.EquippedWeapon != null)
             {

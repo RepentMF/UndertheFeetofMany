@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca520cb67727a9e46b044c55357d0272, type: 3}
-  m_Name: Vitality Arts
+  m_Name: Red Book
   m_EditorClassIdentifier: 
-  Category: 0
-  Name: red tinted scroll
-  Description: A scroll I found lying on the ground [next to Marcus]. If I concentrate
-    on it I feel more lively.
-  Sprite: {fileID: 21300000, guid: b105fca918465424e8352b0541b6d4e4, type: 3}
+  Category: 2
+  Name: dusty red book
+  Description: A red book I found here in the chapel. It's covered in dust.
+  Sprite: {fileID: 21300000, guid: 685e5eb6f53eae64788019e5baa2425f, type: 3}
   LightAttackAnimationName: 
   LightAttackAnimationTimer: -1
   LightAttackBufferThreshold: 0

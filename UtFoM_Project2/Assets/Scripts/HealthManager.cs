@@ -71,7 +71,6 @@ public class HealthManager : MonoBehaviour
 					var tempColor = Weapon.color;
           			tempColor.a = 1f;
           			Weapon.color = tempColor;
-					Debug.Log("yes");
 				}
 
 				switch (inventory.EquippedWeapon.Name)
@@ -126,7 +125,7 @@ public class HealthManager : MonoBehaviour
 		
 
     	HealthScript = this;
-    	GameObject.DontDestroyOnLoad(GetComponentInParent<Canvas>().transform.parent.gameObject);
+    	//GameObject.DontDestroyOnLoad(GetComponentInParent<Canvas>().transform.parent.gameObject);
 
 		UpdateStatsUI();
 		UpdateInvUI();

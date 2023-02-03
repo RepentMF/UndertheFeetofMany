@@ -211,6 +211,7 @@ public class StateManager : MonoBehaviour
             if (DeathObject != null)
             {
                 DeathObject.SetActive(true);
+                DeathObject.transform.position = this.gameObject.transform.position;
                 DeathObject = null;
             }
             this.gameObject.SetActive(false);
@@ -220,6 +221,8 @@ public class StateManager : MonoBehaviour
     public void InitializeOnDeath(GameObject obj)
     {
         DeathObject = obj;
+        DeathObject.transform.position = this.gameObject.transform.position;
+        Instantiate(DeathObject);
     }
 
     /// <summary>

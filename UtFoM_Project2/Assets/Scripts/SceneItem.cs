@@ -108,6 +108,7 @@ public class SceneItem : MonoBehaviour
         if (StateManagerScript.CurrentState == ActionState.Death && StateManagerScript.GetCurrentAnimationTimer() <= 0f)
         {
             HasBeenPickedUp = true;
+            FindObjectsOfType<RoomManager>(true)[0].ObserveTreasureInRoom();
         }
     }
 }

@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca520cb67727a9e46b044c55357d0272, type: 3}
-  m_Name: Black Book
+  m_Name: Fine Edge
   m_EditorClassIdentifier: 
-  Category: 0
-  Name: old black book
-  Description: A black book I found here in the chapel. It's old, but still in tact.
-  Sprite: {fileID: 21300000, guid: e3f76f19c68a2e74db991d14160bc22b, type: 3}
+  Category: 1
+  Name: fine edged stone
+  Description: A really sharp stone that I found [off of Darren]. When I hold it
+    along with my weapon it feels like I'm more fatal with my attacks.
+  Sprite: {fileID: 0}
   LightAttackAnimationName: 
   LightAttackAnimationTimer: -1
   LightAttackBufferThreshold: 0

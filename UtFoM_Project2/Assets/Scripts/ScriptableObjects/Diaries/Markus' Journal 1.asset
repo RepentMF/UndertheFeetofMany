@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f2d8ae900915c0449da941292b084d2, type: 3}
+  m_Name: Markus' Journal 1
+  m_EditorClassIdentifier: 
+  Category: 2
+  Name: Markus' Journal
+  Description: Day 1
+  Sprite: {fileID: 21300000, guid: d5111903e03c6a84a963d03ba34c7e8f, type: 3}

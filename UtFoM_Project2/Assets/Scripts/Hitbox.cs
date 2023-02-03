@@ -34,7 +34,7 @@ public class Hitbox : MonoBehaviour
                 if (targetHurtboxScript.LastHitBy != HitboxName || HitboxName.IndexOf("Knife") > -1)
                 {
                     targetHurtboxScript.LastHitBy = HitboxName; // Prevent double hits
-                    Debug.Log(targetHurtboxScript.LastHitBy);
+                    //Debug.Log(targetHurtboxScript.LastHitBy);
                     StatsScript.ComboCount++; // Increase the ComboCount
                     if (StateToInflict != ActionState.None) // Inflict the relevant ActionState
                     {

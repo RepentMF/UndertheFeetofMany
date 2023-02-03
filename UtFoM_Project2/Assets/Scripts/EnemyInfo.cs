@@ -10,6 +10,7 @@ public class EnemyInfo : MonoBehaviour
     private bool ShouldTurnOffLight = false;
     public float LightFadeSpeed = 1f;
     public string ID;
+    public int CorpseCounter = 0;
 
     // Script References
     private BoxCollider2D BoxCollider2DScript;
@@ -17,19 +18,7 @@ public class EnemyInfo : MonoBehaviour
     private SpriteRenderer SpriteRendererScript;
     private SpriteRenderer TargetSpriteRendererScript;
     private StateManager StateManagerScript;
-
-    public void HaveIBeenDefeated()
-    {
-        if (GetComponent<Stats>().CurrentHealth <= 0f)
-        {
-            HasBeenDefeated = true;
-            DeathPlace = this.gameObject.transform.position;
-        }
-        else
-        {
-            HasBeenDefeated = false;
-        }
-    }
+    public GameObject CorpseObjectScript;
 
     private void FadeLight()
     {
@@ -38,26 +27,26 @@ public class EnemyInfo : MonoBehaviour
             Light2DScript.intensity = 1 - TargetSpriteRendererScript.color.a;
         }
     }
-
+    
     void Start()
-    {
-        if (HasBeenDefeated)
-        {
-            // set sprite to static corpse sprite TODO
-            transform.position = DeathPlace;
-        }
-    }
-
+	{
+		SpriteRendererScript = gameObject.GetComponent<SpriteRenderer>();
+        StateManagerScript = gameObject.GetComponent<StateManager>();
+	}
+    
     void FixedUpdate()
     {
-        if (HasBeenDefeated)
+        if(HasBeenDefeated && StateManagerScript.GetCurrentAnimationTimer() <= 0.0f && 
+            StateManagerScript.GetCurrentAnimationTimer() != 0.0f)
         {
-            // set sprite to static corpse sprite TODO
-            transform.position = DeathPlace;
+            DeathPlace = this.gameObject.transform.position;
+            FindObjectsOfType<RoomManager>(true)[0].ObserveEnemiesInRoom();
+            StateManagerScript.InitializeOnDeath(CorpseObjectScript);
         }
-        else
+
+        if(this.gameObject.GetComponent<Stats>().CurrentHealth <= 0)
         {
-            HaveIBeenDefeated();
+            HasBeenDefeated = true;
         }
     }
 }
