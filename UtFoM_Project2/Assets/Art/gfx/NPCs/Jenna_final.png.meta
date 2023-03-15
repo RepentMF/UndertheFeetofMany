@@ -114,7 +114,7 @@ TextureImporter:
       213: 5806541474822653763
     second: Jenna_final_36
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -135,6 +135,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -144,8 +145,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -173,6 +174,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -200,6 +202,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1000,6 +1026,44 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Jenna_final_0: 5417103759960491518
+      Jenna_final_1: 3872480536663153968
+      Jenna_final_10: 3476316962574760890
+      Jenna_final_11: 5680773168398874212
+      Jenna_final_12: -8783392671894244990
+      Jenna_final_13: -2448668232177173723
+      Jenna_final_14: -7975957523802194386
+      Jenna_final_15: -6136925298991579503
+      Jenna_final_16: 7649933510524900006
+      Jenna_final_17: 3196006245741201432
+      Jenna_final_18: 1669151830117056581
+      Jenna_final_19: -5478862726773522141
+      Jenna_final_2: 426686103184634655
+      Jenna_final_20: 8610562404382436823
+      Jenna_final_21: 7881780163832605168
+      Jenna_final_22: -782205303580939854
+      Jenna_final_23: 8872591253917169287
+      Jenna_final_24: 6774419948886627957
+      Jenna_final_25: 201307648992466254
+      Jenna_final_26: -3933901919908677241
+      Jenna_final_27: -5360625729171670610
+      Jenna_final_28: 2534571803794549739
+      Jenna_final_29: -1352038517450999812
+      Jenna_final_3: 2468439503009729550
+      Jenna_final_30: 3214303077610361982
+      Jenna_final_31: -2164005772285557186
+      Jenna_final_32: -6424056911227841750
+      Jenna_final_33: 5929601526426601885
+      Jenna_final_34: -3707385612637140231
+      Jenna_final_35: 539224435261933104
+      Jenna_final_36: 5806541474822653763
+      Jenna_final_4: 8578744843240479382
+      Jenna_final_5: -1429935434328415516
+      Jenna_final_6: -7679516748325762877
+      Jenna_final_7: -2463204565678060609
+      Jenna_final_8: 1628068154715607185
+      Jenna_final_9: -2295265426623696524
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

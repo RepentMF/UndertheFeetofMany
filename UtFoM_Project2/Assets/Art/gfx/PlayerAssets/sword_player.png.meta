@@ -339,7 +339,7 @@ TextureImporter:
       213: -4971807976426596033
     second: sword_player_111
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -360,6 +360,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -369,8 +370,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -398,6 +399,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -413,6 +415,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2788,6 +2814,119 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      sword_player_0: 3807049566699419493
+      sword_player_1: -6726566170445865772
+      sword_player_10: -4055639507153315618
+      sword_player_100: 2811385335454929067
+      sword_player_101: 5593659597698298629
+      sword_player_102: -2981281820178602909
+      sword_player_103: 8085787769171421281
+      sword_player_104: -1473946542507586926
+      sword_player_105: 4773479978679052829
+      sword_player_106: -2483120097560404911
+      sword_player_107: 8221440805200051486
+      sword_player_108: -4868569562252963862
+      sword_player_109: -3578490015726195240
+      sword_player_11: 7547894602070210568
+      sword_player_110: -1198110055467864308
+      sword_player_111: -4971807976426596033
+      sword_player_12: -4709168192703511190
+      sword_player_13: 4691286077171560312
+      sword_player_14: 735605729476091994
+      sword_player_15: 4504106299916170505
+      sword_player_16: -5565214807191373608
+      sword_player_17: -5503424850405086581
+      sword_player_18: -2288251976813361161
+      sword_player_19: -4512377014082232403
+      sword_player_2: 5591604056092300552
+      sword_player_20: -8057060303631656684
+      sword_player_21: 6380964862055238411
+      sword_player_22: 5645462254395495924
+      sword_player_23: 4547504595389884420
+      sword_player_24: -8504713503763105176
+      sword_player_25: 1164756865890927183
+      sword_player_26: -5230916714923244988
+      sword_player_27: 3633201940747403893
+      sword_player_28: -6749835131532681454
+      sword_player_29: -3144167808814536001
+      sword_player_3: 1913978617925920856
+      sword_player_30: 3412222943679774384
+      sword_player_31: 6087584630302558953
+      sword_player_32: 7555847814445069947
+      sword_player_33: -6395405050505805730
+      sword_player_34: -596035446422472760
+      sword_player_35: 3373719351798319717
+      sword_player_36: -2640184545508688883
+      sword_player_37: 783740930661435212
+      sword_player_38: -6421586541837422428
+      sword_player_39: -4534486512007260839
+      sword_player_4: 1261008849192968512
+      sword_player_40: 7027983507467530735
+      sword_player_41: -868671525585375964
+      sword_player_42: 7966519910585427462
+      sword_player_43: 5594081376495981343
+      sword_player_44: 446800837610875458
+      sword_player_45: 2091714921682833902
+      sword_player_46: -8572582050075090240
+      sword_player_47: 1436487083411554078
+      sword_player_48: -2464874404698616658
+      sword_player_49: 5385957756833879735
+      sword_player_5: 6931526080382107512
+      sword_player_50: -5051375960345080856
+      sword_player_51: 2855187322037436482
+      sword_player_52: 1371070228872817758
+      sword_player_53: 126723550468028278
+      sword_player_54: -3377489542229440392
+      sword_player_55: -7743554269755292524
+      sword_player_56: -5501610559457477067
+      sword_player_57: -183509567032414020
+      sword_player_58: 6242283143313320024
+      sword_player_59: 5095812603768121354
+      sword_player_6: 2897196896078084584
+      sword_player_60: -3505186372233529667
+      sword_player_61: 1406609275279052948
+      sword_player_62: -5010209030197521296
+      sword_player_63: -8369197447801643975
+      sword_player_64: 7921715459207192628
+      sword_player_65: 2727264813257952080
+      sword_player_66: -8483918155929814754
+      sword_player_67: 1307898970835803446
+      sword_player_68: 1956615319806173597
+      sword_player_69: -7078337549379258490
+      sword_player_7: 3822512604232409246
+      sword_player_70: -1505958459792869830
+      sword_player_71: 5349801780323901759
+      sword_player_72: -1803031008561330165
+      sword_player_73: -7806036628284472652
+      sword_player_74: -110978113476587671
+      sword_player_75: 2995528067619042297
+      sword_player_76: 2479603757654883302
+      sword_player_77: -8123001666997310060
+      sword_player_78: -4965510085307615051
+      sword_player_79: 4027299935855110238
+      sword_player_8: -968763952433483971
+      sword_player_80: -4452885587006094856
+      sword_player_81: 3709674373158250325
+      sword_player_82: -6780844589794803643
+      sword_player_83: -3293047021772840368
+      sword_player_84: 4415936232030252764
+      sword_player_85: -5129896376659756584
+      sword_player_86: -1180595121308687861
+      sword_player_87: -7730512324714101765
+      sword_player_88: 5725501031231213591
+      sword_player_89: 4030233244907895892
+      sword_player_9: 7312782810982576419
+      sword_player_90: -2393850634343186078
+      sword_player_91: -4559585117121819868
+      sword_player_92: -1984734878122456809
+      sword_player_93: 8253252216266405522
+      sword_player_94: 7849665436644424473
+      sword_player_95: -941256974655737977
+      sword_player_96: 8011129924454307690
+      sword_player_97: -4304071677763617473
+      sword_player_98: 8896242502339545322
+      sword_player_99: -4395536849100099154
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

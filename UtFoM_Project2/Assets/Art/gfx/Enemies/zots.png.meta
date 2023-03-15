@@ -279,7 +279,7 @@ TextureImporter:
       213: 4363160393629796844
     second: zots_91
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -300,6 +300,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -309,8 +310,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -338,6 +339,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -353,6 +355,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2308,6 +2334,99 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      zots_0: -8185196535857486117
+      zots_1: 6242156098170043541
+      zots_10: 4171915847392493301
+      zots_11: 3824443486302753408
+      zots_12: -3708442533139570477
+      zots_13: 3347076318805124302
+      zots_14: 2583615324246077035
+      zots_15: -3871876389601149420
+      zots_16: 527358419543467529
+      zots_17: -7733957249325869647
+      zots_18: 1540617906231093927
+      zots_19: 2076507008034952054
+      zots_2: -5081845133068775029
+      zots_20: 6392730629518184217
+      zots_21: -64782821326315118
+      zots_22: -6843426263161530492
+      zots_23: -8792032416416760021
+      zots_24: -5858771017881403616
+      zots_25: -1074596814594690631
+      zots_26: -2822123996038907788
+      zots_27: -2690941190779035413
+      zots_28: 722629929165606848
+      zots_29: -723678535273003275
+      zots_3: -6887218197598784277
+      zots_30: 1820126684391501148
+      zots_31: 86651075413973333
+      zots_32: 5955558245181886346
+      zots_33: 8311832765358641888
+      zots_34: 8905430431997589148
+      zots_35: 9221694484057881664
+      zots_36: 858391100297272419
+      zots_37: -4486722425824302245
+      zots_38: 4036943840479352101
+      zots_39: 4937610133678039070
+      zots_4: 621658060516908532
+      zots_40: -15537346019356367
+      zots_41: -7927037586092515491
+      zots_42: -1913778570687502808
+      zots_43: -8212640585724460654
+      zots_44: -5744201002010312315
+      zots_45: -5134587176428405507
+      zots_46: -8362826633854004808
+      zots_47: -4140481104203829699
+      zots_48: 2468086848991378432
+      zots_49: -8730815939903318713
+      zots_5: 5504987076258147488
+      zots_50: 2621685423086530335
+      zots_51: -3354061504093853755
+      zots_52: -6470847056125264254
+      zots_53: -7087674852417149204
+      zots_54: -6587882968935182001
+      zots_55: -1044585285953497669
+      zots_56: 3013149450066383270
+      zots_57: -1229093992653534062
+      zots_58: 2478216202651175254
+      zots_59: 5650545534056127682
+      zots_6: 2096050681052030714
+      zots_60: 7289303593454948955
+      zots_61: -7700493067150182507
+      zots_62: 1253897710507442745
+      zots_63: 6488804604740640999
+      zots_64: -5081727955051778639
+      zots_65: 3931197774443259440
+      zots_66: -4353119040785438405
+      zots_67: -1083387500969337667
+      zots_68: -3931728408111371515
+      zots_69: 3949356116728963153
+      zots_7: -7204455966971983977
+      zots_70: 5236409988152956874
+      zots_71: -722306557522263596
+      zots_72: 7535017776629143634
+      zots_73: 8189955393114872190
+      zots_74: -4377276681439684307
+      zots_75: -8359502502464279494
+      zots_76: 8723355849581879151
+      zots_77: 4482164035291924181
+      zots_78: -8357837803801132763
+      zots_79: 5110800412283981006
+      zots_8: -6103637126470959217
+      zots_80: 6319748601351577194
+      zots_81: 7785069791656459307
+      zots_82: 3347381074584494524
+      zots_83: -8278388714922415448
+      zots_84: 6696592729279356181
+      zots_85: -503847240080575868
+      zots_86: 4437799428460869488
+      zots_87: -186011564009679689
+      zots_88: 3585606493003525199
+      zots_89: -4099821212480298169
+      zots_9: 7644015613552276611
+      zots_90: 3868295213321169949
+      zots_91: 4363160393629796844
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

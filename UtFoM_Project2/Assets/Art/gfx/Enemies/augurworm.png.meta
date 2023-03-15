@@ -171,7 +171,7 @@ TextureImporter:
       213: -5346680379387584604
     second: augurworm_55
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -192,6 +192,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -201,8 +202,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -230,6 +231,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -245,6 +247,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1444,6 +1470,63 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      augurworm_0: -1253154739072267568
+      augurworm_1: 8019865396030009071
+      augurworm_10: 5326615829476979797
+      augurworm_11: 7569355421005103852
+      augurworm_12: -5548082624216260127
+      augurworm_13: 3366877298132926137
+      augurworm_14: 8846753060361737659
+      augurworm_15: 6955486113102327130
+      augurworm_16: -8867634980386286121
+      augurworm_17: 2197403649612436606
+      augurworm_18: 2374522238001780803
+      augurworm_19: -545965843786255084
+      augurworm_2: 3418554193045452856
+      augurworm_20: -6025065077167489880
+      augurworm_21: -633451582251319182
+      augurworm_22: 1902322714352302850
+      augurworm_23: 6999507450123435820
+      augurworm_24: -140571413708906734
+      augurworm_25: -509979655676767269
+      augurworm_26: 459370696202431469
+      augurworm_27: -2781693055386820995
+      augurworm_28: -5691874877581621070
+      augurworm_29: -232881602833582950
+      augurworm_3: 2321025371903041468
+      augurworm_30: -671901032907172495
+      augurworm_31: 4070121748591648626
+      augurworm_32: 3736768799861568213
+      augurworm_33: 7105953366844917447
+      augurworm_34: 2181055755876060522
+      augurworm_35: 5912761228975840348
+      augurworm_36: 5044026632543061486
+      augurworm_37: -138709729176950979
+      augurworm_38: -4744086371824961161
+      augurworm_39: 1074254550121886952
+      augurworm_4: -2703236438243597843
+      augurworm_40: -6173130802120303528
+      augurworm_41: -4254609813557527873
+      augurworm_42: -7035201362525872319
+      augurworm_43: 5675001797440593497
+      augurworm_44: -7710350520063984570
+      augurworm_45: 130099924060168978
+      augurworm_46: -7141455328568161871
+      augurworm_47: 1110597162310706891
+      augurworm_48: -5593718078648835153
+      augurworm_49: -7177774222236441510
+      augurworm_5: -2820922421491155746
+      augurworm_50: 1467081458609327017
+      augurworm_51: -8682935750340083057
+      augurworm_52: -7692043464049393104
+      augurworm_53: -5177349823472531812
+      augurworm_54: -7299441116724313517
+      augurworm_55: -5346680379387584604
+      augurworm_6: -3130596741406997890
+      augurworm_7: -3157930504385579166
+      augurworm_8: -763251243872458949
+      augurworm_9: -4978217060987369992
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

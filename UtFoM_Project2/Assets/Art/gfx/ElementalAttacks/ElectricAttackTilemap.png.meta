@@ -147,7 +147,7 @@ TextureImporter:
       213: -1338095268704968657
     second: ElectricAttackTilemap_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -168,6 +168,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -177,8 +178,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -206,6 +207,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -233,6 +235,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1264,6 +1290,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ElectricAttackTilemap_0: 137480729977905061
+      ElectricAttackTilemap_1: -5977321367326011461
+      ElectricAttackTilemap_10: -8307578227985872127
+      ElectricAttackTilemap_11: 6864774250178985528
+      ElectricAttackTilemap_12: 4579961486694961310
+      ElectricAttackTilemap_13: -4141218453857254537
+      ElectricAttackTilemap_14: 1591895764080768718
+      ElectricAttackTilemap_15: -7725407472809873042
+      ElectricAttackTilemap_16: 8960128329297983864
+      ElectricAttackTilemap_17: -841676635356047000
+      ElectricAttackTilemap_18: -3055336712944462982
+      ElectricAttackTilemap_19: -4179240219726703354
+      ElectricAttackTilemap_2: 843006370424997225
+      ElectricAttackTilemap_20: 7555801370247117563
+      ElectricAttackTilemap_21: 3587549877090806402
+      ElectricAttackTilemap_22: 7746913199218842170
+      ElectricAttackTilemap_23: 1375116509527409405
+      ElectricAttackTilemap_24: 7328247531919587665
+      ElectricAttackTilemap_25: -7966486165853577376
+      ElectricAttackTilemap_26: -4237528068681842305
+      ElectricAttackTilemap_27: -5331857487212810720
+      ElectricAttackTilemap_28: 6259335358899756135
+      ElectricAttackTilemap_29: 1818472545947296388
+      ElectricAttackTilemap_3: 1464810229134484016
+      ElectricAttackTilemap_30: -8169484570562161382
+      ElectricAttackTilemap_31: -6915018093127754001
+      ElectricAttackTilemap_32: -7199110219573307402
+      ElectricAttackTilemap_33: -660138083453653395
+      ElectricAttackTilemap_34: -4887088500130116331
+      ElectricAttackTilemap_35: -785930604169048388
+      ElectricAttackTilemap_36: -5175465739050791437
+      ElectricAttackTilemap_37: 8735920226162464727
+      ElectricAttackTilemap_38: 4073755541523729698
+      ElectricAttackTilemap_39: -662243040451901317
+      ElectricAttackTilemap_4: -6732737081268175886
+      ElectricAttackTilemap_40: 5086573656074195523
+      ElectricAttackTilemap_41: 856686764245092263
+      ElectricAttackTilemap_42: -813067185304644574
+      ElectricAttackTilemap_43: 2694802278689371727
+      ElectricAttackTilemap_44: 6900557815617978710
+      ElectricAttackTilemap_45: 7484740610838040987
+      ElectricAttackTilemap_46: 4280064346877056100
+      ElectricAttackTilemap_47: -1338095268704968657
+      ElectricAttackTilemap_5: 6906535033936594436
+      ElectricAttackTilemap_6: -4765417107676660136
+      ElectricAttackTilemap_7: -4095865191046596042
+      ElectricAttackTilemap_8: -3229950796740285078
+      ElectricAttackTilemap_9: 1114049843123922627
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

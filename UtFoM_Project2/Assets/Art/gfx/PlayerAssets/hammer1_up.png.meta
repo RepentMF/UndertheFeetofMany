@@ -135,7 +135,7 @@ TextureImporter:
       213: -7580990576175227274
     second: hammer1_up_43
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -156,6 +156,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -165,8 +166,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -194,6 +195,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -209,6 +211,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1156,6 +1182,51 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      hammer1_up_0: 6745872572986073155
+      hammer1_up_1: -5422581207510290330
+      hammer1_up_10: -1585207100704114518
+      hammer1_up_11: 5769705772968077984
+      hammer1_up_12: -4448596325758880785
+      hammer1_up_13: -6430890982842076747
+      hammer1_up_14: -5175473293620460349
+      hammer1_up_15: 7891009435112996292
+      hammer1_up_16: 9172313707327454836
+      hammer1_up_17: -2279280126787728561
+      hammer1_up_18: 9085663506454976865
+      hammer1_up_19: 7350067563853734734
+      hammer1_up_2: 1803102627756232659
+      hammer1_up_20: -5089946317653486448
+      hammer1_up_21: 1411027300514423084
+      hammer1_up_22: -1438969040923180980
+      hammer1_up_23: -1015659748519953852
+      hammer1_up_24: -6508303987416891674
+      hammer1_up_25: -6494219822653911567
+      hammer1_up_26: -6143728385520631562
+      hammer1_up_27: 7914170250010544788
+      hammer1_up_28: 2913633748757715556
+      hammer1_up_29: -1347791087900601123
+      hammer1_up_3: -8574825358075257003
+      hammer1_up_30: -595401036483338473
+      hammer1_up_31: 1581162598583070592
+      hammer1_up_32: -2793192507352483692
+      hammer1_up_33: -1517212583729068915
+      hammer1_up_34: -5670252305508217487
+      hammer1_up_35: 3533949385686768122
+      hammer1_up_36: 138975687100925556
+      hammer1_up_37: -3006585463344679917
+      hammer1_up_38: -4202966111407822806
+      hammer1_up_39: 4457728397199915238
+      hammer1_up_4: -2268327408113722304
+      hammer1_up_40: 4014540011720573719
+      hammer1_up_41: -8860026111094199910
+      hammer1_up_42: -3334616493871949431
+      hammer1_up_43: -7580990576175227274
+      hammer1_up_5: -8965724715653033206
+      hammer1_up_6: 4828160634897186554
+      hammer1_up_7: -6265154759363924145
+      hammer1_up_8: -2312608143512068563
+      hammer1_up_9: -125004880747916167
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

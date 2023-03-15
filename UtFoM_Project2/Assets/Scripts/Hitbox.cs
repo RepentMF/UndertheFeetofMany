@@ -12,6 +12,7 @@ public class Hitbox : MonoBehaviour
     [SerializeField] private Vector2 Velocity = new Vector2(-1.0f, -1.0f); // Defaulted this way to handle knife logic; this controls speed of movement during hit
     [SerializeField] private float StaggerAmount = 0.0f;
     [SerializeField] private ActionState StateToInflict = ActionState.None;
+    [SerializeField] public int ID;
     public List<StatusEffect> StatusesToInflict;
 
 
@@ -56,8 +57,11 @@ public class Hitbox : MonoBehaviour
                     {
                         Vector3 tempPosition = collider.transform.position;
                         tempPosition.y -= .1f;
-				        Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().ParticleSystemScript, tempPosition, Quaternion.identity);
-                    	Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().VFXSystemScript, tempPosition, Quaternion.identity);
+                        if (ID == 1)
+                        {
+				            Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().ParticleSystemScript, tempPosition, Quaternion.identity);
+                    	    Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().VFXSystemScript, tempPosition, Quaternion.identity);
+                        }
                     }
                 }
             }

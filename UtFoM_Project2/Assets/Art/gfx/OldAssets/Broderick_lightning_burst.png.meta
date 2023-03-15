@@ -219,7 +219,7 @@ TextureImporter:
       213: 572694081883998621
     second: Broderick_lightning_burst_71
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -240,6 +240,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -249,8 +250,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -278,6 +279,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -293,6 +295,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1828,6 +1854,79 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Broderick_lightning_burst_0: -3351982037922139951
+      Broderick_lightning_burst_1: 7328238200593033681
+      Broderick_lightning_burst_10: -8799886227348709960
+      Broderick_lightning_burst_11: -8042581017329395205
+      Broderick_lightning_burst_12: -185851030028978640
+      Broderick_lightning_burst_13: 2769847285262817666
+      Broderick_lightning_burst_14: -3237216027399386863
+      Broderick_lightning_burst_15: 7217547220449460871
+      Broderick_lightning_burst_16: 8386803611632112034
+      Broderick_lightning_burst_17: 7126111794978563764
+      Broderick_lightning_burst_18: 4831355289781652529
+      Broderick_lightning_burst_19: 5937617310523164548
+      Broderick_lightning_burst_2: 997358291389396702
+      Broderick_lightning_burst_20: 7491654609875755455
+      Broderick_lightning_burst_21: 2540536452165766682
+      Broderick_lightning_burst_22: 2088656855899658402
+      Broderick_lightning_burst_23: -7648015976380528472
+      Broderick_lightning_burst_24: 1061036993105804141
+      Broderick_lightning_burst_25: -2089415025071912674
+      Broderick_lightning_burst_26: -3709170839670441845
+      Broderick_lightning_burst_27: -6278710612159758505
+      Broderick_lightning_burst_28: 9090693531756582510
+      Broderick_lightning_burst_29: -1731342077516283106
+      Broderick_lightning_burst_3: 288675911699077494
+      Broderick_lightning_burst_30: -2884512812931281916
+      Broderick_lightning_burst_31: 8488991187667380627
+      Broderick_lightning_burst_32: -6030948403831577342
+      Broderick_lightning_burst_33: 8771208999867812389
+      Broderick_lightning_burst_34: 1537494896123596292
+      Broderick_lightning_burst_35: 8917694425198702225
+      Broderick_lightning_burst_36: -5211999608723323054
+      Broderick_lightning_burst_37: -5756705608246333757
+      Broderick_lightning_burst_38: -879444279406648748
+      Broderick_lightning_burst_39: 4669841765217738958
+      Broderick_lightning_burst_4: 253573663386717990
+      Broderick_lightning_burst_40: 236755122558413005
+      Broderick_lightning_burst_41: -6853997472227594623
+      Broderick_lightning_burst_42: 2692928676352496126
+      Broderick_lightning_burst_43: 3123972792567760624
+      Broderick_lightning_burst_44: 3753354688770631455
+      Broderick_lightning_burst_45: -409712014280835669
+      Broderick_lightning_burst_46: -6314310959798525413
+      Broderick_lightning_burst_47: -3142872741580079383
+      Broderick_lightning_burst_48: 5731423048122617618
+      Broderick_lightning_burst_49: -3976722858754968764
+      Broderick_lightning_burst_5: -7514243930815539041
+      Broderick_lightning_burst_50: -7009223341351355184
+      Broderick_lightning_burst_51: -272160096096204584
+      Broderick_lightning_burst_52: -5743390395175388156
+      Broderick_lightning_burst_53: -7273331514636015526
+      Broderick_lightning_burst_54: -4639028874067518906
+      Broderick_lightning_burst_55: -2887180588944740676
+      Broderick_lightning_burst_56: 6072580863934401594
+      Broderick_lightning_burst_57: 1521645205382312738
+      Broderick_lightning_burst_58: -6949307448860288743
+      Broderick_lightning_burst_59: 6928954557281229270
+      Broderick_lightning_burst_6: 6528733103850621477
+      Broderick_lightning_burst_60: 4791139931265726414
+      Broderick_lightning_burst_61: -5355440640835077448
+      Broderick_lightning_burst_62: 65859439276807713
+      Broderick_lightning_burst_63: -5822941692334347026
+      Broderick_lightning_burst_64: 8983029001814537718
+      Broderick_lightning_burst_65: -368946876741175576
+      Broderick_lightning_burst_66: -9019887328862500677
+      Broderick_lightning_burst_67: 5144364740966189689
+      Broderick_lightning_burst_68: 5420596337958350655
+      Broderick_lightning_burst_69: 9013991432717762504
+      Broderick_lightning_burst_7: 6851885730918670949
+      Broderick_lightning_burst_70: -2731681596450600039
+      Broderick_lightning_burst_71: 572694081883998621
+      Broderick_lightning_burst_8: 7814071367150315307
+      Broderick_lightning_burst_9: -1569775802240859652
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -99,7 +99,7 @@ TextureImporter:
       213: -2373034259707647458
     second: zots_shriek_31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -120,6 +120,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -129,8 +130,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -158,6 +159,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -173,6 +175,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -868,6 +894,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      zots_shriek_0: 7537634458630628771
+      zots_shriek_1: -6680478210452217940
+      zots_shriek_10: -1517741287935303824
+      zots_shriek_11: -2946818395154604381
+      zots_shriek_12: -6093790404270728799
+      zots_shriek_13: -8971993775817642074
+      zots_shriek_14: -5711997684085061176
+      zots_shriek_15: -4391965190697120268
+      zots_shriek_16: -7745979045667031914
+      zots_shriek_17: -8008359455251581739
+      zots_shriek_18: 8883444909436183535
+      zots_shriek_19: 2690668709228345259
+      zots_shriek_2: 5279604393396399735
+      zots_shriek_20: -9060702026692432064
+      zots_shriek_21: -6013475754115643994
+      zots_shriek_22: -2484263853310985756
+      zots_shriek_23: -3742128653154346012
+      zots_shriek_24: 6959821465514357383
+      zots_shriek_25: 4420717509261303122
+      zots_shriek_26: 4159128313955456065
+      zots_shriek_27: 4173712203763821150
+      zots_shriek_28: 5311629156554487645
+      zots_shriek_29: -4430452094056320656
+      zots_shriek_3: 7483326050874966014
+      zots_shriek_30: 563309580454180897
+      zots_shriek_31: -2373034259707647458
+      zots_shriek_4: -711875441024982388
+      zots_shriek_5: -263955686438746904
+      zots_shriek_6: -8883354008452384678
+      zots_shriek_7: -5389470900744150693
+      zots_shriek_8: 6217860244243921430
+      zots_shriek_9: -6841350717738938208
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

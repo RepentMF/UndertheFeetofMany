@@ -57,7 +57,7 @@ TextureImporter:
       213: -1359726772549391391
     second: item_holder_17
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -78,6 +78,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -87,8 +88,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -116,6 +117,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -131,6 +133,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -534,6 +560,25 @@ TextureImporter:
     secondaryTextures:
     - texture: {fileID: 2800000, guid: 4b239fc571e73204492cfbab42475dbe, type: 3}
       name: _Emission
+    nameFileIdTable:
+      item_holder_0: -6383615982371929892
+      item_holder_1: 2161998847209283038
+      item_holder_10: -8313986692804853130
+      item_holder_11: 8055168333691471754
+      item_holder_12: -2027498993358051863
+      item_holder_13: 3750328241259782564
+      item_holder_14: -6874223944606563523
+      item_holder_15: 20199794151928923
+      item_holder_16: 6349736405434237123
+      item_holder_17: -1359726772549391391
+      item_holder_2: 3015641449658138622
+      item_holder_3: -4308804983602798707
+      item_holder_4: 465625315162889304
+      item_holder_5: 7097433992794156261
+      item_holder_6: 3000696153878756389
+      item_holder_7: -7638738936969319913
+      item_holder_8: -4824420560708734682
+      item_holder_9: 1918457510649017912
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -465,7 +465,7 @@ TextureImporter:
       213: 6357042208031293456
     second: MC_Male2_hammer_153
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -486,6 +486,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -495,8 +496,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -524,6 +525,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -539,6 +541,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -3796,6 +3822,161 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      MC_Male2_hammer_0: 4437600891551501745
+      MC_Male2_hammer_1: -8422036669439481588
+      MC_Male2_hammer_10: -8083167214906279583
+      MC_Male2_hammer_100: -7158861115864957593
+      MC_Male2_hammer_101: -7144455983610838631
+      MC_Male2_hammer_102: -2571943438189215116
+      MC_Male2_hammer_103: 5274259225662641251
+      MC_Male2_hammer_104: -3506199678175345400
+      MC_Male2_hammer_105: -53260132001050189
+      MC_Male2_hammer_106: -513179860653301515
+      MC_Male2_hammer_107: -7243715571754666128
+      MC_Male2_hammer_108: 2414946932924485632
+      MC_Male2_hammer_109: -5620499218516441225
+      MC_Male2_hammer_11: -6065856726477357143
+      MC_Male2_hammer_110: 6050548651905533741
+      MC_Male2_hammer_111: 5333158288223407167
+      MC_Male2_hammer_112: 1446045149867849556
+      MC_Male2_hammer_113: 1217262868588499401
+      MC_Male2_hammer_114: -8249795747548472126
+      MC_Male2_hammer_115: -6302197141090386533
+      MC_Male2_hammer_116: -6925109516454155869
+      MC_Male2_hammer_117: 3136203578883265144
+      MC_Male2_hammer_118: 2164293200851319423
+      MC_Male2_hammer_119: -316477243138606360
+      MC_Male2_hammer_12: 8609935188683138127
+      MC_Male2_hammer_120: 423467543571216291
+      MC_Male2_hammer_121: -3869412102090071281
+      MC_Male2_hammer_122: 474219982702363225
+      MC_Male2_hammer_123: -3861753980506808646
+      MC_Male2_hammer_124: 3054700440866095472
+      MC_Male2_hammer_125: -5732805761396060568
+      MC_Male2_hammer_126: 4312998519742056999
+      MC_Male2_hammer_127: -2319591073404378840
+      MC_Male2_hammer_128: 2004498136024255861
+      MC_Male2_hammer_129: -3695311285282508964
+      MC_Male2_hammer_13: 1446398808970708934
+      MC_Male2_hammer_130: -4708009732613104852
+      MC_Male2_hammer_131: -8736122194466031216
+      MC_Male2_hammer_132: -8885916461809910283
+      MC_Male2_hammer_133: 8808743609516717631
+      MC_Male2_hammer_134: -3573798188837098230
+      MC_Male2_hammer_135: -973645764294693186
+      MC_Male2_hammer_136: -7007975199461029415
+      MC_Male2_hammer_137: -4845121464322524936
+      MC_Male2_hammer_138: -4048215478678266268
+      MC_Male2_hammer_139: 7892200941175822314
+      MC_Male2_hammer_14: -5555194737525258020
+      MC_Male2_hammer_140: -4048563770962293344
+      MC_Male2_hammer_141: 7934803690908138110
+      MC_Male2_hammer_142: -8950658167766247717
+      MC_Male2_hammer_143: 1441666593804900836
+      MC_Male2_hammer_144: -7404008982814638040
+      MC_Male2_hammer_145: 7158601318492951538
+      MC_Male2_hammer_146: -6346564729422255369
+      MC_Male2_hammer_147: -4790571617036852715
+      MC_Male2_hammer_148: -8912072669995741538
+      MC_Male2_hammer_149: -1933601029601814526
+      MC_Male2_hammer_15: 8059725804402203852
+      MC_Male2_hammer_150: 5415441091365781186
+      MC_Male2_hammer_151: -1750271980030343225
+      MC_Male2_hammer_152: -8479417001065813573
+      MC_Male2_hammer_153: 6357042208031293456
+      MC_Male2_hammer_16: -5274659354304455700
+      MC_Male2_hammer_17: -6744595425552914893
+      MC_Male2_hammer_18: -7017206710160620265
+      MC_Male2_hammer_19: 4457526673121378900
+      MC_Male2_hammer_2: 5774204184317991092
+      MC_Male2_hammer_20: -7830102039852730510
+      MC_Male2_hammer_21: -198494729088129300
+      MC_Male2_hammer_22: 4120765614694010762
+      MC_Male2_hammer_23: 1638481135874176388
+      MC_Male2_hammer_24: 2452515348735865063
+      MC_Male2_hammer_25: -4871325398303275672
+      MC_Male2_hammer_26: -932527911075463717
+      MC_Male2_hammer_27: -663484042729483278
+      MC_Male2_hammer_28: -144731253828949015
+      MC_Male2_hammer_29: -7746081412997197521
+      MC_Male2_hammer_3: 5480412705450943659
+      MC_Male2_hammer_30: 4342395860973551513
+      MC_Male2_hammer_31: 5340725871951911557
+      MC_Male2_hammer_32: -5511955520079713704
+      MC_Male2_hammer_33: 4183500392019364847
+      MC_Male2_hammer_34: -5174070373207013139
+      MC_Male2_hammer_35: -4429625460859665301
+      MC_Male2_hammer_36: 7798058700380717855
+      MC_Male2_hammer_37: 874211319929933318
+      MC_Male2_hammer_38: 2119070712212646819
+      MC_Male2_hammer_39: 3892762071677373319
+      MC_Male2_hammer_4: 7968791434023264859
+      MC_Male2_hammer_40: 4616218110810764658
+      MC_Male2_hammer_41: -8731931999783053156
+      MC_Male2_hammer_42: -5204672316021670977
+      MC_Male2_hammer_43: 2148956224375258710
+      MC_Male2_hammer_44: -5112463408233411415
+      MC_Male2_hammer_45: -1238477398010273500
+      MC_Male2_hammer_46: -3647431845650369772
+      MC_Male2_hammer_47: 3261511160891052881
+      MC_Male2_hammer_48: 938429455554484693
+      MC_Male2_hammer_49: 6960661450079558005
+      MC_Male2_hammer_5: -8946430918445491128
+      MC_Male2_hammer_50: -4317132172597891773
+      MC_Male2_hammer_51: 7397276471998357041
+      MC_Male2_hammer_52: 802377132472508584
+      MC_Male2_hammer_53: -7146481156666402217
+      MC_Male2_hammer_54: -3205515532215565760
+      MC_Male2_hammer_55: -6636874748742458704
+      MC_Male2_hammer_56: 1532159862504173101
+      MC_Male2_hammer_57: -11744782191041967
+      MC_Male2_hammer_58: 189521030967841948
+      MC_Male2_hammer_59: 4807445883763211231
+      MC_Male2_hammer_6: 3869222633097066736
+      MC_Male2_hammer_60: -4862018452375382847
+      MC_Male2_hammer_61: -4793723057347230293
+      MC_Male2_hammer_62: 5271955759352603297
+      MC_Male2_hammer_63: -2493143410577676671
+      MC_Male2_hammer_64: -2860864946004153747
+      MC_Male2_hammer_65: 4170869799928715392
+      MC_Male2_hammer_66: -8688129391356692540
+      MC_Male2_hammer_67: -4244992939030290720
+      MC_Male2_hammer_68: -1585708111722260474
+      MC_Male2_hammer_69: -3639682229139115110
+      MC_Male2_hammer_7: 4244279524747260708
+      MC_Male2_hammer_70: 3853215777980629506
+      MC_Male2_hammer_71: -6388717338582992030
+      MC_Male2_hammer_72: 4220247604196043533
+      MC_Male2_hammer_73: 759549873801149356
+      MC_Male2_hammer_74: 8112014033115183602
+      MC_Male2_hammer_75: -7465228409254207233
+      MC_Male2_hammer_76: -4805257974420027205
+      MC_Male2_hammer_77: 426874019837165594
+      MC_Male2_hammer_78: -6484320063481155240
+      MC_Male2_hammer_79: -8000786184809710967
+      MC_Male2_hammer_8: -6614764929271543954
+      MC_Male2_hammer_80: 6353265903549559175
+      MC_Male2_hammer_81: -8892285374539351688
+      MC_Male2_hammer_82: 3087310807814537747
+      MC_Male2_hammer_83: -2736193273466627142
+      MC_Male2_hammer_84: -9150780860614290678
+      MC_Male2_hammer_85: -6219354559430430598
+      MC_Male2_hammer_86: -8287365095183177858
+      MC_Male2_hammer_87: 7630522569093897678
+      MC_Male2_hammer_88: -359782262214869740
+      MC_Male2_hammer_89: -6124672708561542732
+      MC_Male2_hammer_9: 4160732124141396832
+      MC_Male2_hammer_90: -5044546100252580873
+      MC_Male2_hammer_91: -5832279768070938941
+      MC_Male2_hammer_92: -2442689938841018872
+      MC_Male2_hammer_93: 6343869663962462748
+      MC_Male2_hammer_94: -7977959474954063619
+      MC_Male2_hammer_95: 1605102530094341416
+      MC_Male2_hammer_96: -8046433660304297415
+      MC_Male2_hammer_97: -4641832665535523426
+      MC_Male2_hammer_98: -649032142205459841
+      MC_Male2_hammer_99: -3903313529223321668
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -111,7 +111,7 @@ TextureImporter:
       213: 3801582822654333462
     second: Elisia_35
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -132,6 +132,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -141,8 +142,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -170,6 +171,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -185,6 +187,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -964,6 +990,43 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Elisia_0: 2290033783048603699
+      Elisia_1: -5515494082856846531
+      Elisia_10: -3365704062550211661
+      Elisia_11: 6616169141183563699
+      Elisia_12: 1387525039605330695
+      Elisia_13: -7844959299355328247
+      Elisia_14: 8704428041585080789
+      Elisia_15: 6924341283213278613
+      Elisia_16: -2160599759680532580
+      Elisia_17: 8883314326181263115
+      Elisia_18: -5310310929678549348
+      Elisia_19: 2732557134471679252
+      Elisia_2: 5085224095640976772
+      Elisia_20: -6666779006554693987
+      Elisia_21: 946597684844300199
+      Elisia_22: -4549442704451294828
+      Elisia_23: -1028743164759658470
+      Elisia_24: -3695050649466235735
+      Elisia_25: 7143212684214155261
+      Elisia_26: -783922390241220453
+      Elisia_27: -3386196902251723486
+      Elisia_28: -2720855297724602933
+      Elisia_29: -3465446469267011025
+      Elisia_3: -9121042393723433252
+      Elisia_30: 4347691398127212993
+      Elisia_31: -4325975542995441063
+      Elisia_32: 3427333933896004662
+      Elisia_33: -2619653099221929968
+      Elisia_34: 163484950925912219
+      Elisia_35: 3801582822654333462
+      Elisia_4: 7623431118334568363
+      Elisia_5: 5677191885226709566
+      Elisia_6: 7307481415367905382
+      Elisia_7: 8027804461670250781
+      Elisia_8: -4264474699155551289
+      Elisia_9: -5221433394168922898
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

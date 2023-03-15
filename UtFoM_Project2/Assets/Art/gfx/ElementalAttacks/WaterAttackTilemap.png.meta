@@ -147,7 +147,7 @@ TextureImporter:
       213: 6469162433903290976
     second: WaterAttackTilemap_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -168,6 +168,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -177,8 +178,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -206,6 +207,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -233,6 +235,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1264,6 +1290,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      WaterAttackTilemap_0: -3104513281824787221
+      WaterAttackTilemap_1: 5708812032759257904
+      WaterAttackTilemap_10: -7220911191010785042
+      WaterAttackTilemap_11: -5893661393028088172
+      WaterAttackTilemap_12: 4054641753409391369
+      WaterAttackTilemap_13: 3623145795226082304
+      WaterAttackTilemap_14: -4046368111773131309
+      WaterAttackTilemap_15: 7535194673345182652
+      WaterAttackTilemap_16: -6178964447835110649
+      WaterAttackTilemap_17: 6367926852357800468
+      WaterAttackTilemap_18: 5293106509398946983
+      WaterAttackTilemap_19: -4925726244538099848
+      WaterAttackTilemap_2: -7667619066726092783
+      WaterAttackTilemap_20: 9214349981591605427
+      WaterAttackTilemap_21: 2596284191626056722
+      WaterAttackTilemap_22: -5023987608713772747
+      WaterAttackTilemap_23: -4477436298646302991
+      WaterAttackTilemap_24: 8552322067485881395
+      WaterAttackTilemap_25: 1535647394163965705
+      WaterAttackTilemap_26: 4248736560119166075
+      WaterAttackTilemap_27: 6440698095851828489
+      WaterAttackTilemap_28: -1718850946266469419
+      WaterAttackTilemap_29: -9092094911335470613
+      WaterAttackTilemap_3: 6320459395147654860
+      WaterAttackTilemap_30: -1915156809152671589
+      WaterAttackTilemap_31: 904406514161867728
+      WaterAttackTilemap_32: -4262847569637913184
+      WaterAttackTilemap_33: -408035998914783474
+      WaterAttackTilemap_34: -7877371009621009560
+      WaterAttackTilemap_35: 851310468242128436
+      WaterAttackTilemap_36: 4846064680435830336
+      WaterAttackTilemap_37: -1452151039135992715
+      WaterAttackTilemap_38: -8810968096870290146
+      WaterAttackTilemap_39: -5017058300012818955
+      WaterAttackTilemap_4: 8091246628159851433
+      WaterAttackTilemap_40: 8681818263070668477
+      WaterAttackTilemap_41: 3932950315933306712
+      WaterAttackTilemap_42: 4792896041469856440
+      WaterAttackTilemap_43: -8388386744629614339
+      WaterAttackTilemap_44: -3364459785853050285
+      WaterAttackTilemap_45: -8746432476275225207
+      WaterAttackTilemap_46: 5766112608432250877
+      WaterAttackTilemap_47: 6469162433903290976
+      WaterAttackTilemap_5: -6023219195942949139
+      WaterAttackTilemap_6: 5778875903651872469
+      WaterAttackTilemap_7: 8334498591812892488
+      WaterAttackTilemap_8: 2314238028718769273
+      WaterAttackTilemap_9: 8848350737678547886
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

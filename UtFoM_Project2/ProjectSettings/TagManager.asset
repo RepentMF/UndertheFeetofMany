@@ -21,6 +21,7 @@ TagManager:
   - Interactable
   - DialogueBox
   - Dialogue
+  - Hitbox
   layers:
   - Default
   - TransparentFX

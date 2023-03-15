@@ -105,7 +105,7 @@ TextureImporter:
       213: 2970737654693709735
     second: Isabelle_33
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -126,6 +126,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -135,8 +136,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -164,6 +165,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -191,6 +193,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -928,6 +954,41 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Isabelle_0: -6273627173727803579
+      Isabelle_1: -7364959836031665712
+      Isabelle_10: 3810445037786586440
+      Isabelle_11: -3401146317615597037
+      Isabelle_12: -1330906454066839398
+      Isabelle_13: -1241937906977066748
+      Isabelle_14: -7594519477541437979
+      Isabelle_15: -8914525271834479681
+      Isabelle_16: -7491972392411111380
+      Isabelle_17: 246337414982350444
+      Isabelle_18: -8693485105463736541
+      Isabelle_19: -4478938667866868940
+      Isabelle_2: 8580779233252233879
+      Isabelle_20: 3087494272551554741
+      Isabelle_21: -4625003270427445108
+      Isabelle_22: 677189708225182384
+      Isabelle_23: 964896248654900569
+      Isabelle_24: -3067576778735618289
+      Isabelle_25: 4321152836543837639
+      Isabelle_26: -7787199544083689071
+      Isabelle_27: 9194798926566357878
+      Isabelle_28: 2736352137760567213
+      Isabelle_29: -7209512329088572644
+      Isabelle_3: 2938629865488421103
+      Isabelle_30: 3102329919502902954
+      Isabelle_31: -4743574537066519470
+      Isabelle_32: 5763896310258535073
+      Isabelle_33: 2970737654693709735
+      Isabelle_4: -5384400542876097098
+      Isabelle_5: -8179437798962604083
+      Isabelle_6: -6904731228033948323
+      Isabelle_7: 5756839976419732499
+      Isabelle_8: -2349268488636122949
+      Isabelle_9: 1397813769784497234
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

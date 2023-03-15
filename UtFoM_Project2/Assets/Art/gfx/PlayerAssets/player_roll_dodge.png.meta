@@ -351,7 +351,7 @@ TextureImporter:
       213: -1244871760956018271
     second: player_roll_dodge_115
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -372,6 +372,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -381,8 +382,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -410,6 +411,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -425,6 +427,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2464,6 +2490,103 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      player_roll_dodge_0: 880003422875823448
+      player_roll_dodge_1: -8161659568570391137
+      player_roll_dodge_10: -5859286119866503545
+      player_roll_dodge_11: -8490912638619449363
+      player_roll_dodge_12: 4525284819365302590
+      player_roll_dodge_13: -7146804671314596504
+      player_roll_dodge_14: 1807988339036442771
+      player_roll_dodge_15: 8269143549677085157
+      player_roll_dodge_16: -2666571847858870922
+      player_roll_dodge_17: 8151757894179517605
+      player_roll_dodge_18: -8706573048185001495
+      player_roll_dodge_19: -1572068308257682833
+      player_roll_dodge_2: 846005901040195278
+      player_roll_dodge_20: -7673585666159581703
+      player_roll_dodge_21: -8202213403342082220
+      player_roll_dodge_22: -8874263327448904428
+      player_roll_dodge_23: -1084927322692760484
+      player_roll_dodge_24: 4767845010980685330
+      player_roll_dodge_25: -3876259467047975430
+      player_roll_dodge_26: -5829632893724649177
+      player_roll_dodge_27: 1201964091599327693
+      player_roll_dodge_28: -2145331609478503211
+      player_roll_dodge_29: -2528685477100589114
+      player_roll_dodge_3: 8196808545929541604
+      player_roll_dodge_30: 8125503098757723644
+      player_roll_dodge_31: -7294522555942840618
+      player_roll_dodge_32: -7458925829889589568
+      player_roll_dodge_33: 3063639182537982174
+      player_roll_dodge_34: -8873538068446905794
+      player_roll_dodge_35: 2859788816378818758
+      player_roll_dodge_36: -1935072008404522025
+      player_roll_dodge_37: -3491670589379022205
+      player_roll_dodge_38: -7251731721497561787
+      player_roll_dodge_39: -6385523384472817062
+      player_roll_dodge_4: -4254679563781600155
+      player_roll_dodge_40: 1762382254299684317
+      player_roll_dodge_41: -6829850529526198154
+      player_roll_dodge_42: -1802537664747826761
+      player_roll_dodge_43: -1435478960377496815
+      player_roll_dodge_44: 7200493913242778175
+      player_roll_dodge_45: 8307717308026689274
+      player_roll_dodge_46: 2549792385749414093
+      player_roll_dodge_47: -1022932224566899864
+      player_roll_dodge_48: -8839782749683389252
+      player_roll_dodge_49: 9095217334520980251
+      player_roll_dodge_5: -3745361508789308320
+      player_roll_dodge_50: 2610079455653558573
+      player_roll_dodge_51: 6926178838038557297
+      player_roll_dodge_52: 3182343559304181120
+      player_roll_dodge_53: -7123934084975785968
+      player_roll_dodge_54: -5443649807874224980
+      player_roll_dodge_55: 523611080447392517
+      player_roll_dodge_56: -5547196904531186092
+      player_roll_dodge_57: 3613717905219095640
+      player_roll_dodge_58: 7454175294597799997
+      player_roll_dodge_59: -8055828192347764008
+      player_roll_dodge_6: -3181048102388846080
+      player_roll_dodge_60: -6830001400079771649
+      player_roll_dodge_61: 8493965174152877955
+      player_roll_dodge_62: 535092659061653904
+      player_roll_dodge_63: -5315323558266674970
+      player_roll_dodge_64: 3838049837450399054
+      player_roll_dodge_65: 7659413321890075067
+      player_roll_dodge_66: 8420121323665271598
+      player_roll_dodge_67: -3869532945200825794
+      player_roll_dodge_68: 7038830970947592096
+      player_roll_dodge_69: 4690557864571685356
+      player_roll_dodge_7: 1539269934647331946
+      player_roll_dodge_70: -6370056362122322626
+      player_roll_dodge_71: -6746157153888874242
+      player_roll_dodge_72: -317604270977162288
+      player_roll_dodge_73: 2482707379237760926
+      player_roll_dodge_74: -7560201699222623998
+      player_roll_dodge_75: -5158753894634194372
+      player_roll_dodge_76: -8565544954045936604
+      player_roll_dodge_77: 7096400444937862986
+      player_roll_dodge_78: -4405257408139711303
+      player_roll_dodge_79: -5016870188174248025
+      player_roll_dodge_8: 5847544741356197194
+      player_roll_dodge_80: 1797259590778205055
+      player_roll_dodge_81: 1957122072205363941
+      player_roll_dodge_82: -6787313246208281830
+      player_roll_dodge_83: -2896501349813254049
+      player_roll_dodge_84: -6155684068105461754
+      player_roll_dodge_85: -7904309068895817454
+      player_roll_dodge_86: 7790818353329889730
+      player_roll_dodge_87: -2929579229698181909
+      player_roll_dodge_88: -3031805074026844354
+      player_roll_dodge_89: 2579046034240135086
+      player_roll_dodge_9: -7424916650568046184
+      player_roll_dodge_90: 1349831073274284417
+      player_roll_dodge_91: -3975928797935814379
+      player_roll_dodge_92: 717395461260528810
+      player_roll_dodge_93: 1243460005775144989
+      player_roll_dodge_94: 4707345906995425185
+      player_roll_dodge_95: 6343019900509208242
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

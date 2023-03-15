@@ -594,7 +594,7 @@ TextureImporter:
       213: -6636791161590644394
     second: Broderick_196
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -615,6 +615,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -624,8 +625,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -653,6 +654,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -680,6 +682,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -4840,6 +4866,204 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Broderick_0: 8385574534874107594
+      Broderick_1: -2902697852608399783
+      Broderick_10: 5727157537733783421
+      Broderick_100: -5744097795190581938
+      Broderick_101: -912504557747232551
+      Broderick_102: -6774284360774251243
+      Broderick_103: 6701351045626343785
+      Broderick_104: -1647869751882094694
+      Broderick_105: 3709990776981326915
+      Broderick_106: 4397082602424414638
+      Broderick_107: -7486297591055895896
+      Broderick_108: -3963161730669268146
+      Broderick_109: -1398341848845923770
+      Broderick_11: -6954367981466796358
+      Broderick_110: -8696920716936669664
+      Broderick_111: 6087431155909298145
+      Broderick_112: 828414487981875096
+      Broderick_113: -3751324203641378851
+      Broderick_114: -13326084875215946
+      Broderick_115: -187178569254852343
+      Broderick_116: -6220856791642889979
+      Broderick_117: -146664600911051353
+      Broderick_118: 2171116552765901376
+      Broderick_119: 994622101059107340
+      Broderick_12: 4390622742404991047
+      Broderick_120: -6371627473617179690
+      Broderick_121: 1812844985350850084
+      Broderick_122: 5143799548413654394
+      Broderick_123: -5998737558599180125
+      Broderick_124: -354457408517862630
+      Broderick_125: 6029945721735866851
+      Broderick_126: -7183436964714442692
+      Broderick_127: -5295105240195507627
+      Broderick_128: -8457989264343719000
+      Broderick_129: 1683649644286487091
+      Broderick_13: -1371446203184988114
+      Broderick_130: 486884085458899754
+      Broderick_131: -8602681658898429864
+      Broderick_132: -4115153450884082141
+      Broderick_133: 2740023803086992224
+      Broderick_134: -2667392606790897885
+      Broderick_135: 4281837458904223658
+      Broderick_136: 1371123016355037313
+      Broderick_137: -6363975120189369854
+      Broderick_138: 5950022581590661012
+      Broderick_139: 8518727671812124205
+      Broderick_14: 7909496413248162228
+      Broderick_140: -6552379252365522062
+      Broderick_141: -6756484742113516825
+      Broderick_142: 8819442858927081828
+      Broderick_143: -2676541330897931074
+      Broderick_144: -925578586584083877
+      Broderick_145: -3132825825567772331
+      Broderick_146: -7063735131729651890
+      Broderick_147: 7063063777538486076
+      Broderick_148: 5339085318858145872
+      Broderick_149: 7586714236007666262
+      Broderick_15: 5804732397254196613
+      Broderick_150: 4590585910008589857
+      Broderick_151: 4210463063975993657
+      Broderick_152: 270829159613156957
+      Broderick_153: -2980261623028043574
+      Broderick_154: -7905702448274794761
+      Broderick_155: 940302940279026333
+      Broderick_156: -6949831498960197208
+      Broderick_157: 4294410828602305647
+      Broderick_158: 514545259004208840
+      Broderick_159: 5582704957422215727
+      Broderick_16: -5987781119084272761
+      Broderick_160: -4180201223004350822
+      Broderick_161: 2899573057641827984
+      Broderick_162: -8897794034911675934
+      Broderick_163: -2405818296359403876
+      Broderick_164: 635141358912333427
+      Broderick_165: -6347614754734856918
+      Broderick_166: 2447643598388677609
+      Broderick_167: -2583306066902102452
+      Broderick_168: 1520238946105622231
+      Broderick_169: 1576747659992559591
+      Broderick_17: 4627379978213525031
+      Broderick_170: 7489549805002670955
+      Broderick_171: -7900314076522116334
+      Broderick_172: 4339457869289485397
+      Broderick_173: -2626351070745251887
+      Broderick_174: -4286602965727143418
+      Broderick_175: -2871497589768087224
+      Broderick_176: 151113897700537986
+      Broderick_177: -758371158583705220
+      Broderick_178: -4454240665006235410
+      Broderick_179: 5807886537287873774
+      Broderick_18: 7821486643166774614
+      Broderick_180: -3457137428011350859
+      Broderick_181: 5084666453108157478
+      Broderick_182: -5913143121059372048
+      Broderick_183: 8122817218467720007
+      Broderick_184: -5619526724745195254
+      Broderick_185: 5690296487646694412
+      Broderick_186: -7931682092147502011
+      Broderick_187: 800476250244792896
+      Broderick_188: -7753168802297375541
+      Broderick_189: -4667046368472789595
+      Broderick_19: 5591002392741865119
+      Broderick_190: 1696925244475098072
+      Broderick_191: -2690672135387272087
+      Broderick_192: 1323662267720977886
+      Broderick_193: -2287195921732215581
+      Broderick_194: 3142349296992937352
+      Broderick_195: -3149029556780280512
+      Broderick_196: -6636791161590644394
+      Broderick_2: 8632278030231843559
+      Broderick_20: -5422514841561440552
+      Broderick_21: 7900826038421144784
+      Broderick_22: 5436403493812267382
+      Broderick_23: 6723042454789260115
+      Broderick_24: -1854263499843214350
+      Broderick_25: -6263563703037705242
+      Broderick_26: 5151369180551819052
+      Broderick_27: -6888003429808004159
+      Broderick_28: -4602039420666993475
+      Broderick_29: 14273655202674532
+      Broderick_3: 1686670985947898623
+      Broderick_30: -5514353792971264342
+      Broderick_31: 6476259688398365212
+      Broderick_32: 6670272168953056109
+      Broderick_33: -349281446105035124
+      Broderick_34: -6895559236070217963
+      Broderick_35: -2933550531673820378
+      Broderick_36: 8335086395488143647
+      Broderick_37: -734061982390919341
+      Broderick_38: -214147219931146870
+      Broderick_39: -8144123899651423965
+      Broderick_4: -102436186410084975
+      Broderick_40: 1839524335981089741
+      Broderick_41: -1801229052372631061
+      Broderick_42: 2352032958288766519
+      Broderick_43: -4689201536403152586
+      Broderick_44: 877411640827067156
+      Broderick_45: -1636423433519691227
+      Broderick_46: -8762384048206593558
+      Broderick_47: 238056046286496941
+      Broderick_48: 2564565513165457979
+      Broderick_49: -8273203857708118927
+      Broderick_5: -7443649119798497232
+      Broderick_50: -7543243736957127546
+      Broderick_51: -5871157048317196771
+      Broderick_52: 5159959307711222943
+      Broderick_53: -9103751956190394049
+      Broderick_54: 8066434963579590597
+      Broderick_55: -8771265801143135937
+      Broderick_56: -7237137553424476556
+      Broderick_57: -5231438032435038616
+      Broderick_58: 2656963946575099659
+      Broderick_59: -3721317337040120827
+      Broderick_6: -7922065314779593169
+      Broderick_60: 6559685884105943948
+      Broderick_61: 2082281853901619824
+      Broderick_62: 4817428694744688632
+      Broderick_63: -7556165768935116777
+      Broderick_64: 2161099285111601543
+      Broderick_65: -1393257742783853753
+      Broderick_66: -3838643751248270072
+      Broderick_67: 5901539824217552088
+      Broderick_68: 6264523957564129226
+      Broderick_69: -8430750833725493308
+      Broderick_7: 1859477621970210486
+      Broderick_70: 3957344404494910092
+      Broderick_71: 3787255730489625500
+      Broderick_72: -3879886319919337919
+      Broderick_73: -8661215475469096443
+      Broderick_74: -3532924874553000367
+      Broderick_75: 7728940123604089806
+      Broderick_76: 8686361582923662773
+      Broderick_77: -8633425360700261980
+      Broderick_78: -79692485473050386
+      Broderick_79: 5320050797187969824
+      Broderick_8: -2540975848910928304
+      Broderick_80: 1237391650192940250
+      Broderick_81: -7697109498463223347
+      Broderick_82: 4120145127993582951
+      Broderick_83: -1431107597830966053
+      Broderick_84: 6790036380429697893
+      Broderick_85: 500572472957178321
+      Broderick_86: 4813465400709320655
+      Broderick_87: -9200436185432110704
+      Broderick_88: -3682947552439922919
+      Broderick_89: -2667434648024953157
+      Broderick_9: 372699720971938790
+      Broderick_90: 6330949119234442572
+      Broderick_91: 3391901091012607908
+      Broderick_92: 4394664930623814058
+      Broderick_93: -7599328647701971069
+      Broderick_94: -1191975929705015631
+      Broderick_95: 903775847676712720
+      Broderick_96: -4296397530069411888
+      Broderick_97: 3774584391629191176
+      Broderick_98: 6206591159580168078
+      Broderick_99: -2052788314618936007
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

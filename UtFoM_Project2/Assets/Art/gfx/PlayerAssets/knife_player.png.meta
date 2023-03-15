@@ -99,7 +99,7 @@ TextureImporter:
       213: -7375351229132080669
     second: knife_player_31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -120,6 +120,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -129,8 +130,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -158,6 +159,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -173,6 +175,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -868,6 +894,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      knife_player_0: 8174960552543474139
+      knife_player_1: -4009856102417783699
+      knife_player_10: -2511048058333631344
+      knife_player_11: -402095871770756264
+      knife_player_12: -3534203723246362575
+      knife_player_13: 3042617079932077597
+      knife_player_14: -8479144265623405357
+      knife_player_15: 1591175394160843597
+      knife_player_16: -2415312793710202456
+      knife_player_17: 7809422723469212326
+      knife_player_18: 7894840419181245629
+      knife_player_19: 8149152074463708651
+      knife_player_2: 8593937313421576773
+      knife_player_20: 8651531266267697566
+      knife_player_21: -675265632744433374
+      knife_player_22: 953259540655753048
+      knife_player_23: 8555951999057182225
+      knife_player_24: -5491801220665233662
+      knife_player_25: 207276568583568306
+      knife_player_26: 490551829490041725
+      knife_player_27: 5927025020411153208
+      knife_player_28: 782987893872085996
+      knife_player_29: 2904540838854473021
+      knife_player_3: -779393703090543115
+      knife_player_30: 5508613491287518121
+      knife_player_31: -7375351229132080669
+      knife_player_4: -3817493930496835037
+      knife_player_5: -6436777475723148947
+      knife_player_6: -353382723277624080
+      knife_player_7: -2840200433196666990
+      knife_player_8: -8708309586581906028
+      knife_player_9: -1938277548779356618
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

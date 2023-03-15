@@ -375,7 +375,7 @@ TextureImporter:
       213: -3342808049527232389
     second: MC_Male2_123
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -396,6 +396,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -405,8 +406,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -434,6 +435,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -449,6 +451,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -3076,6 +3102,131 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      MC_Male2_0: 8284859347849952574
+      MC_Male2_1: 4516985053343725556
+      MC_Male2_10: 6319014825211125339
+      MC_Male2_100: 6486155642483176757
+      MC_Male2_101: 1765580428204181802
+      MC_Male2_102: 6265348508609210824
+      MC_Male2_103: 2104172135913995491
+      MC_Male2_104: 4943276872767614044
+      MC_Male2_105: 3577472670848680794
+      MC_Male2_106: 7238202329521820567
+      MC_Male2_107: 392679664585072762
+      MC_Male2_108: -2461382409231983730
+      MC_Male2_109: 7526004305066418335
+      MC_Male2_11: 8283953054825165751
+      MC_Male2_110: -3512642894241631198
+      MC_Male2_111: 1108378980445821140
+      MC_Male2_112: -4877990839480251407
+      MC_Male2_113: -6226874977255095467
+      MC_Male2_114: -4792533558930659449
+      MC_Male2_115: -4833834878645718829
+      MC_Male2_116: -1886673004298322234
+      MC_Male2_117: -1960888373390179302
+      MC_Male2_118: 950262125628529356
+      MC_Male2_119: 4088364956418035740
+      MC_Male2_12: -5107915776363010363
+      MC_Male2_120: 4311909176217085504
+      MC_Male2_121: 5097414528555661002
+      MC_Male2_122: -589271709040798299
+      MC_Male2_123: -3342808049527232389
+      MC_Male2_13: -4412454970688553237
+      MC_Male2_14: 6627349651511086535
+      MC_Male2_15: -8496021224622360011
+      MC_Male2_16: -6014575137962011174
+      MC_Male2_17: -2459834553978244062
+      MC_Male2_18: 3324320032097313218
+      MC_Male2_19: -7254600374350519186
+      MC_Male2_2: -7157879304886101198
+      MC_Male2_20: -6078724373379458116
+      MC_Male2_21: -8869802986581731362
+      MC_Male2_22: -1190427575856140390
+      MC_Male2_23: -412222241666846853
+      MC_Male2_24: -2178471090246881625
+      MC_Male2_25: -7274613591505343809
+      MC_Male2_26: -4177783943777205499
+      MC_Male2_27: 1489707569622032289
+      MC_Male2_28: 198898353456054924
+      MC_Male2_29: 5393435095261748541
+      MC_Male2_3: -2180430155246587079
+      MC_Male2_30: -1627830823025393506
+      MC_Male2_31: -4858294329200505192
+      MC_Male2_32: -6672536971137722106
+      MC_Male2_33: -1102949421647382018
+      MC_Male2_34: 2062444502208055906
+      MC_Male2_35: -3641402397827936583
+      MC_Male2_36: 5859737946612607139
+      MC_Male2_37: 78530261125845613
+      MC_Male2_38: 3046797115352893677
+      MC_Male2_39: -5379318827117491359
+      MC_Male2_4: -4443215651041080148
+      MC_Male2_40: 3551816388001676526
+      MC_Male2_41: 7435104566040590194
+      MC_Male2_42: -5593689193939402058
+      MC_Male2_43: 8945042232269743740
+      MC_Male2_44: -3041467127492083578
+      MC_Male2_45: -5964751772702458169
+      MC_Male2_46: 1555826977252134101
+      MC_Male2_47: 1692283906546653854
+      MC_Male2_48: -350108634548683890
+      MC_Male2_49: 4469606780682882504
+      MC_Male2_5: -2117248157366747426
+      MC_Male2_50: -4197916993239829702
+      MC_Male2_51: 7580187042138586100
+      MC_Male2_52: 593667858748126799
+      MC_Male2_53: 7455164378766161376
+      MC_Male2_54: -4029143670843832319
+      MC_Male2_55: 5326216654625690339
+      MC_Male2_56: -5295118313795241514
+      MC_Male2_57: 3294205376926655618
+      MC_Male2_58: -4287528808071690325
+      MC_Male2_59: 1961246711410890102
+      MC_Male2_6: 7900719089126659891
+      MC_Male2_60: 5326928736180359564
+      MC_Male2_61: -8250615770041573525
+      MC_Male2_62: -316387446248024006
+      MC_Male2_63: -1148880148239079706
+      MC_Male2_64: -6767349175639600394
+      MC_Male2_65: 8264675042675625581
+      MC_Male2_66: -1203218799995099218
+      MC_Male2_67: -1518458640171085654
+      MC_Male2_68: 5882751485014376885
+      MC_Male2_69: 388322362736625022
+      MC_Male2_7: 2544410140080741681
+      MC_Male2_70: 7162927400370194954
+      MC_Male2_71: 7501017228615556306
+      MC_Male2_72: -273364847723830072
+      MC_Male2_73: 7689877582177227288
+      MC_Male2_74: -2746121827623720635
+      MC_Male2_75: 7379287551744450924
+      MC_Male2_76: -284495053566382881
+      MC_Male2_77: -2195167912959808768
+      MC_Male2_78: 7972250110267539256
+      MC_Male2_79: 4248543256679933461
+      MC_Male2_8: -4551793498518202267
+      MC_Male2_80: 441131002860442923
+      MC_Male2_81: -3079465430885623683
+      MC_Male2_82: -5830045905780555753
+      MC_Male2_83: 4550865260154510765
+      MC_Male2_84: 5229610486364806499
+      MC_Male2_85: 2288324285348237216
+      MC_Male2_86: 3421612808427925040
+      MC_Male2_87: 1144077093034070898
+      MC_Male2_88: -778014300921684230
+      MC_Male2_89: -3629961209737761944
+      MC_Male2_9: 5526428270518229277
+      MC_Male2_90: 2516234443764973361
+      MC_Male2_91: 4516672007509219088
+      MC_Male2_92: 2608357544967132532
+      MC_Male2_93: -5601755291484855584
+      MC_Male2_94: 6455278664283231255
+      MC_Male2_95: -376558005015430931
+      MC_Male2_96: 7978769414838910182
+      MC_Male2_97: 484970402040008272
+      MC_Male2_98: -2973633057531903101
+      MC_Male2_99: -2378463789247107529
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

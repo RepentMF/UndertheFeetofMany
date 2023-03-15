@@ -147,7 +147,7 @@ TextureImporter:
       213: -2751067485563185654
     second: LightAttackTilemap_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -168,6 +168,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -177,8 +178,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -206,6 +207,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -233,6 +235,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1264,6 +1290,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      LightAttackTilemap_0: 4954109488706533089
+      LightAttackTilemap_1: -2801457929593226719
+      LightAttackTilemap_10: 1096796891714316093
+      LightAttackTilemap_11: -2061818030050496476
+      LightAttackTilemap_12: 8880288225559123330
+      LightAttackTilemap_13: -1866560532947910163
+      LightAttackTilemap_14: -955612668996022389
+      LightAttackTilemap_15: -3303545669841114499
+      LightAttackTilemap_16: -5058089537035291493
+      LightAttackTilemap_17: -2868096793936021333
+      LightAttackTilemap_18: -8717370844400636959
+      LightAttackTilemap_19: -2200236150702963638
+      LightAttackTilemap_2: -3395405127324082785
+      LightAttackTilemap_20: -6332364935794480716
+      LightAttackTilemap_21: -2149719898700299894
+      LightAttackTilemap_22: 5705358135825879745
+      LightAttackTilemap_23: -395030972589768406
+      LightAttackTilemap_24: -5877183119532493026
+      LightAttackTilemap_25: -7572886199959550242
+      LightAttackTilemap_26: -20156228582950777
+      LightAttackTilemap_27: -5846988717615737278
+      LightAttackTilemap_28: 827914513771754389
+      LightAttackTilemap_29: 6761015831804905573
+      LightAttackTilemap_3: 1106492014002025950
+      LightAttackTilemap_30: -6639561725055926253
+      LightAttackTilemap_31: -3666454223126215218
+      LightAttackTilemap_32: -6193888579092643004
+      LightAttackTilemap_33: -7994723200399391430
+      LightAttackTilemap_34: 7443798976171676830
+      LightAttackTilemap_35: -7371181994765029681
+      LightAttackTilemap_36: 3323352894621159605
+      LightAttackTilemap_37: -6077318806643905282
+      LightAttackTilemap_38: -1187638888947432254
+      LightAttackTilemap_39: -3080029894064456319
+      LightAttackTilemap_4: -2081493890603131141
+      LightAttackTilemap_40: 2337791583525617284
+      LightAttackTilemap_41: 8037244742346111703
+      LightAttackTilemap_42: 707342845889234788
+      LightAttackTilemap_43: 2342069813473207662
+      LightAttackTilemap_44: -9180365837588060549
+      LightAttackTilemap_45: -4633349629124894284
+      LightAttackTilemap_46: -601557451499109775
+      LightAttackTilemap_47: -2751067485563185654
+      LightAttackTilemap_5: -2044247746640696575
+      LightAttackTilemap_6: 6422357971045415864
+      LightAttackTilemap_7: 8818644577224964472
+      LightAttackTilemap_8: 6868963488635393317
+      LightAttackTilemap_9: 728096204997244894
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

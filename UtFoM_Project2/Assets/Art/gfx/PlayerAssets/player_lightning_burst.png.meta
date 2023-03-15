@@ -147,7 +147,7 @@ TextureImporter:
       213: 5747238255968397837
     second: player_lightning_burst_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -168,6 +168,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -177,8 +178,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -206,6 +207,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -221,6 +223,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1252,6 +1278,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      player_lightning_burst_0: -7698984724918590131
+      player_lightning_burst_1: 6243485486061266018
+      player_lightning_burst_10: 7256571172638544433
+      player_lightning_burst_11: 1735388664928676022
+      player_lightning_burst_12: 3949199850380691579
+      player_lightning_burst_13: -3803047577093119641
+      player_lightning_burst_14: 2614106204453580517
+      player_lightning_burst_15: 1408644379005165230
+      player_lightning_burst_16: -5551307120805784928
+      player_lightning_burst_17: 6355201150241002914
+      player_lightning_burst_18: 2610346808086394749
+      player_lightning_burst_19: -1775816002438581793
+      player_lightning_burst_2: 3032501781830849517
+      player_lightning_burst_20: -4658773002162323019
+      player_lightning_burst_21: -9148599207016320045
+      player_lightning_burst_22: -3780233228560882347
+      player_lightning_burst_23: -1267242946390692013
+      player_lightning_burst_24: -8485671623407368884
+      player_lightning_burst_25: 9090909555190189783
+      player_lightning_burst_26: -1313151479670908918
+      player_lightning_burst_27: -1635760334270725326
+      player_lightning_burst_28: 446148910690173980
+      player_lightning_burst_29: 2344174185968708507
+      player_lightning_burst_3: 2212257249451123071
+      player_lightning_burst_30: -530342465726225726
+      player_lightning_burst_31: -6963294240005616939
+      player_lightning_burst_32: -5861131363625985722
+      player_lightning_burst_33: 4827340002605818400
+      player_lightning_burst_34: -855412234838873606
+      player_lightning_burst_35: -4121082959689129592
+      player_lightning_burst_36: -6056431038542832617
+      player_lightning_burst_37: -3161168794946323142
+      player_lightning_burst_38: -1981786521380757743
+      player_lightning_burst_39: 4996239100329751732
+      player_lightning_burst_4: -5542020445444776077
+      player_lightning_burst_40: 6602844155513945731
+      player_lightning_burst_41: -7850475641183389391
+      player_lightning_burst_42: 6324092072816727892
+      player_lightning_burst_43: 5435917004098278192
+      player_lightning_burst_44: 8317229444732098057
+      player_lightning_burst_45: -416011433687236922
+      player_lightning_burst_46: -6923154589555086985
+      player_lightning_burst_47: 5747238255968397837
+      player_lightning_burst_5: -8828807667905430606
+      player_lightning_burst_6: 9052800311427715177
+      player_lightning_burst_7: 7429181035805685337
+      player_lightning_burst_8: -1590050324138401737
+      player_lightning_burst_9: 6162850738694274905
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

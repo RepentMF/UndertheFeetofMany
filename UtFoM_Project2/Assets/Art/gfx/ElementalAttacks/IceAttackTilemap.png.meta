@@ -147,7 +147,7 @@ TextureImporter:
       213: 5710325225002713094
     second: IceAttackTilemap_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -168,6 +168,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -177,8 +178,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -206,6 +207,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -233,6 +235,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1264,6 +1290,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      IceAttackTilemap_0: -8064281393272987890
+      IceAttackTilemap_1: -7409355698704162177
+      IceAttackTilemap_10: 2284173355263648517
+      IceAttackTilemap_11: 5951949970546912959
+      IceAttackTilemap_12: 5023808389186843570
+      IceAttackTilemap_13: -9206616476027858411
+      IceAttackTilemap_14: 3385496393751462412
+      IceAttackTilemap_15: 7341351368734604181
+      IceAttackTilemap_16: 4619860586741494969
+      IceAttackTilemap_17: 1420753108805945414
+      IceAttackTilemap_18: 7941052265792462978
+      IceAttackTilemap_19: -6244944313713270635
+      IceAttackTilemap_2: 3372856328993172886
+      IceAttackTilemap_20: -3025846031222732916
+      IceAttackTilemap_21: 3576793637153400551
+      IceAttackTilemap_22: -4612795627299553344
+      IceAttackTilemap_23: 2367450872807502274
+      IceAttackTilemap_24: -9038765875735999292
+      IceAttackTilemap_25: 7639822629014975514
+      IceAttackTilemap_26: 1428597039211155557
+      IceAttackTilemap_27: -5604716385077473998
+      IceAttackTilemap_28: 727727065412489900
+      IceAttackTilemap_29: 8543507228997560074
+      IceAttackTilemap_3: 6168752779349537346
+      IceAttackTilemap_30: -4051098599913131510
+      IceAttackTilemap_31: 4283601122416653684
+      IceAttackTilemap_32: 3274341817804732354
+      IceAttackTilemap_33: -8132633348821034605
+      IceAttackTilemap_34: 1113270459918511585
+      IceAttackTilemap_35: -7628277569997436642
+      IceAttackTilemap_36: 8396788545510898059
+      IceAttackTilemap_37: -7113917751461159904
+      IceAttackTilemap_38: -3107348281144400961
+      IceAttackTilemap_39: -4825374025444623074
+      IceAttackTilemap_4: 9131388957305201430
+      IceAttackTilemap_40: 7058291169163324269
+      IceAttackTilemap_41: 1215292843028263060
+      IceAttackTilemap_42: 4754802819204137656
+      IceAttackTilemap_43: -3694845402720315816
+      IceAttackTilemap_44: 4177326076654278343
+      IceAttackTilemap_45: 2863034838313593635
+      IceAttackTilemap_46: -5772810151274872628
+      IceAttackTilemap_47: 5710325225002713094
+      IceAttackTilemap_5: -4977332460079386212
+      IceAttackTilemap_6: 1799003471067088356
+      IceAttackTilemap_7: 27445164220383905
+      IceAttackTilemap_8: 1565785252443440532
+      IceAttackTilemap_9: 6051670156028183088
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

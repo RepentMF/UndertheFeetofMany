@@ -147,7 +147,7 @@ TextureImporter:
       213: 2219110369557279925
     second: EarthAttackTilemap_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -168,6 +168,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -177,8 +178,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -206,6 +207,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -233,6 +235,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1264,6 +1290,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      EarthAttackTilemap_0: -1378113227335901509
+      EarthAttackTilemap_1: 138678726359603607
+      EarthAttackTilemap_10: 6021332831936780778
+      EarthAttackTilemap_11: -4745124879831231449
+      EarthAttackTilemap_12: -8135344172369064894
+      EarthAttackTilemap_13: 3758414526438624551
+      EarthAttackTilemap_14: -3333858615110202596
+      EarthAttackTilemap_15: 5427731609114091361
+      EarthAttackTilemap_16: 6844365538473745429
+      EarthAttackTilemap_17: 5310029396767758670
+      EarthAttackTilemap_18: 2734105200474189369
+      EarthAttackTilemap_19: -8152497829280514363
+      EarthAttackTilemap_2: -8717006429300231424
+      EarthAttackTilemap_20: 4208417924524616546
+      EarthAttackTilemap_21: -5066070080256797298
+      EarthAttackTilemap_22: 8914333693143459908
+      EarthAttackTilemap_23: -6792348458534192622
+      EarthAttackTilemap_24: 1780009763159734758
+      EarthAttackTilemap_25: 8203848088070341900
+      EarthAttackTilemap_26: 3648896236730448359
+      EarthAttackTilemap_27: 2750036585913541175
+      EarthAttackTilemap_28: -694059895403044085
+      EarthAttackTilemap_29: -8122960807864888454
+      EarthAttackTilemap_3: 8494541767674908745
+      EarthAttackTilemap_30: 2775885244406721127
+      EarthAttackTilemap_31: 8018757150581826704
+      EarthAttackTilemap_32: 6323134102266058513
+      EarthAttackTilemap_33: -4254560415102286771
+      EarthAttackTilemap_34: -287506886947599307
+      EarthAttackTilemap_35: -8650316491018661889
+      EarthAttackTilemap_36: -7441113199483320421
+      EarthAttackTilemap_37: 7151785600405589256
+      EarthAttackTilemap_38: -644947438807654966
+      EarthAttackTilemap_39: -5001586708978740155
+      EarthAttackTilemap_4: 3138694706793051674
+      EarthAttackTilemap_40: -1016638956478921711
+      EarthAttackTilemap_41: -3433461730961640485
+      EarthAttackTilemap_42: -4334412079298860040
+      EarthAttackTilemap_43: -374099392422441078
+      EarthAttackTilemap_44: -8374134372276394544
+      EarthAttackTilemap_45: -479327290989593484
+      EarthAttackTilemap_46: -8889354154410040272
+      EarthAttackTilemap_47: 2219110369557279925
+      EarthAttackTilemap_5: 3111130870633018314
+      EarthAttackTilemap_6: -6923908936679039422
+      EarthAttackTilemap_7: 86688803931716377
+      EarthAttackTilemap_8: 3492940115572553320
+      EarthAttackTilemap_9: -4029242743573805688
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

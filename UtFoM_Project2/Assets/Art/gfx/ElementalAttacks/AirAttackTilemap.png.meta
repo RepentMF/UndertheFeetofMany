@@ -147,7 +147,7 @@ TextureImporter:
       213: 5492850271709410999
     second: AirAttackTilemap_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -168,6 +168,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -177,8 +178,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -206,6 +207,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -233,6 +235,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1264,6 +1290,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      AirAttackTilemap_0: 1769678287763805047
+      AirAttackTilemap_1: 3720199366683407828
+      AirAttackTilemap_10: -8461489888248858
+      AirAttackTilemap_11: -5637434311617760220
+      AirAttackTilemap_12: -6609591442490984419
+      AirAttackTilemap_13: -266996256028290406
+      AirAttackTilemap_14: -2495847588312683650
+      AirAttackTilemap_15: 1784160504117475901
+      AirAttackTilemap_16: -3023190061720412508
+      AirAttackTilemap_17: -7166954933941286775
+      AirAttackTilemap_18: 3360576609808181189
+      AirAttackTilemap_19: 7133281132886090591
+      AirAttackTilemap_2: -5092321090005388138
+      AirAttackTilemap_20: 6250554851618103859
+      AirAttackTilemap_21: 9161543984480992499
+      AirAttackTilemap_22: 3866117195075577150
+      AirAttackTilemap_23: -6822706700775396908
+      AirAttackTilemap_24: -2007197620864453446
+      AirAttackTilemap_25: 4655937702084414278
+      AirAttackTilemap_26: 2404730411076608006
+      AirAttackTilemap_27: -8040458405557878193
+      AirAttackTilemap_28: 6021399918579115963
+      AirAttackTilemap_29: 8868892233611491791
+      AirAttackTilemap_3: -5980197745597564695
+      AirAttackTilemap_30: -2153576174777408919
+      AirAttackTilemap_31: 3257138013036298665
+      AirAttackTilemap_32: 3395365820588945350
+      AirAttackTilemap_33: 5516770936368393270
+      AirAttackTilemap_34: -2077628256409234302
+      AirAttackTilemap_35: 7440069286982739060
+      AirAttackTilemap_36: -1661563004811076703
+      AirAttackTilemap_37: -163818513466654798
+      AirAttackTilemap_38: 1128173614153548685
+      AirAttackTilemap_39: 2055655963694162051
+      AirAttackTilemap_4: 4145349917288122506
+      AirAttackTilemap_40: -2451023773482035911
+      AirAttackTilemap_41: -6872578948435203717
+      AirAttackTilemap_42: -2672905664106241115
+      AirAttackTilemap_43: 6349883316931122634
+      AirAttackTilemap_44: -375802295748548488
+      AirAttackTilemap_45: -7670086104982065412
+      AirAttackTilemap_46: 6624833644407364680
+      AirAttackTilemap_47: 5492850271709410999
+      AirAttackTilemap_5: -8904085057334974042
+      AirAttackTilemap_6: 1905369504198193549
+      AirAttackTilemap_7: -488822850567987623
+      AirAttackTilemap_8: 212163419137979570
+      AirAttackTilemap_9: 6620906564283979387
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

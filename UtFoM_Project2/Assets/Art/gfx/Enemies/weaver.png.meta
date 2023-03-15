@@ -123,7 +123,7 @@ TextureImporter:
       213: 5050625757148645488
     second: weaver_39
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -144,6 +144,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -153,8 +154,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -182,6 +183,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -197,6 +199,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1060,6 +1086,47 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      weaver_0: -2759260692752825074
+      weaver_1: -4955016044059739668
+      weaver_10: 1711421068029496897
+      weaver_11: 3430241137029690117
+      weaver_12: 3602966754891707729
+      weaver_13: -6135047720589301423
+      weaver_14: -4485358645641938697
+      weaver_15: -6360194850055812327
+      weaver_16: 3518288851260411775
+      weaver_17: -8089272785291647593
+      weaver_18: -1555151042019696908
+      weaver_19: 3809722855118827736
+      weaver_2: 405993060669262214
+      weaver_20: -1694535129482465501
+      weaver_21: -2354325747785423238
+      weaver_22: 1781853783832435346
+      weaver_23: 7386924932225659911
+      weaver_24: 1559386211577984429
+      weaver_25: -5757519144327278898
+      weaver_26: -6949668588037257023
+      weaver_27: -7160958440245860392
+      weaver_28: 6821791979430894789
+      weaver_29: -1195036411691618374
+      weaver_3: -1282013104532878405
+      weaver_30: -1288222498621965040
+      weaver_31: -4637558620990411651
+      weaver_32: 7203793122165313896
+      weaver_33: -3380283174193165398
+      weaver_34: -123675669693219545
+      weaver_35: 1342272909711685186
+      weaver_36: 109432020479460891
+      weaver_37: 1621396550469470477
+      weaver_38: 6503793723703982548
+      weaver_39: 5050625757148645488
+      weaver_4: 1318962996330383473
+      weaver_5: 5811899123744467830
+      weaver_6: 334324020104085235
+      weaver_7: -3724381380329257043
+      weaver_8: -3010067470107430147
+      weaver_9: -8816065247280291512
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

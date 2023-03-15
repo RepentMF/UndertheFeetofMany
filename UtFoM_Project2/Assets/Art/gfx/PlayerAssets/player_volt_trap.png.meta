@@ -147,7 +147,7 @@ TextureImporter:
       213: 943381295337640520
     second: player_volt_trap_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -168,6 +168,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -177,8 +178,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -206,6 +207,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -221,6 +223,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1252,6 +1278,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      player_volt_trap_0: 4172704333083150637
+      player_volt_trap_1: 9130936452883592937
+      player_volt_trap_10: -8241617865256999425
+      player_volt_trap_11: 7392312247307740555
+      player_volt_trap_12: -5047142746272692662
+      player_volt_trap_13: 8987073560838930601
+      player_volt_trap_14: -6007503228372751094
+      player_volt_trap_15: 6766357532237771873
+      player_volt_trap_16: -8281285801406690007
+      player_volt_trap_17: -5113182320388906696
+      player_volt_trap_18: 8295933855791250967
+      player_volt_trap_19: 7641885762561525011
+      player_volt_trap_2: 6189241352744501037
+      player_volt_trap_20: -8702665024449178891
+      player_volt_trap_21: 3294566155239697771
+      player_volt_trap_22: -1304097803888467821
+      player_volt_trap_23: 3403094902007484122
+      player_volt_trap_24: 5888614431209413788
+      player_volt_trap_25: -2005938015709620387
+      player_volt_trap_26: 4081460399185805973
+      player_volt_trap_27: -8544063219403071827
+      player_volt_trap_28: 6733690519630340514
+      player_volt_trap_29: -8784965461713775773
+      player_volt_trap_3: -1983796696862322707
+      player_volt_trap_30: 7458796077590286247
+      player_volt_trap_31: 1048373170838895125
+      player_volt_trap_32: 3585803971385706910
+      player_volt_trap_33: 3792262957460114265
+      player_volt_trap_34: 9199506532924681820
+      player_volt_trap_35: -57737098963491439
+      player_volt_trap_36: -893317317117022695
+      player_volt_trap_37: 3434761623865916045
+      player_volt_trap_38: -7854070643168633092
+      player_volt_trap_39: 3005377315756581200
+      player_volt_trap_4: 8589868213958855097
+      player_volt_trap_40: 6088692072396045830
+      player_volt_trap_41: 8708560942474225339
+      player_volt_trap_42: -6158892590614951213
+      player_volt_trap_43: 7236024167955605644
+      player_volt_trap_44: -7780043304100148266
+      player_volt_trap_45: -3075622613837107869
+      player_volt_trap_46: -8683226129335971699
+      player_volt_trap_47: 943381295337640520
+      player_volt_trap_5: 3524122037797521889
+      player_volt_trap_6: -5128457764488699209
+      player_volt_trap_7: 1420786101041410117
+      player_volt_trap_8: 8790047006090184362
+      player_volt_trap_9: 9011759542608275084
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

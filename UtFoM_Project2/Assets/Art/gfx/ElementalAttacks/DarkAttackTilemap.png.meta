@@ -147,7 +147,7 @@ TextureImporter:
       213: -6082665846147435712
     second: DarkAttackTilemap_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -168,6 +168,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -177,8 +178,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -206,6 +207,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -233,6 +235,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1264,6 +1290,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      DarkAttackTilemap_0: 5858622223323918701
+      DarkAttackTilemap_1: -2696934152671245439
+      DarkAttackTilemap_10: 2337421148084331674
+      DarkAttackTilemap_11: 7590634115528775283
+      DarkAttackTilemap_12: 3591808081181457538
+      DarkAttackTilemap_13: -5941712373321800670
+      DarkAttackTilemap_14: -7297280777248183789
+      DarkAttackTilemap_15: -4744445012822802143
+      DarkAttackTilemap_16: -5202028525261425181
+      DarkAttackTilemap_17: 4774580282901685496
+      DarkAttackTilemap_18: 3431685851464904948
+      DarkAttackTilemap_19: -2602602534002892675
+      DarkAttackTilemap_2: -2795860485639236388
+      DarkAttackTilemap_20: -2218819920470921631
+      DarkAttackTilemap_21: -2527242546294880448
+      DarkAttackTilemap_22: 5107293911465812762
+      DarkAttackTilemap_23: -1662283546393755211
+      DarkAttackTilemap_24: 3819665531671487896
+      DarkAttackTilemap_25: -4779963566656152168
+      DarkAttackTilemap_26: -4829480864017797014
+      DarkAttackTilemap_27: 2475834271815132618
+      DarkAttackTilemap_28: 3986834816734947692
+      DarkAttackTilemap_29: 69723615699679246
+      DarkAttackTilemap_3: -5420575665792447851
+      DarkAttackTilemap_30: -528010036795327451
+      DarkAttackTilemap_31: 5700674998866674235
+      DarkAttackTilemap_32: 5900929282930853875
+      DarkAttackTilemap_33: -3168580116617007448
+      DarkAttackTilemap_34: -8953807151179542736
+      DarkAttackTilemap_35: -7148204870829983486
+      DarkAttackTilemap_36: 953421765729934346
+      DarkAttackTilemap_37: 6400526134638881717
+      DarkAttackTilemap_38: 2523567505973037291
+      DarkAttackTilemap_39: -7793133363708131594
+      DarkAttackTilemap_4: -5127777643647332056
+      DarkAttackTilemap_40: -3981097293804320665
+      DarkAttackTilemap_41: -6576611839373328198
+      DarkAttackTilemap_42: 6912731464732244022
+      DarkAttackTilemap_43: 6076085818914871518
+      DarkAttackTilemap_44: 3270418842481110909
+      DarkAttackTilemap_45: -4098973755184660790
+      DarkAttackTilemap_46: 3381974553619763182
+      DarkAttackTilemap_47: -6082665846147435712
+      DarkAttackTilemap_5: 7775360236008685789
+      DarkAttackTilemap_6: 5960690734084003661
+      DarkAttackTilemap_7: -8600535828572444561
+      DarkAttackTilemap_8: 2104911529298022302
+      DarkAttackTilemap_9: -6402189317724048004
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

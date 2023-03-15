@@ -147,7 +147,7 @@ TextureImporter:
       213: -2678015064078078933
     second: cyclod_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -168,6 +168,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -177,8 +178,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -206,6 +207,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -221,6 +223,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1252,6 +1278,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      cyclod_0: -418245288490278248
+      cyclod_1: 3961725959643686060
+      cyclod_10: -929748827434668558
+      cyclod_11: -1016045570383153573
+      cyclod_12: 4157829632164510881
+      cyclod_13: 4919098971502282046
+      cyclod_14: -8584662998354552194
+      cyclod_15: 1514519490267808491
+      cyclod_16: 948549959692770304
+      cyclod_17: 1144829370023815207
+      cyclod_18: 1274691062647415280
+      cyclod_19: -5637479578086965467
+      cyclod_2: 6837418262683435999
+      cyclod_20: 2731035811472495845
+      cyclod_21: 972048742179344891
+      cyclod_22: -7150906736002504293
+      cyclod_23: -1811780677336269153
+      cyclod_24: -7992502933764132926
+      cyclod_25: -1838653929771483311
+      cyclod_26: 1090608383573410646
+      cyclod_27: 4185278010608617442
+      cyclod_28: -7650569971764475950
+      cyclod_29: 1311579740983211648
+      cyclod_3: 4394809681640413012
+      cyclod_30: -5037417465808651026
+      cyclod_31: 1338042667933581112
+      cyclod_32: 6374253478394498920
+      cyclod_33: 9118436233134483106
+      cyclod_34: -3587796972883393892
+      cyclod_35: -7971026929511925692
+      cyclod_36: -3475373788673793185
+      cyclod_37: 7460168510052687713
+      cyclod_38: -2896153885382091367
+      cyclod_39: -2078822414345374849
+      cyclod_4: 346831246327282060
+      cyclod_40: 1632237040898492842
+      cyclod_41: -2796727119674232980
+      cyclod_42: 1287987990297141126
+      cyclod_43: 7039810051649700683
+      cyclod_44: -2427414061595131185
+      cyclod_45: 2151053677451719431
+      cyclod_46: 2294877082653675808
+      cyclod_47: -2678015064078078933
+      cyclod_5: -3515046977400915971
+      cyclod_6: -7403477177905551128
+      cyclod_7: 6873347419112224203
+      cyclod_8: 7861565205522884
+      cyclod_9: 3602121462836664628
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
