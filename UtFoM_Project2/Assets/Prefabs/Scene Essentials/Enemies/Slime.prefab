@@ -836,7 +836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a76b40d049ec64b8ed141ba2b3761c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: 
+  playerManager: 0
   healthBar: {fileID: 6595229487283121633}
   manaBar: {fileID: 0}
   staminaBar: {fileID: 0}
@@ -868,6 +868,7 @@ GameObject:
   - component: {fileID: 4399399052590795618}
   - component: {fileID: 5333459742692240753}
   - component: {fileID: 2381787212923089175}
+  - component: {fileID: 624107321}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Enemy
@@ -1188,9 +1189,28 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1270821699
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &624107321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6654852442941469577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b248e8635e94bbb49b0725a1b6bffec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasBeenDefeated: 0
+  gameCounter: 0
+  LightFadeSpeed: 1
+  ID: 101
+  CorpseCounter: 0
+  CorpseObjectScript: {fileID: 7733052767763495240, guid: 5691e2cf927bc244caa45c393ab8cd23,
+    type: 3}
 --- !u!1 &6654852443872453840
 GameObject:
   m_ObjectHideFlags: 0

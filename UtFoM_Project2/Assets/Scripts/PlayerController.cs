@@ -447,7 +447,10 @@ public class PlayerController : GenericSingleton<PlayerController>
         }
 
         PlayerScript = this;
-        GameObject.DontDestroyOnLoad(this.gameObject.transform.parent.gameObject);
+        if (transform.parent != null)
+        {
+            GameObject.DontDestroyOnLoad(this.gameObject.transform.parent.gameObject);
+        }
     }
 
     // Update is called once per frame

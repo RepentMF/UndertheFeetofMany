@@ -2091,6 +2091,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37a7ab54d42670e4b974904b087b9837, type: 3}
+--- !u!114 &1090116166 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8332205668163415030, guid: 37a7ab54d42670e4b974904b087b9837,
+    type: 3}
+  m_PrefabInstance: {fileID: 1090116165}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca553585a9f12e4db2407fc3492aeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1090116167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8160814597243337160, guid: 37a7ab54d42670e4b974904b087b9837,
+    type: 3}
+  m_PrefabInstance: {fileID: 1090116165}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f271be6d1fec1ef48852ad1c393fc999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1155020372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3559,7 +3583,7 @@ PrefabInstance:
         type: 3}
       propertyPath: stats
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1090116166}
     - target: {fileID: 3902488985625382879, guid: c56922d6c3b879e4bb78c8b4e67417b2,
         type: 3}
       propertyPath: Hammer
@@ -3574,6 +3598,11 @@ PrefabInstance:
         type: 3}
       propertyPath: inventory
       value: 
+      objectReference: {fileID: 1090116167}
+    - target: {fileID: 3902488985625382879, guid: c56922d6c3b879e4bb78c8b4e67417b2,
+        type: 3}
+      propertyPath: playerManager
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4075137485438457925, guid: c56922d6c3b879e4bb78c8b4e67417b2,
         type: 3}

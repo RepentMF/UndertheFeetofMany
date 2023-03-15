@@ -6,6 +6,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class EnemyInfo : MonoBehaviour
 {
     public bool HasBeenDefeated = false;
+    public int gameCounter = 0;
     protected internal Vector3 DeathPlace;
     private bool ShouldTurnOffLight = false;
     public float LightFadeSpeed = 1f;
@@ -36,13 +37,26 @@ public class EnemyInfo : MonoBehaviour
     
     void FixedUpdate()
     {
+        if (gameCounter < 3)
+        {
+            gameCounter++;
+        }
+
         if(HasBeenDefeated && StateManagerScript.GetCurrentAnimationTimer() <= 0.0f && 
             StateManagerScript.GetCurrentAnimationTimer() != 0.0f)
         {
             DeathPlace = this.gameObject.transform.position;
             FindObjectsOfType<RoomManager>(true)[0].ObserveEnemiesInRoom();
+            Debug.Break();
             StateManagerScript.InitializeOnDeath(CorpseObjectScript);
         }
+        else if (HasBeenDefeated && gameCounter == 2)
+        {
+            this.gameObject.transform.position = DeathPlace;
+            StateManagerScript.InitializeOnDeath(CorpseObjectScript);
+            Destroy(this.gameObject);
+        }
+        
 
         if(this.gameObject.GetComponent<Stats>().CurrentHealth <= 0)
         {

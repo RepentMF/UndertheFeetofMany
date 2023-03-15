@@ -2749,6 +2749,11 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3902488985625382879, guid: c56922d6c3b879e4bb78c8b4e67417b2,
+        type: 3}
+      propertyPath: playerManager
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4075137485438457925, guid: c56922d6c3b879e4bb78c8b4e67417b2,
         type: 3}
       propertyPath: m_Enabled
@@ -4523,8 +4528,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HasBeenDefeated: 0
+  gameCounter: 0
   LightFadeSpeed: 1
   ID: 101
+  CorpseCounter: 0
+  CorpseObjectScript: {fileID: 0}
 --- !u!1 &1989582762
 GameObject:
   m_ObjectHideFlags: 0

@@ -5434,6 +5434,30 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 692587444}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &778864785 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8332205668163415030, guid: 37a7ab54d42670e4b974904b087b9837,
+    type: 3}
+  m_PrefabInstance: {fileID: 1087721663}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca553585a9f12e4db2407fc3492aeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &778864786 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8160814597243337160, guid: 37a7ab54d42670e4b974904b087b9837,
+    type: 3}
+  m_PrefabInstance: {fileID: 1087721663}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f271be6d1fec1ef48852ad1c393fc999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &807991065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5790,7 +5814,7 @@ PrefabInstance:
         type: 3}
       propertyPath: stats
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 778864785}
     - target: {fileID: 3902488985625382879, guid: c56922d6c3b879e4bb78c8b4e67417b2,
         type: 3}
       propertyPath: Hammer
@@ -5805,6 +5829,11 @@ PrefabInstance:
         type: 3}
       propertyPath: inventory
       value: 
+      objectReference: {fileID: 778864786}
+    - target: {fileID: 3902488985625382879, guid: c56922d6c3b879e4bb78c8b4e67417b2,
+        type: 3}
+      propertyPath: playerManager
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4075137485438457925, guid: c56922d6c3b879e4bb78c8b4e67417b2,
         type: 3}
@@ -7593,6 +7622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleCompleted: 0
+  ID: 1002
   TPMapList:
   - {fileID: 21300000, guid: 57ca368df247c3949b08200c7e80e4e6, type: 3}
   - {fileID: 21300000, guid: 07399d4a14f27174399d9ffad8d059c9, type: 3}

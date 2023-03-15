@@ -44,7 +44,6 @@ public class SceneTransition : MonoBehaviour
 	{
 		if(collision.CompareTag("P1") && !collision.isTrigger)
 		{
-			FindObjectOfType<RoomManager>().sceneChange = true;
 			collision.GetComponent<PlayerController>().transform.position = playerPosition;
 			collision.GetComponent<PlayerController>().SetAnimatorFloats(playerDirection);
 			collision.GetComponent<PlayerController>().NextScene = sceneToLoad;
@@ -61,8 +60,10 @@ public class SceneTransition : MonoBehaviour
 		yield return new WaitForSeconds(fadeWait);
 
 		AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneToLoad);
+		
 		while (!asyncOperation.isDone)
 		{
+			FindObjectOfType<RoomManager>().sceneChange = true;
 			yield return null;
 		}
 	}

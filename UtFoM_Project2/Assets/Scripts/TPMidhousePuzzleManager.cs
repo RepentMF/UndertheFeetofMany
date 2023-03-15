@@ -29,6 +29,7 @@ public class TPMidhousePuzzleManager : PuzzleManager
     {
         SpriteRendererScript.sprite = TPMapList[1];
         PuzzleCompleted = true;
+        FindObjectsOfType<RoomManager>(true)[0].ObservePuzzlesInRoom();
     }
 
     // Update is called once per frame

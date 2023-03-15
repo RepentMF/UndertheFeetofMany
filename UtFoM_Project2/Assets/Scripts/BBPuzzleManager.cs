@@ -62,8 +62,8 @@ public class BBPuzzleManager : PuzzleManager
 
     void CompletePuzzle()
     {
-        FindObjectsOfType<RoomManager>(true)[0].ObservePuzzlesInRoom();
         PuzzleCompleted = true;
+        FindObjectsOfType<RoomManager>(true)[0].ObservePuzzlesInRoom();
         StateManagerScript.IdleAnimationName = "BB_gate_opened";
         StateManagerScript.CurrentState = ActionState.Idle;
         Collider2DScript.enabled = false;
@@ -75,7 +75,12 @@ public class BBPuzzleManager : PuzzleManager
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!PuzzleCompleted)
+        if (PuzzleCompleted)
+        {
+            StateManagerScript.CurrentState = ActionState.Death;
+            CompletePuzzle();
+        }
+        else if (!PuzzleCompleted)
         {
             GetCurrentSlimeCount();
             ManageState();

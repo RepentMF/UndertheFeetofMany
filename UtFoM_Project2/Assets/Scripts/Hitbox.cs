@@ -57,6 +57,7 @@ public class Hitbox : MonoBehaviour
                         Vector3 tempPosition = collider.transform.position;
                         tempPosition.y -= .1f;
 				        Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().ParticleSystemScript, tempPosition, Quaternion.identity);
+                    	Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().VFXSystemScript, tempPosition, Quaternion.identity);
                     }
                 }
             }

@@ -30,8 +30,6 @@ public class RoomManager : GenericSingleton<RoomManager>
                 {
                     found = s.IndexOf(", ");
                     FindObjectsOfType<SceneItem>(true)[i].HasBeenPickedUp = bool.Parse(s.Substring(found + 2));
-                    //Debug.Log(bool.Parse(s.Substring(found + 2)));
-                    //Debug.Log(FindObjectsOfType<SceneItem>(true)[i].HasBeenPickedUp);
                 }
             }
         }
@@ -48,10 +46,13 @@ public class RoomManager : GenericSingleton<RoomManager>
             {
                 if (s.Contains(FindObjectsOfType<EnemyInfo>(true)[i].ID + ", "))
                 {
-                    found = s.IndexOf(", ");
-                    FindObjectsOfType<EnemyInfo>(true)[i].HasBeenDefeated = bool.Parse(s.Substring(found + 2));
-                    //Debug.Log(bool.Parse(s.Substring(found + 2)));
-                    //Debug.Log(FindObjectsOfType<EnemyInfo>(true)[i].HasBeenDefeated);
+                    string[] words = s.Split(',');
+                    for (int j = 0; j < words.Length; j++)
+                    {
+                        FindObjectsOfType<EnemyInfo>(true)[i].HasBeenDefeated = bool.Parse(words[1]);
+                        FindObjectsOfType<EnemyInfo>(true)[i].DeathPlace.x = float.Parse(words[2].Substring(2));
+                        FindObjectsOfType<EnemyInfo>(true)[i].DeathPlace.y = float.Parse(words[3]);
+                    }
                 }
             }
         }
@@ -70,8 +71,6 @@ public class RoomManager : GenericSingleton<RoomManager>
                 {
                     found = s.IndexOf(", ");
                     FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted = bool.Parse(s.Substring(found + 2));
-                    //Debug.Log(bool.Parse(s.Substring(found + 2)));
-                    //Debug.Log(FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted);
                 }
             }
         }
@@ -116,7 +115,7 @@ public class RoomManager : GenericSingleton<RoomManager>
         {
             //Grab enemy info data
             string s = FindObjectsOfType<EnemyInfo>(true)[i].ID + ", " + FindObjectsOfType<EnemyInfo>(true)[i].HasBeenDefeated
-            /* + ", " + FindObjectsOfType<EnemyInfo>(true)[i].DeathPlace*/;
+             + ", " + FindObjectsOfType<EnemyInfo>(true)[i].DeathPlace;
             //Put item holder data in a list of strings
             strings.Add(s);
         }
@@ -211,7 +210,9 @@ public class RoomManager : GenericSingleton<RoomManager>
             sceneChange = false;
             //ObserveTreasureInRoom();
             //ObserveEnemiesInRoom();
-            ObservePuzzlesInRoom();
+            PlaceTreasureInRoom();
+            PlaceEnemiesInRoom();
+            PlacePuzzlesInRoom();
         }
         else if (index != SceneManager.GetActiveScene().buildIndex)
         {
