@@ -12,7 +12,9 @@ public class Hurtbox : MonoBehaviour
     private Rigidbody2D Rigidbody2DScript;
     private StateManager StateManagerScript;
     public ParticleSystem ParticleSystemScript;
-    public ParticleSystem VFXSystemScript;
+    public ParticleSystem MainVFXSystemScript;
+    public ParticleSystem AltVFXSystemScript;
+
 
     /// <summary>
     /// When the entity is idle save their position so we know where to end freefall

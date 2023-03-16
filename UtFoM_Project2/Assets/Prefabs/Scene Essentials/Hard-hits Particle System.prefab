@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3884911629036381787}
   - component: {fileID: 1738743808276681463}
   m_Layer: 0
-  m_Name: Knife Particle System
+  m_Name: Hard-hits Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,7 +116,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -222,8 +222,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      minColor: {r: 0.2988163, g: 0.6493637, b: 0.745283, a: 1}
+      maxColor: {r: 0.48584908, g: 1, b: 0.8484593, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -286,7 +286,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 2
-      minScalar: 2
+      minScalar: 0.2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -550,7 +550,7 @@ ParticleSystem:
     startRotation:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.34906584
+      scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -609,7 +609,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    randomizeRotationDirection: 1
+    randomizeRotationDirection: 0
     maxNumParticles: 1
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -876,7 +876,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 50
+      scalar: 100
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -994,21 +994,30 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 1
-          inSlope: -53.80624
-          outSlope: -53.80624
-          tangentMode: 34
+          inSlope: -0.5454093
+          outSlope: -0.5454093
+          tangentMode: 0
           weightedMode: 0
           inWeight: 0
-          outWeight: 0.33333334
+          outWeight: 1
         - serializedVersion: 3
-          time: 0.018585205
-          value: 0
-          inSlope: -53.80624
-          outSlope: -53.80624
-          tangentMode: 34
+          time: 0.06473324
+          value: 0.991272
+          inSlope: Infinity
+          outSlope: Infinity
+          tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0
+        - serializedVersion: 3
+          time: 0.069552064
+          value: 0
+          inSlope: -25.009325
+          outSlope: -25.009325
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -1491,7 +1500,7 @@ ParticleSystem:
     uvChannelMask: 2147483647
     rowMode: 1
     sprites:
-    - sprite: {fileID: 3623145795226082304, guid: 640252172a268b34491bff0eb9815dd6,
+    - sprite: {fileID: -662243040451901317, guid: 95badf9017d2d9c4ca0bb0b53bf134d9,
         type: 3}
     flipU: 0
     flipV: 0
@@ -3814,7 +3823,7 @@ ParticleSystem:
     primitives: []
   SubModule:
     serializedVersion: 2
-    enabled: 1
+    enabled: 0
     subEmitters:
     - serializedVersion: 3
       emitter: {fileID: 0}
@@ -4794,8 +4803,8 @@ ParticleSystemRenderer:
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
-  m_MinParticleSize: 0
-  m_MaxParticleSize: 0.5
+  m_MinParticleSize: 0.1
+  m_MaxParticleSize: 0.1
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2

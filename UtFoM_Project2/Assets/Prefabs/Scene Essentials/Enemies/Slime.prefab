@@ -328,6 +328,7 @@ MonoBehaviour:
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.2
   StateToInflict: 4
+  ID: 0
   StatusesToInflict: []
 --- !u!1 &3881115094508345109
 GameObject:
@@ -413,6 +414,7 @@ MonoBehaviour:
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.2
   StateToInflict: 4
+  ID: 0
   StatusesToInflict: []
 --- !u!1 &3881115094720223018
 GameObject:
@@ -532,6 +534,7 @@ MonoBehaviour:
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.2
   StateToInflict: 4
+  ID: 0
   StatusesToInflict: []
 --- !u!1 &3881115095068226089
 GameObject:
@@ -652,6 +655,7 @@ MonoBehaviour:
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.2
   StateToInflict: 4
+  ID: 0
   StatusesToInflict: []
 --- !u!1 &3881115095826021321
 GameObject:
@@ -1171,6 +1175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ParticleSystemScript: {fileID: 1673164112754338585, guid: 3e97a265cca02fa4c99cea94db3a177e,
     type: 3}
+  VFXSystemScript: {fileID: 0}
 --- !u!223 &2381787212923089175
 Canvas:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 
 public class EnemyInfo : MonoBehaviour
@@ -15,7 +16,7 @@ public class EnemyInfo : MonoBehaviour
 
     // Script References
     private BoxCollider2D BoxCollider2DScript;
-    private UnityEngine.Rendering.Universal.Light2D Light2DScript;
+    private Light2D Light2DScript;
     private SpriteRenderer SpriteRendererScript;
     private SpriteRenderer TargetSpriteRendererScript;
     private StateManager StateManagerScript;
@@ -45,9 +46,9 @@ public class EnemyInfo : MonoBehaviour
         if(HasBeenDefeated && StateManagerScript.GetCurrentAnimationTimer() <= 0.0f && 
             StateManagerScript.GetCurrentAnimationTimer() != 0.0f)
         {
+            Debug.Break();
             DeathPlace = this.gameObject.transform.position;
             FindObjectsOfType<RoomManager>(true)[0].ObserveEnemiesInRoom();
-            Debug.Break();
             StateManagerScript.InitializeOnDeath(CorpseObjectScript);
         }
         else if (HasBeenDefeated && gameCounter == 2)

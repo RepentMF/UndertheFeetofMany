@@ -57,10 +57,14 @@ public class Hitbox : MonoBehaviour
                     {
                         Vector3 tempPosition = collider.transform.position;
                         tempPosition.y -= .1f;
-                        if (ID == 1)
+                        Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().ParticleSystemScript, tempPosition, Quaternion.identity);
+                        if (ID == 1 && this.gameObject.GetComponentInParent<Hurtbox>().MainVFXSystemScript != null)
                         {
-				            Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().ParticleSystemScript, tempPosition, Quaternion.identity);
-                    	    Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().VFXSystemScript, tempPosition, Quaternion.identity);
+                    	    Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().MainVFXSystemScript, tempPosition, Quaternion.identity);
+                        }
+                        else if (ID == 0 && this.gameObject.GetComponentInParent<Hurtbox>().AltVFXSystemScript)
+                        {
+                    	    Instantiate(this.gameObject.GetComponentInParent<Hurtbox>().AltVFXSystemScript, tempPosition, Quaternion.identity);
                         }
                     }
                 }
