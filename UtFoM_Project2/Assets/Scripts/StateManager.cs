@@ -73,7 +73,7 @@ public class StateManager : MonoBehaviour
     [SerializeField] private string FreefallAnimationName = "stagger";
     [SerializeField] private string DeathAnimationName = "death";
     [SerializeField] private float DeathAnimationTimer = -1.0f;
-    private GameObject DeathObject;
+    public GameObject DeathObject;
     [SerializeField] public string AppearAnimationName = "appear";
     [SerializeField] public float AppearAnimationTimer = -1.0f;
     [SerializeField] public bool RemoveOnDeath = true;
@@ -82,6 +82,7 @@ public class StateManager : MonoBehaviour
     public ActionState CurrentState { get; set; } = ActionState.Idle;
     private ActionStateAnimation NextAnimation = new ActionStateAnimation();
     private ActionStateAnimation CurrentAnimation = new ActionStateAnimation();
+    public bool HasBeenRemoved = false;
     public float CooldownTimer { get; set; }
 
     // Script References
@@ -143,6 +144,12 @@ public class StateManager : MonoBehaviour
                 break;
             case ActionState.Death:
                 SetNextAnimation(DeathAnimationName, DeathAnimationTimer, CurrentAnimation.AnimationName == AppearAnimationName ? CurrentAnimation.AnimationTimer : 0.0f);
+                if (this.gameObject.GetComponent<EnemyInfo>() != null)
+                {
+                    this.gameObject.GetComponent<EnemyInfo>().HasBeenDefeated = true;
+                    this.gameObject.GetComponent<EnemyInfo>().DeathPlace = this.gameObject.transform.position;
+                    FindObjectsOfType<RoomManager>(true)[0].ObserveEnemiesInRoom();
+                }
                 break;
             case ActionState.Appear:
                 SetNextAnimation(AppearAnimationName, AppearAnimationTimer, CurrentAnimation.AnimationName == DeathAnimationName ? CurrentAnimation.AnimationTimer : 0.0f);
@@ -208,11 +215,9 @@ public class StateManager : MonoBehaviour
         yield return new WaitForEndOfFrame();
         if (RemoveOnDeath && CurrentAnimation.AnimationName == DeathAnimationName && CurrentAnimation.AnimationTimer <= 0.0f && CurrentState == ActionState.Death)
         {
-            if (DeathObject != null)
+            if (this.gameObject.GetComponent<EnemyInfo>() != null)
             {
-                DeathObject.SetActive(true);
-                DeathObject.transform.position = this.gameObject.transform.position;
-                DeathObject = null;
+                InitializeOnDeath(this.gameObject.GetComponent<EnemyInfo>().CorpseObjectScript);
             }
             this.gameObject.SetActive(false);
         }

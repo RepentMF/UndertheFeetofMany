@@ -2355,6 +2355,7 @@ SpriteAtlas:
   - {fileID: -7035201362525872319, guid: 20ad58df6a18b044b8aa6a199ef4e335, type: 3}
   - {fileID: -4254609813557527873, guid: 20ad58df6a18b044b8aa6a199ef4e335, type: 3}
   - {fileID: -6173130802120303528, guid: 20ad58df6a18b044b8aa6a199ef4e335, type: 3}
+  - {fileID: 21300000, guid: f591d5ff64e8ae044a3419beaf04e7c6, type: 3}
   - {fileID: 3000696153878756389, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
   - {fileID: -7638738936969319913, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
   - {fileID: 465625315162889304, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
@@ -4679,6 +4680,7 @@ SpriteAtlas:
   - augurworm_42
   - augurworm_41
   - augurworm_40
+  - lifeblood1_particle
   - item_holder_6
   - item_holder_7
   - item_holder_4
