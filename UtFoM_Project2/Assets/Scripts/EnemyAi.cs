@@ -112,7 +112,6 @@ public abstract class EnemyAi : MonoBehaviour
     {
         if (StateManagerScript.CurrentState == ActionState.Attack || StateManagerScript.CurrentState == ActionState.Stagger || StateManagerScript.CurrentState == ActionState.Juggle || StateManagerScript.CurrentState == ActionState.Freefall || StateManagerScript.CurrentState == ActionState.Death)
         {
-            
             return false;
         }
         return true;

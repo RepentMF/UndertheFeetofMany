@@ -365,14 +365,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 180, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &403297896185704817
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,14 +452,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordLeft1
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &416514523605788565
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,14 +548,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &483442467345268280
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,8 +861,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EquippedWeapon: {fileID: 0}
+  EquippedTrinkets: []
   SpellsList: []
-  CharmsList: []
+  TrinketsList: []
   DoorKeysList: []
   WeaponsList: []
   DiariesList: []
@@ -889,7 +890,7 @@ MonoBehaviour:
   BaseManaRegen: 0
   OriginalLifeblood: 30
   BaseLifebloodRegen: 0
-  OriginalTrinket: 5
+  OriginalTrinketPoints: 5
   DisplayRuntimeValues: 1
   RuntimeIsInvulnerable: 0
   RuntimeComboCount: 0
@@ -901,8 +902,8 @@ MonoBehaviour:
   RuntimeCurrentMana: 0
   RuntimeMaxLifeblood: 0
   RuntimeCurrentLifeblood: 0
-  RuntimeMaxTrinket: 0
-  RuntimeCurrentTrinket: 0
+  RuntimeMaxTrinketPoints: 0
+  RuntimeCurrentTrinketPoints: 0
 --- !u!114 &-7642948778667013698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,6 +977,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ParticleSystemScript: {fileID: 3884911629036381786, guid: 9502b863cbb057846bfcf08ba07fd3a7,
     type: 3}
+  MainVFXSystemScript: {fileID: 0}
+  AltVFXSystemScript: {fileID: 0}
 --- !u!114 &1792509787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,14 +1071,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: KnifeRight
-  Damage: 1.25
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: -1, y: -1}
   StaggerAmount: 0
   StateToInflict: 8
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &660729248739535692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,14 +1161,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: KnifeLeft
-  Damage: 1.25
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: -1, y: -1}
   StaggerAmount: 0
   StateToInflict: 8
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &660729249673183186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,14 +1247,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: KnifeUp
-  Damage: 1.25
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: -1, y: -1}
   StaggerAmount: 0
   StateToInflict: 8
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &660729249747219251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,14 +1334,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: KnifeDown
-  Damage: 1.25
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: -1, y: -1}
   StaggerAmount: 0
   StateToInflict: 8
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &683005112116751810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,14 +1416,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordDown3
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: -135}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.3
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &752341626698180904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,14 +1503,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordRight2
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &818577925901830195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1588,14 +1591,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordRight2
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &880185196861617158
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,14 +1679,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordUp1
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &901749679120344927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,14 +1771,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.45
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &1020518887782208401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,14 +1857,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: -180, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &1095862955724533492
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,14 +2026,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &1404187971252114970
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,14 +2146,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: KnifeRight
-  Damage: 1.25
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: -1, y: -1}
   StaggerAmount: 0
   StateToInflict: 8
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &1694103079736477268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,14 +2277,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordUp1
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &1837930044415049490
 GameObject:
   m_ObjectHideFlags: 0
@@ -2360,14 +2363,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: -180, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &1892498267719476712
 GameObject:
   m_ObjectHideFlags: 0
@@ -2770,14 +2773,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordUp3
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 135}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.4
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &2450202313943677473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,14 +2906,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &2471334925353779644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2988,14 +2991,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: KnifeRight
-  Damage: 1.25
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: -1, y: -1}
   StaggerAmount: 0
   StateToInflict: 8
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &2534166609833156020
 GameObject:
   m_ObjectHideFlags: 0
@@ -3076,14 +3079,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordRight1
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &2534202792211798289
 GameObject:
   m_ObjectHideFlags: 0
@@ -3162,14 +3165,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: KnifeDown
-  Damage: 1.25
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: -1, y: -1}
   StaggerAmount: 0
   StateToInflict: 8
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &2561476579130005715
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,14 +3248,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &2610303182559232019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3387,14 +3390,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &2718851056128953759
 GameObject:
   m_ObjectHideFlags: 0
@@ -3486,14 +3489,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &2866033605075022101
 GameObject:
   m_ObjectHideFlags: 0
@@ -3579,14 +3582,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &2916477008711674323
 GameObject:
   m_ObjectHideFlags: 0
@@ -3665,14 +3668,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &2925166760680619690
 GameObject:
   m_ObjectHideFlags: 0
@@ -3753,14 +3756,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: -180, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &2965424696333080521
 GameObject:
   m_ObjectHideFlags: 0
@@ -3841,14 +3844,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordLeft2
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &2969173804719959162
 GameObject:
   m_ObjectHideFlags: 0
@@ -3928,14 +3931,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3080173472261096201
 GameObject:
   m_ObjectHideFlags: 0
@@ -4016,14 +4019,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: -180}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.45
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3116820922214316193
 GameObject:
   m_ObjectHideFlags: 0
@@ -4110,14 +4113,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3211476631076405614
 GameObject:
   m_ObjectHideFlags: 0
@@ -4195,14 +4198,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordDown2
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3333321178539017345
 GameObject:
   m_ObjectHideFlags: 0
@@ -4280,14 +4283,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordUp3
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 135}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.4
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3425226507034876493
 GameObject:
   m_ObjectHideFlags: 0
@@ -4369,14 +4372,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordRight1
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3481296438357749111
 GameObject:
   m_ObjectHideFlags: 0
@@ -4521,14 +4524,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3566215866133743172
 GameObject:
   m_ObjectHideFlags: 0
@@ -4617,14 +4620,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3610857811993169925
 GameObject:
   m_ObjectHideFlags: 0
@@ -4707,14 +4710,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3690033327716002119
 GameObject:
   m_ObjectHideFlags: 0
@@ -4804,14 +4807,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3702008315449010335
 GameObject:
   m_ObjectHideFlags: 0
@@ -4889,14 +4892,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3779388331060932778
 GameObject:
   m_ObjectHideFlags: 0
@@ -4977,14 +4980,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3828658592665017784
 GameObject:
   m_ObjectHideFlags: 0
@@ -5097,14 +5100,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordRight3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 150, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3922679913887369165
 GameObject:
   m_ObjectHideFlags: 0
@@ -5190,14 +5193,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3948405140462475794
 GameObject:
   m_ObjectHideFlags: 0
@@ -5276,14 +5279,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3956775112450187594
 GameObject:
   m_ObjectHideFlags: 0
@@ -5362,14 +5365,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: KnifeLeft
-  Damage: 1.25
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: -1, y: -1}
   StaggerAmount: 0
   StateToInflict: 8
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &3970551059177065159
 GameObject:
   m_ObjectHideFlags: 0
@@ -5460,14 +5463,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &4055414228809617432
 GameObject:
   m_ObjectHideFlags: 0
@@ -5542,14 +5545,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordDown3
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: -135}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.4
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &4067540041854931552
 GameObject:
   m_ObjectHideFlags: 0
@@ -5661,14 +5664,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordRight2
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &4142447177748157759
 GameObject:
   m_ObjectHideFlags: 0
@@ -5800,14 +5803,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 180, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &4376188027260191427
 GameObject:
   m_ObjectHideFlags: 0
@@ -5889,14 +5892,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: KnifeDown
-  Damage: 1.25
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: -1, y: -1}
   StaggerAmount: 0
   StateToInflict: 8
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &4405564737407868302
 GameObject:
   m_ObjectHideFlags: 0
@@ -6008,14 +6011,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordUp2
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &4579074644079167550
 GameObject:
   m_ObjectHideFlags: 0
@@ -6116,14 +6119,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &4595096943903474499
 GameObject:
   m_ObjectHideFlags: 0
@@ -6204,14 +6207,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: KnifeUp
-  Damage: 1.25
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: -1, y: -1}
   StaggerAmount: 0
   StateToInflict: 8
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &4617613796549034367
 GameObject:
   m_ObjectHideFlags: 0
@@ -6292,14 +6295,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.45
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &4743389480621666965
 GameObject:
   m_ObjectHideFlags: 0
@@ -6377,14 +6380,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordLeft2
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &4781939448654400320
 GameObject:
   m_ObjectHideFlags: 0
@@ -6531,14 +6534,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &4885759027749538324
 GameObject:
   m_ObjectHideFlags: 0
@@ -6628,14 +6631,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &4979356296447297182
 GameObject:
   m_ObjectHideFlags: 0
@@ -6765,14 +6768,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &5160176739713565152
 GameObject:
   m_ObjectHideFlags: 0
@@ -6849,14 +6852,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: KnifeLeft
-  Damage: 1.25
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: -1, y: -1}
   StaggerAmount: 0
   StateToInflict: 8
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &5186706130095385884
 GameObject:
   m_ObjectHideFlags: 0
@@ -6933,14 +6936,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordUp2
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &5390268073189134651
 GameObject:
   m_ObjectHideFlags: 0
@@ -7070,14 +7073,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &5503252293820537192
 GameObject:
   m_ObjectHideFlags: 0
@@ -7171,14 +7174,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: -180}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.45
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &5539738723627505927
 GameObject:
   m_ObjectHideFlags: 0
@@ -7260,14 +7263,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordDown2
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &5561338829657461050
 GameObject:
   m_ObjectHideFlags: 0
@@ -7362,14 +7365,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &5567373972287198556
 GameObject:
   m_ObjectHideFlags: 0
@@ -7497,14 +7500,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &5771311124611868220
 GameObject:
   m_ObjectHideFlags: 0
@@ -7579,14 +7582,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.45
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &5950246183139119841
 GameObject:
   m_ObjectHideFlags: 0
@@ -7665,14 +7668,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &5950374182848977029
 GameObject:
   m_ObjectHideFlags: 0
@@ -7766,14 +7769,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &5977235939459231755
 GameObject:
   m_ObjectHideFlags: 0
@@ -7855,14 +7858,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6004312622174626115
 GameObject:
   m_ObjectHideFlags: 0
@@ -7975,14 +7978,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6080274720230193841
 GameObject:
   m_ObjectHideFlags: 0
@@ -8057,14 +8060,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6082718388040211611
 GameObject:
   m_ObjectHideFlags: 0
@@ -8143,14 +8146,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6188817985416731299
 GameObject:
   m_ObjectHideFlags: 0
@@ -8230,14 +8233,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordRight3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 150, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6434305182302290631
 GameObject:
   m_ObjectHideFlags: 0
@@ -8320,14 +8323,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordDown1
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6534906176152714488
 GameObject:
   m_ObjectHideFlags: 0
@@ -8408,14 +8411,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordDown1
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6608233324513436817
 GameObject:
   m_ObjectHideFlags: 0
@@ -8494,14 +8497,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: KnifeUp
-  Damage: 1.25
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: -1, y: -1}
   StaggerAmount: 0
   StateToInflict: 8
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6618178906339074020
 GameObject:
   m_ObjectHideFlags: 0
@@ -8631,14 +8634,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: -180}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.45
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6684911407294503200
 GameObject:
   m_ObjectHideFlags: 0
@@ -8719,14 +8722,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6747459055691580165
 GameObject:
   m_ObjectHideFlags: 0
@@ -8806,14 +8809,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6760259098960992945
 GameObject:
   m_ObjectHideFlags: 0
@@ -8891,14 +8894,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordUp1
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6784946915095627424
 GameObject:
   m_ObjectHideFlags: 0
@@ -9018,14 +9021,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6828236802357517184
 GameObject:
   m_ObjectHideFlags: 0
@@ -9147,14 +9150,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: -180}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.45
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6941226243253146257
 GameObject:
   m_ObjectHideFlags: 0
@@ -9229,14 +9232,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &6995612210652621349
 GameObject:
   m_ObjectHideFlags: 0
@@ -9315,14 +9318,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 180, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &7037188635513132224
 GameObject:
   m_ObjectHideFlags: 0
@@ -9403,14 +9406,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordLeft3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: -150, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &7052443356051620707
 GameObject:
   m_ObjectHideFlags: 0
@@ -9489,14 +9492,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordRight1
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &7109746513231154803
 GameObject:
   m_ObjectHideFlags: 0
@@ -9573,14 +9576,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordDown2
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &7247821929936831122
 GameObject:
   m_ObjectHideFlags: 0
@@ -9663,14 +9666,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordLeft1
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &7327996063131892951
 GameObject:
   m_ObjectHideFlags: 0
@@ -9747,14 +9750,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordDown3
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: -135}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.4
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &7395264838858242639
 GameObject:
   m_ObjectHideFlags: 0
@@ -9840,14 +9843,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: -180, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &7396912707926170404
 GameObject:
   m_ObjectHideFlags: 0
@@ -9926,14 +9929,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &7544117128040001351
 GameObject:
   m_ObjectHideFlags: 0
@@ -10045,14 +10048,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordDown1
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &7625145927423181375
 GameObject:
   m_ObjectHideFlags: 0
@@ -10131,14 +10134,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &7695586260817051357
 GameObject:
   m_ObjectHideFlags: 0
@@ -10218,14 +10221,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &7712822329163648931
 GameObject:
   m_ObjectHideFlags: 0
@@ -10375,14 +10378,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordRight3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 150, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &7919314252093761501
 GameObject:
   m_ObjectHideFlags: 0
@@ -10464,14 +10467,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordLeft3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: -150, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8124889890527459648
 GameObject:
   m_ObjectHideFlags: 0
@@ -10601,14 +10604,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 180, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8160814596828108996
 GameObject:
   m_ObjectHideFlags: 0
@@ -10747,14 +10750,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8254132069149654065
 GameObject:
   m_ObjectHideFlags: 0
@@ -10845,14 +10848,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown2
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8329147520261715578
 GameObject:
   m_ObjectHideFlags: 0
@@ -10932,14 +10935,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8416372685280913888
 GameObject:
   m_ObjectHideFlags: 0
@@ -11020,14 +11023,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordLeft3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: -150, y: 60}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8422951468692763515
 GameObject:
   m_ObjectHideFlags: 0
@@ -11109,14 +11112,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerRight1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8443890894960117514
 GameObject:
   m_ObjectHideFlags: 0
@@ -11194,14 +11197,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordUp2
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8449033656779889465
 GameObject:
   m_ObjectHideFlags: 0
@@ -11282,14 +11285,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8452016732987512186
 GameObject:
   m_ObjectHideFlags: 0
@@ -11368,14 +11371,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordUp3
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 135}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.4
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8551630035311937337
 GameObject:
   m_ObjectHideFlags: 0
@@ -11467,14 +11470,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8570835007720187956
 GameObject:
   m_ObjectHideFlags: 0
@@ -11589,14 +11592,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp4
-  Damage: 3
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 180}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.45
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8645202941784490295
 GameObject:
   m_ObjectHideFlags: 0
@@ -11681,14 +11684,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordLeft1
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8717409840636457758
 GameObject:
   m_ObjectHideFlags: 0
@@ -11823,14 +11826,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerLeft1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &8948385477546734519
 GameObject:
   m_ObjectHideFlags: 0
@@ -11920,14 +11923,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerDown1
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 165}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &9004809655870103218
 GameObject:
   m_ObjectHideFlags: 0
@@ -12011,14 +12014,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SwordLeft2
-  Damage: 1.5
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.9
   StateToInflict: 4
-  StatusesToInflict: []
+  ID: 0
 --- !u!1 &9182190868985659215
 GameObject:
   m_ObjectHideFlags: 0
@@ -12097,11 +12100,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: HammerUp3
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 0}
   Thrust: {x: 0, y: 200}
   GravityScale: 1.75
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0
   StateToInflict: 5
-  StatusesToInflict: []
+  ID: 0

@@ -10,44 +10,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca520cb67727a9e46b044c55357d0272, type: 3}
-  m_Name: Sword
+  m_Name: SlimeRush
   m_EditorClassIdentifier: 
-  Name: Sword
-  Description: Slashy-slash
-  Sprite: {fileID: 21300000, guid: bbeffe6d98912784ebcbff4e83d229cf, type: 3}
-  LightAttackAnimationName: Sword
+  Name: SlimeRush
+  Description: This slime be rushin'
+  Sprite: {fileID: 0}
+  LightAttackAnimationName: SlimeRush
   LightAttackAnimationTimer: -1
   OriginalLightAttackBufferThreshold: 0
-  LightAttackBufferThreshold: 0.08333
-  OriginalLightAttackDamage: 1.5
-  LightAttackDamage: 1.5
+  LightAttackBufferThreshold: 0
+  OriginalLightAttackDamage: 1
+  LightAttackDamage: 1
   LightAttackCounter: 0
-  LightAttackCounterMax: 2
+  LightAttackCounterMax: 0
   LightAttackStatusesToInflict: []
   LightAttackExecuteDamage: 0
-  MediumAttackAnimationName: Sword2
+  MediumAttackAnimationName: 
   MediumAttackAnimationTimer: -1
   OriginalMediumAttackBufferThreshold: 0
-  MediumAttackBufferThreshold: 0.0833
-  OriginalMediumAttackDamage: 1.5
-  MediumAttackDamage: 1.5
-  LaunchAttackAnimationName: Sword
+  MediumAttackBufferThreshold: 0
+  OriginalMediumAttackDamage: 0
+  MediumAttackDamage: 0
+  LaunchAttackAnimationName: 
   LaunchAttackAnimationTimer: -1
   OriginalLaunchAttackBufferThreshold: 0
-  LaunchAttackBufferThreshold: 0.08333
+  LaunchAttackBufferThreshold: 0
   OriginalLaunchAttackDamage: 0
   LaunchAttackDamage: 0
   LaunchAttackCounter: 0
-  LaunchAttackCounterMax: 1
+  LaunchAttackCounterMax: 0
   LaunchAttackStatusesToInflict: []
   LaunchAttackExecuteDamage: 0
-  HeavyAttackAnimationName: Sword3
+  HeavyAttackAnimationName: 
   HeavyAttackAnimationTimer: -1
   OriginalHeavyAttackBufferThreshold: 0
   HeavyAttackBufferThreshold: 0
-  OriginalHeavyAttackDamage: 3
-  HeavyAttackDamage: 3
+  OriginalHeavyAttackDamage: 0
+  HeavyAttackDamage: 0
   HeavyAttackCounter: 0
-  HeavyAttackCounterMax: 1
+  HeavyAttackCounterMax: 0
   HeavyAttackStatusesToInflict: []
   HeavyAttackExecuteDamage: 0

@@ -33,9 +33,9 @@ public class Stats : MonoBehaviour
     [SerializeField] private float BaseLifebloodRegen;
 
     [Header("Trinket")]
-    [SerializeField] protected internal float OriginalTrinket;
-    public float MaxTrinket { get; set; }
-    public float CurrentTrinket { get; set; } = -1; // Defaulted for Start method logic
+    [SerializeField] protected internal int OriginalTrinketPoints;
+    public int MaxTrinketPoints { get; set; }
+    public int CurrentTrinketPoints { get; set; } = -1; // Defaulted for Start method logic
 
     // Script References
     private StatusMod StatusModScript; // Used only to inflict exhaust
@@ -53,8 +53,8 @@ public class Stats : MonoBehaviour
     [SerializeField] private float RuntimeCurrentMana;
     [SerializeField] private float RuntimeMaxLifeblood;
     [SerializeField] private float RuntimeCurrentLifeblood;
-    [SerializeField] private float RuntimeMaxTrinket;
-    [SerializeField] private float RuntimeCurrentTrinket;
+    [SerializeField] private float RuntimeMaxTrinketPoints;
+    [SerializeField] private float RuntimeCurrentTrinketPoints;
 
     /// <summary>
     /// Updates the Runtime variables for debugging purposes when DisplayRuntimeValues is true
@@ -73,8 +73,8 @@ public class Stats : MonoBehaviour
             RuntimeCurrentMana = CurrentMana;
             RuntimeMaxLifeblood = MaxLifeblood;
             RuntimeCurrentLifeblood = CurrentLifeblood;
-            RuntimeMaxTrinket = MaxTrinket;
-            RuntimeCurrentTrinket = CurrentTrinket;
+            RuntimeMaxTrinketPoints = MaxTrinketPoints;
+            RuntimeCurrentTrinketPoints = CurrentTrinketPoints;
         }
     }
 
@@ -362,10 +362,10 @@ public class Stats : MonoBehaviour
         }
 
         // Set Trinket Points
-        MaxTrinket = OriginalTrinket;
-        if (CurrentTrinket == -1)
+        MaxTrinketPoints = OriginalTrinketPoints;
+        if (CurrentTrinketPoints == -1)
         {
-            CurrentTrinket = MaxTrinket;
+            CurrentTrinketPoints = MaxTrinketPoints;
         }
 
         // Retrieve Script References

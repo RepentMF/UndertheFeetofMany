@@ -46,7 +46,7 @@ public class EnemyInfo : MonoBehaviour
         if(HasBeenDefeated && StateManagerScript.GetCurrentAnimationTimer() <= 0.0f && 
             StateManagerScript.GetCurrentAnimationTimer() != 0.0f)
         {
-            Debug.Break();
+            // Debug.Break();
             DeathPlace = this.gameObject.transform.position;
             FindObjectsOfType<RoomManager>(true)[0].ObserveEnemiesInRoom();
             StateManagerScript.InitializeOnDeath(CorpseObjectScript);

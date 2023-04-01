@@ -66,6 +66,10 @@ public class PlayerController : GenericSingleton<PlayerController>
         if (StateManagerScript.CurrentState == ActionState.Attack && StateManagerScript.GetCurrentAnimationName() == CurrentAttackAnimationName && StateManagerScript.GetCurrentAnimationTimer() <= 0.0f)
         {
             CurrentAttackAnimationName = "";
+            if (InventoryScript.EquippedWeapon != null)
+            {
+                InventoryScript.EquippedWeapon.ResetAttackCounters();
+            }
             StateManagerScript.CurrentState = ActionState.Idle;
         }
     }
@@ -116,18 +120,28 @@ public class PlayerController : GenericSingleton<PlayerController>
                 // Light weapon attack
                 if (CurrentAttackAnimationName == "")
                 {
+                    InventoryScript.EquippedWeapon.LightAttackCounter++;
                     CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LightAttackAnimationName;
                     StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LightAttackAnimationName, InventoryScript.EquippedWeapon.LightAttackAnimationTimer, InventoryScript.EquippedWeapon.LightAttackBufferThreshold);
                     StateManagerScript.CurrentState = ActionState.Attack;
                 }
-                else if (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LightAttackAnimationName)
+                else if (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LightAttackAnimationName && InventoryScript.EquippedWeapon.LightAttackCounter < InventoryScript.EquippedWeapon.LightAttackCounterMax)
                 {
+                    InventoryScript.EquippedWeapon.LightAttackCounter++;
                     CurrentAttackAnimationName = InventoryScript.EquippedWeapon.MediumAttackAnimationName;
                     StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.MediumAttackAnimationName, InventoryScript.EquippedWeapon.MediumAttackAnimationTimer, InventoryScript.EquippedWeapon.MediumAttackBufferThreshold);
                     StateManagerScript.CurrentState = ActionState.Attack;
                 }
+                else if (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName && InventoryScript.EquippedWeapon.LightAttackCounter < InventoryScript.EquippedWeapon.LightAttackCounterMax)
+                {
+                    InventoryScript.EquippedWeapon.LightAttackCounter++;
+                    CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LightAttackAnimationName;
+                    StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LightAttackAnimationName, InventoryScript.EquippedWeapon.LightAttackAnimationTimer, InventoryScript.EquippedWeapon.LightAttackBufferThreshold);
+                    StateManagerScript.CurrentState = ActionState.Attack;
+                }
                 else if (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == "Knife2")
                 {
+                    InventoryScript.EquippedWeapon.LightAttackCounter++;
                     CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LightAttackAnimationName;
                     StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LightAttackAnimationName, InventoryScript.EquippedWeapon.LightAttackAnimationTimer, InventoryScript.EquippedWeapon.LightAttackBufferThreshold);
                     StateManagerScript.CurrentState = ActionState.Attack;
@@ -158,8 +172,9 @@ public class PlayerController : GenericSingleton<PlayerController>
                 }
                 else if (InventoryScript.EquippedWeapon.Name == "Hammer")
                 {
-                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName))
+                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName || (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LaunchAttackAnimationName && InventoryScript.EquippedWeapon.LaunchAttackCounter < InventoryScript.EquippedWeapon.LaunchAttackCounterMax))))
                     {
+                        InventoryScript.EquippedWeapon.LaunchAttackCounter++;
                         CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LaunchAttackAnimationName;
                         StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.LaunchAttackAnimationName, InventoryScript.EquippedWeapon.LaunchAttackAnimationTimer, InventoryScript.EquippedWeapon.LaunchAttackBufferThreshold);
                         StateManagerScript.CurrentState = ActionState.Attack;
@@ -187,8 +202,9 @@ public class PlayerController : GenericSingleton<PlayerController>
                 }
                 else if (InventoryScript.EquippedWeapon.Name == "Sword")
                 {
-                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName))
+                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName || (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.HeavyAttackAnimationName && InventoryScript.EquippedWeapon.HeavyAttackCounter < InventoryScript.EquippedWeapon.HeavyAttackCounterMax))))
                     {
+                        InventoryScript.EquippedWeapon.HeavyAttackCounter++;
                         CurrentAttackAnimationName = InventoryScript.EquippedWeapon.HeavyAttackAnimationName;
                         StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.HeavyAttackAnimationName, InventoryScript.EquippedWeapon.HeavyAttackAnimationTimer, InventoryScript.EquippedWeapon.HeavyAttackBufferThreshold);
                         StateManagerScript.CurrentState = ActionState.Attack;
@@ -196,8 +212,9 @@ public class PlayerController : GenericSingleton<PlayerController>
                 }
                 else if (InventoryScript.EquippedWeapon.Name == "Hammer")
                 {
-                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LaunchAttackAnimationName))
+                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LaunchAttackAnimationName || (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.HeavyAttackAnimationName && InventoryScript.EquippedWeapon.HeavyAttackCounter < InventoryScript.EquippedWeapon.HeavyAttackCounterMax))))
                     {
+                        InventoryScript.EquippedWeapon.HeavyAttackCounter++;
                         CurrentAttackAnimationName = InventoryScript.EquippedWeapon.HeavyAttackAnimationName;
                         StateManagerScript.SetAttackAnimation(InventoryScript.EquippedWeapon.HeavyAttackAnimationName, InventoryScript.EquippedWeapon.HeavyAttackAnimationTimer, InventoryScript.EquippedWeapon.HeavyAttackBufferThreshold);
                         StateManagerScript.CurrentState = ActionState.Attack;
@@ -382,6 +399,10 @@ public class PlayerController : GenericSingleton<PlayerController>
     private void NoAction()
     {
         CurrentAttackAnimationName = "";
+        if (InventoryScript.EquippedWeapon != null)
+        {
+            InventoryScript.EquippedWeapon.ResetAttackCounters();
+        }
         StateManagerScript.CurrentState = ActionState.Idle;
     }
 
@@ -473,7 +494,7 @@ public class PlayerController : GenericSingleton<PlayerController>
             Action();
         }
     }
-    
+
     void OnDestroy()
     {
         if (GameStateManager.Instance != null)

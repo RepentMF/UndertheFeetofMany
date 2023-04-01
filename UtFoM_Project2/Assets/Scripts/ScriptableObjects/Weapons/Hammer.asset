@@ -12,19 +12,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca520cb67727a9e46b044c55357d0272, type: 3}
   m_Name: Hammer
   m_EditorClassIdentifier: 
-  Category: 6
   Name: Hammer
   Description: Badda-bing, badda-boom
   Sprite: {fileID: 21300000, guid: c4fa08e94a8b5ca40a099320cc410e9a, type: 3}
   LightAttackAnimationName: Hammer
   LightAttackAnimationTimer: -1
+  OriginalLightAttackBufferThreshold: 0
   LightAttackBufferThreshold: 0.25
+  OriginalLightAttackDamage: 2
+  LightAttackDamage: 2
+  LightAttackCounter: 0
+  LightAttackCounterMax: 2
+  LightAttackStatusesToInflict: []
+  LightAttackExecuteDamage: 0
   MediumAttackAnimationName: Hammer2
   MediumAttackAnimationTimer: -1
+  OriginalMediumAttackBufferThreshold: 0
   MediumAttackBufferThreshold: 0.25
+  OriginalMediumAttackDamage: 2
+  MediumAttackDamage: 2
   LaunchAttackAnimationName: Hammer3
   LaunchAttackAnimationTimer: -1
+  OriginalLaunchAttackBufferThreshold: 0
   LaunchAttackBufferThreshold: 0.25
+  OriginalLaunchAttackDamage: 2
+  LaunchAttackDamage: 2
+  LaunchAttackCounter: 0
+  LaunchAttackCounterMax: 1
+  LaunchAttackStatusesToInflict: []
+  LaunchAttackExecuteDamage: 0
   HeavyAttackAnimationName: Hammer4
   HeavyAttackAnimationTimer: -1
-  HeavyAttackBufferThreshold: 0.25
+  OriginalHeavyAttackBufferThreshold: 0
+  HeavyAttackBufferThreshold: 0
+  OriginalHeavyAttackDamage: 3
+  HeavyAttackDamage: 3
+  HeavyAttackCounter: 0
+  HeavyAttackCounterMax: 1
+  HeavyAttackStatusesToInflict: []
+  HeavyAttackExecuteDamage: 0

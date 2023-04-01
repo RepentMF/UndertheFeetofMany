@@ -5,11 +5,12 @@ using UnityEngine;
 [System.Serializable]
 public enum Status
 {
+    None,
+    Bleed,
+    Exhaust,
     Leech,
     Poison,
-    Bleed,
-    Struggle,
-    Exhaust
+    Struggle
 }
 
 [System.Serializable]

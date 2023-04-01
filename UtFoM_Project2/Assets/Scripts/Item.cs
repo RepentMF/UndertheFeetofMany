@@ -6,7 +6,7 @@ using UnityEngine;
 public enum ItemCategory
 {
     None, // Default
-    Charm,
+    Trinket,
     Diary,
     DoorKey,
     KeyItem,
@@ -16,10 +16,8 @@ public enum ItemCategory
 
 public abstract class Item : ScriptableObject
 {
-	public ItemCategory Category;
+	abstract protected internal ItemCategory Category { get; }
 	public string Name;
 	public string Description;
 	public Sprite Sprite;
-
-	public abstract Item Clone();
 }

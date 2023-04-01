@@ -321,15 +321,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SlimeRushRight
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 11400000, guid: 2e7f43af55af19547af84ab2cbbaacd8, type: 2}
   Thrust: {x: 100, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.2
   StateToInflict: 4
   ID: 0
-  StatusesToInflict: []
 --- !u!1 &3881115094508345109
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,15 +406,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SlimeRushLeft
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 11400000, guid: 2e7f43af55af19547af84ab2cbbaacd8, type: 2}
   Thrust: {x: -100, y: 0}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.2
   StateToInflict: 4
   ID: 0
-  StatusesToInflict: []
 --- !u!1 &3881115094720223018
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,15 +525,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SlimeRushDown
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 11400000, guid: 2e7f43af55af19547af84ab2cbbaacd8, type: 2}
   Thrust: {x: 0, y: -100}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.2
   StateToInflict: 4
   ID: 0
-  StatusesToInflict: []
 --- !u!1 &3881115095068226089
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,15 +645,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitboxName: SlimeRushUp
-  Damage: 2
-  Execute: 0
+  Type: 0
+  WeaponInfo: {fileID: 11400000, guid: 2e7f43af55af19547af84ab2cbbaacd8, type: 2}
   Thrust: {x: 0, y: 100}
   GravityScale: 0
   Velocity: {x: 0, y: 0}
   StaggerAmount: 0.2
   StateToInflict: 4
   ID: 0
-  StatusesToInflict: []
 --- !u!1 &3881115095826021321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,7 +1108,7 @@ MonoBehaviour:
   BaseManaRegen: 0
   OriginalLifeblood: 0
   BaseLifebloodRegen: 0
-  OriginalTrinket: 0
+  OriginalTrinketPoints: 0
   DisplayRuntimeValues: 0
   RuntimeIsInvulnerable: 0
   RuntimeComboCount: 0
@@ -1124,8 +1120,8 @@ MonoBehaviour:
   RuntimeCurrentMana: 0
   RuntimeMaxLifeblood: 0
   RuntimeCurrentLifeblood: 0
-  RuntimeMaxTrinket: 0
-  RuntimeCurrentTrinket: 0
+  RuntimeMaxTrinketPoints: 0
+  RuntimeCurrentTrinketPoints: 0
 --- !u!114 &4399399052590795618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,7 +1171,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ParticleSystemScript: {fileID: 1673164112754338585, guid: 3e97a265cca02fa4c99cea94db3a177e,
     type: 3}
-  VFXSystemScript: {fileID: 0}
+  MainVFXSystemScript: {fileID: 0}
+  AltVFXSystemScript: {fileID: 0}
 --- !u!223 &2381787212923089175
 Canvas:
   m_ObjectHideFlags: 0
