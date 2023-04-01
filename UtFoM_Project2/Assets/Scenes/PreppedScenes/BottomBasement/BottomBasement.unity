@@ -6842,6 +6842,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 624107321, guid: 016d247afea7c2846927407433735bc1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399399052590795618, guid: 016d247afea7c2846927407433735bc1,
+        type: 3}
+      propertyPath: DeathObject
+      value: 
+      objectReference: {fileID: 7733052767763495240, guid: 5691e2cf927bc244caa45c393ab8cd23,
+        type: 3}
     - target: {fileID: 6163525119363727234, guid: 016d247afea7c2846927407433735bc1,
         type: 3}
       propertyPath: m_Pivot.x
@@ -9204,6 +9214,7 @@ MonoBehaviour:
   FreefallAnimationName: stagger
   DeathAnimationName: BB_gate_fall
   DeathAnimationTimer: 1.017
+  DeathObject: {fileID: 0}
   AppearAnimationName: appear
   AppearAnimationTimer: -1
   RemoveOnDeath: 1

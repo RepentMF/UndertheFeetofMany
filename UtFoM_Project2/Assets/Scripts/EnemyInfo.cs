@@ -12,7 +12,7 @@ public class EnemyInfo : MonoBehaviour
     private bool ShouldTurnOffLight = false;
     public float LightFadeSpeed = 1f;
     public string ID;
-    public int CorpseCounter = 0;
+    public int LifeBlood;
 
     // Script References
     private BoxCollider2D BoxCollider2DScript;
@@ -38,30 +38,16 @@ public class EnemyInfo : MonoBehaviour
     
     void FixedUpdate()
     {
-        if (gameCounter < 3)
-        {
-            gameCounter++;
-        }
-
-        if(HasBeenDefeated && StateManagerScript.GetCurrentAnimationTimer() <= 0.0f && 
-            StateManagerScript.GetCurrentAnimationTimer() != 0.0f)
-        {
-            // Debug.Break();
-            DeathPlace = this.gameObject.transform.position;
-            FindObjectsOfType<RoomManager>(true)[0].ObserveEnemiesInRoom();
-            StateManagerScript.InitializeOnDeath(CorpseObjectScript);
-        }
-        else if (HasBeenDefeated && gameCounter == 2)
-        {
-            this.gameObject.transform.position = DeathPlace;
-            StateManagerScript.InitializeOnDeath(CorpseObjectScript);
-            Destroy(this.gameObject);
-        }
+        gameCounter++;
         
-
-        if(this.gameObject.GetComponent<Stats>().CurrentHealth <= 0)
+        if (HasBeenDefeated)
         {
-            HasBeenDefeated = true;
+            if (gameCounter == 2)
+            {
+                Debug.Break();
+                StateManagerScript.InitializeOnDeath(CorpseObjectScript);
+                this.gameObject.SetActive(false);
+            }
         }
     }
 }

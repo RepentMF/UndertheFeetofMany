@@ -208,8 +208,6 @@ public class RoomManager : GenericSingleton<RoomManager>
         if (sceneChange)
         {
             sceneChange = false;
-            //ObserveTreasureInRoom();
-            //ObserveEnemiesInRoom();
             PlaceTreasureInRoom();
             PlaceEnemiesInRoom();
             PlacePuzzlesInRoom();

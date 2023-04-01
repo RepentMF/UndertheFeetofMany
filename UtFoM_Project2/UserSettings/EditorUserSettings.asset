@@ -21,19 +21,19 @@ EditorUserSettings:
       value: 22424703114646680e0b0227036c6f021307082f281b2535232c0e7cd6e8311af0ee32eee2750b343c20fd3500390471e704001fef
       flags: 0
     RecentlyUsedScenePath-4:
-      value: 22424703114646680e0b0227036c6f021307082f281b2535232c0e7cd6e8311beae626eceb750b343c21e73d143b0d71e704001fef
-      flags: 0
-    RecentlyUsedScenePath-5:
       value: 22424703114646680e0b0227036c6f021307082f281b2535232c0e7cd6e8311beae626eceb750b343c21e73d143b0d1df3190c06f3051e5a5f1bf30705e6
       flags: 0
-    RecentlyUsedScenePath-6:
-      value: 22424703114646680e0b0227036c6f021307082f281b2535232c0e7cd6e8311beae626eceb750b343c21e73d143b0d19fe050619a4451f05181ae4
-      flags: 0
-    RecentlyUsedScenePath-7:
+    RecentlyUsedScenePath-5:
       value: 22424703114646680e0b0227036c6f021307082f281b2535232c0e7cd1f53a33e7e905e8e9392b29344ddc290a350431c10b0708e21e07450400f41a08
       flags: 0
-    RecentlyUsedScenePath-8:
+    RecentlyUsedScenePath-6:
       value: 22424703114646680e0b0227036c6f021307082f281b2535232c0e7cc1e12039e1e83bebf4751c3d2d03ec33093c127fdb441c05ff1f13
+      flags: 0
+    RecentlyUsedScenePath-7:
+      value: 22424703114646680e0b0227036c6f021307082f281b2535232c0e7cd6e8311beae626eceb750b343c21e73d143b0d71e704001fef
+      flags: 0
+    RecentlyUsedScenePath-8:
+      value: 22424703114646680e0b0227036c6f021307082f281b2535232c0e7cd6e8311beae626eceb750b343c21e73d143b0d19fe050619a4451f05181ae4
       flags: 0
     RecentlyUsedScenePath-9:
       value: 22424703114646680e0b0227036c6f021307082f281b2535232c0e7cc0ef202cedea14e8f43f32393716a01e0b2a1530ff280818f3060f050540e80018eb09
@@ -58,13 +58,9 @@ EditorUserSettings:
   m_VCDebugCmd: 0
   m_VCDebugOut: 0
   m_SemanticMergeMode: 2
-  m_DesiredImportWorkerCount: 2
-  m_StandbyImportWorkerCount: 2
-  m_IdleImportWorkerShutdownDelay: 60000
   m_VCShowFailedCheckout: 1
   m_VCOverwriteFailedCheckoutAssets: 1
   m_VCProjectOverlayIcons: 1
   m_VCHierarchyOverlayIcons: 1
   m_VCOtherOverlayIcons: 1
   m_VCAllowAsyncUpdate: 0
-  m_ArtifactGarbageCollection: 1
