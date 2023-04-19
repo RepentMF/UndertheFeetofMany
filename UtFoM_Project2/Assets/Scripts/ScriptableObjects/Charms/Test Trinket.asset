@@ -116,10 +116,10 @@ MonoBehaviour:
       Inflicter: {fileID: 0}
     HeavyAttackExecuteDamage: 0
   StatsModification:
-    MaxHealthModifier: 0
-    MaxStaminaModifier: 0
-    MaxManaModifier: 0
-    MaxLifebloodModifier: 0
+    MaxHealthModifier: 20
+    MaxStaminaModifier: 20
+    MaxManaModifier: 20
+    MaxLifebloodModifier: 20
     MaxTrinketModifier: 0
     LightAttackCounterMaxModifier: 0
     LightAttackDamageModifierPercentage: 0
