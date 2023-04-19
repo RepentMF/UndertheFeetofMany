@@ -218,6 +218,7 @@ public class StateManager : MonoBehaviour
             if (this.gameObject.GetComponent<EnemyInfo>() != null)
             {
                 InitializeOnDeath(this.gameObject.GetComponent<EnemyInfo>().CorpseObjectScript);
+                InitializeOnDeath(this.gameObject.GetComponent<EnemyInfo>().LifeBloodParticleSystemScript);
             }
             this.gameObject.SetActive(false);
         }

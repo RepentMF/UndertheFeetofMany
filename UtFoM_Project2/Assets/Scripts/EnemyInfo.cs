@@ -21,6 +21,7 @@ public class EnemyInfo : MonoBehaviour
     private SpriteRenderer TargetSpriteRendererScript;
     private StateManager StateManagerScript;
     public GameObject CorpseObjectScript;
+    public GameObject LifeBloodParticleSystemScript;
 
     private void FadeLight()
     {
@@ -44,7 +45,6 @@ public class EnemyInfo : MonoBehaviour
         {
             if (gameCounter == 2)
             {
-                Debug.Break();
                 StateManagerScript.InitializeOnDeath(CorpseObjectScript);
                 this.gameObject.SetActive(false);
             }

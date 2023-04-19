@@ -86,7 +86,9 @@ public class Hurtbox : MonoBehaviour
     void OnDestroy()
     {
         if (GameStateManager.Instance != null)
+        {
             GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+        }
     }
 
     // Start is called before the first frame update
