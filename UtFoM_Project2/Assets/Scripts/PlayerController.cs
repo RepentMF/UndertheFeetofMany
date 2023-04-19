@@ -172,7 +172,7 @@ public class PlayerController : GenericSingleton<PlayerController>
                 }
                 else if (InventoryScript.EquippedWeapon.Name == "Hammer")
                 {
-                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName || (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LaunchAttackAnimationName && InventoryScript.EquippedWeapon.LaunchAttackCounter < InventoryScript.EquippedWeapon.LaunchAttackCounterMax))))
+                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && ((CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName || CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LightAttackAnimationName) && InventoryScript.EquippedWeapon.LightAttackCounter >= InventoryScript.EquippedWeapon.LightAttackCounterMax) || (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LaunchAttackAnimationName && InventoryScript.EquippedWeapon.LaunchAttackCounter < InventoryScript.EquippedWeapon.LaunchAttackCounterMax)))
                     {
                         InventoryScript.EquippedWeapon.LaunchAttackCounter++;
                         CurrentAttackAnimationName = InventoryScript.EquippedWeapon.LaunchAttackAnimationName;
@@ -202,7 +202,7 @@ public class PlayerController : GenericSingleton<PlayerController>
                 }
                 else if (InventoryScript.EquippedWeapon.Name == "Sword")
                 {
-                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName || (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.HeavyAttackAnimationName && InventoryScript.EquippedWeapon.HeavyAttackCounter < InventoryScript.EquippedWeapon.HeavyAttackCounterMax))))
+                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && (((CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName || CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LightAttackAnimationName) && InventoryScript.EquippedWeapon.LightAttackCounter >= InventoryScript.EquippedWeapon.LightAttackCounterMax) || (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.HeavyAttackAnimationName && InventoryScript.EquippedWeapon.HeavyAttackCounter < InventoryScript.EquippedWeapon.HeavyAttackCounterMax))))
                     {
                         InventoryScript.EquippedWeapon.HeavyAttackCounter++;
                         CurrentAttackAnimationName = InventoryScript.EquippedWeapon.HeavyAttackAnimationName;
@@ -212,7 +212,7 @@ public class PlayerController : GenericSingleton<PlayerController>
                 }
                 else if (InventoryScript.EquippedWeapon.Name == "Hammer")
                 {
-                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LaunchAttackAnimationName || (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.HeavyAttackAnimationName && InventoryScript.EquippedWeapon.HeavyAttackCounter < InventoryScript.EquippedWeapon.HeavyAttackCounterMax))))
+                    if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && ((CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LaunchAttackAnimationName && InventoryScript.EquippedWeapon.LaunchAttackCounter >= InventoryScript.EquippedWeapon.LaunchAttackCounterMax) || (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.HeavyAttackAnimationName && InventoryScript.EquippedWeapon.HeavyAttackCounter < InventoryScript.EquippedWeapon.HeavyAttackCounterMax))))
                     {
                         InventoryScript.EquippedWeapon.HeavyAttackCounter++;
                         CurrentAttackAnimationName = InventoryScript.EquippedWeapon.HeavyAttackAnimationName;
