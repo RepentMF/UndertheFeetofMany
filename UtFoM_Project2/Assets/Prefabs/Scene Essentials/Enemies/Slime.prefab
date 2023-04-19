@@ -1150,11 +1150,14 @@ MonoBehaviour:
   FreefallAnimationName: stagger
   DeathAnimationName: death
   DeathAnimationTimer: -1
+  DeathObject: {fileID: 7733052767763495240, guid: 5691e2cf927bc244caa45c393ab8cd23,
+    type: 3}
   AppearAnimationName: appear
   AppearAnimationTimer: -1
   RemoveOnDeath: 1
   IgnorePause: 0
   IgnoreInteracting: 0
+  HasBeenRemoved: 0
   DisplayRuntimeValues: 0
   RuntimeCurrentState: 0
   RuntimeCurrentAnimationName: 
@@ -1175,7 +1178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ParticleSystemScript: {fileID: 1673164112754338585, guid: 3e97a265cca02fa4c99cea94db3a177e,
     type: 3}
-  VFXSystemScript: {fileID: 0}
+  MainVFXSystemScript: {fileID: 0}
+  AltVFXSystemScript: {fileID: 0}
 --- !u!223 &2381787212923089175
 Canvas:
   m_ObjectHideFlags: 0
@@ -1213,8 +1217,10 @@ MonoBehaviour:
   gameCounter: 0
   LightFadeSpeed: 1
   ID: 101
-  CorpseCounter: 0
+  LifeBlood: 0
   CorpseObjectScript: {fileID: 7733052767763495240, guid: 5691e2cf927bc244caa45c393ab8cd23,
+    type: 3}
+  LifeBloodParticleSystemScript: {fileID: 3884911629036381764, guid: 566b7e3cb0b703d4f98c7b87bc5fadf0,
     type: 3}
 --- !u!1 &6654852443872453840
 GameObject:

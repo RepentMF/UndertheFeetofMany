@@ -29,7 +29,7 @@ public class Stats : MonoBehaviour
     [Header("Lifeblood")]
     [SerializeField] protected internal float OriginalLifeblood;
     public float MaxLifeblood { get; set; }
-    public float CurrentLifeblood { get; set; } = -1; // Defaulted for Start method logic
+    public float CurrentLifeblood { get; set; } = 0; // Defaulted for Start method logic
     [SerializeField] private float BaseLifebloodRegen;
 
     [Header("Trinket")]
@@ -283,7 +283,7 @@ public class Stats : MonoBehaviour
     {
         if (CurrentLifeblood < MaxLifeblood && regen > 0.0f)
         {
-            CurrentLifeblood += regen * Time.deltaTime;
+            CurrentLifeblood += regen;
             if (CurrentLifeblood > MaxLifeblood)
             {
                 CurrentLifeblood = MaxLifeblood;
