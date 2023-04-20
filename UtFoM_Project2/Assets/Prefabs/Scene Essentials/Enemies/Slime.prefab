@@ -1146,8 +1146,9 @@ MonoBehaviour:
   FreefallAnimationName: stagger
   DeathAnimationName: death
   DeathAnimationTimer: -1
-  DeathObject: {fileID: 7733052767763495240, guid: 5691e2cf927bc244caa45c393ab8cd23,
-    type: 3}
+  DeathObjects:
+  - {fileID: 3884911629036381764, guid: 566b7e3cb0b703d4f98c7b87bc5fadf0, type: 3}
+  - {fileID: 7733052767763495240, guid: 5691e2cf927bc244caa45c393ab8cd23, type: 3}
   AppearAnimationName: appear
   AppearAnimationTimer: -1
   RemoveOnDeath: 1

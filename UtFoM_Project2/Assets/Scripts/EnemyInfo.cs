@@ -45,7 +45,8 @@ public class EnemyInfo : MonoBehaviour
         {
             if (gameCounter == 2)
             {
-                StateManagerScript.InitializeOnDeath(CorpseObjectScript);
+                CorpseObjectScript.transform.position = this.gameObject.transform.position;
+                Instantiate(CorpseObjectScript);
                 this.gameObject.SetActive(false);
             }
         }

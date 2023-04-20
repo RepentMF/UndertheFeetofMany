@@ -52,7 +52,6 @@ public class PlayerController : GenericSingleton<PlayerController>
             && BookInfoReference != null)
         {
             StateManager pauseMenuStateManager = PauseMenuReference.GetComponent<StateManager>();
-            pauseMenuStateManager.InitializeOnDeath(StatsBookReference);
             BookInfoReference.SetActive(false);
             pauseMenuStateManager.CurrentState = ActionState.Death;
         }

@@ -73,7 +73,7 @@ public class StateManager : MonoBehaviour
     [SerializeField] private string FreefallAnimationName = "stagger";
     [SerializeField] private string DeathAnimationName = "death";
     [SerializeField] private float DeathAnimationTimer = -1.0f;
-    public GameObject DeathObject;
+    public List<GameObject> DeathObjects = new List<GameObject>();
     [SerializeField] public string AppearAnimationName = "appear";
     [SerializeField] public float AppearAnimationTimer = -1.0f;
     [SerializeField] public bool RemoveOnDeath = true;
@@ -215,20 +215,21 @@ public class StateManager : MonoBehaviour
         yield return new WaitForEndOfFrame();
         if (RemoveOnDeath && CurrentAnimation.AnimationName == DeathAnimationName && CurrentAnimation.AnimationTimer <= 0.0f && CurrentState == ActionState.Death)
         {
-            if (this.gameObject.GetComponent<EnemyInfo>() != null)
-            {
-                InitializeOnDeath(this.gameObject.GetComponent<EnemyInfo>().CorpseObjectScript);
-                InitializeOnDeath(this.gameObject.GetComponent<EnemyInfo>().LifeBloodParticleSystemScript);
-            }
+            SpawnDeathObjects();
             this.gameObject.SetActive(false);
         }
     }
 
-    public void InitializeOnDeath(GameObject obj)
+    public void SpawnDeathObjects()
     {
-        DeathObject = obj;
-        DeathObject.transform.position = this.gameObject.transform.position;
-        Instantiate(DeathObject);
+        DeathObjects.ForEach(obj => {
+            if (obj.GetComponent<RectTransform>() == null) {
+                obj.transform.position = this.gameObject.transform.position;
+                Instantiate(obj);
+            } else {
+                obj.SetActive(true);
+            }
+        });
     }
 
     /// <summary>
