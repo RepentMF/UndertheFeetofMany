@@ -959,6 +959,7 @@ SpriteAtlas:
   - {fileID: -5086816516320353920, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
   - {fileID: -1622549613547736378, guid: 09aa6ad52ae59c743856da286a08577b, type: 3}
   - {fileID: 21300000, guid: eb6d65e58d32b8049b694f1eeb9b6a43, type: 3}
+  - {fileID: 21300000, guid: 10b47de54b34e3a41a77bc38471ffb46, type: 3}
   - {fileID: 21300000, guid: 156315169f6f93f46aa509cebe0cbb8f, type: 3}
   - {fileID: 21300000, guid: eff0ff1679b2afa4bbc0e2b4a7604445, type: 3}
   - {fileID: 21300000, guid: b7e57426ddebec8468349bce0c0b06dd, type: 3}
@@ -1716,6 +1717,11 @@ SpriteAtlas:
   - {fileID: 21300000, guid: deeac7ea450d4124a8fc1a18d3ed8de4, type: 3}
   - {fileID: 21300000, guid: fbdd081b7e0feb2478943c80edb97b22, type: 3}
   - {fileID: 21300000, guid: cea4842b8747c8c438f34c5fd5e8cfd3, type: 3}
+  - {fileID: -6636598161724943626, guid: 6b501f8ba89519740ac65660f296ed4e, type: 3}
+  - {fileID: -1018797699246278763, guid: 6b501f8ba89519740ac65660f296ed4e, type: 3}
+  - {fileID: 4676007371566357230, guid: 6b501f8ba89519740ac65660f296ed4e, type: 3}
+  - {fileID: 6488014178412330223, guid: 6b501f8ba89519740ac65660f296ed4e, type: 3}
+  - {fileID: -1285414887283047681, guid: 6b501f8ba89519740ac65660f296ed4e, type: 3}
   - {fileID: 21300000, guid: 6a8a77cbea7c3504fb90d32748f67a21, type: 3}
   - {fileID: -6424056911227841750, guid: 67a147db74200a041852c55e45fbd566, type: 3}
   - {fileID: 5929601526426601885, guid: 67a147db74200a041852c55e45fbd566, type: 3}
@@ -3284,6 +3290,7 @@ SpriteAtlas:
   - slime_33
   - slime_32
   - book_opening_8
+  - trinkets_page
   - TB_R3
   - TC_wall
   - bb_house2
@@ -4041,6 +4048,11 @@ SpriteAtlas:
   - markus_diary_item
   - Cutscene_car3
   - Cutscene_car
+  - trinkets_page_selection_1
+  - trinkets_page_selection_0
+  - trinkets_page_selection_3
+  - trinkets_page_selection_2
+  - trinkets_page_selection_4
   - bb_side_house
   - Jenna_final_32
   - Jenna_final_33
