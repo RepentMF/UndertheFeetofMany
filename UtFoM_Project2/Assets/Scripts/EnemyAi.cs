@@ -185,6 +185,33 @@ public abstract class EnemyAi : MonoBehaviour
     }
 
     /// <summary>
+    /// Determines the cardinal direction of an initial direction
+    /// </summary>
+    protected internal Vector3 CheckCardinal(Vector3 dir)
+    {
+        Vector3 tempDir = new Vector3 (0, 0, 0);
+
+        if (dir.x > 0 && Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+        {
+            tempDir = Vector3.right;
+        }
+        else if (dir.y > 0 && Mathf.Abs(dir.y) > Mathf.Abs(dir.x))
+        {
+            tempDir = Vector3.up;
+        }
+        else if (dir.x < 0 && Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+        {
+            tempDir = Vector3.left;
+        }
+        else if (dir.y < 0 && Mathf.Abs(dir.y) > Mathf.Abs(dir.x))
+        {
+            tempDir = Vector3.down;
+        }
+
+        return tempDir;
+    }
+
+    /// <summary>
     /// Determines the direction in which to face the target
     /// </summary>
     protected internal void CheckDirection()
@@ -192,26 +219,15 @@ public abstract class EnemyAi : MonoBehaviour
         if (IsInRange() && !StatusModScript.GetStatus(Status.Exhaust))
         {
             Direction = (Target.transform.position - this.transform.position).normalized;
+
+            Vector3 AnimDirection = CheckCardinal(Direction);
+
             if (QuadDirectionOnly)
             {
-                if (Direction.x > 0 && Mathf.Abs(Direction.x) > Mathf.Abs(Direction.y))
-                {
-                    Direction = Vector3.right;
-                }
-                else if (Direction.y > 0 && Mathf.Abs(Direction.y) > Mathf.Abs(Direction.x))
-                {
-                    Direction = Vector3.up;
-                }
-                else if (Direction.x < 0 && Mathf.Abs(Direction.x) > Mathf.Abs(Direction.y))
-                {
-                    Direction = Vector3.left;
-                }
-                else if (Direction.y < 0 && Mathf.Abs(Direction.y) > Mathf.Abs(Direction.x))
-                {
-                    Direction = Vector3.down;
-                }
+                Direction = CheckCardinal(Direction);
             }
-            SetAnimatorFloats(Direction);
+
+            SetAnimatorFloats(AnimDirection);
         }
     }
 

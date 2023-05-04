@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &628151206
 Transform:
   m_ObjectHideFlags: 0
@@ -782,7 +782,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.05499983, y: 0.45000005}
+  m_AnchoredPosition: {x: -0.09, y: 0.45000005}
   m_SizeDelta: {x: 161.1111, y: 33.333332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7673650417247483060
@@ -1145,7 +1145,7 @@ MonoBehaviour:
   JuggleAnimationName: stagger
   FreefallAnimationName: stagger
   DeathAnimationName: death
-  DeathAnimationTimer: -1
+  DeathAnimationTimer: 0.8
   DeathObjects:
   - {fileID: 3884911629036381764, guid: 566b7e3cb0b703d4f98c7b87bc5fadf0, type: 3}
   - {fileID: 7733052767763495240, guid: 5691e2cf927bc244caa45c393ab8cd23, type: 3}

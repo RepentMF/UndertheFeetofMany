@@ -40,6 +40,7 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void ToggleDisplayPauseMenu()
     {
+        // Unpauses the game
         if (GameStateManager.Instance.IsPaused() && PauseMenuReference != null && StatsBookReference != null
             && BookInfoReference != null)
         {
@@ -48,6 +49,7 @@ public class PlayerController : GenericSingleton<PlayerController>
             pauseMenuStateManager.CurrentState = ActionState.Appear;
             StatsBookReference.SetActive(false);
         }
+        // Pauses the game
         else if (!GameStateManager.Instance.IsPaused() && PauseMenuReference != null && StatsBookReference != null
             && BookInfoReference != null)
         {

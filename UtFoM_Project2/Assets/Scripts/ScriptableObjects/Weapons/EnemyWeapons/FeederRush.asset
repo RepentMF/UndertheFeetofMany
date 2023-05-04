@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca520cb67727a9e46b044c55357d0272, type: 3}
+  m_Name: FeederRush
+  m_EditorClassIdentifier: 
+  Name: FeederRush
+  Description: here dat boi comes
+  Sprite: {fileID: 0}
+  LightAttackAnimationName: FeederRush
+  LightAttackAnimationTimer: -1
+  OriginalLightAttackBufferThreshold: 0
+  LightAttackBufferThreshold: 0
+  OriginalLightAttackDamage: 3
+  LightAttackDamage: 3
+  LightAttackCounter: 0
+  LightAttackCounterMax: 0
+  LightAttackStatusesToInflict: []
+  LightAttackExecuteDamage: 0
+  MediumAttackAnimationName: 
+  MediumAttackAnimationTimer: -1
+  OriginalMediumAttackBufferThreshold: 0
+  MediumAttackBufferThreshold: 0
+  OriginalMediumAttackDamage: 0
+  MediumAttackDamage: 0
+  LaunchAttackAnimationName: 
+  LaunchAttackAnimationTimer: -1
+  OriginalLaunchAttackBufferThreshold: 0
+  LaunchAttackBufferThreshold: 0
+  OriginalLaunchAttackDamage: 0
+  LaunchAttackDamage: 0
+  LaunchAttackCounter: 0
+  LaunchAttackCounterMax: 0
+  LaunchAttackStatusesToInflict: []
+  LaunchAttackExecuteDamage: 0
+  HeavyAttackAnimationName: 
+  HeavyAttackAnimationTimer: -1
+  OriginalHeavyAttackBufferThreshold: 0
+  HeavyAttackBufferThreshold: 0
+  OriginalHeavyAttackDamage: 0
+  HeavyAttackDamage: 0
+  HeavyAttackCounter: 0
+  HeavyAttackCounterMax: 0
+  HeavyAttackStatusesToInflict: []
+  HeavyAttackExecuteDamage: 0
