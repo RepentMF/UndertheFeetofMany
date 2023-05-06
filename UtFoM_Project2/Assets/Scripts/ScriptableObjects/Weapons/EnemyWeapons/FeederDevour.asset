@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca520cb67727a9e46b044c55357d0272, type: 3}
-  m_Name: FeederRush
+  m_Name: FeederDevour
   m_EditorClassIdentifier: 
   Name: FeederRush
   Description: here dat boi comes
@@ -19,18 +19,18 @@ MonoBehaviour:
   LightAttackAnimationTimer: -1
   OriginalLightAttackBufferThreshold: 0
   LightAttackBufferThreshold: 0
-  OriginalLightAttackDamage: 0
-  LightAttackDamage: 0
+  OriginalLightAttackDamage: 3
+  LightAttackDamage: 3
   LightAttackCounter: 0
   LightAttackCounterMax: 0
   LightAttackStatusesToInflict: []
   LightAttackExecuteDamage: 0
-  MediumAttackAnimationName: FeederRush
+  MediumAttackAnimationName: 
   MediumAttackAnimationTimer: -1
   OriginalMediumAttackBufferThreshold: 0
   MediumAttackBufferThreshold: 0
-  OriginalMediumAttackDamage: 3
-  MediumAttackDamage: 3
+  OriginalMediumAttackDamage: 0
+  MediumAttackDamage: 0
   LaunchAttackAnimationName: 
   LaunchAttackAnimationTimer: -1
   OriginalLaunchAttackBufferThreshold: 0
@@ -41,12 +41,12 @@ MonoBehaviour:
   LaunchAttackCounterMax: 0
   LaunchAttackStatusesToInflict: []
   LaunchAttackExecuteDamage: 0
-  HeavyAttackAnimationName: 
+  HeavyAttackAnimationName: FeederDevour
   HeavyAttackAnimationTimer: -1
   OriginalHeavyAttackBufferThreshold: 0
   HeavyAttackBufferThreshold: 0
-  OriginalHeavyAttackDamage: 0
-  HeavyAttackDamage: 0
+  OriginalHeavyAttackDamage: 5
+  HeavyAttackDamage: 5
   HeavyAttackCounter: 0
   HeavyAttackCounterMax: 0
   HeavyAttackStatusesToInflict: []

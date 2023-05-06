@@ -35,6 +35,7 @@ public class EnemyInfo : MonoBehaviour
 	{
 		SpriteRendererScript = gameObject.GetComponent<SpriteRenderer>();
         StateManagerScript = gameObject.GetComponent<StateManager>();
+        LifeBloodParticleSystemScript.GetComponent<ParticleSystem>().maxParticles = LifeBlood;
 	}
     
     void FixedUpdate()

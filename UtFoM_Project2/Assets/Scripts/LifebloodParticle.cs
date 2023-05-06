@@ -8,7 +8,7 @@ public class LifebloodParticle : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (this.gameObject.GetComponent<Collider2D>().isTrigger)
+        if (collider.isTrigger)
         {
             if (collider.GetComponent<PlayerController>())
             {

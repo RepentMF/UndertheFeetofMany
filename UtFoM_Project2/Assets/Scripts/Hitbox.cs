@@ -34,8 +34,9 @@ public class Hitbox : MonoBehaviour
         StateManager targetStateManagerScript = collider.GetComponent<StateManager>();
         StatusMod targetStatusModScript = collider.GetComponent<StatusMod>();
 
-        if ((GetComponentInParent<EnemyAi>() && collider.GetComponentInParent<PlayerController>()) ||
-                GetComponentInParent<PlayerController>() && collider.GetComponentInParent<EnemyAi>())
+        if (((GetComponentInParent<EnemyAi>() && collider.GetComponentInParent<PlayerController>()) ||
+                GetComponentInParent<PlayerController>() && collider.GetComponentInParent<EnemyAi>()) &&
+                collider.isTrigger)
         {
             if (targetHurtboxScript != null && targetRigidbody2DScript != null && targetStatsScript != null && !targetStatsScript.IsInvulnerable)
             {

@@ -125,7 +125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1191717083
 Transform:
   m_ObjectHideFlags: 0
@@ -725,7 +725,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.47249413}
+  m_Offset: {x: -0.02294144, y: -0.32245255}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -736,7 +736,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 1.0771923}
+  m_Size: {x: 0.5458829, y: 1.3772755}
   m_EdgeRadius: 0
 --- !u!95 &660729248335287821
 Animator:
@@ -928,11 +928,13 @@ MonoBehaviour:
   FreefallAnimationName: Stagger
   DeathAnimationName: death
   DeathAnimationTimer: -1
+  DeathObjects: []
   AppearAnimationName: appear
   AppearAnimationTimer: -1
   RemoveOnDeath: 1
   IgnorePause: 0
   IgnoreInteracting: 0
+  HasBeenRemoved: 0
   DisplayRuntimeValues: 0
   RuntimeCurrentState: 0
   RuntimeCurrentAnimationName: 

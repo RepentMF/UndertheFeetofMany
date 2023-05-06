@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -5914571401347428751}
   - component: {fileID: 3967498818819115385}
   m_Layer: 0
-  m_Name: slime_corpse
+  m_Name: feeder_corpse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7733052767763495240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.539981, y: 0.68056077, z: -1}
+  m_LocalPosition: {x: -1.0600069, y: -0.31494817, z: -1}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 1913720019
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2036853895379287545, guid: 09aa6ad52ae59c743856da286a08577b,
+  m_Sprite: {fileID: 6226738457654624703, guid: 7eae60ee79d9c6946b95aea93185a1f9,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -116,7 +116,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 1.25}
+    oldSize: {x: 1.1111112, y: 1.1111112}
     newSize: {x: 1.25, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
