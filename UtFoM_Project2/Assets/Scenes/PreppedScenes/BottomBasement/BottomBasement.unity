@@ -1861,7 +1861,7 @@ PrefabInstance:
     - target: {fileID: 6654852442941469577, guid: 016d247afea7c2846927407433735bc1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 016d247afea7c2846927407433735bc1, type: 3}
@@ -6954,6 +6954,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6654852442941469577, guid: 016d247afea7c2846927407433735bc1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 016d247afea7c2846927407433735bc1, type: 3}
 --- !u!1 &1165070553
@@ -8473,7 +8478,7 @@ PrefabInstance:
     - target: {fileID: 6654852442941469577, guid: 016d247afea7c2846927407433735bc1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 016d247afea7c2846927407433735bc1, type: 3}
@@ -8498,6 +8503,33 @@ PrefabInstance:
       propertyPath: ID
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1285928405, guid: 55774240d9eb00546b95aa2a5eeba157, type: 3}
+      propertyPath: CorpseObjectScript
+      value: 
+      objectReference: {fileID: 7733052767763495240, guid: c1a74ad296107cc41837ae1f52380116,
+        type: 3}
+    - target: {fileID: 5323291326135493785, guid: 55774240d9eb00546b95aa2a5eeba157,
+        type: 3}
+      propertyPath: DeathAnimationTimer
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323291326135493785, guid: 55774240d9eb00546b95aa2a5eeba157,
+        type: 3}
+      propertyPath: DeathObjects.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5323291326135493785, guid: 55774240d9eb00546b95aa2a5eeba157,
+        type: 3}
+      propertyPath: DeathObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 7733052767763495240, guid: c1a74ad296107cc41837ae1f52380116,
+        type: 3}
+    - target: {fileID: 5323291326135493785, guid: 55774240d9eb00546b95aa2a5eeba157,
+        type: 3}
+      propertyPath: DeathObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 3884911629036381764, guid: 566b7e3cb0b703d4f98c7b87bc5fadf0,
+        type: 3}
     - target: {fileID: 6513596937173604689, guid: 55774240d9eb00546b95aa2a5eeba157,
         type: 3}
       propertyPath: m_Pivot.x
@@ -9788,7 +9820,7 @@ PrefabInstance:
     - target: {fileID: 6654852442941469577, guid: 016d247afea7c2846927407433735bc1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 016d247afea7c2846927407433735bc1, type: 3}
@@ -9927,7 +9959,7 @@ PrefabInstance:
     - target: {fileID: 6654852442941469577, guid: 016d247afea7c2846927407433735bc1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 016d247afea7c2846927407433735bc1, type: 3}

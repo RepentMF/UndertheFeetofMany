@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: 75c342f18f7788443be2e52398811578
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6071519724582864886
+    second: player_spark_trigger_0
+  - first:
+      213: 2235235797748281230
+    second: player_spark_trigger_1
+  - first:
+      213: -3930310450905313316
+    second: player_spark_trigger_2
+  - first:
+      213: 1964178108077391643
+    second: player_spark_trigger_3
+  - first:
+      213: -5792732286810239589
+    second: player_spark_trigger_4
+  - first:
+      213: -1666703419399451550
+    second: player_spark_trigger_5
+  - first:
+      213: -7676596860022501131
+    second: player_spark_trigger_6
+  - first:
+      213: -6983759079275361618
+    second: player_spark_trigger_7
+  - first:
+      213: 3154428763279194153
+    second: player_spark_trigger_8
+  - first:
+      213: -2965602534943656570
+    second: player_spark_trigger_9
+  - first:
+      213: 6689842339960437001
+    second: player_spark_trigger_10
+  - first:
+      213: -4773110498349513365
+    second: player_spark_trigger_11
+  - first:
+      213: 6545182410916871080
+    second: player_spark_trigger_12
+  - first:
+      213: -6512283016819895040
+    second: player_spark_trigger_13
+  - first:
+      213: -6966285537580004600
+    second: player_spark_trigger_14
+  - first:
+      213: -1291314454039093575
+    second: player_spark_trigger_15
+  - first:
+      213: 259428542115603452
+    second: player_spark_trigger_16
+  - first:
+      213: -3826082555900385142
+    second: player_spark_trigger_17
+  - first:
+      213: -9057931712546205348
+    second: player_spark_trigger_18
+  - first:
+      213: 2049564605799869952
+    second: player_spark_trigger_19
+  - first:
+      213: -720672306006604786
+    second: player_spark_trigger_20
+  - first:
+      213: 9136055191161877323
+    second: player_spark_trigger_21
+  - first:
+      213: -4889270691630824586
+    second: player_spark_trigger_22
+  - first:
+      213: 5725438295278106158
+    second: player_spark_trigger_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_spark_trigger_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f70a8e650f524450800000000000000
+      internalID: 6071519724582864886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 252
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fe5028d17250f10800000000000000
+      internalID: 2235235797748281230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 252
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf88c4f77bb479c0800000000000000
+      internalID: -3930310450905313316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 252
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f3d872599224b10800000000000000
+      internalID: 1964178108077391643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 252
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d4db52da41c9fa0800000000000000
+      internalID: -5792732286810239589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 252
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c44c4121eaed8e0800000000000000
+      internalID: -1666703419399451550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0da7204df377590800000000000000
+      internalID: -7676596860022501131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 168
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa02e27e14b41f90800000000000000
+      internalID: -6983759079275361618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 168
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928f7805f38c6cb20800000000000000
+      internalID: 3154428763279194153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_9
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 168
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6857fa7f43018d6d0800000000000000
+      internalID: -2965602534943656570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 168
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909b5b4f92817dc50800000000000000
+      internalID: 6689842339960437001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_11
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 168
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6580307a4182cdb0800000000000000
+      internalID: -4773110498349513365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abb5d099b825da50800000000000000
+      internalID: 6545182410916871080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 84
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00514a98919bf95a0800000000000000
+      internalID: -6512283016819895040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 84
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b4a986638c25f90800000000000000
+      internalID: -6966285537580004600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_15
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 84
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be1ca18854541ee0800000000000000
+      internalID: -1291314454039093575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 84
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3e56172eca99300800000000000000
+      internalID: 259428542115603452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 84
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a882d36df2607eac0800000000000000
+      internalID: -3826082555900385142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5110f13913cb4280800000000000000
+      internalID: -9057931712546205348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_19
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e2ae06624817c10800000000000000
+      internalID: 2049564605799869952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_20
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04c3012b58aff5f0800000000000000
+      internalID: -720672306006604786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_21
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43319d9ac9c9ce70800000000000000
+      internalID: 9136055191161877323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673cd9ed532d52cb0800000000000000
+      internalID: -4889270691630824586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_spark_trigger_23
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26387d7bc7d47f40800000000000000
+      internalID: 5725438295278106158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
