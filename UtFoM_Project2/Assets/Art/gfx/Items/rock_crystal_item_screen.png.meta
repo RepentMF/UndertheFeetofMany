@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: b105fca918465424e8352b0541b6d4e4
+guid: 897bcf429cb7a43459b81bfda8f91ca6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6614568086525281583
-    second: vitality_arts_item_screen_0
+      213: -8137309005103414812
+    second: rock_crystal_item_screen_0
   - first:
-      213: 5263640997508683381
-    second: vitality_arts_item_screen_1
+      213: -8890282997916587913
+    second: rock_crystal_item_screen_1
   - first:
-      213: 2285119370158896656
-    second: vitality_arts_item_screen_2
+      213: 8792940401595653675
+    second: rock_crystal_item_screen_2
   - first:
-      213: 1288506159661613133
-    second: vitality_arts_item_screen_3
+      213: 7266214050205016847
+    second: rock_crystal_item_screen_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vitality_arts_item_screen_0
+      name: rock_crystal_item_screen_0
       rect:
         serializedVersion: 2
         x: 0
@@ -129,14 +129,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1da760cee555434a0800000000000000
-      internalID: -6614568086525281583
+      spriteID: 4e1493bb298721f80800000000000000
+      internalID: -8137309005103414812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vitality_arts_item_screen_1
+      name: rock_crystal_item_screen_1
       rect:
         serializedVersion: 2
         x: 216
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57610b969953c0940800000000000000
-      internalID: 5263640997508683381
+      spriteID: 778ac7457be5f9480800000000000000
+      internalID: -8890282997916587913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vitality_arts_item_screen_2
+      name: rock_crystal_item_screen_2
       rect:
         serializedVersion: 2
         x: 432
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0167fa7c5ff56bf10800000000000000
-      internalID: 2285119370158896656
+      spriteID: b2e1a4055bcc60a70800000000000000
+      internalID: 8792940401595653675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vitality_arts_item_screen_3
+      name: rock_crystal_item_screen_3
       rect:
         serializedVersion: 2
         x: 648
@@ -192,8 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4088818681b1e110800000000000000
-      internalID: 1288506159661613133
+      spriteID: f032c6c3e27c6d460800000000000000
+      internalID: 7266214050205016847
       vertices: []
       indices: 
       edges: []

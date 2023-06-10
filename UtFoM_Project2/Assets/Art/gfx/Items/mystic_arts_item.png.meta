@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: b105fca918465424e8352b0541b6d4e4
+guid: 49763f68500701844831b782edfa8c64
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6614568086525281583
-    second: vitality_arts_item_screen_0
+      213: 4126567626697462274
+    second: mystic_arts_item_0
   - first:
-      213: 5263640997508683381
-    second: vitality_arts_item_screen_1
+      213: -4680739879096491931
+    second: mystic_arts_item_1
   - first:
-      213: 2285119370158896656
-    second: vitality_arts_item_screen_2
+      213: -6306423035801533421
+    second: mystic_arts_item_2
   - first:
-      213: 1288506159661613133
-    second: vitality_arts_item_screen_3
+      213: -1330383092397019484
+    second: mystic_arts_item_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +58,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 18
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vitality_arts_item_screen_0
+      name: mystic_arts_item_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 216
-        height: 216
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1da760cee555434a0800000000000000
-      internalID: -6614568086525281583
+      spriteID: 202ddea9463844930800000000000000
+      internalID: 4126567626697462274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vitality_arts_item_screen_1
+      name: mystic_arts_item_1
       rect:
         serializedVersion: 2
-        x: 216
+        x: 70
         y: 0
-        width: 216
-        height: 216
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57610b969953c0940800000000000000
-      internalID: 5263640997508683381
+      spriteID: 560e27c21ebaa0fb0800000000000000
+      internalID: -4680739879096491931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vitality_arts_item_screen_2
+      name: mystic_arts_item_2
       rect:
         serializedVersion: 2
-        x: 432
+        x: 140
         y: 0
-        width: 216
-        height: 216
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0167fa7c5ff56bf10800000000000000
-      internalID: 2285119370158896656
+      spriteID: 31485bb69a51b78a0800000000000000
+      internalID: -6306423035801533421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vitality_arts_item_screen_3
+      name: mystic_arts_item_3
       rect:
         serializedVersion: 2
-        x: 648
+        x: 210
         y: 0
-        width: 216
-        height: 216
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4088818681b1e110800000000000000
-      internalID: 1288506159661613133
+      spriteID: 4ae6d7a40a7898de0800000000000000
+      internalID: -1330383092397019484
       vertices: []
       indices: 
       edges: []

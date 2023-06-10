@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: b105fca918465424e8352b0541b6d4e4
+guid: c649d26e14f91704d9097cec7b89e208
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6614568086525281583
-    second: vitality_arts_item_screen_0
+      213: 5395582415571421955
+    second: rock_crystal_item_0
   - first:
-      213: 5263640997508683381
-    second: vitality_arts_item_screen_1
+      213: -4724613597742853631
+    second: rock_crystal_item_1
   - first:
-      213: 2285119370158896656
-    second: vitality_arts_item_screen_2
+      213: 3287295854419634719
+    second: rock_crystal_item_2
   - first:
-      213: 1288506159661613133
-    second: vitality_arts_item_screen_3
+      213: -5300642521775150927
+    second: rock_crystal_item_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +58,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 18
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vitality_arts_item_screen_0
+      name: rock_crystal_item_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 216
-        height: 216
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1da760cee555434a0800000000000000
-      internalID: -6614568086525281583
+      spriteID: 30b8a74be95f0ea40800000000000000
+      internalID: 5395582415571421955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vitality_arts_item_screen_1
+      name: rock_crystal_item_1
       rect:
         serializedVersion: 2
-        x: 216
+        x: 70
         y: 0
-        width: 216
-        height: 216
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57610b969953c0940800000000000000
-      internalID: 5263640997508683381
+      spriteID: 1029e8507fcce6eb0800000000000000
+      internalID: -4724613597742853631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vitality_arts_item_screen_2
+      name: rock_crystal_item_2
       rect:
         serializedVersion: 2
-        x: 432
+        x: 140
         y: 0
-        width: 216
-        height: 216
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0167fa7c5ff56bf10800000000000000
-      internalID: 2285119370158896656
+      spriteID: f1aeb4aa922de9d20800000000000000
+      internalID: 3287295854419634719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vitality_arts_item_screen_3
+      name: rock_crystal_item_3
       rect:
         serializedVersion: 2
-        x: 648
+        x: 210
         y: 0
-        width: 216
-        height: 216
+        width: 70
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4088818681b1e110800000000000000
-      internalID: 1288506159661613133
+      spriteID: 1b8e240e5b55076b0800000000000000
+      internalID: -5300642521775150927
       vertices: []
       indices: 
       edges: []

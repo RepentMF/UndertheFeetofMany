@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: b105fca918465424e8352b0541b6d4e4
+guid: be86eddfab1ed3143a98795f2f8c583a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6614568086525281583
-    second: vitality_arts_item_screen_0
+      213: 4499010973777714245
+    second: malachite_item_screen_0
   - first:
-      213: 5263640997508683381
-    second: vitality_arts_item_screen_1
+      213: -3620610602568794574
+    second: malachite_item_screen_1
   - first:
-      213: 2285119370158896656
-    second: vitality_arts_item_screen_2
+      213: 3120013317915277925
+    second: malachite_item_screen_2
   - first:
-      213: 1288506159661613133
-    second: vitality_arts_item_screen_3
+      213: -2154297488365755698
+    second: malachite_item_screen_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vitality_arts_item_screen_0
+      name: malachite_item_screen_0
       rect:
         serializedVersion: 2
         x: 0
@@ -129,14 +129,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1da760cee555434a0800000000000000
-      internalID: -6614568086525281583
+      spriteID: 54cda94d4a2bf6e30800000000000000
+      internalID: 4499010973777714245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vitality_arts_item_screen_1
+      name: malachite_item_screen_1
       rect:
         serializedVersion: 2
         x: 216
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57610b969953c0940800000000000000
-      internalID: 5263640997508683381
+      spriteID: 23ebfdbf6d101cdc0800000000000000
+      internalID: -3620610602568794574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vitality_arts_item_screen_2
+      name: malachite_item_screen_2
       rect:
         serializedVersion: 2
         x: 432
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0167fa7c5ff56bf10800000000000000
-      internalID: 2285119370158896656
+      spriteID: 56af3d405938c4b20800000000000000
+      internalID: 3120013317915277925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vitality_arts_item_screen_3
+      name: malachite_item_screen_3
       rect:
         serializedVersion: 2
         x: 648
@@ -192,8 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4088818681b1e110800000000000000
-      internalID: 1288506159661613133
+      spriteID: ec2617929d56a12e0800000000000000
+      internalID: -2154297488365755698
       vertices: []
       indices: 
       edges: []

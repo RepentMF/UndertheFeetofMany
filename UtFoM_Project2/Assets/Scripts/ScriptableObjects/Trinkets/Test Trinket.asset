@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Test Trinket
   Description: This trinket is for testing
-  Sprite: {fileID: 21300000, guid: 02e05802abf0c3a4ba374022c1bb4c3e, type: 3}
+  Sprite: {fileID: -3083339074102802540, guid: 02e05802abf0c3a4ba374022c1bb4c3e, type: 3}
   TrinketCost: 2
   KnifeModification:
     MaxHealthModifier: 0

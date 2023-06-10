@@ -7,8 +7,10 @@ public class ActivePageManager : MonoBehaviour
 {
     private PlayerController MainPlayer;
     private Stats MainStats;
-    private Inventory MainInventory;
     public Text DynamicText;
+    public List<string> Pages;
+    public string ActivePage;
+    private Inventory MainInventory;
 
     // Start is called before the first frame update
     void Start()
@@ -16,26 +18,56 @@ public class ActivePageManager : MonoBehaviour
         MainPlayer = FindObjectOfType<PlayerController>();
         MainStats = MainPlayer.GetComponent<Stats>();
         MainInventory = MainPlayer.GetComponent<Inventory>();
+
+        Pages = new List<string>();
+        Pages.Add("UI_profilepage");
+        Pages.Add("UI_trinketspage");
+        ActivePage = "UI_profilepage";
+    }
+
+    void ProfilePageDisplay()
+    {
+        string weapon;
+        string trinkets = "";
+
+        if (MainInventory.EquippedWeapon != null)
+        {
+            weapon = MainInventory.EquippedWeapon.Name;
+        }
+        else
+        {
+            weapon = "";
+        }
+
+        // CLEAN UP FORMATTING LATER- GRABS WHAT IT NEEDS, DOESN'T LOOK PRETTY RIGHT NOW
+        if (MainInventory.EquippedTrinkets != null)
+        {
+            foreach (EquippedTrinket trinket in MainInventory.EquippedTrinkets)
+            {
+                trinkets += trinket.Trinket.Name;
+            }
+        }
+
+        DynamicText.text = "HP: " + MainStats.CurrentHealth.ToString() + "/" + MainStats.MaxHealth.ToString()
+            + "    " + "SP: " + MainStats.MaxStamina.ToString() + "\n" +
+            "MP: " + MainStats.CurrentMana.ToString() + "/" + MainStats.MaxMana.ToString() +  
+            "    " + "TP: " + MainStats.MaxTrinketPoints.ToString() + "\n" + "Current Weapon: "
+            + weapon + "\n" + "Spells: " + "\n" + "Equipped Trinkets: " + trinkets;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (MainInventory.EquippedWeapon != null)
+        switch (ActivePage)
         {
-            DynamicText.text = "HP: " + MainStats.CurrentHealth.ToString() + "/(" + MainStats.MaxHealth.ToString()
-            + "+" + "0" + ")    " + "SP: (" + MainStats.MaxStamina.ToString() + "+" + "0" + ")" + "\n" +
-            "MP: " + MainStats.CurrentMana.ToString() + "/(" + MainStats.MaxMana.ToString()+ "+" + "0" +  
-            ")    " + "TP: " + "(" + MainStats.MaxTrinketPoints.ToString() + "+" + "0" + ")" + "\n" + "Current Weapon: "
-            + MainInventory.EquippedWeapon.Name + "\n" + "Spells: " + "\n" + "Trinkets: " + "\n" + "Current Quest: ";
-        }
-        else
-        {
-            DynamicText.text = "HP: " + MainStats.CurrentHealth.ToString() + "/(" + MainStats.MaxHealth.ToString()
-            + "+" + "0" + ")    " + "SP: (" + MainStats.MaxStamina.ToString() + "+" + "0" + ")" + "\n" +
-            "MP: " + MainStats.CurrentMana.ToString() + "/(" + MainStats.MaxMana.ToString()+ "+" + "0" +  
-            ")    " + "TP: " + "(" + MainStats.MaxTrinketPoints.ToString() + "+" + "0" + ")" + "\n" + "Current Weapon: "
-            + "\n" + "Spells: " + "\n" + "Trinkets: " + "\n" + "Current Quest: ";
+            case "UI_profilepage":
+                ProfilePageDisplay();
+                // disable all other inactive pages
+                break;
+            case "UI_trinketspage":
+                // call trinket logic
+                // disable all other inactive pages
+                break;
         }
     }
 }
