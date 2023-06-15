@@ -8,8 +8,8 @@ public class ActivePageManager : MonoBehaviour
     private PlayerController MainPlayer;
     private Stats MainStats;
     public Text DynamicText;
-    public List<string> Pages;
-    public string ActivePage;
+    public List<GameObject> Pages;
+    public int ActivePage;
     private Inventory MainInventory;
 
     // Start is called before the first frame update
@@ -19,14 +19,20 @@ public class ActivePageManager : MonoBehaviour
         MainStats = MainPlayer.GetComponent<Stats>();
         MainInventory = MainPlayer.GetComponent<Inventory>();
 
-        Pages = new List<string>();
-        Pages.Add("UI_profilepage");
-        Pages.Add("UI_trinketspage");
-        ActivePage = "UI_profilepage";
+        ActivePage = 0;
+    }
+
+    void DisableAllPages()
+    {
+        foreach (GameObject obj in Pages)
+        {
+            obj.SetActive(false);
+        }
     }
 
     void ProfilePageDisplay()
     {
+        Pages[0].SetActive(true);
         string weapon;
         string trinkets = "";
 
@@ -55,18 +61,25 @@ public class ActivePageManager : MonoBehaviour
             + weapon + "\n" + "Spells: " + "\n" + "Equipped Trinkets: " + trinkets;
     }
 
+    void TrinketPageDisplay()
+    {
+        Pages[1].SetActive(true);
+
+        // display each trinket in the inventory on each square of
+        // the 4x5 grid
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
+        DisableAllPages();
         switch (ActivePage)
         {
-            case "UI_profilepage":
+            case 0:
                 ProfilePageDisplay();
-                // disable all other inactive pages
                 break;
-            case "UI_trinketspage":
-                // call trinket logic
-                // disable all other inactive pages
+            case 1:
+                TrinketPageDisplay();
                 break;
         }
     }

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 
 public class SceneItem : MonoBehaviour
@@ -14,7 +14,7 @@ public class SceneItem : MonoBehaviour
 
     // Script References
     private BoxCollider2D BoxCollider2DScript;
-    private Light2D Light2DScript;
+    private UnityEngine.Rendering.Universal.Light2D Light2DScript;
     private SpriteRenderer SpriteRendererScript;
     private SpriteRenderer TargetSpriteRendererScript;
     private StateManager StateManagerScript;
@@ -63,7 +63,7 @@ public class SceneItem : MonoBehaviour
     void Awake()
     {
         BoxCollider2DScript = this.gameObject.GetComponent<BoxCollider2D>();
-        Light2DScript = this.gameObject.GetComponent<Light2D>();
+        Light2DScript = this.gameObject.GetComponent<UnityEngine.Rendering.Universal.Light2D>();
         SpriteRendererScript = this.gameObject.GetComponent<SpriteRenderer>();
         StateManagerScript = this.gameObject.GetComponentInChildren<StateManager>();
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;

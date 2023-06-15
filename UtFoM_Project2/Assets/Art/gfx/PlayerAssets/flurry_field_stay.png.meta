@@ -99,7 +99,7 @@ TextureImporter:
       213: 688757411425937665
     second: flurry_field_stay_31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -116,10 +116,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -129,8 +131,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -158,6 +160,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -169,6 +173,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -181,6 +186,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -193,6 +199,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -880,9 +913,41 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      flurry_field_stay_0: -268701491576435055
+      flurry_field_stay_1: 834790773722930698
+      flurry_field_stay_10: -8946362674448768371
+      flurry_field_stay_11: 8079573477802314784
+      flurry_field_stay_12: 2690162925863647359
+      flurry_field_stay_13: 3182808039200138277
+      flurry_field_stay_14: 4967416392208223603
+      flurry_field_stay_15: 2715422261430960388
+      flurry_field_stay_16: -6146635639812139732
+      flurry_field_stay_17: 2807368359983810064
+      flurry_field_stay_18: 4742159629846517642
+      flurry_field_stay_19: 3731805753305479397
+      flurry_field_stay_2: 7397980812286409799
+      flurry_field_stay_20: 6021975535569488402
+      flurry_field_stay_21: 2258888071883924827
+      flurry_field_stay_22: -3180283934869493857
+      flurry_field_stay_23: -7894367805460792588
+      flurry_field_stay_24: -1436357313178418697
+      flurry_field_stay_25: -8983030801316516110
+      flurry_field_stay_26: 7801237154773588579
+      flurry_field_stay_27: 8110798866277258983
+      flurry_field_stay_28: -8100091077958808217
+      flurry_field_stay_29: 953918075529423642
+      flurry_field_stay_3: -4332465476576144559
+      flurry_field_stay_30: -2404074022028661466
+      flurry_field_stay_31: 688757411425937665
+      flurry_field_stay_4: 3230792813759317854
+      flurry_field_stay_5: 8255541418463868653
+      flurry_field_stay_6: -4999872572650925188
+      flurry_field_stay_7: 1300405165904948668
+      flurry_field_stay_8: -5265298513292225591
+      flurry_field_stay_9: -2376381707063480285
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

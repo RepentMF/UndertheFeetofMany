@@ -87,7 +87,7 @@ TextureImporter:
       213: -2669571198110847455
     second: player_flurry_field_27
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -104,10 +104,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -117,8 +119,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -146,6 +148,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -157,6 +161,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -169,6 +174,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -181,6 +187,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -784,9 +817,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      player_flurry_field_0: -2981983114698338643
+      player_flurry_field_1: -1151353002154267430
+      player_flurry_field_10: 8120089061683406249
+      player_flurry_field_11: -1772128325847263312
+      player_flurry_field_12: -1787999260355495962
+      player_flurry_field_13: 7729380129182247047
+      player_flurry_field_14: -5484311606845094763
+      player_flurry_field_15: 6299059364071219334
+      player_flurry_field_16: 2587003344483758882
+      player_flurry_field_17: 7293988461711415581
+      player_flurry_field_18: -1358246801382103302
+      player_flurry_field_19: 3042209300472805700
+      player_flurry_field_2: 310936333421984984
+      player_flurry_field_20: 824917714455648149
+      player_flurry_field_21: -5577991648740258321
+      player_flurry_field_22: -4688076957388758140
+      player_flurry_field_23: 7077259869502965536
+      player_flurry_field_24: 7268749233467362407
+      player_flurry_field_25: -3699305925098416893
+      player_flurry_field_26: 288477789291328543
+      player_flurry_field_27: -2669571198110847455
+      player_flurry_field_3: -7846098694866564081
+      player_flurry_field_4: -2547275919950364672
+      player_flurry_field_5: 1994844587313648408
+      player_flurry_field_6: -570306553790719469
+      player_flurry_field_7: -4569567223092322658
+      player_flurry_field_8: -6792718921931020131
+      player_flurry_field_9: -8839801270146783175
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 
 public class EnemyInfo : MonoBehaviour
@@ -16,7 +16,7 @@ public class EnemyInfo : MonoBehaviour
 
     // Script References
     private BoxCollider2D BoxCollider2DScript;
-    private Light2D Light2DScript;
+    private UnityEngine.Rendering.Universal.Light2D Light2DScript;
     private SpriteRenderer SpriteRendererScript;
     private SpriteRenderer TargetSpriteRendererScript;
     private StateManager StateManagerScript;

@@ -99,7 +99,7 @@ TextureImporter:
       213: -679513756525761620
     second: blizzard_fall_stay_31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -116,10 +116,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -129,8 +131,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -158,6 +160,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -169,6 +173,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -181,6 +186,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -193,6 +199,33 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -880,9 +913,41 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      blizzard_fall_stay_0: -4177111209159575323
+      blizzard_fall_stay_1: -3350621922897362401
+      blizzard_fall_stay_10: -8575468064326757539
+      blizzard_fall_stay_11: -7441445228801009991
+      blizzard_fall_stay_12: 4338450517097691012
+      blizzard_fall_stay_13: 276829610590492206
+      blizzard_fall_stay_14: 5680264884185010597
+      blizzard_fall_stay_15: -3140577324904715488
+      blizzard_fall_stay_16: 5854054512848778750
+      blizzard_fall_stay_17: 1954218425748183606
+      blizzard_fall_stay_18: -5010821899005363497
+      blizzard_fall_stay_19: 1704354912825892804
+      blizzard_fall_stay_2: -6903326023354970391
+      blizzard_fall_stay_20: 217217435862006002
+      blizzard_fall_stay_21: 430933638253817824
+      blizzard_fall_stay_22: -8911590081288402789
+      blizzard_fall_stay_23: -6938640968138292330
+      blizzard_fall_stay_24: 5787934673209760009
+      blizzard_fall_stay_25: 7485121815669781644
+      blizzard_fall_stay_26: 2550181978046636033
+      blizzard_fall_stay_27: -6323767813618819047
+      blizzard_fall_stay_28: 3221979524774273764
+      blizzard_fall_stay_29: 81221535249298819
+      blizzard_fall_stay_3: -2195907220895648240
+      blizzard_fall_stay_30: 9113674553114819856
+      blizzard_fall_stay_31: -679513756525761620
+      blizzard_fall_stay_4: -9197610289905415733
+      blizzard_fall_stay_5: -8301694450910041264
+      blizzard_fall_stay_6: 1650769605209264640
+      blizzard_fall_stay_7: -8190754470763127625
+      blizzard_fall_stay_8: -7159209577157278801
+      blizzard_fall_stay_9: 5095774558034587688
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
