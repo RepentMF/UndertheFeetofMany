@@ -255,6 +255,7 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void OnStaminaButton()
     {
+
         if (CanAct() && StatsScript.CurrentLifeblood >= LifebloodCost)
         {
             StatsScript.DamageLifeblood(LifebloodCost);
@@ -289,6 +290,154 @@ public class PlayerController : GenericSingleton<PlayerController>
             GameStateManager.Instance.PauseGame();
         }
         ToggleDisplayPauseMenu();
+    }
+
+    // move page forward or backwards
+    private void OnNextPageButton()
+    {
+        // if active page is at max, go to beginning- 1 is currently max
+        if (BookInfoReference.GetComponent<ActivePageManager>().ActivePage == 1)
+        {
+            BookInfoReference.GetComponent<ActivePageManager>().ActivePage = 0;  
+        }
+        else
+        {
+            BookInfoReference.GetComponent<ActivePageManager>().ActivePage++;
+        }
+    }
+
+    private void OnPreviousPageButton()
+    {   
+        // if active page is at min, go to end- 0 will always be min
+        if (BookInfoReference.GetComponent<ActivePageManager>().ActivePage == 0)
+        {
+            BookInfoReference.GetComponent<ActivePageManager>().ActivePage = 1;  
+        }
+        else
+        {
+            BookInfoReference.GetComponent<ActivePageManager>().ActivePage--;
+        }
+    }
+    
+    // move cursor in 4 directions
+    private void OnMoveCursorDownButton()
+    {
+        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        {
+            if (BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector > 15)
+            {
+                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector -= 16;
+            }
+            else
+            {
+                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector += 4;
+            }
+
+            BookInfoReference.GetComponent<ActivePageManager>().CursorDisplay.transform.position = 
+                BookInfoReference.GetComponent<ActivePageManager>().TrinketImages[BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector].transform.position;
+        }
+    }
+
+    private void OnMoveCursorUpButton()
+    {
+        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        {
+            if (BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector < 4)
+            {
+                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector += 16;
+            }
+            else
+            {
+                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector -= 4;
+            }
+
+            BookInfoReference.GetComponent<ActivePageManager>().CursorDisplay.transform.position = 
+                BookInfoReference.GetComponent<ActivePageManager>().TrinketImages[BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector].transform.position;
+        }
+    }
+
+    private void OnMoveCursorLeftButton()
+    {
+        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        {
+            if ((BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector % 4) == 0)
+            {
+                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector += 3;
+            }
+            else
+            {
+                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector--;
+            }
+
+            BookInfoReference.GetComponent<ActivePageManager>().CursorDisplay.transform.position = 
+                BookInfoReference.GetComponent<ActivePageManager>().TrinketImages[BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector].transform.position;
+        }
+    }
+
+    private void OnMoveCursorRightButton()
+    {
+        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        {
+            if (((BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector + 1) % 4) == 0)
+            {
+                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector -= 3;
+            }
+            else
+            {
+                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector++;
+            }
+
+            BookInfoReference.GetComponent<ActivePageManager>().CursorDisplay.transform.position = 
+                BookInfoReference.GetComponent<ActivePageManager>().TrinketImages[BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector].transform.position;
+        }
+    }
+
+    
+    // equip trinket with knife
+    private void OnCursorSelectLightButton()
+    {
+        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        {
+            int i = BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector;
+            if (InventoryScript.TrinketsList[i] != null)
+            {
+                // still needs conditional to ensure that knife is a valid option for equipping
+                // the trinket
+                if (InventoryScript.WeaponsList.Exists(x => x.Name == "Knife") && 
+                    !InventoryScript.EquippedTrinkets.Exists(x => x.Trinket == InventoryScript.TrinketsList[i]))
+                {
+                    Weapon w = new Weapon();
+                    foreach(Weapon weapon in InventoryScript.WeaponsList)
+                    {
+                        if (weapon.Name == "Knife")
+                        {
+                            w = weapon;
+                        }
+                    }
+                    InventoryScript.EquipTrinket(InventoryScript.TrinketsList[i], w);
+                }
+            }
+        }
+    }
+
+    // equip or unequip trinket with player stats
+    private void OnCursorSelectContextButton()
+    {
+        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        {
+            int i = BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector;
+            if (InventoryScript.TrinketsList[i] != null)
+            {
+                if (!InventoryScript.EquippedTrinkets.Exists(x => x.Trinket == InventoryScript.TrinketsList[i]))
+                {
+                    InventoryScript.EquipTrinket(InventoryScript.TrinketsList[i], StatsScript);
+                }
+                else
+                {
+                    // unequip trinkets here
+                }
+            }
+        }
     }
 
     private void OnContextConfirm()

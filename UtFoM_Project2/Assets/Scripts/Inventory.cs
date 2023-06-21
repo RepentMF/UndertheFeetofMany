@@ -28,10 +28,10 @@ public class Inventory : MonoBehaviour
 				SyncTrinketStatusInflicter(t.SwordModification);
 				SyncTrinketStatusInflicter(t.HammerModification);
                 TrinketsList.Add(t);
-				if (StatsScript != null) // TESTING: THIS IF BLOCK IS FOR TESTING UNTIL THE INVENTORY GUI CAN EQUIP AND UNEQUIP TRINKETS
-				{
-					EquipTrinket(t, StatsScript);
-				}
+				// if (StatsScript != null) // TESTING: THIS IF BLOCK IS FOR TESTING UNTIL THE INVENTORY GUI CAN EQUIP AND UNEQUIP TRINKETS
+				// {
+				// 	EquipTrinket(t, StatsScript);
+				// }
                 break;
             case ItemCategory.Diary:
                 DiariesList.Add((Diary) Instantiate(item));

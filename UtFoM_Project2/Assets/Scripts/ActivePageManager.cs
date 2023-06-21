@@ -2,15 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class ActivePageManager : MonoBehaviour
 {
+    public Image CursorDisplay;
     private PlayerController MainPlayer;
     private Stats MainStats;
     public Text DynamicText;
     public List<GameObject> Pages;
     public int ActivePage;
+    public int TrinketSelector = 0;
     private Inventory MainInventory;
+    public List<Image> TrinketImages;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +23,7 @@ public class ActivePageManager : MonoBehaviour
         MainStats = MainPlayer.GetComponent<Stats>();
         MainInventory = MainPlayer.GetComponent<Inventory>();
 
-        ActivePage = 0;
+        ActivePage = 1;
     }
 
     void DisableAllPages()
@@ -67,6 +71,14 @@ public class ActivePageManager : MonoBehaviour
 
         // display each trinket in the inventory on each square of
         // the 4x5 grid
+        for (int i = 0; i < MainInventory.TrinketsList.Count; i++)
+        {
+            if (MainInventory.TrinketsList[i] != null)
+            {
+                TrinketImages[i].gameObject.SetActive(true);
+                TrinketImages[i].sprite = MainInventory.TrinketsList[i].Sprite;
+            }
+        }
     }
 
     // Update is called once per frame

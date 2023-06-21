@@ -42,7 +42,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""id"": ""0d492423-cb99-48ac-98ff-bb51ead9816a"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": false
                 },
                 {
@@ -51,7 +51,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""id"": ""39d8de0a-989b-4c73-adfe-d0232eda1640"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": false
                 },
                 {
@@ -60,7 +60,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""id"": ""f8351a42-10c8-47b3-b37a-0a7dd1a16f2f"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": false
                 },
                 {
@@ -545,6 +545,78 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": ""Press"",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NextPageButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""9cf95e1d-e96e-4f06-aaa2-012b9aa856c7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PreviousPageButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""48dcdc83-ef78-4a67-9bbd-38fc4c660333"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MoveCursorDownButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""adfc8447-c70f-43b9-bfc1-aff08fcc8b23"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MoveCursorUpButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""877aa1ce-dcdd-4428-8e83-c3b1bcb8cd98"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MoveCursorLeftButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""9fb15086-61e6-4f9f-9fb1-d0f66e3d9135"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MoveCursorRightButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""0d46ee50-698e-44df-aec7-2571126ea29a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CursorSelectLightButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""a3a69bab-fa44-420a-a257-8f5ea452faca"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CursorSelectContextButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""d4b857f0-ac36-471d-b8f1-5aead149a8cf"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -567,6 +639,226 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""MenuButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5a19d8b9-347e-458a-bb2c-f7ed09f31d16"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NextPageButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d5f5e80f-782d-463b-bcdd-2b1525636dbe"",
+                    ""path"": ""<DualShockGamepad>/rightStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NextPageButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9b79fd17-d35a-4f85-a349-066cd0708d5c"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PreviousPageButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b67a03a8-f4bf-4286-be95-206b95495d4a"",
+                    ""path"": ""<DualShockGamepad>/rightStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PreviousPageButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fc8ad6dd-407a-4a4b-8d3a-5dd4262c3972"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorDownButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8bdfa46b-d52d-4a18-8b79-22cf4cd69dad"",
+                    ""path"": ""<DualShockGamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorDownButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c72ebb2f-9e2e-4986-b1a4-0f36804b68d7"",
+                    ""path"": ""<DualShockGamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorDownButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8eca017d-0b09-4d73-9b02-d9275844adbf"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorUpButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f22ce66f-ce9a-4264-85c1-19bd3cafc6d0"",
+                    ""path"": ""<DualShockGamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorUpButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0c8cc032-7389-4adf-9f5a-c31d1856dc28"",
+                    ""path"": ""<DualShockGamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorUpButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""49d1dc8a-f596-4f79-b2fe-088b62aee5ac"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorRightButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dfe3123b-6832-4f12-a421-b13e7eee2b71"",
+                    ""path"": ""<DualShockGamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorRightButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""29ba80f3-4a9e-4ba3-ba24-47a56c691ec0"",
+                    ""path"": ""<DualShockGamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorRightButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e6557858-f662-4a58-9eba-e4b74be72a7b"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorLeftButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""22ccfe99-2ab0-4ae6-9407-8db658c8735e"",
+                    ""path"": ""<DualShockGamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorLeftButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a4ff5c26-da1f-43b2-9388-c5b29165549f"",
+                    ""path"": ""<DualShockGamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorLeftButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4be07d4e-5b4f-46bd-b245-76a4442a2aa5"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CursorSelectLightButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""65ae3d04-6e6f-4c98-82fa-39b7c742f457"",
+                    ""path"": ""<DualShockGamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CursorSelectLightButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""71ff1b51-cae6-4dd4-9175-790382719e75"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CursorSelectContextButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c44e8d79-ca60-4350-995c-5080f9ec5501"",
+                    ""path"": ""<DualShockGamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CursorSelectContextButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -663,6 +955,14 @@ public partial class @InputController: IInputActionCollection2, IDisposable
         // Paused
         m_Paused = asset.FindActionMap("Paused", throwIfNotFound: true);
         m_Paused_MenuButton = m_Paused.FindAction("MenuButton", throwIfNotFound: true);
+        m_Paused_NextPageButton = m_Paused.FindAction("NextPageButton", throwIfNotFound: true);
+        m_Paused_PreviousPageButton = m_Paused.FindAction("PreviousPageButton", throwIfNotFound: true);
+        m_Paused_MoveCursorDownButton = m_Paused.FindAction("MoveCursorDownButton", throwIfNotFound: true);
+        m_Paused_MoveCursorUpButton = m_Paused.FindAction("MoveCursorUpButton", throwIfNotFound: true);
+        m_Paused_MoveCursorLeftButton = m_Paused.FindAction("MoveCursorLeftButton", throwIfNotFound: true);
+        m_Paused_MoveCursorRightButton = m_Paused.FindAction("MoveCursorRightButton", throwIfNotFound: true);
+        m_Paused_CursorSelectLightButton = m_Paused.FindAction("CursorSelectLightButton", throwIfNotFound: true);
+        m_Paused_CursorSelectContextButton = m_Paused.FindAction("CursorSelectContextButton", throwIfNotFound: true);
         // Interacting
         m_Interacting = asset.FindActionMap("Interacting", throwIfNotFound: true);
         m_Interacting_EndInteraction = m_Interacting.FindAction("EndInteraction", throwIfNotFound: true);
@@ -871,11 +1171,27 @@ public partial class @InputController: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Paused;
     private List<IPausedActions> m_PausedActionsCallbackInterfaces = new List<IPausedActions>();
     private readonly InputAction m_Paused_MenuButton;
+    private readonly InputAction m_Paused_NextPageButton;
+    private readonly InputAction m_Paused_PreviousPageButton;
+    private readonly InputAction m_Paused_MoveCursorDownButton;
+    private readonly InputAction m_Paused_MoveCursorUpButton;
+    private readonly InputAction m_Paused_MoveCursorLeftButton;
+    private readonly InputAction m_Paused_MoveCursorRightButton;
+    private readonly InputAction m_Paused_CursorSelectLightButton;
+    private readonly InputAction m_Paused_CursorSelectContextButton;
     public struct PausedActions
     {
         private @InputController m_Wrapper;
         public PausedActions(@InputController wrapper) { m_Wrapper = wrapper; }
         public InputAction @MenuButton => m_Wrapper.m_Paused_MenuButton;
+        public InputAction @NextPageButton => m_Wrapper.m_Paused_NextPageButton;
+        public InputAction @PreviousPageButton => m_Wrapper.m_Paused_PreviousPageButton;
+        public InputAction @MoveCursorDownButton => m_Wrapper.m_Paused_MoveCursorDownButton;
+        public InputAction @MoveCursorUpButton => m_Wrapper.m_Paused_MoveCursorUpButton;
+        public InputAction @MoveCursorLeftButton => m_Wrapper.m_Paused_MoveCursorLeftButton;
+        public InputAction @MoveCursorRightButton => m_Wrapper.m_Paused_MoveCursorRightButton;
+        public InputAction @CursorSelectLightButton => m_Wrapper.m_Paused_CursorSelectLightButton;
+        public InputAction @CursorSelectContextButton => m_Wrapper.m_Paused_CursorSelectContextButton;
         public InputActionMap Get() { return m_Wrapper.m_Paused; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -888,6 +1204,30 @@ public partial class @InputController: IInputActionCollection2, IDisposable
             @MenuButton.started += instance.OnMenuButton;
             @MenuButton.performed += instance.OnMenuButton;
             @MenuButton.canceled += instance.OnMenuButton;
+            @NextPageButton.started += instance.OnNextPageButton;
+            @NextPageButton.performed += instance.OnNextPageButton;
+            @NextPageButton.canceled += instance.OnNextPageButton;
+            @PreviousPageButton.started += instance.OnPreviousPageButton;
+            @PreviousPageButton.performed += instance.OnPreviousPageButton;
+            @PreviousPageButton.canceled += instance.OnPreviousPageButton;
+            @MoveCursorDownButton.started += instance.OnMoveCursorDownButton;
+            @MoveCursorDownButton.performed += instance.OnMoveCursorDownButton;
+            @MoveCursorDownButton.canceled += instance.OnMoveCursorDownButton;
+            @MoveCursorUpButton.started += instance.OnMoveCursorUpButton;
+            @MoveCursorUpButton.performed += instance.OnMoveCursorUpButton;
+            @MoveCursorUpButton.canceled += instance.OnMoveCursorUpButton;
+            @MoveCursorLeftButton.started += instance.OnMoveCursorLeftButton;
+            @MoveCursorLeftButton.performed += instance.OnMoveCursorLeftButton;
+            @MoveCursorLeftButton.canceled += instance.OnMoveCursorLeftButton;
+            @MoveCursorRightButton.started += instance.OnMoveCursorRightButton;
+            @MoveCursorRightButton.performed += instance.OnMoveCursorRightButton;
+            @MoveCursorRightButton.canceled += instance.OnMoveCursorRightButton;
+            @CursorSelectLightButton.started += instance.OnCursorSelectLightButton;
+            @CursorSelectLightButton.performed += instance.OnCursorSelectLightButton;
+            @CursorSelectLightButton.canceled += instance.OnCursorSelectLightButton;
+            @CursorSelectContextButton.started += instance.OnCursorSelectContextButton;
+            @CursorSelectContextButton.performed += instance.OnCursorSelectContextButton;
+            @CursorSelectContextButton.canceled += instance.OnCursorSelectContextButton;
         }
 
         private void UnregisterCallbacks(IPausedActions instance)
@@ -895,6 +1235,30 @@ public partial class @InputController: IInputActionCollection2, IDisposable
             @MenuButton.started -= instance.OnMenuButton;
             @MenuButton.performed -= instance.OnMenuButton;
             @MenuButton.canceled -= instance.OnMenuButton;
+            @NextPageButton.started -= instance.OnNextPageButton;
+            @NextPageButton.performed -= instance.OnNextPageButton;
+            @NextPageButton.canceled -= instance.OnNextPageButton;
+            @PreviousPageButton.started -= instance.OnPreviousPageButton;
+            @PreviousPageButton.performed -= instance.OnPreviousPageButton;
+            @PreviousPageButton.canceled -= instance.OnPreviousPageButton;
+            @MoveCursorDownButton.started -= instance.OnMoveCursorDownButton;
+            @MoveCursorDownButton.performed -= instance.OnMoveCursorDownButton;
+            @MoveCursorDownButton.canceled -= instance.OnMoveCursorDownButton;
+            @MoveCursorUpButton.started -= instance.OnMoveCursorUpButton;
+            @MoveCursorUpButton.performed -= instance.OnMoveCursorUpButton;
+            @MoveCursorUpButton.canceled -= instance.OnMoveCursorUpButton;
+            @MoveCursorLeftButton.started -= instance.OnMoveCursorLeftButton;
+            @MoveCursorLeftButton.performed -= instance.OnMoveCursorLeftButton;
+            @MoveCursorLeftButton.canceled -= instance.OnMoveCursorLeftButton;
+            @MoveCursorRightButton.started -= instance.OnMoveCursorRightButton;
+            @MoveCursorRightButton.performed -= instance.OnMoveCursorRightButton;
+            @MoveCursorRightButton.canceled -= instance.OnMoveCursorRightButton;
+            @CursorSelectLightButton.started -= instance.OnCursorSelectLightButton;
+            @CursorSelectLightButton.performed -= instance.OnCursorSelectLightButton;
+            @CursorSelectLightButton.canceled -= instance.OnCursorSelectLightButton;
+            @CursorSelectContextButton.started -= instance.OnCursorSelectContextButton;
+            @CursorSelectContextButton.performed -= instance.OnCursorSelectContextButton;
+            @CursorSelectContextButton.canceled -= instance.OnCursorSelectContextButton;
         }
 
         public void RemoveCallbacks(IPausedActions instance)
@@ -985,6 +1349,14 @@ public partial class @InputController: IInputActionCollection2, IDisposable
     public interface IPausedActions
     {
         void OnMenuButton(InputAction.CallbackContext context);
+        void OnNextPageButton(InputAction.CallbackContext context);
+        void OnPreviousPageButton(InputAction.CallbackContext context);
+        void OnMoveCursorDownButton(InputAction.CallbackContext context);
+        void OnMoveCursorUpButton(InputAction.CallbackContext context);
+        void OnMoveCursorLeftButton(InputAction.CallbackContext context);
+        void OnMoveCursorRightButton(InputAction.CallbackContext context);
+        void OnCursorSelectLightButton(InputAction.CallbackContext context);
+        void OnCursorSelectContextButton(InputAction.CallbackContext context);
     }
     public interface IInteractingActions
     {

@@ -797,6 +797,7 @@ SpriteAtlas:
     - 8f1e9525e5357d9429ea11e58950518f: 21300000
     - 5406227576bae55459b38680b3675dad: 21300000
     - c9a4f58503b51b942a5a99bf53cfed70: 21300000
+    - be7257a53c9045e4db8e4b0f4a2ff891: 21300000
     - a4fc4ab5d952a2142ac194958ad0c064: 21300000
     - 00fff3c552acd3840b6dba3e41612e46: 21300000
     - 9712c6c539ab1a040ba313adfb6cddef: -8046433660304297415
@@ -2524,7 +2525,6 @@ SpriteAtlas:
     - 1411e35f19da24e4c8c4cc9da45391d1: -5895752802659173650
     - 1411e35f19da24e4c8c4cc9da45391d1: -5993032997848283357
     - 71977a5fce2b3844e8ccc04d75f81960: 21300000
-    - 10509e7f65c821c4e9a4f9be11c55376: 21300000
     - 4b8fd18f73318044ca9ba4728f090b7f: 21300000
     - c98e819fcde282f489c30a24b503c547: 5030290666744600015
     - c98e819fcde282f489c30a24b503c547: 6557094435153962602
@@ -3362,6 +3362,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 8f1e9525e5357d9429ea11e58950518f, type: 3}
   - {fileID: 21300000, guid: 5406227576bae55459b38680b3675dad, type: 3}
   - {fileID: 21300000, guid: c9a4f58503b51b942a5a99bf53cfed70, type: 3}
+  - {fileID: 21300000, guid: be7257a53c9045e4db8e4b0f4a2ff891, type: 3}
   - {fileID: 21300000, guid: a4fc4ab5d952a2142ac194958ad0c064, type: 3}
   - {fileID: 21300000, guid: 00fff3c552acd3840b6dba3e41612e46, type: 3}
   - {fileID: -8046433660304297415, guid: 9712c6c539ab1a040ba313adfb6cddef, type: 3}
@@ -5089,7 +5090,6 @@ SpriteAtlas:
   - {fileID: -5895752802659173650, guid: 1411e35f19da24e4c8c4cc9da45391d1, type: 3}
   - {fileID: -5993032997848283357, guid: 1411e35f19da24e4c8c4cc9da45391d1, type: 3}
   - {fileID: 21300000, guid: 71977a5fce2b3844e8ccc04d75f81960, type: 3}
-  - {fileID: 21300000, guid: 10509e7f65c821c4e9a4f9be11c55376, type: 3}
   - {fileID: 21300000, guid: 4b8fd18f73318044ca9ba4728f090b7f, type: 3}
   - {fileID: 5030290666744600015, guid: c98e819fcde282f489c30a24b503c547, type: 3}
   - {fileID: 6557094435153962602, guid: c98e819fcde282f489c30a24b503c547, type: 3}
@@ -5926,6 +5926,7 @@ SpriteAtlas:
   - TC_wall1
   - tp_house1_inner
   - tp_house3
+  - EmptySlot
   - UI_profilepage
   - star1_particle
   - MC_Male2_hammer_96
@@ -7653,7 +7654,6 @@ SpriteAtlas:
   - UI_book_closing_4
   - UI_book_closing_5
   - bb_house2_inner
-  - arts_scroll_template
   - bb_house3_inner
   - torch_2
   - torch_3
