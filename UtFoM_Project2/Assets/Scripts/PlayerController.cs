@@ -296,7 +296,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     private void OnNextPageButton()
     {
         // if active page is at max, go to beginning- 1 is currently max
-        if (BookInfoReference.GetComponent<ActivePageManager>().ActivePage == 1)
+        if (BookInfoReference.GetComponent<ActivePageManager>().ActivePage == BookInfoReference.GetComponent<ActivePageManager>().Pages.Count - 1)
         {
             BookInfoReference.GetComponent<ActivePageManager>().ActivePage = 0;  
         }
@@ -396,7 +396,6 @@ public class PlayerController : GenericSingleton<PlayerController>
         }
     }
 
-    
     // equip trinket with knife
     private void OnCursorSelectLightButton()
     {
@@ -517,9 +516,9 @@ public class PlayerController : GenericSingleton<PlayerController>
         }
     }
 
+    // equip trinket with player stats
     private void OnCursorSelectContextButton()
     {
-        
         // if on trinket page, currently- equip or unequip trinket with player stats
         if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
         {
