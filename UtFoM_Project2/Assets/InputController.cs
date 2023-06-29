@@ -182,7 +182,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""be10c12e-6841-48b5-9e9e-3846b3898d9a"",
-                    ""path"": ""<DualShockGamepad>/buttonSouth"",
+                    ""path"": ""<DualShockGamepad>/buttonNorth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -204,7 +204,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""35d3f02b-ccb1-4ccc-9315-e15037cd7414"",
-                    ""path"": ""<DualShockGamepad>/buttonNorth"",
+                    ""path"": ""<DualShockGamepad>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -358,7 +358,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""667f2e62-f77d-4918-8a2a-f52cf9acafae"",
-                    ""path"": ""<DualShockGamepad>/buttonEast"",
+                    ""path"": ""<DualShockGamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -610,6 +610,24 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""CursorSelectLaunchButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""054f9bdd-7777-42a9-ac9c-0aa9cb83981c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CursorSelectHeavyButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""7461ce2b-d895-4689-a359-c58e02ea3662"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""CursorSelectContextButton"",
                     ""type"": ""Button"",
                     ""id"": ""d4b857f0-ac36-471d-b8f1-5aead149a8cf"",
@@ -854,11 +872,55 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""c44e8d79-ca60-4350-995c-5080f9ec5501"",
-                    ""path"": ""<DualShockGamepad>/buttonEast"",
+                    ""path"": ""<DualShockGamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""CursorSelectContextButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bb48cb3d-ddaa-43f2-8b77-db3828d5d7fb"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CursorSelectLaunchButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""30c5698e-af4e-4a9e-b220-d129b14a9614"",
+                    ""path"": ""<DualShockGamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CursorSelectLaunchButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ee3694c2-a138-4f8a-8302-453e20312ed8"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CursorSelectHeavyButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d2ec7a82-a607-4c77-9ba9-0c48a48ac548"",
+                    ""path"": ""<DualShockGamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CursorSelectHeavyButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -962,6 +1024,8 @@ public partial class @InputController: IInputActionCollection2, IDisposable
         m_Paused_MoveCursorLeftButton = m_Paused.FindAction("MoveCursorLeftButton", throwIfNotFound: true);
         m_Paused_MoveCursorRightButton = m_Paused.FindAction("MoveCursorRightButton", throwIfNotFound: true);
         m_Paused_CursorSelectLightButton = m_Paused.FindAction("CursorSelectLightButton", throwIfNotFound: true);
+        m_Paused_CursorSelectLaunchButton = m_Paused.FindAction("CursorSelectLaunchButton", throwIfNotFound: true);
+        m_Paused_CursorSelectHeavyButton = m_Paused.FindAction("CursorSelectHeavyButton", throwIfNotFound: true);
         m_Paused_CursorSelectContextButton = m_Paused.FindAction("CursorSelectContextButton", throwIfNotFound: true);
         // Interacting
         m_Interacting = asset.FindActionMap("Interacting", throwIfNotFound: true);
@@ -1178,6 +1242,8 @@ public partial class @InputController: IInputActionCollection2, IDisposable
     private readonly InputAction m_Paused_MoveCursorLeftButton;
     private readonly InputAction m_Paused_MoveCursorRightButton;
     private readonly InputAction m_Paused_CursorSelectLightButton;
+    private readonly InputAction m_Paused_CursorSelectLaunchButton;
+    private readonly InputAction m_Paused_CursorSelectHeavyButton;
     private readonly InputAction m_Paused_CursorSelectContextButton;
     public struct PausedActions
     {
@@ -1191,6 +1257,8 @@ public partial class @InputController: IInputActionCollection2, IDisposable
         public InputAction @MoveCursorLeftButton => m_Wrapper.m_Paused_MoveCursorLeftButton;
         public InputAction @MoveCursorRightButton => m_Wrapper.m_Paused_MoveCursorRightButton;
         public InputAction @CursorSelectLightButton => m_Wrapper.m_Paused_CursorSelectLightButton;
+        public InputAction @CursorSelectLaunchButton => m_Wrapper.m_Paused_CursorSelectLaunchButton;
+        public InputAction @CursorSelectHeavyButton => m_Wrapper.m_Paused_CursorSelectHeavyButton;
         public InputAction @CursorSelectContextButton => m_Wrapper.m_Paused_CursorSelectContextButton;
         public InputActionMap Get() { return m_Wrapper.m_Paused; }
         public void Enable() { Get().Enable(); }
@@ -1225,6 +1293,12 @@ public partial class @InputController: IInputActionCollection2, IDisposable
             @CursorSelectLightButton.started += instance.OnCursorSelectLightButton;
             @CursorSelectLightButton.performed += instance.OnCursorSelectLightButton;
             @CursorSelectLightButton.canceled += instance.OnCursorSelectLightButton;
+            @CursorSelectLaunchButton.started += instance.OnCursorSelectLaunchButton;
+            @CursorSelectLaunchButton.performed += instance.OnCursorSelectLaunchButton;
+            @CursorSelectLaunchButton.canceled += instance.OnCursorSelectLaunchButton;
+            @CursorSelectHeavyButton.started += instance.OnCursorSelectHeavyButton;
+            @CursorSelectHeavyButton.performed += instance.OnCursorSelectHeavyButton;
+            @CursorSelectHeavyButton.canceled += instance.OnCursorSelectHeavyButton;
             @CursorSelectContextButton.started += instance.OnCursorSelectContextButton;
             @CursorSelectContextButton.performed += instance.OnCursorSelectContextButton;
             @CursorSelectContextButton.canceled += instance.OnCursorSelectContextButton;
@@ -1256,6 +1330,12 @@ public partial class @InputController: IInputActionCollection2, IDisposable
             @CursorSelectLightButton.started -= instance.OnCursorSelectLightButton;
             @CursorSelectLightButton.performed -= instance.OnCursorSelectLightButton;
             @CursorSelectLightButton.canceled -= instance.OnCursorSelectLightButton;
+            @CursorSelectLaunchButton.started -= instance.OnCursorSelectLaunchButton;
+            @CursorSelectLaunchButton.performed -= instance.OnCursorSelectLaunchButton;
+            @CursorSelectLaunchButton.canceled -= instance.OnCursorSelectLaunchButton;
+            @CursorSelectHeavyButton.started -= instance.OnCursorSelectHeavyButton;
+            @CursorSelectHeavyButton.performed -= instance.OnCursorSelectHeavyButton;
+            @CursorSelectHeavyButton.canceled -= instance.OnCursorSelectHeavyButton;
             @CursorSelectContextButton.started -= instance.OnCursorSelectContextButton;
             @CursorSelectContextButton.performed -= instance.OnCursorSelectContextButton;
             @CursorSelectContextButton.canceled -= instance.OnCursorSelectContextButton;
@@ -1356,6 +1436,8 @@ public partial class @InputController: IInputActionCollection2, IDisposable
         void OnMoveCursorLeftButton(InputAction.CallbackContext context);
         void OnMoveCursorRightButton(InputAction.CallbackContext context);
         void OnCursorSelectLightButton(InputAction.CallbackContext context);
+        void OnCursorSelectLaunchButton(InputAction.CallbackContext context);
+        void OnCursorSelectHeavyButton(InputAction.CallbackContext context);
         void OnCursorSelectContextButton(InputAction.CallbackContext context);
     }
     public interface IInteractingActions

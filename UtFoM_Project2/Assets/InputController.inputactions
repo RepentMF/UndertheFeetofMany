@@ -160,7 +160,7 @@
                 {
                     "name": "",
                     "id": "be10c12e-6841-48b5-9e9e-3846b3898d9a",
-                    "path": "<DualShockGamepad>/buttonSouth",
+                    "path": "<DualShockGamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -182,7 +182,7 @@
                 {
                     "name": "",
                     "id": "35d3f02b-ccb1-4ccc-9315-e15037cd7414",
-                    "path": "<DualShockGamepad>/buttonNorth",
+                    "path": "<DualShockGamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -336,7 +336,7 @@
                 {
                     "name": "",
                     "id": "667f2e62-f77d-4918-8a2a-f52cf9acafae",
-                    "path": "<DualShockGamepad>/buttonEast",
+                    "path": "<DualShockGamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -588,6 +588,24 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "CursorSelectLaunchButton",
+                    "type": "Button",
+                    "id": "054f9bdd-7777-42a9-ac9c-0aa9cb83981c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CursorSelectHeavyButton",
+                    "type": "Button",
+                    "id": "7461ce2b-d895-4689-a359-c58e02ea3662",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "CursorSelectContextButton",
                     "type": "Button",
                     "id": "d4b857f0-ac36-471d-b8f1-5aead149a8cf",
@@ -832,11 +850,55 @@
                 {
                     "name": "",
                     "id": "c44e8d79-ca60-4350-995c-5080f9ec5501",
-                    "path": "<DualShockGamepad>/buttonEast",
+                    "path": "<DualShockGamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "CursorSelectContextButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb48cb3d-ddaa-43f2-8b77-db3828d5d7fb",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CursorSelectLaunchButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "30c5698e-af4e-4a9e-b220-d129b14a9614",
+                    "path": "<DualShockGamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CursorSelectLaunchButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ee3694c2-a138-4f8a-8302-453e20312ed8",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CursorSelectHeavyButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d2ec7a82-a607-4c77-9ba9-0c48a48ac548",
+                    "path": "<DualShockGamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CursorSelectHeavyButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

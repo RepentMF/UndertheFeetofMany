@@ -322,6 +322,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     // move cursor in 4 directions
     private void OnMoveCursorDownButton()
     {
+        // if on trinket page, currently
         if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
         {
             if (BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector > 15)
@@ -340,6 +341,7 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void OnMoveCursorUpButton()
     {
+        // if on trinket page, currently
         if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
         {
             if (BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector < 4)
@@ -358,6 +360,7 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void OnMoveCursorLeftButton()
     {
+        // if on trinket page, currently
         if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
         {
             if ((BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector % 4) == 0)
@@ -376,6 +379,7 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void OnMoveCursorRightButton()
     {
+        // if on trinket page, currently
         if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
         {
             if (((BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector + 1) % 4) == 0)
@@ -396,13 +400,13 @@ public class PlayerController : GenericSingleton<PlayerController>
     // equip trinket with knife
     private void OnCursorSelectLightButton()
     {
+        // if on trinket page, currently
         if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
         {
             int i = BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector;
             if (InventoryScript.TrinketsList[i] != null)
             {
-                // still needs conditional to ensure that knife is a valid option for equipping
-                // the trinket
+                // ADD CONDITIONAL TO SEE IF KNIFE IS VALID OPTION
                 if (InventoryScript.WeaponsList.Exists(x => x.Name == "Knife") && 
                     !InventoryScript.EquippedTrinkets.Exists(x => x.Trinket == InventoryScript.TrinketsList[i]))
                 {
@@ -416,13 +420,107 @@ public class PlayerController : GenericSingleton<PlayerController>
                     }
                     InventoryScript.EquipTrinket(InventoryScript.TrinketsList[i], w);
                 }
+                else if (InventoryScript.WeaponsList.Exists(x => x.Name == "Knife") && 
+                    InventoryScript.EquippedTrinkets.Exists(x => x.Trinket == InventoryScript.TrinketsList[i]))
+                {
+                    Weapon w = new Weapon();
+                    foreach(Weapon weapon in InventoryScript.WeaponsList)
+                    {
+                        if (weapon.Name == "Knife")
+                        {
+                            w = weapon;
+                        }
+                    }
+                    InventoryScript.UnequipTrinket(InventoryScript.TrinketsList[i], w);
+                }
             }
         }
     }
 
-    // equip or unequip trinket with player stats
+    // equip trinket with sword
+    private void OnCursorSelectLaunchButton()
+    {
+        // if on trinket page, currently
+        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        {
+            int i = BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector;
+            if (InventoryScript.TrinketsList[i] != null)
+            {
+                // ADD CONDITIONAL TO SEE IF SWORD IS VALID OPTION
+                if (InventoryScript.WeaponsList.Exists(x => x.Name == "Sword") && 
+                    !InventoryScript.EquippedTrinkets.Exists(x => x.Trinket == InventoryScript.TrinketsList[i]))
+                {
+                    Weapon w = new Weapon();
+                    foreach(Weapon weapon in InventoryScript.WeaponsList)
+                    {
+                        if (weapon.Name == "Sword")
+                        {
+                            w = weapon;
+                        }
+                    }
+                    InventoryScript.EquipTrinket(InventoryScript.TrinketsList[i], w);
+                }
+                else if (InventoryScript.WeaponsList.Exists(x => x.Name == "Sword") && 
+                    InventoryScript.EquippedTrinkets.Exists(x => x.Trinket == InventoryScript.TrinketsList[i]))
+                {
+                    Weapon w = new Weapon();
+                    foreach(Weapon weapon in InventoryScript.WeaponsList)
+                    {
+                        if (weapon.Name == "Sword")
+                        {
+                            w = weapon;
+                        }
+                    }
+                    InventoryScript.UnequipTrinket(InventoryScript.TrinketsList[i], w);
+                }
+            }
+        }
+    }
+
+    // equip trinket with hammer
+    private void OnCursorSelectHeavyButton()
+    {
+        // if on trinket page, currently
+        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        {
+            int i = BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector;
+            if (InventoryScript.TrinketsList[i] != null)
+            {
+                // ADD CONDITIONAL TO SEE IF SWORD IS VALID OPTION
+                if (InventoryScript.WeaponsList.Exists(x => x.Name == "Hammer") && 
+                    !InventoryScript.EquippedTrinkets.Exists(x => x.Trinket == InventoryScript.TrinketsList[i]))
+                {
+                    Weapon w = new Weapon();
+                    foreach(Weapon weapon in InventoryScript.WeaponsList)
+                    {
+                        if (weapon.Name == "Hammer")
+                        {
+                            w = weapon;
+                        }
+                    }
+                    InventoryScript.EquipTrinket(InventoryScript.TrinketsList[i], w);
+                }
+                else if (InventoryScript.WeaponsList.Exists(x => x.Name == "Hammer") && 
+                    InventoryScript.EquippedTrinkets.Exists(x => x.Trinket == InventoryScript.TrinketsList[i]))
+                {
+                    Weapon w = new Weapon();
+                    foreach(Weapon weapon in InventoryScript.WeaponsList)
+                    {
+                        if (weapon.Name == "Hammer")
+                        {
+                            w = weapon;
+                        }
+                    }
+                    InventoryScript.UnequipTrinket(InventoryScript.TrinketsList[i], w);
+                }
+            }
+        }
+    }
+
     private void OnCursorSelectContextButton()
     {
+        
+        // if on trinket page, currently- equip or unequip trinket with player stats
         if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
         {
             int i = BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector;
@@ -432,9 +530,9 @@ public class PlayerController : GenericSingleton<PlayerController>
                 {
                     InventoryScript.EquipTrinket(InventoryScript.TrinketsList[i], StatsScript);
                 }
-                else
+                else if (InventoryScript.EquippedTrinkets.Exists(x => x.Trinket == InventoryScript.TrinketsList[i]))
                 {
-                    // unequip trinkets here
+                    InventoryScript.UnequipTrinket(InventoryScript.TrinketsList[i], StatsScript);
                 }
             }
         }
