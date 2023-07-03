@@ -10,6 +10,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     [SerializeField] private GameObject PauseMenuReference;
     [SerializeField] private GameObject StatsBookReference;
     [SerializeField] private GameObject BookInfoReference;
+    private ActivePageManager ActivePageManagerReference;
     private bool IsSceneItemInRange = false;
     private bool IsInteractableInRange = false;
     private SceneItem SceneItemTarget;
@@ -48,6 +49,7 @@ public class PlayerController : GenericSingleton<PlayerController>
             StateManager pauseMenuStateManager = PauseMenuReference.GetComponent<StateManager>();
             pauseMenuStateManager.CurrentState = ActionState.Appear;
             StatsBookReference.SetActive(false);
+            ActivePageManagerReference = BookInfoReference.GetComponent<ActivePageManager>();
         }
         // Pauses the game
         else if (!GameStateManager.Instance.IsPaused() && PauseMenuReference != null && StatsBookReference != null
@@ -296,103 +298,157 @@ public class PlayerController : GenericSingleton<PlayerController>
     private void OnNextPageButton()
     {
         // if active page is at max, go to beginning- 1 is currently max
-        if (BookInfoReference.GetComponent<ActivePageManager>().ActivePage == BookInfoReference.GetComponent<ActivePageManager>().Pages.Count - 1)
+        if (ActivePageManagerReference.ActivePage == ActivePageManagerReference.Pages.Count - 1)
         {
-            BookInfoReference.GetComponent<ActivePageManager>().ActivePage = 0;  
+            ActivePageManagerReference.ActivePage = 0;  
         }
         else
         {
-            BookInfoReference.GetComponent<ActivePageManager>().ActivePage++;
+            ActivePageManagerReference.ActivePage++;
+        }
+
+        if (ActivePageManagerReference.ActivePage == 1 || ActivePageManagerReference.ActivePage == 2)
+        {
+            ActivePageManagerReference.CursorDisplay.enabled = true;
+        }
+        else
+        {
+            ActivePageManagerReference.CursorDisplay.enabled = false;
         }
     }
 
     private void OnPreviousPageButton()
     {   
         // if active page is at min, go to end- 0 will always be min
-        if (BookInfoReference.GetComponent<ActivePageManager>().ActivePage == 0)
+        if (ActivePageManagerReference.ActivePage == 0)
         {
-            BookInfoReference.GetComponent<ActivePageManager>().ActivePage = 1;  
+            ActivePageManagerReference.ActivePage = 2;  
         }
         else
         {
-            BookInfoReference.GetComponent<ActivePageManager>().ActivePage--;
+            ActivePageManagerReference.ActivePage--;
+        }
+
+        if (ActivePageManagerReference.ActivePage == 1 || ActivePageManagerReference.ActivePage == 2)
+        {
+            ActivePageManagerReference.CursorDisplay.enabled = true;
+        }
+        else
+        {
+            ActivePageManagerReference.CursorDisplay.enabled = false;
         }
     }
     
     // move cursor in 4 directions
     private void OnMoveCursorDownButton()
     {
-        // if on trinket page, currently
-        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        // if on trinket or key items page, currently
+        if (ActivePageManagerReference.Pages[1].active || 
+            ActivePageManagerReference.Pages[2].active)
         {
-            if (BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector > 15)
+            if (ActivePageManagerReference.Selector > 15)
             {
-                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector -= 16;
+                ActivePageManagerReference.Selector -= 16;
             }
             else
             {
-                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector += 4;
+                ActivePageManagerReference.Selector += 4;
             }
 
-            BookInfoReference.GetComponent<ActivePageManager>().CursorDisplay.transform.position = 
-                BookInfoReference.GetComponent<ActivePageManager>().TrinketImages[BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector].transform.position;
+            if (ActivePageManagerReference.Pages[1].active)
+            {
+                ActivePageManagerReference.CursorDisplay.transform.position = 
+                    ActivePageManagerReference.TrinketImages[ActivePageManagerReference.Selector].transform.position;
+            }
+            else if (ActivePageManagerReference.Pages[2].active)
+            {
+                ActivePageManagerReference.CursorDisplay.transform.position = 
+                    ActivePageManagerReference.KeyItemImages[ActivePageManagerReference.Selector].transform.position;
+            }
         }
     }
 
     private void OnMoveCursorUpButton()
     {
-        // if on trinket page, currently
-        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        // if on trinket or key items page, currently
+        if (ActivePageManagerReference.Pages[1].active || 
+            ActivePageManagerReference.Pages[2].active)
         {
-            if (BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector < 4)
+            if (ActivePageManagerReference.Selector < 4)
             {
-                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector += 16;
+                ActivePageManagerReference.Selector += 16;
             }
             else
             {
-                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector -= 4;
+                ActivePageManagerReference.Selector -= 4;
             }
 
-            BookInfoReference.GetComponent<ActivePageManager>().CursorDisplay.transform.position = 
-                BookInfoReference.GetComponent<ActivePageManager>().TrinketImages[BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector].transform.position;
+            if (ActivePageManagerReference.Pages[1].active)
+            {
+                ActivePageManagerReference.CursorDisplay.transform.position = 
+                    ActivePageManagerReference.TrinketImages[ActivePageManagerReference.Selector].transform.position;
+            }
+            else if (ActivePageManagerReference.Pages[2].active)
+            {
+                ActivePageManagerReference.CursorDisplay.transform.position = 
+                    ActivePageManagerReference.KeyItemImages[ActivePageManagerReference.Selector].transform.position;
+            }
         }
     }
 
     private void OnMoveCursorLeftButton()
     {
         // if on trinket page, currently
-        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        if (ActivePageManagerReference.Pages[1].active || 
+            ActivePageManagerReference.Pages[2].active)
         {
-            if ((BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector % 4) == 0)
+            if ((ActivePageManagerReference.Selector % 4) == 0)
             {
-                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector += 3;
+                ActivePageManagerReference.Selector += 3;
             }
             else
             {
-                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector--;
+                ActivePageManagerReference.Selector--;
             }
 
-            BookInfoReference.GetComponent<ActivePageManager>().CursorDisplay.transform.position = 
-                BookInfoReference.GetComponent<ActivePageManager>().TrinketImages[BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector].transform.position;
+            if (ActivePageManagerReference.Pages[1].active)
+            {
+                ActivePageManagerReference.CursorDisplay.transform.position = 
+                    ActivePageManagerReference.TrinketImages[ActivePageManagerReference.Selector].transform.position;
+            }
+            else if (ActivePageManagerReference.Pages[2].active)
+            {
+                ActivePageManagerReference.CursorDisplay.transform.position = 
+                    ActivePageManagerReference.KeyItemImages[ActivePageManagerReference.Selector].transform.position;
+            }
         }
     }
 
     private void OnMoveCursorRightButton()
     {
         // if on trinket page, currently
-        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        if (ActivePageManagerReference.Pages[1].active || 
+            ActivePageManagerReference.Pages[2].active)
         {
-            if (((BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector + 1) % 4) == 0)
+            if (((ActivePageManagerReference.Selector + 1) % 4) == 0)
             {
-                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector -= 3;
+                ActivePageManagerReference.Selector -= 3;
             }
             else
             {
-                BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector++;
+                ActivePageManagerReference.Selector++;
             }
 
-            BookInfoReference.GetComponent<ActivePageManager>().CursorDisplay.transform.position = 
-                BookInfoReference.GetComponent<ActivePageManager>().TrinketImages[BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector].transform.position;
+            if (ActivePageManagerReference.Pages[1].active)
+            {
+                ActivePageManagerReference.CursorDisplay.transform.position = 
+                    ActivePageManagerReference.TrinketImages[ActivePageManagerReference.Selector].transform.position;
+            }
+            else if (ActivePageManagerReference.Pages[2].active)
+            {
+                ActivePageManagerReference.CursorDisplay.transform.position = 
+                    ActivePageManagerReference.KeyItemImages[ActivePageManagerReference.Selector].transform.position;
+            }
         }
     }
 
@@ -400,9 +456,9 @@ public class PlayerController : GenericSingleton<PlayerController>
     private void OnCursorSelectLightButton()
     {
         // if on trinket page, currently
-        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        if (ActivePageManagerReference.Pages[1].active)
         {
-            int i = BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector;
+            int i = ActivePageManagerReference.Selector;
             if (InventoryScript.TrinketsList[i] != null)
             {
                 // ADD CONDITIONAL TO SEE IF KNIFE IS VALID OPTION
@@ -440,9 +496,9 @@ public class PlayerController : GenericSingleton<PlayerController>
     private void OnCursorSelectLaunchButton()
     {
         // if on trinket page, currently
-        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        if (ActivePageManagerReference.Pages[1].active)
         {
-            int i = BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector;
+            int i = ActivePageManagerReference.Selector;
             if (InventoryScript.TrinketsList[i] != null)
             {
                 // ADD CONDITIONAL TO SEE IF SWORD IS VALID OPTION
@@ -480,9 +536,9 @@ public class PlayerController : GenericSingleton<PlayerController>
     private void OnCursorSelectHeavyButton()
     {
         // if on trinket page, currently
-        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        if (ActivePageManagerReference.Pages[1].active)
         {
-            int i = BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector;
+            int i = ActivePageManagerReference.Selector;
             if (InventoryScript.TrinketsList[i] != null)
             {
                 // ADD CONDITIONAL TO SEE IF SWORD IS VALID OPTION
@@ -520,9 +576,10 @@ public class PlayerController : GenericSingleton<PlayerController>
     private void OnCursorSelectContextButton()
     {
         // if on trinket page, currently- equip or unequip trinket with player stats
-        if (BookInfoReference.GetComponent<ActivePageManager>().Pages[1].active)
+        // TRINKET MENU SELECTION LOGIC
+        if (ActivePageManagerReference.Pages[1].active)
         {
-            int i = BookInfoReference.GetComponent<ActivePageManager>().TrinketSelector;
+            int i = ActivePageManagerReference.Selector;
             if (InventoryScript.TrinketsList[i] != null)
             {
                 if (!InventoryScript.EquippedTrinkets.Exists(x => x.Trinket == InventoryScript.TrinketsList[i]))
@@ -533,6 +590,15 @@ public class PlayerController : GenericSingleton<PlayerController>
                 {
                     InventoryScript.UnequipTrinket(InventoryScript.TrinketsList[i], StatsScript);
                 }
+            }
+        }
+        // KEY ITEM MENU SELECTION LOGIC
+        else if (ActivePageManagerReference.Pages[2].active)
+        {
+            int i = ActivePageManagerReference.Selector;
+            if (InventoryScript.KeyItemsList[i] != null)
+            {
+                // do logic with selected key item
             }
         }
     }

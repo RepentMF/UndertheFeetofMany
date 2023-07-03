@@ -12,9 +12,10 @@ public class ActivePageManager : MonoBehaviour
     public Text DynamicText;
     public List<GameObject> Pages;
     public int ActivePage;
-    public int TrinketSelector = 0;
+    public int Selector = 0;
     private Inventory MainInventory;
     public List<Image> TrinketImages;
+    public List<Image> KeyItemImages;
 
     // Start is called before the first frame update
     void Start()
@@ -81,6 +82,22 @@ public class ActivePageManager : MonoBehaviour
         }
     }
 
+    void KeyItemPageDisplay()
+    {
+        Pages[2].SetActive(true);
+
+        // display each key item in the inventory on each square of
+        // the 4x5 grid
+        for (int i = 0; i < MainInventory.KeyItemsList.Count; i++)
+        {
+            if (MainInventory.KeyItemsList[i] != null)
+            {
+                KeyItemImages[i].gameObject.SetActive(true);
+                KeyItemImages[i].sprite = MainInventory.KeyItemsList[i].Sprite;
+            }
+        }
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -92,6 +109,9 @@ public class ActivePageManager : MonoBehaviour
                 break;
             case 1:
                 TrinketPageDisplay();
+                break;
+            case 2:
+                KeyItemPageDisplay();
                 break;
         }
     }
