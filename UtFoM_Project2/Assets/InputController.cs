@@ -947,6 +947,24 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": ""Press"",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MoveCursorLeftButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""ade7ffc1-3166-4a1f-97fd-7a017671ca4a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MoveCursorRightButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""f198e685-77ba-4d33-b324-19a45dd6ad20"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -986,11 +1004,77 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""c27c0c13-eb09-4e9b-a619-63a1d9d5028a"",
-                    ""path"": ""<DualShockGamepad>/buttonEast"",
+                    ""path"": ""<DualShockGamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1a83e3df-5b90-47a4-9b73-b4582229ee6b"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorLeftButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d195a280-72c9-40f3-959d-680bb2ac79cc"",
+                    ""path"": ""<DualShockGamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorLeftButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""155534f8-3b57-4ccf-97f1-2748cb216eb7"",
+                    ""path"": ""<DualShockGamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorLeftButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f2fef084-b1b1-4b97-b804-3646d94b3dbf"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorRightButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9c19f416-426f-4fac-a03b-1f4628c412e6"",
+                    ""path"": ""<DualShockGamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorRightButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""80104cd8-2b04-4676-86cb-43dc14f0f0c8"",
+                    ""path"": ""<DualShockGamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveCursorRightButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1031,6 +1115,8 @@ public partial class @InputController: IInputActionCollection2, IDisposable
         m_Interacting = asset.FindActionMap("Interacting", throwIfNotFound: true);
         m_Interacting_EndInteraction = m_Interacting.FindAction("EndInteraction", throwIfNotFound: true);
         m_Interacting_Interact = m_Interacting.FindAction("Interact", throwIfNotFound: true);
+        m_Interacting_MoveCursorLeftButton = m_Interacting.FindAction("MoveCursorLeftButton", throwIfNotFound: true);
+        m_Interacting_MoveCursorRightButton = m_Interacting.FindAction("MoveCursorRightButton", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1362,12 +1448,16 @@ public partial class @InputController: IInputActionCollection2, IDisposable
     private List<IInteractingActions> m_InteractingActionsCallbackInterfaces = new List<IInteractingActions>();
     private readonly InputAction m_Interacting_EndInteraction;
     private readonly InputAction m_Interacting_Interact;
+    private readonly InputAction m_Interacting_MoveCursorLeftButton;
+    private readonly InputAction m_Interacting_MoveCursorRightButton;
     public struct InteractingActions
     {
         private @InputController m_Wrapper;
         public InteractingActions(@InputController wrapper) { m_Wrapper = wrapper; }
         public InputAction @EndInteraction => m_Wrapper.m_Interacting_EndInteraction;
         public InputAction @Interact => m_Wrapper.m_Interacting_Interact;
+        public InputAction @MoveCursorLeftButton => m_Wrapper.m_Interacting_MoveCursorLeftButton;
+        public InputAction @MoveCursorRightButton => m_Wrapper.m_Interacting_MoveCursorRightButton;
         public InputActionMap Get() { return m_Wrapper.m_Interacting; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1383,6 +1473,12 @@ public partial class @InputController: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
+            @MoveCursorLeftButton.started += instance.OnMoveCursorLeftButton;
+            @MoveCursorLeftButton.performed += instance.OnMoveCursorLeftButton;
+            @MoveCursorLeftButton.canceled += instance.OnMoveCursorLeftButton;
+            @MoveCursorRightButton.started += instance.OnMoveCursorRightButton;
+            @MoveCursorRightButton.performed += instance.OnMoveCursorRightButton;
+            @MoveCursorRightButton.canceled += instance.OnMoveCursorRightButton;
         }
 
         private void UnregisterCallbacks(IInteractingActions instance)
@@ -1393,6 +1489,12 @@ public partial class @InputController: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
+            @MoveCursorLeftButton.started -= instance.OnMoveCursorLeftButton;
+            @MoveCursorLeftButton.performed -= instance.OnMoveCursorLeftButton;
+            @MoveCursorLeftButton.canceled -= instance.OnMoveCursorLeftButton;
+            @MoveCursorRightButton.started -= instance.OnMoveCursorRightButton;
+            @MoveCursorRightButton.performed -= instance.OnMoveCursorRightButton;
+            @MoveCursorRightButton.canceled -= instance.OnMoveCursorRightButton;
         }
 
         public void RemoveCallbacks(IInteractingActions instance)
@@ -1444,5 +1546,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
     {
         void OnEndInteraction(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnMoveCursorLeftButton(InputAction.CallbackContext context);
+        void OnMoveCursorRightButton(InputAction.CallbackContext context);
     }
 }

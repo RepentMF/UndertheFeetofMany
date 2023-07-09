@@ -9,6 +9,7 @@ public class Interactable : MonoBehaviour
     [SerializeField] private Text DialogueTextReference;
     [SerializeField] private string[] TextArray;
     private int TextArrayIndex = 0;
+    public bool IsQuestion;
 
     // Script References
     StateManager StateManagerScript;
