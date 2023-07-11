@@ -22,6 +22,10 @@ TagManager:
   - DialogueBox
   - Dialogue
   - Hitbox
+  - Confirm
+  - Deny
+  - Decide
+  - Decision
   layers:
   - Default
   - TransparentFX

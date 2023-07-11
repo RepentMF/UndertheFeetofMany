@@ -927,7 +927,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "MoveCursorLeftButton",
+                    "name": "DecideLeftButton",
                     "type": "Button",
                     "id": "ade7ffc1-3166-4a1f-97fd-7a017671ca4a",
                     "expectedControlType": "Button",
@@ -936,7 +936,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "MoveCursorRightButton",
+                    "name": "DecideRightButton",
                     "type": "Button",
                     "id": "f198e685-77ba-4d33-b324-19a45dd6ad20",
                     "expectedControlType": "Button",
@@ -997,7 +997,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MoveCursorLeftButton",
+                    "action": "DecideLeftButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1008,7 +1008,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MoveCursorLeftButton",
+                    "action": "DecideLeftButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1019,7 +1019,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MoveCursorLeftButton",
+                    "action": "DecideLeftButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1030,7 +1030,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MoveCursorRightButton",
+                    "action": "DecideRightButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1041,7 +1041,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MoveCursorRightButton",
+                    "action": "DecideRightButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1052,7 +1052,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MoveCursorRightButton",
+                    "action": "DecideRightButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

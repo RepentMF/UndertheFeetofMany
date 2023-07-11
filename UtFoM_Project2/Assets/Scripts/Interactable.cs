@@ -24,10 +24,27 @@ public class Interactable : MonoBehaviour
             DialogueBoxReference.SetActive(false); // Remove any previously active text boxes
             DialogueBoxReference.SetActive(true); // Display the current text box
             DialogueTextReference.text = TextArray[TextArrayIndex];
+            
+            foreach (Transform child in DialogueBoxReference.GetComponentInChildren<Transform>())
+            {
+                if (child.tag == "Decision")
+                {
+                    child.gameObject.SetActive(IsQuestion);
+                }
+            }
+
             TextArrayIndex++;
         }
         else // If all of the dialogue text has been iterated through (or if none existed)
         {
+            if (IsQuestion)
+            {
+                // Scene Transition is present on Interactable
+                if (GetComponentInChildren<SceneTransition>() != null)
+                {
+                    GetComponentInChildren<SceneTransition>().EnterFromDialogue(FindObjectOfType<PlayerController>().DecideConfirmDeny());
+                }
+            }
             EndInteraction();
         }
     }

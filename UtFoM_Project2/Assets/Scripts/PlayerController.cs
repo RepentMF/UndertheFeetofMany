@@ -17,6 +17,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     private Interactable InteractableTarget;
     private string CurrentAttackAnimationName = "";
     private bool IsShortcutButtonPressed = false;
+    private bool confirm = true;
     private Vector2 MovementVector;
     private Vector2 DodgeVector;
     [SerializeField] public float MovementSpeed = 6;
@@ -624,7 +625,35 @@ public class PlayerController : GenericSingleton<PlayerController>
     {
         if (IsInteractableInRange)
         {
+            if (InteractableTarget.IsQuestion)
+            {
+                // Send this to whatever function needs a flag changed
+                DecideConfirmDeny();
+            }
             InteractableTarget.EndInteraction();
+        }
+    }
+
+    public bool DecideConfirmDeny()
+    {
+        return confirm;
+    }
+
+    private void OnDecideLeftButton()
+    {
+        if (InteractableTarget.IsQuestion)
+        {
+            GameObject.FindGameObjectWithTag("Decide").gameObject.transform.position = GameObject.FindGameObjectWithTag("Confirm").gameObject.transform.position;
+            confirm = true;
+        }
+    }
+    
+    private void OnDecideRightButton()
+    {
+        if (InteractableTarget.IsQuestion)
+        {
+            GameObject.FindGameObjectWithTag("Decide").gameObject.transform.position = GameObject.FindGameObjectWithTag("Deny").gameObject.transform.position;
+            confirm = false;
         }
     }
 

@@ -51,6 +51,18 @@ public class SceneTransition : MonoBehaviour
 		}
 	}
 
+	public  void EnterFromDialogue(bool enter)
+	{
+		if (enter)
+		{
+			GameObject.FindObjectOfType<PlayerController>().transform.position = playerPosition;
+			GameObject.FindObjectOfType<PlayerController>().SetAnimatorFloats(playerDirection);
+			GameObject.FindObjectOfType<PlayerController>().NextScene = sceneToLoad;
+			StartCoroutine(FadeCo());
+		}
+		
+	}
+
 	public IEnumerator FadeCo()
 	{
 		if(fadeOutPanel != null)

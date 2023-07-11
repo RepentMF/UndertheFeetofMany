@@ -949,7 +949,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""MoveCursorLeftButton"",
+                    ""name"": ""DecideLeftButton"",
                     ""type"": ""Button"",
                     ""id"": ""ade7ffc1-3166-4a1f-97fd-7a017671ca4a"",
                     ""expectedControlType"": ""Button"",
@@ -958,7 +958,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""MoveCursorRightButton"",
+                    ""name"": ""DecideRightButton"",
                     ""type"": ""Button"",
                     ""id"": ""f198e685-77ba-4d33-b324-19a45dd6ad20"",
                     ""expectedControlType"": ""Button"",
@@ -1019,7 +1019,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""MoveCursorLeftButton"",
+                    ""action"": ""DecideLeftButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1030,7 +1030,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""MoveCursorLeftButton"",
+                    ""action"": ""DecideLeftButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1041,7 +1041,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""MoveCursorLeftButton"",
+                    ""action"": ""DecideLeftButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1052,7 +1052,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""MoveCursorRightButton"",
+                    ""action"": ""DecideRightButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1063,7 +1063,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""MoveCursorRightButton"",
+                    ""action"": ""DecideRightButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1074,7 +1074,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""MoveCursorRightButton"",
+                    ""action"": ""DecideRightButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1115,8 +1115,8 @@ public partial class @InputController: IInputActionCollection2, IDisposable
         m_Interacting = asset.FindActionMap("Interacting", throwIfNotFound: true);
         m_Interacting_EndInteraction = m_Interacting.FindAction("EndInteraction", throwIfNotFound: true);
         m_Interacting_Interact = m_Interacting.FindAction("Interact", throwIfNotFound: true);
-        m_Interacting_MoveCursorLeftButton = m_Interacting.FindAction("MoveCursorLeftButton", throwIfNotFound: true);
-        m_Interacting_MoveCursorRightButton = m_Interacting.FindAction("MoveCursorRightButton", throwIfNotFound: true);
+        m_Interacting_DecideLeftButton = m_Interacting.FindAction("DecideLeftButton", throwIfNotFound: true);
+        m_Interacting_DecideRightButton = m_Interacting.FindAction("DecideRightButton", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1448,16 +1448,16 @@ public partial class @InputController: IInputActionCollection2, IDisposable
     private List<IInteractingActions> m_InteractingActionsCallbackInterfaces = new List<IInteractingActions>();
     private readonly InputAction m_Interacting_EndInteraction;
     private readonly InputAction m_Interacting_Interact;
-    private readonly InputAction m_Interacting_MoveCursorLeftButton;
-    private readonly InputAction m_Interacting_MoveCursorRightButton;
+    private readonly InputAction m_Interacting_DecideLeftButton;
+    private readonly InputAction m_Interacting_DecideRightButton;
     public struct InteractingActions
     {
         private @InputController m_Wrapper;
         public InteractingActions(@InputController wrapper) { m_Wrapper = wrapper; }
         public InputAction @EndInteraction => m_Wrapper.m_Interacting_EndInteraction;
         public InputAction @Interact => m_Wrapper.m_Interacting_Interact;
-        public InputAction @MoveCursorLeftButton => m_Wrapper.m_Interacting_MoveCursorLeftButton;
-        public InputAction @MoveCursorRightButton => m_Wrapper.m_Interacting_MoveCursorRightButton;
+        public InputAction @DecideLeftButton => m_Wrapper.m_Interacting_DecideLeftButton;
+        public InputAction @DecideRightButton => m_Wrapper.m_Interacting_DecideRightButton;
         public InputActionMap Get() { return m_Wrapper.m_Interacting; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1473,12 +1473,12 @@ public partial class @InputController: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
-            @MoveCursorLeftButton.started += instance.OnMoveCursorLeftButton;
-            @MoveCursorLeftButton.performed += instance.OnMoveCursorLeftButton;
-            @MoveCursorLeftButton.canceled += instance.OnMoveCursorLeftButton;
-            @MoveCursorRightButton.started += instance.OnMoveCursorRightButton;
-            @MoveCursorRightButton.performed += instance.OnMoveCursorRightButton;
-            @MoveCursorRightButton.canceled += instance.OnMoveCursorRightButton;
+            @DecideLeftButton.started += instance.OnDecideLeftButton;
+            @DecideLeftButton.performed += instance.OnDecideLeftButton;
+            @DecideLeftButton.canceled += instance.OnDecideLeftButton;
+            @DecideRightButton.started += instance.OnDecideRightButton;
+            @DecideRightButton.performed += instance.OnDecideRightButton;
+            @DecideRightButton.canceled += instance.OnDecideRightButton;
         }
 
         private void UnregisterCallbacks(IInteractingActions instance)
@@ -1489,12 +1489,12 @@ public partial class @InputController: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
-            @MoveCursorLeftButton.started -= instance.OnMoveCursorLeftButton;
-            @MoveCursorLeftButton.performed -= instance.OnMoveCursorLeftButton;
-            @MoveCursorLeftButton.canceled -= instance.OnMoveCursorLeftButton;
-            @MoveCursorRightButton.started -= instance.OnMoveCursorRightButton;
-            @MoveCursorRightButton.performed -= instance.OnMoveCursorRightButton;
-            @MoveCursorRightButton.canceled -= instance.OnMoveCursorRightButton;
+            @DecideLeftButton.started -= instance.OnDecideLeftButton;
+            @DecideLeftButton.performed -= instance.OnDecideLeftButton;
+            @DecideLeftButton.canceled -= instance.OnDecideLeftButton;
+            @DecideRightButton.started -= instance.OnDecideRightButton;
+            @DecideRightButton.performed -= instance.OnDecideRightButton;
+            @DecideRightButton.canceled -= instance.OnDecideRightButton;
         }
 
         public void RemoveCallbacks(IInteractingActions instance)
@@ -1546,7 +1546,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
     {
         void OnEndInteraction(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
-        void OnMoveCursorLeftButton(InputAction.CallbackContext context);
-        void OnMoveCursorRightButton(InputAction.CallbackContext context);
+        void OnDecideLeftButton(InputAction.CallbackContext context);
+        void OnDecideRightButton(InputAction.CallbackContext context);
     }
 }
