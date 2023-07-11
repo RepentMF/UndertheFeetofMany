@@ -37,23 +37,23 @@ public class HealthManager : MonoBehaviour
 			staminaBar.fillAmount = stats.CurrentStamina / stats.MaxStamina;
 		}
 
-		if((stats.CurrentLifeblood >= 0f && stats.CurrentLifeblood <= 10f) && lbFlare1 != null)
+		if((stats.CurrentLifeblood >= 0f && stats.CurrentLifeblood <= 5f) && lbFlare1 != null)
 		{
-			lbFlare3.fillAmount = stats.CurrentLifeblood / 10f;
+			lbFlare3.fillAmount = stats.CurrentLifeblood / 5f;
 			lbFlare1.gameObject.SetActive(false);
 			lbFlare2.gameObject.SetActive(false);
 			lbFlare3.gameObject.SetActive(true);
 		}
-		else if((stats.CurrentLifeblood > 10f && stats.CurrentLifeblood <= 20f) && lbFlare1 != null)
+		else if((stats.CurrentLifeblood > 5f && stats.CurrentLifeblood <= 10f) && lbFlare1 != null)
 		{
-			lbFlare2.fillAmount = (stats.CurrentLifeblood - 10f) / 10f;
+			lbFlare2.fillAmount = (stats.CurrentLifeblood - 5f) / 5f;
 			lbFlare1.gameObject.SetActive(false);
 			lbFlare2.gameObject.SetActive(true);
 			lbFlare3.gameObject.SetActive(true);
 		}
-		else if((stats.CurrentLifeblood > 20f && stats.CurrentLifeblood <= 30f) && lbFlare1 != null)
+		else if((stats.CurrentLifeblood > 10f && stats.CurrentLifeblood <= 15f) && lbFlare1 != null)
 		{
-			lbFlare1.fillAmount = (stats.CurrentLifeblood - 20f) / 10f;
+			lbFlare1.fillAmount = (stats.CurrentLifeblood - 10f) / 5f;
 			lbFlare1.gameObject.SetActive(true);
 			lbFlare2.gameObject.SetActive(true);
 			lbFlare3.gameObject.SetActive(true);

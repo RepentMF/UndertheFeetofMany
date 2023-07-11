@@ -22,8 +22,8 @@ public class PlayerController : GenericSingleton<PlayerController>
     private Vector2 DodgeVector;
     [SerializeField] public float MovementSpeed = 6;
     [SerializeField] private float DodgeSpeed = 6;
-    [SerializeField] private float DodgeCost = 5.0f;
-    [SerializeField] private float LifebloodCost = 10f;
+    [SerializeField] private float DodgeCost = 5;
+    [SerializeField] private float LifebloodCost;
     [SerializeField] private string CurrentScene;
     public string NextScene;
     [SerializeField] private GameObject VoltTrapObject;
@@ -243,7 +243,7 @@ public class PlayerController : GenericSingleton<PlayerController>
         if (CanAct() && StatsScript.CurrentLifeblood >= LifebloodCost)
         {
             StatsScript.DamageLifeblood(LifebloodCost);
-            StatsScript.HealHealth(10f);
+            StatsScript.HealHealth(5f);
         }
     }
 
@@ -252,7 +252,7 @@ public class PlayerController : GenericSingleton<PlayerController>
         if (CanAct() && StatsScript.CurrentLifeblood >= LifebloodCost)
         {
             StatsScript.DamageLifeblood(LifebloodCost);
-            StatsScript.HealMana(10f);
+            StatsScript.HealMana(5f);
         }
     }
 
@@ -262,7 +262,7 @@ public class PlayerController : GenericSingleton<PlayerController>
         if (CanAct() && StatsScript.CurrentLifeblood >= LifebloodCost)
         {
             StatsScript.DamageLifeblood(LifebloodCost);
-            StatsScript.HealStamina(10f);
+            StatsScript.HealStamina(5f);
         }
     }
 
