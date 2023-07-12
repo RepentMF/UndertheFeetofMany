@@ -13,6 +13,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     private ActivePageManager ActivePageManagerReference;
     private bool IsSceneItemInRange = false;
     private bool IsInteractableInRange = false;
+    public bool IsInteracting = false;
     private SceneItem SceneItemTarget;
     private Interactable InteractableTarget;
     private string CurrentAttackAnimationName = "";
@@ -258,7 +259,6 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void OnStaminaButton()
     {
-
         if (CanAct() && StatsScript.CurrentLifeblood >= LifebloodCost)
         {
             StatsScript.DamageLifeblood(LifebloodCost);
@@ -616,8 +616,9 @@ public class PlayerController : GenericSingleton<PlayerController>
         }
     }
 
-    private void OnInteract()
+    public void OnInteract()
     {
+        IsInteracting = true;
         InteractableTarget.Interact();
     }
 
@@ -630,6 +631,7 @@ public class PlayerController : GenericSingleton<PlayerController>
                 // Send this to whatever function needs a flag changed
                 DecideConfirmDeny();
             }
+            IsInteracting = false;
             InteractableTarget.EndInteraction();
         }
     }
