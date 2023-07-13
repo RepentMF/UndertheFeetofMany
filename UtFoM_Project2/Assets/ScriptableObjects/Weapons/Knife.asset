@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca520cb67727a9e46b044c55357d0272, type: 3}
   m_Name: Knife
   m_EditorClassIdentifier: 
-  Name: Knife
-  Description: Stabby-stab
+  Name: Kitchen Knife
+  Description: A small knife I found in the kitchenette. I can't swing it very hard
+    but that means I can swing it really fast.
   Sprite: {fileID: 21300000, guid: ec31afd35e5e3014782208e17cd369b6, type: 3}
   LightAttackAnimationName: Knife
   LightAttackAnimationTimer: -1

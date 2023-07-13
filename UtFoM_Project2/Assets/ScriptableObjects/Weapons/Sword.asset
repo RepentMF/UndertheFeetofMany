@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca520cb67727a9e46b044c55357d0272, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  Name: Sword
-  Description: Slashy-slash
+  Name: Machete Sword
+  Description: A machete I found in the woodshed. I can swing it well but not very
+    quickly.
   Sprite: {fileID: 21300000, guid: bbeffe6d98912784ebcbff4e83d229cf, type: 3}
   LightAttackAnimationName: Sword
   LightAttackAnimationTimer: -1

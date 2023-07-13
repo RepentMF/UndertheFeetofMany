@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca520cb67727a9e46b044c55357d0272, type: 3}
   m_Name: Hammer
   m_EditorClassIdentifier: 
-  Name: Hammer
-  Description: Badda-bing, badda-boom
+  Name: Bell Hammer
+  Description: A hammer used to toll the bell at the chapel. It will hit hard if
+    I swing my hardest, but I can't attack with it very fast.
   Sprite: {fileID: 21300000, guid: c4fa08e94a8b5ca40a099320cc410e9a, type: 3}
   LightAttackAnimationName: Hammer
   LightAttackAnimationTimer: -1
