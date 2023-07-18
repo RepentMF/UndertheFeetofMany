@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b3fc98b1db8ada4a81a75cdea19dbe9, type: 3}
+  m_Name: Jenna_I_1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Why do you have to be so cryptic all the time?
+  - "I don\u2019t know. Something to do, I guess."
+  - "You react so much, how can I not? It\u2019s funny."
+  - "Glad to know I\u2019m good for something."
+  - "You\u2019re good for more than that!"
+  - "Gosh, you\u2019re so sensitive."
+  - I was just joking around.
+  - Ugh, sorry. Thought you could use a good laugh. Or distraction.

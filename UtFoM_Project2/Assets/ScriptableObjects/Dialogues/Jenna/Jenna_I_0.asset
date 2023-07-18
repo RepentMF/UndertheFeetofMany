@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b3fc98b1db8ada4a81a75cdea19dbe9, type: 3}
+  m_Name: Jenna_I_0
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "Your hair looks incredible! I love what you\u2019ve done with it!"
+  - "\u2026"
+  - "I didn\u2019t get a haircut. Glad to know how much you pay attention."
+  - (Oh come on- what is wrong with you?!)

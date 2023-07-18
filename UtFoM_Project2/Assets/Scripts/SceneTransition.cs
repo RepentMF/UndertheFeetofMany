@@ -47,6 +47,7 @@ public class SceneTransition : MonoBehaviour
 			collision.GetComponent<PlayerController>().transform.position = playerPosition;
 			collision.GetComponent<PlayerController>().SetAnimatorFloats(playerDirection);
 			collision.GetComponent<PlayerController>().NextScene = sceneToLoad;
+			FindObjectOfType<MusicPlayerController>().volumeChange = true;
 			StartCoroutine(FadeCo());
 		}
 	}
@@ -58,6 +59,7 @@ public class SceneTransition : MonoBehaviour
 			GameObject.FindObjectOfType<PlayerController>().transform.position = playerPosition;
 			GameObject.FindObjectOfType<PlayerController>().SetAnimatorFloats(playerDirection);
 			GameObject.FindObjectOfType<PlayerController>().NextScene = sceneToLoad;
+			
 			StartCoroutine(FadeCo());
 		}
 		

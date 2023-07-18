@@ -55,7 +55,24 @@ public class Interactable : MonoBehaviour
         {
             DialogueBoxReference.SetActive(false);
         }
-        TextArrayIndex = 0;
+        if (this.gameObject.GetComponent<SceneNPC>() != null)
+        {
+            SceneNPC tempNPC = this.gameObject.GetComponent<SceneNPC>();
+            if (tempNPC.CurrentDialogue != tempNPC.AllDialouges.Count - 1)
+            {
+                TextArray = tempNPC.AllDialouges[tempNPC.CurrentDialogue + 1].dialogue;
+                tempNPC.CurrentDialogue++;
+                TextArrayIndex = 0;
+            }
+            else
+            {
+                TextArrayIndex = TextArray.Length - 1;
+            }
+        }
+        else
+        {
+            TextArrayIndex = 0;
+        }
         UnpauseGame();
     }
 

@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class SceneNPC : MonoBehaviour
 {
     //public Item NPCData;
     public float LightFadeSpeed = 1f;
     public string ID;
+    [SerializeField] public List<Dialogue> AllDialouges;
+    public int CurrentDialogue = 0;
 
     // Script References
     public BoxCollider2D BoxCollider2DScript;
@@ -15,28 +18,7 @@ public class SceneNPC : MonoBehaviour
     private SpriteRenderer TargetSpriteRendererScript;
     private StateManager StateManagerScript;
 
-    /*private void Initialize(Item newData)
-    {
-        ItemData = newData;
-        if (SpriteRendererScript.sprite == null)
-        {
-            SpriteRendererScript.sprite = ItemData.Sprite;
-        }
-        BoxCollider2DScript.size = SpriteRendererScript.size;
-    }
-
-#nullable enable
-    public void PickUp(Inventory? inventory)
-    {
-        if (inventory != null)
-        {
-            inventory.AddItem(ItemData);
-        }
-        if (StateManagerScript != null)
-        {
-            StateManagerScript.CurrentState = ActionState.Death;
-        }
-    }*/
+    
 #nullable disable
 
     private void FadeLight()
@@ -60,8 +42,6 @@ public class SceneNPC : MonoBehaviour
     {
         Light2DScript = this.gameObject.GetComponent<UnityEngine.Rendering.Universal.Light2D>();
         SpriteRendererScript = this.gameObject.GetComponent<SpriteRenderer>();
-        // StateManagerScript = this.gameObject.GetComponentInChildren<StateManager>();
-        // GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
     }
 
     private void OnGameStateChanged(GameState newGameState)
@@ -80,8 +60,7 @@ public class SceneNPC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Initialize(NPCData);
-        //StateManagerScript.CurrentState = ActionState.Move;
+
     }
 
     // Update is called once per frame
