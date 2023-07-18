@@ -75,21 +75,21 @@ public class HealthManager : MonoBehaviour
 
 				switch (inventory.EquippedWeapon.Name)
 				{
-					case "Knife":
+					case "Kitchen Knife":
 						Weapon.sprite = Knife.sprite;
 						Weapon.gameObject.GetComponent<RectTransform>().localScale =
 							new Vector2(.3f, .1f);
 						Weapon.gameObject.GetComponent<RectTransform>().rotation =
 							Knife.gameObject.GetComponent<RectTransform>().rotation;
 						break;
-					case "Hammer":
+					case "Bell Hammer":
 						Weapon.sprite = Hammer.sprite;
 						Weapon.gameObject.GetComponent<RectTransform>().localScale =
 							new Vector3(.6f, 1.03f, .70f);
 						Weapon.gameObject.GetComponent<RectTransform>().rotation =
 							new Quaternion(0f, 0f, 0f, 0f);
 						break;
-					case "Sword":
+					case "Machete Sword":
 						Weapon.sprite = Sword.sprite;
 						Weapon.gameObject.GetComponent<RectTransform>().localScale =
 							new Vector3(1.1f, 1.1f, .70f);

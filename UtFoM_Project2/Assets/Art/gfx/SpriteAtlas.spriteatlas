@@ -573,6 +573,7 @@ SpriteAtlas:
     - b88f9713f02d14d40a32eddfc57cf3b1: 5654254194933596388
     - 721c1353d90b8f54c836b2f5cfa722a8: 21300000
     - b6958e734b41e8342967788de180cfd7: 21300000
+    - 761a5383a90fa8c4a8663c7213ef8cae: 21300000
     - ab9e4fa3ede1b9a48b54d6b974181c03: 21300000
     - f5fd53d305f6e2b4ca31e5dbd4147f3c: -2278326774386042908
     - f5fd53d305f6e2b4ca31e5dbd4147f3c: -7806708145747584293
@@ -1085,6 +1086,7 @@ SpriteAtlas:
     - 3b94dd860e80a1747b715e1c50d5682e: 21300000
     - 685e5eb6f53eae64788019e5baa2425f: 21300000
     - b85d6fe6b00e28a499fb3a3dd7b6254b: 21300000
+    - 2e6846077e8bd4a41962d728992b17df: 21300000
     - 640252172a268b34491bff0eb9815dd6: -1915156809152671589
     - 640252172a268b34491bff0eb9815dd6: 904406514161867728
     - 640252172a268b34491bff0eb9815dd6: -4262847569637913184
@@ -3153,6 +3155,7 @@ SpriteAtlas:
   - {fileID: 5654254194933596388, guid: b88f9713f02d14d40a32eddfc57cf3b1, type: 3}
   - {fileID: 21300000, guid: 721c1353d90b8f54c836b2f5cfa722a8, type: 3}
   - {fileID: 21300000, guid: b6958e734b41e8342967788de180cfd7, type: 3}
+  - {fileID: 21300000, guid: 761a5383a90fa8c4a8663c7213ef8cae, type: 3}
   - {fileID: 21300000, guid: ab9e4fa3ede1b9a48b54d6b974181c03, type: 3}
   - {fileID: -2278326774386042908, guid: f5fd53d305f6e2b4ca31e5dbd4147f3c, type: 3}
   - {fileID: -7806708145747584293, guid: f5fd53d305f6e2b4ca31e5dbd4147f3c, type: 3}
@@ -3665,6 +3668,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3b94dd860e80a1747b715e1c50d5682e, type: 3}
   - {fileID: 21300000, guid: 685e5eb6f53eae64788019e5baa2425f, type: 3}
   - {fileID: 21300000, guid: b85d6fe6b00e28a499fb3a3dd7b6254b, type: 3}
+  - {fileID: 21300000, guid: 2e6846077e8bd4a41962d728992b17df, type: 3}
   - {fileID: -1915156809152671589, guid: 640252172a268b34491bff0eb9815dd6, type: 3}
   - {fileID: 904406514161867728, guid: 640252172a268b34491bff0eb9815dd6, type: 3}
   - {fileID: -4262847569637913184, guid: 640252172a268b34491bff0eb9815dd6, type: 3}
@@ -5732,6 +5736,7 @@ SpriteAtlas:
   - hammer_left_16
   - TB_R1
   - book_opening_7
+  - world_map_item_screen
   - white_book_item
   - new_player_run_28
   - new_player_run_29
@@ -6244,6 +6249,7 @@ SpriteAtlas:
   - UI_map_SS
   - red_book_item_screen
   - TC_B1
+  - world_map_item
   - WaterAttackTilemap_30
   - WaterAttackTilemap_31
   - WaterAttackTilemap_32

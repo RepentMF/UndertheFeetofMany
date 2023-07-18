@@ -9,7 +9,6 @@ public class EnemyInfo : MonoBehaviour
     public bool HasBeenDefeated = false;
     public int gameCounter = 0;
     protected internal Vector3 DeathPlace;
-    private bool ShouldTurnOffLight = false;
     public float LightFadeSpeed = 1f;
     public string ID;
     public int LifeBlood;

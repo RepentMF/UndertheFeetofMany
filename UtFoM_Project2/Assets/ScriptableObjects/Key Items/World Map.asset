@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b58f2b607e968849bb045775bca8ec4, type: 3}
+  m_Name: World Map
+  m_EditorClassIdentifier: 
+  Name: World Map
+  Description: With this I can see as far out as I've traveled.
+  Sprite: {fileID: 21300000, guid: 2e6846077e8bd4a41962d728992b17df, type: 3}

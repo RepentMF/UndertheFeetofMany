@@ -177,13 +177,13 @@ public class Inventory : MonoBehaviour
         StatsScript.CurrentTrinketPoints += trinket.TrinketCost;
         switch (target.Name)
         {
-            case "Knife":
+            case "Kitchen Knife":
                 UnequipWeaponWithTrinket(target, trinket.KnifeModification);
                 break;
-            case "Sword":
+            case "Machete Sword":
                 UnequipWeaponWithTrinket(target, trinket.SwordModification);
                 break;
-            case "Hammer":
+            case "Bell Hammer":
                 UnequipWeaponWithTrinket(target, trinket.HammerModification);
                 break;
             default:

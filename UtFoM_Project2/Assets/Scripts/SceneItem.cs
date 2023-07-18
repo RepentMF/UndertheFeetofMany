@@ -8,7 +8,6 @@ public class SceneItem : MonoBehaviour
 {
     public Item ItemData;
     public bool HasBeenPickedUp = false;
-    private bool ShouldTurnOffLight = false;
     public float LightFadeSpeed = 1f;
     public string ID;
 

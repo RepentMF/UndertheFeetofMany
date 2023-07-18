@@ -167,15 +167,15 @@ public class PlayerController : GenericSingleton<PlayerController>
             else if (InventoryScript.EquippedWeapon != null)
             {
                 // Launch weapon attack
-                if (InventoryScript.EquippedWeapon.Name == "Knife")
+                if (InventoryScript.EquippedWeapon.Name == "Kitchen Knife")
                 {
                     OnLightButton();
                 }
-                else if (InventoryScript.EquippedWeapon.Name == "Sword")
+                else if (InventoryScript.EquippedWeapon.Name == "Machete Sword")
                 {
                     OnLightButton();
                 }
-                else if (InventoryScript.EquippedWeapon.Name == "Hammer")
+                else if (InventoryScript.EquippedWeapon.Name == "Bell Hammer")
                 {
                     if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && ((CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName || CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LightAttackAnimationName) && InventoryScript.EquippedWeapon.LightAttackCounter >= InventoryScript.EquippedWeapon.LightAttackCounterMax) || (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LaunchAttackAnimationName && InventoryScript.EquippedWeapon.LaunchAttackCounter < InventoryScript.EquippedWeapon.LaunchAttackCounterMax)))
                     {
@@ -201,11 +201,11 @@ public class PlayerController : GenericSingleton<PlayerController>
             else if (InventoryScript.EquippedWeapon != null)
             {
                 // Heavy weapon attack
-                if (InventoryScript.EquippedWeapon.Name == "Knife")
+                if (InventoryScript.EquippedWeapon.Name == "Kitchen Knife")
                 {
                     OnLightButton();
                 }
-                else if (InventoryScript.EquippedWeapon.Name == "Sword")
+                else if (InventoryScript.EquippedWeapon.Name == "Machete Sword")
                 {
                     if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && (((CurrentAttackAnimationName == InventoryScript.EquippedWeapon.MediumAttackAnimationName || CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LightAttackAnimationName) && InventoryScript.EquippedWeapon.LightAttackCounter >= InventoryScript.EquippedWeapon.LightAttackCounterMax) || (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.HeavyAttackAnimationName && InventoryScript.EquippedWeapon.HeavyAttackCounter < InventoryScript.EquippedWeapon.HeavyAttackCounterMax))))
                     {
@@ -215,7 +215,7 @@ public class PlayerController : GenericSingleton<PlayerController>
                         StateManagerScript.CurrentState = ActionState.Attack;
                     }
                 }
-                else if (InventoryScript.EquippedWeapon.Name == "Hammer")
+                else if (InventoryScript.EquippedWeapon.Name == "Bell Hammer")
                 {
                     if (CurrentAttackAnimationName == "" || (StateManagerScript.HasReachedAttackAnimationBufferThreshold() && ((CurrentAttackAnimationName == InventoryScript.EquippedWeapon.LaunchAttackAnimationName && InventoryScript.EquippedWeapon.LaunchAttackCounter >= InventoryScript.EquippedWeapon.LaunchAttackCounterMax) || (CurrentAttackAnimationName == InventoryScript.EquippedWeapon.HeavyAttackAnimationName && InventoryScript.EquippedWeapon.HeavyAttackCounter < InventoryScript.EquippedWeapon.HeavyAttackCounterMax))))
                     {
