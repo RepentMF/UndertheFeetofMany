@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,12 +10,22 @@ using System.Linq;
 public class RoomManager : GenericSingleton<RoomManager>
 {
     public static RoomManager RM;
-
+    Hashtable TreasureTable;
+    Hashtable EnemyTable;
+    Hashtable PuzzleTable;
     private SceneManager sceneManager;
-    public List<List<bool>> treasureListHolder = new List<List<bool>>();
-    public List<bool> treasureBoolHolder;
     public int index = 0;
     public bool sceneChange = false;
+
+    public void UpdateEntityInRoom(Hashtable table, string s, string found)
+    {
+        Debug.Log(s.Substring(0, s.IndexOf(found) - 1) + s.Substring(s.IndexOf(found), s.IndexOf(found)));
+
+        if (!table.ContainsValue(s.Substring(0, s.IndexOf(found) - 1)))
+        {
+            table.Add(s.Substring(0, s.IndexOf(found) - 1), s.Substring(s.IndexOf(found), s.IndexOf(found)));
+        }
+    }
 
     //Takes information from our data structure and sets up the current scene
     public void PlaceTreasureInRoom()
@@ -32,6 +43,8 @@ public class RoomManager : GenericSingleton<RoomManager>
                     FindObjectsOfType<SceneItem>(true)[i].HasBeenPickedUp = bool.Parse(s.Substring(found + 2));
                 }
             }
+
+            UpdateEntityInRoom(TreasureTable, s, ", ");
         }
     }
 
@@ -55,6 +68,8 @@ public class RoomManager : GenericSingleton<RoomManager>
                     }
                 }
             }
+
+            //UpdateEntityInRoom(EnemyTable, s, 3, 5);
         }
     }
     
@@ -73,6 +88,8 @@ public class RoomManager : GenericSingleton<RoomManager>
                     FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted = bool.Parse(s.Substring(found + 2));
                 }
             }
+
+            UpdateEntityInRoom(PuzzleTable, s, ", ");
         }
     }
 
@@ -101,6 +118,8 @@ public class RoomManager : GenericSingleton<RoomManager>
                     stringsList.Remove(s);
                 }
             }
+
+            UpdateEntityInRoom(TreasureTable, s, ", ");
         }
 
         System.IO.File.WriteAllLines(@"treasures.txt", stringsList);
@@ -132,6 +151,8 @@ public class RoomManager : GenericSingleton<RoomManager>
                     stringsList.Remove(s);
                 }
             }
+
+            //UpdateEntityInRoom(EnemyTable, s, 3, 5);
         }
 
         System.IO.File.WriteAllLines(@"enemies.txt", stringsList);
@@ -140,7 +161,6 @@ public class RoomManager : GenericSingleton<RoomManager>
 
     public void ObservePuzzlesInRoom()
     {
-        
         List<string> strings = new List<string>();
 
         for (int i = 0; i < FindObjectsOfType<PuzzleManager>(true).Length; i++)
@@ -163,6 +183,8 @@ public class RoomManager : GenericSingleton<RoomManager>
                     stringsList.Remove(s);
                 }
             }
+
+            UpdateEntityInRoom(PuzzleTable, s, ", ");
         }
 
         System.IO.File.WriteAllLines(@"puzzles.txt", stringsList);
@@ -196,6 +218,9 @@ public class RoomManager : GenericSingleton<RoomManager>
 
         RM = this;
         GameObject.DontDestroyOnLoad(this.gameObject);
+        TreasureTable = new Hashtable();
+        EnemyTable = new Hashtable();
+        PuzzleTable = new Hashtable();
 
         PlaceTreasureInRoom();
         PlaceEnemiesInRoom();
