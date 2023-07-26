@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b3fc98b1db8ada4a81a75cdea19dbe9, type: 3}
+  m_Name: Jenna_I_2
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "So\u2026 sounds like you\u2019re set  on going to the surface."
+  - I wonder if what Mrs. Mimi and Ms. Elise say is true.
+  - "They\u2019re all just stories. That stuff can\u2019t be real."
+  - Then how do you explain all of the missing people?
+  - "And all of the people who\u2019re going mental all of the time we\u2019ve been
+    down here?"
+  - Jenna, people get older. People get sick. And sometimes, people-
+  - "That doesn\u2019t make sense! How else would it happen? Old age?"
+  - Most of the people that are missing were really young!
+  - "I think I\u2019m gonna go now\u2026"
+  - You always run away when we talk about this.

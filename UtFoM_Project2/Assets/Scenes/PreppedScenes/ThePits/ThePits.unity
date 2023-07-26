@@ -7162,6 +7162,8 @@ GameObject:
   - component: {fileID: 1447097390}
   - component: {fileID: 1447097391}
   - component: {fileID: 1447097392}
+  - component: {fileID: 1447097393}
+  - component: {fileID: 1447097394}
   m_Layer: 0
   m_Name: Isabelle_I
   m_TagString: Untagged
@@ -7434,6 +7436,62 @@ MonoBehaviour:
   AllDialouges: []
   CurrentDialogue: 0
   BoxCollider2DScript: {fileID: 1447097389}
+--- !u!114 &1447097393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447097384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1dee7cb1b09c82488292d97716ac932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueBoxReference: {fileID: 1251452810}
+  DialogueTextReference: {fileID: 1251452809}
+  TextArray:
+  - Oh! Hey there! Did you have a good nap?
+  - "What\u2019s wrong? Why do you look so anxious?"
+  - " I hate living down here. I\u2019m tired of it!"
+  - "\u2026 I want to go outside, mom."
+  - You want to-
+  - "H-Huh?! No! Absolutely not! Do you even understand what you\u2019re saying?!"
+  - "Don\u2019t you KNOW what\u2019s out there?!"
+  - "Those are just stories we were told! You can\u2019t really believe what\u2019s
+    happening outside!"
+  - "You think I\u2019m lying?"
+  - "You think I\u2019d trap you down here?"
+  - "You don\u2019t get it- I\u2019M sick of this, too! I want my husband back."
+  - I want my child back.
+  - "I wanted so much more for you and you think I\u2019M what\u2019s keeping us
+    down here?"
+  - "I\u2026 I just want to see it for myself. We have to try getting out of here!"
+  - "I\u2019m tired of being useless. And doing nothing! Isn\u2019t there something
+    I can do to help?"
+  - "You\u2019re SO stubborn."
+  - Just like your father. You remind me of him too much.
+  - Too much.
+  - "You\u2019re not gonna get a yes from me on this. It\u2019s a no. Final answer."
+  - B-but mom! I can do this-
+  - "It\u2019s. A. No."
+  TextArrayIndex: 0
+  IsQuestion: 0
+--- !u!114 &1447097394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447097384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47c9a2bc04cf834b92de80eb4db0fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PuzzleCompleted: 0
+  ID: 1003
+  ExtraDialouge1: []
 --- !u!1 &1515439720
 GameObject:
   m_ObjectHideFlags: 0
@@ -8259,6 +8317,7 @@ MonoBehaviour:
   - "Oh! You got a haircut? That\u2019s great!"
   - What? You mean I really had to point it out to you?
   - Some friend you are.
+  TextArrayIndex: 0
   IsQuestion: 0
 --- !u!114 &1881681195
 MonoBehaviour:
@@ -8273,10 +8332,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleCompleted: 0
-  ID: 0
+  ID: 1004
   ExtraDialouge1:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 2ad395084cae292408c8d739a6aa5f74, type: 2}
 --- !u!1 &1946673937
 GameObject:
   m_ObjectHideFlags: 0

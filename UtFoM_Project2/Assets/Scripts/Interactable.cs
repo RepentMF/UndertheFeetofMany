@@ -7,8 +7,8 @@ public class Interactable : MonoBehaviour
 {
     [SerializeField] private GameObject DialogueBoxReference;
     [SerializeField] private Text DialogueTextReference;
-    [SerializeField] private string[] TextArray;
-    private int TextArrayIndex = 0;
+    [SerializeField] public string[] TextArray;
+    public int TextArrayIndex = 0;
     public bool IsQuestion;
 
     // Script References
@@ -32,7 +32,7 @@ public class Interactable : MonoBehaviour
                     child.gameObject.SetActive(IsQuestion);
                 }
             }
-
+            //Debug.Log(TextArray.Length + " " + TextArrayIndex);
             TextArrayIndex++;
         }
         else // If all of the dialogue text has been iterated through (or if none existed)
@@ -58,7 +58,12 @@ public class Interactable : MonoBehaviour
         if (this.gameObject.GetComponent<SceneNPC>() != null)
         {
             SceneNPC tempNPC = this.gameObject.GetComponent<SceneNPC>();
-            if (tempNPC.CurrentDialogue != tempNPC.AllDialouges.Count - 1)
+
+            if (tempNPC.AllDialouges.Count == 0)
+            {
+                TextArrayIndex = TextArray.Length - 1;
+            }
+            else if (tempNPC.CurrentDialogue != tempNPC.AllDialouges.Count - 1)
             {
                 TextArray = tempNPC.AllDialouges[tempNPC.CurrentDialogue + 1].dialogue;
                 tempNPC.CurrentDialogue++;

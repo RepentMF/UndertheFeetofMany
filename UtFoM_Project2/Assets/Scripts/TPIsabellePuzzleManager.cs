@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 
 [System.Serializable]
-public class TPJennaPuzzleManager : PuzzleManager
+public class TPIsabellePuzzleManager : PuzzleManager
 {
     [SerializeField] public List<Dialogue> ExtraDialouge1;
 
@@ -19,8 +19,6 @@ public class TPJennaPuzzleManager : PuzzleManager
 
     void CompletePuzzle()
     {
-        string[] extraDialogue1 = ExtraDialouge1[0].dialogue;
-        this.gameObject.GetComponent<Interactable>().TextArray = extraDialogue1;
         PuzzleCompleted = true;
         FindObjectsOfType<RoomManager>(true)[0].ObservePuzzlesInRoom();
     }
@@ -28,16 +26,15 @@ public class TPJennaPuzzleManager : PuzzleManager
     // Update is called once per frame
     void FixedUpdate()
     {
-        bool isabelleFlag = bool.Parse((string) (FindObjectOfType<RoomManager>().PuzzleTable["1003"]));
-        
-        if (PuzzleCompleted)
+        Interactable interactable = this.gameObject.GetComponent<Interactable>();
+        //if (FindObjectsOfType<RoomManager>().ObservePuzzlesInRoom)
+        if (interactable.TextArrayIndex == interactable.TextArray.Length - 1)
         {
             CompletePuzzle();
         }
-        else if (isabelleFlag)
+        else if (PuzzleCompleted)
         {
-            this.gameObject.GetComponent<Interactable>().TextArrayIndex = 0;
-            PuzzleCompleted = true;
+            interactable.TextArrayIndex++;
         }
     }
 }

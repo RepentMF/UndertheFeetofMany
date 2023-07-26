@@ -10,20 +10,23 @@ using System.Linq;
 public class RoomManager : GenericSingleton<RoomManager>
 {
     public static RoomManager RM;
-    Hashtable TreasureTable;
-    Hashtable EnemyTable;
-    Hashtable PuzzleTable;
+    public Hashtable TreasureTable;
+    public Hashtable EnemyTable;
+    public Hashtable PuzzleTable;
     private SceneManager sceneManager;
     public int index = 0;
     public bool sceneChange = false;
 
-    public void UpdateEntityInRoom(Hashtable table, string s, string found)
+    public void UpdateEntityInRoom(Hashtable table, string s, string comma)
     {
-        Debug.Log(s.Substring(0, s.IndexOf(found) - 1) + s.Substring(s.IndexOf(found), s.IndexOf(found)));
-
-        if (!table.ContainsValue(s.Substring(0, s.IndexOf(found) - 1)))
+        if (!table.ContainsKey(s.Substring(0, s.IndexOf(comma))))
         {
-            table.Add(s.Substring(0, s.IndexOf(found) - 1), s.Substring(s.IndexOf(found), s.IndexOf(found)));
+            table.Add(s.Substring(0, s.IndexOf(comma)), s.Substring(s.IndexOf(comma) + 2));
+        }
+        else if (table[s.Substring(0, s.IndexOf(comma))] != s.Substring(s.IndexOf(comma) + 2))
+        {
+            table.Remove(s.Substring(0, s.IndexOf(comma)));
+            table.Add(s.Substring(0, s.IndexOf(comma)), s.Substring(s.IndexOf(comma) + 2));
         }
     }
 
@@ -35,6 +38,7 @@ public class RoomManager : GenericSingleton<RoomManager>
 
         foreach (string s in strings)
         {
+            UpdateEntityInRoom(TreasureTable, s, ", ");
             for (int i = 0; i < FindObjectsOfType<SceneItem>(true).Length; i++)
             {
                 if (s.Contains(FindObjectsOfType<SceneItem>(true)[i].ID + ", "))
@@ -43,8 +47,6 @@ public class RoomManager : GenericSingleton<RoomManager>
                     FindObjectsOfType<SceneItem>(true)[i].HasBeenPickedUp = bool.Parse(s.Substring(found + 2));
                 }
             }
-
-            UpdateEntityInRoom(TreasureTable, s, ", ");
         }
     }
 
@@ -55,6 +57,7 @@ public class RoomManager : GenericSingleton<RoomManager>
 
         foreach (string s in strings)
         {
+            UpdateEntityInRoom(EnemyTable, s, ", ");
             for (int i = 0; i < FindObjectsOfType<EnemyInfo>(true).Length; i++)
             {
                 if (s.Contains(FindObjectsOfType<EnemyInfo>(true)[i].ID + ", "))
@@ -68,8 +71,6 @@ public class RoomManager : GenericSingleton<RoomManager>
                     }
                 }
             }
-
-            //UpdateEntityInRoom(EnemyTable, s, 3, 5);
         }
     }
     
@@ -80,6 +81,7 @@ public class RoomManager : GenericSingleton<RoomManager>
 
         foreach (string s in strings)
         {
+            UpdateEntityInRoom(PuzzleTable, s, ", ");
             for (int i = 0; i < FindObjectsOfType<PuzzleManager>(true).Length; i++)
             {
                 if (s.Contains(FindObjectsOfType<PuzzleManager>(true)[i].ID + ", "))
@@ -88,8 +90,6 @@ public class RoomManager : GenericSingleton<RoomManager>
                     FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted = bool.Parse(s.Substring(found + 2));
                 }
             }
-
-            UpdateEntityInRoom(PuzzleTable, s, ", ");
         }
     }
 
@@ -152,7 +152,7 @@ public class RoomManager : GenericSingleton<RoomManager>
                 }
             }
 
-            //UpdateEntityInRoom(EnemyTable, s, 3, 5);
+            UpdateEntityInRoom(TreasureTable, s, ", ");
         }
 
         System.IO.File.WriteAllLines(@"enemies.txt", stringsList);
