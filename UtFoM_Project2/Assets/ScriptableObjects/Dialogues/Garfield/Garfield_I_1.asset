@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b3fc98b1db8ada4a81a75cdea19dbe9, type: 3}
+  m_Name: Garfield_I_1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Ashe, my wee friend- how are you?
+  - Could be better, Mr. Garfield. Are your crops doing well?
+  - "Oh, yes! I\u2019m particularly proud of this harvest. The rhubarb is always
+    right."
+  - "In fact, this stew is about ready if you\u2019re hungry."
+  - "I\u2019d love some."
+  - Here ya go, wee one. A hot bowl of Understew, just for you.
+  - Here ya go, wee one. A hot bowl of Understew, just for you.
+  - Thank you, Mr. Garfield.
+  - Is there anything I can do for you, Mr. Garfield?
+  - Is there anything I can do for you, Mr. Garfield?
+  - Hmm? No, no, wee one. Old Garfield is perfect, hale, and hearty.
+  - Harharharhar!

@@ -8755,6 +8755,8 @@ GameObject:
   - component: {fileID: 1988603405}
   - component: {fileID: 1988603406}
   - component: {fileID: 1988603407}
+  - component: {fileID: 1988603409}
+  - component: {fileID: 1988603408}
   m_Layer: 0
   m_Name: Garfield_I
   m_TagString: Untagged
@@ -8997,7 +8999,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LightFadeSpeed: 1
   ID: 1005
-  AllDialouges: []
+  AllDialouges:
+  - {fileID: 11400000, guid: 9af85caacacac20478ec5abe593c21b7, type: 2}
   CurrentDialogue: 0
   BoxCollider2DScript: {fileID: 1988603404}
 --- !u!50 &1988603407
@@ -9027,6 +9030,52 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1988603408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988603399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1dee7cb1b09c82488292d97716ac932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueBoxReference: {fileID: 1251452810}
+  DialogueTextReference: {fileID: 1251452809}
+  TextArray:
+  - Ashe, my wee friend- how are you?
+  - Could be better, Mr. Garfield. Are your crops doing well?
+  - "Oh, yes! I\u2019m particularly proud of this harvest. The rhubarb is always
+    right."
+  - "In fact, this stew is about ready if you\u2019re hungry."
+  - "I\u2019d love some."
+  - Here ya go, wee one. A hot bowl of Understew, just for you.
+  - Here ya go, wee one. A hot bowl of Understew, just for you.
+  - Thank you, Mr. Garfield.
+  - Is there anything I can do for you, Mr. Garfield?
+  - Is there anything I can do for you, Mr. Garfield?
+  - Hmm? No, no, wee one. Old Garfield is perfect, hale, and hearty.
+  - Harharharhar!
+  TextArrayIndex: 0
+  IsQuestion: 0
+--- !u!114 &1988603409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988603399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8180c062565394e9975ba1104b6c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PuzzleCompleted: 0
+  ID: 1005
+  ExtraDialouge1:
+  - {fileID: 11400000, guid: 574b6c93313fdd745bef40cbd362eb06, type: 2}
 --- !u!1 &2002979018
 GameObject:
   m_ObjectHideFlags: 0
