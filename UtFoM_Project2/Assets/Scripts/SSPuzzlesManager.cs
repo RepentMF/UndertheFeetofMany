@@ -36,7 +36,7 @@ public class SSPuzzlesManager : MonoBehaviour
                 {
                     SpriteRendererScript.sprite = SSMapList[3];  
                 }
-                else if (CompletedIDs.Contains(1008))
+                else if (CompletedIDs.Contains(1999))
                 {
                     SpriteRendererScript.sprite = SSMapList[4];  
                 }
@@ -54,21 +54,21 @@ public class SSPuzzlesManager : MonoBehaviour
                 {
                     SpriteRendererScript.sprite = SSMapList[7];
                 }
-                else if (CompletedIDs.Contains(1007) && CompletedIDs.Contains(1008))
+                else if (CompletedIDs.Contains(1007) && CompletedIDs.Contains(1999))
                 {
                     SpriteRendererScript.sprite = SSMapList[8];
                 }
-                else if (CompletedIDs.Contains(1021) && CompletedIDs.Contains(1008))
+                else if (CompletedIDs.Contains(1021) && CompletedIDs.Contains(1999))
                 {
                     SpriteRendererScript.sprite = SSMapList[9];
                 }
-                else if (CompletedIDs.Contains(1006) && CompletedIDs.Contains(1008))
+                else if (CompletedIDs.Contains(1006) && CompletedIDs.Contains(1999))
                 {
                     SpriteRendererScript.sprite = SSMapList[10];
                 }
                 break;
             case 3:
-                if (!CompletedIDs.Contains(1008))
+                if (!CompletedIDs.Contains(1999))
                 {
                     SpriteRendererScript.sprite = SSMapList[11];
                 }
