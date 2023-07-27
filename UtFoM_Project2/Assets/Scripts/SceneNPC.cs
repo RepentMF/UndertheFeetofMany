@@ -10,6 +10,7 @@ public class SceneNPC : MonoBehaviour
     public string ID;
     [SerializeField] public List<Dialogue> AllDialouges;
     public int CurrentDialogue = 0;
+    public bool SpecialInteraction;
 
     // Script References
     public BoxCollider2D BoxCollider2DScript;

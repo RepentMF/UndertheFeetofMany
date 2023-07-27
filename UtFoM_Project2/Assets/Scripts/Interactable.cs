@@ -59,7 +59,12 @@ public class Interactable : MonoBehaviour
         {
             SceneNPC tempNPC = this.gameObject.GetComponent<SceneNPC>();
 
-            if (tempNPC.AllDialouges.Count == 0)
+            if (tempNPC.SpecialInteraction)
+            {
+                Debug.Break();
+                TextArrayIndex = 0;
+            }
+            else if (tempNPC.AllDialouges.Count == 0)
             {
                 TextArrayIndex = TextArray.Length - 1;
             }

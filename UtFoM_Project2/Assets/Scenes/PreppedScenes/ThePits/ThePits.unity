@@ -7435,6 +7435,7 @@ MonoBehaviour:
   ID: 1003
   AllDialouges: []
   CurrentDialogue: 0
+  SpecialInteraction: 0
   BoxCollider2DScript: {fileID: 1447097389}
 --- !u!114 &1447097393
 MonoBehaviour:
@@ -8297,6 +8298,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8cceea55dea6dbd4ea40310276c3b944, type: 2}
   - {fileID: 11400000, guid: f6a34fa6c80ab5b4ebcf4e9c5c8887db, type: 2}
   CurrentDialogue: -1
+  SpecialInteraction: 0
   BoxCollider2DScript: {fileID: 1881681190}
 --- !u!114 &1881681194
 MonoBehaviour:
@@ -8999,9 +9001,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LightFadeSpeed: 1
   ID: 1005
-  AllDialouges:
-  - {fileID: 11400000, guid: 9af85caacacac20478ec5abe593c21b7, type: 2}
+  AllDialouges: []
   CurrentDialogue: 0
+  SpecialInteraction: 1
   BoxCollider2DScript: {fileID: 1988603404}
 --- !u!50 &1988603407
 Rigidbody2D:
@@ -9052,9 +9054,7 @@ MonoBehaviour:
   - "In fact, this stew is about ready if you\u2019re hungry."
   - "I\u2019d love some."
   - Here ya go, wee one. A hot bowl of Understew, just for you.
-  - Here ya go, wee one. A hot bowl of Understew, just for you.
   - Thank you, Mr. Garfield.
-  - Is there anything I can do for you, Mr. Garfield?
   - Is there anything I can do for you, Mr. Garfield?
   - Hmm? No, no, wee one. Old Garfield is perfect, hale, and hearty.
   - Harharharhar!
@@ -9076,6 +9076,8 @@ MonoBehaviour:
   ID: 1005
   ExtraDialouge1:
   - {fileID: 11400000, guid: 574b6c93313fdd745bef40cbd362eb06, type: 2}
+  - {fileID: 11400000, guid: 9af85caacacac20478ec5abe593c21b7, type: 2}
+  canHeal: 0
 --- !u!1 &2002979018
 GameObject:
   m_ObjectHideFlags: 0
