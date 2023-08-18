@@ -61,7 +61,6 @@ public class Interactable : MonoBehaviour
 
             if (tempNPC.SpecialInteraction)
             {
-                Debug.Break();
                 TextArrayIndex = 0;
             }
             else if (tempNPC.AllDialouges.Count == 0)

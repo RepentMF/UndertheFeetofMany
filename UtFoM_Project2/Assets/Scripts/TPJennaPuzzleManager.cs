@@ -21,6 +21,7 @@ public class TPJennaPuzzleManager : PuzzleManager
     {
         string[] extraDialogue1 = ExtraDialouge1[0].dialogue;
         this.gameObject.GetComponent<Interactable>().TextArray = extraDialogue1;
+        this.gameObject.GetComponent<SceneNPC>().CurrentDialogue = this.gameObject.GetComponent<SceneNPC>().AllDialouges.Count - 1;
         PuzzleCompleted = true;
         FindObjectsOfType<RoomManager>(true)[0].ObservePuzzlesInRoom();
     }
