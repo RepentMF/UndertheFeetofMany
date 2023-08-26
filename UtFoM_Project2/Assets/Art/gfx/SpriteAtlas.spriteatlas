@@ -406,6 +406,7 @@ SpriteAtlas:
     - 7aeab01185562b54699c3e37721a875b: 770156636147851783
     - 2212c5112b83e6d429ffe3dea389b2e4: 21300000
     - 4927d441cc50781418a495b0a2746923: 21300000
+    - 6c33ab51f3471fd4aaae2c41711711f1: 21300000
     - 33fe43a1ee7595f44a76df5a9ace1fe6: 21300000
     - 592619c1b7a38c94baa1bd6a59b90abb: 21300000
     - 9c56f6d1189828c46b6710c982b97a59: 21300000
@@ -796,6 +797,7 @@ SpriteAtlas:
     - 8b1106c4f29612f47aa95487bbceb956: 21300000
     - cfad19c48ff2234489a7cf17d56e3e4a: 21300000
     - f811eae43fcd47a409da5875c21e3b1f: 21300000
+    - 178d17f4f86ae4c4e8426375633706c3: 21300000
     - 03b04115edab0b94582db9259c42652d: 21300000
     - b57ef4250236b4b49bbf736ecbbe345d: 21300000
     - 8f1e9525e5357d9429ea11e58950518f: 21300000
@@ -2988,6 +2990,7 @@ SpriteAtlas:
   - {fileID: 770156636147851783, guid: 7aeab01185562b54699c3e37721a875b, type: 3}
   - {fileID: 21300000, guid: 2212c5112b83e6d429ffe3dea389b2e4, type: 3}
   - {fileID: 21300000, guid: 4927d441cc50781418a495b0a2746923, type: 3}
+  - {fileID: 21300000, guid: 6c33ab51f3471fd4aaae2c41711711f1, type: 3}
   - {fileID: 21300000, guid: 33fe43a1ee7595f44a76df5a9ace1fe6, type: 3}
   - {fileID: 21300000, guid: 592619c1b7a38c94baa1bd6a59b90abb, type: 3}
   - {fileID: 21300000, guid: 9c56f6d1189828c46b6710c982b97a59, type: 3}
@@ -3378,6 +3381,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 8b1106c4f29612f47aa95487bbceb956, type: 3}
   - {fileID: 21300000, guid: cfad19c48ff2234489a7cf17d56e3e4a, type: 3}
   - {fileID: 21300000, guid: f811eae43fcd47a409da5875c21e3b1f, type: 3}
+  - {fileID: 21300000, guid: 178d17f4f86ae4c4e8426375633706c3, type: 3}
   - {fileID: 21300000, guid: 03b04115edab0b94582db9259c42652d, type: 3}
   - {fileID: 21300000, guid: b57ef4250236b4b49bbf736ecbbe345d, type: 3}
   - {fileID: 21300000, guid: 8f1e9525e5357d9429ea11e58950518f, type: 3}
@@ -5569,6 +5573,7 @@ SpriteAtlas:
   - new_player_idle_0
   - UI_stats_lifeblood3
   - C2
+  - ss_house2_inner
   - ss_well_bottom
   - C1
   - UI_map_C2
@@ -5959,6 +5964,7 @@ SpriteAtlas:
   - blood1_particle
   - torch_handle
   - SS
+  - ss_house_inner
   - tc_BookCaseBlack
   - black_book_item
   - TC_wall1
