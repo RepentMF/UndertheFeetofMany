@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 
 [System.Serializable]
-public class TPIsabellePuzzleManager : PuzzleManager
+public class SSElisiaPuzzleManager : PuzzleManager
 {
     [SerializeField] public List<Dialogue> ExtraDialouge1;
 

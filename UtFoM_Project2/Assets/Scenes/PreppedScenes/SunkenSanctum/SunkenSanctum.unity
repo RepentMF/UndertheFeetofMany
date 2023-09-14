@@ -284,7 +284,7 @@ PrefabInstance:
     - target: {fileID: 5978610147487176097, guid: b2a5bec6d645c4243932fe503b7079fc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5978610147487176097, guid: b2a5bec6d645c4243932fe503b7079fc,
         type: 3}
@@ -516,7 +516,7 @@ RectTransform:
   - {fileID: 506887401}
   - {fileID: 268341347}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -877,8 +877,11 @@ GameObject:
   - component: {fileID: 470724139}
   - component: {fileID: 470724138}
   - component: {fileID: 470724137}
-  - component: {fileID: 470724136}
   - component: {fileID: 470724140}
+  - component: {fileID: 470724136}
+  - component: {fileID: 470724141}
+  - component: {fileID: 470724142}
+  - component: {fileID: 470724143}
   m_Layer: 0
   m_Name: Elisia_I
   m_TagString: Untagged
@@ -947,7 +950,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470724133}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.048438, y: -1.3015623, z: 1}
+  m_LocalPosition: {x: 3.73, y: 6.75, z: 1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1134,6 +1137,120 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &470724141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470724133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99640e63354b184fb9d40a44209c948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LightFadeSpeed: 1
+  ID: 1009
+  AllDialouges: []
+  CurrentDialogue: 0
+  SpecialInteraction: 0
+  BoxCollider2DScript: {fileID: 0}
+--- !u!114 &470724142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470724133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1dee7cb1b09c82488292d97716ac932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueBoxReference: {fileID: 1713759924}
+  DialogueTextReference: {fileID: 1713759923}
+  TextArray:
+  - Hey! Are you okay?
+  - "(She\u2019s not moving\u2026)"
+  - Ugh.
+  - Thank goodness, you spoke.
+  - Isaac?
+  - No. I know you.
+  - "Isabelle\u2019s kid. Ashe, was it?"
+  - You know me?
+  - "Wait, I don\u2019t think that matters right now! You\u2019re bleeding! Bad!"
+  - Not enough for it to matter.
+  - What are you doing here?
+  - "I made it here from mom\u2019s."
+  - "I\u2019m traveling to the surface."
+  - "Oh? You\u2019re awfully young to be making such a journey. I suppose wanderlust
+    runs in your veins."
+  - "What\u2019s a wanderlust?"
+  - But you seem to be capable. You came here, after all.
+  - Isabelle let you leave?
+  - "Uh. Not exactly. But I\u2019m my own person. And I\u2019m making my own choice!"
+  - Headstrong, too.
+  - Hmph. The resemblance is striking.
+  - Do you know how I ended up like this? I entered this chapel
+  - and the evil man within struck me as if I were a monster.
+  - "He\u2019s a danger to everybody here. It\u2019s a miracle I made it out."
+  - "That\u2019s terrible. He sounds terrible\u2026"
+  - "Even more terrible- he\u2019s my husband."
+  - My little boy is trapped in there, as well.
+  - "But I don\u2019t know how to save him. I\u2019m weak as I am now."
+  - (I can help. I can do this.)
+  - No.
+  - "If you got hurt, I\u2019d never forgive myself."
+  - "Isabelle would be broken. You wouldn\u2019t leave your mother alone, would you?"
+  - "I\u2019m sure she would want me to help! You two are friends, after all."
+  - "Friends\u2026"
+  - To tell you the truth, Ashe
+  - "there\u2019s a much larger web weaving around this situation with my husband
+    and son."
+  - "I wouldn\u2019t have gone near him in the first place, but he has something
+    I desperately need."
+  - An ID badge, just like this one.
+  - "That\u2019s-"
+  - "That man hasn\u2019t stopped trying to save everybody, bleeding heart he is."
+  - We have a plan and a machine that will make things better.
+  - "He\u2019s waiting at his lab at the exit to the surface for me to bring him
+    some things."
+  - We need 5 badges for his machine to work, though.
+  - I have 2 here- mine and his.
+  - The other 3 scientists spiraled down dark paths.
+  - If I get these badges, I can go to the surface?
+  - "And you can see him. How happy he\u2019ll be!"
+  - "I\u2019ll do whatever it takes, then."
+  - "It doesn\u2019t surprise me she managed to raise a hero."
+  - Alright. The machine requires both an ID badge and a DNA sample.
+  - "Don\u2019t worry about me, Isaac, or Broderick. I have samples for the 3 of
+    us."
+  - "You will need DNA from Roy and Arnoldo, though. I\u2019ve secluded them and
+    my husband away for the dangers to society they\u2019ve become."
+  - "You\u2019ll find Roy in his estate to the east, Arnoldo in the west through
+    the glow-moss caves"
+  - and Broderick here in the chapel, of course.
+  - "I\u2019ve unlocked all of the gates for you."
+  - "And if you can\u2026"
+  - find my boy, too.
+  TextArrayIndex: 0
+  IsQuestion: 0
+--- !u!114 &470724143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470724133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f25c27c2721bfc4caef61f1e8430fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PuzzleCompleted: 0
+  AlreadyComplete: 0
+  ID: 1009
+  ExtraDialouge1: []
 --- !u!1 &506887399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1547,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &576266039 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2211619218807816704, guid: d03073aba2d829e41b9e189a764f336f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278645223}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &588426249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,7 +1592,7 @@ Transform:
   - {fileID: 593274847}
   - {fileID: 1087105201}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &593274846
 GameObject:
@@ -2137,7 +2260,7 @@ RectTransform:
   - {fileID: 470724135}
   - {fileID: 1634201483}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2426,6 +2549,7 @@ GameObject:
   - component: {fileID: 1179048874}
   - component: {fileID: 1179048877}
   - component: {fileID: 1179048878}
+  - component: {fileID: 1179048879}
   m_Layer: 0
   m_Name: Dana_I
   m_TagString: Untagged
@@ -2681,11 +2805,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LightFadeSpeed: 1
-  ID: 
+  ID: 1010
   AllDialouges: []
   CurrentDialogue: 0
   SpecialInteraction: 0
   BoxCollider2DScript: {fileID: 0}
+--- !u!114 &1179048879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179048870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1dee7cb1b09c82488292d97716ac932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueBoxReference: {fileID: 1713759924}
+  DialogueTextReference: {fileID: 1713759923}
+  TextArray:
+  - "(She must know I\u2019m here, but she\u2019s not looking at me.)"
+  - Hello?
+  - (... Is she dead? Maybe I should leave her alone)
+  - Oh, hello.
+  - Ah!
+  - Oh? Is something wrong?
+  - Ah, sorry! Sorry, no. Nothing. That is- I mean.
+  - How are you?
+  - ' So-so.'
+  - Have you heard about a man in town named Darren? He also goes by D-Dyve.
+  - Have you heard about a man in town named Darren? He also goes by D-Dyve.
+  - "No, I haven\u2019t."
+  - "I see. Thank you for your visit. It\u2019s not often others stop by these days.
+    What\u2019s your name?"
+  - " It\u2019s Ashe. I\u2019m from a different settlement."
+  - "Ashe. Glad to meet you. If you come back later, this rice will be finished cooking.
+    Be warned: it\u2019s spicy"
+  TextArrayIndex: 0
+  IsQuestion: 0
 --- !u!1001 &1278645223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2708,7 +2866,7 @@ PrefabInstance:
     - target: {fileID: 2211619218807816704, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816705, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
@@ -2719,6 +2877,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211619218807816705, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2211619218807816705, guid: d03073aba2d829e41b9e189a764f336f,
         type: 3}
@@ -2848,7 +3011,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2211619218807816704, guid: d03073aba2d829e41b9e189a764f336f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1278645227}
   m_SourcePrefab: {fileID: 100100000, guid: d03073aba2d829e41b9e189a764f336f, type: 3}
 --- !u!4 &1278645224 stripped
 Transform:
@@ -2856,6 +3023,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1278645223}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1278645227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576266039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7f03c1559ffc614ea203c461c2777cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PuzzleCompleted: 0
+  AlreadyComplete: 0
+  ID: 1007
 --- !u!1001 &1392606045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3253,7 +3435,7 @@ PrefabInstance:
     - target: {fileID: 4743751760079366859, guid: 658f69ced21460749a1b1a6aa7eb61a6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4743751760079366859, guid: 658f69ced21460749a1b1a6aa7eb61a6,
         type: 3}
@@ -3478,7 +3660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1634201474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3492,7 +3674,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleCompleted: 0
-  ID: 1003
+  AlreadyComplete: 0
+  ID: 1012
   ExtraDialouge1: []
 --- !u!114 &1634201475
 MonoBehaviour:
@@ -3524,7 +3707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LightFadeSpeed: 1
-  ID: 1003
+  ID: 1012
   AllDialouges: []
   CurrentDialogue: 0
   SpecialInteraction: 0
@@ -7695,6 +7878,69 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &2010182281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2010182283}
+  - component: {fileID: 2010182282}
+  m_Layer: 0
+  m_Name: SSPuzzleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2010182282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010182281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0056f78133c89a943b9e0c7b5d3a2695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SSMapList:
+  - {fileID: 21300000, guid: 3b94dd860e80a1747b715e1c50d5682e, type: 3}
+  - {fileID: 21300000, guid: a1bf6fdbfb51795459ac3048e084e1d9, type: 3}
+  - {fileID: 21300000, guid: 64a8987c95500c440b03618701b59d05, type: 3}
+  - {fileID: 21300000, guid: e8e2413a4df6c1642bdbb2829fe7a4cd, type: 3}
+  - {fileID: 21300000, guid: 6ade87ab85bbbf249b61af997c6e8a73, type: 3}
+  - {fileID: 21300000, guid: 8e2df7e3fb6b2234a9a162279179ceb4, type: 3}
+  - {fileID: 21300000, guid: 1cf721873998f8148a22d5d56f8e7da9, type: 3}
+  - {fileID: 21300000, guid: 1ef7f4aa8bf8c704c8c5c9e878f3ceeb, type: 3}
+  - {fileID: 21300000, guid: b9898b3bc566c8243abcfb5abeef43c9, type: 3}
+  - {fileID: 21300000, guid: 5f689ff8aabd16f4bafa0b3f29e6d588, type: 3}
+  - {fileID: 21300000, guid: ba52205f9951c314da45b13c42ff953c, type: 3}
+  - {fileID: 21300000, guid: 899a55b2f0f52014f9ad0fed9f1eabd2, type: 3}
+  - {fileID: 21300000, guid: 412012709132a7a4792ae2086581e10f, type: 3}
+  - {fileID: 21300000, guid: b657dc4e961ccc448a74d48541174c80, type: 3}
+  - {fileID: 21300000, guid: ae64c1a75f2094744bcd532b2e669ec7, type: 3}
+  - {fileID: 21300000, guid: af9fcf59e3f4f1a4a8d5883518f82c9e, type: 3}
+  CompletedIDs: 
+  SpriteRendererScript: {fileID: 398508312}
+--- !u!4 &2010182283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010182281}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.87, y: 8.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2048784029
 GameObject:
   m_ObjectHideFlags: 0
@@ -8341,10 +8587,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3357419691336839544}
-    - targetCorrespondingSourceObject: {fileID: 5265401681853976228, guid: f1eecf93b1ff36e47a75353d2801d2b9,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3357419691336839549}
   m_SourcePrefab: {fileID: 100100000, guid: f1eecf93b1ff36e47a75353d2801d2b9, type: 3}
 --- !u!1 &3357419691336839543 stripped
 GameObject:
@@ -8365,34 +8607,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleCompleted: 0
+  AlreadyComplete: 0
   ID: 1006
---- !u!114 &3357419691336839549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3357419691336839543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0056f78133c89a943b9e0c7b5d3a2695, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SSMapList:
-  - {fileID: 21300000, guid: 3b94dd860e80a1747b715e1c50d5682e, type: 3}
-  - {fileID: 21300000, guid: a1bf6fdbfb51795459ac3048e084e1d9, type: 3}
-  - {fileID: 21300000, guid: 64a8987c95500c440b03618701b59d05, type: 3}
-  - {fileID: 21300000, guid: e8e2413a4df6c1642bdbb2829fe7a4cd, type: 3}
-  - {fileID: 21300000, guid: 6ade87ab85bbbf249b61af997c6e8a73, type: 3}
-  - {fileID: 21300000, guid: 8e2df7e3fb6b2234a9a162279179ceb4, type: 3}
-  - {fileID: 21300000, guid: 1cf721873998f8148a22d5d56f8e7da9, type: 3}
-  - {fileID: 21300000, guid: 1ef7f4aa8bf8c704c8c5c9e878f3ceeb, type: 3}
-  - {fileID: 21300000, guid: b9898b3bc566c8243abcfb5abeef43c9, type: 3}
-  - {fileID: 21300000, guid: 5f689ff8aabd16f4bafa0b3f29e6d588, type: 3}
-  - {fileID: 21300000, guid: ba52205f9951c314da45b13c42ff953c, type: 3}
-  - {fileID: 21300000, guid: 899a55b2f0f52014f9ad0fed9f1eabd2, type: 3}
-  - {fileID: 21300000, guid: 412012709132a7a4792ae2086581e10f, type: 3}
-  - {fileID: 21300000, guid: b657dc4e961ccc448a74d48541174c80, type: 3}
-  - {fileID: 21300000, guid: ae64c1a75f2094744bcd532b2e669ec7, type: 3}
-  - {fileID: 21300000, guid: af9fcf59e3f4f1a4a8d5883518f82c9e, type: 3}
-  SpriteRendererScript: {fileID: 398508312}

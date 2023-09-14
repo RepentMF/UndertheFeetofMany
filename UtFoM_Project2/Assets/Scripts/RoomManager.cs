@@ -17,18 +17,24 @@ public class RoomManager : GenericSingleton<RoomManager>
     public int index = 0;
     public bool sceneChange = false;
 
-    public void UpdateEntityInRoom(Hashtable table, string s, string comma)
-    {
-        if (!table.ContainsKey(s.Substring(0, s.IndexOf(comma))))
-        {
-            table.Add(s.Substring(0, s.IndexOf(comma)), s.Substring(s.IndexOf(comma) + 2));
-        }
-        else if (table[s.Substring(0, s.IndexOf(comma))] != s.Substring(s.IndexOf(comma) + 2))
-        {
-            table.Remove(s.Substring(0, s.IndexOf(comma)));
-            table.Add(s.Substring(0, s.IndexOf(comma)), s.Substring(s.IndexOf(comma) + 2));
-        }
-    }
+    // public void UpdateEntityInRoom(Hashtable table, string s, string comma)
+    // {
+    //     if (!table.ContainsKey(s.Substring(0, s.IndexOf(comma))))
+    //     {
+    //         table.Add(s.Substring(0, s.IndexOf(comma)), s.Substring(s.IndexOf(comma) + 2));
+    //     }
+    //     else if (table[s.Substring(0, s.IndexOf(comma))] != s.Substring(s.IndexOf(comma) + 2))
+    //     {
+    //         table.Remove(s.Substring(0, s.IndexOf(comma)));
+    //         table.Add(s.Substring(0, s.IndexOf(comma)), s.Substring(s.IndexOf(comma) + 2));
+    //     }
+
+    //     foreach(string key in PuzzleTable.Keys)
+    //     {
+    //         Debug.Log(String.Format("{0}: {1}", key, PuzzleTable[key]));
+    //     }
+    //     Debug.Log("STOP");
+    // }
 
     //Takes information from our data structure and sets up the current scene
     public void PlaceTreasureInRoom()
@@ -38,7 +44,7 @@ public class RoomManager : GenericSingleton<RoomManager>
 
         foreach (string s in strings)
         {
-            UpdateEntityInRoom(TreasureTable, s, ", ");
+            //UpdateEntityInRoom(TreasureTable, s, ", ");
             for (int i = 0; i < FindObjectsOfType<SceneItem>(true).Length; i++)
             {
                 if (s.Contains(FindObjectsOfType<SceneItem>(true)[i].ID + ", "))
@@ -57,7 +63,7 @@ public class RoomManager : GenericSingleton<RoomManager>
 
         foreach (string s in strings)
         {
-            UpdateEntityInRoom(EnemyTable, s, ", ");
+            //UpdateEntityInRoom(EnemyTable, s, ", ");
             for (int i = 0; i < FindObjectsOfType<EnemyInfo>(true).Length; i++)
             {
                 if (s.Contains(FindObjectsOfType<EnemyInfo>(true)[i].ID + ", "))
@@ -81,7 +87,7 @@ public class RoomManager : GenericSingleton<RoomManager>
 
         foreach (string s in strings)
         {
-            UpdateEntityInRoom(PuzzleTable, s, ", ");
+            //UpdateEntityInRoom(PuzzleTable, s, ", ");
             for (int i = 0; i < FindObjectsOfType<PuzzleManager>(true).Length; i++)
             {
                 if (s.Contains(FindObjectsOfType<PuzzleManager>(true)[i].ID + ", "))
@@ -119,7 +125,7 @@ public class RoomManager : GenericSingleton<RoomManager>
                 }
             }
 
-            UpdateEntityInRoom(TreasureTable, s, ", ");
+            //UpdateEntityInRoom(TreasureTable, s, ", ");
         }
 
         System.IO.File.WriteAllLines(@"treasures.txt", stringsList);
@@ -152,7 +158,7 @@ public class RoomManager : GenericSingleton<RoomManager>
                 }
             }
 
-            UpdateEntityInRoom(TreasureTable, s, ", ");
+            //UpdateEntityInRoom(TreasureTable, s, ", ");
         }
 
         System.IO.File.WriteAllLines(@"enemies.txt", stringsList);
@@ -161,34 +167,47 @@ public class RoomManager : GenericSingleton<RoomManager>
 
     public void ObservePuzzlesInRoom()
     {
-        List<string> strings = new List<string>();
+        List<string> puzzleSetupStrings = new List<string>();
 
         for (int i = 0; i < FindObjectsOfType<PuzzleManager>(true).Length; i++)
         {
             //Grab puzzle data
             string s = FindObjectsOfType<PuzzleManager>(true)[i].ID + ", " + FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted;
             //Put puzzle data in a list of strings
-            strings.Add(s);
+            puzzleSetupStrings.Add(s);
         }
 
-        string[] stringsArray = System.IO.File.ReadAllLines(@"puzzles.txt");
-        List<string> stringsList = stringsArray.ToList();
-        //Write the strings to a JSON file
-        foreach (string s in stringsArray)
+        
+        string[] saveFileArray = System.IO.File.ReadAllLines(@"puzzles.txt");
+        List<string> saveFileList = saveFileArray.ToList();
+        foreach (string s in saveFileArray)
         {
-            for (int i = 0; i < FindObjectsOfType<PuzzleManager>(true).Length; i++)
+            for (int i = 0; i < puzzleSetupStrings.Count; i++)
             {
                 if (s.Contains(FindObjectsOfType<PuzzleManager>(true)[i].ID + ", "))
                 {
-                    stringsList.Remove(s);
+                    saveFileList.Remove(s);
                 }
             }
 
-            UpdateEntityInRoom(PuzzleTable, s, ", ");
+            //UpdateEntityInRoom(PuzzleTable, s, ", ");
         }
 
-        System.IO.File.WriteAllLines(@"puzzles.txt", stringsList);
-        System.IO.File.AppendAllLines(@"puzzles.txt", strings);
+        // foreach (string s in saveFileList)
+        // {
+        //     Debug.Log(s);
+        // }
+
+        // foreach (string s in puzzleSetupStrings)
+        // {
+        //     Debug.Log(s);
+        // }
+        // Debug.Log("STOP");
+
+        //Write the strings to a JSON file
+        System.IO.File.WriteAllText(@"puzzles.txt", String.Empty);
+        System.IO.File.WriteAllLines(@"puzzles.txt", saveFileList);
+        System.IO.File.AppendAllLines(@"puzzles.txt", puzzleSetupStrings);
     }
     
     private void OnGameStateChanged(GameState newGameState)

@@ -11,9 +11,14 @@ public class TPMidhousePuzzleManager : PuzzleManager
     // Start is called before the first frame update
     void Start()
     {
-        if (PuzzleCompleted)
+        if (PuzzleCompleted && !AlreadyComplete)
         {
             CompletePuzzle();
+        }
+
+        if (PuzzleCompleted)
+        {
+            AlreadyComplete = true;
         }
     }
 
@@ -35,9 +40,14 @@ public class TPMidhousePuzzleManager : PuzzleManager
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (PuzzleCompleted)
+        if (PuzzleCompleted && !AlreadyComplete)
         {
             CompletePuzzle();
+        }
+
+        if (PuzzleCompleted)
+        {
+            AlreadyComplete = true;
         }
     }
 }

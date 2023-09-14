@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-[System.Serializable]
-public class TPJennaPuzzleManager : PuzzleManager
+public class SSChapelDoorPuzzleManager : PuzzleManager
 {
-    [SerializeField] public List<Dialogue> ExtraDialouge1;
+    BoxCollider2D box;
 
     // Start is called before the first frame update
     void Start()
@@ -19,33 +18,35 @@ public class TPJennaPuzzleManager : PuzzleManager
 
     void CompletePuzzle()
     {
-        string[] extraDialogue1 = ExtraDialouge1[0].dialogue;
-        this.gameObject.GetComponent<Interactable>().TextArray = extraDialogue1;
-        this.gameObject.GetComponent<SceneNPC>().CurrentDialogue = this.gameObject.GetComponent<SceneNPC>().AllDialouges.Count - 1;
         PuzzleCompleted = true;
         FindObjectsOfType<RoomManager>(true)[0].ObservePuzzlesInRoom();
+        box = this.gameObject.GetComponent<BoxCollider2D>();
+        box.enabled = true;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        bool isabelleFlag = false;
+        //bool elisiaFlag = bool.Parse((string) (FindObjectOfType<RoomManager>().PuzzleTable["1009"]));
+        bool elisiaFlag = false;
 
         foreach (PuzzleManager pm in FindObjectsOfType<PuzzleManager>())
         {
-            if (pm.ID == 1003)
+            if (pm.ID == 1009)
             {
-                isabelleFlag = pm.PuzzleCompleted;
+                elisiaFlag = pm.PuzzleCompleted;
             }
-        }        
-        if (PuzzleCompleted)
+        }
+        //Debug.Log(elisiaFlag);
+
+        if (PuzzleCompleted && !AlreadyComplete)
         {
             CompletePuzzle();
         }
-        else if (isabelleFlag)
+        else if (elisiaFlag)
         {
-            this.gameObject.GetComponent<Interactable>().TextArrayIndex = 0;
             PuzzleCompleted = true;
+            AlreadyComplete = true;
         }
     }
 }

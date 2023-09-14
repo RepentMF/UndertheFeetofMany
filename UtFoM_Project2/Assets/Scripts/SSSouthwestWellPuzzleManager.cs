@@ -8,17 +8,22 @@ public class SSSouthwestWellPuzzleManager : PuzzleManager
     // Start is called before the first frame update
     void Start()
     {
-        if (PuzzleCompleted)
+        if (PuzzleCompleted && !AlreadyComplete)
         {
             CompletePuzzle();
         }
+
+        if (PuzzleCompleted)
+        {
+            AlreadyComplete = true;
+        }
     }
 
-    void OnTriggerStay2D(Collider2D collision)
+    void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.CompareTag("P1") && FindObjectOfType<PlayerController>().IsInteracting)
 		{  
-            CompletePuzzle();
+            PuzzleCompleted = true;
         }
     }
 
@@ -31,9 +36,10 @@ public class SSSouthwestWellPuzzleManager : PuzzleManager
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (PuzzleCompleted)
+        if (PuzzleCompleted && !AlreadyComplete)
         {
             CompletePuzzle();
+            AlreadyComplete = true;
         }
     }
 }
