@@ -336,11 +336,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8636982517473071419, guid: b2a5bec6d645c4243932fe503b7079fc,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636982517473071419, guid: b2a5bec6d645c4243932fe503b7079fc,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -104542193
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7927480335806747548, guid: b2a5bec6d645c4243932fe503b7079fc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 188379936}
   m_SourcePrefab: {fileID: 100100000, guid: b2a5bec6d645c4243932fe503b7079fc, type: 3}
+--- !u!1 &188379934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5138582711049928253, guid: b2a5bec6d645c4243932fe503b7079fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 188379933}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &188379935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7927480335806747548, guid: b2a5bec6d645c4243932fe503b7079fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 188379933}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &188379936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188379935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b27f6ecc7fed33847b4f34b2bd4c58d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextClue: {fileID: 188379934}
 --- !u!1 &215076998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1235,6 +1274,7 @@ MonoBehaviour:
   - find my boy, too.
   TextArrayIndex: 0
   IsQuestion: 0
+  IsSpecial: 0
 --- !u!114 &470724143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1250,6 +1290,8 @@ MonoBehaviour:
   PuzzleCompleted: 0
   AlreadyComplete: 0
   ID: 1009
+  PlacedItem: {fileID: 0}
+  RequiredItem: {fileID: 0}
   ExtraDialouge1: []
 --- !u!1 &506887399
 GameObject:
@@ -2844,6 +2886,7 @@ MonoBehaviour:
     Be warned: it\u2019s spicy"
   TextArrayIndex: 0
   IsQuestion: 0
+  IsSpecial: 0
 --- !u!1001 &1278645223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3038,6 +3081,8 @@ MonoBehaviour:
   PuzzleCompleted: 0
   AlreadyComplete: 0
   ID: 1007
+  PlacedItem: {fileID: 0}
+  RequiredItem: {fileID: 0}
 --- !u!1001 &1392606045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3676,6 +3721,8 @@ MonoBehaviour:
   PuzzleCompleted: 0
   AlreadyComplete: 0
   ID: 1012
+  PlacedItem: {fileID: 0}
+  RequiredItem: {fileID: 0}
   ExtraDialouge1: []
 --- !u!114 &1634201475
 MonoBehaviour:
@@ -3694,6 +3741,7 @@ MonoBehaviour:
   TextArray: []
   TextArrayIndex: 0
   IsQuestion: 0
+  IsSpecial: 0
 --- !u!114 &1634201476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5046,6 +5094,7 @@ MonoBehaviour:
     are made from- but all the bricks are broken.
   TextArrayIndex: 0
   IsQuestion: 0
+  IsSpecial: 0
 --- !u!1 &1989582762
 GameObject:
   m_ObjectHideFlags: 0
@@ -8609,3 +8658,5 @@ MonoBehaviour:
   PuzzleCompleted: 0
   AlreadyComplete: 0
   ID: 1006
+  PlacedItem: {fileID: 0}
+  RequiredItem: {fileID: 0}

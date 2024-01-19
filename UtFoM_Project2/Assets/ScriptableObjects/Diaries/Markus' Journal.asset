@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f2d8ae900915c0449da941292b084d2, type: 3}
+  m_Name: Markus' Journal
+  m_EditorClassIdentifier: 
+  Name: tattered journal
+  Description: "Day 1 Father and I fought today. The whole time we\u2019ve been down
+    here in these bunkers I\u2019ve hated it. I just want to go home. I want to go
+    around town and ride bikes with my friends. I want to look outside. I want to
+    be outside. I'll even ride the bus to school so I can write notes to Lisa. But
+    no! Father said I was a stupid brat and if we hadn't started living in the bunkers
+    we'd be dead like Lisa. I know she\u2019s still alive, and I know he said it
+    just to hurt me. I shouldn\u2019t have lost control like I did, but it felt so
+    good to hit him hard across the face. He grabbed me and locked me in this place.
+    I could only hear him shouting and laughing about something as he walked away. 
+    Wait until mom hears about this.  Day 5 Father has been a liar this entire time.
+    He said that we would be able to go back to the outside world eventually, but
+    this whole time he\u2019s just been working on his stupid chapel. He kept taking
+    me to this place he called the \u201CFirst Basement\u201D and trying to get me
+    used to living down here. To \u201Csee the revelation that they've all seen.\"
+    All I see in him is a snake. He was just telling mom and I what we wanted to
+    hear. When I get out I\u2019m gonna to talk to mom and make her realize that
+    he wants us here just to walk around all high and mighty and judge everyone.
+    Then she\u2019ll see the same monster and escape with me.  Day 13? I think it\u2019s
+    been a few days. I bet the whole underground is looking for me, and he\u2019s
+    lying through his rotten teeth about where I am. They'll find me though. Mom'll
+    find me.   Day (the number is illegible) This entry is noticeably ragged. I miss
+    you mom. Please find me. I love you too. I'll say it back."
+  InventorySprite: {fileID: 21300000, guid: d5111903e03c6a84a963d03ba34c7e8f, type: 3}
+  OverworldSprite: {fileID: 21300000, guid: deeac7ea450d4124a8fc1a18d3ed8de4, type: 3}

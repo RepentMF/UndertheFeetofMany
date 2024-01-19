@@ -7,24 +7,34 @@ using UnityEngine.InputSystem;
 public class ActivePageManager : MonoBehaviour
 {
     public Image CursorDisplay;
-    private PlayerController MainPlayer;
+    public Sprite EmptySlot;
+    public PlayerController MainPlayer;
     private Stats MainStats;
     public Text DynamicText;
     public List<GameObject> Pages;
     public int ActivePage;
     public int Selector = 0;
-    private Inventory MainInventory;
+    public Inventory MainInventory;
     public List<Image> TrinketImages;
     public List<Image> KeyItemImages;
+
+    void Awake()
+    {
+        if (MainPlayer.InteractableTarget != null)
+        {
+            if (MainPlayer.InteractableTarget.IsSpecial)
+            {
+                ActivePage = 2;
+            }
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        MainPlayer = FindObjectOfType<PlayerController>();
+        //MainPlayer = FindObjectOfType<PlayerController>();
         MainStats = MainPlayer.GetComponent<Stats>();
         MainInventory = MainPlayer.GetComponent<Inventory>();
-
-        ActivePage = 1;
     }
 
     void DisableAllPages()
@@ -77,23 +87,25 @@ public class ActivePageManager : MonoBehaviour
             if (MainInventory.TrinketsList[i] != null)
             {
                 TrinketImages[i].gameObject.SetActive(true);
-                TrinketImages[i].sprite = MainInventory.TrinketsList[i].Sprite;
+                TrinketImages[i].sprite = MainInventory.TrinketsList[i].InventorySprite;
             }
         }
     }
 
-    void KeyItemPageDisplay()
+    public void KeyItemPageDisplay()
     {
         Pages[2].SetActive(true);
 
         // display each key item in the inventory on each square of
         // the 4x5 grid
-        for (int i = 0; i < MainInventory.KeyItemsList.Count; i++)
+        for (int i = 0; i < KeyItemImages.Count; i++)
         {
-            if (MainInventory.KeyItemsList[i] != null)
+            KeyItemImages[i].sprite = EmptySlot;
+
+            if (i <= MainInventory.KeyItemsList.Count - 1)
             {
                 KeyItemImages[i].gameObject.SetActive(true);
-                KeyItemImages[i].sprite = MainInventory.KeyItemsList[i].Sprite;
+                KeyItemImages[i].sprite = MainInventory.KeyItemsList[i].InventorySprite;
             }
         }
     }
@@ -106,12 +118,15 @@ public class ActivePageManager : MonoBehaviour
         {
             case 0:
                 ProfilePageDisplay();
+                CursorDisplay.enabled = false;
                 break;
             case 1:
                 TrinketPageDisplay();
+                CursorDisplay.enabled = true;
                 break;
             case 2:
                 KeyItemPageDisplay();
+                CursorDisplay.enabled = true;
                 break;
         }
     }

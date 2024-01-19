@@ -58,6 +58,24 @@ public class Inventory : MonoBehaviour
                 break;
         }
     }
+    
+    public void RemoveItem(Item item)
+    {
+        switch (item.Category)
+        {
+            case ItemCategory.Diary:
+                DiariesList.Remove(item);
+                break;
+            case ItemCategory.DoorKey:
+                DoorKeysList.Remove(item);
+                break;
+            case ItemCategory.KeyItem:
+                KeyItemsList.Remove(item);
+                break;
+            default:
+                break;
+        }
+    }
 
 	private void SyncTrinketStatusInflicter(TrinketModification modification)
 	{

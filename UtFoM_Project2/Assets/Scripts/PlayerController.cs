@@ -10,12 +10,13 @@ public class PlayerController : GenericSingleton<PlayerController>
     [SerializeField] private GameObject PauseMenuReference;
     [SerializeField] private GameObject StatsBookReference;
     [SerializeField] private GameObject BookInfoReference;
+    [SerializeField] private ContextClue ContextClue;
     private ActivePageManager ActivePageManagerReference;
     private bool IsSceneItemInRange = false;
     private bool IsInteractableInRange = false;
     public bool IsInteracting = false;
     private SceneItem SceneItemTarget;
-    private Interactable InteractableTarget;
+    public Interactable InteractableTarget;
     private string CurrentAttackAnimationName = "";
     private bool IsShortcutButtonPressed = false;
     private bool confirm = true;
@@ -43,7 +44,7 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     private void ToggleDisplayPauseMenu()
     {
-        // Unpauses the game
+        // Pauses the game
         if (GameStateManager.Instance.IsPaused() && PauseMenuReference != null && StatsBookReference != null
             && BookInfoReference != null)
         {
@@ -52,14 +53,16 @@ public class PlayerController : GenericSingleton<PlayerController>
             pauseMenuStateManager.CurrentState = ActionState.Appear;
             StatsBookReference.SetActive(false);
             ActivePageManagerReference = BookInfoReference.GetComponent<ActivePageManager>();
+            Debug.Log(1);
         }
-        // Pauses the game
+        // Unpauses the game
         else if (!GameStateManager.Instance.IsPaused() && PauseMenuReference != null && StatsBookReference != null
             && BookInfoReference != null)
         {
             StateManager pauseMenuStateManager = PauseMenuReference.GetComponent<StateManager>();
             BookInfoReference.SetActive(false);
             pauseMenuStateManager.CurrentState = ActionState.Death;
+            Debug.Log(2);
         }
     }
 
@@ -282,61 +285,58 @@ public class PlayerController : GenericSingleton<PlayerController>
         }
     }
 
-    private void OnMenuButton()
+    public void OnMenuButton()
     {
-        if (GameStateManager.Instance.IsPaused())
+        if (InteractableTarget == null)
         {
-            GameStateManager.Instance.StartGameplay();
+            if (GameStateManager.Instance.IsPaused())
+            {
+                GameStateManager.Instance.StartGameplay();
+            }
+            else if (GameStateManager.Instance.IsGameplay())
+            {
+                GameStateManager.Instance.PauseGame();
+            }
+            ToggleDisplayPauseMenu();
         }
-        else if (GameStateManager.Instance.IsGameplay())
-        {
-            GameStateManager.Instance.PauseGame();
-        }
+    }
+
+    public void SelectFromInventory()
+    {
+        GameStateManager.Instance.PauseGame();
         ToggleDisplayPauseMenu();
     }
 
     // move page forward or backwards
     private void OnNextPageButton()
     {
-        // if active page is at max, go to beginning- 1 is currently max
-        if (ActivePageManagerReference.ActivePage == ActivePageManagerReference.Pages.Count - 1)
+        if (InteractableTarget == null)
         {
-            ActivePageManagerReference.ActivePage = 0;  
-        }
-        else
-        {
-            ActivePageManagerReference.ActivePage++;
-        }
-
-        if (ActivePageManagerReference.ActivePage == 1 || ActivePageManagerReference.ActivePage == 2)
-        {
-            ActivePageManagerReference.CursorDisplay.enabled = true;
-        }
-        else
-        {
-            ActivePageManagerReference.CursorDisplay.enabled = false;
+            // if active page is at max, go to beginning- 1 is currently max
+            if (ActivePageManagerReference.ActivePage == ActivePageManagerReference.Pages.Count - 1)
+            {
+                ActivePageManagerReference.ActivePage = 0;  
+            }
+            else
+            {
+                ActivePageManagerReference.ActivePage++;
+            }
         }
     }
 
     private void OnPreviousPageButton()
     {   
-        // if active page is at min, go to end- 0 will always be min
-        if (ActivePageManagerReference.ActivePage == 0)
+        if (InteractableTarget == null)
         {
-            ActivePageManagerReference.ActivePage = 2;  
-        }
-        else
-        {
-            ActivePageManagerReference.ActivePage--;
-        }
-
-        if (ActivePageManagerReference.ActivePage == 1 || ActivePageManagerReference.ActivePage == 2)
-        {
-            ActivePageManagerReference.CursorDisplay.enabled = true;
-        }
-        else
-        {
-            ActivePageManagerReference.CursorDisplay.enabled = false;
+            // if active page is at min, go to end- 0 will always be min
+            if (ActivePageManagerReference.ActivePage == 0)
+            {
+                ActivePageManagerReference.ActivePage = 2;  
+            }
+            else
+            {
+                ActivePageManagerReference.ActivePage--;
+            }
         }
     }
     
@@ -599,7 +599,22 @@ public class PlayerController : GenericSingleton<PlayerController>
             int i = ActivePageManagerReference.Selector;
             if (InventoryScript.KeyItemsList[i] != null)
             {
-                // do logic with selected key item
+                if (InteractableTarget != null)
+                {
+                    if (InteractableTarget.IsSpecial)
+                    {
+                        if (InteractableTarget.GetComponent<PuzzleManager>().PlacedItem != null)
+                        {
+                            InventoryScript.AddItem(InteractableTarget.GetComponent<PuzzleManager>().PlacedItem);
+                        }
+
+                        Item temp = InventoryScript.KeyItemsList[i];
+                        InteractableTarget.GetComponent<PuzzleManager>().PlacedItem = temp;
+                        InventoryScript.RemoveItem(temp);
+                        GameStateManager.Instance.StartGameplay();
+                        ToggleDisplayPauseMenu();
+                    }
+                }
             }
         }
     }
@@ -756,11 +771,13 @@ public class PlayerController : GenericSingleton<PlayerController>
         {
             SceneItemTarget = collider2D.GetComponent<SceneItem>();
             IsSceneItemInRange = true;
+            ContextClue.Enable();
         }
         else if (collider2D.GetComponent<Interactable>() != null)
         {
             InteractableTarget = collider2D.GetComponent<Interactable>();
             IsInteractableInRange = true;
+            ContextClue.Enable();
         }
     }
 
@@ -769,11 +786,13 @@ public class PlayerController : GenericSingleton<PlayerController>
         if (collider2D.GetComponent<SceneItem>() != null)
         {
             IsSceneItemInRange = false;
+            ContextClue.Disable();
             SceneItemTarget = null;
         }
         else if (collider2D.GetComponent<Interactable>() != null)
         {
             IsInteractableInRange = false;
+            ContextClue.Disable();
             InteractableTarget = null;
         }
     }
@@ -805,6 +824,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     // Start is called before the first frame update
     void Start()
     {
+        ContextClue = GetComponent<ContextClue>();
         if (PlayerScript != null)
         {
             Destroy(this.gameObject);

@@ -8,6 +8,7 @@ public class SceneItem : MonoBehaviour
 {
     public Item ItemData;
     public bool HasBeenPickedUp = false;
+    public bool IsGlowing;
     public float LightFadeSpeed = 1f;
     public string ID;
 
@@ -23,7 +24,7 @@ public class SceneItem : MonoBehaviour
         ItemData = newData;
         if (SpriteRendererScript.sprite == null)
         {
-            SpriteRendererScript.sprite = ItemData.Sprite;
+            SpriteRendererScript.sprite = ItemData.OverworldSprite;
         }
         BoxCollider2DScript.size = SpriteRendererScript.size;
     }
@@ -84,6 +85,11 @@ public class SceneItem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (!IsGlowing)
+        {
+            Light2DScript.intensity = 0f;
+            StateManagerScript.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        }
 
         if (HasBeenPickedUp)
         {

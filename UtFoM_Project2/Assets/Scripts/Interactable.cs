@@ -10,6 +10,7 @@ public class Interactable : MonoBehaviour
     [SerializeField] public string[] TextArray;
     public int TextArrayIndex = 0;
     public bool IsQuestion;
+    public bool IsSpecial;
 
     // Script References
     StateManager StateManagerScript;
@@ -32,7 +33,6 @@ public class Interactable : MonoBehaviour
                     child.gameObject.SetActive(IsQuestion);
                 }
             }
-            //Debug.Log(TextArray.Length + " " + TextArrayIndex);
             TextArrayIndex++;
         }
         else // If all of the dialogue text has been iterated through (or if none existed)
@@ -43,6 +43,10 @@ public class Interactable : MonoBehaviour
                 if (GetComponentInChildren<SceneTransition>() != null)
                 {
                     GetComponentInChildren<SceneTransition>().EnterFromDialogue(FindObjectOfType<PlayerController>().DecideConfirmDeny());
+                }
+                else if (GetComponent<PuzzleManager>() != null && IsSpecial)
+                {
+                    GetComponent<PuzzleManager>().SetupSpecialPuzzle(FindObjectOfType<PlayerController>().DecideConfirmDeny());
                 }
             }
             EndInteraction();
@@ -82,7 +86,10 @@ public class Interactable : MonoBehaviour
         {
             TextArrayIndex = 0;
         }
-        UnpauseGame();
+        if (!IsSpecial || !FindObjectOfType<PlayerController>().DecideConfirmDeny())
+        {
+            UnpauseGame();
+        }
     }
 
     private void PauseGame()

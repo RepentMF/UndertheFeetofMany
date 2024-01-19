@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b58f2b607e968849bb045775bca8ec4, type: 3}
-  m_Name: World Map
+  m_Name: Black Book
   m_EditorClassIdentifier: 
-  Name: World Map
-  Description: With this I can see as far out as I've traveled.
-  InventorySprite: {fileID: 21300000, guid: 761a5383a90fa8c4a8663c7213ef8cae, type: 3}
-  OverworldSprite: {fileID: 21300000, guid: 2e6846077e8bd4a41962d728992b17df, type: 3}
+  Name: a black book
+  Description: A black book I found in the chapel. There's no text on it or in it.
+  InventorySprite: {fileID: 21300000, guid: e3f76f19c68a2e74db991d14160bc22b, type: 3}
+  OverworldSprite: {fileID: 21300000, guid: b57ef4250236b4b49bbf736ecbbe345d, type: 3}

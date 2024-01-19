@@ -6534,7 +6534,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleCompleted: 0
+  AlreadyComplete: 0
   ID: 1002
+  PlacedItem: {fileID: 0}
+  RequiredItem: {fileID: 0}
   TPMapList:
   - {fileID: 21300000, guid: 57ca368df247c3949b08200c7e80e4e6, type: 3}
   - {fileID: 21300000, guid: 07399d4a14f27174399d9ffad8d059c9, type: 3}
@@ -6815,6 +6818,11 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 1627412411814251778, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1627412411814251779, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
       propertyPath: m_Size.x
@@ -6838,10 +6846,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627412411814251781, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
+      propertyPath: ID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627412411814251781, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
+        type: 3}
       propertyPath: ItemData
       value: 
-      objectReference: {fileID: 11400000, guid: dd2c27b0e16a52d4fa724e32751633fe,
+      objectReference: {fileID: 11400000, guid: e302c9828da82684ebf934cf59758466,
         type: 2}
+    - target: {fileID: 1627412411814251781, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
+        type: 3}
+      propertyPath: IsGlowing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1627412411814251782, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
       propertyPath: m_RootOrder
@@ -6901,6 +6919,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: World Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627412411814251785, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7478,6 +7501,7 @@ MonoBehaviour:
   - "It\u2019s. A. No."
   TextArrayIndex: 0
   IsQuestion: 0
+  IsSpecial: 0
 --- !u!114 &1447097394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7491,7 +7515,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleCompleted: 0
+  AlreadyComplete: 0
   ID: 1003
+  PlacedItem: {fileID: 0}
+  RequiredItem: {fileID: 0}
   ExtraDialouge1: []
 --- !u!1 &1515439720
 GameObject:
@@ -7823,11 +7850,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8636982517473071419, guid: b2a5bec6d645c4243932fe503b7079fc,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636982517473071419, guid: b2a5bec6d645c4243932fe503b7079fc,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -104542193
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7927480335806747548, guid: b2a5bec6d645c4243932fe503b7079fc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1745630964}
   m_SourcePrefab: {fileID: 100100000, guid: b2a5bec6d645c4243932fe503b7079fc, type: 3}
+--- !u!1 &1745630962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5138582711049928253, guid: b2a5bec6d645c4243932fe503b7079fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1745630961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1745630963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7927480335806747548, guid: b2a5bec6d645c4243932fe503b7079fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1745630961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1745630964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745630963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b27f6ecc7fed33847b4f34b2bd4c58d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextClue: {fileID: 1745630962}
 --- !u!1 &1812864256
 GameObject:
   m_ObjectHideFlags: 0
@@ -8321,6 +8387,7 @@ MonoBehaviour:
   - Some friend you are.
   TextArrayIndex: 0
   IsQuestion: 0
+  IsSpecial: 0
 --- !u!114 &1881681195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8334,7 +8401,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleCompleted: 0
+  AlreadyComplete: 0
   ID: 1004
+  PlacedItem: {fileID: 0}
+  RequiredItem: {fileID: 0}
   ExtraDialouge1:
   - {fileID: 11400000, guid: 2ad395084cae292408c8d739a6aa5f74, type: 2}
 --- !u!1 &1946673937
@@ -9060,6 +9130,7 @@ MonoBehaviour:
   - Harharharhar!
   TextArrayIndex: 0
   IsQuestion: 0
+  IsSpecial: 0
 --- !u!114 &1988603409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9073,7 +9144,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleCompleted: 0
+  AlreadyComplete: 0
   ID: 1005
+  PlacedItem: {fileID: 0}
+  RequiredItem: {fileID: 0}
   ExtraDialouge1:
   - {fileID: 11400000, guid: 574b6c93313fdd745bef40cbd362eb06, type: 2}
   - {fileID: 11400000, guid: 9af85caacacac20478ec5abe593c21b7, type: 2}

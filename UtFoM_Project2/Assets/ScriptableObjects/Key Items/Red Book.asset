@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b58f2b607e968849bb045775bca8ec4, type: 3}
-  m_Name: World Map
+  m_Name: Red Book
   m_EditorClassIdentifier: 
-  Name: World Map
-  Description: With this I can see as far out as I've traveled.
-  InventorySprite: {fileID: 21300000, guid: 761a5383a90fa8c4a8663c7213ef8cae, type: 3}
-  OverworldSprite: {fileID: 21300000, guid: 2e6846077e8bd4a41962d728992b17df, type: 3}
+  Name: a red book
+  Description: A red book I found in the chapel. There's no text on it or in it.
+  InventorySprite: {fileID: 21300000, guid: 685e5eb6f53eae64788019e5baa2425f, type: 3}
+  OverworldSprite: {fileID: 21300000, guid: 884e00e362395a0459016548b6b411d0, type: 3}

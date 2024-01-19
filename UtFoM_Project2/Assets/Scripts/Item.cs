@@ -19,5 +19,6 @@ public abstract class Item : ScriptableObject
 	abstract protected internal ItemCategory Category { get; }
 	public string Name;
 	public string Description;
-	public Sprite Sprite;
+	public Sprite InventorySprite;
+    public Sprite OverworldSprite;
 }

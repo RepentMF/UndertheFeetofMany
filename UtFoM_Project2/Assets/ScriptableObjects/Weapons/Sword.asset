@@ -15,7 +15,8 @@ MonoBehaviour:
   Name: Machete Sword
   Description: A machete I found in the woodshed. I can swing it well but not very
     quickly.
-  Sprite: {fileID: 21300000, guid: bbeffe6d98912784ebcbff4e83d229cf, type: 3}
+  InventorySprite: {fileID: 21300000, guid: bbeffe6d98912784ebcbff4e83d229cf, type: 3}
+  OverworldSprite: {fileID: 21300000, guid: bbeffe6d98912784ebcbff4e83d229cf, type: 3}
   LightAttackAnimationName: Sword
   LightAttackAnimationTimer: -1
   OriginalLightAttackBufferThreshold: 0
