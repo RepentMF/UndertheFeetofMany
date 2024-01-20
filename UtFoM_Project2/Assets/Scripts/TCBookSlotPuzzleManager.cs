@@ -12,11 +12,40 @@ public class TCBookSlotPuzzleManager : PuzzleManager
         }
     }
 
+    void ManageState()
+    {
+        if (PlacedItem != null)
+        {
+            if (PlacedItem.Name == RequiredItem.Name)
+            {
+                CompletePuzzle();
+            }
+        }
+    }
+
+    void CompletePuzzle()
+    {
+        PuzzleCompleted = true;
+    }
+
     public void FixedUpdate()
     {
         if (PlacedItem != null)
         {
             GetComponent<SpriteRenderer>().sprite = PlacedItem.OverworldSprite;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().sprite = null;
+        }
+
+        if (PuzzleCompleted)
+        {
+            CompletePuzzle();
+        }
+        else
+        {
+            ManageState();
         }
     }
 }

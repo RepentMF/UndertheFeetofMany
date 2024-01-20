@@ -49,6 +49,36 @@ public class TCSecretWallPuzzleManager : PuzzleManager
         {
             CompletePuzzle();
         }
+
+        for(int i = 0; i < FindObjectsOfType<PuzzleManager>().Length; i++)
+        {
+            if (FindObjectsOfType<PuzzleManager>()[i].PlacedItem != null)
+            {
+                if (FindObjectsOfType<PuzzleManager>()[i].ID == 1017)
+                {
+                    if (FindObjectsOfType<PuzzleManager>()[i].PlacedItem.Name == FindObjectsOfType<PuzzleManager>()[i].RequiredItem.Name)
+                    {
+                        Book1Placed = true;
+                    }
+                    else
+                    {
+                        Book1Placed = false;
+                    }
+                }
+                else if (FindObjectsOfType<PuzzleManager>()[i].ID == 1018)
+                {
+                    if (FindObjectsOfType<PuzzleManager>()[i].PlacedItem.Name == FindObjectsOfType<PuzzleManager>()[i].RequiredItem.Name)
+                    {
+                        Book2Placed = true;
+                    }
+                    else
+                    {
+                        Book2Placed = false;
+                    }
+                }
+                
+            }
+        }
     }
 
     void CompletePuzzle()

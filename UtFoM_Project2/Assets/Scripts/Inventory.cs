@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    public Interactable InteractableTarget;
     public Weapon EquippedWeapon;
     public List<EquippedTrinket> EquippedTrinkets = new List<EquippedTrinket>();
     public List<Item> SpellsList = new List<Item>();

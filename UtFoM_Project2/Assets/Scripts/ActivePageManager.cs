@@ -18,17 +18,6 @@ public class ActivePageManager : MonoBehaviour
     public List<Image> TrinketImages;
     public List<Image> KeyItemImages;
 
-    void Awake()
-    {
-        if (MainPlayer.InteractableTarget != null)
-        {
-            if (MainPlayer.InteractableTarget.IsSpecial)
-            {
-                ActivePage = 2;
-            }
-        }
-    }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -113,6 +102,17 @@ public class ActivePageManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (!GameStateManager.Instance.IsGameplay())
+        {
+            if (MainInventory.InteractableTarget != null)
+            {
+                if (MainInventory.InteractableTarget.IsSpecial)
+                {
+                    ActivePage = 2;
+                }
+            }
+        }
+
         DisableAllPages();
         switch (ActivePage)
         {

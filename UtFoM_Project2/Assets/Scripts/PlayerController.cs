@@ -18,6 +18,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     private SceneItem SceneItemTarget;
     public Interactable InteractableTarget;
     private string CurrentAttackAnimationName = "";
+    public int ScreenCount;
     private bool IsShortcutButtonPressed = false;
     private bool confirm = true;
     private Vector2 MovementVector;
@@ -53,7 +54,6 @@ public class PlayerController : GenericSingleton<PlayerController>
             pauseMenuStateManager.CurrentState = ActionState.Appear;
             StatsBookReference.SetActive(false);
             ActivePageManagerReference = BookInfoReference.GetComponent<ActivePageManager>();
-            Debug.Log(1);
         }
         // Unpauses the game
         else if (!GameStateManager.Instance.IsPaused() && PauseMenuReference != null && StatsBookReference != null
@@ -62,7 +62,6 @@ public class PlayerController : GenericSingleton<PlayerController>
             StateManager pauseMenuStateManager = PauseMenuReference.GetComponent<StateManager>();
             BookInfoReference.SetActive(false);
             pauseMenuStateManager.CurrentState = ActionState.Death;
-            Debug.Log(2);
         }
     }
 
@@ -597,24 +596,35 @@ public class PlayerController : GenericSingleton<PlayerController>
         else if (ActivePageManagerReference.Pages[2].active)
         {
             int i = ActivePageManagerReference.Selector;
-            if (InventoryScript.KeyItemsList[i] != null)
+            if (InteractableTarget != null)
             {
-                if (InteractableTarget != null)
+                if (InteractableTarget.IsSpecial)
                 {
-                    if (InteractableTarget.IsSpecial)
+                    Item tempPlacedItem = null;
+                    if (InteractableTarget.GetComponent<PuzzleManager>().PlacedItem != null)
                     {
-                        if (InteractableTarget.GetComponent<PuzzleManager>().PlacedItem != null)
-                        {
-                            InventoryScript.AddItem(InteractableTarget.GetComponent<PuzzleManager>().PlacedItem);
-                        }
-
+                        tempPlacedItem = InteractableTarget.GetComponent<PuzzleManager>().PlacedItem;
+                    }
+                    
+                    if (i >= InventoryScript.KeyItemsList.Count)
+                    {
+                        InteractableTarget.GetComponent<PuzzleManager>().PlacedItem = null;
+                    }   
+                    else if (InventoryScript.KeyItemsList[i] != null)
+                    {
                         Item temp = InventoryScript.KeyItemsList[i];
                         InteractableTarget.GetComponent<PuzzleManager>().PlacedItem = temp;
                         InventoryScript.RemoveItem(temp);
-                        GameStateManager.Instance.StartGameplay();
-                        ToggleDisplayPauseMenu();
                     }
-                }
+
+                    if (tempPlacedItem != null)
+                    {
+                        InventoryScript.AddItem(tempPlacedItem);
+                    }
+                    
+                    GameStateManager.Instance.StartGameplay();
+                    ToggleDisplayPauseMenu();
+                }      
             }
         }
     }
@@ -776,6 +786,7 @@ public class PlayerController : GenericSingleton<PlayerController>
         else if (collider2D.GetComponent<Interactable>() != null)
         {
             InteractableTarget = collider2D.GetComponent<Interactable>();
+            InventoryScript.InteractableTarget = InteractableTarget;
             IsInteractableInRange = true;
             ContextClue.Enable();
         }
@@ -794,6 +805,7 @@ public class PlayerController : GenericSingleton<PlayerController>
             IsInteractableInRange = false;
             ContextClue.Disable();
             InteractableTarget = null;
+            InventoryScript.InteractableTarget = null;
         }
     }
 
@@ -814,6 +826,19 @@ public class PlayerController : GenericSingleton<PlayerController>
         StateManagerScript = this.gameObject.GetComponent<StateManager>();
         StatsScript = this.gameObject.GetComponent<Stats>();
         StatusModScript = this.gameObject.GetComponent<StatusMod>();
+        
+        Debug.Log(ScreenCount);
+        if (ScreenCount != 0)
+        {
+            PauseMenuReference = FindObjectOfType<PauseMenu>().gameObject;
+            StatsBookReference = GameObject.FindWithTag("MenuBook");
+            BookInfoReference = FindObjectOfType<ActivePageManager>().gameObject;
+        }
+
+        ScreenCount++;
+        
+        Debug.Log(ScreenCount);
+
         // Subscribe to events
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
         // Initialize variables

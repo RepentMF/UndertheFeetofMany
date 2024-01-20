@@ -1452,6 +1452,119 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &287537098
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4743751760079366859, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743751760079366859, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743751760079366859, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1699998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743751760079366859, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -147.55853
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743751760079366859, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743751760079366859, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743751760079366859, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743751760079366859, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743751760079366859, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743751760079366859, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743751760079366859, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7024762752927554246, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_Name
+      value: Music Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737967901480912441, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737967901480912441, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 31ef160a6f90c15438b9fae1ec0c81d2, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7024762752927554246, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 287537101}
+  m_SourcePrefab: {fileID: 100100000, guid: 658f69ced21460749a1b1a6aa7eb61a6, type: 3}
+--- !u!1 &287537099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7024762752927554246, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 287537098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &287537100 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8737967901480912441, guid: 658f69ced21460749a1b1a6aa7eb61a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 287537098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &287537101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287537099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f4a6711ecaf904a8a8d74699e303dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 287537100}
+  volumeChange: 0
 --- !u!1 &328996442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,7 +1575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 328996443}
   m_Layer: 0
-  m_Name: LoadZones
+  m_Name: Load Zones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2417,12 +2530,12 @@ PrefabInstance:
     - target: {fileID: 1627412411814251782, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.0899997
+      value: 3.99
       objectReference: {fileID: 0}
     - target: {fileID: 1627412411814251782, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15.07
+      value: -14.97
       objectReference: {fileID: 0}
     - target: {fileID: 1627412411814251782, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
@@ -2678,8 +2791,8 @@ MonoBehaviour:
   DialogueBoxReference: {fileID: 1553681099}
   DialogueTextReference: {fileID: 1553681093}
   TextArray:
-  - This podium looks dusty except for the space in the middle. Should I set something
-    here?
+  - 'The inscription on the bottom reads: "When you try to play god" Should I set
+    something here?'
   TextArrayIndex: 0
   IsQuestion: 1
   IsSpecial: 1
@@ -2751,7 +2864,7 @@ MonoBehaviour:
   AlreadyComplete: 0
   ID: 1017
   PlacedItem: {fileID: 0}
-  RequiredItem: {fileID: 0}
+  RequiredItem: {fileID: 11400000, guid: 0af727bf61c2db54897bc6ae9c74bfab, type: 2}
 --- !u!1 &636606313
 GameObject:
   m_ObjectHideFlags: 0
@@ -3777,8 +3890,8 @@ MonoBehaviour:
   DialogueBoxReference: {fileID: 1553681099}
   DialogueTextReference: {fileID: 1553681093}
   TextArray:
-  - This podium looks dusty except for the space in the middle. Should I set something
-    here?
+  - 'The inscription on the bottom reads: "you invite Sin." Should I set something
+    here?'
   TextArrayIndex: 0
   IsQuestion: 1
   IsSpecial: 1
@@ -3850,7 +3963,7 @@ MonoBehaviour:
   AlreadyComplete: 0
   ID: 1018
   PlacedItem: {fileID: 0}
-  RequiredItem: {fileID: 0}
+  RequiredItem: {fileID: 11400000, guid: 10bd5bce661fd144cafa983a67999f7b, type: 2}
 --- !u!1001 &851985428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3867,12 +3980,12 @@ PrefabInstance:
     - target: {fileID: 660729248335287817, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.79
+      value: -4.997
       objectReference: {fileID: 0}
     - target: {fileID: 660729248335287817, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.2
+      value: 6.193
       objectReference: {fileID: 0}
     - target: {fileID: 660729248335287817, guid: 37a7ab54d42670e4b974904b087b9837,
         type: 3}
@@ -4272,7 +4385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 901459461}
   m_Layer: 0
-  m_Name: EnvironmentItems
+  m_Name: Environment Items
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4536,12 +4649,12 @@ PrefabInstance:
     - target: {fileID: 1627412411814251782, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.37
+      value: -12.89
       objectReference: {fileID: 0}
     - target: {fileID: 1627412411814251782, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.94
+      value: 5.03
       objectReference: {fileID: 0}
     - target: {fileID: 1627412411814251782, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
@@ -8317,11 +8430,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1781394542}
     m_Modifications:
     - target: {fileID: 536453502, guid: c56922d6c3b879e4bb78c8b4e67417b2, type: 3}
-      propertyPath: EmptySlot
-      value: 
-      objectReference: {fileID: 21300000, guid: be7257a53c9045e4db8e4b0f4a2ff891,
-        type: 3}
-    - target: {fileID: 536453502, guid: c56922d6c3b879e4bb78c8b4e67417b2, type: 3}
       propertyPath: MainPlayer
       value: 
       objectReference: {fileID: 1024704800}
@@ -8439,9 +8547,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3664987782546573376, guid: c56922d6c3b879e4bb78c8b4e67417b2,
+        type: 3}
+      propertyPath: m_TagString
+      value: MenuBook
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 9029517636857307772, guid: c56922d6c3b879e4bb78c8b4e67417b2, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56922d6c3b879e4bb78c8b4e67417b2, type: 3}
