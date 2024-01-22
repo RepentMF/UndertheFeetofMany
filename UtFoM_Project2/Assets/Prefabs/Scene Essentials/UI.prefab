@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 536453502}
   m_Layer: 5
   m_Name: ActivePage
-  m_TagString: Untagged
+  m_TagString: ActivePage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,7 +210,7 @@ MonoBehaviour:
   - {fileID: 1911651654}
   - {fileID: 786756133705315484}
   - {fileID: 1826164958340764834}
-  ActivePage: 0
+  ActivePage: 1
   Selector: 0
   MainInventory: {fileID: 0}
   TrinketImages:
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 279641189997281724}
   m_Layer: 5
   m_Name: PauseMenu
-  m_TagString: Untagged
+  m_TagString: PauseMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3044,7 +3044,7 @@ GameObject:
   - component: {fileID: 824030230810935874}
   m_Layer: 0
   m_Name: menubook
-  m_TagString: Untagged
+  m_TagString: MenuBook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

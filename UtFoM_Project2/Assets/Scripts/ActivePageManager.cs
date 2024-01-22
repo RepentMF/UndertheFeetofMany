@@ -21,7 +21,7 @@ public class ActivePageManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //MainPlayer = FindObjectOfType<PlayerController>();
+        MainPlayer = FindObjectOfType<PlayerController>();
         MainStats = MainPlayer.GetComponent<Stats>();
         MainInventory = MainPlayer.GetComponent<Inventory>();
     }
@@ -102,6 +102,19 @@ public class ActivePageManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (MainPlayer == null)
+        {
+            MainPlayer = FindObjectOfType<PlayerController>();
+            MainStats = MainPlayer.GetComponent<Stats>();
+            MainInventory = MainPlayer.GetComponent<Inventory>();
+
+            MainPlayer.PauseMenuReference = GetComponentInParent<PauseMenu>().gameObject;
+            MainPlayer.BookInfoReference = this.gameObject;
+            MainPlayer.ActivePageManagerReference = GetComponent<ActivePageManager>();
+            // above 3 lines did not work, since PauseMenu and ActivePageManager are disabled at Start()
+            // likely need a Component/ Script on "UI" that will assign its children at Start()
+        }
+
         if (!GameStateManager.Instance.IsGameplay())
         {
             if (MainInventory.InteractableTarget != null)

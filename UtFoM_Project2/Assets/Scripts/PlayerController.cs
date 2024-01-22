@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,11 +8,12 @@ public class PlayerController : GenericSingleton<PlayerController>
 {
     private delegate void ActionDelegate();
     private ActionDelegate Action;
-    [SerializeField] private GameObject PauseMenuReference;
+    [SerializeField] public GameObject PauseMenuReference;
     [SerializeField] private GameObject StatsBookReference;
-    [SerializeField] private GameObject BookInfoReference;
+    [SerializeField] public GameObject BookInfoReference;
     [SerializeField] private ContextClue ContextClue;
-    private ActivePageManager ActivePageManagerReference;
+    public ActivePageManager ActivePageManagerReference;
+    private bool UISearch;
     private bool IsSceneItemInRange = false;
     private bool IsInteractableInRange = false;
     public bool IsInteracting = false;
@@ -826,19 +828,6 @@ public class PlayerController : GenericSingleton<PlayerController>
         StateManagerScript = this.gameObject.GetComponent<StateManager>();
         StatsScript = this.gameObject.GetComponent<Stats>();
         StatusModScript = this.gameObject.GetComponent<StatusMod>();
-        
-        Debug.Log(ScreenCount);
-        if (ScreenCount != 0)
-        {
-            PauseMenuReference = FindObjectOfType<PauseMenu>().gameObject;
-            StatsBookReference = GameObject.FindWithTag("MenuBook");
-            BookInfoReference = FindObjectOfType<ActivePageManager>().gameObject;
-        }
-
-        ScreenCount++;
-        
-        Debug.Log(ScreenCount);
-
         // Subscribe to events
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
         // Initialize variables
@@ -866,6 +855,31 @@ public class PlayerController : GenericSingleton<PlayerController>
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (FindObjectOfType<RoomManager>().sceneChange)
+        {
+            UISearch = true;
+        }
+
+        try
+        {    
+            if (UISearch)
+            {
+                foreach (GameObject obj in FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[])
+                {
+                    if (obj.tag == "MenuBook")
+                    {
+                        StatsBookReference = obj.gameObject;
+                    }
+                }
+                UISearch = false;
+            }
+        }
+        catch (NullReferenceException e)
+        {
+            Debug.Log("this isn't working :(");
+        }
+        
+        
         if (CurrentScene != NextScene)
         {
             CurrentScene = NextScene;
