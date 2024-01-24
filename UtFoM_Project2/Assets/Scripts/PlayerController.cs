@@ -13,7 +13,7 @@ public class PlayerController : GenericSingleton<PlayerController>
     [SerializeField] public GameObject BookInfoReference;
     [SerializeField] private ContextClue ContextClue;
     public ActivePageManager ActivePageManagerReference;
-    private bool UISearch;
+    public bool UISearch;
     private bool IsSceneItemInRange = false;
     private bool IsInteractableInRange = false;
     public bool IsInteracting = false;
@@ -864,11 +864,27 @@ public class PlayerController : GenericSingleton<PlayerController>
         {    
             if (UISearch)
             {
+                Debug.Log("UI Search is turned on");
                 foreach (GameObject obj in FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[])
                 {
-                    if (obj.tag == "MenuBook")
+                    if (obj.tag == "MenuBook" && obj.activeInHierarchy)
                     {
                         StatsBookReference = obj.gameObject;
+                    }
+                    else if (obj.tag == "PauseMenu" && obj.activeInHierarchy)
+                    {
+                        PauseMenuReference = obj.gameObject;
+                        PauseMenuReference.SetActive(false);
+                    }
+                    else if (obj.tag == "ActivePage" && obj.activeInHierarchy)
+                    {
+                        BookInfoReference = obj.gameObject;
+                        ActivePageManagerReference = obj.GetComponent<ActivePageManager>();
+                        BookInfoReference.SetActive(false);
+                        ActivePageManagerReference.MainPlayer = this.gameObject.GetComponent<PlayerController>();
+                        ActivePageManagerReference.MainInventory = InventoryScript;
+                        ActivePageManagerReference.MainStats = StatsScript;
+
                     }
                 }
                 UISearch = false;

@@ -176,7 +176,6 @@ public class RoomManager : GenericSingleton<RoomManager>
             //Put puzzle data in a list of strings
             puzzleSetupStrings.Add(s);
         }
-
         
         string[] saveFileArray = System.IO.File.ReadAllLines(@"puzzles.txt");
         List<string> saveFileList = saveFileArray.ToList();
@@ -192,6 +191,21 @@ public class RoomManager : GenericSingleton<RoomManager>
 
             //UpdateEntityInRoom(PuzzleTable, s, ", ");
         }
+        
+        // saving and loading from 1/22/2024
+        // List<PuzzleManager> puzzleManagers = new List<PuzzleManager>();
+
+        // foreach (PuzzleManager puzzle in FindObjectsOfType<PuzzleManager>(true))
+        // {
+        //     puzzleManagers.Add(puzzle);
+        // }
+
+        // foreach (PuzzleManager puzzle in puzzleManagers)
+        // {
+        //     Debug.Log(puzzle);
+        // }
+        // Debug.Break();
+
 
         // foreach (string s in saveFileList)
         // {

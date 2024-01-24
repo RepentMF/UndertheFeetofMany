@@ -779,6 +779,7 @@ GameObject:
   - component: {fileID: 5829869062835696444}
   - component: {fileID: 861862747}
   - component: {fileID: 1792509787}
+  - component: {fileID: 5761424318684882261}
   m_Layer: 0
   m_Name: Player
   m_TagString: P1
@@ -806,7 +807,7 @@ Transform:
   - {fileID: 140675905}
   - {fileID: 1191717083}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &660729248335287816
 SpriteRenderer:
@@ -1075,6 +1076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f271be6d1fec1ef48852ad1c393fc999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractableTarget: {fileID: 0}
   EquippedWeapon: {fileID: 0}
   EquippedTrinkets: []
   SpellsList: []
@@ -1171,7 +1173,12 @@ MonoBehaviour:
   PauseMenuReference: {fileID: 0}
   StatsBookReference: {fileID: 0}
   BookInfoReference: {fileID: 0}
+  ContextClue: {fileID: 0}
+  ActivePageManagerReference: {fileID: 0}
+  UISearch: 1
   IsInteracting: 0
+  InteractableTarget: {fileID: 0}
+  ScreenCount: 0
   MovementSpeed: 6
   DodgeSpeed: 6
   DodgeCost: 5
@@ -1211,6 +1218,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f815a5eddf94a94399f4d25c724fb1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5761424318684882261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660729248335287819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b27f6ecc7fed33847b4f34b2bd4c58d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextClue: {fileID: 2333033232175709098}
 --- !u!1 &660729248390061051
 GameObject:
   m_ObjectHideFlags: 0
@@ -3965,8 +3985,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -136105217
-  m_SortingLayer: 2
+  m_SortingLayerID: -104542193
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: -2145526423577615361, guid: ab06e81073c429d498491445e955d57b,
     type: 3}
