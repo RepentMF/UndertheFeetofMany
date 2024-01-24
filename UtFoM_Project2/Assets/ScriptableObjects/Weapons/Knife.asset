@@ -18,7 +18,7 @@ MonoBehaviour:
   InventorySprite: {fileID: 21300000, guid: ec31afd35e5e3014782208e17cd369b6, type: 3}
   OverworldSprite: {fileID: 21300000, guid: ec31afd35e5e3014782208e17cd369b6, type: 3}
   LightAttackAnimationName: Knife
-  LightAttackAnimationTimer: -1
+  LightAttackAnimationTimer: 0.6666667
   OriginalLightAttackBufferThreshold: 0
   LightAttackBufferThreshold: 0.1667
   OriginalLightAttackDamage: 1.25
@@ -28,13 +28,13 @@ MonoBehaviour:
   LightAttackStatusesToInflict: []
   LightAttackExecuteDamage: 0
   MediumAttackAnimationName: Knife2
-  MediumAttackAnimationTimer: -1
+  MediumAttackAnimationTimer: 0.6666667
   OriginalMediumAttackBufferThreshold: 0
   MediumAttackBufferThreshold: 0.1667
   OriginalMediumAttackDamage: 1.25
   MediumAttackDamage: 0
   LaunchAttackAnimationName: Knife
-  LaunchAttackAnimationTimer: -1
+  LaunchAttackAnimationTimer: 0.6666667
   OriginalLaunchAttackBufferThreshold: 0
   LaunchAttackBufferThreshold: 0.1667
   OriginalLaunchAttackDamage: 1.25
@@ -44,7 +44,7 @@ MonoBehaviour:
   LaunchAttackStatusesToInflict: []
   LaunchAttackExecuteDamage: 0
   HeavyAttackAnimationName: Knife
-  HeavyAttackAnimationTimer: -1
+  HeavyAttackAnimationTimer: 0.6666667
   OriginalHeavyAttackBufferThreshold: 0
   HeavyAttackBufferThreshold: 0.1667
   OriginalHeavyAttackDamage: 1.25

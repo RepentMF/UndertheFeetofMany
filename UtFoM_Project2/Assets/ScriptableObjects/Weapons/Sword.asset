@@ -18,7 +18,7 @@ MonoBehaviour:
   InventorySprite: {fileID: 21300000, guid: bbeffe6d98912784ebcbff4e83d229cf, type: 3}
   OverworldSprite: {fileID: 21300000, guid: bbeffe6d98912784ebcbff4e83d229cf, type: 3}
   LightAttackAnimationName: Sword
-  LightAttackAnimationTimer: -1
+  LightAttackAnimationTimer: 0.6666667
   OriginalLightAttackBufferThreshold: 0
   LightAttackBufferThreshold: 0.08333
   OriginalLightAttackDamage: 1.5
@@ -28,7 +28,7 @@ MonoBehaviour:
   LightAttackStatusesToInflict: []
   LightAttackExecuteDamage: 0
   MediumAttackAnimationName: Sword2
-  MediumAttackAnimationTimer: -1
+  MediumAttackAnimationTimer: 0.8333333
   OriginalMediumAttackBufferThreshold: 0
   MediumAttackBufferThreshold: 0.0833
   OriginalMediumAttackDamage: 1.5
@@ -44,7 +44,7 @@ MonoBehaviour:
   LaunchAttackStatusesToInflict: []
   LaunchAttackExecuteDamage: 0
   HeavyAttackAnimationName: Sword3
-  HeavyAttackAnimationTimer: -1
+  HeavyAttackAnimationTimer: 1
   OriginalHeavyAttackBufferThreshold: 0
   HeavyAttackBufferThreshold: 0
   OriginalHeavyAttackDamage: 3

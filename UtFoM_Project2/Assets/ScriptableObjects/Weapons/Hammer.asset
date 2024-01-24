@@ -18,7 +18,7 @@ MonoBehaviour:
   InventorySprite: {fileID: 21300000, guid: c4fa08e94a8b5ca40a099320cc410e9a, type: 3}
   OverworldSprite: {fileID: 21300000, guid: 519d4e80691f83847b6436404aec5d0e, type: 3}
   LightAttackAnimationName: Hammer
-  LightAttackAnimationTimer: -1
+  LightAttackAnimationTimer: 1.25
   OriginalLightAttackBufferThreshold: 0
   LightAttackBufferThreshold: 0.25
   OriginalLightAttackDamage: 2
@@ -28,13 +28,13 @@ MonoBehaviour:
   LightAttackStatusesToInflict: []
   LightAttackExecuteDamage: 0
   MediumAttackAnimationName: Hammer2
-  MediumAttackAnimationTimer: -1
+  MediumAttackAnimationTimer: 1
   OriginalMediumAttackBufferThreshold: 0
   MediumAttackBufferThreshold: 0.25
   OriginalMediumAttackDamage: 2
   MediumAttackDamage: 2
   LaunchAttackAnimationName: Hammer3
-  LaunchAttackAnimationTimer: -1
+  LaunchAttackAnimationTimer: 1
   OriginalLaunchAttackBufferThreshold: 0
   LaunchAttackBufferThreshold: 0.25
   OriginalLaunchAttackDamage: 2
@@ -44,7 +44,7 @@ MonoBehaviour:
   LaunchAttackStatusesToInflict: []
   LaunchAttackExecuteDamage: 0
   HeavyAttackAnimationName: Hammer4
-  HeavyAttackAnimationTimer: -1
+  HeavyAttackAnimationTimer: 1.0833334
   OriginalHeavyAttackBufferThreshold: 0
   HeavyAttackBufferThreshold: 0
   OriginalHeavyAttackDamage: 3

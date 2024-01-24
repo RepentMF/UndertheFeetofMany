@@ -32,7 +32,7 @@ public class SceneItem : MonoBehaviour
 #nullable enable
     public void PickUp(Inventory? inventory)
     {
-        if (inventory != null)
+        if (inventory != null && StateManagerScript.CurrentState != ActionState.Death)
         {
             inventory.AddItem(ItemData);
         }

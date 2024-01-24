@@ -3873,6 +3873,12 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
   m_UseDelaunayMesh: 0
+--- !u!1 &331868308 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3312632761388450847, guid: c56922d6c3b879e4bb78c8b4e67417b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1882577178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &379242408
 GameObject:
   m_ObjectHideFlags: 0
@@ -6114,6 +6120,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FadeSpeed: 1
+--- !u!114 &1345292168 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3312632762114326590, guid: c56922d6c3b879e4bb78c8b4e67417b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1882577178}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1355308498
 GameObject:
   m_ObjectHideFlags: 0
@@ -7211,8 +7229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1dee7cb1b09c82488292d97716ac932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueBoxReference: {fileID: 0}
-  DialogueTextReference: {fileID: 0}
+  DialogueBoxReference: {fileID: 331868308}
+  DialogueTextReference: {fileID: 1345292168}
   TextArray:
   - Oh! Hey there! Did you have a good nap?
   - "What\u2019s wrong? Why do you look so anxious?"
@@ -8037,8 +8055,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1dee7cb1b09c82488292d97716ac932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueBoxReference: {fileID: 0}
-  DialogueTextReference: {fileID: 0}
+  DialogueBoxReference: {fileID: 331868308}
+  DialogueTextReference: {fileID: 1345292168}
   TextArray:
   - Soo- what do you think of my new haircut?
   - "Oh! You got a haircut? That\u2019s great!"
@@ -8934,8 +8952,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1dee7cb1b09c82488292d97716ac932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueBoxReference: {fileID: 0}
-  DialogueTextReference: {fileID: 0}
+  DialogueBoxReference: {fileID: 331868308}
+  DialogueTextReference: {fileID: 1345292168}
   TextArray:
   - Ashe, my wee friend- how are you?
   - Could be better, Mr. Garfield. Are your crops doing well?

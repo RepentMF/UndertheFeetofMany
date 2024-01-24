@@ -864,7 +864,6 @@ public class PlayerController : GenericSingleton<PlayerController>
         {    
             if (UISearch)
             {
-                Debug.Log("UI Search is turned on");
                 foreach (GameObject obj in FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[])
                 {
                     if (obj.tag == "MenuBook" && obj.activeInHierarchy)
@@ -900,7 +899,7 @@ public class PlayerController : GenericSingleton<PlayerController>
         {
             CurrentScene = NextScene;
         }
-
+        
         CheckAttackTimer();
         CheckDodgeTimer();
         if (StateManagerScript.CurrentState == ActionState.Dodge)
