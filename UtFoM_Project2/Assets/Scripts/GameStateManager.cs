@@ -80,4 +80,9 @@ public class GameStateManager : GenericSingleton<GameStateManager>
         InputControllerScript = new InputController();
         StartGameplay();
     }
+    
+    void FixedUpdate()
+    {
+        //Debug.Log(CurrentGameState);
+    }
 }

@@ -19,9 +19,9 @@ public class SSSouthwestWellPuzzleManager : PuzzleManager
         }
     }
 
-    void OnTriggerExit2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("P1") && FindObjectOfType<PlayerController>().IsInteracting)
+        if(collision.CompareTag("P1"))
 		{  
             PuzzleCompleted = true;
         }

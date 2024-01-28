@@ -74,6 +74,8 @@ public class RoomManager : GenericSingleton<RoomManager>
                         FindObjectsOfType<EnemyInfo>(true)[i].HasBeenDefeated = bool.Parse(words[1]);
                         FindObjectsOfType<EnemyInfo>(true)[i].DeathPlace.x = float.Parse(words[2].Substring(2));
                         FindObjectsOfType<EnemyInfo>(true)[i].DeathPlace.y = float.Parse(words[3]);
+
+                        FindObjectsOfType<EnemyInfo>(true)[i].transform.position = new Vector3(float.Parse(words[2].Substring(2)), float.Parse(words[3]), FindObjectsOfType<EnemyInfo>(true)[i].transform.position.z);
                     }
                 }
             }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TCBookSlotPuzzleManager : PuzzleManager
 {
+    public SceneTransition loadZone;
+
     public override void SetupSpecialPuzzle(bool Confirm)
     {
         if (Confirm)
@@ -45,6 +47,7 @@ public class TCBookSlotPuzzleManager : PuzzleManager
             if (ID == 1020)
             {
                 this.gameObject.transform.position = new Vector3 (this.gameObject.transform.position.x, -3.33f, this.gameObject.transform.position.y);
+                loadZone.gameObject.SetActive(true);
             }
         }
         else

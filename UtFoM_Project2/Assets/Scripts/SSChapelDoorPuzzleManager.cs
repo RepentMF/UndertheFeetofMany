@@ -37,7 +37,6 @@ public class SSChapelDoorPuzzleManager : PuzzleManager
                 elisiaFlag = pm.PuzzleCompleted;
             }
         }
-        //Debug.Log(elisiaFlag);
 
         if (PuzzleCompleted && !AlreadyComplete)
         {
@@ -46,7 +45,7 @@ public class SSChapelDoorPuzzleManager : PuzzleManager
         else if (elisiaFlag)
         {
             PuzzleCompleted = true;
-            AlreadyComplete = true;
+            //AlreadyComplete = true;
         }
     }
 }

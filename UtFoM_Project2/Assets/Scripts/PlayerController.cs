@@ -16,7 +16,6 @@ public class PlayerController : GenericSingleton<PlayerController>
     public bool UISearch;
     private bool IsSceneItemInRange = false;
     private bool IsInteractableInRange = false;
-    public bool IsInteracting = false;
     private SceneItem SceneItemTarget;
     public Interactable InteractableTarget;
     private string CurrentAttackAnimationName = "";
@@ -645,23 +644,23 @@ public class PlayerController : GenericSingleton<PlayerController>
 
     public void OnInteract()
     {
-        IsInteracting = true;
         InteractableTarget.Interact();
     }
 
-    private void OnEndInteraction()
-    {
-        if (IsInteractableInRange)
-        {
-            if (InteractableTarget.IsQuestion)
-            {
-                // Send this to whatever function needs a flag changed
-                DecideConfirmDeny();
-            }
-            IsInteracting = false;
-            InteractableTarget.EndInteraction();
-        }
-    }
+    // Found out was not doing anything, removing function 1/26/24
+    // private void OnEndInteraction()
+    // {
+    //     if (IsInteractableInRange)
+    //     {
+    //         if (InteractableTarget.IsQuestion)
+    //         {
+    //             // Send this to whatever function needs a flag changed
+    //             DecideConfirmDeny();
+    //         }
+    //         IsInteracting = false;
+    //         InteractableTarget.EndInteraction();
+    //     }
+    // }
 
     public bool DecideConfirmDeny()
     {
@@ -855,11 +854,6 @@ public class PlayerController : GenericSingleton<PlayerController>
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (FindObjectOfType<RoomManager>().sceneChange)
-        {
-            UISearch = true;
-        }
-
         try
         {    
             if (UISearch)
@@ -874,6 +868,7 @@ public class PlayerController : GenericSingleton<PlayerController>
                     {
                         PauseMenuReference = obj.gameObject;
                         PauseMenuReference.SetActive(false);
+                        //Debug.Break();
                     }
                     else if (obj.tag == "ActivePage" && obj.activeInHierarchy)
                     {

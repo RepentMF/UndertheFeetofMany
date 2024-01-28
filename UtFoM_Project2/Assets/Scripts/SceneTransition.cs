@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
 	public string sceneToLoad;
+	public bool startTransition;
 	public Vector2 playerPosition;
 	public Vector2 playerDirection;
 	public GameObject fadeInPanel;
@@ -44,10 +45,12 @@ public class SceneTransition : MonoBehaviour
 	{
 		if(collision.CompareTag("P1") && !collision.isTrigger)
 		{
+			startTransition = true;
 			collision.GetComponent<PlayerController>().transform.position = playerPosition;
 			collision.GetComponent<PlayerController>().SetAnimatorFloats(playerDirection);
 			collision.GetComponent<PlayerController>().NextScene = sceneToLoad;
 			FindObjectOfType<MusicPlayerController>().volumeChange = true;
+			GameObject.FindWithTag("Minimap").gameObject.SetActive(false);
 			StartCoroutine(FadeCo());
 		}
 	}
@@ -56,10 +59,12 @@ public class SceneTransition : MonoBehaviour
 	{
 		if (enter)
 		{
+			startTransition = true;
 			GameObject.FindObjectOfType<PlayerController>().transform.position = playerPosition;
 			GameObject.FindObjectOfType<PlayerController>().SetAnimatorFloats(playerDirection);
 			GameObject.FindObjectOfType<PlayerController>().NextScene = sceneToLoad;
-			
+			FindObjectOfType<MusicPlayerController>().volumeChange = true;
+			GameObject.FindWithTag("Minimap").gameObject.SetActive(false);
 			StartCoroutine(FadeCo());
 		}
 		
@@ -78,7 +83,17 @@ public class SceneTransition : MonoBehaviour
 		while (!asyncOperation.isDone)
 		{
 			FindObjectOfType<RoomManager>().sceneChange = true;
+			startTransition = false;
+			FindObjectOfType<PlayerController>().UISearch = true;
 			yield return null;
+		}
+	}
+
+	void FixedUpdate()
+	{
+		if(RoomScript == null)
+		{
+			RoomScript = FindObjectOfType<RoomManager>();
 		}
 	}
 }

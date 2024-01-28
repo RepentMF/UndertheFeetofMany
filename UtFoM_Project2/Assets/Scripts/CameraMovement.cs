@@ -18,21 +18,26 @@ public class CameraMovement : MonoBehaviour
     	difference.y = maxPosition.y - minPosition.y;
 	}
 
-    // Start is called before the first frame update
-    void Start()
-    {
-		
-    }
-
     // Update is called once per frame
     void LateUpdate()
-    {
-    	if (target == null)
+    {	
+		bool startTransition = false;
+		foreach (SceneTransition st in FindObjectsOfType<SceneTransition>())
+		{
+			if (st.startTransition)
+			{
+				target = this.gameObject.transform;
+				target.transform.position = this.gameObject.transform.position;
+				startTransition = true;
+			}
+		}
+		
+		if (!startTransition)
     	{
 			target = GameObject.FindWithTag("P1").transform;
     	}
 
-		if (transform.position != target.position)
+		if (transform.position != target.position && !startTransition)
 		{
 			Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
 			targetPosition.x = Mathf.Clamp(targetPosition.x, minPosition.x, maxPosition.x);
