@@ -169,61 +169,80 @@ public class RoomManager : GenericSingleton<RoomManager>
 
     public void ObservePuzzlesInRoom()
     {
+        // Make a setup list for setting up strings
         List<string> puzzleSetupStrings = new List<string>();
 
+        // Look at all of the puzzles in the current scene
         for (int i = 0; i < FindObjectsOfType<PuzzleManager>(true).Length; i++)
         {
-            //Grab puzzle data
+            //Grab puzzle data for their ID and their puzzle completed boolean
             string s = FindObjectsOfType<PuzzleManager>(true)[i].ID + ", " + FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted;
-            //Put puzzle data in a list of strings
+            //And put that puzzle data in a list of strings
             puzzleSetupStrings.Add(s);
         }
-        
+
+        // Grab save data that's in the game's save file and put it in a temporary string array
         string[] saveFileArray = System.IO.File.ReadAllLines(@"puzzles.txt");
+        // And put that string array into a string list
         List<string> saveFileList = saveFileArray.ToList();
+        // Iterate through the save data list
         foreach (string s in saveFileArray)
         {
+        // Iterate through the current scene list
             for (int i = 0; i < puzzleSetupStrings.Count; i++)
             {
+        // Compare the data from the two lists and remove it if the data exists in both lists
                 if (s.Contains(FindObjectsOfType<PuzzleManager>(true)[i].ID + ", "))
                 {
                     saveFileList.Remove(s);
                 }
             }
-
-            //UpdateEntityInRoom(PuzzleTable, s, ", ");
         }
-        
-        // saving and loading from 1/22/2024
-        // List<PuzzleManager> puzzleManagers = new List<PuzzleManager>();
 
-        // foreach (PuzzleManager puzzle in FindObjectsOfType<PuzzleManager>(true))
-        // {
-        //     puzzleManagers.Add(puzzle);
-        // }
-
-        // foreach (PuzzleManager puzzle in puzzleManagers)
-        // {
-        //     Debug.Log(puzzle);
-        // }
-        // Debug.Break();
-
-
-        // foreach (string s in saveFileList)
-        // {
-        //     Debug.Log(s);
-        // }
-
-        // foreach (string s in puzzleSetupStrings)
-        // {
-        //     Debug.Log(s);
-        // }
-        // Debug.Log("STOP");
-
-        //Write the strings to a JSON file
+        // Clear the strings from the save file
         System.IO.File.WriteAllText(@"puzzles.txt", String.Empty);
+        // Write the save data list to the save file
         System.IO.File.WriteAllLines(@"puzzles.txt", saveFileList);
+        // Write the current scene data list to the save file
         System.IO.File.AppendAllLines(@"puzzles.txt", puzzleSetupStrings);
+    }
+
+    public void NewObservePuzzlesInRoom()
+    {   
+        // Look at all of the puzzles in the current scene
+        List<PuzzleManager> currentScenePuzzles = FindObjectsOfType<PuzzleManager>(true).ToList();
+        // Make a setup list for setting up strings
+        List<string> puzzleSetupStrings = new List<string>();
+        foreach (PuzzleManager puzzle in currentScenePuzzles)
+        {
+            puzzleSetupStrings.Add(JsonUtility.ToJson(puzzle));
+        }
+
+        // Grab save data that's in the game's save file and put it in a temporary string array
+        string[] saveDataArray = System.IO.File.ReadAllLines(@"puzzles.json");
+        // And put that string array into a string list
+        List<string> saveDataStrings = saveDataArray.ToList();
+        
+        // Iterate through the save data list
+        foreach (string s in saveDataArray)
+        {
+        // Iterate through the current scene list
+            for (int i = 0; i < puzzleSetupStrings.Count; i++)
+            {
+        // Compare the data from the two lists and remove it if the data exists in both lists
+                if (s.Contains(FindObjectsOfType<PuzzleManager>(true)[i].ID.ToString()))
+                {
+                    saveDataStrings.Remove(s);
+                }
+            }
+        }
+
+        // Clear the strings from the save file
+        System.IO.File.WriteAllText(@"puzzles.json", String.Empty);
+        // Write the save data list to the save file
+        System.IO.File.WriteAllLines(@"puzzles.json", saveDataStrings);
+        // Write the current scene data list to the save file
+        System.IO.File.AppendAllLines(@"puzzles.json", puzzleSetupStrings);
     }
     
     private void OnGameStateChanged(GameState newGameState)

@@ -24,6 +24,7 @@ public class TPJennaPuzzleManager : PuzzleManager
         this.gameObject.GetComponent<SceneNPC>().CurrentDialogue = this.gameObject.GetComponent<SceneNPC>().AllDialouges.Count - 1;
         PuzzleCompleted = true;
         FindObjectsOfType<RoomManager>(true)[0].ObservePuzzlesInRoom();
+        FindObjectsOfType<RoomManager>(true)[0].NewObservePuzzlesInRoom();
     }
 
     // Update is called once per frame

@@ -31,6 +31,7 @@ public class SSSouthwestWellPuzzleManager : PuzzleManager
     {
         PuzzleCompleted = true;
         FindObjectsOfType<RoomManager>(true)[0].ObservePuzzlesInRoom();
+        FindObjectsOfType<RoomManager>(true)[0].NewObservePuzzlesInRoom();
     }
 
     // Update is called once per frame
