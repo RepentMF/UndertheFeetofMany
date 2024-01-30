@@ -139,7 +139,7 @@ PrefabInstance:
     - target: {fileID: 245407535136055661, guid: 1300eb6d246ffd946b7a8d7678ffe72e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 245407535136055662, guid: 1300eb6d246ffd946b7a8d7678ffe72e,
         type: 3}
@@ -261,7 +261,7 @@ MonoBehaviour:
   HasBeenDefeated: 0
   gameCounter: 0
   LightFadeSpeed: 1
-  ID: 206
+  ID: -1
   LifeBlood: 2
   CorpseObjectScript: {fileID: 0}
   LifeBloodParticleSystemScript: {fileID: 3884911629036381764, guid: 566b7e3cb0b703d4f98c7b87bc5fadf0,
@@ -476,10 +476,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7927480335806747548, guid: b2a5bec6d645c4243932fe503b7079fc, type: 3}
+    - {fileID: 4836934105699769462, guid: b2a5bec6d645c4243932fe503b7079fc, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5978610147487176097, guid: b2a5bec6d645c4243932fe503b7079fc,
         type: 3}
-      insertIndex: 0
+      insertIndex: -1
       addedObject: {fileID: 177829018}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2a5bec6d645c4243932fe503b7079fc, type: 3}
@@ -648,7 +649,7 @@ PrefabInstance:
     - target: {fileID: 4061497060525302135, guid: 5883e776d846dfd489280c2d2150602d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8313175503457220305, guid: 5883e776d846dfd489280c2d2150602d,
         type: 3}
@@ -811,7 +812,7 @@ MonoBehaviour:
   HasBeenDefeated: 0
   gameCounter: 0
   LightFadeSpeed: 1
-  ID: 205
+  ID: -1
   LifeBlood: 2
   CorpseObjectScript: {fileID: 0}
   LifeBloodParticleSystemScript: {fileID: 3884911629036381764, guid: 566b7e3cb0b703d4f98c7b87bc5fadf0,
@@ -835,7 +836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &361140746
 RectTransform:
   m_ObjectHideFlags: 0
@@ -947,7 +948,7 @@ MonoBehaviour:
   HasBeenDefeated: 0
   gameCounter: 0
   LightFadeSpeed: 1
-  ID: 207
+  ID: -1
   LifeBlood: 2
   CorpseObjectScript: {fileID: 0}
   LifeBloodParticleSystemScript: {fileID: 3884911629036381764, guid: 566b7e3cb0b703d4f98c7b87bc5fadf0,
@@ -1023,6 +1024,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627412411814251781, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
+        type: 3}
+      propertyPath: ID
+      value: 301
       objectReference: {fileID: 0}
     - target: {fileID: 1627412411814251781, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
@@ -1168,7 +1174,7 @@ PrefabInstance:
     - target: {fileID: 1627412411814251781, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
       propertyPath: ID
-      value: 3
+      value: 303
       objectReference: {fileID: 0}
     - target: {fileID: 1627412411814251781, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
@@ -1349,7 +1355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &749507256
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1461,7 +1467,7 @@ MonoBehaviour:
   HasBeenDefeated: 0
   gameCounter: 0
   LightFadeSpeed: 1
-  ID: 204
+  ID: -1
   LifeBlood: 2
   CorpseObjectScript: {fileID: 0}
   LifeBloodParticleSystemScript: {fileID: 3884911629036381764, guid: 566b7e3cb0b703d4f98c7b87bc5fadf0,
@@ -3245,6 +3251,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019320099}
   m_CullTransparentMesh: 0
+--- !u!1 &1146247343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1146247344}
+  - component: {fileID: 1146247345}
+  m_Layer: 6
+  m_Name: Enemy Minimap Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1146247344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146247343}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.6899996, y: 0.029999971, z: 0}
+  m_LocalScale: {x: 0.59999996, y: 0.59999996, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1345063083}
+  m_Father: {fileID: 1924350091}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1146247345
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146247343}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1462539655
+  m_SortingLayer: 10
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f,
+    type: 3}
+  m_Color: {r: 1, g: 0.5896226, b: 0.7376969, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1149037476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3255,7 +3347,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 624107321, guid: 016d247afea7c2846927407433735bc1, type: 3}
       propertyPath: ID
-      value: 201
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 624107321, guid: 016d247afea7c2846927407433735bc1, type: 3}
       propertyPath: m_Enabled
@@ -3395,6 +3487,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 6654852442941469577, guid: 016d247afea7c2846927407433735bc1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6654852443872453840, guid: 016d247afea7c2846927407433735bc1,
         type: 3}
@@ -3713,7 +3810,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1301104148
 Transform:
   m_ObjectHideFlags: 0
@@ -3730,6 +3827,91 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1345063082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1345063083}
+  - component: {fileID: 1345063084}
+  m_Layer: 6
+  m_Name: Enemy Minimap Tracker Outline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1345063083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345063082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1146247344}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1345063084
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345063082}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1462539655
+  m_SortingLayer: 10
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f,
+    type: 3}
+  m_Color: {r: 0.5943396, g: 0.23829654, b: 0.37443063, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1383234448
 GameObject:
   m_ObjectHideFlags: 0
@@ -3940,7 +4122,7 @@ PrefabInstance:
     - target: {fileID: 2463037215177135060, guid: ef477ef7b1315294ab96bed1e0c5bcec,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3978,7 +4160,7 @@ MonoBehaviour:
   HasBeenDefeated: 0
   gameCounter: 0
   LightFadeSpeed: 1
-  ID: 202
+  ID: -1
   LifeBlood: 2
   CorpseObjectScript: {fileID: 0}
   LifeBloodParticleSystemScript: {fileID: 3884911629036381764, guid: 566b7e3cb0b703d4f98c7b87bc5fadf0,
@@ -4248,6 +4430,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7993906972529507044, guid: 55774240d9eb00546b95aa2a5eeba157,
+        type: 3}
+      propertyPath: SpellOneRange
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: -6232623040607330593, guid: 55774240d9eb00546b95aa2a5eeba157,
         type: 3}
       propertyPath: m_Enabled
@@ -4260,7 +4447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1285928405, guid: 55774240d9eb00546b95aa2a5eeba157, type: 3}
       propertyPath: ID
-      value: 203
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1285928405, guid: 55774240d9eb00546b95aa2a5eeba157, type: 3}
       propertyPath: LifeBlood
@@ -4436,7 +4623,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6513596937173604689, guid: 55774240d9eb00546b95aa2a5eeba157,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1146247344}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55774240d9eb00546b95aa2a5eeba157, type: 3}
 --- !u!224 &1924350091 stripped
@@ -4917,7 +5108,7 @@ PrefabInstance:
     - target: {fileID: 1627412411814251781, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
       propertyPath: ID
-      value: 2
+      value: 302
       objectReference: {fileID: 0}
     - target: {fileID: 1627412411814251781, guid: 67aaf7d4bdca7cb4f882a9d5a3202492,
         type: 3}
