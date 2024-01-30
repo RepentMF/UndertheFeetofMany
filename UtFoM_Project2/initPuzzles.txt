@@ -1,21 +1,13 @@
-1001, False
-1002, False
-1003, False
-1004, False
-1005, False
-1006, False
-1007, False
-1008, False
-1009, False
-1010, False
-1011, False
-1012, False
-1013, False
-1014, False
-1015, False
-1016, False
-1017, False
-1018, False
-1019, False
-1020, False
-1021, False
+{"PuzzleCompleted":false,"AlreadyComplete":false,"ID":1001,"PlacedItem":{"instanceID":0},"RequiredItem":{"instanceID":0}}
+{"PuzzleCompleted":false,"AlreadyComplete":false,"ID":1002,"PlacedItem":{"instanceID":0},"RequiredItem":{"instanceID":0},"TPMapList":[{"instanceID":16292},{"instanceID":15234}],"SpriteRendererScript":{"instanceID":74034}}
+{"PuzzleCompleted":false,"AlreadyComplete":false,"ID":1003,"PlacedItem":{"instanceID":0},"RequiredItem":{"instanceID":0},"ExtraDialouge1":[]}
+{"PuzzleCompleted":false,"AlreadyComplete":false,"ID":1004,"PlacedItem":{"instanceID":0},"RequiredItem":{"instanceID":0},"ExtraDialouge1":[{"instanceID":34118}]}
+{"PuzzleCompleted":false,"AlreadyComplete":false,"ID":1005,"PlacedItem":{"instanceID":0},"RequiredItem":{"instanceID":0},"ExtraDialouge1":[{"instanceID":35110},{"instanceID":32328}],"canHeal":false}
+{"PuzzleCompleted":false,"AlreadyComplete":false,"ID":1006,"PlacedItem":{"instanceID":0},"RequiredItem":{"instanceID":0}}
+{"PuzzleCompleted":false,"AlreadyComplete":false,"ID":1007,"PlacedItem":{"instanceID":0},"RequiredItem":{"instanceID":0}}
+{"PuzzleCompleted":false,"AlreadyComplete":false,"ID":1009,"PlacedItem":{"instanceID":0},"RequiredItem":{"instanceID":0},"ExtraDialouge1":[]}
+{"PuzzleCompleted":false,"AlreadyComplete":false,"ID":1012,"PlacedItem":{"instanceID":0},"RequiredItem":{"instanceID":0},"ExtraDialouge1":[]}
+{"PuzzleCompleted":false,"AlreadyComplete":false,"ID":1016,"PlacedItem":{"instanceID":0},"RequiredItem":{"instanceID":0},"Book1Placed":false,"Book2Placed":false}
+{"PuzzleCompleted":false,"AlreadyComplete":false,"ID":1017,"PlacedItem":{"instanceID":0},"RequiredItem":{"instanceID":33082},"loadZone":{"instanceID":0}}
+{"PuzzleCompleted":false,"AlreadyComplete":false,"ID":1018,"PlacedItem":{"instanceID":0},"RequiredItem":{"instanceID":35010},"loadZone":{"instanceID":0}}
+{"PuzzleCompleted":false,"AlreadyComplete":false,"ID":1020,"PlacedItem":{"instanceID":0},"RequiredItem":{"instanceID":34082},"loadZone":{"instanceID":65414}}

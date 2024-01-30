@@ -84,6 +84,7 @@ public class TCSecretWallPuzzleManager : PuzzleManager
     void CompletePuzzle()
     {
         PuzzleCompleted = true;
+        FindObjectsOfType<RoomManager>(true)[0].ObservePuzzlesInRoom();
     }
 
     // Update is called once per frame

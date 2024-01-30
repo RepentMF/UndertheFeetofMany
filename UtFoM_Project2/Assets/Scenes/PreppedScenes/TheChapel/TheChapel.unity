@@ -3525,7 +3525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PuzzleCompleted: 0
   AlreadyComplete: 0
-  ID: 0
+  ID: 1016
   PlacedItem: {fileID: 0}
   RequiredItem: {fileID: 0}
   Book1Placed: 0
@@ -8648,6 +8648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: TheChapelBasement1
+  startTransition: 0
   playerPosition: {x: 0.5, y: -14.64}
   playerDirection: {x: 0, y: 1}
   fadeInPanel: {fileID: 2923732638672300784, guid: f9510dfb88a5f8648ae3c628880f17f4,
@@ -10937,6 +10938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: TheChapelFloor2
+  startTransition: 0
   playerPosition: {x: -9, y: -8.25}
   playerDirection: {x: 0, y: -1}
   fadeInPanel: {fileID: 2923732638672300784, guid: f9510dfb88a5f8648ae3c628880f17f4,

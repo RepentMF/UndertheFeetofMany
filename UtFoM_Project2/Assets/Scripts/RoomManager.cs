@@ -82,20 +82,40 @@ public class RoomManager : GenericSingleton<RoomManager>
         }
     }
     
+    // public void PlacePuzzlesInRoom()
+    // {
+    //     string[] strings = System.IO.File.ReadAllLines(@"puzzles.txt");
+    //     int found = 0;
+
+    //     foreach (string s in strings)
+    //     {
+    //         //UpdateEntityInRoom(PuzzleTable, s, ", ");
+    //         for (int i = 0; i < FindObjectsOfType<PuzzleManager>(true).Length; i++)
+    //         {
+    //             if (s.Contains(FindObjectsOfType<PuzzleManager>(true)[i].ID + ", "))
+    //             {
+    //                 found = s.IndexOf(", ");
+    //                 FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted = bool.Parse(s.Substring(found + 2));
+    //             }
+    //         }
+    //     }
+    // }
+
     public void PlacePuzzlesInRoom()
     {
-        string[] strings = System.IO.File.ReadAllLines(@"puzzles.txt");
-        int found = 0;
+        string[] strings = System.IO.File.ReadAllLines(@"puzzles.json");
 
         foreach (string s in strings)
         {
-            //UpdateEntityInRoom(PuzzleTable, s, ", ");
             for (int i = 0; i < FindObjectsOfType<PuzzleManager>(true).Length; i++)
             {
-                if (s.Contains(FindObjectsOfType<PuzzleManager>(true)[i].ID + ", "))
+                if (s.Contains(FindObjectsOfType<PuzzleManager>(true)[i].ID.ToString()))
                 {
-                    found = s.IndexOf(", ");
-                    FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted = bool.Parse(s.Substring(found + 2));
+                    Debug.Log(s);
+                    PuzzleInfo temp = JsonUtility.FromJson<PuzzleInfo>(s);
+                    FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted = temp.PuzzleCompleted;
+                    FindObjectsOfType<PuzzleManager>(true)[i].AlreadyComplete = temp.AlreadyComplete;
+                    FindObjectsOfType<PuzzleManager>(true)[i].PlacedItem = temp.PlacedItem;
                 }
             }
         }
@@ -167,47 +187,47 @@ public class RoomManager : GenericSingleton<RoomManager>
         System.IO.File.AppendAllLines(@"enemies.txt", strings);
     }
 
+    // public void ObservePuzzlesInRoom()
+    // {
+    //     // Make a setup list for setting up strings
+    //     List<string> puzzleSetupStrings = new List<string>();
+
+    //     // Look at all of the puzzles in the current scene
+    //     for (int i = 0; i < FindObjectsOfType<PuzzleManager>(true).Length; i++)
+    //     {
+    //         //Grab puzzle data for their ID and their puzzle completed boolean
+    //         string s = FindObjectsOfType<PuzzleManager>(true)[i].ID + ", " + FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted;
+    //         //And put that puzzle data in a list of strings
+    //         puzzleSetupStrings.Add(s);
+    //     }
+
+    //     // Grab save data that's in the game's save file and put it in a temporary string array
+    //     string[] saveFileArray = System.IO.File.ReadAllLines(@"puzzles.txt");
+    //     // And put that string array into a string list
+    //     List<string> saveFileList = saveFileArray.ToList();
+    //     // Iterate through the save data list
+    //     foreach (string s in saveFileArray)
+    //     {
+    //     // Iterate through the current scene list
+    //         for (int i = 0; i < puzzleSetupStrings.Count; i++)
+    //         {
+    //     // Compare the data from the two lists and remove it if the data exists in both lists
+    //             if (s.Contains(FindObjectsOfType<PuzzleManager>(true)[i].ID + ", "))
+    //             {
+    //                 saveFileList.Remove(s);
+    //             }
+    //         }
+    //     }
+
+    //     // Clear the strings from the save file
+    //     System.IO.File.WriteAllText(@"puzzles.txt", String.Empty);
+    //     // Write the save data list to the save file
+    //     System.IO.File.WriteAllLines(@"puzzles.txt", saveFileList);
+    //     // Write the current scene data list to the save file
+    //     System.IO.File.AppendAllLines(@"puzzles.txt", puzzleSetupStrings);
+    // }
+
     public void ObservePuzzlesInRoom()
-    {
-        // Make a setup list for setting up strings
-        List<string> puzzleSetupStrings = new List<string>();
-
-        // Look at all of the puzzles in the current scene
-        for (int i = 0; i < FindObjectsOfType<PuzzleManager>(true).Length; i++)
-        {
-            //Grab puzzle data for their ID and their puzzle completed boolean
-            string s = FindObjectsOfType<PuzzleManager>(true)[i].ID + ", " + FindObjectsOfType<PuzzleManager>(true)[i].PuzzleCompleted;
-            //And put that puzzle data in a list of strings
-            puzzleSetupStrings.Add(s);
-        }
-
-        // Grab save data that's in the game's save file and put it in a temporary string array
-        string[] saveFileArray = System.IO.File.ReadAllLines(@"puzzles.txt");
-        // And put that string array into a string list
-        List<string> saveFileList = saveFileArray.ToList();
-        // Iterate through the save data list
-        foreach (string s in saveFileArray)
-        {
-        // Iterate through the current scene list
-            for (int i = 0; i < puzzleSetupStrings.Count; i++)
-            {
-        // Compare the data from the two lists and remove it if the data exists in both lists
-                if (s.Contains(FindObjectsOfType<PuzzleManager>(true)[i].ID + ", "))
-                {
-                    saveFileList.Remove(s);
-                }
-            }
-        }
-
-        // Clear the strings from the save file
-        System.IO.File.WriteAllText(@"puzzles.txt", String.Empty);
-        // Write the save data list to the save file
-        System.IO.File.WriteAllLines(@"puzzles.txt", saveFileList);
-        // Write the current scene data list to the save file
-        System.IO.File.AppendAllLines(@"puzzles.txt", puzzleSetupStrings);
-    }
-
-    public void NewObservePuzzlesInRoom()
     {   
         // Look at all of the puzzles in the current scene
         List<PuzzleManager> currentScenePuzzles = FindObjectsOfType<PuzzleManager>(true).ToList();

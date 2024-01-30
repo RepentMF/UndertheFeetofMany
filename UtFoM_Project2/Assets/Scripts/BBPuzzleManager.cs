@@ -64,7 +64,6 @@ public class BBPuzzleManager : PuzzleManager
     {
         PuzzleCompleted = true;
         FindObjectsOfType<RoomManager>(true)[0].ObservePuzzlesInRoom();
-        FindObjectsOfType<RoomManager>(true)[0].NewObservePuzzlesInRoom();
         StateManagerScript.IdleAnimationName = "BB_gate_opened";
         StateManagerScript.CurrentState = ActionState.Idle;
         Collider2DScript.enabled = false;

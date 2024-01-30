@@ -50,6 +50,7 @@ SpriteAtlas:
     isAtlasV2: 0
     cachedData: {fileID: 0}
     packedSpriteRenderDataKeys:
+    - 04644100d41d9cb4dbb133d3dacc447e: 21300000
     - ab06e81073c429d498491445e955d57b: -5919358200950982201
     - ab06e81073c429d498491445e955d57b: -4440248410428341182
     - ab06e81073c429d498491445e955d57b: 5895270081239581449
@@ -2045,6 +2046,7 @@ SpriteAtlas:
     - 860b437c944d30146baa189862ed745e: 21300000
     - 64a8987c95500c440b03618701b59d05: 21300000
     - e5b2638c50fe718478f406167177ed6d: 21300000
+    - 3c26488ca4197cf4397660b4ee57b5d0: 21300000
     - a7f18e8ce78fbb542a59e109eaf3470b: 21300000
     - 7e5f38ac80b4d354892c4f8ccd5e491d: 21300000
     - 957582bc18d88104699da6054abe3b3f: -3425812147871693618
@@ -2637,6 +2639,7 @@ SpriteAtlas:
     - bcab4bbdb780b0743869cfde76a46b50: -2027498993358051863
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 04644100d41d9cb4dbb133d3dacc447e, type: 3}
   - {fileID: -5919358200950982201, guid: ab06e81073c429d498491445e955d57b, type: 3}
   - {fileID: -4440248410428341182, guid: ab06e81073c429d498491445e955d57b, type: 3}
   - {fileID: 5895270081239581449, guid: ab06e81073c429d498491445e955d57b, type: 3}
@@ -4632,6 +4635,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 860b437c944d30146baa189862ed745e, type: 3}
   - {fileID: 21300000, guid: 64a8987c95500c440b03618701b59d05, type: 3}
   - {fileID: 21300000, guid: e5b2638c50fe718478f406167177ed6d, type: 3}
+  - {fileID: 21300000, guid: 3c26488ca4197cf4397660b4ee57b5d0, type: 3}
   - {fileID: 21300000, guid: a7f18e8ce78fbb542a59e109eaf3470b, type: 3}
   - {fileID: 21300000, guid: 7e5f38ac80b4d354892c4f8ccd5e491d, type: 3}
   - {fileID: -3425812147871693618, guid: 957582bc18d88104699da6054abe3b3f, type: 3}
@@ -5223,6 +5227,7 @@ SpriteAtlas:
   - {fileID: 3750328241259782564, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
   - {fileID: -2027498993358051863, guid: bcab4bbdb780b0743869cfde76a46b50, type: 3}
   m_PackedSpriteNamesToIndex:
+  - UI_map_TL
   - context_button_ui_5
   - context_button_ui_4
   - context_button_ui_1
@@ -7218,6 +7223,7 @@ SpriteAtlas:
   - UI_map_BB
   - UI_map_SS_1
   - book
+  - TL
   - UI_map_TCB1
   - UI_stats_magic
   - blizzard_fall_start_7

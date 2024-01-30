@@ -20,7 +20,6 @@ public class SSChapelDoorPuzzleManager : PuzzleManager
     {
         PuzzleCompleted = true;
         FindObjectsOfType<RoomManager>(true)[0].ObservePuzzlesInRoom();
-        FindObjectsOfType<RoomManager>(true)[0].NewObservePuzzlesInRoom();
         box = this.gameObject.GetComponent<BoxCollider2D>();
         box.enabled = true;
     }

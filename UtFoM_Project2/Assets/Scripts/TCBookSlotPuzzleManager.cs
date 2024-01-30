@@ -11,6 +11,7 @@ public class TCBookSlotPuzzleManager : PuzzleManager
         if (Confirm)
         {
             FindObjectOfType<PlayerController>().SelectFromInventory();
+            FindObjectsOfType<RoomManager>(true)[0].ObservePuzzlesInRoom();
         }
     }
 
