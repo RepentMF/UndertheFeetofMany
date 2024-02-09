@@ -1037,6 +1037,7 @@ SpriteAtlas:
     - eb6d65e58d32b8049b694f1eeb9b6a43: 21300000
     - 10b47de54b34e3a41a77bc38471ffb46: 21300000
     - 156315169f6f93f46aa509cebe0cbb8f: 21300000
+    - a2cd78166a68ce042bcc226afbd5f73d: 21300000
     - eff0ff1679b2afa4bbc0e2b4a7604445: 21300000
     - b7e57426ddebec8468349bce0c0b06dd: 21300000
     - ac825036423738f458b3f9df84a005a1: 21300000
@@ -1193,6 +1194,7 @@ SpriteAtlas:
     - adf3d747f0eeade4e96a99dd5b790059: 21300000
     - ede6fb77bc9e3f14e99d36400fd6b517: 21300000
     - 1cf721873998f8148a22d5d56f8e7da9: 21300000
+    - 3af8bd8702cae3d49ad52d26dc1236e2: 21300000
     - ae64c1a75f2094744bcd532b2e669ec7: 21300000
     - 0a4decc7e6a538a4ab8fda7c3348a5cd: 3807049566699419493
     - 0a4decc7e6a538a4ab8fda7c3348a5cd: -1984734878122456809
@@ -3626,6 +3628,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: eb6d65e58d32b8049b694f1eeb9b6a43, type: 3}
   - {fileID: 21300000, guid: 10b47de54b34e3a41a77bc38471ffb46, type: 3}
   - {fileID: 21300000, guid: 156315169f6f93f46aa509cebe0cbb8f, type: 3}
+  - {fileID: 21300000, guid: a2cd78166a68ce042bcc226afbd5f73d, type: 3}
   - {fileID: 21300000, guid: eff0ff1679b2afa4bbc0e2b4a7604445, type: 3}
   - {fileID: 21300000, guid: b7e57426ddebec8468349bce0c0b06dd, type: 3}
   - {fileID: 21300000, guid: ac825036423738f458b3f9df84a005a1, type: 3}
@@ -3782,6 +3785,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: adf3d747f0eeade4e96a99dd5b790059, type: 3}
   - {fileID: 21300000, guid: ede6fb77bc9e3f14e99d36400fd6b517, type: 3}
   - {fileID: 21300000, guid: 1cf721873998f8148a22d5d56f8e7da9, type: 3}
+  - {fileID: 21300000, guid: 3af8bd8702cae3d49ad52d26dc1236e2, type: 3}
   - {fileID: 21300000, guid: ae64c1a75f2094744bcd532b2e669ec7, type: 3}
   - {fileID: 3807049566699419493, guid: 0a4decc7e6a538a4ab8fda7c3348a5cd, type: 3}
   - {fileID: -1984734878122456809, guid: 0a4decc7e6a538a4ab8fda7c3348a5cd, type: 3}
@@ -6214,6 +6218,7 @@ SpriteAtlas:
   - book_opening_8
   - trinkets_page
   - TB_R3
+  - UI_stats_enemy_stamina
   - TC_wall
   - bb_house2
   - darrens_diary_item
@@ -6370,6 +6375,7 @@ SpriteAtlas:
   - UI_map_TC_F1
   - torch_holder
   - UI_map_SS_6
+  - UI_stats_enemy_mana
   - UI_map_SS_14
   - sword_player_0
   - sword_player_92

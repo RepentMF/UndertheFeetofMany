@@ -20,7 +20,7 @@ public class StatusEffect
     private float OriginalTimer;
     public float Intensity;
     public Status Name;
-    public Stats Inflicter;
+    public GameObject Inflicter;
 
     public StatusEffect(Status name, float statTimer, float intensity)
     {
@@ -30,7 +30,7 @@ public class StatusEffect
         this.Intensity = intensity;
     }
 
-    public StatusEffect(Status name, float statTimer, float intensity, Stats inflicter)
+    public StatusEffect(Status name, float statTimer, float intensity, GameObject inflicter)
     {
         this.Name = name;
         this.StatTimer = statTimer;
@@ -82,7 +82,7 @@ public class StatusMod : MonoBehaviour
     /// <summary>
     /// Adds or updates the proprties of the given status on the entity
     /// </summary>
-    public void AddStatus(Status name, float statTimer, float intensity, Stats inflicter = null)
+    public void AddStatus(Status name, float statTimer, float intensity, GameObject inflicter = null)
     {
         // Condition Defaults
         bool canAddStatus = true;
@@ -205,7 +205,7 @@ public class StatusMod : MonoBehaviour
                     case Status.Leech:
                         float amount = StatsScript.CurrentHealth - (StatusEntry.Intensity * Time.deltaTime) < 0 ? StatsScript.CurrentHealth : (StatusEntry.Intensity * Time.deltaTime);
                         StatsScript.DamageHealth(amount);
-                        StatusEntry.Inflicter.HealHealth(amount);
+                        StatusEntry.Inflicter.GetComponent<Stats>().HealHealth(amount);
                         break;
                     case Status.Poison:
                         if (StatsScript.MaxHealth == StatsScript.OriginalHealth) // If the target's health has not been halved, halve the target's maxHealth

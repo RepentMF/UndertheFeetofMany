@@ -80,9 +80,9 @@ public class Inventory : MonoBehaviour
 
 	private void SyncTrinketStatusInflicter(TrinketModification modification)
 	{
-		modification.LightAttackStatusEffectToInflict.Inflicter = StatsScript;
-		modification.LaunchAttackStatusEffectToInflict.Inflicter = StatsScript;
-		modification.HeavyAttackStatusEffectToInflict.Inflicter = StatsScript;
+		modification.LightAttackStatusEffectToInflict.Inflicter = StatsScript.gameObject;
+		modification.LaunchAttackStatusEffectToInflict.Inflicter = StatsScript.gameObject;
+		modification.HeavyAttackStatusEffectToInflict.Inflicter = StatsScript.gameObject;
 	}
 
 	private void SyncHitboxes(Weapon weapon)

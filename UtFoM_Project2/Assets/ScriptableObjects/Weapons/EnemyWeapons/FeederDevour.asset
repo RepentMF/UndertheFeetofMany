@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: FeederRush
   Description: here dat boi comes
-  Sprite: {fileID: 0}
+  InventorySprite: {fileID: 0}
+  OverworldSprite: {fileID: 0}
   LightAttackAnimationName: 
   LightAttackAnimationTimer: -1
   OriginalLightAttackBufferThreshold: 0
@@ -49,5 +50,9 @@ MonoBehaviour:
   HeavyAttackDamage: 5
   HeavyAttackCounter: 0
   HeavyAttackCounterMax: 0
-  HeavyAttackStatusesToInflict: []
+  HeavyAttackStatusesToInflict:
+  - StatTimer: 5
+    Intensity: 0.2
+    Name: 3
+    Inflicter: {fileID: 0}
   HeavyAttackExecuteDamage: 0
